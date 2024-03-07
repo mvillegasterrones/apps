@@ -78,7 +78,7 @@ label {
     color: #2B65A1;
 }
 
-button.btnImg{
+button.btnImg {
     background: url('../imgs/disk.gif');
     background-repeat: no-repeat; 
     background-position: left; 
