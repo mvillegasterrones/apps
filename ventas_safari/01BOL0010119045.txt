@@ -1,0 +1,16 @@
+DOCUMENTO :    BOL - 0010119045		 FECHA : 02/09/2014 15:29:36
+CLIENTE :      10010454619	COND.VTA :     001	Moneda : S     
+Vendedor :     30
+NRO GUIA : 0010019974
+NRO PEDIDO : 0010003031
+
+02/09/2014 15:29:36                           anny       VD51-30GV OR           1       900.00                      
+
+DOCUMENTO :    BOL - 0010119045		 FECHA : 02/09/2014 15:30:24
+CLIENTE :      10010454619	COND.VTA :     001	Moneda : S     
+Vendedor :     30
+NRO GUIA : 0010019974
+NRO PEDIDO : 0010003031
+
+02/09/2014 15:30:24    DOCUMENTO IMPRESO      anny      
+

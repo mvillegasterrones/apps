@@ -1,0 +1,47 @@
+body
+{
+	font-family: Arial;
+	font-size:10px;
+}
+
+#input
+{
+	position:relative;
+	padding: 2pt;
+	border:1px solid;
+    size: 30;
+}
+
+#reloj
+{
+	position:relative;
+	vertical-align: bottom;
+	visibility: hidden;
+}
+
+#lista
+{
+	width: 206px; 
+    height: 45px;
+	background-color:#ffffff;
+	color:#000000;
+	border:1px solid;
+	border-color:#000000;
+	z-index:1;
+	display:none;
+	margin-top: 5px;
+    overflow-y: scroll; 
+    text-align: left;
+}
+
+#lista a
+{
+	display: block;
+	background-color:#66FF99;
+	padding: 2pt;
+}
+
+#lista a:hover
+{
+	background-color:#00aaaa;
+}

@@ -1,0 +1,121 @@
+/* Css específico del efecto */ 
+div.contiene_tabla { 
+height: 45px; 
+overflow: auto; 
+overflow-y: hidden; 
+overflow-x: hidden; 
+width: 350px; 
+border-bottom: solid 1px #000; 
+border-right: solid 1px #000; 
+} 
+ 
+div.contiene_tabla2 { 
+height: 50px; 
+overflow: auto; 
+overflow-y: hidden; 
+overflow-x: hidden; 
+width: 400px; 
+border-bottom: solid 1px #000; 
+border-right: solid 1px #000;
+}
+/* table { 
+background-color: #EFEFEF; 
+color: black; 
+table-layout: fixed; 
+width: 700px; 
+} */
+div.DVtxtP txtP{
+background-color: greenyellow;
+size: 5;
+} 
+
+titulos { 
+width: 700px; 
+background-color: red;/*#1E55A1;*/
+font-size: 12;
+} 
+ 
+/* th, td { 
+border: 0px solid black; 
+padding: 4px; 
+white-space: pre; 
+white-space: pre-wrap; 
+white-space: pre-line; 
+white-space: -pre-wrap;
+white-space: -o-pre-wrap; 
+white-space: -moz-pre-wrap;  
+white-space: -hp-pre-wrap; 
+word-wrap: break-word; 
+} */
+
+tr.headers { 
+background-color: #1E55A1; 
+} 
+ 
+/* extendemosel ancho para .contiene_tabla2 
+para colocar el scroll por fuera */ 
+ 
+/* Fix para listas */ 
+div.contiene_tabla ul li, div.contiene_tabla2 ul li{ 
+list-style-type: square; 
+list-style-position: inside; 
+}
+
+div.contiene_tabla tr:nth-child(even) { 
+    background: cyan ;
+    color: red;    
+}
+div.contiene_tabla tr:nth-child(odd) { 
+    background: cyan;
+    color: red; 
+}
+
+/* contiene_tabla2 */
+
+div.contiene_tabla2 ul li, div.contiene_tabla2 ul li{ 
+list-style-type: square; 
+list-style-position: inside; 
+}
+
+div.contiene_tabla2 tr:nth-child(even) { 
+    background: #12E26F ;
+    color: blue;    
+    font-size: 13px;
+}
+div.contiene_tabla2 tr:nth-child(odd) { 
+    background: #12E26F;
+    color: blue; 
+    font-size: 13px;
+}
+
+/* nuevos */
+
+input, select, textarea, button {
+	background-color: #FFF;
+	border: 1px solid #7F9DB9;
+	padding: 1px;
+	margin: 0;
+	font-size: 11px;
+	color: #6C7F90;
+}
+
+input, select, textarea {
+    margin-left: 5px;
+}
+input:focus, select:focus, textarea:focus {
+	background-color: #66FF99;
+	color: #2646A4;
+}
+.noFocus:focus, select.noFocus option {
+    background-color: #FFF;
+    color: #6C7F90;
+}
+
+input, textarea {
+	padding: 2px;
+}
+
+input[readonly] {
+	background-color: #FFFFDE;
+	color: #56728C;
+}

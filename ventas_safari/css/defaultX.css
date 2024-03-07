@@ -1,0 +1,87 @@
+form {
+	display: inline;
+}
+:focus, :active, a, button {
+     outline: none;
+}
+
+a:-moz-focus-inner, button:-moz-focus-inner {
+    border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, select, textarea, button {
+	background-color: #FFF;
+	border: 1px solid #7F9DB9;
+	padding: 1px;
+	margin: 0;
+	font-size: 11px;
+	color: #6C7F90;
+}
+
+input, select, textarea {
+    margin-left: 5px;
+}
+input:focus, select:focus, textarea:focus {
+	background-color: #66FF99;
+	color: #2646A4;
+}
+.noFocus:focus, select.noFocus option {
+    background-color: #FFF;
+    color: #6C7F90;
+}
+
+input, textarea {
+	padding: 2px;
+}
+
+input[readonly] {
+	background-color: #FFFFDE;
+	color: #56728C;
+}
+
+*[disabled], *[disabled]:hover {
+	color: #9A9686 ! important;
+	background-color: #FCFCFB ! important;
+	border-color: #B2B2B2;
+}
+button[disabled] s {
+    color: #9A9686;
+}
+input[disabled], input[disabled]:hover,  select[disabled], select[disabled]:hover, textarea[disabled], textarea[disabled]:hover {
+    background-color: #FFF9F5 ! important;
+    border-color: #FFDAC4;
+}
+
+button {
+	padding: 4px 10px;
+	background-color: #F0F4F7;
+	color: #2B65A1;
+}
+button:hover, button:focus {
+	background-color: #C8D7F7;
+	color: #043D7A;
+	border-color: #2B65A1;
+}
+
+button s {
+    text-decoration: underline;
+    color: #2B65A1;
+}
+
+label {
+    font-size: 11px;
+    font-family: Arial;
+    color: #2B65A1;
+}
+
+button.btnImg{
+    background: url('imgs/disk.gif');
+    background-repeat: no-repeat; 
+    background-position: left; 
+    background-color: transparent; 
+    height: 25px;
+}
