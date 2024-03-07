@@ -79,7 +79,7 @@ label {
 }
 
 button.btnImg{
-    background: url('imgs/disk.gif');
+    background: url('../imgs/disk.gif');
     background-repeat: no-repeat; 
     background-position: left; 
     background-color: transparent; 
