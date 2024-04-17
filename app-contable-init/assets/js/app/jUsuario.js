@@ -1,11 +1,10 @@
-const url = './controllers/cUsuario.php'
-let params
+const url = './controllers/cUser.php'
 
 const usuario = () => ({
     set_login: () => {
         let pUsuario  = $('#usuario').val()
         let pPassword = $('#password').val()
-        params = { action: 'set-login', _usuario: pUsuario, _password: pPassword }
+        let params    = { action: 'set-login', usr: pUsuario, pwd: pPassword }
         $.post( url, params, (response) => {
             console.log(response)
             if (response === '1') {
