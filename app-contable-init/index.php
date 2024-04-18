@@ -32,15 +32,15 @@
     <?php
     session_start();
     if (isset($_SESSION['acceso']) && $_SESSION['acceso'] == 'YES') {
-        include './views/view-index.php';
+        include './Views/view-index.php';
     } else {
-        include './views/view-login.php';
+        include './Views/view-login.php';
     }
     ?>
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 <script src="<?= $rutal_local ?>assets/js/core/popper.min.js"></script>
 <script src="<?= $rutal_local ?>assets/js/core/bootstrap.min.js"></script>
@@ -82,11 +82,15 @@
     })*/
 </script>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<script src="./assets/js/app/jUser.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"874f2a46ce0b9aef","version":"2024.3.0","token":"1b7cbb72744b40c580f8633c6b62637e"}' crossorigin="anonymous"></script>
 
-<script src="./assets/js/app/jUsuario.js"></script>
+
 
 </html>

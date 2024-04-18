@@ -1,10 +1,10 @@
 <?php
-class mUsuario
+class mUser
 {
     private $conexion;
     public function __construct()
     {
-        require_once('./conexion.php');
+        require_once('conexion.php');
         $this->conexion = new conexion();
         $this->conexion->conectar();
     }
