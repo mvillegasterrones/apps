@@ -2,6 +2,7 @@
     TODO link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
     TODO FA git: https://github.com/eliyantosarage/font-awesome-pro
     TODO SweetAlert: https://sweetalert2.github.io/#download
+    TODO link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
 -->
 <?php include './includes.php' ?>
 <!DOCTYPE html>
@@ -27,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="user().get_users_list()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();
@@ -40,8 +41,6 @@
 
 </body>
 
-
-
 <script src="<?= $rutal_local ?>assets/js/core/popper.min.js"></script>
 <script src="<?= $rutal_local ?>assets/js/core/bootstrap.min.js"></script>
 <script src="<?= $rutal_local ?>assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -53,11 +52,6 @@
 <script src="<?= $rutal_local ?>assets/js/plugins/nouislider.min.js"></script>
 
 <script>
-    /*Swal.fire({
-            title: "Bienvenido!",
-            text: "You clicked the button!",
-            icon: "success"
-        });*/
 
     let win = navigator.platform.indexOf("Win") > -1
     if (win && document.querySelector("#sidenav-scrollbar")) {
@@ -66,26 +60,13 @@
         }
         Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options)
     }
-
-    /*Swal.fire({
-        title: "Do you want to save the changes?",
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: "Save",
-        denyButtonText: `Don't save`
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire("Saved!", "", "success");
-        } else if (result.isDenied) {
-            Swal.fire("Changes are not saved", "", "info");
-        }
-    })*/
 </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+<script src="./assets/js/app/jSweet.js"></script>
 <script src="./assets/js/app/jUser.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/argon-dashboard.min.js?v=2.0.5"></script>

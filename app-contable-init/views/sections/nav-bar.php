@@ -34,9 +34,9 @@
             </div>
             <ul class="navbar-nav justify-content-end">
                 <li class="nav-item d-flex align-items-center">
-                    <a href="../../pages/authentication/signin/illustration.html" class="nav-link text-white font-weight-bold px-0" target="_blank">
+                    <a href="javascript:;" class="nav-link text-white font-weight-bold px-0" target="_blank">
                         <i class="fa fa-user me-sm-1"></i>
-                        <span class="d-sm-inline d-none">Iniciar sesión</span>
+                        <span class="d-sm-inline d-none"><?= '<code>'. $_SESSION['user_rol']. '</code>' .':'. $_SESSION['user_datos'] ?></span>
                     </a>
                 </li>
                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -48,14 +48,17 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-item px-3 d-flex align-items-center">
+
+                <li class="nav-item px-3 d-flex align-items-center" onclick="user().set_logout()">
                     <a href="javascript:;" class="nav-link text-white p-0">
-                        <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                        <i class="fa-duotone fa-right-from-bracket fixed-plugin-button-nav cursor-pointer text-danger"></i>
+                        <!--<i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>-->
                     </a>
                 </li>
+                
                 <li class="nav-item dropdown pe-2 d-flex align-items-center">
                     <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-bell cursor-pointer"></i>
+                        <i class="fa fa-bell cursor-pointer text-warning"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                         <li class="mb-2">
@@ -128,6 +131,7 @@
                         </li>
                     </ul>
                 </li>
+                
             </ul>
         </div>
     </div>

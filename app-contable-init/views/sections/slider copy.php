@@ -3,16 +3,12 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html " target="_blank">
             <img src="../main-template/assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo" />
-            <span class="ms-1 font-weight-bold">
-                <img src="./assets/img/logo/main-logo.ong" alt="MI-LOGO">
-            </span>
+            <span class="ms-1 font-weight-bold">Argon Dashboard 2 PRO</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0" />
     <div class="collapse navbar-collapse w-auto h-auto" id="sidenav-collapse-main">
-        <!--<ul class="navbar-nav">-->
-        <ul class="navbar-nav navbar-nav-hover mx-auto">
-
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link active" aria-controls="dashboardsExamples" role="button" aria-expanded="false">
                     <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
@@ -20,7 +16,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Dashboards</span>
                 </a>
-                <!--<div class="collapse show" id="dashboardsExamples">
+                <div class="collapse show" id="dashboardsExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" href="../../pages/dashboards/landing.html">
@@ -76,7 +72,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
@@ -90,7 +86,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Pages</span>
                 </a>
-                <!--<div class="collapse" id="pagesExamples">
+                <div class="collapse" id="pagesExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#profileExample">
@@ -251,7 +247,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link" aria-controls="applicationsExamples" role="button" aria-expanded="false">
@@ -260,7 +256,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Applications</span>
                 </a>
-                <!--<div class="collapse" id="applicationsExamples">
+                <div class="collapse" id="applicationsExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" href="../../pages/applications/kanban.html">
@@ -293,7 +289,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link" aria-controls="ecommerceExamples" role="button" aria-expanded="false">
@@ -302,7 +298,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Ecommerce</span>
                 </a>
-                <!--<div class="collapse" id="ecommerceExamples">
+                <div class="collapse" id="ecommerceExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" href="../../pages/ecommerce/overview.html">
@@ -375,7 +371,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#authExamples" class="nav-link" aria-controls="authExamples" role="button" aria-expanded="false">
@@ -384,7 +380,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Authentication</span>
                 </a>
-                <!--<div class="collapse" id="authExamples">
+                <div class="collapse" id="authExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#signinExample">
@@ -555,7 +551,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <hr class="horizontal dark" />
@@ -570,7 +566,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Basic</span>
                 </a>
-                <!--<div class="collapse" id="basicExamples">
+                <div class="collapse" id="basicExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="#gettingStartedExample">
@@ -643,7 +639,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#componentsExamples" class="nav-link" aria-controls="componentsExamples" role="button" aria-expanded="false">
@@ -652,7 +648,7 @@
                     </div>
                     <span class="nav-link-text ms-1">Components</span>
                 </a>
-                <!--<div class="collapse" id="componentsExamples">
+                <div class="collapse" id="componentsExamples">
                     <ul class="nav ms-4">
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.creative-tim.com/learning-lab/bootstrap/alerts/argon-dashboard" target="_blank">
@@ -757,7 +753,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://github.com/creativetimofficial/ct-argon-dashboard-pro/blob/main/CHANGELOG.md" target="_blank">
