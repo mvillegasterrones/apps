@@ -1,10 +1,73 @@
+.text-system-green {
+  color: #14F195 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+.text-system-yellow {
+  color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
 .icon-yellow:hover {
   color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
 }
 
-#section-te-ofrecemos .card:hover,
-#section-te-ofrecemos-2 .card:hover,
-#section-clients .card:hover {
-  border: 0.5px solid #ffd300 !important;
-  /*border-color:  #FFD300 !important;*/
+/* ! Extraido externo */
+input:focus, select:focus, textarea:focus {
+	background-color: #66FF99 !important;
+	color: #2646A4 !important;
+}
+.noFocus:focus, select.noFocus option {
+  background-color: #FFF;
+  color: #6C7F90;
+}
+
+input, textarea {
+padding: 2px;
+}
+
+input[readonly] {
+background-color: #FFFFDE;
+color: #56728C;
+}
+
+*[disabled], *[disabled]:hover {
+color: #9A9686 ! important;
+background-color: #FCFCFB ! important;
+border-color: #B2B2B2;
+}
+button[disabled] s {
+  color: #9A9686;
+}
+input[disabled], input[disabled]:hover,  select[disabled], select[disabled]:hover, textarea[disabled], textarea[disabled]:hover {
+  background-color: #FFF9F5 ! important;
+  border-color: #FFDAC4;
+}
+
+button {
+padding: 4px 10px;
+background-color: #F0F4F7;
+color: #2B65A1;
+}
+button:hover, button:focus {
+background-color: #C8D7F7;
+color: #043D7A;
+border-color: #2B65A1;
+}
+
+button s {
+  text-decoration: underline;
+  color: #2B65A1;
+}
+
+label {
+  font-size: 11px;
+  font-family: Arial;
+  color: #2B65A1;
+}
+
+button.btnImg {
+  background: url('../imgs/disk.gif');
+  background-repeat: no-repeat; 
+  background-position: left; 
+  background-color: transparent; 
+  height: 25px;
 }
