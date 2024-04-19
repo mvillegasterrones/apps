@@ -25,6 +25,8 @@
 
     <link id="pagestyle" href="<?= $rutal_local ?>assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
 
+    <link id="pagestyle" href="<?= $rutal_local ?>assets/css/style.css" rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 

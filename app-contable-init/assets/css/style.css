@@ -1,0 +1,10 @@
+.icon-yellow:hover {
+  color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+#section-te-ofrecemos .card:hover,
+#section-te-ofrecemos-2 .card:hover,
+#section-clients .card:hover {
+  border: 0.5px solid #ffd300 !important;
+  /*border-color:  #FFD300 !important;*/
+}
