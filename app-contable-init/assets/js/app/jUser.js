@@ -6,6 +6,9 @@ const user = () => ({
         let pPassword = $('#password').val()
         let params    = { action: 'set-login', usr: pUsuario, pwd: pPassword }
         
+        if (pUsuario == '') $('#usuario').focus()
+        if (pPassword == '') $('#password').focus()
+
         $.post( url, params, (response) => {
             console.log(response)
             if (response === '1') {

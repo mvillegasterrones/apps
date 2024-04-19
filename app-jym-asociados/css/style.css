@@ -1,0 +1,184 @@
+/* Color of the links BEFORE scroll */
+.navbar-before-scroll .nav-link,
+.navbar-before-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-after-scroll .nav-link,
+.navbar-after-scroll .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-after-scroll {
+  background-color: #fff;
+}
+
+/* Transition after scrolling */
+.navbar-after-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Transition to the initial state */
+.navbar-before-scroll {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-before-scroll.navbar-after-scroll {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Navbar on mobile */
+@media (max-width: 991.98px) {
+  #main-navbar {
+    background-color: #fff;
+  }
+
+  .nav-link,
+  .navbar-toggler-icon {
+    color: #4f4f4f !important;
+  }
+}
+@media (min-width: 992px) {
+  .rotate-lg {
+    transform: rotate(6deg);
+  }
+}
+
+/* ? Color J&M Asociados */
+.text-jym-menu {
+  color: rgb(225, 85, 38) !important;
+}
+
+.text-jym-menu-2,
+.active-nav-item,
+#section-te-ofrecemos .card:hover .card-body p,
+#section-te-ofrecemos-2 .card:hover .card-body p,
+#section-clients .card:hover,
+#section-team a i:hover,
+.nav-link:hover {
+  color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+#section-te-ofrecemos .card:hover,
+#section-te-ofrecemos-2 .card:hover,
+#section-clients .card:hover {
+  border: 0.5px solid #ffd300 !important;
+  /*border-color:  #FFD300 !important;*/
+}
+
+/* ? Hero imagen */
+.hero-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: relative;
+  top: 0;
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Define la animación */
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0; /* Comienza en la parte superior */
+  }
+  100% {
+    top: 25px; /* Termina 300px más abajo */
+  }
+}
+
+/* DIV tipo Carrousel */
+#container {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  /*width: 300px; 
+    height: 150px;
+    border: 1px solid #ccc;*/
+}
+
+#content {
+  position: absolute;
+  animation: moveContent 10s linear infinite; /* Duración de la animación */
+}
+
+@keyframes moveContent {
+  0% {
+    left: 100%; /* Inicio de la animación, el contenido está fuera del contenedor */
+  }
+  100% {
+    left: -100%; /* Fin de la animación, el contenido se mueve completamente fuera del contenedor */
+  }
+}
+
+#cloud {
+  position: absolute;
+  top: 50%;
+  left: calc(
+    100% + 20px
+  ); /* Posicionamiento inicial de la nube, fuera del contenedor */
+  transform: translateY(-50%);
+  display: none; /* La nube estará oculta inicialmente */
+}
+
+/*? Styles required only for the example above */
+.scrollspy-example {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+}
+
+/*? modal form float*/
+.floating-form {
+    display: none;
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior de la pantalla */
+  right: 20px; /* Distancia desde el lado derecho de la pantalla */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollspy Navbar</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+      }
+
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #navbar ul li {
+        float: left;
+      }
+
+      #navbar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      #navbar ul li a:hover {
+        background-color: #555;
+      }
+
+      .active {
+        background-color: #555;
+      }
+
+      section {
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      section:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--<section class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div data-mdb-scrollspy-init data-mdb-target="#scrollspy1" data-mdb-offset="200" class="scrollspy-example" data-mdb-scrollspy-initialized="true">
+                <section id="example-1">
+                  <h3>Section 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                </section>
+                <section id="example-2">
+                  <h3>Section 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                </section>
+                <section id="example-3">
+                  <h3>Section 3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                  <section id="example-sub-A">
+                    <h3>Subsection A</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                      minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                      quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                      minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                      quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                  </section>
+                  <section id="example-sub-B">
+                    <h3>Subsection B</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                      minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                      quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                      minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                      quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                    </p>
+                  </section>
+                </section>
+                <section id="example-4">
+                  <h3>Section 4</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+                    minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+                    quisquam obcaecati et reiciendis quaerat accusamus numquam.
+                  </p>
+                </section>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div id="scrollspy1" class="sticky-top">
+                <ul class="nav flex-column nav-pills menu-sidebar">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#example-1">Section 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#example-2">Section 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#example-3">Section 3</a>
+                    <ul class="nav flex-column ps-3">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#example-sub-A">Subsection A</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#example-sub-B">Subsection B</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#example-4">Section 4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>-->
+        
+    <nav id="navbar">
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+      </ul>
+    </nav>
+
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>This is section 1.</p>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>This is section 2.</p>
+    </section>
+
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>This is section 3.</p>
+    </section>
+
+    <section id="section4">
+      <h2>Section 4</h2>
+      <p>This is section 4.</p>
+    </section>
+
+    <!--<script src="script.js"></script>-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          var nav = document.querySelector("#navbar");
+          var sections = document.querySelectorAll("section");
+          var scrollPosition = window.scrollY;
+
+          sections.forEach(function (section) {
+            if (
+              scrollPosition >= section.offsetTop - nav.offsetHeight &&
+              scrollPosition <
+                section.offsetTop + section.offsetHeight - nav.offsetHeight
+            ) {
+              var currentId = section.getAttribute("id");
+              removeAllActiveClasses();
+              addActiveClass(currentId);
+            }
+          });
+        });
+
+        function removeAllActiveClasses() {
+          document.querySelectorAll("#navbar ul li a").forEach(function (elem) {
+            elem.classList.remove("active");
+          });
+        }
+
+        function addActiveClass(id) {
+          var selector = `#navbar ul li a[href="#${id}"]`;
+          document.querySelector(selector).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
