@@ -1,5 +1,16 @@
+body main div, 
+.main-content, 
+table tbody {
+  color: #b9e0f2 !important;
+}
+
+.system-logo {
+  width: 50%;
+  height: auto;
+}
+
 .text-system-green {
-  color: #14F195 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+  color: #14f195 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
 }
 
 .text-system-yellow {
@@ -11,63 +22,118 @@
 }
 
 /* ! Extraido externo */
-input:focus, select:focus, textarea:focus {
-	background-color: #66FF99 !important;
-	color: #2646A4 !important;
-}
-.noFocus:focus, select.noFocus option {
-  background-color: #FFF;
-  color: #6C7F90;
+
+input,
+textarea {
+  padding: 2px;
+  background-color: transparent !important;
+  color: #7F92B0 !important; /*  #f0f4f7  */
+  border: 0.5px solid rgb(79, 77, 77) !important;
 }
 
-input, textarea {
-padding: 2px;
+input:focus,
+select:focus,
+textarea:focus {
+  /*background-color: #66ff99 !important;
+  color: #2646a4 !important;*/
+  border: 0.5px solid white !important;
+}
+
+.noFocus:focus,
+select.noFocus option {
+  background-color: #fff;
+  color: #6c7f90;
 }
 
 input[readonly] {
-background-color: #FFFFDE;
-color: #56728C;
+  background-color: #ffffde !important;
+  color: #56728c !important;
 }
 
-*[disabled], *[disabled]:hover {
-color: #9A9686 ! important;
-background-color: #FCFCFB ! important;
-border-color: #B2B2B2;
+*[disabled],
+*[disabled]:hover {
+  color: #9a9686 !important;
+  background-color: #fcfcfb !important;
+  border-color: #b2b2b2 !important;
 }
 button[disabled] s {
-  color: #9A9686;
+  color: #9a9686;
 }
-input[disabled], input[disabled]:hover,  select[disabled], select[disabled]:hover, textarea[disabled], textarea[disabled]:hover {
-  background-color: #FFF9F5 ! important;
-  border-color: #FFDAC4;
+input[disabled],
+input[disabled]:hover,
+select[disabled],
+select[disabled]:hover,
+textarea[disabled],
+textarea[disabled]:hover {
+  background-color: #fff9f5 !important;
+  border-color: #ffdac4;
 }
 
 button {
-padding: 4px 10px;
-background-color: #F0F4F7;
-color: #2B65A1;
+  padding: 4px 10px;
+  background-color: #f0f4f7;
+  color: #2b65a1;
 }
-button:hover, button:focus {
-background-color: #C8D7F7;
-color: #043D7A;
-border-color: #2B65A1;
+button:hover,
+button:focus {
+  background-color: #c8d7f7;
+  color: #043d7a;
+  border-color: #2b65a1;
 }
 
 button s {
   text-decoration: underline;
-  color: #2B65A1;
+  color: #2b65a1;
 }
 
 label {
   font-size: 11px;
   font-family: Arial;
-  color: #2B65A1;
+  color: #2b65a1;
 }
 
 button.btnImg {
-  background: url('../imgs/disk.gif');
-  background-repeat: no-repeat; 
-  background-position: left; 
-  background-color: transparent; 
+  background: url("../imgs/disk.gif");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: transparent;
   height: 25px;
+}
+
+
+/* ! Icon SYSTEMA */
+.system-card {
+  display: flex;
+  border: 0px solid;
+  /*border: 1px solid #ccc;
+  border-radius: 5px;*/
+  overflow: hidden;
+  /*max-width: 300px;*/
+  cursor: pointer;
+}
+
+.system-card:hover {
+  background-color: rgb(6, 18, 56);
+  border: .5px solid;
+  font-weight: bold;
+}
+
+.system-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.system-card-content {
+  padding: 10px;
+}
+
+.system-card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.system-card-description {
+  font-size: 14px;
+  color: #666;
 }
