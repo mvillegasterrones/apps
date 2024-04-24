@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="user().get_users_list()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();
@@ -68,8 +68,9 @@
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-<script src="./assets/js/app/jSweet.js"></script>
-<script src="./assets/js/app/jUser.js"></script>
+<script src="<?= $rutal_local ?>assets/js/app/jSweet.js"></script>
+<script src="<?= $rutal_local ?>assets/js/app/jUser.js"></script>
+<script src="<?= $rutal_local ?>assets/js/app/app.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"874f2a46ce0b9aef","version":"2024.3.0","token":"1b7cbb72744b40c580f8633c6b62637e"}' crossorigin="anonymous"></script>

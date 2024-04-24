@@ -104,8 +104,8 @@
                                         <div class="card bg-gradient-dark text-center system-card">
                                             <div class="card-body">
                                                 <div class="mb-2">
-                                                    <img src="./assets/img/systems-logo/e-contable-sf.png" class="system-logo" alt="">
-                                                    <small>CONTABLE</small>
+                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-contable-sf.png" class="system-logo" alt="">
+                                                    <small><i class="fas fa-check-circle d-none"></i>CONTABLE</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,19 +115,22 @@
                                         <div class="card bg-gradient-dark text-center system-card">
                                             <div class="card-body">
                                                 <div class="mb-2">
-                                                    <img src="./assets/img/systems-logo/e-farmacia-sf.png" class="system-logo" alt="">
-                                                    <small>FARMACIA</small>
+                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-farmacia-sf.png" class="system-logo" alt="">
+                                                    <small><i class="fas fa-check-circle d-none"></i> FARMACIA</small>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-12 col-md-2 mb-4 mb-md-0">
-                                        <div class="card bg-gradient-dark text-center system-card">
+                                        <div class="card bg-gradient-dark text-center system-card  item-selected">
                                             <div class="card-body">
                                                 <div class="mb-2">
-                                                    <img src="./assets/img/systems-logo/e-admin-sf.png" class="system-logo" alt="">
-                                                    <small>ADMINISTRCIÓN</small>
+                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-admin-sf.png" class="system-logo" alt="">
+                                                    <small>
+                                                        <i class="fas fa-check-circle d-none"></i>
+                                                        ADMINISTRCIÓN
+                                                    </small>
                                                 </div>
                                             </div>
                                         </div>

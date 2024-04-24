@@ -1,7 +1,27 @@
-body main div, 
-.main-content, 
-table tbody {
-  /*color: #b9e0f2 !important;*/
+.dark-version .main-content {
+  color: #b9e0f2 !important;
+}
+
+/*.dark-version .main-content .card .item-selected,*/
+.dark-version .item-selected {
+  background-color: rgb(6, 18, 56);
+  /*border: .5px #14f195 solid;
+  color: #14f195 !important;*/
+  
+  /*border: .5px #ffd300 solid;
+  color: #ffd300 !important;*/
+
+  border: .5px #14f195 solid;
+  color: #14f195 !important;
+  text-decoration: underline;
+}
+
+.dark-version .item-selected i {
+  position: absolute; /* Establece la posición absoluta para el icono */
+  top: 5px; /* Coloca el icono en la parte superior */
+  left: 5px; /* Coloca el icono en la parte izquierda */
+  margin: 5px; /* Añade un margen alrededor del icono */
+  z-index: 1; /* Asegura que el icono esté por encima del contenido de la tarjeta */
 }
 
 .system-logo {
@@ -114,7 +134,7 @@ button.btnImg {
 
 .system-card:hover {
   background-color: rgb(6, 18, 56);
-  border: .5px #b9e0f2 solid;
+  border: .5px #14f195 /*#b9e0f2*/ solid;
   color: #14f195 !important;
   text-decoration: underline;
 }
