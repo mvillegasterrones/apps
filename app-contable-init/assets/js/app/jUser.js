@@ -9,13 +9,11 @@ const user = () => ({
         if (pUsuario == '') $('#usuario').focus()
         if (pPassword == '') $('#password').focus()
 
-        $.post( url, params, (response) => {
+        $.post( url, params, (response, status, jqXHR) => {
             console.log(response)
-            if (response === '1') {
-                sw_alert().bienvenido()
-            } else {
-                sw_alert().error('Credenciales incorrectas, intentelo nuevamente')
-            }
+            console.log("Status: " + status)
+            console.log("XHR: " + jqXHR.status)
+            if (response === '1') { sw_alert().bienvenido() } else { sw_alert().error('Credenciales incorrectas, intentelo nuevamente') }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
         })

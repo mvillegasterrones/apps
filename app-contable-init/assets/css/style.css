@@ -1,7 +1,7 @@
 body main div, 
 .main-content, 
 table tbody {
-  color: #b9e0f2 !important;
+  /*color: #b9e0f2 !important;*/
 }
 
 .system-logo {
@@ -114,17 +114,18 @@ button.btnImg {
 
 .system-card:hover {
   background-color: rgb(6, 18, 56);
-  border: .5px solid;
-  font-weight: bold;
+  border: .5px #b9e0f2 solid;
+  color: #14f195 !important;
+  text-decoration: underline;
 }
 
 .system-card img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
 }
 
-.system-card-content {
+/*.system-card-content {
   padding: 10px;
 }
 
@@ -136,4 +137,4 @@ button.btnImg {
 .system-card-description {
   font-size: 14px;
   color: #666;
-}
+}*/
