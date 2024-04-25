@@ -123,7 +123,7 @@
                                     </div>
 
                                     <div class="col-12 col-md-2 mb-4 mb-md-0">
-                                        <div class="card bg-gradient-dark text-center system-card  item-selected">
+                                        <div class="card bg-gradient-dark text-center system-card">
                                             <div class="card-body">
                                                 <div class="mb-2">
                                                     <img src="<?= $ruta_local ?>assets/img/systems-logo/e-admin-sf.png" class="system-logo" alt="">
