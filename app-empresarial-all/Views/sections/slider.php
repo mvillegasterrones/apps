@@ -13,7 +13,7 @@
         <!--<ul class="navbar-nav">-->
         <ul class="navbar-nav navbar-nav-hover mx-auto">
 
-            <li class="nav-item mt-3">
+            <!--<li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
                     HOME
                 </h6>
@@ -26,21 +26,45 @@
                     </div>
                     <span class="nav-link-text ms-1">Dashboards</span>
                 </a>
-            </li>
-            <!--<li class="nav-item mt-3">
+            </li>-->
+            <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
-                    PAGES
+                    HOME
                 </h6>
             </li>
             <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link" aria-controls="pagesExamples" role="button" aria-expanded="false">
+                <a data-bs-toggle="collapse" href="#pagesExamples" class="nav-link active" aria-controls="pagesExamples" role="button" aria-expanded="false">
                     <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
-                        <i class="ni ni-ungroup text-warning text-sm opacity-10"></i>
+                        <i class="fa-duotone fa-grid-2 text-info text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Pages</span>
+                    <span class="nav-link-text ms-1">Rubros</span>
                 </a>
+
+                <div class="collapse show" id="pagesExamples">
+                    <ul class="nav ms-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-books"></i> </span>
+                                <span class="sidenav-normal"><i class="fa-duotone fa-books"></i> Contable </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-user-doctor"></i> </span>
+                                <span class="sidenav-normal"><i class="fa-duotone fa-user-doctor"></i> Farmacia </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-screwdriver-wrench"></i> </span>
+                                <span class="sidenav-normal"><i class="fa-duotone fa-screwdriver-wrench"></i> Administrativo </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link" aria-controls="applicationsExamples" role="button" aria-expanded="false">
                     <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                         <i class="ni ni-ui-04 text-info text-sm opacity-10"></i>

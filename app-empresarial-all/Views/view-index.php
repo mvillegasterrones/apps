@@ -99,7 +99,8 @@
                             </div>
 
                             <div class="card-body">
-                                <div class="row mt-2">
+                                <div class="row mt-2" id="main-cards">
+
                                     <div class="col-12 col-md-2 mb-4 mb-md-0">
                                         <div class="card bg-gradient-dark text-center system-card">
                                             <div class="card-body">
@@ -135,6 +136,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

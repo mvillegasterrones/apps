@@ -145,6 +145,10 @@ button.btnImg {
   object-fit: cover;
 }
 
+.nav-item a:hover {
+  color: #ffd300 !important;
+  text-decoration: underline !important;
+}
 /*.system-card-content {
   padding: 10px;
 }
