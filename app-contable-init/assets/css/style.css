@@ -134,8 +134,8 @@ button.btnImg {
 
 .system-card:hover {
   background-color: rgb(6, 18, 56);
-  border: .5px #14f195 /*#b9e0f2*/ solid;
-  color: #14f195 !important;
+  border: .5px #ffd300 /*#b9e0f2*/ solid;
+  color:  #ffd300 !important;
   text-decoration: underline;
 }
 
