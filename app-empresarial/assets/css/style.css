@@ -41,6 +41,54 @@
   color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
 }
 
+/* ! Icon SYSTEMA */
+.system-card {
+  display: flex;
+  border: 0px solid;
+  /*border: 1px solid #ccc;
+  border-radius: 5px;*/
+  overflow: hidden;
+  /*max-width: 300px;*/
+  cursor: pointer;
+}
+
+.system-card:hover {
+  background-color: rgb(6, 18, 56);
+  border: .5px #ffd300 /*#b9e0f2*/ solid;
+  color:  #ffd300 !important;
+  text-decoration: underline;
+}
+
+.system-card img {
+  opacity: 60%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.system-card:hover img, 
+.dark-version .item-selected img {
+  opacity: 100%;
+}
+
+.nav-item a:hover {
+  color: #ffd300 !important;
+  text-decoration: underline !important;
+}
+/*.system-card-content {
+  padding: 10px;
+}
+
+.system-card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.system-card-description {
+  font-size: 14px;
+  color: #666;
+}*/
+
 /* ! Extraido externo */
 
 input,
@@ -121,44 +169,3 @@ button.btnImg {
 }
 
 
-/* ! Icon SYSTEMA */
-.system-card {
-  display: flex;
-  border: 0px solid;
-  /*border: 1px solid #ccc;
-  border-radius: 5px;*/
-  overflow: hidden;
-  /*max-width: 300px;*/
-  cursor: pointer;
-}
-
-.system-card:hover {
-  background-color: rgb(6, 18, 56);
-  border: .5px #ffd300 /*#b9e0f2*/ solid;
-  color:  #ffd300 !important;
-  text-decoration: underline;
-}
-
-.system-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-.nav-item a:hover {
-  color: #ffd300 !important;
-  text-decoration: underline !important;
-}
-/*.system-card-content {
-  padding: 10px;
-}
-
-.system-card-title {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.system-card-description {
-  font-size: 14px;
-  color: #666;
-}*/

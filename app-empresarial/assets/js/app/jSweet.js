@@ -1,4 +1,21 @@
 const sw_alert = () => ({
+    basic: (texto) => {
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: texto, // "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500
+        })
+    },
+    basic_success: (texto) => {
+        Swal.fire({
+            icon: 'success',
+            title: texto,
+            showConfirmButton: false,
+            timer: 1400
+        })
+    },
     bienvenido: () => {
         Swal.fire({
             icon: 'success',
@@ -26,7 +43,7 @@ const sw_alert = () => ({
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: texto,
-        });
+            text: texto
+        })
     }
 })

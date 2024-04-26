@@ -9,6 +9,19 @@ class mRubros
         $this->conexion->conectar();
     }
 
+    function set_rubro($id, $rubro_icono, $rubro_name, $rurbo_descripcion, $rubro_imagen)
+	{
+		$sql = "CALL sp_v1_set_rubro($id, '$rubro_icono', '$rubro_name', '$rurbo_descripcion', '$rubro_imagen')";
+		$this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			return true;
+		} else {
+			$this->conexion->cerrar();
+			return false;
+		}
+	}
+
     function rubros_get_list()
     {
         $sql = "SELECT * FROM tbl_rubros";

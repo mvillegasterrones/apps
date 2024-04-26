@@ -1,5 +1,5 @@
 <!-- 
-     link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
+    TODO link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
     TODO FA git: https://github.com/eliyantosarage/font-awesome-pro
     TODO SweetAlert: https://sweetalert2.github.io/#download
     TODO link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
@@ -20,7 +20,8 @@
     <link href="<?= $rutal_local ?>assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
 
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>-->
+    <script src="<?= $rutal_local ?>assets/js/42d5adcbca.js"></script>
     <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <link id="pagestyle" href="<?= $rutal_local ?>assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />

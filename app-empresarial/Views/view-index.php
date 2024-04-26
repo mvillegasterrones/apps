@@ -92,52 +92,23 @@
                                     </div>
                                 </div>
                                 <div class="text-end ms-auto">
-                                    <button type="button" class="btn btn-xs btn-primary mb-0">
-                                        <i class="fas fa-pen pe-2" aria-hidden="true"></i> Editar
+                                    <button type="button" class="btn btn-xs btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-rubro">
+                                        <i class="fa-duotone fa-plus pe-2" aria-hidden="true"></i> Nuevo
                                     </button>
                                 </div>
                             </div>
 
                             <div class="card-body">
-                                <div class="row mt-2" id="main-cards">
-
-                                    <div class="col-12 col-md-2 mb-4 mb-md-0">
-                                        <div class="card bg-gradient-dark text-center system-card">
-                                            <div class="card-body">
-                                                <div class="mb-2">
-                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-contable-sf.png" class="system-logo" alt="">
-                                                    <small><i class="fas fa-check-circle d-none"></i>CONTABLE</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-2 mb-4 mb-md-0">
-                                        <div class="card bg-gradient-dark text-center system-card">
-                                            <div class="card-body">
-                                                <div class="mb-2">
-                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-farmacia-sf.png" class="system-logo" alt="">
-                                                    <small><i class="fas fa-check-circle d-none"></i> FARMACIA</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-md-2 mb-4 mb-md-0">
-                                        <div class="card bg-gradient-dark text-center system-card">
-                                            <div class="card-body">
-                                                <div class="mb-2">
-                                                    <img src="<?= $ruta_local ?>assets/img/systems-logo/e-admin-sf.png" class="system-logo" alt="">
-                                                    <small>
-                                                        <i class="fas fa-check-circle d-none"></i>
-                                                        ADMINISTRCIÓN
-                                                    </small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div class="text-center align-content-center" id="div-loader">
+                                    <div class="spinner-border text-info" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div> Cargando...
                                 </div>
+
+                                <div class="row mt-2" id="main-cards"></div>
+
+                                <?php include './Views/modals/modal-add-rubro.php' ?>
+
                             </div>
                         </div>
                     </div>

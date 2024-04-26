@@ -16,12 +16,22 @@
                                 <small>Or sign in with credentials</small>
                             </div>-->
                             <form role="form" class="text-start">
-                                <div class="mb-3">
+
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text bg-transparent"><i class="ni ni-circle-08"></i></span>
+                                    <input class="form-control" id="usuario" name="usuario" placeholder="Usuario" type="text">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text bg-transparent"><i class="ni ni-key-25"></i></span>
+                                    <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+                                </div>
+
+                                <!--<div class="mb-3">
                                     <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario" aria-label="Usuario">
                                 </div>
                                 <div class="mb-3">
                                     <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Password">
-                                </div>
+                                </div>-->
                                 <!--<div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" id="rememberMe">
                                     <label class="form-check-label" for="rememberMe">Remember me</label>
