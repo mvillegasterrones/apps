@@ -12,9 +12,6 @@ const rubros = () => ({
             sw_alert.error(xhr, status, error)
         })
     },
-    get_list_sidebar: () => {
-
-    },
     get_list : () => {
         $.post( rubros_url, { action: action_get_list }, (response) => {
             let data = eval(response)
@@ -27,6 +24,7 @@ const rubros = () => ({
                                     <div class="mb-2">
                                         <h1><img src="${data[i].rubro_ruta_img}" class="system-logo" alt="ICON EMPRESA"></h1>
                                         <small class=""><i class="fas fa-check-circle d-none"></i>${data[i].rubro_name}</small>
+                                        <input type="hidden" id="txt-rubro-name-${i}" value="${data[i].rubro_name}">
                                     </div>
                                 </div>
                             </div>
@@ -48,6 +46,8 @@ const rubros = () => ({
                 $(".system-card i").removeClass("d-block").addClass("d-none")
                 $(this).addClass("item-selected")
                 $(this).find("i").removeClass("d-none").addClass("d-block")
+                let valor = $(this).find('input').val()
+                $('#navbar-rubro').html(valor)
                 sw_alert().basic('Seleccionado!')
             })
 

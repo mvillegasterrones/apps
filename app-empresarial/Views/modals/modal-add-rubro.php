@@ -24,8 +24,8 @@
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Descripción" aria-label="Descripcion" aria-describedby="descripcion-addon" id="rubro-descripcion" name="rubro-descripcion">
                             </div>
-                            <label>IMAGEN</label>
-                            <div class="input-group mb-3">
+                            <label class="d-none">IMAGEN</label>
+                            <div class="input-group mb-3 d-none">
                                 <input type="file" class="form-control" placeholder="Imagen" aria-label="Imagen" aria-describedby="imagen-addon" id="rubro-imagen" name="rubro-imagen">
                             </div>
                             <div class="text-center">

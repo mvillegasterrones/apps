@@ -41,26 +41,7 @@
                 </a>
 
                 <div class="collapse show" id="pagesExamples">
-                    <ul class="nav ms-4" id="sidebar-items-rubros">
-                        <!--<li class="nav-item">
-                            <a class="nav-link" href="javascript:;">
-                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-books"></i> </span>
-                                <span class="sidenav-normal"><i class="fa-duotone fa-books"></i> Contable </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:;">
-                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-user-doctor"></i> </span>
-                                <span class="sidenav-normal"><i class="fa-duotone fa-user-doctor"></i> Farmacia </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:;">
-                                <span class="sidenav-mini-icon"> <i class="fa-duotone fa-screwdriver-wrench"></i> </span>
-                                <span class="sidenav-normal"><i class="fa-duotone fa-screwdriver-wrench"></i> Administrativo </span>
-                            </a>
-                        </li>-->
-                    </ul>
+                    <ul class="nav ms-4" id="sidebar-items-rubros"></ul>
                 </div>
 
             </li>
