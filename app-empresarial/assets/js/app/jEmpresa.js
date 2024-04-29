@@ -1,9 +1,9 @@
 const empresa_url = './Controllers/cEmpresa.php'
-const action_get_list = 'get-list'
+const data_get_list = { action: 'get-list' }
 
 const empresa = () => ({
     get_list: () => {
-        $.post( empresa_url, { action: action_get_list }, (Response) => {
+        $.post( empresa_url, data_get_list, (Response) => {
             let data = eval(Response)
             let html = ''
             
