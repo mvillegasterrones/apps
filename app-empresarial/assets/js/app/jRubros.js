@@ -49,6 +49,7 @@ const rubros = () => ({
                 let valor = $(this).find('input').val()
                 $('#navbar-rubro').html(valor)
                 sw_alert().basic('Seleccionado!')
+                empresa().get_list(valor)
             })
 
         }).fail( (xhr, status, error) => {

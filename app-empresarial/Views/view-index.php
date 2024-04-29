@@ -79,6 +79,7 @@
                     </div>-->
 
                     <div class="col-12 col-lg-12">
+
                         <div class="card">
 
                             <div class="card-header d-flex align-items-center border-bottom py-3">
@@ -111,8 +112,14 @@
 
                             </div>
                         </div>
+
+                        <?php include './Views/main/main-empresa.php' ?>
+
+                        
                     </div>
                 </div>
+
+                
 
             </div>
         </div>

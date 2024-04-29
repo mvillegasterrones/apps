@@ -72,6 +72,7 @@
 <script src="<?= $rutal_local ?>assets/js/app/jSweet.js"></script>
 <script src="<?= $rutal_local ?>assets/js/app/jUser.js"></script>
 <script src="<?= $rutal_local ?>assets/js/app/jRubros.js"></script>
+<script src="<?= $rutal_local ?>assets/js/app/jEmpresa.js"></script>
 <script src="<?= $rutal_local ?>assets/js/app/app.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/argon-dashboard.min.js?v=2.0.5"></script>
