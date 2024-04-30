@@ -7,8 +7,10 @@ const empresa = () => ({
             let data = eval(Response)
             let html = ''
             for (let i = 0; i < data.length; i++) {
-                let est_sys = (data[i].emp_estado_sys === '1') ? 'warning' : 'success'
-                html += `<li class="list-group-item px-0">
+                let est_sys  = (data[i].emp_estado_sys === '1') ? 'warning' : 'success'
+                let est_sys2 = (data[i].emp_estado_sys === '1') ? 'outline-warning' : 'success'
+                let est_col  = (data[i].emp_estado_sys === '2') ? 'item-selected-table' : ''
+                html += `<li class="list-group-item px-0 ${est_col}">
                             <div class="row align-items-center">
                                 <div class="col-auto d-flex align-items-center">
                                     <a href="javascript:;" class="avatar">
@@ -16,19 +18,43 @@ const empresa = () => ({
                                     </a>
                                 </div>
                                 <div class="col ml-2">
-                                    <h6 class="mb-0 text-uppercase">
-                                        <a href="javascript:;">${data[i].emp_ruc + ' - ' + data[i].emp_razon_social}</a>
+                                    <h6 class="h6 mb-0 text-uppercase">
+                                        <a href="javascript:;" class="item-selected-table">${data[i].emp_ruc + ' - ' + data[i].emp_razon_social}</a>
                                     </h6>
-                                    <span class="">${data[i].emp_dpto+' / '+data[i].emp_provincia+' / '+data[i].emp_distrito}</span>
+                                    <span>${data[i].emp_dpto+' / '+data[i].emp_provincia+' / '+data[i].emp_distrito}</span>
                                     <span class="badge badge-${est_sys} badge-sm">Online</span>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="button" class="btn btn-outline-primary btn-xs mb-0">Add</button>
+                                    <button type="button" class="btn btn-${est_sys2} btn-xs mb-0" onclick="empresa().set_status(${data[i].idEmpresa}, '${data[i].emp_razon_social}')"><i class="fas fa-check"></i></button>
                                 </div>
                             </div>
                         </li>`
             }
             $('#list-empresas').html(html)
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+        })
+    },
+    set_status: (id, nombre_col) => {
+        let data_send = { action: 'set-status', idEmpresa : id }
+        let rubro     = $('#navbar-rubro').text()
+        $.post( empresa_url, data_send, (response) => {
+            empresa().get_list(rubro)
+            $('#navbar-empresa').html(nombre_col)
+            sw_alert().ok(nombre_col)
+
+        }).fail( (xhr, status, error) =>{
+            console.error(xhr, status, error)
+        })
+    },
+    get_active: () => {
+        let data_send = { action: 'get-active' }
+        $.post( empresa_url, data_send, (response) => {
+            let data = eval(response)
+            for (let i = 0; i < data.length; i++) {
+                $('#navbar-rubro').html(data[i].rubro_name)
+                $('#navbar-empresa').html(data[i].emp_razon_social)
+            }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
         })

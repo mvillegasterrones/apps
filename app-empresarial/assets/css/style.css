@@ -24,6 +24,15 @@
   z-index: 1; /* Asegura que el icono esté por encima del contenido de la tarjeta */
 }
 
+.item-selected-table {
+  color: #14f195 !important;
+}
+
+.icon-navegator:hover {
+  cursor: pointer;
+  color: #ffd300 !important;
+}
+
 .system-logo {
   width: 50%;
   height: auto;

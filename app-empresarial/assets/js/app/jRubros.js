@@ -50,6 +50,10 @@ const rubros = () => ({
                 $('#navbar-rubro').html(valor)
                 sw_alert().basic('Seleccionado!')
                 empresa().get_list(valor)
+
+                $('#section-rubros').addClass('d-none')
+                $('#section-empresas').removeClass('d-none')
+                $('#section-empresas').addClass('d-block')
             })
 
         }).fail( (xhr, status, error) => {

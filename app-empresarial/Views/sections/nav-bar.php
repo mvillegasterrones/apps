@@ -14,7 +14,7 @@
                     -
                 </li>
             </ol>
-            <h6 class="font-weight-bolder mb-0 text-white" id="navbar-empresa">Sel.Empresa</h6>
+            <h6 class="font-weight-bolder mb-0 text-white" id="navbar-empresa">-</h6>
         </nav>
         <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none">
             <a href="javascript:;" class="nav-link p-0">

@@ -31,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="rubros().get_list()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();

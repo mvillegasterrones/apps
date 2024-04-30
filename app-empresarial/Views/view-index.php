@@ -80,7 +80,7 @@
 
                     <div class="col-12 col-lg-12">
 
-                        <div class="card">
+                        <div class="card" id="section-rubros">
 
                             <div class="card-header d-flex align-items-center border-bottom py-3">
                                 <div class="d-flex align-items-center">
@@ -113,7 +113,9 @@
                             </div>
                         </div>
 
-                        <?php include './Views/main/main-empresa.php' ?>
+                        <div class="row d-none" id="section-empresas">
+                            <?php include './Views/main/main-empresa.php' ?>
+                        </div>
 
                         
                     </div>

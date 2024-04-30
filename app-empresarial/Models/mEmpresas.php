@@ -9,9 +9,22 @@ class mEmpresas
         $this->conexion->conectar();
     }
 
-    /*function set_rubro($id, $rubro_icono, $rubro_name, $rurbo_descripcion, $rubro_imagen)
+	function get_active()
+    {
+        $sql = "CALL sp_v1_get_active_empresa()";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
+    function set_status($id)
 	{
-		$sql = "CALL sp_v1_set_rubro($id, '$rubro_icono', '$rubro_name', '$rurbo_descripcion', '$rubro_imagen')";
+		$sql = "CALL sp_v1_activate_empresa($id)";
 		$this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
@@ -20,7 +33,7 @@ class mEmpresas
 			$this->conexion->cerrar();
 			return false;
 		}
-	}*/
+	}
 
     function empresas_get_list($nameRubro)
     {

@@ -1,34 +1,35 @@
-<div class="row mt-4">
+<div class="row mt-0">
     <div class="col-lg-8 col-md-6 mb-4 mb-lg-0">
         <div class="card h-100 ">
-            <div class="card-header">
-                <h5 class="mb-0 text-capitalize">Empresas</h5>
+
+
+
+            <div class="card-header pb-0 p-3">
+                <div class="row">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <h6 class="mb-0">Profile Information</h6>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <a href="javascript:;">
+                            <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-hidden="true" aria-label="Edit Profile"></i><span class="sr-only">Edit Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-header text-uppercase">
+                <h6 class="mb-0"><i class="fa-duotone fa-arrow-left icon-navegator" onclick="pg_body().on_show_hide('section-empresas', 'section-rubros')"></i> Lista de Empresas Registradas</h6>
+
+
             </div>
             <div class="card-body pt-0">
                 <ul class="list-group list-group-flush" id="list-empresas">
-                    <!--<li class="list-group-item px-0">
-                        <div class="row align-items-center">
-                            <div class="col-auto d-flex align-items-center">
-                                <a href="javascript:;" class="avatar">
-                                    <img class="border-radius-lg" alt="Image placeholder" src="<?= $ruta_local ?>assets/img/team-1.jpg">
-                                </a>
-                            </div>
-                            <div class="col ml-2">
-                                <h6 class="mb-0">
-                                    <a href="javascript:;">20380795907 - PROGRAMA EDUCACION BASICA PARA TODOS</a>
-                                </h6>
-                                <span class="badge badge-success badge-sm">Online</span>
-                            </div>
-                            <div class="col-auto">
-                                <button type="button" class="btn btn-outline-primary btn-xs mb-0"><i class="fas fa-check"></i></button>
-                            </div>
-                        </div>
-                    </li>-->
                 </ul>
             </div>
         </div>
     </div>
-    
+
     <div class="col-md-4">
         <div class="card">
             <div class="card-header pb-0 p-3">
@@ -98,4 +99,3 @@
     </div>
 
 </div>
-
