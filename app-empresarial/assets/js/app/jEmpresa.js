@@ -40,6 +40,7 @@ const empresa = () => ({
         let rubro     = $('#navbar-rubro').text()
         $.post( empresa_url, data_send, (response) => {
             empresa().get_list(rubro)
+            empresa().get_active()
             $('#navbar-empresa').html(nombre_col)
             sw_alert().ok(nombre_col)
 
@@ -54,6 +55,12 @@ const empresa = () => ({
             for (let i = 0; i < data.length; i++) {
                 $('#navbar-rubro').html(data[i].rubro_name)
                 $('#navbar-empresa').html(data[i].emp_razon_social)
+                $('#empresa-activa #datos-rubro').html(data[i].rubro_name)
+                $('#empresa-activa #datos-empresa').html(data[i].emp_ruc + ' - ' + data[i].emp_razon_social)
+                $('#empresa-activa #datos-direccion').html(data[i].emp_direccion)
+                $('#empresa-activa #datos-ubicacion').html(data[i].emp_dpto +' / '+data[i].emp_provincia+' / '+data[i].emp_distrito)
+                $('#empresa-activa #datos-estado').html(data[i].emp_estado)
+                $('#empresa-activa #datos-condicion').html(data[i].emp_condicion)
             }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
