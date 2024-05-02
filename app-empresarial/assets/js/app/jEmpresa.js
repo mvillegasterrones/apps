@@ -13,8 +13,10 @@ const empresa = () => ({
                     console.log('response: ' + response)
                     if (response === 'true') {
                         Swal.fire("Registro exitoso!", "", "success");
+                    } else if (response === '0') {
+                        sw_alert().warning('Empresa ya se encuentra registrada')
                     } else {
-                        sw_alert().warning('Ocurrió un inconceniente al registrar empresa')
+                        sw_alert().warning('Ocurrió un problema en el servidor')
                     }
                 }).fail( (xhr, status, error) => {
                     sw_alert().error(xhr, status, error)
