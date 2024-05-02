@@ -13,7 +13,7 @@ const sw_alert = () => ({
             icon: 'success',
             title: texto,
             showConfirmButton: false,
-            timer: 500
+            timer: 1000
         })
     },
     bienvenido: () => {

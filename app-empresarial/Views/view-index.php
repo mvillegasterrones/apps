@@ -108,7 +108,7 @@
 
                                 <div class="row mt-2" id="main-cards"></div>
 
-                                <?php include './Views/modals/modal-add-rubro.php' ?>
+                                <?php include './Views/modals/modal-rubro.php' ?>
 
                             </div>
                         </div>
@@ -116,12 +116,9 @@
                         <div class="row d-none" id="section-empresas">
                             <?php include './Views/main/main-empresa.php' ?>
                         </div>
-
                         
                     </div>
                 </div>
-
-                
 
             </div>
         </div>

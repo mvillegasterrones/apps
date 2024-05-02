@@ -123,14 +123,16 @@ select.noFocus option {
 }
 
 input[readonly] {
-  background-color: #ffffde !important;
-  color: #56728c !important;
+  /*background-color: #ffffde !important;
+  color: #56728c !important;*/
+  background-color: #647F9C !important;
+  color: white !important;
 }
 
 *[disabled],
 *[disabled]:hover {
   color: #9a9686 !important;
-  background-color: #fcfcfb !important;
+  background-color: #525f7f !important;
   border-color: #b2b2b2 !important;
 }
 button[disabled] s {
@@ -177,4 +179,6 @@ button.btnImg {
   height: 25px;
 }
 
-
+.modal label {
+  color: #b9e0f2 !important;
+}

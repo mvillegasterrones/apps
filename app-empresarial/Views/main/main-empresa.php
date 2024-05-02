@@ -10,7 +10,7 @@
                     </div>
                     <div class="col-md-4 text-end">
                         <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick="pg_body().on_show_hide('section-empresas', 'section-rubros')"><i class="fa-regular fa-arrow-left"></i></button>
-                        <button type="button" class="btn btn-xs btn-outline-primary mb-0"><i class="fa-regular fa-plus"></i></button>
+                        <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-empresa"><i class="fa-regular fa-plus"></i></button>
                     </div>
                 </div>
             </div>
@@ -99,4 +99,6 @@
             </div>
         </div>
     </div>
+
+    <?php include './Views/modals/modal-empresa.php' ?>
 </div>
