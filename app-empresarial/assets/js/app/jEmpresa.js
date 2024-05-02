@@ -1,6 +1,31 @@
-const empresa_url = './Controllers/cEmpresas.php'
-
 const empresa = () => ({
+    save: () => {
+        Swal.fire({
+            title: "Desea guardar los cambios?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Si",
+            denyButtonText: `No`
+        }).then((result) => {
+            if (result.isConfirmed) {
+                //sw_alert().ok('ok','this ok')
+                $.post( empresa_url, empresa_form_send, (response) => {
+                    console.log('response: ' + response)
+                    if (response === 'true') {
+                        Swal.fire("Registro exitoso!", "", "success");
+                    } else {
+                        sw_alert().warning('Ocurrió un inconceniente al registrar empresa')
+                    }
+                }).fail( (xhr, status, error) => {
+                    sw_alert().error(xhr, status, error)
+                })
+                
+            } else if (result.isDenied) {
+                console.log('No se registra la empresa')
+                //Swal.fire("Changes are not saved", "", "info");
+            }
+        })
+    },
     get_list: (name_rubro) => {
         let data_send = { action: 'empresas-get-list', nameRubro: name_rubro }
         $.post( empresa_url, data_send, (Response) => {

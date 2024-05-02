@@ -5,7 +5,7 @@
             <div class="modal-body p-0">
                 <div class="card card-plain">
                     <div class="card-header pb-0 text-left">
-                        <h3 class="font-weight-bolder text-primary text-gradient">Registrar Empresa</h3>
+                        <h3 class="font-weight-bolder text-primary text-gradient">Registrar Entidad Pública</h3>
                         <p class="mb-0 d-none" id="spin-buscando"><i class="fa-duotone fa-spinner-third fa-spin"></i> Buscando...</p>
                         <p class="mb-0 d-none" id="spin-ok"><i class="fa-solid fa-check-circle text-success"></i> Consulta realizada</p>
                     </div>
@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="text-center">
-                                <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-100 mt-4 mb-0" onclick=""><i class="fa-duotone fa-save"></i> Registrar</button>
+                                <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-100 mt-4 mb-0" id="btn-save"><i class="fa-duotone fa-save"></i> Registrar</button>
                             </div>
                         </form>
                     </div>

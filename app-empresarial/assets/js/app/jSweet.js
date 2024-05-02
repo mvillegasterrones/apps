@@ -45,5 +45,12 @@ const sw_alert = () => ({
             title: "Oops...",
             text: texto
         })
+    },
+    warning: (texto) => {
+        Swal.fire({
+            icon: "warning",
+            title: "Atención!",
+            text: texto
+        })
     }
 })

@@ -15,15 +15,24 @@ const pg_body = () => ({
 const sunat = () => ({
     search: (ruc) => {
         let data      = { action: 'getnumero', numero: ruc }
+        let form      = $('#form-empresa')
         let buscando  = $('#modal-form-empresa #spin-buscando')
         let realizado = $('#modal-form-empresa #spin-ok')
 
         realizado.removeClass('d-block').addClass('d-none')
         buscando.removeClass('d-none').addClass('d-block')
 
-        $.post( url_sunat, data, (response) =>{
-            let datos = JSON.parse(response)
-            if (!datos.error) { //(datos.rs !== null || datos.rs !== undefined) {
+        $.ajax({
+            url: url_sunat,
+            type: 'POST',
+            dataType: 'json',
+            data: data,
+        }).done( (response) => {
+            let datos =eval(response)
+            if (datos.rs === null || datos.rs === undefined) {
+                form[0].reset()
+                sw_alert().warning(datos.error)
+            } else {
                 $('#form-empresa #emp_razon_social').val(datos.rs)
                 $('#form-empresa #emp_direccion').val(datos.direccion_string)
                 $('#form-empresa #emp_dpto').val(datos.departamento.nombre)
@@ -33,14 +42,11 @@ const sunat = () => ({
                 $('#form-empresa #emp_estado').val(datos.estado)
                 $('#form-empresa #emp_condicion').val(datos.condom)
                 sw_alert().basic_success('Encontrado: ' + datos.rs)
-            } else {
-                let msj = datos.error + ' en SUNAT!'
-                sw_alert().error(msj)
             }
             realizado.removeClass('d-none').addClass('d-block')
             buscando.removeClass('d-block').addClass('d-none')
-        }).fail( (xhr, status, error) =>{
-            sw_alert().error(xhr, status, error)
+        }).fail( (xhr, status, error) => {
+            sw_alert().error( xhr, status, error )
         })
     }
 })
