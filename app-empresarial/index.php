@@ -66,10 +66,10 @@
     }
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
 <!--<script async defer src="https://buttons.github.io/buttons.js"></script>-->
-<script async defer src="<?= $rutal_local ?>assets/js/github.buttons.js"></script>
+<script src="<?= $rutal_local ?>assets/js/jquery-3.6.0.min.js"></script>
+<script src="<?= $rutal_local ?>assets/js/github.buttons.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/app/jGlobal-vars.js"></script>
 <script src="<?= $rutal_local ?>assets/js/app/jSweet.js"></script>
