@@ -1,8 +1,8 @@
 <!-- 
-    TODO link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
-    TODO FA git: https://github.com/eliyantosarage/font-awesome-pro
-    TODO SweetAlert: https://sweetalert2.github.io/#download
-    TODO link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
+    // TODO link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
+    // TODO FA git: https://github.com/eliyantosarage/font-awesome-pro
+    // TODO SweetAlert: https://sweetalert2.github.io/#download
+    // TODO link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
 -->
 <?php include './includes.php' ?>
 <!DOCTYPE html>

@@ -24,7 +24,7 @@ class mRubros
 
     function rubros_get_list()
     {
-        $sql = "SELECT * FROM tbl_rubros";
+        $sql = "CALL get_rubros_list()";
         $this->conexion->conexion->set_charset('utf8');
 		$resultados = $this->conexion->conexion->query($sql);
 		$arreglo    = array();

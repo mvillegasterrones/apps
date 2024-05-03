@@ -18,14 +18,19 @@ const rubros = () => ({
             let html = ''
             let html2= ''
             for (let i = 0; i < data.length; i++) {
+                let color_bdg = (data[i].tEmpresas > 0) ? 'info' : 'warning'
                 html += `<div class="col-12 col-md-2 mb-4 mb-md-0">
                             <div class="card bg-gradient-dark text-center system-card " data-bs-toggle="tooltip" data-bs-placement="top" title="${data[i].rubro_descripcion}" data-container="body" data-animation="true">
                                 <div class="card-body">
                                     <div class="mb-2">
-                                        <h1><img src="${data[i].rubro_ruta_img}" class="system-logo" alt="ICON EMPRESA"></h1>
+                                        <h1>
+                                        <img src="${data[i].rubro_ruta_img}" class="system-logo" alt="ICON EMPRESA">
+                                        
+                                        </h1>
                                         <small class=""><i class="fas fa-check-circle d-none"></i>${data[i].rubro_name}</small>
                                         <input type="hidden" id="txt-rubro-name-${i}" value="${data[i].rubro_name}">
                                     </div>
+                                    <span class="badge badge-md badge-circle badge-floating badge-${color_bdg} border-white">${data[i].tEmpresas}</span>
                                 </div>
                             </div>
                         </div>`
