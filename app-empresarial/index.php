@@ -33,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-hidden dark-version bg-gray-600" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();
@@ -57,7 +57,6 @@
 <script src="<?= $rutal_local ?>assets/js/plugins/nouislider.min.js"></script>
 
 <script>
-
     let win = navigator.platform.indexOf("Win") > -1
     if (win && document.querySelector("#sidenav-scrollbar")) {
         let options = {
@@ -69,7 +68,8 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--<script async defer src="https://buttons.github.io/buttons.js"></script>-->
+<script async defer src="<?= $rutal_local ?>assets/js/github.buttons.js"></script>
 
 <script src="<?= $rutal_local ?>assets/js/app/jGlobal-vars.js"></script>
 <script src="<?= $rutal_local ?>assets/js/app/jSweet.js"></script>
