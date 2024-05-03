@@ -1,0 +1,3 @@
+const inst_educativa = () => ({
+    
+})
