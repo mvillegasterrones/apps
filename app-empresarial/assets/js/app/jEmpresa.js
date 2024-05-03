@@ -1,6 +1,7 @@
 const empresa = () => ({
     save: () => {
         Swal.fire({
+            icon: 'question',
             title: "Desea guardar los cambios?",
             showDenyButton: true,
             showCancelButton: false,
@@ -8,16 +9,16 @@ const empresa = () => ({
             denyButtonText: `No`
         }).then((result) => {
             if (result.isConfirmed) {
-                //sw_alert().ok('ok','this ok')
-                $.post( empresa_url, empresa_form_send, (response) => {
+                $.post( empresa_url, empresa_form_send.serialize(), (response) => {
                     console.log('response: ' + response)
                     if (response === 'true') {
                         Swal.fire("Registro exitoso!", "", "success");
                     } else if (response === '0') {
-                        sw_alert().warning('Empresa ya se encuentra registrada')
+                        sw_alert().warning('El RUC: '+ $(empresa_form_txt + ' #emp_ruc').val() +' ya se encuentra registrado')
                     } else {
                         sw_alert().warning('Ocurrió un problema en el servidor')
                     }
+                    empresa().get_list($(empresa_form_txt + ' #emp_rubro').val())
                 }).fail( (xhr, status, error) => {
                     sw_alert().error(xhr, status, error)
                 })

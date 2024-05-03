@@ -7,6 +7,7 @@ switch ($accion) {
     case 'set-empresa':
         $id               = $_POST['id'];
         $action           = $_POST['action'];
+        $emp_rubro        = $_POST['emp_rubro'];
         $emp_ruc          = $_POST['emp_ruc'];
         $emp_razon_social = $_POST['emp_razon_social'];
         $emp_direccion    = $_POST['emp_direccion'];
@@ -16,7 +17,7 @@ switch ($accion) {
         $emp_ubigeo       = $_POST['emp_ubigeo'];
         $emp_condicion    = $_POST['emp_condicion'];
         $emp_estado       = $_POST['emp_estado'];
-        $ejecutar = $instancia->set_empresa($emp_ruc, $emp_razon_social, $emp_direccion, $emp_dpto, $emp_provincia, $emp_distrito, $emp_ubigeo, $emp_condicion, $emp_estado);
+        $ejecutar = $instancia->set_empresa($emp_rubro, $emp_ruc, $emp_razon_social, $emp_direccion, $emp_dpto, $emp_provincia, $emp_distrito, $emp_ubigeo, $emp_condicion, $emp_estado);
         echo json_encode($ejecutar);
         break;
     case 'get-active':

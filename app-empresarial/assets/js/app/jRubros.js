@@ -48,6 +48,7 @@ const rubros = () => ({
                 $(this).find("i").removeClass("d-none").addClass("d-block")
                 let valor = $(this).find('input').val()
                 $('#navbar-rubro').html(valor)
+                $('#modal-form-empresa #form-empresa #emp_rubro').val(valor)
                 sw_alert().basic('Seleccionado!')
                 empresa().get_list(valor)
 

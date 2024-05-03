@@ -9,9 +9,9 @@ class mEmpresas
         $this->conexion->conectar();
     }
 
-	function set_empresa($emp_ruc, $emp_razon_social, $emp_direccion, $emp_dpto, $emp_provincia, $emp_distrito, $emp_ubigeo, $emp_condicion, $emp_estado)
+	function set_empresa($emp_rubro,$emp_ruc, $emp_razon_social, $emp_direccion, $emp_dpto, $emp_provincia, $emp_distrito, $emp_ubigeo, $emp_condicion, $emp_estado)
 	{
-		$sql = "CALL sp_v1_save_empresa('$emp_ruc', '$emp_razon_social', '$emp_direccion', '$emp_dpto', '$emp_provincia', '$emp_distrito', '$emp_ubigeo', '$emp_condicion', '$emp_estado')";
+		$sql = "CALL sp_v1_save_empresa('$emp_rubro', '$emp_ruc', '$emp_razon_social', '$emp_direccion', '$emp_dpto', '$emp_provincia', '$emp_distrito', '$emp_ubigeo', '$emp_condicion', '$emp_estado')";
 		$this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 

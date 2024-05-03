@@ -14,6 +14,7 @@
 
                             <input type="hidden" id="id" name="id" value="0">
                             <input type="hidden" id="action" name="action" value="set-empresa">
+                            <input type="hidden" id="emp_rubro" name="emp_rubro" value="">
 
                             <div class="row">
                                 <div class="col-12 col-lg-3">
