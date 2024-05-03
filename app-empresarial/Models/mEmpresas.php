@@ -15,13 +15,13 @@ class mEmpresas
 		$this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 
-			// Verificar si hay filas afectadas
+			// * Verificar si hay filas afectadas
 			if ($this->conexion->conexion->affected_rows > 0) {
 				$this->conexion->cerrar();
-				return true; // Hay filas afectadas, la consulta se ejecutó correctamente
+				return true; // * Hay filas afectadas, la consulta se ejecutó correctamente
 			} else {
 				$this->conexion->cerrar();
-				return 0; // No hay filas afectadas, la consulta no tuvo efecto
+				return 0; // * No hay filas afectadas, la consulta no tuvo efecto
 			}
 
 			//$this->conexion->cerrar();

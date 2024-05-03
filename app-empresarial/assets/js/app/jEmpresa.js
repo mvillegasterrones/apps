@@ -1,33 +1,37 @@
 const empresa = () => ({
     save: () => {
-        Swal.fire({
-            icon: 'question',
-            title: "Desea guardar los cambios?",
-            showDenyButton: true,
-            showCancelButton: false,
-            confirmButtonText: "Si",
-            denyButtonText: `No`
-        }).then((result) => {
-            if (result.isConfirmed) {
-                $.post( empresa_url, empresa_form_send.serialize(), (response) => {
-                    console.log('response: ' + response)
-                    if (response === 'true') {
-                        Swal.fire("Registro exitoso!", "", "success");
-                    } else if (response === '0') {
-                        sw_alert().warning('El RUC: '+ $(empresa_form_txt + ' #emp_ruc').val() +' ya se encuentra registrado')
-                    } else {
-                        sw_alert().warning('Ocurrió un problema en el servidor')
-                    }
-                    empresa().get_list($(empresa_form_txt + ' #emp_rubro').val())
-                }).fail( (xhr, status, error) => {
-                    sw_alert().error(xhr, status, error)
-                })
-                
-            } else if (result.isDenied) {
-                console.log('No se registra la empresa')
-                //Swal.fire("Changes are not saved", "", "info");
-            }
-        })
+        if ($(empresa_form_txt + ' #emp_ruc').val() !== '' && $(empresa_form_txt + ' #emp_razon_social').val() !== '-') {
+            Swal.fire({
+                icon: 'question',
+                title: "Desea guardar los cambios?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Si",
+                denyButtonText: `No`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.post( empresa_url, empresa_form_send.serialize(), (response) => {
+                        console.log('response: ' + response)
+                        if (response === 'true') {
+                            Swal.fire("Registro exitoso!", "", "success");
+                        } else if (response === '0') {
+                            sw_alert().warning('El RUC: '+ $(empresa_form_txt + ' #emp_ruc').val() +' ya se encuentra registrado')
+                        } else {
+                            sw_alert().warning('Ocurrió un problema en el servidor')
+                        }
+                        empresa().get_list($(empresa_form_txt + ' #emp_rubro').val())
+                    }).fail( (xhr, status, error) => {
+                        sw_alert().error(xhr, status, error)
+                    })
+                    
+                } else if (result.isDenied) {
+                    console.log('No se registra la empresa')
+                    //Swal.fire("Changes are not saved", "", "info");
+                }
+            })
+        } else {
+            sw_alert().warning('Todos los campos son obligatorios!')
+        }
     },
     get_list: (name_rubro) => {
         let data_send = { action: 'empresas-get-list', nameRubro: name_rubro }
