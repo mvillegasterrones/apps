@@ -24,10 +24,9 @@ const rubros = () => ({
                                 <div class="card-body">
                                     <div class="mb-2">
                                         <h1>
-                                        <img src="${data[i].rubro_ruta_img}" class="system-logo" alt="ICON EMPRESA">
-                                        
+                                            <img src="${data[i].rubro_ruta_img}" class="system-logo" alt="ICON EMPRESA">
                                         </h1>
-                                        <small class=""><i class="fas fa-check-circle d-none"></i>${data[i].rubro_name}</small>
+                                        <small><i class="fas fa-check-circle d-none"></i>${data[i].rubro_name}</small>
                                         <input type="hidden" id="txt-rubro-name-${i}" value="${data[i].rubro_name}">
                                     </div>
                                     <span class="badge badge-md badge-circle badge-floating badge-${color_bdg} border-white">${data[i].tEmpresas}</span>

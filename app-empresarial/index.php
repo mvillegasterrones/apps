@@ -1,8 +1,8 @@
 <!-- 
-    // TODO link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
-    // TODO FA git: https://github.com/eliyantosarage/font-awesome-pro
-    // TODO SweetAlert: https://sweetalert2.github.io/#download
-    // TODO link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
+    // TODO: link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
+    // TODO: FA git: https://github.com/eliyantosarage/font-awesome-pro
+    // TODO: SweetAlert: https://sweetalert2.github.io/#download
+    // TODO: link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
 -->
 <?php include './includes.php' ?>
 <!DOCTYPE html>
@@ -15,14 +15,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
-    <!-- !<link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">-->
+    <!--// TODO: <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">-->
 
     <link rel="stylesheet" href="../../font-awesome-pro/fontawesome-pro-6.5.1-web/css/all.css">
 
     <link href="<?= $rutal_local ?>assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
 
-    <!--<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>-->
+    <!-- // TODO: <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>-->
     <script src="<?= $rutal_local ?>assets/js/42d5adcbca.js"></script>
     <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
 
@@ -66,8 +66,8 @@
     }
 </script>
 
-<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
-<!--<script async defer src="https://buttons.github.io/buttons.js"></script>-->
+<!-- // TODO: <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!-- // TODO: <script async defer src="https://buttons.github.io/buttons.js"></script>-->
 <script src="<?= $rutal_local ?>assets/js/jquery-3.6.0.min.js"></script>
 <script src="<?= $rutal_local ?>assets/js/github.buttons.js"></script>
 
