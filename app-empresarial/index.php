@@ -6,7 +6,7 @@
 -->
 <?php include './includes.php' ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -19,21 +19,22 @@
 
     <link rel="stylesheet" href="../../font-awesome-pro/fontawesome-pro-6.5.1-web/css/all.css">
 
-    <link href="<?= $rutal_local ?>assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
 
     <!-- // TODO: <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>-->
-    <script src="<?= $rutal_local ?>assets/js/42d5adcbca.js"></script>
-    <link href="<?= $rutal_local ?>assets/css/nucleo-svg.css" rel="stylesheet" />
+    <script src="./assets/js/42d5adcbca.js"></script>
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
 
-    <link id="pagestyle" href="<?= $rutal_local ?>assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
+    <link id="pagestyle" href="./assets/css/argon-dashboard.min.css?v=2.0.5" rel="stylesheet" />
 
-    <link id="pagestyle" href="<?= $rutal_local ?>assets/css/style.css" rel="stylesheet" />
+    <link id="pagestyle" href="./assets/css/style.css" rel="stylesheet" />
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--// TODO <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
+    <script src="./assets/js/plugins/sweetalert2.js"></script>
 </head>
 
-<body class="g-sidenav-hidden dark-version bg-gray-600" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();
@@ -46,15 +47,15 @@
 
 </body>
 
-<script src="<?= $rutal_local ?>assets/js/core/popper.min.js"></script>
-<script src="<?= $rutal_local ?>assets/js/core/bootstrap.min.js"></script>
-<script src="<?= $rutal_local ?>assets/js/plugins/perfect-scrollbar.min.js"></script>
-<script src="<?= $rutal_local ?>assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="./assets/js/core/popper.min.js"></script>
+<script src="./assets/js/core/bootstrap.min.js"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
 
-<script src="<?= $rutal_local ?>assets/js/plugins/dragula/dragula.min.js"></script>
-<script src="<?= $rutal_local ?>assets/js/plugins/jkanban/jkanban.js"></script>
-<script src="<?= $rutal_local ?>assets/js/plugins/leaflet.js"></script>
-<script src="<?= $rutal_local ?>assets/js/plugins/nouislider.min.js"></script>
+<script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+<script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+<script src="./assets/js/plugins/leaflet.js"></script>
+<script src="./assets/js/plugins/nouislider.min.js"></script>
 
 <script>
     let win = navigator.platform.indexOf("Win") > -1
@@ -68,18 +69,17 @@
 
 <!-- // TODO: <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
 <!-- // TODO: <script async defer src="https://buttons.github.io/buttons.js"></script>-->
-<script src="<?= $rutal_local ?>assets/js/jquery-3.6.0.min.js"></script>
-<script src="<?= $rutal_local ?>assets/js/github.buttons.js"></script>
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/github.buttons.js"></script>
 
-<script src="<?= $rutal_local ?>assets/js/app/jGlobal-vars.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/jSweet.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/jUser.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/jRubros.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/jEmpresa.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/jButton-actions.js"></script>
-<script src="<?= $rutal_local ?>assets/js/app/app.js"></script>
+<script src="./assets/js/app/jGlobal-vars.js"></script>
+<script src="./assets/js/app/jSweet.js"></script>
+<script src="./assets/js/app/jUser.js"></script>
+<script src="./assets/js/app/jRubros.js"></script>
+<script src="./assets/js/app/jEmpresa.js"></script>
+<script src="./assets/js/app/jButton-actions.js"></script>
+<script src="./assets/js/app/app.js"></script>
 
-<script src="<?= $rutal_local ?>assets/js/argon-dashboard.min.js?v=2.0.5"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"874f2a46ce0b9aef","version":"2024.3.0","token":"1b7cbb72744b40c580f8633c6b62637e"}' crossorigin="anonymous"></script>
+<script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 
 </html>
