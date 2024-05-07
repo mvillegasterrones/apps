@@ -38,11 +38,11 @@
 
     <?php
     session_start();
-    //if (isset($_SESSION['acceso']) && $_SESSION['acceso'] == 'YES') {
-    //    include './Views/view-index.php';
-    //} else {
+    if (isset($_SESSION['acceso']) && $_SESSION['acceso'] == 'YES') {
+        include './Views/view-index.php';
+    } else {
         include './Views/view-login.php';
-    //}
+    }
     ?>
 
 </body>

@@ -18,8 +18,9 @@ switch ($accion) {
             echo '0';
         } else {
             $_SESSION['acceso']         = 'YES';
-            /*$_SESSION['user_c_rol']     = ($array['user_rol'] == 'ADMIN') ? 'primary' : 'warning';
-            $_SESSION['user_rol']       = $array['user_rol'];
+            $_SESSION['cod_mod']     = ($array['cod_mod']);
+            $_SESSION['nombre_ie']     = ($array['nombre_ie']);
+            /*$_SESSION['user_rol']       = $array['user_rol'];
             $_SESSION['user_datos']     = $array['user_apellidos'].', '.$array['user_nombres'];
             $_SESSION['user_apellidos'] = $array['user_apellidos'];
             $_SESSION['user_nombres']   = $array['user_nombres'];

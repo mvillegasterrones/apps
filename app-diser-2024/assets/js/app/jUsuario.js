@@ -13,14 +13,14 @@ const user = () => ({
     },
     set_logout: () => {
         let params = { action: 'set-logout' }
-        $.post( url, params, () =>{
+        $.post( login_url, params, () =>{
             location.reload()
         })
     },
     get_users_list: () => {
         let params = { action: 'get-users-list' }
         let html
-        $.post( url, params, (response) => {
+        $.post( login_url, params, (response) => {
             let data = eval(response)
             for (let i = 0; i < data.length; i++) {
                 let estado  = (data[i].user_estado === '1') ? 'success' : 'danger'
