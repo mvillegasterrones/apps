@@ -18,8 +18,9 @@ switch ($accion) {
             echo '0';
         } else {
             $_SESSION['acceso']         = 'YES';
-            $_SESSION['cod_mod']     = ($array['cod_mod']);
-            $_SESSION['nombre_ie']     = ($array['nombre_ie']);
+            $_SESSION['cod_mod']     = $array['cod_mod'];
+            $_SESSION['nombre_ie']     = $array['nombre_ie'];
+            $_SESSION['ubicacion']     = ($array['d_dpto'].' / '.$array['d_prov'].' / '.$array['d_dist']);
             /*$_SESSION['user_rol']       = $array['user_rol'];
             $_SESSION['user_datos']     = $array['user_apellidos'].', '.$array['user_nombres'];
             $_SESSION['user_apellidos'] = $array['user_apellidos'];
