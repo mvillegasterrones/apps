@@ -5,7 +5,7 @@
 <main class="main-content position-relative border-radius-lg">
     <?php include './views/sections/nav-bar.php' ?>
 
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4" id="view-main">
         <!-- // TODO: Información de la IE -->
         <div class="row mt-4">
             <div class="col-12">
@@ -23,21 +23,21 @@
                                     <div class="">
                                         <h6 class="mb-0 text-body opacity-7">C.MODULAR</h6>
                                         <h3 class="text-body">
-                                            <?= $_SESSION['cod_mod'] ?> 
+                                            <?= $_SESSION['cod_mod'] ?>
                                             <!--<small class="text-sm align-top">Km</small>-->
                                         </h3>
                                     </div>
                                     <div class="ms-lg-3 ms-4 text-center">
                                         <h6 class="mb-0 text-body opacity-7">ANEXO</h6>
                                         <h3 class="text-body">
-                                        <?= $_SESSION['anexo'] ?>  
+                                            <?= $_SESSION['anexo'] ?>
                                             <!--<small class="text-sm align-top">Kw</small>-->
                                         </h3>
                                     </div>
                                     <div class="ms-lg-3 ms-4 text-center">
                                         <h6 class="mb-0 text-body opacity-7">No. LOCAL</h6>
                                         <h3 class="text-body">
-                                        <?= $_SESSION['codlocal'] ?>  
+                                            <?= $_SESSION['codlocal'] ?>
                                             <!--<small class="text-sm align-top">Kw</small>-->
                                         </h3>
                                     </div>
@@ -62,7 +62,7 @@
                                 <div class="d-flex align-items-center">
                                     <div>
                                         <h6 class="mb-0 text-body opacity-7">DRE / PROVINCIA / DISTRITO / C. POBLANDO</h6>
-                                        <h6 class="mb-0 text-body"><?= $_SESSION['ubicacion'].' / '.$_SESSION['cen_pob'] ?></h6>
+                                        <h6 class="mb-0 text-body"><?= $_SESSION['ubicacion'] . ' / ' . $_SESSION['cen_pob'] ?></h6>
                                     </div>
                                     <div class="ms-lg-6 ms-4">
                                         <!--<button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 py-0">
@@ -89,9 +89,9 @@
                                     </p>
                                     <h5 class="text-white font-weight-bolder mb-0">INST-01</h5>
                                     <hr class="horizontal light mt-1 mb-3" />
-                                    
-                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#"><i class="fa-regular fa-plus"></i> Nuevo</button>
-                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick=""><i class="fa-duotone fa-files"></i> Registros</button>
+
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-01')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick=""><i class="fa-duotone fa-files"></i> Reporte</button>
 
                                 </div>
                             </div>
@@ -176,5 +176,7 @@
         </div>
         <!-- // TODO: Vista de los Instruemntos - Encuestas -->
     </div>
-
 </main>
+<?php
+    include './Views/form/form-inst-01.php';
+?>

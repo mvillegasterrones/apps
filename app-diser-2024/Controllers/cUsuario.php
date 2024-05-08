@@ -26,6 +26,10 @@ switch ($accion) {
             $_SESSION['ubicacion']    = $array['d_region'].' / '.$array['d_prov'].' / '.$array['d_dist'];
             $_SESSION['cen_pob']      = $array['cen_pob'];
             $_SESSION['d_dreugel']    = $array['d_dreugel'];
+
+            $_SESSION['d_dpto']       = $array['d_dpto'];
+            $_SESSION['d_prov']       = $array['d_prov'];
+            $_SESSION['d_dist']       = $array['d_dist'];
             echo '1';
         }
         break;

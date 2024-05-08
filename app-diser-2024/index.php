@@ -34,7 +34,7 @@
     <script src="./assets/js/plugins/sweetalert2.js"></script>
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload=""><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
 
     <?php
     session_start();
@@ -51,6 +51,7 @@
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/multistep-form.js"></script>
 
 <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
 <script src="./assets/js/plugins/jkanban/jkanban.js"></script>

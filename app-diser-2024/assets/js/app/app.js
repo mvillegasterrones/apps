@@ -2,11 +2,12 @@
 
 const pg_body = () => ({
     on_load: () => {
+        $('.instrumento').addClass('d-none')
         //!rubros().get_list()
         //!empresa().get_active()
     },
     on_show_hide: (hd, shw) => {
-        //!$('#' + hd).removeClass('d-block').addClass('d-none')
-        //!$('#' + shw).removeClass('d-none').addClass('d-block')
+        $('#' + hd).removeClass('d-block').addClass('d-none')
+        $('#' + shw).removeClass('d-none').addClass('d-block')
     }
 })
