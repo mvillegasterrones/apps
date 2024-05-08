@@ -22,9 +22,6 @@
                                         <button class="multisteps-form__progress-btn" type="button" title="Socials">
                                             Sección 2
                                         </button>
-                                        <button class="multisteps-form__progress-btn" type="button" title="Profile">
-                                            Send
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +32,7 @@
                         <div class="col-12 col-lg-8 m-auto">
                             <form class="multisteps-form__form needs-validation was-validated mb-8" onsubmit="return false" novalidate>
 
-                                <!-- // TODO: Información -->
+                                <!-- // TODO: Section 1 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">Información</h5>
                                     <p class="mb-0 text-sm">En las II. EE. con Modelo de Servicio Educativo Secundaria (MSE) en el ámbito rural </p>
@@ -63,7 +60,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Información del estudiante -->
+                                <!-- // TODO: Section 2 - Información del estudiante -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">Acerca del estudiante</h5>
                                     <p class="mb-0 text-sm">Todos los campos son obligatorios</p>
@@ -124,7 +121,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: FRECUENCIAS DE COMIDAS EN UN DÍA -->
+                                <!-- // TODO: Section 3 - FRECUENCIAS DE COMIDAS EN UN DÍA -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">FRECUENCIAS DE COMIDAS EN UN DÍA</h5>
                                     <p class=",b-0 text-sm">1.1. ¿En este último mes con qué frecuencia has consumido …?</p>
@@ -133,7 +130,7 @@
                                             <div class="col-12 col-sm-3">
                                                 <label>Desayuno</label>
                                                 <select class="multisteps-form__input form-control" id="" name="" required>
-                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
                                                     <option value="2">Semanal (1 vez)</option>
@@ -143,7 +140,7 @@
                                             <div class="col-12 col-sm-3">
                                                 <label>Almuerzo</label>
                                                 <select class="multisteps-form__input form-control" id="" name="" required>
-                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
                                                     <option value="2">Semanal (1 vez)</option>
@@ -153,7 +150,7 @@
                                             <div class="col-12 col-sm-3">
                                                 <label>Cena</label>
                                                 <select class="multisteps-form__input form-control" id="" name="" required>
-                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
                                                     <option value="2">Semanal (1 vez)</option>
@@ -163,7 +160,7 @@
                                             <div class="col-12 col-sm-3">
                                                 <label>Refrigerio media mañana</label>
                                                 <select class="multisteps-form__input form-control" id="" name="" required>
-                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
                                                     <option value="2">Semanal (1 vez)</option>
@@ -173,7 +170,7 @@
                                             <div class="col-12 col-sm-3">
                                                 <label>Refiregerio media tarde</label>
                                                 <select class="multisteps-form__input form-control" id="" name="" required>
-                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
                                                     <option value="2">Semanal (1 vez)</option>
@@ -186,7 +183,7 @@
                                             <i class="fa-duotone fa-arrow-left"></i>
                                                 Regresar
                                             </button>
-                                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
+                                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="questionario().get_preguntas_inst()">
                                                 Siguiente
                                                 <i class="fa-duotone fa-arrow-right"></i>
                                             </button>
@@ -194,56 +191,41 @@
                                     </div>
                                 </div>
 
+                                <!-- // TODO: Section 4 - FRECUENCIA DE CONSUMO DE ALIMENTOS FUENTES DE PROTEÍNAS, HIERRO Y VITAMINAS -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
-                                    <h5 class="font-weight-bolder">Socials</h5>
+                                    <h5 class="font-weight-bolder">FRECUENCIA DE CONSUMO DE ALIMENTOS FUENTES DE PROTEÍNAS, HIERRO Y VITAMINAS</h5>
                                     <div class="multisteps-form__content">
                                         <div class="row mt-3">
-                                            <div class="col-12">
-                                                <label>Twitter Handle</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="@argon" />
-                                            </div>
-                                            <div class="col-12 mt-3">
-                                                <label>Facebook Account</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="https://..." />
-                                            </div>
-                                            <div class="col-12 mt-3">
-                                                <label>Instagram Account</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="https://..." />
+                                            <label>(*) ALGUNA VEZ HAS CONSUMIDO (NOMBRE DEL ALIMENTO) 1.SI 2.NO (SI LA RESPUESTA ES NO, PASE AL SIGUIENTE ALIMENTO)</label>
+                                            <label>(**) EN EL ÚLTIMO MES ¿CON QUÉ FRECUENCIA HAS CONSUMIDO: (Nombre del alimento) diario, semanal o mensual?</label>
+                                            <label>(***) EN UN DÍA GENERALMENTE CUÁNTAS VECES A CONSUMIDO EL/LA (NOMBRE DEL ALIMENTO)</label>
+                                            <div class="table-responsive">
+                                                <table class="table align-items-center mb-0" id="tbl-sec-2-inst-01">
+                                                    <thead class="text-center">
+                                                        <tr>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Item</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ALIMENTOS</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">(*)</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">(**)</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">No.DIAS</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">(***)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody></tbody>
+                                                </table>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="button-row d-flex mt-4 col-12">
-                                                <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">
-                                                    Prev
+                                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
+                                                <i class="fa-duotone fa-arrow-left"></i>
+                                                    Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
-                                                    Next
+                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="instrumento_01().save()">
+                                                    Guardar
+                                                    <i class="fa-duotone fa-save"></i>
                                                 </button>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card multisteps-form__panel p-3 border-radius-xl bg-white h-100" data-animation="FadeIn">
-                                    <h5 class="font-weight-bolder">Profile</h5>
-                                    <div class="multisteps-form__content mt-3">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label>Public Email</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Use an address you don't use frequently." />
-                                            </div>
-                                            <div class="col-12 mt-3">
-                                                <label>Bio</label>
-                                                <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Say a few words about who you are or what you're working on."></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="button-row d-flex mt-4">
-                                            <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">
-                                                Prev
-                                            </button>
-                                            <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">
-                                                Send
-                                            </button>
                                         </div>
                                     </div>
                                 </div>

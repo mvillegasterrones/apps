@@ -101,9 +101,11 @@
 /* ! Extraido externo */
 
 input,
+select,
 textarea {
   padding: 2px;
-  background-color: transparent !important;
+  /*background-color: transparent !important;*/
+  background-color: rgb(18, 29, 67) !important;
   color: #7F92B0 !important; /*  #f0f4f7  */
   border: 0.5px solid rgb(79, 77, 77) !important;
 }

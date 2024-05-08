@@ -78,6 +78,7 @@
 <script src="./assets/js/app/jUsuario.js"></script>
 <script src="./assets/js/app/jButton-actions.js"></script>
 <script src="./assets/js/app/app.js"></script>
+<script src="./assets/js/app/jQuestionario.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 
