@@ -29,10 +29,10 @@ const questionario = () => ({
                                     </select>
                                 </td>
                                 <td>
-                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" required />
+                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" readonly required />
                                 </td>
                                 <td>
-                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" required />
+                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" readonly required />
                                 </td>
                             </tr>`
 
@@ -51,6 +51,41 @@ const instrumento_01 = () => ({
         location.reload()
     },
     save: () => {
-        instrumento_01().send_data()
+        let formValido = true
+        let msje = ''
+        $('#form-inst-01').find('input, select').each(function(){
+            if ($(this).val() === '') {
+                formValido = false
+                return false
+            }
+        })
+
+        if (formValido) {
+
+            Swal.fire({
+                icon: 'question',
+                title: "¿Guardar la información?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Guardar",
+                denyButtonText: `Cancelar`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //Swal.fire("Saved!", "", "success");
+                    instrumento_01().send_data()
+                } else if (result.isDenied) {
+                    //* Swal.fire("Changes are not saved", "", "info")
+                    console.log('INST-01: Cancelado')
+                }
+            })
+            
+            msje = 'El formulario está listo para ser enviado.'
+            sw_alert().ok(msje)
+        } else {
+            msje = 'Por favor, complete todos los campos del formulario.'
+            sw_alert().warning(msje)
+        }
+        
+        /**/
     }
 })

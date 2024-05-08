@@ -52,5 +52,22 @@ const sw_alert = () => ({
             title: "Atención!",
             text: texto
         })
+    },
+    save_question: (funcion) => {
+        Swal.fire({
+            title: "Do you want to save the changes?",
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Save",
+            denyButtonText: `Don't save`
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                //Swal.fire("Saved!", "", "success");
+                funcion
+            } else if (result.isDenied) {
+                Swal.fire("Changes are not saved", "", "info");
+            }
+        });
     }
 })

@@ -4,22 +4,24 @@
         <div class="row mb-5">
             <div class="col-12">
                 <div class="multisteps-form mb-5">
+
+                    <!-- // TODO: Section - Pills -->
                     <div class="row">
                         <div class="col-12 col-lg-8 mx-auto my-4">
-                            <h4>FICHA DE CONSUMO DE ALIMENTOS</h4>
+                            <h4><code>INST-01</code>: FICHA DE CONSUMO DE ALIMENTOS</h4>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="multisteps-form__progress">
                                         <button class="multisteps-form__progress-btn js-active" type="button" title="Información">
                                             <span>Información</span>
                                         </button>
-                                        <button class="multisteps-form__progress-btn" type="button" title="Estudiante">
+                                        <button class="multisteps-form__progress-btn" type="button" title="Información del Estudiante">
                                             <span>Estudiante</span>
                                         </button>
-                                        <button class="multisteps-form__progress-btn" type="button" title="Address">
+                                        <button class="multisteps-form__progress-btn" type="button" title="FRECUENCIAS DE COMIDAS EN UN DÍA">
                                             Sección 1
                                         </button>
-                                        <button class="multisteps-form__progress-btn" type="button" title="Socials">
+                                        <button class="multisteps-form__progress-btn" type="button" title="FRECUENCIA DE CONSUMO DE ALIMENTOS FUENTES DE PROTEÍNAS, HIERRO Y VITAMINAS">
                                             Sección 2
                                         </button>
                                     </div>
@@ -30,7 +32,7 @@
 
                     <div class="row">
                         <div class="col-12 col-lg-8 m-auto">
-                            <form class="multisteps-form__form needs-validation was-validated mb-8" onsubmit="return false" novalidate>
+                            <form id="form-inst-01" name="form-inst-01" class="multisteps-form__form needs-validation was-validated mb-8" onsubmit="return false" novalidate>
 
                                 <!-- // TODO: Section 1 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
@@ -103,12 +105,20 @@
                                                     <option value="No">No</option>
                                                 </select>
                                             </div>
-                                            <div class="col-12 col-sm-9 mt-3 mt-sm-0">
+                                            <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>¿sueles quedarte los fines de semana (sábados y/o domingos)'?</label>
                                                 <select class="multisteps-form__input form-control" name="" id="" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="Si">Si</option>
                                                     <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+                                                <label>Mes de reporte</label>
+                                                <select class="multisteps-form__input form-control" name="" id="" required>
+                                                    <option value="" disabled>.: Seleccione :.</option>
+                                                    <option value="Mayo 204" selected>Mayo 2024</option>
+                                                    <option value="Setiembre 2024" disabled>Setiembre 2024</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -221,7 +231,7 @@
                                                 <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="instrumento_01().save()">
+                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_01().save()">
                                                     Guardar
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>
@@ -229,6 +239,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>
