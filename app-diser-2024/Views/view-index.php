@@ -1,126 +1,168 @@
 <div class="min-height-300 bg-primary position-absolute w-100"></div>
-<?php include './views/sections/slider.php' ?>
+<?php //include './views/sections/slider.php' 
+?>
 
 <main class="main-content position-relative border-radius-lg">
     <?php include './views/sections/nav-bar.php' ?>
 
     <div class="container-fluid py-4">
         <div class="row mt-4">
-
             <div class="col-12">
-
-                <!--<h1 class="mt-0">Bienvenido <code><?= $_SESSION['user_rol'] ?></code></h1>-->
-
-                <div class="row mt-0">
-                    <!--<div class="col-12 col-lg-5 mb-2">
-                        <div class="card h-100">
-                            <div class="card-header d-flex align-items-center border-bottom py-3">
+                <div class="card shadow-lg">
+                    <img src="./assets/img/shapes/pattern-left.png" alt="pattern-lines" class="position-absolute overflow-hidden opacity-4 start-0 top-0 h-100 border-radius-xl" />
+                    <img src="./assets/img/shapes/pattern-right.png" alt="pattern-lines" class="position-absolute overflow-hidden opacity-4 end-0 top-0 h-100 border-radius-xl" />
+                    <div class="card-body px-5 z-index-1 bg-cover">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 my-auto">
+                                <h5 class="text-body opacity-9 text-center text-uppercase">
+                                    Información de la IE
+                                </h5>
+                                <hr class="horizontal light mt-1 mb-3" />
+                                <div class="d-flex justify-content-center">
+                                    <div class="">
+                                        <h6 class="mb-0 text-body opacity-7">C.MODULAR</h6>
+                                        <h3 class="text-body">
+                                            <?= $_SESSION['cod_mod'] ?> 
+                                            <!--<small class="text-sm align-top">Km</small>-->
+                                        </h3>
+                                    </div>
+                                    <div class="ms-lg-3 ms-4 text-center">
+                                        <h6 class="mb-0 text-body opacity-7">ANEXO</h6>
+                                        <h3 class="text-body">
+                                        <?= $_SESSION['anexo'] ?>  
+                                            <!--<small class="text-sm align-top">Kw</small>-->
+                                        </h3>
+                                    </div>
+                                    <div class="ms-lg-3 ms-4 text-center">
+                                        <h6 class="mb-0 text-body opacity-7">No. LOCAL</h6>
+                                        <h3 class="text-body">
+                                        <?= $_SESSION['codlocal'] ?>  
+                                            <!--<small class="text-sm align-top">Kw</small>-->
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 text-center">
+                                <!--<img class="w-75 w-lg-50 mt-n7 mt-lg-n8 d-none d-md-block" src="./assets/img/logos/logo-minedu.png" alt="car image" />-->
+                                <h4><?= $_SESSION['nombre_ie'] ?></h4>
                                 <div class="d-flex align-items-center">
-                                    <a href="javascript:;" class="avatar avatar-lg rounded-circle border border-primary">
-                                        <img alt="Image placeholder" class="p-1" src="<?= $ruta_local ?>assets/img/logos/logo-user.png">
-                                    </a>
-                                    <div class="mx-3">
-                                        <a href="javascript:;" class="text-dark font-weight-600 text-sm"><?= $_SESSION['user_datos'] ?></a>
-                                        <small class="d-block text-muted"><?= $_SESSION['user_cargo'] ?></small>
-                                    </div>
+                                    <h4 class="text-body opacity-7 ms-0 ms-md-auto">
+                                        INST. EDUCATIVA
+                                    </h4>
+                                    <h2 class="text-body ms-2 me-auto">
+                                        <small class="text-sm align-top"></small>
+                                    </h2>
                                 </div>
-                                <div class="text-end ms-auto">
-                                    <button type="button" class="btn btn-xs btn-primary mb-0">
-                                        <i class="fas fa-pen pe-2" aria-hidden="true"></i> Editar
-                                    </button>
-                                </div>
+                                <h6><?= $_SESSION['d_dreugel'] ?></h6>
                             </div>
-                            <div class="card-body">
-
-                                <div class="mb-1 border-bottom">
-
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1 ms-3">
-                                            <h6 class="h6 mt-0"><i class="fas fa-check-circle text-success"></i> <?= $_SESSION['user_apellidos'] ?></h6>
-                                            <p class="text-sm">APELLIDOS</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex mt-2">
-                                        <div class="flex-grow-1 ms-3">
-                                            <h6 class="h6 mt-0"><i class="fas fa-check-circle text-success"></i> <?= $_SESSION['user_nombres'] ?></h6>
-                                            <p class="text-sm">NOMBRES</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex mt-2">
-                                        <div class="flex-grow-1 ms-3">
-                                            <h6 class="h6 mt-0"><i class="fas fa-check-circle text-success"></i> <?= $_SESSION['user_documento'] ?></h6>
-                                            <p class="text-sm">TIPO DOC / NRO</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex mt-2">
-                                        <div class="flex-grow-1 ms-3">
-                                            <h6 class="h6 mt-0">
-                                                <span class="badge badge-<?= $_SESSION['user_c_rol'] ?> badge-lg"><?= $_SESSION['user_rol'] ?></span>
-
-                                                <span class="badge badge-<?= $_SESSION['user_c_estado'] ?> badge-lg"><?= $_SESSION['user_estado'] ?></span>
-                                            </h6>
-                                            <p class="text-sm">ROL / ESTADO</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="mb-1">
-                                    <div class="d-flex mt-2">
-                                        <div class="flex-grow-1 ms-3">
-                                            <h6 class="h6 mt-0"><i class="fas fa-check-circle text-success"></i> <?= $_SESSION['user_ruc'] . '<br>' . $_SESSION['user_empresa'] ?></h6>
-                                            <p class="text-sm">RUC / EMPRESA</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
-                    <div class="col-12 col-lg-12">
-
-                        <div class="card" id="section-rubros">
-
-                            <div class="card-header d-flex align-items-center border-bottom py-3">
+                            <div class="col-lg-4 col-12 my-auto">
+                                <h5 class="text-body opacity-9 text-uppercase text-center">Ubicación</h5>
+                                <hr class="horizontal light mt-1 mb-3" />
                                 <div class="d-flex align-items-center">
-                                    <a href="javascript:;" class="avatar avatar-lg rounded-circle border border-primary">
-                                        <img alt="Image placeholder" class="p-1" src="<?= $ruta_local ?>assets/img/logos/logo-user.png">
-                                    </a>
-                                    <div class="mx-3">
-                                        <a href="javascript:;" class="text-dark font-weight-600 text-sm"><?= $_SESSION['user_datos'] ?></a>
-                                        <small class="d-block text-muted"><?= $_SESSION['user_cargo'] ?></small>
+                                    <div>
+                                        <h6 class="mb-0 text-body opacity-7">DRE / PROVINCIA / DISTRITO / C. POBLANDO</h6>
+                                        <h6 class="mb-0 text-body"><?= $_SESSION['ubicacion'].' / '.$_SESSION['cen_pob'] ?></h6>
+                                    </div>
+                                    <div class="ms-lg-6 ms-4">
+                                        <!--<button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 py-0">
+                                            <i class="ni ni-map-big" aria-hidden="true"></i>
+                                        </button>-->
                                     </div>
                                 </div>
-                                <div class="text-end ms-auto">
-                                    <button type="button" class="btn btn-xs btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-rubro">
-                                        <i class="fa-duotone fa-plus pe-2" aria-hidden="true"></i> Nuevo
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="text-center align-content-center" id="div-loader">
-                                    <div class="spinner-border text-info" role="status">
-                                        <span class="sr-only">Loading...</span>
-                                    </div> Cargando...
-                                </div>
-
-                                <div class="row mt-2" id="main-cards"></div>
-
-                                <?php include './Views/modals/modal-rubro.php' ?>
-
                             </div>
                         </div>
-
-                        <div class="row d-none" id="section-empresas">
-                            <?php include './Views/main/main-empresa.php' ?>
-                        </div>
-                        
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card bg-primary">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                        Today's Trip
+                                    </p>
+                                    <h5 class="text-white font-weight-bolder mb-0">145 Km</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-white shadow text-center rounded-circle">
+                                    <i class="ni ni-money-coins text-dark text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
+                <div class="card bg-primary">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                        Battery Health
+                                    </p>
+                                    <h5 class="text-white font-weight-bolder mb-0">99 %</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-white shadow text-center rounded-circle">
+                                    <i class="ni ni-controller text-dark text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0">
+                <div class="card bg-primary">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                        Average Speed
+                                    </p>
+                                    <h5 class="text-white font-weight-bolder mb-0">
+                                        56 Km/h
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-white shadow text-center rounded-circle">
+                                    <i class="ni ni-delivery-fast text-dark text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0">
+                <div class="card bg-primary">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                        Music Volume
+                                    </p>
+                                    <h5 class="text-white font-weight-bolder mb-0">15/100</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-white shadow text-center rounded-circle">
+                                    <i class="ni ni-note-03 text-dark text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </main>

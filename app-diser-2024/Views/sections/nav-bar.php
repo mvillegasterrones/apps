@@ -8,7 +8,10 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white">
-                    <a class="opacity-5 text-white" href="javascript:;">Home</a>
+                    <a class="opacity-5 text-white" href="javascript:;">MSE</a>
+                </li>
+                <li class="breadcrumb-item text-sm text-white">
+                    <a class="opacity-5 text-white" href="javascript:;"><?= $_SESSION['nv_educativo'] ?></a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white active" aria-current="page" id="navbar-cod-mod">
                     <?= $_SESSION['cod_mod'] ?>
@@ -35,8 +38,8 @@
             <ul class="navbar-nav justify-content-end">
                 <li class="nav-item d-flex align-items-center">
                     <a href="javascript:;" class="nav-link text-white font-weight-bold px-0" target="_blank">
-                        <i class="fa fa-user me-sm-1"></i>
-                        <span class="d-sm-inline d-none"><?= '<code>'. $_SESSION['user_rol']. '</code>' .':'. $_SESSION['user_datos'] ?></span>
+                        <i class="fa-regular fa-location-dot"></i>
+                        <span class="d-sm-inline d-none"><?= '<code>'. $_SESSION['ubicacion']. '</code>'?></span>
                     </a>
                 </li>
                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -51,7 +54,7 @@
 
                 <li class="nav-item px-3 d-flex align-items-center" onclick="user().set_logout()">
                     <a href="javascript:;" class="nav-link text-white p-0">
-                        <i class="fa-duotone fa-right-from-bracket fixed-plugin-button-nav cursor-pointer text-danger"></i>
+                        <i class="fa-duotone fa-power-off fixed-plugin-button-nav cursor-pointer text-danger"></i>
                         <!--<i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>-->
                     </a>
                 </li>
