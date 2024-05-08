@@ -6,6 +6,7 @@
     <?php include './views/sections/nav-bar.php' ?>
 
     <div class="container-fluid py-4">
+        <!-- // TODO: Información de la IE -->
         <div class="row mt-4">
             <div class="col-12">
                 <div class="card shadow-lg">
@@ -75,9 +76,10 @@
                 </div>
             </div>
         </div>
+        <!-- // TODO: Instruemntos - Encuestas -->
         <div class="row mt-4">
             <div class="col-lg-3 col-md-6 col-12">
-                <div class="card bg-primary cursor-pointer">
+                <div class="card cursor-pointer">
                     <div class="card-body p-3">
                         <div class="row">
                             <div class="col-8">
@@ -86,11 +88,16 @@
                                         FICHA DE CONSUMO DE ALIMENTOS
                                     </p>
                                     <h5 class="text-white font-weight-bolder mb-0">INST-01</h5>
+                                    <hr class="horizontal light mt-1 mb-3" />
+                                    
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick=""><i class="fa-duotone fa-files"></i> Registros</button>
+
                                 </div>
                             </div>
                             <div class="col-4 text-end">
                                 <div class="icon icon-shape bg-white shadow text-center rounded-circle">
-                                    <i class="fa-duotone fa-pot-food text-dark text-lg" aria-hidden="true"></i>
+                                    <i class="fa-duotone fa-utensils text-dark text-lg" aria-hidden="true"></i>
                                     <!--<i class="ni ni-money-coins text-dark text-lg opacity-10" aria-hidden="true"></i>-->
                                 </div>
                             </div>
@@ -112,7 +119,7 @@
                             </div>
                             <div class="col-4 text-end">
                                 <div class="icon icon-shape bg-white shadow text-center rounded-circle">
-                                    <i class="fa-duotone fa-utensils text-dark text-lg opacity-10" aria-hidden="true"></i>
+                                    <i class="fa-duotone fa-pot-food text-dark text-lg opacity-10" aria-hidden="true"></i>
                                     <!--<i class="ni ni-controller text-dark text-lg opacity-10" aria-hidden="true"></i>-->
                                 </div>
                             </div>
@@ -167,6 +174,7 @@
                 </div>
             </div>
         </div>
+        <!-- // TODO: Vista de los Instruemntos - Encuestas -->
     </div>
 
 </main>

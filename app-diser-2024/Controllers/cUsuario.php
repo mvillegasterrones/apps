@@ -17,15 +17,15 @@ switch ($accion) {
         if ($array[0] == 0) {
             echo '0';
         } else {
-            $_SESSION['acceso']        = 'YES';
-            $_SESSION['cod_mod']       = $array['cod_mod'];
-            $_SESSION['anexo']       = $array['anexo'];
-            $_SESSION['codlocal']       = $array['codlocal'];
-            $_SESSION['nv_educativo']  = $array['nivel_educativo'];
-            $_SESSION['nombre_ie']     = $array['nombre_ie'];
-            $_SESSION['ubicacion']     = $array['d_region'].' / '.$array['d_prov'].' / '.$array['d_dist'];
-            $_SESSION['cen_pob']     = $array['cen_pob'];
-            $_SESSION['d_dreugel']     = $array['d_dreugel'];
+            $_SESSION['acceso']       = 'YES';
+            $_SESSION['cod_mod']      = $array['cod_mod'];
+            $_SESSION['anexo']        = $array['anexo'];
+            $_SESSION['codlocal']     = $array['codlocal'];
+            $_SESSION['nv_educativo'] = $array['nivel_educativo'];
+            $_SESSION['nombre_ie']    = $array['nombre_ie'];
+            $_SESSION['ubicacion']    = $array['d_region'].' / '.$array['d_prov'].' / '.$array['d_dist'];
+            $_SESSION['cen_pob']      = $array['cen_pob'];
+            $_SESSION['d_dreugel']    = $array['d_dreugel'];
             echo '1';
         }
         break;
