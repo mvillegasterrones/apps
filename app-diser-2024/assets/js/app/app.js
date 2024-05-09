@@ -43,7 +43,7 @@ const funciones = () => ({
             $('#txt-valor-' + i).attr('required', 'required')
             $('#txt-valor-2-' + i).attr('required', 'required')
 
-            $('#sel-opc-2-' + i).val('')
+            $('#sel-opc-2-' + i).val('0')
             $('#txt-valor-' + i).val('0')
             $('#txt-valor-2-' + i).val('0')
         } else {
@@ -56,14 +56,18 @@ const funciones = () => ({
             $('#txt-valor-2-' + i).removeAttr('required')
 
             $('#txt-valor-2-' + i).attr('readonly', 'readonly')
-            $('#sel-opc-2-' + i).val('')
+            $('#sel-opc-2-' + i).val('0')
             $('#txt-valor-' + i).val('0')
             $('#txt-valor-2-' + i).val('0')
         }
     },
     activar_casilla_x_fila: (i) => {
-        // ? valor: 1 = Si
-        // ? valor: 2 = No
+        /*
+        * valor: 0
+        * valor: 1
+        * valor: 3
+        * valor: 4
+        */
         let valor  = $('#sel-opc-2-' + i).val()
         
         if (valor > 1) {
@@ -71,7 +75,7 @@ const funciones = () => ({
                 $('#txt-valor-' + i).removeAttr('readonly')
                 $('#txt-valor-2-' + i).removeAttr('readonly')
                 $('#txt-valor-' + i).val('')
-                $('#txt-valor-2-' + i).val('')
+                $('#txt-valor-2-' + i).val('0')
                 $('#txt-valor-' + i).focus()
             } else {
                 $('#txt-valor-' + i).attr('readonly', 'readonly')
