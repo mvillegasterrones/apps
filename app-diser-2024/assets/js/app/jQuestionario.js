@@ -23,7 +23,7 @@ const questionario = () => ({
                                 </td>
                                 <td>
                                     <select class="multisteps-form__input form-control form-control-sm w-100 d-none" id="sel-opc-2-${item}" name="sel-opc-2-${item}" onchange="funciones().activar_casilla_x_fila(${item})" required>
-                                        <option value="" selected disabled>.: Seleccione opción :.</option>
+                                        <option value="" selected>.: Seleccione opción :.</option>
                                         <option value="0">Nunca</option>
                                         <option value="1">Diario</option>
                                         <option value="2">Semanal</option>

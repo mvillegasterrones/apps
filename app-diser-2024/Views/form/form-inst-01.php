@@ -72,11 +72,11 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6">
                                                 <label>Nombres completos</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-apellidos" id="txt-est-apellidos" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-apellidos" id="txt-est-apellidos" maxlength="100" required />
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>Apellidos</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-nombres" id="txt-est-nombres" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-nombres" id="txt-est-nombres" maxlength="100" required />
                                             </div>
                                         </div>
                                         <div class="row mt-3">
@@ -95,7 +95,7 @@
                                             </div>
                                             <div class="col-12 col-sm-6">
                                                 <label>Autoidentificación Étnica</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-etnica" id="txt-est-etnica" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-etnica" id="txt-est-etnica" maxlength="100" required />
                                             </div>
                                         </div>
                                         <div class="row mt-3">
