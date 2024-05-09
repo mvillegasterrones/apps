@@ -4,23 +4,24 @@ const questionario = () => ({
         $.post( questionario_url, params, (response) => {
             let data = eval(response)
             let html = ''
+            let item = 0
             for (let i = 0; i < data.length; i++) {
-                if (data[i].id >= 4) {
-
-                    let detalle = (data[i].detalle === 'Otro') ? '<input class="multisteps-form__input form-control form-control-sm" type="text" placeholder="Otro" name="" id="" required />' : data[i].detalle
+                if (data[i].id >= 6) {
+                    item++
+                    let detalle = (data[i].detalle === 'Otro') ? `<input class="multisteps-form__input form-control form-control-sm" type="text" placeholder="Otro" name="txt-otro-${item}" id="txt-otro-${item}" required />` : data[i].detalle
                     
                     html += `<tr>
-                                <td class="text-center"><p class="text-xs font-weight-bold mb-0">${(i+1)}</p></td>
+                                <td class="text-center"><p class="text-xs font-weight-bold mb-0">${item}</p></td>
                                 <td><p class="text-xs font-weight-bold mb-0">${detalle}</p></td>
                                 <td>
-                                    <select class="multisteps-form__input form-control form-control-sm w-100" id="" name="" required>
+                                    <select class="multisteps-form__input form-control form-control-sm w-100" id="sel-opc-${item}" name="sel-opc-${item}" onchange="funciones().activar_fila(${item})" required>
                                         <option value="" selected disabled>.: Seleccione (Si/No) :.</option>
                                         <option value="1">Si</option>
                                         <option value="2">No</option>
                                     </select>
                                 </td>
                                 <td>
-                                    <select class="multisteps-form__input form-control form-control-sm w-100" id="" name="" required>
+                                    <select class="multisteps-form__input form-control form-control-sm w-100 d-none" id="sel-opc-2-${item}" name="sel-opc-2-${item}" onchange="funciones().activar_casilla_x_fila(${item})" required>
                                         <option value="" selected disabled>.: Seleccione opción :.</option>
                                         <option value="0">Nunca</option>
                                         <option value="1">Diario</option>
@@ -29,10 +30,10 @@ const questionario = () => ({
                                     </select>
                                 </td>
                                 <td>
-                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" readonly required />
+                                    <input class="multisteps-form__input form-control form-control-sm w-75 d-none" type="number" value="0" placeholder="0" name="txt-valor-${item}" id="txt-valor-${item}" readonly required />
                                 </td>
                                 <td>
-                                    <input class="multisteps-form__input form-control form-control-sm w-75" type="number" value="0" placeholder="0" name="" id="" readonly required />
+                                    <input class="multisteps-form__input form-control form-control-sm w-75 d-none" type="number" value="0" placeholder="0" name="txt-valor-2-${item}" id="txt-valor-2-${item}" readonly required />
                                 </td>
                             </tr>`
 
@@ -71,7 +72,7 @@ const instrumento_01 = () => ({
                 denyButtonText: `Cancelar`
             }).then((result) => {
                 if (result.isConfirmed) {
-                    //Swal.fire("Saved!", "", "success");
+                    //* Swal.fire("Saved!", "", "success");
                     instrumento_01().send_data()
                 } else if (result.isDenied) {
                     //* Swal.fire("Changes are not saved", "", "info")

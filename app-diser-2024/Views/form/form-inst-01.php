@@ -8,7 +8,7 @@
                     <!-- // TODO: Section - Pills -->
                     <div class="row">
                         <div class="col-12 col-lg-8 mx-auto my-4">
-                            <h4><code>INST-01</code>: FICHA DE CONSUMO DE ALIMENTOS</h4>
+                            <h4><code>INST-01:</code> FICHA DE CONSUMO DE ALIMENTOS</h4>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="multisteps-form__progress">
@@ -42,13 +42,13 @@
                                         <div class="row mt-3">
                                             <div class="col-12">
                                                 <p>
-                                                "<b>Objetivo</b> conocer la frecuencia de consumo de grupos de alimentos a fin de identificar los hábitos de consumo de los estudiantes. La finalidad es mejorar los hábitos de acuerdo a las necesidades de la etapa de desarrollo del estudiante, buscando que esta sea balanceada y saludable.
+                                                <b>* Objetivo</b> conocer la frecuencia de consumo de grupos de alimentos a fin de identificar los hábitos de consumo de los estudiantes. La finalidad es mejorar los hábitos de acuerdo a las necesidades de la etapa de desarrollo del estudiante, buscando que esta sea balanceada y saludable.
                                                 </p>
                                                 <p>
-                                                <b>Indicaciones</b> se toma a una muestra de estudiantes buscando la representatividad y balance entre hombres y mujeres, tipos de lengua materna, grados entre otros.
+                                                <b>*Indicaciones</b> se toma a una muestra de estudiantes buscando la representatividad y balance entre hombres y mujeres, tipos de lengua materna, grados entre otros.
                                                 </p>
                                                 <p>
-                                                <b>*Sugerencia</b> <i>aplicar la encuesta en mayo y agosto a una muestra de 4 estudiantes por grado (2 mujeres y 2 hombres).</i>"													
+                                                <b>* Sugerencia</b> <i>aplicar la encuesta en mayo y agosto a una muestra de 4 estudiantes por grado (2 mujeres y 2 hombres).</i>"													
                                                 </p>
                                                 <!--<input class="multisteps-form__input form-control" type="text" placeholder="eg. Michael" />-->
                                             </div>
