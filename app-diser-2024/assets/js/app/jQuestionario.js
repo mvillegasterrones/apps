@@ -1,4 +1,5 @@
 const questionario = () => ({
+
     get_preguntas_inst: () => {
         let params = { action: 'get-preguntas-inst-01', instrumento : 'INST-01' }
         $.post( questionario_url, params, (response) => {
@@ -44,24 +45,36 @@ const questionario = () => ({
             sw_alert().error(error)
         })
     }
+
 })
 
 const instrumento_01 = () => ({
+
     send_data: () => {
-        sw_alert().ok('Guardado!')
-        location.reload()
-    },
-    save: () => {
-        let formValido = true
-        let msje = ''
-        $('#form-inst-01').find('input, select').each(function(){
-            if ($(this).val() === '') {
-                formValido = false
-                return false
-            }
+        let form = form_inst_01.serialize()
+        let params = { form }
+
+        $.ajax({
+            url: questionario_url,
+            type: 'POST',
+            dataType: 'json',
+            data: params
+        }).done( (response) => {
+            alert(response)
         })
 
-        if (formValido) {
+        /*$.post( questionario_url, params, (response) => {
+            sw_alert().ok('Guardado! ' + response)
+            //location.reload()
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+        })*/
+    },
+
+    save: () => {
+        let validar_form = funciones().validar_form_required('form-inst-01')
+
+        if (validar_form) {
 
             Swal.fire({
                 icon: 'question',
@@ -80,10 +93,10 @@ const instrumento_01 = () => ({
                 }
             })
             
-            msje = 'El formulario está listo para ser enviado.'
-            sw_alert().ok(msje)
+            //msje = 'El formulario está listo para ser enviado. ' + validar_form
+            //sw_alert().ok(msje)
         } else {
-            msje = 'Por favor, complete todos los campos del formulario.'
+            msje = 'Por favor, complete todos los campos del formulario. ' + validar_form
             sw_alert().warning(msje)
         }
         

@@ -32,7 +32,7 @@
 
                     <div class="row">
                         <div class="col-12 col-lg-8 m-auto">
-                            <form id="form-inst-01" name="form-inst-01" class="multisteps-form__form needs-validation was-validated mb-8" onsubmit="return false" novalidate>
+                            <form id="form-inst-01" name="form-inst-01" class="multisteps-form__form needs-validation was-validated mb-8" novalidate>
 
                                 <!-- // TODO: Section 1 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
@@ -64,42 +64,44 @@
 
                                 <!-- // TODO: Section 2 - Información del estudiante -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
-                                    <h5 class="font-weight-bolder mb-0">Acerca del estudiante</h5>
-                                    <p class="mb-0 text-sm">Todos los campos son obligatorios</p>
+                                    <h5 class="font-weight-bolder mb-0">Datos del estudiante</h5>
+                                    <p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i> Todos los campos son obligatorios</p>
+                                    <input type="hidden" id="id" name="id" value="0">
+                                    <input type="hidden" id="action" name="action" value="save-update-inst-01">
                                     <div class="multisteps-form__content">
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6">
                                                 <label>Nombres completos</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="" id="" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-apellidos" id="txt-est-apellidos" required />
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>Apellidos</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="" id="" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-nombres" id="txt-est-nombres" required />
                                             </div>
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-3">
                                                 <label>Edad</label>
-                                                <input class="multisteps-form__input form-control" type="number" placeholder="Ingresar respuesta" name="" id="" required />
+                                                <input class="multisteps-form__input form-control" type="number" placeholder="Ingresar respuesta" name="txt-est-edad" id="txt-est-edad" required />
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3 mt-sm-0">
                                                 <label>Sexo</label>
                                                 <!--<input class="multisteps-form__input form-control" type="email" placeholder="eg. argon@dashboard.com" />-->
-                                                <select class="multisteps-form__input form-control" name="" id="" required>
+                                                <select class="multisteps-form__input form-control" name="txt-est-sexo" id="txt-est-sexo" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option value="M">Masculino</option>
-                                                    <option value="F">Femenino</option>
+                                                    <option value="Hombre">Hombre</option>
+                                                    <option value="Mujer">Mujer</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-6">
                                                 <label>Autoidentificación Étnica</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="" id="" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-etnica" id="txt-est-etnica" required />
                                             </div>
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-3">
                                                 <label>¿Es Residente?</label>
-                                                <select class="multisteps-form__input form-control" name="" id="" required>
+                                                <select class="multisteps-form__input form-control" name="txt-est-residente" id="txt-est-residente" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="Si">Si</option>
                                                     <option value="No">No</option>
@@ -107,7 +109,7 @@
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>¿sueles quedarte los fines de semana (sábados y/o domingos)'?</label>
-                                                <select class="multisteps-form__input form-control" name="" id="" required>
+                                                <select class="multisteps-form__input form-control" name="txt-est-findesemana" id="txt-est-findesemana" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="Si">Si</option>
                                                     <option value="No">No</option>
@@ -115,7 +117,7 @@
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3 mt-sm-0">
                                                 <label>Mes de reporte</label>
-                                                <select class="multisteps-form__input form-control" name="" id="" required>
+                                                <select class="multisteps-form__input form-control" name="txt-mes-reporte" id="txt-mes-reporte" required>
                                                     <option value="" disabled>.: Seleccione :.</option>
                                                     <option value="Mayo 204" selected>Mayo 2024</option>
                                                     <option value="Setiembre 2024" disabled>Setiembre 2024</option>
@@ -139,7 +141,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-3">
                                                 <label>Desayuno</label>
-                                                <select class="multisteps-form__input form-control" id="" name="" required>
+                                                <select class="multisteps-form__input form-control" id="txt-desayuno" name="txt-desayuno" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
@@ -149,7 +151,7 @@
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Almuerzo</label>
-                                                <select class="multisteps-form__input form-control" id="" name="" required>
+                                                <select class="multisteps-form__input form-control" id="txt-almuerzo" name="txt-almuerzo" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
@@ -159,7 +161,7 @@
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Cena</label>
-                                                <select class="multisteps-form__input form-control" id="" name="" required>
+                                                <select class="multisteps-form__input form-control" id="txt-cena" name="txt-cena" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
@@ -169,7 +171,7 @@
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Refrigerio media mañana</label>
-                                                <select class="multisteps-form__input form-control" id="" name="" required>
+                                                <select class="multisteps-form__input form-control" id="txt-refrigerio-1" name="txt-refrigerio-1" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
@@ -179,7 +181,7 @@
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Refiregerio media tarde</label>
-                                                <select class="multisteps-form__input form-control" id="" name="" required>
+                                                <select class="multisteps-form__input form-control" id="txt-refrigerio-2" name="txt-refrigerio-2" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option value="0">Ocacional o nunca</option>
                                                     <option value="1">Diario</option>
@@ -224,13 +226,20 @@
                                                     <tbody></tbody>
                                                 </table>
                                             </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-12 col-sm-3 text-uppercase">
+                                                    <label>Fecha de aplicación</label>
+                                                    <input class="multisteps-form__input form-control" type="date" placeholder="dd/mm/yyyy" name="txt-fecha-aplicacion" id="txt-fecha-aplicacion" required />
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="button-row d-flex mt-4 col-12">
-                                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
+                                                <!--<button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
                                                 <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
-                                                </button>
+                                                </button>-->
                                                 <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_01().save()">
                                                     Guardar
                                                     <i class="fa-duotone fa-save"></i>

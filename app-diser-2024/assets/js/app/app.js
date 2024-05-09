@@ -3,8 +3,6 @@
 const pg_body = () => ({
     on_load: () => {
         $('.instrumento').addClass('d-none')
-        //!rubros().get_list()
-        //!empresa().get_active()
     },
     on_show_hide: (hd, shw) => {
         $('#' + hd).removeClass('d-block').addClass('d-none')
@@ -13,6 +11,25 @@ const pg_body = () => ({
 })
 
 const funciones = () => ({
+    validar_form_required: (form_name) => {
+        let formValido = true;
+
+        $("#"+ form_name +" [required]").each(function() {
+            if ($(this).val().trim() === "") {
+                formValido = false
+                return formValido
+                //return false
+            }
+        })
+
+        return formValido
+
+       /* if (formValido) {
+            alert("El formulario está listo para ser enviado.");
+        } else {
+            alert("Por favor, complete todos los campos requeridos.");
+        }*/
+    },
     activar_fila: (i) => {
         // ? valor: 1 = Si
         // ? valor: 2 = No
