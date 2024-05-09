@@ -11,7 +11,7 @@ class mUsuario
 
     function get_users_list()
     {
-        $sql = "SELECT * FROM tbl_usuario";
+        /*$sql = "SELECT * FROM tbl_usuario";
         $this->conexion->conexion->set_charset('utf8');
 		$resultados = $this->conexion->conexion->query($sql);
 		$arreglo    = array();
@@ -19,7 +19,7 @@ class mUsuario
 			$arreglo[] = $re;
 		}
 		$this->conexion->cerrar();
-		return $arreglo;
+		return $arreglo;*/
     }
 
     function set_login($cod_mod)

@@ -66,8 +66,8 @@ const funciones = () => ({
         // ? valor: 2 = No
         let valor  = $('#sel-opc-2-' + i).val()
         
-        if (valor > 0) {
-            if (valor > 1) {
+        if (valor > 1) {
+            if (valor > 2) {
                 $('#txt-valor-' + i).removeAttr('readonly')
                 $('#txt-valor-2-' + i).removeAttr('readonly')
                 $('#txt-valor-' + i).val('')

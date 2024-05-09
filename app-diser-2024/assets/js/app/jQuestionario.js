@@ -23,11 +23,11 @@ const questionario = () => ({
                                 </td>
                                 <td>
                                     <select class="multisteps-form__input form-control form-control-sm w-100 d-none" id="sel-opc-2-${item}" name="sel-opc-2-${item}" onchange="funciones().activar_casilla_x_fila(${item})" required>
-                                        <option value="" selected>.: Seleccione opción :.</option>
-                                        <option value="0">Nunca</option>
-                                        <option value="1">Diario</option>
-                                        <option value="2">Semanal</option>
-                                        <option value="3">Mensual</option>
+                                        <option value="0" selected>.: Seleccione opción :.</option>
+                                        <option value="1">Nunca</option>
+                                        <option value="2">Diario</option>
+                                        <option value="3">Semanal</option>
+                                        <option value="4">Mensual</option>
                                     </select>
                                 </td>
                                 <td>
@@ -54,21 +54,13 @@ const instrumento_01 = () => ({
         let form = form_inst_01.serialize()
         let params = { form }
 
-        $.ajax({
-            url: questionario_url,
-            type: 'POST',
-            dataType: 'json',
-            data: params
-        }).done( (response) => {
-            alert(response)
-        })
-
-        /*$.post( questionario_url, params, (response) => {
+        $.post( questionario_url, params, (response) => {
             sw_alert().ok('Guardado! ' + response)
             //location.reload()
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
-        })*/
+            sw_alert().error(error)
+        })
     },
 
     save: () => {
