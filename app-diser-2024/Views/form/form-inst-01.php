@@ -8,7 +8,10 @@
                     <!-- // TODO: Section - Pills -->
                     <div class="row">
                         <div class="col-12 col-lg-8 mx-auto my-4">
-                            <h4><code>INST-01:</code> FICHA DE CONSUMO DE ALIMENTOS</h4>
+                            <h4>
+                                <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick="pg_body().on_show_hide('inst-01','view-main')"><i class="fa-regular fa-arrow-left"></i> Volver</button>
+                                <code>INST-01:</code> FICHA DE CONSUMO DE ALIMENTOS
+                            </h4>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="multisteps-form__progress">
