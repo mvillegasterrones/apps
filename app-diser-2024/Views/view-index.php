@@ -91,7 +91,8 @@
                                     <hr class="horizontal light mt-1 mb-3" />
 
                                     <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-01')"><i class="fa-regular fa-plus"></i> Nuevo</button>
-                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" onclick=""><i class="fa-duotone fa-files"></i> Reporte</button>
+                                    
+                                    <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-01" onclick="instrumento_01().get_reporte_inst_01()"><i class="fa-duotone fa-files"></i> Reporte</button>
 
                                 </div>
                             </div>
@@ -174,9 +175,9 @@
                 </div>
             </div>
         </div>
-        <!-- // TODO: Vista de los Instruemntos - Encuestas -->
     </div>
 </main>
 <?php
     include './Views/form/form-inst-01.php';
+    include './Views/form-modal/modal-reporte-inst-01.php';
 ?>

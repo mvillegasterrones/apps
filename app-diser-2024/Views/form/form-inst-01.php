@@ -16,7 +16,7 @@
                                             <span>Información</span>
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button" title="Información del Estudiante">
-                                            <span>Estudiante</span>
+                                            Estudiante
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button" title="FRECUENCIAS DE COMIDAS EN UN DÍA">
                                             Sección 1
@@ -32,7 +32,7 @@
 
                     <div class="row">
                         <div class="col-12 col-lg-8 m-auto">
-                            <form id="form-inst-01" name="form-inst-01" class="multisteps-form__form needs-validation was-validated mb-8" novalidate>
+                            <form id="form-inst-01" name="form-inst-01" class="multisteps-form__form needs-validation was-validated card-color-pastel mb-8" novalidate>
 
                                 <!-- // TODO: Section 1 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">

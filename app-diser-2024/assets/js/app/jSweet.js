@@ -46,6 +46,22 @@ const sw_alert = () => ({
             text: texto
         })
     },
+    ok_reload: (titulo) => {
+        Swal.fire({
+            icon: 'success',
+            title: titulo,
+            showDenyButton: false,
+            showCancelButton: false,
+            confirmButtonText: "Ok",
+            denyButtonText: `Don't save`
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.reload()
+            } else if (result.isDenied) {
+                console.log('canceled')
+            }
+        })
+    },
     warning: (texto) => {
         Swal.fire({
             icon: "warning",

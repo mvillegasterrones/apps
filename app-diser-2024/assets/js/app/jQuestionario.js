@@ -17,17 +17,17 @@ const questionario = () => ({
                                 <td>
                                     <select class="multisteps-form__input form-control form-control-sm w-100" id="sel-opc-${item}" name="sel-opc-${item}" onchange="funciones().activar_fila(${item})" required>
                                         <option value="" selected disabled>.: Seleccione (Si/No) :.</option>
-                                        <option value="1">Si</option>
-                                        <option value="2">No</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
                                     </select>
                                 </td>
                                 <td>
                                     <select class="multisteps-form__input form-control form-control-sm w-100 d-none" id="sel-opc-2-${item}" name="sel-opc-2-${item}" onchange="funciones().activar_casilla_x_fila(${item})" required>
                                         <option value="0" selected>.: Seleccione opción :.</option>
-                                        <option value="1">Nunca</option>
-                                        <option value="2">Diario</option>
-                                        <option value="3">Semanal</option>
-                                        <option value="4">Mensual</option>
+                                        <option value="Nunca">Nunca</option>
+                                        <option value="Diario">Diario</option>
+                                        <option value="Semanal">Semanal</option>
+                                        <option value="Mensual">Mensual</option>
                                     </select>
                                 </td>
                                 <td>
@@ -51,15 +51,15 @@ const questionario = () => ({
 const instrumento_01 = () => ({
 
     send_data: () => {
-        let form = form_inst_01.serialize()
-        let params = { form }
+        let form   = form_inst_01.serialize()
+        let params = form
 
         $.post( questionario_url, params, (response) => {
-            if (response === 'true') {
-                sw_alert().ok('Guardado! ' + response)
-                location.reload()
+            if (response) {
+                sw_alert().ok_reload(`Guardado! - ${response}`)
+                //location.reload()
             } else {
-                sw_alert().error('Ocurrió un problema al realizar el registro - ' + response)
+                sw_alert().error(`Ocurrió un problema al realizar el registro - ${response}` )
             }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
@@ -69,6 +69,23 @@ const instrumento_01 = () => ({
 
     save: () => {
         let validar_form = funciones().validar_form_required('form-inst-01')
+
+        /*Swal.fire({
+            icon: 'question',
+            title: "¿Guardar la información?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Guardar",
+            denyButtonText: `Cancelar`
+        }).then((result) => {
+            if (result.isConfirmed) {
+                //* Swal.fire("Saved!", "", "success");
+                instrumento_01().send_data()
+            } else if (result.isDenied) {
+                //* Swal.fire("Changes are not saved", "", "info")
+                console.log('INST-01: Cancelado')
+            }
+        })*/
 
         if (validar_form) {
 
@@ -89,13 +106,55 @@ const instrumento_01 = () => ({
                 }
             })
             
-            //msje = 'El formulario está listo para ser enviado. ' + validar_form
-            //sw_alert().ok(msje)
+            // ! msje = 'El formulario está listo para ser enviado. ' + validar_form
+            // ! sw_alert().ok(msje)
         } else {
-            msje = 'Por favor, complete todos los campos del formulario. ' + validar_form
+            msje = 'Por favor, complete todos los campos del formulario.'
             sw_alert().warning(msje)
         }
-        
-        /**/
+    },
+
+    get_reporte_inst_01: () => {
+        let params = { action: 'get-reporte-inst-01' }
+
+        $.post( questionario_url, params, (response) => {
+            let data = eval(response)
+            let html = ''
+            
+            for (let i = 0; i < data.length; i++) {
+                let ubicacion  = data[i].d_dpto +' / '+ data[i].d_prov +' / '+ data[i].d_dist
+                let estudiante = data[i].txt_est_apellidos +', '+ data[i].txt_est_nombres
+                html += `<tr>
+                            <td class="text-center">
+                                <p class="text-xs font-weight-bold mb-0">${i+1}</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte}</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod}</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie}</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob}</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel}</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">${estudiante}</p>
+                            </td>
+                        </tr>`
+            }
+            $('#tbl-reporte-inst-01 tbody').html(html)
+
+        }).fail( (xhr, status, error) => {
+            sw_alert().error(error)
+        })
     }
 })

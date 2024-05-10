@@ -5,8 +5,8 @@ $accion    = $_POST['action'];
 session_start();
 switch ($accion) {
     case 'get-users-list':
-        $ejecutar = $instancia->get_users_list();
-        echo json_encode($ejecutar);
+        /*$ejecutar = $instancia->get_users_list();
+        echo json_encode($ejecutar);*/
         break;
     case 'set-logout':
         session_destroy();

@@ -1,3 +1,8 @@
+.modal .modal-content .modal-body *,
+.card-color-pastel * {
+  color: #b9e0f2 !important;
+}
+
 .dark-version .main-content {
   color: #b9e0f2 !important;
 }

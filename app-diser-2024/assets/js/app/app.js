@@ -34,7 +34,7 @@ const funciones = () => ({
         // ? valor: 1 = Si
         // ? valor: 2 = No
         let valor  = $('#sel-opc-' + i).val()
-        if (valor === '1') {
+        if (valor === 'Si') {
             $('#sel-opc-2-' + i).removeClass('d-none')
             $('#txt-valor-' + i).removeClass('d-none')
             $('#txt-valor-2-' + i).removeClass('d-none')
@@ -63,12 +63,13 @@ const funciones = () => ({
     },
     activar_casilla_x_fila: (i) => {
         /*
-        * valor: 0
-        * valor: 1
-        * valor: 3
-        * valor: 4
+        * valor index() = 0 Nunca
+        * valor index() = 1 Diario
+        * valor index() = 3 Semanal
+        * valor index() = 4 Mensual
         */
-        let valor  = $('#sel-opc-2-' + i).val()
+        //* let valor  = $('#sel-opc-2-' + i).val()
+        let valor  = $('#sel-opc-2-' + i).find('option:selected').index()
         
         if (valor > 1) {
             if (valor > 2) {
