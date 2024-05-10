@@ -3,6 +3,15 @@
   color: #b9e0f2 !important;
 }
 
+.card-color-pastel .icon-trash:hover {
+  color: red !important;
+}
+
+table tbody tr td:hover p,
+.card-color-pastel .table tbody tr:hover p {
+  color:  #ffd300 !important;
+}
+
 .dark-version .main-content {
   color: #b9e0f2 !important;
 }

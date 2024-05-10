@@ -12,8 +12,12 @@ const questionario = () => ({
                     let detalle = (data[i].detalle === 'Otro') ? `<input class="multisteps-form__input form-control form-control-sm" type="text" placeholder="Otro" name="txt-otro-${item}" id="txt-otro-${item}" required />` : data[i].detalle
                     
                     html += `<tr>
-                                <td class="text-center"><p class="text-xs font-weight-bold mb-0">${item}</p></td>
-                                <td><p class="text-xs font-weight-bold mb-0">${detalle}</p></td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${item}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${detalle}</p>
+                                </td>
                                 <td>
                                     <select class="multisteps-form__input form-control form-control-sm w-100" id="sel-opc-${item}" name="sel-opc-${item}" onchange="funciones().activar_fila(${item})" required>
                                         <option value="" selected disabled>.: Seleccione (Si/No) :.</option>
@@ -118,43 +122,100 @@ const instrumento_01 = () => ({
         let params = { action: 'get-reporte-inst-01' }
 
         $.post( questionario_url, params, (response) => {
+            console.log(response)
             let data = eval(response)
             let html = ''
-            
-            for (let i = 0; i < data.length; i++) {
-                let ubicacion  = data[i].d_dpto +' / '+ data[i].d_prov +' / '+ data[i].d_dist
-                let estudiante = data[i].txt_est_apellidos +', '+ data[i].txt_est_nombres
-                html += `<tr>
-                            <td class="text-center">
-                                <p class="text-xs font-weight-bold mb-0">${i+1}</p>
-                            </td>
-                            <td class="text-center">
-                                <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte}</p>
-                            </td>
-                            <td class="text-center">
-                                <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod}</p>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie}</p>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob}</p>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel}</p>
-                            </td>
-                            <td>
-                                <p class="text-xs font-weight-bold mb-0">${estudiante}</p>
+
+            if (response!=='[]') {
+                
+                for (let i = 0; i < data.length; i++) {
+                    let ubicacion  = data[i].d_dpto +' / '+ data[i].d_prov +' / '+ data[i].d_dist
+                    let estudiante = data[i].txt_est_apellidos +', '+ data[i].txt_est_nombres
+                    html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_01().delete_int_01(${data[i].idInstrumento},${i+1})"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${i+1}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${estudiante}</p>
+                                </td>
+                            </tr>`
+    
+                            /*
+                            <i class="fa-solid fa-trash-can cursor-pointer text-danger"></i>
+                            <i class="fa-regular fa-trash-can cursor-pointer text-danger"></i>
+                            <i class="fa-light fa-trash-can cursor-pointer text-danger"></i>
+                            <i class="fa-duotone fa-trash-can cursor-pointer text-danger"></i>
+                            */
+                }
+
+            } else {
+                html +=`<tr>
+                            <td colspan="10" class="text-danger text-center text-uppercase">
+                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se han encontrado registros</p>
                             </td>
                         </tr>`
             }
+            
+
             $('#tbl-reporte-inst-01 tbody').html(html)
 
         }).fail( (xhr, status, error) => {
             sw_alert().error(error)
         })
+    },
+
+    delete_int_01: (id, nro) => {
+
+        Swal.fire({
+            icon: 'question',
+            title: "¿Eliminar Registro Nro. " + nro + "?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Si",
+            denyButtonText: `No`
+        }).then((result) => {
+            if (result.isConfirmed) {
+                
+                let params = { action: 'delete-int-01', id: id }
+
+                $.post( questionario_url, params, (response) =>{
+                    if (response) {
+                        sw_alert().basic_success('Eliminado')
+                        instrumento_01().get_reporte_inst_01()
+                    }
+                }).fail( (xhr, status, error) => {
+                    sw_alert().error(error)
+                })
+
+            } else if (result.isDenied) {
+                console.log('No se elimino el registro');
+            }
+        });
+
+        
     }
 })

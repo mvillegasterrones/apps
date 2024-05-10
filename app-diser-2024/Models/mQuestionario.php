@@ -10,9 +10,23 @@ class mQuestionario
     }
 
     // ! INICIO - Instrumento 01
-    function get_reporte_inst_01()
+    function delete_inst_01($id)
     {
-        $sql = "CALL sp_v1_get_reporte_inst_01()";
+        $sql = "DELETE FROM tbl_instrumento_01 WHERE id = $id";
+        $this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			$code = true;
+		} else {
+			$this->conexion->cerrar();
+			$code = false;
+		}
+        return $code;
+    }
+
+    function get_reporte_inst_01($cod_mod)
+    {
+        $sql = "CALL sp_v1_get_reporte_inst_01('$cod_mod')";
         $this->conexion->conexion->set_charset('utf8');
 		$resultados = $this->conexion->conexion->query($sql);
 		$arreglo    = array();
