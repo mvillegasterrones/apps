@@ -6,6 +6,8 @@ const questionario = () => ({
             let data = eval(response)
             let html = ''
             let item = 0
+
+            $('#form-inst-01 #btn-cargando').show()
             for (let i = 0; i < data.length; i++) {
                 if (data[i].id >= 6) {
                     item++
@@ -45,6 +47,7 @@ const questionario = () => ({
                 }
             }
             $('#tbl-sec-2-inst-01 tbody').html(html)
+            $('#form-inst-01 #btn-cargando').hide()
         }).fail( (error) => {
             sw_alert().error(error)
         })
@@ -126,6 +129,7 @@ const instrumento_01 = () => ({
             let data = eval(response)
             let html = ''
 
+            $('#modal-form-inst-01 #btn-cargando').show()
             if (response!=='[]') {
                 
                 for (let i = 0; i < data.length; i++) {
@@ -179,9 +183,8 @@ const instrumento_01 = () => ({
                             </td>
                         </tr>`
             }
-            
-
             $('#tbl-reporte-inst-01 tbody').html(html)
+            $('#modal-form-inst-01 #btn-cargando').hide()
 
         }).fail( (xhr, status, error) => {
             sw_alert().error(error)

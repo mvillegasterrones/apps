@@ -12,6 +12,12 @@
                         <!--<form role="form text-left">
                         </form>-->
                         <div class="table-responsive">
+
+                            <button class="btn btn-primary w-100 btn-sm mb-2" type="button" id="btn-cargando" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Cargando registros, espere...
+                            </button>
+
                             <table class="table table-hover table-sm" id="tbl-reporte-inst-01">
                                 <thead class="text-center">
                                     <th></th>

@@ -45,18 +45,18 @@
                                         <div class="row mt-3">
                                             <div class="col-12">
                                                 <p>
-                                                <b>* Objetivo</b> conocer la frecuencia de consumo de grupos de alimentos a fin de identificar los hábitos de consumo de los estudiantes. La finalidad es mejorar los hábitos de acuerdo a las necesidades de la etapa de desarrollo del estudiante, buscando que esta sea balanceada y saludable.
+                                                    <b>* Objetivo</b> conocer la frecuencia de consumo de grupos de alimentos a fin de identificar los hábitos de consumo de los estudiantes. La finalidad es mejorar los hábitos de acuerdo a las necesidades de la etapa de desarrollo del estudiante, buscando que esta sea balanceada y saludable.
                                                 </p>
                                                 <p>
-                                                <b>*Indicaciones</b> se toma a una muestra de estudiantes buscando la representatividad y balance entre hombres y mujeres, tipos de lengua materna, grados entre otros.
+                                                    <b>*Indicaciones</b> se toma a una muestra de estudiantes buscando la representatividad y balance entre hombres y mujeres, tipos de lengua materna, grados entre otros.
                                                 </p>
                                                 <p>
-                                                <b>* Sugerencia</b> <i>aplicar la encuesta en mayo y agosto a una muestra de 4 estudiantes por grado (2 mujeres y 2 hombres).</i>"													
+                                                    <b>* Sugerencia</b> <i>aplicar la encuesta en mayo y agosto a una muestra de 4 estudiantes por grado (2 mujeres y 2 hombres).</i>"
                                                 </p>
                                                 <!--<input class="multisteps-form__input form-control" type="text" placeholder="eg. Michael" />-->
                                             </div>
                                         </div>
-                                        
+
                                         <div class="button-row d-flex mt-4">
                                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
                                                 Empezar
@@ -195,7 +195,7 @@
                                         </div>
                                         <div class="button-row d-flex mt-4">
                                             <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
-                                            <i class="fa-duotone fa-arrow-left"></i>
+                                                <i class="fa-duotone fa-arrow-left"></i>
                                                 Regresar
                                             </button>
                                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="questionario().get_preguntas_inst()">
@@ -214,6 +214,12 @@
                                             <label>(*) ALGUNA VEZ HAS CONSUMIDO (NOMBRE DEL ALIMENTO) 1.SI 2.NO (SI LA RESPUESTA ES NO, PASE AL SIGUIENTE ALIMENTO)</label>
                                             <label>(**) EN EL ÚLTIMO MES ¿CON QUÉ FRECUENCIA HAS CONSUMIDO: (Nombre del alimento) diario, semanal o mensual?</label>
                                             <label>(***) EN UN DÍA GENERALMENTE CUÁNTAS VECES A CONSUMIDO EL/LA (NOMBRE DEL ALIMENTO)</label>
+
+                                            <button class="btn btn-primary btn-sm mb-2" type="button" id="btn-cargando" disabled>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                Cargando preguntas, espere...
+                                            </button>
+
                                             <div class="table-responsive">
                                                 <table class="table align-items-center mb-0" id="tbl-sec-2-inst-01">
                                                     <thead class="text-center">
