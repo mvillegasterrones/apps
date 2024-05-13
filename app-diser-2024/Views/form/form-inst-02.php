@@ -127,6 +127,7 @@
                                     <h5 class="font-weight-bolder">OBSERVACIÓN DE LAS PREPARACIONES DE UN TIEMPO DE COMIDA</h5>
                                     <!--<p class=",b-0 text-sm">1.1. ¿En este último mes con qué frecuencia has consumido …?</p>-->
                                     <div class="multisteps-form__content">
+                                        <label for="">(*) Se cuenta con un formato para identificar "Buenas Prácticas de Manipulación" (ver anexo) </label>
 
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-4">
@@ -203,8 +204,8 @@
 
                                         <div class="row mt-3">
                                             <div class="col-12">
-                                                <label>Observaciones *</label>
-                                                <textarea class="multisteps-form__input form-control" id="txt-" name="txt-" placeholder="Ingrese observaciones" required></textarea>
+                                                <label>Observaciones (* opcional)</label>
+                                                <textarea class="multisteps-form__input form-control" id="txt-" name="txt-" placeholder="Ingrese observaciones"></textarea>
                                             </div>
                                         </div>
 
@@ -342,7 +343,7 @@
 
                                             <div class="row mt-3">
                                                 <div class="col-12">
-                                                    <label for="">Observaciones *</label>
+                                                    <label for="">Observaciones (* opcional)</label>
                                                     <textarea class="multisteps-form__input form-control" name="txt-" id="txt-" placeholder="Ingrese oberservaciones"></textarea>
                                                 </div>
                                             </div>
@@ -368,6 +369,8 @@
                                     <h5 class="font-weight-bolder mb-0">OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES</h5>
                                     <!--<p class="mb-0 text-sm">En las II. EE. con Modelo de Servicio Educativo Secundaria (MSE) en el ámbito rural </p>-->
                                     <div class="multisteps-form__content">
+                                        
+                                        <label for="">(**) Que motive el consumo de los alimentos, interacción, estimulación</label>
                                         <div class="row mt-3 text-uppercase">
 
                                             <div class="col-12 col-sm-4">
@@ -395,6 +398,10 @@
                                                     <option>No consumió</option>
                                                 </select>
                                             </div>
+                                            
+                                        </div>
+
+                                        <div class="row mt-3 text-uppercase">
                                             <div class="col-12 col-sm-4">
                                                 <label>3.4. ¿Qué grupo de alimentos es el que menos consume?</label>
                                                 <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
@@ -405,6 +412,46 @@
                                                     <option>4. Frutas y verduras</option>
                                                 </select>
                                             </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.5. ¿Hay acompañamiento por parte de un personal del MSE durante el consumo de las comidas?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.6. ¿Se promueve el consumo de la totalidad de la ración <b class="text-danger">**</b>?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.7. ¿El clima o las relaciones durante el consumo de alimentos es agradable, buscando la integración de todos?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.8. ¿El espacio del comedor cuenta con mobiliario suficiente y un lugar limpio para los usuarios?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <label for="">Observaciones (* opcional)</label>
+                                            <textarea class="multisteps-form__input form-control" id="txt-" name="txt-" placeholder="Ingrese observaciones"></textarea>
                                         </div>
 
                                         <div class="row">
