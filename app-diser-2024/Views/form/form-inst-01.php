@@ -28,6 +28,7 @@
                                             Sección 2
                                         </button>
                                     </div>
+                                    <code><i class="fa-regular fa-circle-exclamation"></i> TODOS LOS CAMPOS SON OBLIGATORIOS</code>
                                 </div>
                             </div>
                         </div>
