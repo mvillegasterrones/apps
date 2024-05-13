@@ -51,7 +51,7 @@
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-<script src="./assets/js/plugins/multistep-form.js"></script>
+<!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <!--<script src="./assets/js/plugins/flatpickr.min.js"></script>-->
 
 <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
@@ -76,10 +76,10 @@
 
 
 <script src="./assets/js/app/jGlobal-vars.js"></script>
+<script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
 <script src="./assets/js/app/jUsuario.js"></script>
 <script src="./assets/js/app/jButton-actions.js"></script>
-<script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jQuestionario.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>

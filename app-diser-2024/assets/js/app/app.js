@@ -1,16 +1,20 @@
 // ** Aquí código de las funciones a nivel de APP ** //
 
 const pg_body = () => ({
+
     on_load: () => {
         $('.instrumento').addClass('d-none')
     },
+
     on_show_hide: (hd, shw) => {
         $('#' + hd).removeClass('d-block').addClass('d-none')
         $('#' + shw).removeClass('d-none').addClass('d-block')
     }
+
 })
 
 const funciones = () => ({
+
     validar_form_required: (form_name) => {
         let formValido = true;
 
@@ -30,6 +34,7 @@ const funciones = () => ({
             alert("Por favor, complete todos los campos requeridos.");
         }*/
     },
+
     activar_fila: (i) => {
         // ? valor: 1 = Si
         // ? valor: 2 = No
@@ -61,6 +66,7 @@ const funciones = () => ({
             $('#txt-valor-2-' + i).val('0')
         }
     },
+
     activar_casilla_x_fila: (i) => {
         /*
         * valor index() = 0 Nunca
@@ -90,5 +96,13 @@ const funciones = () => ({
             $('#txt-valor-' + i).val('0')
             $('#txt-valor-2-' + i).val('0')
         }
+    },
+
+    load_form_content: (form_ruta) => {
+        $('#view-main').load('./Views/form/' + form_ruta)
+    },
+
+    page_reload: () => {
+        location.reload()
     }
 })
