@@ -27,6 +27,9 @@
                                         <button class="multisteps-form__progress-btn" type="button" title="FRECUENCIA DE CONSUMO DE ALIMENTOS FUENTES DE PROTEÍNAS, HIERRO Y VITAMINAS">
                                             Sección 2
                                         </button>
+                                        <button class="multisteps-form__progress-btn" type="button" title="OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES">
+                                            Sección 3
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +40,7 @@
                         <div class="col-12 col-lg-8 m-auto">
                             <form id="form-inst-02" name="form-inst-02" class="multisteps-form__form needs-validation was-validated card-color-pastel mb-8" novalidate>
 
-                                <!-- // TODO: Section 1 - Información -->
+                                <!-- // TODO: Section 0 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">Información</h5>
                                     <p class="mb-0 text-sm">En las II. EE. con Modelo de Servicio Educativo Secundaria (MSE) en el ámbito rural </p>
@@ -62,7 +65,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 2 - Información del estudiante -->
+                                <!-- // TODO: Section 1 - INFORMACIÓN DE La OBSERVACIÓN -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">INFORMACIÓN DE La OBSERVACIÓN</h5>
                                     <p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i> Todos los campos son obligatorios</p>
@@ -119,7 +122,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 3 - FRECUENCIAS DE COMIDAS EN UN DÍA -->
+                                <!-- // TODO: Section 2 - OBSERVACIÓN DE LAS PREPARACIONES DE UN TIEMPO DE COMIDA -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">OBSERVACIÓN DE LAS PREPARACIONES DE UN TIEMPO DE COMIDA</h5>
                                     <!--<p class=",b-0 text-sm">1.1. ¿En este último mes con qué frecuencia has consumido …?</p>-->
@@ -218,7 +221,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 4 - FRECUENCIA DE CONSUMO DE ALIMENTOS FUENTES DE PROTEÍNAS, HIERRO Y VITAMINAS -->
+                                <!-- // TODO: Section 3 - OBSERVACIÓN EN EL SERVIDO DE LAS PREPARACIONESS -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">OBSERVACIÓN EN EL SERVIDO DE LAS PREPARACIONES (Se observará los 10 primeros platos servidos)</h5>
                                     <div class="multisteps-form__content">
@@ -337,7 +340,73 @@
 
                                             </div>
 
+                                            <div class="row mt-3">
+                                                <div class="col-12">
+                                                    <label for="">Observaciones *</label>
+                                                    <textarea class="multisteps-form__input form-control" name="txt-" id="txt-" placeholder="Ingrese oberservaciones"></textarea>
+                                                </div>
+                                            </div>
+
                                         </div>
+                                        <div class="row">
+                                            <div class="button-row d-flex mt-4 col-12">
+                                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
+                                                    <i class="fa-duotone fa-arrow-left"></i>
+                                                    Regresar
+                                                </button>
+                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="instrumento_02().save()">
+                                                    Siguiente
+                                                    <i class="fa-duotone fa-arrow-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- // TODO: Section 4 - OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES -->
+                                <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                                    <h5 class="font-weight-bolder mb-0">OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES</h5>
+                                    <!--<p class="mb-0 text-sm">En las II. EE. con Modelo de Servicio Educativo Secundaria (MSE) en el ámbito rural </p>-->
+                                    <div class="multisteps-form__content">
+                                        <div class="row mt-3 text-uppercase">
+
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.1. ¿Cuenta con un ambiente exclusivo y/o acondicionado de comedor?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option value="Si">Si</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.2. ¿El estudiante practica correctamente la técnica del lavado de manos previo al consumo? (usando agua segura y jabón)</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option value="Si">Si</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.3. ¿El estudiante consume el plato de comida proporcionado?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Consumió el total</option>
+                                                    <option>Consumió alrededor del 50%</option>
+                                                    <option>No consumió</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label>3.4. ¿Qué grupo de alimentos es el que menos consume?</label>
+                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>1. Proteínas origen animal</option>
+                                                    <option>2. Proteínas de origen vegetal</option>
+                                                    <option>3. Cereales y tubérculos</option>
+                                                    <option>4. Frutas y verduras</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
                                         <div class="row">
                                             <div class="button-row d-flex mt-4 col-12">
                                                 <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
@@ -350,6 +419,7 @@
                                                 </button>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
 
