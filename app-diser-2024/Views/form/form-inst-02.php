@@ -66,23 +66,23 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 1 - INFORMACIÓN DE La OBSERVACIÓN -->
+                                <!-- // TODO: Section 1 - INFORMACIÓN DE La OBSERVACIÓN: Ok -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">INFORMACIÓN DE La OBSERVACIÓN</h5>
                                     <p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i> Todos los campos son obligatorios</p>
                                     <input type="hidden" id="id" name="id" value="0">
-                                    <input type="hidden" id="action" name="action" value="save-update-inst-01">
+                                    <input type="hidden" id="action" name="action" value="save-update-inst-02">
                                     <div class="multisteps-form__content">
 
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6">
                                                 <label>Nombres y apellidos del observador</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-apellidos" id="txt-est-apellidos" maxlength="100" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt_datos_aplicador" id="txt_datos_aplicador" maxlength="100" required />
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>Cargo</label>
                                                 <!--<input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt-est-nombres" id="txt-est-nombres" maxlength="100" required />-->
-                                                <select class="multisteps-form__input form-control" name="txt-est-sexo" id="txt-est-sexo" required>
+                                                <select class="multisteps-form__input form-control" name="txt_cargo_aplicador" id="txt_cargo_aplicador" required>
                                                     <option value="" selected disabled>.: Seleccione cargo :.</option>
                                                     <option>Coordinador de la IE</option>
                                                     <option>Responsables de Bienestar</option>
@@ -94,23 +94,23 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-3">
                                                 <label>Grado de estudios</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ej. 1ero - sección" name="txt-est-edad" id="txt-est-edad" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ej. 1ero - sección" name="txt_grado" id="txt_grado" required />
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3 mt-sm-0">
                                                 <label>Tiempo de comida obs.</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar resp." required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar resp." id="txt_tiempo_comida" name="txt_tiempo_comida" required />
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Mes de reporte</label>
-                                                <select class="multisteps-form__input form-control" name="txt-mes-reporte" id="txt-mes-reporte" required>
+                                                <select class="multisteps-form__input form-control" name="txt_mes_reporte" id="txt_mes_reporte" required>
                                                     <option value="" disabled>.: Seleccione :.</option>
-                                                    <option value="Mayo 204" selected>Mayo 2024</option>
-                                                    <option value="Setiembre 2024" disabled>Setiembre 2024</option>
+                                                    <option selected>Mayo 2024</option>
+                                                    <option disabled>Setiembre 2024</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3 mt-sm-0">
                                                 <label>Fecha de Aplicación</label>
-                                                <input class="multisteps-form__input form-control" type="date" placeholder="Ingresar resp." required />
+                                                <input class="multisteps-form__input form-control" type="date" placeholder="Ingresar resp." id="txt_fecha_aplicacion" name="txt_fecha_aplicacion" required />
                                             </div>
                                         </div>
 
@@ -133,7 +133,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-4">
                                                 <label>1.1. ¿Cuenta con un ambiente exclusivo de cocina?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-desayuno" name="txt-desayuno" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_1" name="txt_1_1" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -141,7 +141,7 @@
                                             </div>
                                             <div class="col-12 col-sm-8">
                                                 <label>1.2. Se aplica las Buenas Prácticas de Manipulación en la preparaciones de los alimentos*</label>
-                                                <select class="multisteps-form__input form-control" id="txt-almuerzo" name="txt-almuerzo" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_2" name="txt_1_2" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -152,7 +152,7 @@
                                         <div class="row mt-3" id="div-opc-2">
                                             <div class="col-12 col-sm-4">
                                                 <label>1.2.1. Tiene la indumentaria adecuada (mandil, gorro que recoge el cabello de color claro y limpio)</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_2_1" name="txt_1_2_1" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -160,7 +160,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>1.2.2. Cuenta con el kit de lavado de manos (jabón, papel higiénico o papel toalla)</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_2_2" name="txt_1_2_2" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -168,7 +168,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>1.2.3. Practica el lavado de manos con agua y jabón de manera correcta</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_2_3" name="txt_1_2_3" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -179,7 +179,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-4">
                                                 <label>1.3. ¿El personal de cocina se encuentra con una indumentaria adecuada, aseado y limpio? </label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_3" name="txt_1_3" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -187,7 +187,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>1.4. ¿Se cumple con la programación del menú escolar ? </label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_4" name="txt_1_4" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -195,7 +195,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>1.5. Para la preparación ¿se hace uso de las dosificaciones de alimentos establecidas por el PNAEQW? </label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_1_5" name="txt_1_5" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -206,7 +206,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12">
                                                 <label>Observaciones (* opcional)</label>
-                                                <textarea class="multisteps-form__input form-control" id="txt-" name="txt-" placeholder="Ingrese observaciones"></textarea>
+                                                <textarea class="multisteps-form__input form-control" id="txt_observaciones_1" name="txt_observaciones_1" placeholder="Ingrese observaciones"></textarea>
                                             </div>
                                         </div>
 
@@ -233,7 +233,7 @@
 
                                                 <div class="col-12 col-sm-6">
                                                     <label>2.1. ¿El servido cumple con las medidas caseras establecidas con el PNAEQW?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_1-" name="txt_2_1" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -241,7 +241,7 @@
                                                     <div class="row mt-3" id="section-2-1">
                                                         <div class="col-12 col-sm-4">
                                                             <label>Desayuno</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_1_1" name="txt_2_1_1" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -249,7 +249,7 @@
                                                         </div>
                                                         <div class="col-12 col-sm-4">
                                                             <label>Almuerzo</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_1_2" name="txt_2_1_2" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -257,7 +257,7 @@
                                                         </div>
                                                         <div class="col-12 col-sm-4">
                                                             <label>Cena</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_1_3" name="txt_2_1_3" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -268,7 +268,7 @@
 
                                                 <div class="col-12 col-sm-6">
                                                     <label>2.2 ¿Las preparaciones contienen los 3 grupos de alimentos? </label>
-                                                    <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_2" name="txt_2_2" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -276,7 +276,7 @@
                                                     <div class="row mt-3" id="section-2-2">
                                                         <div class="col-12 col-sm-6">
                                                             <label>Carbohidratos (cerales, tuberculos, etc)</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_2_1" name="txt_2_2_1" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -284,7 +284,7 @@
                                                         </div>
                                                         <div class="col-12 col-sm-6">
                                                             <label>Proteínas de origen animal</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_2_2" name="txt_2_2_2" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -292,7 +292,7 @@
                                                         </div>
                                                         <div class="col-12 col-sm-6">
                                                             <label>Proteínas de origen vegetal</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_2_3" name="txt_2_2_3" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -300,7 +300,7 @@
                                                         </div>
                                                         <div class="col-12 col-sm-6">
                                                             <label>Vitaminas (frutas y verduras)</label>
-                                                            <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                            <select class="multisteps-form__input form-control" id="txt_2_2_4" name="txt_2_2_4" required>
                                                                 <option value="" selected disabled>.: Seleccione :.</option>
                                                                 <option>Si</option>
                                                                 <option>No</option>
@@ -315,7 +315,7 @@
 
                                                 <div class="col-12 col-sm-4">
                                                     <label for="">2.3. ¿Las preparaciones fueron suficientes para el total de estudiantes?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_3" name="txt_2_3" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -324,7 +324,7 @@
 
                                                 <div class="col-12 col-sm-4">
                                                     <label for="">2.4. ¿Se reporta incidentes en el que sobren o falten preparaciones para el servido (cuaderno de incidencia)?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt-" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -333,7 +333,7 @@
                                                 
                                                 <div class="col-12 col-sm-4">
                                                     <label for="">2.5. ¿La preparación observada coincide con el menú escolar escolar programado?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt_2_5" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -345,7 +345,7 @@
                                             <div class="row mt-3">
                                                 <div class="col-12">
                                                     <label for="">Observaciones (* opcional)</label>
-                                                    <textarea class="multisteps-form__input form-control" name="txt-" id="txt-" placeholder="Ingrese oberservaciones"></textarea>
+                                                    <textarea class="multisteps-form__input form-control" name="txt_observaciones_2" id="txt_observaciones_2" placeholder="Ingrese oberservaciones"></textarea>
                                                 </div>
                                             </div>
 
@@ -376,7 +376,7 @@
 
                                             <div class="col-12 col-sm-4">
                                                 <label>3.1. ¿Cuenta con un ambiente exclusivo y/o acondicionado de comedor?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_1" name="txt_3_1" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -384,7 +384,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>3.2. ¿El estudiante practica correctamente la técnica del lavado de manos previo al consumo? (usando agua segura y jabón)</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_2" name="txt_3_2" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -392,7 +392,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>3.3. ¿El estudiante consume el plato de comida proporcionado?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_3" name="txt_3_3" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Consumió el total</option>
                                                     <option>Consumió alrededor del 50%</option>
@@ -405,7 +405,7 @@
                                         <div class="row mt-3 text-uppercase">
                                             <div class="col-12 col-sm-4">
                                                 <label>3.4. ¿Qué grupo de alimentos es el que menos consume?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_4" name="txt_3_4" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>1. Proteínas origen animal</option>
                                                     <option>2. Proteínas de origen vegetal</option>
@@ -415,7 +415,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>3.5. ¿Hay acompañamiento por parte de un personal del MSE durante el consumo de las comidas?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_5" name="txt_3_5" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -423,7 +423,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>3.6. ¿Se promueve el consumo de la totalidad de la ración <b class="text-danger">**</b>?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_6" name="txt_3_6" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -434,7 +434,7 @@
                                         <div class="row mt-3 text-uppercase">
                                             <div class="col-12 col-sm-4">
                                                 <label>3.7. ¿El clima o las relaciones durante el consumo de alimentos es agradable, buscando la integración de todos?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_7" name="txt_3_7" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -442,7 +442,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4">
                                                 <label>3.8. ¿El espacio del comedor cuenta con mobiliario suficiente y un lugar limpio para los usuarios?</label>
-                                                <select class="multisteps-form__input form-control" id="txt-" name="txt-" required>
+                                                <select class="multisteps-form__input form-control" id="txt_3_8" name="txt_3_8" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -452,7 +452,7 @@
 
                                         <div class="row mt-3 text-uppercase">
                                             <label for="">Observaciones (* opcional)</label>
-                                            <textarea class="multisteps-form__input form-control" id="txt-" name="txt-" placeholder="Ingrese observaciones"></textarea>
+                                            <textarea class="multisteps-form__input form-control" id="txt_observaciones_3" name="txt_observaciones_3" placeholder="Ingrese observaciones"></textarea>
                                         </div>
 
                                         <div class="row">
@@ -461,7 +461,7 @@
                                                     <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_02().save()">
+                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_01().save()">
                                                     Guardar
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>
