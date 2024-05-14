@@ -10,6 +10,20 @@ class mQuestionario
     }
 
     // ! INICIO - Instrumento 02
+    function delete_inst_02($id)
+    {
+        $sql = "DELETE FROM tbl_instrumento_02 WHERE id = $id";
+        $this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			$code = true;
+		} else {
+			$this->conexion->cerrar();
+			$code = false;
+		}
+        return $code;
+    }
+    
     function get_reporte_inst_02($cod_mod)
     {
         $sql = "CALL sp_v1_get_reporte_inst_02('$cod_mod')";

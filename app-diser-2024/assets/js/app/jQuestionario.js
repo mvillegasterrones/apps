@@ -190,7 +190,7 @@ const instrumento_01 = () => ({
 
                 $.post( questionario_url, params, (response) =>{
                     if (response) {
-                        sw_alert().basic_success('Eliminado')
+                        sw_alert().basic_success('Eliminado!')
                         instrumento_01().get_reporte_inst_01()
                     }
                 }).fail( (xhr, status, error) => {
@@ -200,8 +200,7 @@ const instrumento_01 = () => ({
             } else if (result.isDenied) {
                 console.log('No se elimino el registro');
             }
-        });
-
+        })
         
     }
 })
@@ -327,7 +326,34 @@ const instrumento_02 = () => ({
     },
 
     delete: (id, item) => {
-        console.log('Function delete - ' + id +' - ' + item)
+
+        Swal.fire({
+            icon: 'question',
+            title: "¿Eliminar Registro Nro. " + item + "?",
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: "Si",
+            denyButtonText: `No`
+        }).then((result) => {
+            if (result.isConfirmed) {
+                
+                let params = { action: 'delete-int-02', id: id }
+
+                $.post( questionario_url, params, (response) =>{
+                    if (response) {
+                        sw_alert().basic_success('Eliminado!')
+                        instrumento_02().get_reporte()
+                    }
+                }).fail( (xhr, status, error) => {
+                    console.log(xhr, status, error)
+                    sw_alert().error(error)
+                })
+
+            } else if (result.isDenied) {
+                console.log('No se elimino el registro');
+            }
+        })
+
     }
 
 })
