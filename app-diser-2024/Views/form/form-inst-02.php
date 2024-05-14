@@ -461,7 +461,7 @@
                                                     <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_02().save()">
+                                                <button class="btn bg-gradient-primary ms-auto mb-0" type="button" title="Next" onclick="instrumento_02().save()">
                                                     Guardar
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>

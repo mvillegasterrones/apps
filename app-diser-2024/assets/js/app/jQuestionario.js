@@ -58,40 +58,24 @@ const questionario = () => ({
 const instrumento_01 = () => ({
 
     send_data: () => {
-        let form   = $('#form-inst-01').serialize()
-        let params = form
 
-        $.post( questionario_url, params, (response) => {
+        let form   = $('#form-inst-01').serialize()
+
+        $.post( questionario_url, form, (response) => {
             if (response) {
-                sw_alert().ok_reload(`Guardado! - ${response}`)
+                sw_alert().ok_reload(`Registro exitoso!`)
             } else {
-                sw_alert().error(`Ocurrió un problema al realizar el registro - ${response}` )
+                sw_alert().error(`Ocurrió un problema al registrar el INST-01 - ${response}` )
             }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
             sw_alert().error(error)
         })
+
     },
 
     save: () => {
         let validar_form = funciones().validar_form_required('form-inst-01')
-
-        /*Swal.fire({
-            icon: 'question',
-            title: "¿Guardar la información?",
-            showDenyButton: true,
-            showCancelButton: false,
-            confirmButtonText: "Guardar",
-            denyButtonText: `Cancelar`
-        }).then((result) => {
-            if (result.isConfirmed) {
-                //* Swal.fire("Saved!", "", "success");
-                instrumento_01().send_data()
-            } else if (result.isDenied) {
-                //* Swal.fire("Changes are not saved", "", "info")
-                console.log('INST-01: Cancelado')
-            }
-        })*/
 
         if (validar_form) {
 
@@ -111,13 +95,13 @@ const instrumento_01 = () => ({
                     console.log('INST-01: Cancelado')
                 }
             })
-            
             // ! msje = 'El formulario está listo para ser enviado. ' + validar_form
             // ! sw_alert().ok(msje)
         } else {
             msje = 'Por favor, complete todos los campos del formulario.'
             sw_alert().warning(msje)
         }
+
     },
 
     get_reporte_inst_01: () => {
@@ -223,14 +207,14 @@ const instrumento_01 = () => ({
 })
 
 const instrumento_02 = () => ({
+
     send: () => {
 
         let form = $('#form-inst-02').serialize()
-        //let params    = form
 
         $.post( questionario_url, form, (response) => {
             if (response) {
-                sw_alert().ok_reload(`Instrumento registrado! ${response}`)
+                sw_alert().ok_reload(`Registrado exitoso!`)
             } else {
                 sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
             }
@@ -242,7 +226,9 @@ const instrumento_02 = () => ({
     },
 
     save: () => {
+
         let validar_form = funciones().validar_form_required('form-inst-02')
+        
         if (validar_form) {
 
             Swal.fire({
@@ -268,10 +254,80 @@ const instrumento_02 = () => ({
     },
 
     get_reporte: () => {
-        console.log('Function get_reporte')
+
+        let params = { action: 'get-reporte-inst-02' }
+
+        $.post( questionario_url, params, (response) => {
+
+            let data = eval(response)
+            let html = ''
+
+            $('#modal-form-inst-02 #btn-cargando').show()
+
+            if (response!=='[]') {
+
+                for (let i = 0; i < data.length; i++) {
+                    let ubicacion  = data[i].d_dpto +' / '+ data[i].d_prov +' / '+ data[i].d_dist
+
+                    html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_02().delete(${data[i].idInstrumento},${i+1})"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${i+1}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie}</p>
+                                </td>
+                                <td align=center>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_grado}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_datos_aplicador}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo_aplicador}</p>
+                                </td>
+                            </tr>`
+                }
+
+            } else {
+                html +=`<tr>
+                            <td colspan="10" class="text-danger text-center text-uppercase">
+                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se han encontrado registros</p>
+                            </td>
+                        </tr>`
+            }
+            $('#tbl-reporte-inst-02 tbody').html(html)
+            $('#modal-form-inst-02 #btn-cargando').hide()
+
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+            sw_alert().error(error)
+        })
+
     },
 
-    delete_item: (id, item) => {
+    delete: (id, item) => {
         console.log('Function delete - ' + id +' - ' + item)
     }
+
 })

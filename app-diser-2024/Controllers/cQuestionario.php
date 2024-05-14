@@ -5,10 +5,15 @@ $instancia = new mQuestionario();
 $accion    = $_POST['action'];
 switch ($accion) {
 // ! INICIO - Instrumento Nro. 02
+    case 'get-reporte-inst-02':
+        $cod_mod     = $_SESSION['cod_mod'];
+        $ejecutar    = $instancia->get_reporte_inst_02($cod_mod);
+        echo json_encode($ejecutar);
+        break;
     case 'save-update-inst-02':
-        
         $id                   = $_POST['id'];
         $action               = $_POST['action'];
+        $cod_mod              = $_SESSION['cod_mod'];
         $txt_datos_aplicador  = $_POST['txt_datos_aplicador'];
         $txt_cargo_aplicador  = $_POST['txt_cargo_aplicador'];
         $txt_grado            = $_POST['txt_grado'];
@@ -47,7 +52,7 @@ switch ($accion) {
         $txt_3_8              = $_POST['txt_3_8'];
         $txt_observaciones_3  = $_POST['txt_observaciones_3'];
 
-        $ejecutar    = $instancia->set_instrumento_02($id, $action, $txt_datos_aplicador, $txt_cargo_aplicador, $txt_grado, $txt_tiempo_comida, $txt_mes_reporte, $txt_fecha_aplicacion, $txt_1_1, $txt_1_2, $txt_1_2_1, $txt_1_2_2, $txt_1_2_3, $txt_1_3, $txt_1_4, $txt_1_5, $txt_observaciones_1, $txt_2_1, $txt_2_1_1, $txt_2_1_2, $txt_2_1_3, $txt_2_2, $txt_2_2_1, $txt_2_2_2, $txt_2_2_3, $txt_2_2_4, $txt_2_3, $txt_2_4, $txt_2_5, $txt_observaciones_2, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_observaciones_3);
+        $ejecutar = $instancia->set_instrumento_02($id, $action, $cod_mod, $txt_datos_aplicador, $txt_cargo_aplicador, $txt_grado, $txt_tiempo_comida, $txt_mes_reporte, $txt_fecha_aplicacion, $txt_1_1, $txt_1_2, $txt_1_2_1, $txt_1_2_2, $txt_1_2_3, $txt_1_3, $txt_1_4, $txt_1_5, $txt_observaciones_1, $txt_2_1, $txt_2_1_1, $txt_2_1_2, $txt_2_1_3, $txt_2_2, $txt_2_2_1, $txt_2_2_2, $txt_2_2_3, $txt_2_2_4, $txt_2_3, $txt_2_4, $txt_2_5, $txt_observaciones_2, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_observaciones_3);
         echo json_encode($ejecutar);
         break;
 // ! FIN - Instrumento Nro. 02

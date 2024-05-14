@@ -10,8 +10,6 @@
     </div>
 </main>
 <?php
-    //include './Views/form/form-inst-01.php';
     include './Views/form-modal/modal-reporte-inst-01.php';
-
-    //include './Views/form/form-inst-02.php';
+    include './Views/form-modal/modal-reporte-inst-02.php';
 ?>
