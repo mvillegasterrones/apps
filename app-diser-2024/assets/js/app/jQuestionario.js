@@ -58,13 +58,12 @@ const questionario = () => ({
 const instrumento_01 = () => ({
 
     send_data: () => {
-        let form   = form_inst_01.serialize()
+        let form   = $('#form-inst-01').serialize()
         let params = form
 
         $.post( questionario_url, params, (response) => {
             if (response) {
                 sw_alert().ok_reload(`Guardado! - ${response}`)
-                //location.reload()
             } else {
                 sw_alert().error(`Ocurrió un problema al realizar el registro - ${response}` )
             }
@@ -98,7 +97,7 @@ const instrumento_01 = () => ({
 
             Swal.fire({
                 icon: 'question',
-                title: "¿Guardar la información?",
+                title: "¿Guardar instrumento 01?",
                 showDenyButton: true,
                 showCancelButton: false,
                 confirmButtonText: "Guardar",
@@ -220,5 +219,59 @@ const instrumento_01 = () => ({
         });
 
         
+    }
+})
+
+const instrumento_02 = () => ({
+    send: () => {
+
+        let form = $('#form-inst-02').serialize()
+        //let params    = form
+
+        $.post( questionario_url, form, (response) => {
+            if (response) {
+                sw_alert().ok_reload(`Instrumento registrado! ${response}`)
+            } else {
+                sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
+            }
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+            sw_alert().error(error)
+        })
+
+    },
+
+    save: () => {
+        let validar_form = funciones().validar_form_required('form-inst-02')
+        if (validar_form) {
+
+            Swal.fire({
+                icon: 'question',
+                title: "¿Guardar instrumento 02?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Guardar",
+                denyButtonText: `Cancelar`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    instrumento_02().send()
+                } else if (result.isDenied) {
+                    console.log('INST-02: Cancelado')
+                }
+            })
+
+        } else {
+            msje = 'Por favor, complete todos los campos del formulario.'
+            sw_alert().warning(msje)
+        }
+
+    },
+
+    get_reporte: () => {
+        console.log('Function get_reporte')
+    },
+
+    delete_item: (id, item) => {
+        console.log('Function delete - ' + id +' - ' + item)
     }
 })

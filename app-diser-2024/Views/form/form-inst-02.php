@@ -77,7 +77,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6">
                                                 <label>Nombres y apellidos del observador</label>
-                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt_datos_aplicador" id="txt_datos_aplicador" maxlength="100" required />
+                                                <input class="multisteps-form__input form-control" type="text" placeholder="Ingresar respuesta" name="txt_datos_aplicador" id="txt_datos_aplicador" maxlength="150" required />
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                                                 <label>Cargo</label>
@@ -324,7 +324,7 @@
 
                                                 <div class="col-12 col-sm-4">
                                                     <label for="">2.4. ¿Se reporta incidentes en el que sobren o falten preparaciones para el servido (cuaderno de incidencia)?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt-" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt_2_4" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -333,7 +333,7 @@
                                                 
                                                 <div class="col-12 col-sm-4">
                                                     <label for="">2.5. ¿La preparación observada coincide con el menú escolar escolar programado?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt_2_5" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_5" name="txt_2_5" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
@@ -356,7 +356,7 @@
                                                     <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="instrumento_02().save()">
+                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
                                                     Siguiente
                                                     <i class="fa-duotone fa-arrow-right"></i>
                                                 </button>
@@ -461,7 +461,7 @@
                                                     <i class="fa-duotone fa-arrow-left"></i>
                                                     Regresar
                                                 </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_01().save()">
+                                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Next" onclick="instrumento_02().save()">
                                                     Guardar
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>

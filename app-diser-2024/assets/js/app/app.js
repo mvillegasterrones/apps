@@ -105,4 +105,5 @@ const funciones = () => ({
     page_reload: () => {
         location.reload()
     }
+    
 })

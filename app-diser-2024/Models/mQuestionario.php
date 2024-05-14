@@ -9,6 +9,22 @@ class mQuestionario
         $this->conexion->conectar();
     }
 
+    // ! INICIO - Instrumento 02
+    function set_instrumento_02($id, $action, $txt_datos_aplicador, $txt_cargo_aplicador, $txt_grado, $txt_tiempo_comida, $txt_mes_reporte, $txt_fecha_aplicacion, $txt_1_1, $txt_1_2, $txt_1_2_1, $txt_1_2_2, $txt_1_2_3, $txt_1_3, $txt_1_4, $txt_1_5, $txt_observaciones_1, $txt_2_1, $txt_2_1_1, $txt_2_1_2, $txt_2_1_3, $txt_2_2, $txt_2_2_1, $txt_2_2_2, $txt_2_2_3, $txt_2_2_4, $txt_2_3, $txt_2_4, $txt_2_5, $txt_observaciones_2, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_observaciones_3)
+    {
+        $sql = "CALL sp_v1_set_instrumento_02('$id', '$action', '$txt_datos_aplicador', '$txt_cargo_aplicador', '$txt_grado', '$txt_tiempo_comida', '$txt_mes_reporte', '$txt_fecha_aplicacion', '$txt_1_1', '$txt_1_2', '$txt_1_2_1', '$txt_1_2_2', '$txt_1_2_3', '$txt_1_3', '$txt_1_4', '$txt_1_5', '$txt_observaciones_1', '$txt_2_1', '$txt_2_1_1', '$txt_2_1_2', '$txt_2_1_3', '$txt_2_2', '$txt_2_2_1', '$txt_2_2_2', '$txt_2_2_3', '$txt_2_2_4', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_observaciones_2', '$txt_3_1', '$txt_3_2', '$txt_3_3', '$txt_3_4', '$txt_3_5', '$txt_3_6', '$txt_3_7', '$txt_3_8', '$txt_observaciones_3')";
+        $this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			$code = true;
+		} else {
+			$this->conexion->cerrar();
+			$code = false;
+		}
+        return $code;
+
+    }
+
     // ! INICIO - Instrumento 01
     function delete_inst_01($id)
     {

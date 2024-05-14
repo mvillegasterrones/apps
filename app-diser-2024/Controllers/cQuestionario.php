@@ -4,6 +4,54 @@ require_once '../Models/mQuestionario.php';
 $instancia = new mQuestionario();
 $accion    = $_POST['action'];
 switch ($accion) {
+// ! INICIO - Instrumento Nro. 02
+    case 'save-update-inst-02':
+        
+        $id                   = $_POST['id'];
+        $action               = $_POST['action'];
+        $txt_datos_aplicador  = $_POST['txt_datos_aplicador'];
+        $txt_cargo_aplicador  = $_POST['txt_cargo_aplicador'];
+        $txt_grado            = $_POST['txt_grado'];
+        $txt_tiempo_comida    = $_POST['txt_tiempo_comida'];
+        $txt_mes_reporte      = $_POST['txt_mes_reporte'];
+        $txt_fecha_aplicacion = $_POST['txt_fecha_aplicacion'];
+        $txt_1_1              = $_POST['txt_1_1'];
+        $txt_1_2              = $_POST['txt_1_2'];
+        $txt_1_2_1            = $_POST['txt_1_2_1'];
+        $txt_1_2_2            = $_POST['txt_1_2_2'];
+        $txt_1_2_3            = $_POST['txt_1_2_3'];
+        $txt_1_3              = $_POST['txt_1_3'];
+        $txt_1_4              = $_POST['txt_1_4'];
+        $txt_1_5              = $_POST['txt_1_5'];
+        $txt_observaciones_1  = $_POST['txt_observaciones_1'];
+        $txt_2_1              = $_POST['txt_2_1'];
+        $txt_2_1_1            = $_POST['txt_2_1_1'];
+        $txt_2_1_2            = $_POST['txt_2_1_2'];
+        $txt_2_1_3            = $_POST['txt_2_1_3'];
+        $txt_2_2              = $_POST['txt_2_2'];
+        $txt_2_2_1            = $_POST['txt_2_2_1'];
+        $txt_2_2_2            = $_POST['txt_2_2_2'];
+        $txt_2_2_3            = $_POST['txt_2_2_3'];
+        $txt_2_2_4            = $_POST['txt_2_2_4'];
+        $txt_2_3              = $_POST['txt_2_3'];
+        $txt_2_4              = $_POST['txt_2_4'];
+        $txt_2_5              = $_POST['txt_2_5'];
+        $txt_observaciones_2  = $_POST['txt_observaciones_2'];
+        $txt_3_1              = $_POST['txt_3_1'];
+        $txt_3_2              = $_POST['txt_3_2'];
+        $txt_3_3              = $_POST['txt_3_3'];
+        $txt_3_4              = $_POST['txt_3_4'];
+        $txt_3_5              = $_POST['txt_3_5'];
+        $txt_3_6              = $_POST['txt_3_6'];
+        $txt_3_7              = $_POST['txt_3_7'];
+        $txt_3_8              = $_POST['txt_3_8'];
+        $txt_observaciones_3  = $_POST['txt_observaciones_3'];
+
+        $ejecutar    = $instancia->set_instrumento_02($id, $action, $txt_datos_aplicador, $txt_cargo_aplicador, $txt_grado, $txt_tiempo_comida, $txt_mes_reporte, $txt_fecha_aplicacion, $txt_1_1, $txt_1_2, $txt_1_2_1, $txt_1_2_2, $txt_1_2_3, $txt_1_3, $txt_1_4, $txt_1_5, $txt_observaciones_1, $txt_2_1, $txt_2_1_1, $txt_2_1_2, $txt_2_1_3, $txt_2_2, $txt_2_2_1, $txt_2_2_2, $txt_2_2_3, $txt_2_2_4, $txt_2_3, $txt_2_4, $txt_2_5, $txt_observaciones_2, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_observaciones_3);
+        echo json_encode($ejecutar);
+        break;
+// ! FIN - Instrumento Nro. 02
+
 // ! INICIO - Instrumento Nro. 01
     case 'delete-int-01':
         $id = $_POST['id'];
@@ -158,135 +206,3 @@ switch ($accion) {
     default:
         break;
 }
-
-/*
-
-id INT AUTO_INCREMENT PRIMARY KEY, 
-action VARCHAR(100), 
-cod_mod VARCHAR(10), 
-txt_est_apellidos VARCHAR(100), 
-txt_est_nombres VARCHAR(100), 
-txt_est_edad TINYINT(2), 
-txt_est_sexo CHAR(10), 
-txt_est_etnica VARCHAR(100), 
-txt_est_residente CHAR(2), 
-txt_est_findesemana CHAR(2), 
-txt_mes_reporte VARCHAR(30), 
-txt_desayuno TINYINT(1), 
-txt_almuerzo TINYINT(1), 
-txt_cena TINYINT(1), 
-txt_refrigerio_1 TINYINT(1), 
-txt_refrigerio_2 TINYINT(1), 
-sel_opc_1 TINYINT(1), 
-sel_opc_2_1 TINYINT(1), 
-txt_valor_1 TINYINT(2), 
-txt_valor_2_1 TINYINT(2), 
-sel_opc_2 TINYINT(1), 
-sel_opc_2_2 TINYINT(1), 
-txt_valor_2 TINYINT(2), 
-txt_valor_2_2 TINYINT(2), 
-sel_opc_3 TINYINT(1), 
-sel_opc_2_3 TINYINT(1), 
-txt_valor_3 TINYINT(2), 
-txt_valor_2_3 TINYINT(2), 
-sel_opc_4 TINYINT(1), 
-sel_opc_2_4 TINYINT(1), 
-txt_valor_4 TINYINT(2), 
-txt_valor_2_4 TINYINT(2), 
-sel_opc_5 TINYINT(1), 
-sel_opc_2_5 TINYINT(1), 
-txt_valor_5 TINYINT(2), 
-txt_valor_2_5 TINYINT(2), 
-sel_opc_6 TINYINT(1), 
-sel_opc_2_6 TINYINT(1), 
-txt_valor_6 TINYINT(2), 
-txt_valor_2_6 TINYINT(2), 
-sel_opc_7 TINYINT(1), 
-sel_opc_2_7 TINYINT(1), 
-txt_valor_7 TINYINT(2), 
-txt_valor_2_7 TINYINT(2), 
-sel_opc_8 TINYINT(1), 
-sel_opc_2_8 TINYINT(1), 
-txt_valor_8 TINYINT(2), 
-txt_valor_2_8 TINYINT(2), 
-sel_opc_9 TINYINT(1), 
-sel_opc_2_9 TINYINT(1), 
-txt_valor_9 TINYINT(2), 
-txt_valor_2_9 TINYINT(2), 
-sel_opc_10 TINYINT(1), 
-sel_opc_2_10 TINYINT(1), 
-txt_valor_10 TINYINT(2), 
-txt_valor_2_10 TINYINT(2), 
-sel_opc_11 TINYINT(1), 
-sel_opc_2_11 TINYINT(1), 
-txt_valor_11 TINYINT(2), 
-txt_valor_2_11 TINYINT(2), 
-sel_opc_12 TINYINT(1), 
-sel_opc_2_12 TINYINT(1), 
-txt_valor_12 TINYINT(2), 
-txt_valor_2_12 TINYINT(2), 
-sel_opc_13 TINYINT(1), 
-sel_opc_2_13 TINYINT(1), 
-txt_valor_13 TINYINT(2), 
-txt_valor_2_13 TINYINT(2), 
-sel_opc_14 TINYINT(1), 
-sel_opc_2_14 TINYINT(1), 
-txt_valor_14 TINYINT(2), 
-txt_valor_2_14 TINYINT(2), 
-sel_opc_15 TINYINT(1), 
-sel_opc_2_15 TINYINT(1), 
-txt_valor_15 TINYINT(2), 
-txt_valor_2_15 TINYINT(2), 
-sel_opc_16 TINYINT(1), 
-sel_opc_2_16 TINYINT(1), 
-txt_valor_16 TINYINT(2), 
-txt_valor_2_16 TINYINT(2), 
-sel_opc_17 TINYINT(1), 
-sel_opc_2_17 TINYINT(1), 
-txt_valor_17 TINYINT(2), 
-txt_valor_2_17 TINYINT(2), 
-sel_opc_18 TINYINT(1), 
-sel_opc_2_18 TINYINT(1), 
-txt_valor_18 TINYINT(2), 
-txt_valor_2_18 TINYINT(2), 
-sel_opc_19 TINYINT(1), 
-sel_opc_2_19 TINYINT(1), 
-txt_valor_19 TINYINT(2), 
-txt_valor_2_19 TINYINT(2), 
-sel_opc_20 TINYINT(1), 
-sel_opc_2_20 TINYINT(1), 
-txt_valor_20 TINYINT(2), 
-txt_valor_2_20 TINYINT(2), 
-sel_opc_21 TINYINT(1), 
-sel_opc_2_21 TINYINT(1), 
-txt_valor_21 TINYINT(2), 
-txt_valor_2_21 TINYINT(2), 
-sel_opc_22 TINYINT(1), 
-sel_opc_2_22 TINYINT(1), 
-txt_valor_22 TINYINT(2), 
-txt_valor_2_22 TINYINT(2), 
-sel_opc_23 TINYINT(1), 
-sel_opc_2_23 TINYINT(1), 
-txt_valor_23 TINYINT(2), 
-txt_valor_2_23 TINYINT(2), 
-sel_opc_24 TINYINT(1), 
-sel_opc_2_24 TINYINT(1), 
-txt_valor_24 TINYINT(2), 
-txt_valor_2_24 TINYINT(2), 
-txt_otro_25 VARCHAR(100), 
-sel_opc_25 TINYINT(1), 
-sel_opc_2_25 TINYINT(1), 
-txt_valor_25 TINYINT(2), 
-txt_valor_2_25 TINYINT(2), 
-txt_otro_26 VARCHAR(100), 
-sel_opc_26 TINYINT(1), 
-sel_opc_2_26 TINYINT(1), 
-txt_valor_26 TINYINT(2), 
-txt_valor_2_26 TINYINT(2), 
-txt_otro_27 VARCHAR(100), 
-sel_opc_27 TINYINT(1), 
-sel_opc_2_27 TINYINT(1), 
-txt_valor_27 TINYINT(2), 
-txt_valor_2_27 TINYINT(2), 
-txt_fecha_aplicacion VARCHAR(20)
- */
