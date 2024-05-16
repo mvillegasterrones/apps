@@ -233,78 +233,82 @@
 
                                                 <div class="col-12 col-sm-6">
                                                     <label>2.1. ¿El servido cumple con las medidas caseras establecidas con el PNAEQW?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_1-" name="txt_2_1" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_1" name="txt_2_1"  onchange="instrumento_02().active_section('txt_2_1', 'section-2-1', ['txt_2_1_1', 'txt_2_1_2', 'txt_2_1_3'])" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
                                                     </select>
-                                                    <div class="row mt-3" id="section-2-1">
-                                                        <div class="col-12 col-sm-4">
-                                                            <label>2.1.1 Desayuno</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_1_1" name="txt_2_1_1" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-12 col-sm-4">
-                                                            <label>2.1.2 Almuerzo</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_1_2" name="txt_2_1_2" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-12 col-sm-4">
-                                                            <label>2.1.3 Cena</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_1_3" name="txt_2_1_3" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
+                                                    <div class="col-12 d-none" id="section-2-1">
+                                                        <div class="row mt-3">
+                                                            <div class="col-12 col-sm-4">
+                                                                <label>2.1.1 Desayuno</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_1_1" name="txt_2_1_1" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-4">
+                                                                <label>2.1.2 Almuerzo</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_1_2" name="txt_2_1_2" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-4">
+                                                                <label>2.1.3 Cena</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_1_3" name="txt_2_1_3" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6">
                                                     <label>2.2 ¿Las preparaciones contienen los 3 grupos de alimentos? </label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_2" name="txt_2_2" required>
+                                                    <select class="multisteps-form__input form-control" id="txt_2_2" name="txt_2_2" onchange="instrumento_02().active_section('txt_2_2', 'section-2-2', ['txt_2_2_1', 'txt_2_2_2', 'txt_2_2_3', 'txt_2_2_4'])" required>
                                                         <option value="" selected disabled>.: Seleccione :.</option>
                                                         <option>Si</option>
                                                         <option>No</option>
                                                     </select>
-                                                    <div class="row mt-3" id="section-2-2">
-                                                        <div class="col-12 col-sm-6">
-                                                            <label>2.2.1 Carbohidratos (cerales, tuberculos, etc)</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_2_1" name="txt_2_2_1" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6">
-                                                            <label>2.2.2 Proteínas de origen animal</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_2_2" name="txt_2_2_2" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6 mt-2">
-                                                            <label>2.2.3 Proteínas de origen vegetal</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_2_3" name="txt_2_2_3" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-12 col-sm-6 mt-2">
-                                                            <label>2.2.4 Vitaminas (frutas y verduras)</label>
-                                                            <select class="multisteps-form__input form-control" id="txt_2_2_4" name="txt_2_2_4" required>
-                                                                <option value="" selected disabled>.: Seleccione :.</option>
-                                                                <option>Si</option>
-                                                                <option>No</option>
-                                                            </select>
+                                                    <div class="col-12 d-none" id="section-2-2">
+                                                        <div class="row mt-3">
+                                                            <div class="col-12 col-sm-6">
+                                                                <label>2.2.1 Carbohidratos (cerales, tuberculos, etc)</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_2_1" name="txt_2_2_1" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6">
+                                                                <label>2.2.2 Proteínas de origen animal</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_2_2" name="txt_2_2_2" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 mt-2">
+                                                                <label>2.2.3 Proteínas de origen vegetal</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_2_3" name="txt_2_2_3" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6 mt-2">
+                                                                <label>2.2.4 Vitaminas (frutas y verduras)</label>
+                                                                <select class="multisteps-form__input form-control" id="txt_2_2_4" name="txt_2_2_4" required>
+                                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                                    <option>Si</option>
+                                                                    <option>No</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

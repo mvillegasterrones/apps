@@ -354,6 +354,90 @@ const instrumento_02 = () => ({
             }
         })
 
+    },
+
+    active_section: (selector, section, objArray) => {
+
+        let valor = $('#form-inst-02 #' + selector).val()
+        if (valor === 'Si') {
+            $('#form-inst-02 #' + section).removeClass('d-none')
+            $('#form-inst-02 #' + section).addClass('d-block')
+
+            objArray.forEach( item => {
+                $('#form-inst-02 #' + item).val('Si')
+            })
+
+        } else {
+            $('#form-inst-02 #' + section).removeClass('d-block')
+            $('#form-inst-02 #' + section).addClass('d-none')
+
+            objArray.forEach( item => {
+                $('#form-inst-02 #' + item).val('No')
+            })
+
+        }
+
+    }
+
+})
+
+const instrumento_03 = () => ({
+
+    send: () => {
+
+        sw_alert().ok('A la espera del envio de datos y registro')
+
+    },
+
+    save: () => {
+
+        let validar_form = funciones().validar_form_required('form-inst-03')
+        
+        if (validar_form) {
+
+            Swal.fire({
+                icon: 'question',
+                title: "¿Guardar instrumento 03?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Guardar",
+                denyButtonText: `Cancelar`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    instrumento_02().send()
+                } else if (result.isDenied) {
+                    console.log('INST-02: Cancelado')
+                }
+            })
+
+        } else {
+            msje = 'Por favor, complete todos los campos del formulario.'
+            sw_alert().warning(msje)
+        }
+
+    },
+
+    get_reporte: () => {
+
+    },
+
+    delete: () => {
+
+    },
+
+    active_item: (selector, txtSelector) => {
+        
+        let valor = $('#form-inst-03 #' + selector).val()
+
+        if (valor === 'Si' || valor === 'Otro') {
+            $('#form-inst-03 #' + txtSelector).removeClass('d-none').addClass('d-block')
+            $('#form-inst-03 #' + txtSelector).val('')
+            $('#form-inst-03 #' + txtSelector).focus()
+        } else {
+            $('#form-inst-03 #' + txtSelector).removeClass('d-block').addClass('d-none')
+            $('#form-inst-03 #' + txtSelector).val('-')
+        }
+
     }
 
 })
