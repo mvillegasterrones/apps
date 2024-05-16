@@ -406,7 +406,7 @@ const instrumento_03 = () => ({
                 if (result.isConfirmed) {
                     instrumento_03().send()
                 } else if (result.isDenied) {
-                    console.log('INST-02: Cancelado')
+                    console.log('INST-03: Cancelado')
                 }
             })
 
