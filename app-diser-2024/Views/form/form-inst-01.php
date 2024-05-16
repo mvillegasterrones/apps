@@ -237,14 +237,14 @@
                                                 </table>
                                             </div>
 
-                                            <div class="row mt-3">
-                                                <div class="col-12 col-sm-3 text-uppercase">
+                                            <!--<div class="row mt-3">-->
+                                                <div class="col-12 col-sm-6 mt-3 text-uppercase">
                                                     <label>Fecha de aplicación</label>
                                                     <input class="multisteps-form__input form-control" type="date" placeholder="dd/mm/yyyy" name="txt-fecha-aplicacion" id="txt-fecha-aplicacion" required />
                                                 </div>
-                                            </div>
+                                            <!--</div>-->
                                         </div>
-                                        <div class="row">
+                                        <!--<div class="row">-->
                                             <div class="button-row d-flex mt-4 col-12">
                                                 <!--<button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
                                                 <i class="fa-duotone fa-arrow-left"></i>
@@ -255,7 +255,7 @@
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>
                                             </div>
-                                        </div>
+                                        <!--</div>-->
                                     </div>
                                 </div>
 

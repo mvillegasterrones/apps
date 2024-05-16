@@ -404,7 +404,7 @@ const instrumento_03 = () => ({
                 denyButtonText: `Cancelar`
             }).then((result) => {
                 if (result.isConfirmed) {
-                    instrumento_02().send()
+                    instrumento_03().send()
                 } else if (result.isDenied) {
                     console.log('INST-02: Cancelado')
                 }

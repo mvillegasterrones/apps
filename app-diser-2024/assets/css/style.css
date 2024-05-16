@@ -1,3 +1,15 @@
+.multisteps-form__content .row div:hover {
+  border-radius: 15px;
+  border: .5px solid yellow !important;
+  color:  #ffd300 !important;
+  cursor: pointer;
+}
+
+.multisteps-form__content .row div:hover * {
+  color:  #ffd300 !important;
+}
+
+
 .modal .modal-content .modal-body *,
 .card-color-pastel * {
   color: #b9e0f2 !important;

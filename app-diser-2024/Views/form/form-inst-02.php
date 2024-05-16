@@ -226,21 +226,23 @@
                                 <!-- // TODO: Section 3 - OBSERVACIÓN EN EL SERVIDO DE LAS PREPARACIONESS -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">OBSERVACIÓN EN EL SERVIDO DE LAS PREPARACIONES (Se observará los 10 primeros platos servidos)</h5>
-                                    <div class="multisteps-form__content">
-                                        <div class="row mt-3 text-uppercase">
+                                    <div class="multisteps-form__content text-uppercase">
 
-                                            <div class="row">
+                                        <div class="row mt-3">
 
-                                                <div class="col-12 col-sm-6">
-                                                    <label>2.1. ¿El servido cumple con las medidas caseras establecidas con el PNAEQW?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_1" name="txt_2_1"  onchange="instrumento_02().active_section('txt_2_1', 'section-2-1', ['txt_2_1_1', 'txt_2_1_2', 'txt_2_1_3'])" required>
-                                                        <option value="" selected disabled>.: Seleccione :.</option>
-                                                        <option>Si</option>
-                                                        <option>No</option>
-                                                    </select>
-                                                    <div class="col-12 d-none" id="section-2-1">
-                                                        <div class="row mt-3">
-                                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6">
+                                                <label>2.1. ¿El servido cumple con las medidas caseras establecidas con el PNAEQW?</label>
+                                                <select class="multisteps-form__input form-control" id="txt_2_1" name="txt_2_1" onchange="instrumento_02().active_section('txt_2_1', 'section-2-1', ['txt_2_1_1', 'txt_2_1_2', 'txt_2_1_3'])" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                                <!--<div class="col-12 d-none" id="section-2-1">-->
+                                                <!--<div class="row mt-3" id="section-2-1">-->
+                                                <table class="table-sm w-100 mt-3 d-none" id="section-2-1">
+                                                    <tr>
+                                                        <td style="width: 33.3%;">
+                                                            <div class="col-12 col-sm-12">
                                                                 <label>2.1.1 Desayuno</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_1_1" name="txt_2_1_1" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -248,7 +250,9 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-12 col-sm-4">
+                                                        </td>
+                                                        <td style="width: 33.3%;">
+                                                            <div class="col-12 col-sm-12">
                                                                 <label>2.1.2 Almuerzo</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_1_2" name="txt_2_1_2" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -256,7 +260,9 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-12 col-sm-4">
+                                                        </td>
+                                                        <td style="width: 33.3%;">
+                                                            <div class="col-12 col-sm-12">
                                                                 <label>2.1.3 Cena</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_1_3" name="txt_2_1_3" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -264,28 +270,36 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                        </td>
+                                                </table>
+                                                <!--</div>-->
+                                                <!--</div>-->
+                                            </div>
 
-                                                <div class="col-12 col-sm-6">
-                                                    <label>2.2 ¿Las preparaciones contienen los 3 grupos de alimentos? </label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_2" name="txt_2_2" onchange="instrumento_02().active_section('txt_2_2', 'section-2-2', ['txt_2_2_1', 'txt_2_2_2', 'txt_2_2_3', 'txt_2_2_4'])" required>
-                                                        <option value="" selected disabled>.: Seleccione :.</option>
-                                                        <option>Si</option>
-                                                        <option>No</option>
-                                                    </select>
-                                                    <div class="col-12 d-none" id="section-2-2">
-                                                        <div class="row mt-3">
-                                                            <div class="col-12 col-sm-6">
-                                                                <label>2.2.1 Carbohidratos (cerales, tuberculos, etc)</label>
+                                            <div class="col-12 col-sm-6">
+                                                <label>2.2 ¿Las preparaciones contienen los 3 grupos de alimentos? </label>
+                                                <select class="multisteps-form__input form-control" id="txt_2_2" name="txt_2_2" onchange="instrumento_02().active_section('txt_2_2', 'section-2-2', ['txt_2_2_1', 'txt_2_2_2', 'txt_2_2_3', 'txt_2_2_4'])" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                                <!--<div class="col-12 d-none" id="section-2-2">
+                                                    <div class="row mt-3">-->
+                                                <table class="table-sm w-100 mt-3 d-none" id="section-2-2">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="col-12 col-sm-12">
+                                                                <label>2.2.1 Carbohidratos\n 
+                                                                    (cerales, tuberculos, etc)</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_2_1" name="txt_2_2_1" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                                     <option>Si</option>
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-12 col-sm-6">
+                                                        </td>
+                                                        <td>
+                                                            <div class="col-12 col-sm-12">
                                                                 <label>2.2.2 Proteínas de origen animal</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_2_2" name="txt_2_2_2" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -293,7 +307,11 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-12 col-sm-6 mt-2">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="col-12 col-sm-12 mt-2">
                                                                 <label>2.2.3 Proteínas de origen vegetal</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_2_3" name="txt_2_2_3" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -301,7 +319,9 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-12 col-sm-6 mt-2">
+                                                        </td>
+                                                        <td>
+                                                            <div class="col-12 col-sm-12 mt-2">
                                                                 <label>2.2.4 Vitaminas (frutas y verduras)</label>
                                                                 <select class="multisteps-form__input form-control" id="txt_2_2_4" name="txt_2_2_4" required>
                                                                     <option value="" selected disabled>.: Seleccione :.</option>
@@ -309,75 +329,77 @@
                                                                     <option>No</option>
                                                                 </select>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row mt-3">
-
-                                                <div class="col-12 col-sm-4">
-                                                    <label for="">2.3. ¿Las preparaciones fueron suficientes para el total de estudiantes?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_3" name="txt_2_3" required>
-                                                        <option value="" selected disabled>.: Seleccione :.</option>
-                                                        <option>Si</option>
-                                                        <option>No</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col-12 col-sm-4">
-                                                    <label for="">2.4. ¿Se reporta incidentes en el que sobren o falten preparaciones para el servido (cuaderno de incidencia)?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_4" name="txt_2_4" required>
-                                                        <option value="" selected disabled>.: Seleccione :.</option>
-                                                        <option>Si</option>
-                                                        <option>No</option>
-                                                    </select>
-                                                </div>
-                                                
-                                                <div class="col-12 col-sm-4">
-                                                    <label for="">2.5. ¿La preparación observada coincide con el menú escolar escolar programado?</label>
-                                                    <select class="multisteps-form__input form-control" id="txt_2_5" name="txt_2_5" required>
-                                                        <option value="" selected disabled>.: Seleccione :.</option>
-                                                        <option>Si</option>
-                                                        <option>No</option>
-                                                    </select>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row mt-3">
-                                                <div class="col-12">
-                                                    <label for="">Observaciones (* opcional)</label>
-                                                    <textarea class="multisteps-form__input form-control" name="txt_observaciones_2" id="txt_observaciones_2" placeholder="Ingrese oberservaciones"></textarea>
-                                                </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--</div>
+                                                </div>-->
                                             </div>
 
                                         </div>
-                                        <div class="row">
-                                            <div class="button-row d-flex mt-4 col-12">
-                                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
-                                                    <i class="fa-duotone fa-arrow-left"></i>
-                                                    Regresar
-                                                </button>
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
-                                                    Siguiente
-                                                    <i class="fa-duotone fa-arrow-right"></i>
-                                                </button>
+
+                                        <div class="row mt-3">
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">2.3. ¿Las preparaciones fueron suficientes para el total de estudiantes?</label>
+                                                <select class="multisteps-form__input form-control" id="txt_2_3" name="txt_2_3" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
                                             </div>
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">2.4. ¿Se reporta incidentes en el que sobren o falten preparaciones para el servido (cuaderno de incidencia)?</label>
+                                                <select class="multisteps-form__input form-control" id="txt_2_4" name="txt_2_4" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">2.5. ¿La preparación observada coincide con el menú escolar escolar programado?</label>
+                                                <select class="multisteps-form__input form-control" id="txt_2_5" name="txt_2_5" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <label for="">Observaciones (* opcional)</label>
+                                                <textarea class="multisteps-form__input form-control" name="txt_observaciones_2" id="txt_observaciones_2" placeholder="Ingrese oberservaciones"></textarea>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="button-row d-flex mt-4 col-12">
+                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
+                                                <i class="fa-duotone fa-arrow-left"></i>
+                                                Regresar
+                                            </button>
+                                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
+                                                Siguiente
+                                                <i class="fa-duotone fa-arrow-right"></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                 <!-- // TODO: Section 4 - OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">OBSERVACIÓN AL MOMENTO DEL CONSUMO DE LAS PREPARACIONES</h5>
                                     <!--<p class="mb-0 text-sm">En las II. EE. con Modelo de Servicio Educativo Secundaria (MSE) en el ámbito rural </p>-->
                                     <div class="multisteps-form__content">
-                                        
+        
                                         <label for="">(**) Que motive el consumo de los alimentos, interacción, estimulación</label>
                                         <div class="row mt-3 text-uppercase">
-
+        
                                             <div class="col-12 col-sm-4">
                                                 <label>3.1. ¿Cuenta con un ambiente exclusivo y/o acondicionado de comedor?</label>
                                                 <select class="multisteps-form__input form-control" id="txt_3_1" name="txt_3_1" required>
@@ -403,9 +425,9 @@
                                                     <option>No consumió</option>
                                                 </select>
                                             </div>
-                                            
+        
                                         </div>
-
+        
                                         <div class="row mt-3 text-uppercase">
                                             <div class="col-12 col-sm-4">
                                                 <label>3.4. ¿Qué grupo de alimentos es el que menos consume?</label>
@@ -434,7 +456,7 @@
                                                 </select>
                                             </div>
                                         </div>
-
+        
                                         <div class="row mt-3 text-uppercase">
                                             <div class="col-12 col-sm-4">
                                                 <label>3.7. ¿El clima o las relaciones durante el consumo de alimentos es agradable, buscando la integración de todos?</label>
@@ -452,14 +474,13 @@
                                                     <option>No</option>
                                                 </select>
                                             </div>
+                                            <div class="col-12 mt-3">
+                                                <label for="">Observaciones (* opcional)</label>
+                                                <textarea class="multisteps-form__input form-control" id="txt_observaciones_3" name="txt_observaciones_3" placeholder="Ingrese observaciones"></textarea>
+                                            </div>
                                         </div>
-
-                                        <div class="row mt-3 text-uppercase">
-                                            <label for="">Observaciones (* opcional)</label>
-                                            <textarea class="multisteps-form__input form-control" id="txt_observaciones_3" name="txt_observaciones_3" placeholder="Ingrese observaciones"></textarea>
-                                        </div>
-
-                                        <div class="row">
+        
+                                        <!--<div class="row">-->
                                             <div class="button-row d-flex mt-4 col-12">
                                                 <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
                                                     <i class="fa-duotone fa-arrow-left"></i>
@@ -470,17 +491,19 @@
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>
                                             </div>
-                                        </div>
-
+                                        <!--</div>-->
+        
                                     </div>
                                 </div>
-
-                            </form>
                         </div>
+
+
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 </main>

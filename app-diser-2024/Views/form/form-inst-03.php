@@ -394,7 +394,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row">
+                                        <!--<div class="row">-->
                                             <div class="button-row d-flex mt-4 col-12">
                                                 <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
                                                 <i class="fa-duotone fa-arrow-left"></i>
@@ -405,7 +405,7 @@
                                                     <i class="fa-duotone fa-save"></i>
                                                 </button>
                                             </div>
-                                        </div>
+                                        <!--</div>-->
                                     </div>
                                 </div>
 
