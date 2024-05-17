@@ -392,7 +392,7 @@ const instrumento_03 = () => ({
         $.post( questionario_url, form, (response) => {
             if (response) {
                 colsole.log(response)
-                //sw_alert().ok_reload(`Registrado exitoso!`)
+                sw_alert().ok_reload(`Registrado exitoso!`)
             } else {
                 sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
             }
