@@ -407,11 +407,9 @@ const instrumento_03 = () => ({
 
     save: () => {
 
-        instrumento_03().send()
-
         let validar_form = funciones().validar_form_required('form-inst-03')
         
-        /*if (validar_form) {
+        if (validar_form) {
 
             Swal.fire({
                 icon: 'question',
@@ -431,7 +429,7 @@ const instrumento_03 = () => ({
         } else {
             msje = 'Por favor, complete todos los campos del formulario.'
             sw_alert().warning(msje)
-        }*/
+        }
 
     },
 
