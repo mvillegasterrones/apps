@@ -11,7 +11,7 @@ class conexion
     {
         $this->servidor   = "localhost";
         $this->usuario	  = "root";
-        $this->contrasena = "root";
+        $this->contrasena = "";
         $this->basedatos  = "app_diser";
     }
     function conectar()

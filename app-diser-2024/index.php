@@ -4,7 +4,7 @@
     // TODO: SweetAlert: https://sweetalert2.github.io/#download
     // TODO: link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
 -->
-<?php include './includes.php' ?>
+<?php //include './includes.php' ?>
 <!DOCTYPE html>
 <html lang="es">
 

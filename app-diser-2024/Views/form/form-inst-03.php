@@ -390,7 +390,7 @@
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6 text-uppercase">
                                                 <label>Fecha de aplicación</label>
-                                                <input class="multisteps-form__input form-control" type="date" placeholder="dd/mm/yyyy" name="txt-fecha-aplicacion" id="txt-fecha-aplicacion" required />
+                                                <input class="multisteps-form__input form-control" type="date" placeholder="dd/mm/yyyy" name="txt_fecha_aplicacion" id="txt_fecha_aplicacion" required />
                                             </div>
                                         </div>
 

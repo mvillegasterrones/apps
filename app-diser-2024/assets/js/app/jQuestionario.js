@@ -387,9 +387,12 @@ const instrumento_03 = () => ({
 
         let form = $('#form-inst-03').serialize()
 
+        //sw_alert().ok(form)
+
         $.post( questionario_url, form, (response) => {
             if (response) {
-                sw_alert().ok_reload(`Registrado exitoso!`)
+                colsole.log(response)
+                //sw_alert().ok_reload(`Registrado exitoso!`)
             } else {
                 sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
             }
@@ -398,7 +401,7 @@ const instrumento_03 = () => ({
             sw_alert().error(error)
         })
 
-        sw_alert().ok('A la espera del envio de datos y registro')
+        //sw_alert().ok('A la espera del envio de datos y registro')*/
 
     },
 
