@@ -385,15 +385,30 @@ const instrumento_03 = () => ({
 
     send: () => {
 
+        let form = $('#form-inst-03').serialize()
+
+        $.post( questionario_url, form, (response) => {
+            if (response) {
+                sw_alert().ok_reload(`Registrado exitoso!`)
+            } else {
+                sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
+            }
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+            sw_alert().error(error)
+        })
+
         sw_alert().ok('A la espera del envio de datos y registro')
 
     },
 
     save: () => {
 
+        instrumento_03().send()
+
         let validar_form = funciones().validar_form_required('form-inst-03')
         
-        if (validar_form) {
+        /*if (validar_form) {
 
             Swal.fire({
                 icon: 'question',
@@ -413,7 +428,7 @@ const instrumento_03 = () => ({
         } else {
             msje = 'Por favor, complete todos los campos del formulario.'
             sw_alert().warning(msje)
-        }
+        }*/
 
     },
 
