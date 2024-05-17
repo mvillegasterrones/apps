@@ -387,8 +387,6 @@ const instrumento_03 = () => ({
 
         let form = $('#form-inst-03').serialize()
 
-        //sw_alert().ok(form)
-
         $.post( questionario_url, form, (response) => {
             if (response) {
                 colsole.log(response)
@@ -400,8 +398,6 @@ const instrumento_03 = () => ({
             console.error(xhr, status, error)
             sw_alert().error(error)
         })
-
-        //sw_alert().ok('A la espera del envio de datos y registro')*/
 
     },
 
