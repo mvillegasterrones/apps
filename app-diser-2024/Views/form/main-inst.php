@@ -142,7 +142,7 @@
                             <!--<button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-02')"><i class="fa-regular fa-plus"></i> Nuevo</button>-->
                             <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-03.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
 
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-02" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
                         </div>
                     </div>
                     <div class="col-4 text-end">

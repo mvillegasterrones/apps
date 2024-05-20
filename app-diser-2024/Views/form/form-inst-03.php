@@ -115,7 +115,7 @@
                                     <div class="multisteps-form__content">
 
                                         <label class="text-uppercase">(*) considerar que en caso de contar con la información se tomarán fotografías como evidencia.</label>
-                                        
+
                                         <div class="row mt-3 h-100">
 
                                             <div class="col-12 col-sm-4 h-100">
@@ -142,7 +142,7 @@
                                                     <option>No</option>
                                                 </select>
                                             </div>
-                                            
+
                                         </div>
 
                                         <div class="row mt-3">
@@ -199,7 +199,7 @@
                                     <h5 class="font-weight-bolder">INFORMACIÓN DEL SERVICIO DE ALIMENTACIÓN</h5>
                                     <div class="multisteps-form__content text-uppercase">
                                         <label class="text-uppercase">(*) considerar que en caso de contar con la información se tomarán fotografías como evidencia.</label>
-                                        
+
                                         <div class="row mt-3">
 
                                             <div class="col-12 col-sm-4">
@@ -395,16 +395,16 @@
                                         </div>
 
                                         <!--<div class="row">-->
-                                            <div class="button-row d-flex mt-4 col-12">
-                                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
+                                        <div class="button-row d-flex mt-4 col-12">
+                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">
                                                 <i class="fa-duotone fa-arrow-left"></i>
-                                                    Regresar
-                                                </button>
-                                                <button class="btn bg-gradient-primary ms-auto mb-0" type="button" title="Next" onclick="instrumento_03().save()">
-                                                    Guardar
-                                                    <i class="fa-duotone fa-save"></i>
-                                                </button>
-                                            </div>
+                                                Regresar
+                                            </button>
+                                            <button class="btn bg-gradient-primary ms-auto mb-0" type="button" title="Next" onclick="instrumento_03().save()">
+                                                Guardar
+                                                <i class="fa-duotone fa-save"></i>
+                                            </button>
+                                        </div>
                                         <!--</div>-->
                                     </div>
                                 </div>

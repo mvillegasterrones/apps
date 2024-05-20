@@ -8,6 +8,21 @@ class mQuestionario
         $this->conexion = new conexion();
         $this->conexion->conectar();
     }
+	
+	// ! INICIO - Instrumento 03
+	function delete_inst_03($id)
+    {
+        $sql = "DELETE FROM tbl_instrumento_03 WHERE id = $id";
+        $this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			$code = true;
+		} else {
+			$this->conexion->cerrar();
+			$code = false;
+		}
+        return $code;
+    }
 
     function get_reporte_inst_03($cod_mod)
     {

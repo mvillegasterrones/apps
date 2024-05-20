@@ -5,6 +5,11 @@ $instancia = new mQuestionario();
 $accion    = $_POST['action'];
 switch ($accion) {
 // ! INICIO - Instrumento Nro. 03
+    case 'delete-int-03':
+        $id          = $_POST['id'];
+        $ejecutar    = $instancia->delete_inst_03($id);
+        echo json_encode($ejecutar);
+        break;
     case 'get-reporte-inst-03':
         $cod_mod     = $_SESSION['cod_mod'];
         $ejecutar    = $instancia->get_reporte_inst_03($cod_mod);
