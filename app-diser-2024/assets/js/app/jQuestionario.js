@@ -526,32 +526,30 @@ const instrumento_03 = () => ({
   },
 
   delete: (id, item) => {
-
     Swal.fire({
-        icon: "question",
-        title: "¿Eliminar Registro Nro. " + item + "?",
-        showDenyButton: true,
-        showCancelButton: false,
-        confirmButtonText: "Si",
-        denyButtonText: `No`,
-      }).then((result) => {
-        if (result.isConfirmed) {
-          let params = { action: "delete-int-03", id: id };
-  
-          $.post(questionario_url, params, (response) => {
-            if (response) {
-              sw_alert().basic_success("Eliminado!");
-              instrumento_02().get_reporte();
-            }
-          }).fail((xhr, status, error) => {
-            console.log(xhr, status, error);
-            sw_alert().error(error);
-          });
-        } else if (result.isDenied) {
-          console.log("No se elimino el registro");
-        }
-      });
+      icon: "question",
+      title: "¿Eliminar Registro Nro. " + item + "?",
+      showDenyButton: true,
+      showCancelButton: false,
+      confirmButtonText: "Si",
+      denyButtonText: `No`,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        let params = { action: "delete-int-03", id: id };
 
+        $.post(questionario_url, params, (response) => {
+          if (response) {
+            sw_alert().basic_success("Eliminado!");
+            instrumento_03().get_reporte();
+          }
+        }).fail((xhr, status, error) => {
+          console.log(xhr, status, error);
+          sw_alert().error(error);
+        });
+      } else if (result.isDenied) {
+        console.log("No se elimino el registro");
+      }
+    });
   },
 
   active_item: (selector, txtSelector) => {
@@ -571,3 +569,29 @@ const instrumento_03 = () => ({
     }
   },
 });
+
+const encuesta_01 = () => ({
+  send: () => {
+
+    sw_alert().ok('Encuesta 01 - send()')
+
+  },
+
+  save: () => {
+
+    sw_alert().ok('Encuesta 01 - save()')
+
+  },
+
+  get_reporte: () => {
+
+    sw_alert().ok('Encuesta 01 - get_reporte()')
+
+  },
+
+  delete: (id, item) => {
+
+    sw_alert().ok(`Encuesta 01 - delete(${ id, item})`)
+
+  }
+})

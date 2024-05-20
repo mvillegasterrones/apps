@@ -156,7 +156,7 @@
         </div>
     </div>
     <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0">
-        <div class="card bg-info cursor-pointer">
+        <div class="card bg-primary cursor-pointer">
             <div class="card-body p-3">
                 <div class="row">
                     <div class="col-8">
@@ -165,6 +165,12 @@
                                 ACEPTABILIDAD DE LOS ALIMENTOS DE PNAEQW
                             </p>
                             <h5 class="text-white font-weight-bolder mb-0">ENC-01</h5>
+                            <hr class="horizontal light mt-1 mb-3" />
+
+                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-03.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+
+                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
+
                         </div>
                     </div>
                     <div class="col-4 text-end">
