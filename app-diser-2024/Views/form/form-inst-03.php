@@ -68,7 +68,7 @@
                                     <h5 class="font-weight-bolder mb-0">Datos del Informante</h5>
                                     <p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i> Todos los campos son obligatorios</p>
                                     <input type="hidden" id="id" name="id" value="0">
-                                    <input type="hidden" id="action" name="action" value="save-update-inst-01">
+                                    <input type="hidden" id="action" name="action" value="save-update-inst-03">
                                     <div class="multisteps-form__content">
 
                                         <div class="row mt-3">

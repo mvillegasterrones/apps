@@ -5,9 +5,15 @@ $instancia = new mQuestionario();
 $accion    = $_POST['action'];
 switch ($accion) {
 // ! INICIO - Instrumento Nro. 03
-    case 'save-update-int-03':
+    case 'get-reporte-inst-03':
+        $cod_mod     = $_SESSION['cod_mod'];
+        $ejecutar    = $instancia->get_reporte_inst_03($cod_mod);
+        echo json_encode($ejecutar);
+        break;
+    case 'save-update-inst-03':
         $id                   = $_POST['id'];
         $action               = $_POST['action'];
+        $cod_mod              = $_SESSION['cod_mod'];
         $txt_dni              = $_POST['txt_dni'];
         $txt_ape_nomb         = $_POST['txt_ape_nomb'];
         $txt_cargo            = $_POST['txt_cargo'];
@@ -43,7 +49,7 @@ switch ($accion) {
         $txt_2_18             = $_POST['txt_2_18'];
         $txt_fecha_aplicacion = $_POST['txt_fecha_aplicacion'];
 
-        $ejecutar = $instancia->set_instrumento_03($id, $action, $txt_dni, $txt_ape_nomb, $txt_cargo, $txt_mes_reporte, $txt_1_1, $txt_1_2, $txt_1_3, $txt_1_4, $txt_1_5, $txt_1_6, $txt_observaciones_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_2_6, $txt_2_7, $txt_2_8, $txt_2_9, $txt_2_10, $txt_2_11, $txt_2_12, $txt_2_13, $txt_2_13_temas, $txt_2_14, $txt_2_15, $txt_2_15_otro, $txt_2_16, $txt_2_16_otro, $txt_2_17, $txt_2_17_otro, $txt_2_18, $txt_fecha_aplicacion);
+        $ejecutar = $instancia->set_instrumento_03($id, $action, $cod_mod, $txt_dni, $txt_ape_nomb, $txt_cargo, $txt_mes_reporte, $txt_1_1, $txt_1_2, $txt_1_3, $txt_1_4, $txt_1_5, $txt_1_6, $txt_observaciones_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_2_6, $txt_2_7, $txt_2_8, $txt_2_9, $txt_2_10, $txt_2_11, $txt_2_12, $txt_2_13, $txt_2_13_temas, $txt_2_14, $txt_2_15, $txt_2_15_otro, $txt_2_16, $txt_2_16_otro, $txt_2_17, $txt_2_17_otro, $txt_2_18, $txt_fecha_aplicacion);
         echo json_encode($ejecutar);
         break;
 // ! FIN - Instrumento Nro. 03

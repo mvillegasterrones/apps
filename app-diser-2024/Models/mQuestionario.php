@@ -9,9 +9,23 @@ class mQuestionario
         $this->conexion->conectar();
     }
 
-    function set_instrumento_03($id, $action, $txt_dni, $txt_ape_nomb, $txt_cargo, $txt_mes_reporte, $txt_1_1, $txt_1_2, $txt_1_3, $txt_1_4, $txt_1_5, $txt_1_6, $txt_observaciones_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_2_6, $txt_2_7, $txt_2_8, $txt_2_9, $txt_2_10, $txt_2_11, $txt_2_12, $txt_2_13, $txt_2_13_temas, $txt_2_14, $txt_2_15, $txt_2_15_otro, $txt_2_16, $txt_2_16_otro, $txt_2_17, $txt_2_17_otro, $txt_2_18, $txt_fecha_aplicacion)
+    function get_reporte_inst_03($cod_mod)
     {
-        $sql = "CALL sp_v1_set_instrumento_03('$id', '$action', '$txt_dni', '$txt_ape_nomb', '$txt_cargo', '$txt_mes_reporte', '$txt_1_1', '$txt_1_2', '$txt_1_3', '$txt_1_4', '$txt_1_5', '$txt_1_6', '$txt_observaciones_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_2_6', '$txt_2_7', '$txt_2_8', '$txt_2_9', '$txt_2_10', '$txt_2_11', '$txt_2_12', '$txt_2_13', '$txt_2_13_temas', '$txt_2_14', '$txt_2_15', '$txt_2_15_otro', '$txt_2_16', '$txt_2_16_otro', '$txt_2_17', '$txt_2_17_otro', '$txt_2_18', '$txt_fecha_aplicacion')";
+        $sql = "CALL sp_v1_get_reporte_inst_03('$cod_mod')";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
+    function set_instrumento_03($id, $action, $cod_mod, $txt_dni, $txt_ape_nomb, $txt_cargo, $txt_mes_reporte, $txt_1_1, $txt_1_2, $txt_1_3, $txt_1_4, $txt_1_5, $txt_1_6, $txt_observaciones_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_2_6, $txt_2_7, $txt_2_8, $txt_2_9, $txt_2_10, $txt_2_11, $txt_2_12, $txt_2_13, $txt_2_13_temas, $txt_2_14, $txt_2_15, $txt_2_15_otro, $txt_2_16, $txt_2_16_otro, $txt_2_17, $txt_2_17_otro, $txt_2_18, $txt_fecha_aplicacion)
+    {
+		//$sql = "INSERT INTO tbl_instrumento_03 VALUES('$id', '$action', '$cod_mod', '$txt_dni', '$txt_ape_nomb', '$txt_cargo', '$txt_mes_reporte', '$txt_1_1', '$txt_1_2', '$txt_1_3', '$txt_1_4', '$txt_1_5', '$txt_1_6', '$txt_observaciones_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_2_6', '$txt_2_7', '$txt_2_8', '$txt_2_9', '$txt_2_10', '$txt_2_11', '$txt_2_12', '$txt_2_13', '$txt_2_13_temas', '$txt_2_14', '$txt_2_15', '$txt_2_15_otro', '$txt_2_16', '$txt_2_16_otro', '$txt_2_17', '$txt_2_17_otro', '$txt_2_18', '$txt_fecha_aplicacion')";
+        $sql = "CALL sp_v1_set_instrumento_03('$id', '$action', '$cod_mod', '$txt_dni', '$txt_ape_nomb', '$txt_cargo', '$txt_mes_reporte', '$txt_1_1', '$txt_1_2', '$txt_1_3', '$txt_1_4', '$txt_1_5', '$txt_1_6', '$txt_observaciones_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_2_6', '$txt_2_7', '$txt_2_8', '$txt_2_9', '$txt_2_10', '$txt_2_11', '$txt_2_12', '$txt_2_13', '$txt_2_13_temas', '$txt_2_14', '$txt_2_15', '$txt_2_15_otro', '$txt_2_16', '$txt_2_16_otro', '$txt_2_17', '$txt_2_17_otro', '$txt_2_18', '$txt_fecha_aplicacion')";
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();

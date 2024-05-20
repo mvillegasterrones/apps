@@ -392,16 +392,17 @@ const instrumento_03 = () => ({
                 colsole.log(response)
                 sw_alert().ok_reload(`Registrado exitoso!`)
             } else {
-                sw_alert().error(`Ocurrió un problema al registrar el INST-02 - ${response}` )
+                sw_alert().error(`Ocurrió un problema al registrar el INST-03 - ${response}` )
             }
         }).fail( (xhr, status, error) => {
             console.error(xhr, status, error)
-            sw_alert().error(error)
+            sw_alert().error(error, status)
         })
 
     },
 
     save: () => {
+
 
         let validar_form = funciones().validar_form_required('form-inst-03')
         
@@ -430,6 +431,75 @@ const instrumento_03 = () => ({
     },
 
     get_reporte: () => {
+
+        let params = { action: 'get-reporte-inst-03' }
+
+        $.post( questionario_url, params, (response) => {
+
+            let data = eval(response)
+            let html = ''
+
+            $('#modal-form-inst-03 #btn-cargando').show()
+
+            if (response!=='[]') {
+
+                for (let i = 0; i < data.length; i++) {
+                    let ubicacion  = data[i].d_dpto +' / '+ data[i].d_prov +' / '+ data[i].d_dist
+
+                    html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_03().delete(${data[i].idInstrumento},${i+1})"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${i+1}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion}</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie}</p>
+                                </td>
+                                <td align=center>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_grado}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_datos_aplicador}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo_aplicador}</p>
+                                </td>
+                            </tr>`
+                }
+
+            } else {
+                html +=`<tr>
+                            <td colspan="10" class="text-danger text-center text-uppercase">
+                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se han encontrado registros</p>
+                            </td>
+                        </tr>`
+            }
+            $('#tbl-reporte-inst-03 tbody').html(html)
+            $('#modal-form-inst-03 #btn-cargando').hide()
+
+        }).fail( (xhr, status, error) => {
+            console.error(xhr, status, error)
+            sw_alert().error(error)
+        })
 
     },
 
