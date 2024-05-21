@@ -167,7 +167,7 @@
                             <h5 class="text-white font-weight-bolder mb-0">ENC-01</h5>
                             <hr class="horizontal light mt-1 mb-3" />
 
-                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-03.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-enc-01.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
 
                             <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
 
