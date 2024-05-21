@@ -8,6 +8,21 @@ class mQuestionario
         $this->conexion = new conexion();
         $this->conexion->conectar();
     }
+
+	// ! INICIO - Encuesta 01
+	function set_encuesta_01($id, $action, $txt_edad, $txt_sexo, $txt_lmaterna, $txt_grado, $txt_racion, $txt_tiempo, $txt_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_3_9, $txt_3_10, $txt_3_11, $txt_3_12, $txt_3_13, $txt_3_14, $txt_3_15, $txt_3_16, $txt_3_17, $txt_3_18, $txt_3_19, $txt_3_20, $txt_3_21, $txt_3_22, $txt_3_23, $txt_3_24, $txt_4_mejoras)
+	{
+		$sql = "INSERT INTO tbl_encuesta_01 VALUES ('$id', '$action', '$txt_edad', '$txt_sexo', '$txt_lmaterna', '$txt_grado', '$txt_racion', '$txt_tiempo', '$txt_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_3_1', '$txt_3_2', '$txt_3_3', '$txt_3_4', '$txt_3_5', '$txt_3_6', '$txt_3_7', '$txt_3_8', '$txt_3_9', '$txt_3_10', '$txt_3_11', '$txt_3_12', '$txt_3_13', '$txt_3_14', '$txt_3_15', '$txt_3_16', '$txt_3_17', '$txt_3_18', '$txt_3_19', '$txt_3_20', '$txt_3_21', '$txt_3_22', '$txt_3_23', '$txt_3_24', '$txt_4_mejoras')";
+		$this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			$code = true;
+		} else {
+			$this->conexion->cerrar();
+			$code = false;
+		}
+        return $code;	
+	}
 	
 	// ! INICIO - Instrumento 03
 	function delete_inst_03($id)

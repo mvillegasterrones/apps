@@ -593,8 +593,6 @@ const encuesta_01 = () => ({
 
   save: () => {
 
-    //encuesta_01().send();
-
     let validar_form = funciones().validar_form_required("form-enc-01");
 
     if (validar_form) {
@@ -609,7 +607,7 @@ const encuesta_01 = () => ({
         if (result.isConfirmed) {
           encuesta_01().send();
         } else if (result.isDenied) {
-          console.log("ENC-03: Cancelado");
+          console.log("ENC-01: Cancelado");
         }
       });
     } else {
