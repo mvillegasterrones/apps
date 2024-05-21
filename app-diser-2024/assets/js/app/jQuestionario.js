@@ -572,7 +572,6 @@ const instrumento_03 = () => ({
 
 const encuesta_01 = () => ({
   send: () => {
-
     let form = $("#form-enc-01").serialize();
 
     $.post(questionario_url, form, (response) => {
@@ -588,11 +587,9 @@ const encuesta_01 = () => ({
       console.error(xhr, status, error);
       sw_alert().error(error, status);
     });
-
   },
 
   save: () => {
-
     let validar_form = funciones().validar_form_required("form-enc-01");
 
     if (validar_form) {
@@ -614,18 +611,116 @@ const encuesta_01 = () => ({
       msje = "Por favor, complete todos los campos del formulario.";
       sw_alert().warning(msje);
     }
-
   },
 
   get_reporte: () => {
+    let params = { action: "get-reporte-enc-01" };
 
-    sw_alert().ok('Encuesta 01 - get_reporte()')
+    $.post(questionario_url, params, (response) => {
+      let data = eval(response);
+      let html = "";
 
+      $("#modal-form-enc-01 #btn-cargando").show();
+
+      if (response !== "[]") {
+        for (let i = 0; i < data.length; i++) {
+          let ubicacion =
+            data[i].d_dpto + " / " + data[i].d_prov + " / " + data[i].d_dist;
+
+          html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="encuesta_01().delete(${
+                                      data[i].idInstrumento
+                                    },${i + 1})"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      i + 1
+                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs text-center font-weight-bold mb-0">${
+                                      data[i].txt_grado
+                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].txt_sexo
+                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].txt_edad
+                                    }</p>
+                                </td>
+                                
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].cod_mod
+                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].nombre_ie
+                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].cen_pob
+                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${
+                                      data[i].d_dreugel
+                                    }</p>
+                                </td>
+                            </tr>`;
+        }
+      } else {
+        html += `<tr>
+                    <td colspan="10" class="text-danger text-center text-uppercase">
+                        <p class="text-xs font-weight-bold mb-0">
+                            <i class="fa-regular fa-triangle-exclamation"></i> 
+                            No se han encontrado registros
+                        </p>
+                    </td>
+                </tr>`;
+      }
+      $("#tbl-reporte-enc-01 tbody").html(html);
+      $("#modal-form-enc-01 #btn-cargando").hide();
+    }).fail((xhr, status, error) => {
+      console.error(xhr, status, error);
+      sw_alert().error(error);
+    });
   },
 
   delete: (id, item) => {
+    Swal.fire({
+      icon: "question",
+      title: "¿Eliminar Registro Nro. " + item + "?",
+      showDenyButton: true,
+      showCancelButton: false,
+      confirmButtonText: "Si",
+      denyButtonText: `No`,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        let params = { action: "delete-enc-01", id: id };
 
-    sw_alert().ok(`Encuesta 01 - delete(${ id, item})`)
-
-  }
-})
+        $.post(questionario_url, params, (response) => {
+          if (response) {
+            sw_alert().basic_success("Eliminado!");
+            encuesta_01().get_reporte();
+          }
+        }).fail((xhr, status, error) => {
+          console.log(xhr, status, error);
+          sw_alert().error(error);
+        });
+      } else if (result.isDenied) {
+        console.log("No se elimino el registro");
+      }
+    });
+  },
+});
