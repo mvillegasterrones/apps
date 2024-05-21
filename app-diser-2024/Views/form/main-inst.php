@@ -2,8 +2,10 @@
 <div class="row mt-4">
     <div class="col-12">
         <div class="card shadow-lg">
-            <img src="./assets/img/shapes/pattern-left.png" alt="pattern-lines" class="position-absolute overflow-hidden opacity-4 start-0 top-0 h-100 border-radius-xl" />
-            <img src="./assets/img/shapes/pattern-right.png" alt="pattern-lines" class="position-absolute overflow-hidden opacity-4 end-0 top-0 h-100 border-radius-xl" />
+            <img src="./assets/img/shapes/pattern-left.png" alt="pattern-lines"
+                class="position-absolute overflow-hidden opacity-4 start-0 top-0 h-100 border-radius-xl" />
+            <img src="./assets/img/shapes/pattern-right.png" alt="pattern-lines"
+                class="position-absolute overflow-hidden opacity-4 end-0 top-0 h-100 border-radius-xl" />
             <div class="card-body px-5 z-index-1 bg-cover">
                 <div class="row">
                     <div class="col-lg-4 col-12 my-auto">
@@ -54,7 +56,8 @@
                         <div class="d-flex align-items-center">
                             <div>
                                 <h6 class="mb-0 text-body opacity-7">DRE / PROVINCIA / DISTRITO / C. POBLANDO</h6>
-                                <h6 class="mb-0 text-body"><?= $_SESSION['ubicacion'] . ' / ' . $_SESSION['cen_pob'] ?></h6>
+                                <h6 class="mb-0 text-body"><?= $_SESSION['ubicacion'] . ' / ' . $_SESSION['cen_pob'] ?>
+                                </h6>
                             </div>
                             <div class="ms-lg-6 ms-4">
                                 <!--<button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 py-0">
@@ -83,9 +86,13 @@
                             <hr class="horizontal light mt-1 mb-3" />
 
                             <!--<button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-01')"><i class="fa-regular fa-plus"></i> Nuevo</button>-->
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-01.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#" onclick="funciones().load_form_content('form-inst-01.php')"><i
+                                    class="fa-regular fa-plus"></i> Nuevo</button>
 
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-01" onclick="instrumento_01().get_reporte_inst_01()"><i class="fa-duotone fa-files"></i> Reporte</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-form-inst-01" onclick="instrumento_01().get_reporte_inst_01()"><i
+                                    class="fa-duotone fa-files"></i> Reporte</button>
 
                         </div>
                     </div>
@@ -112,9 +119,13 @@
                             <hr class="horizontal light mt-1 mb-3" />
 
                             <!--<button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-02')"><i class="fa-regular fa-plus"></i> Nuevo</button>-->
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-02.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#" onclick="funciones().load_form_content('form-inst-02.php')"><i
+                                    class="fa-regular fa-plus"></i> Nuevo</button>
 
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-02" onclick="instrumento_02().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-form-inst-02" onclick="instrumento_02().get_reporte()"><i
+                                    class="fa-duotone fa-files"></i> Reporte</button>
                         </div>
                     </div>
                     <div class="col-4 text-end">
@@ -140,9 +151,13 @@
                             <hr class="horizontal light mt-1 mb-3" />
 
                             <!--<button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="pg_body().on_show_hide('view-main','inst-02')"><i class="fa-regular fa-plus"></i> Nuevo</button>-->
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-inst-03.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#" onclick="funciones().load_form_content('form-inst-03.php')"><i
+                                    class="fa-regular fa-plus"></i> Nuevo</button>
 
-                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
+                            <button type="button" class="btn btn-xs btn-outline-primary mb-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i
+                                    class="fa-duotone fa-files"></i> Reporte</button>
                         </div>
                     </div>
                     <div class="col-4 text-end">
@@ -167,15 +182,20 @@
                             <h5 class="text-white font-weight-bolder mb-0">ENC-01</h5>
                             <hr class="horizontal light mt-1 mb-3" />
 
-                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#" onclick="funciones().load_form_content('form-enc-01.php')"><i class="fa-regular fa-plus"></i> Nuevo</button>
+                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal"
+                                data-bs-target="#" onclick="funciones().load_form_content('form-enc-01.php')"><i
+                                    class="fa-regular fa-plus"></i> Nuevo</button>
 
-                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i class="fa-duotone fa-files"></i> Reporte</button>
+                            <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-form-inst-03" onclick="instrumento_03().get_reporte()"><i
+                                    class="fa-duotone fa-files"></i> Reporte</button>
 
                         </div>
                     </div>
                     <div class="col-4 text-end">
                         <div class="icon icon-shape bg-white shadow text-center rounded-circle">
-                            <i class="fa-solid fa-face-smile-tongue text-dark text-lg opacity-10" aria-hidden="true"></i>
+                            <i class="fa-solid fa-face-smile-tongue text-dark text-lg opacity-10"
+                                aria-hidden="true"></i>
                             <!--<i class="ni ni-note-03 text-dark text-lg opacity-10" aria-hidden="true"></i>-->
                         </div>
                     </div>
