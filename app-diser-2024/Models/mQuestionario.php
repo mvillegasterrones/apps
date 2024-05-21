@@ -16,12 +16,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
 	function get_reporte_enc_01($cod_mod)
     {
@@ -36,18 +36,18 @@ class mQuestionario
 		return $arreglo;
     }
 
-	function set_encuesta_01($id, $action, $txt_edad, $txt_sexo, $txt_lmaterna, $txt_grado, $txt_racion, $txt_tiempo, $txt_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_3_9, $txt_3_10, $txt_3_11, $txt_3_12, $txt_3_13, $txt_3_14, $txt_3_15, $txt_3_16, $txt_3_17, $txt_3_18, $txt_3_19, $txt_3_20, $txt_3_21, $txt_3_22, $txt_3_23, $txt_3_24, $txt_4_mejoras)
+	function set_encuesta_01($id, $action, $cod_mod, $txt_edad, $txt_sexo, $txt_lmaterna, $txt_grado, $txt_racion, $txt_tiempo, $txt_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_3_9, $txt_3_10, $txt_3_11, $txt_3_12, $txt_3_13, $txt_3_14, $txt_3_15, $txt_3_16, $txt_3_17, $txt_3_18, $txt_3_19, $txt_3_20, $txt_3_21, $txt_3_22, $txt_3_23, $txt_3_24, $txt_4_mejoras)
 	{
-		$sql = "INSERT INTO tbl_encuesta_01 VALUES ('$id', '$action', '$txt_edad', '$txt_sexo', '$txt_lmaterna', '$txt_grado', '$txt_racion', '$txt_tiempo', '$txt_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_3_1', '$txt_3_2', '$txt_3_3', '$txt_3_4', '$txt_3_5', '$txt_3_6', '$txt_3_7', '$txt_3_8', '$txt_3_9', '$txt_3_10', '$txt_3_11', '$txt_3_12', '$txt_3_13', '$txt_3_14', '$txt_3_15', '$txt_3_16', '$txt_3_17', '$txt_3_18', '$txt_3_19', '$txt_3_20', '$txt_3_21', '$txt_3_22', '$txt_3_23', '$txt_3_24', '$txt_4_mejoras')";
+		$sql = "INSERT INTO tbl_encuesta_01 VALUES ('$id', '$action', '$cod_mod', '$txt_edad', '$txt_sexo', '$txt_lmaterna', '$txt_grado', '$txt_racion', '$txt_tiempo', '$txt_1', '$txt_2_1', '$txt_2_2', '$txt_2_3', '$txt_2_4', '$txt_2_5', '$txt_3_1', '$txt_3_2', '$txt_3_3', '$txt_3_4', '$txt_3_5', '$txt_3_6', '$txt_3_7', '$txt_3_8', '$txt_3_9', '$txt_3_10', '$txt_3_11', '$txt_3_12', '$txt_3_13', '$txt_3_14', '$txt_3_15', '$txt_3_16', '$txt_3_17', '$txt_3_18', '$txt_3_19', '$txt_3_20', '$txt_3_21', '$txt_3_22', '$txt_3_23', '$txt_3_24', '$txt_4_mejoras')";
 		$this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;	
+        //return $code;	
 	}
 	
 	// ! INICIO - Instrumento 03
@@ -57,12 +57,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
 
     function get_reporte_inst_03($cod_mod)
@@ -85,12 +85,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
 
     // ! INICIO - Instrumento 02
@@ -100,12 +100,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
     
     function get_reporte_inst_02($cod_mod)
@@ -127,12 +127,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
 
     }
 
@@ -143,12 +143,12 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
 
     function get_reporte_inst_01($cod_mod)
@@ -184,148 +184,13 @@ class mQuestionario
         $this->conexion->conexion->set_charset('utf8');
 		if ($this->conexion->conexion->query($sql)) {
 			$this->conexion->cerrar();
-			$code = true;
+			return true;
 		} else {
 			$this->conexion->cerrar();
-			$code = false;
+			return false;
 		}
-        return $code;
+        //return $code;
     }
     // ! FIN - Instrumento 01
 
 }
-
-/*
-
-CREATE TABLE tbl_instrumento_01(
-id INT AUTO_INCREMENT PRIMARY KEY, 
-action VARCHAR(100), 
-cod_mod VARCHAR(10), 
-txt_est_apellidos VARCHAR(100), 
-txt_est_nombres VARCHAR(100), 
-txt_est_edad TINYINT(2), 
-txt_est_sexo CHAR(20), 
-txt_est_etnica VARCHAR(100), 
-txt_est_residente CHAR(2), 
-txt_est_findesemana CHAR(2), 
-txt_mes_reporte VARCHAR(30), 
-txt_desayuno TINYINT(1), 
-txt_almuerzo TINYINT(1), 
-txt_cena TINYINT(1), 
-txt_refrigerio_1 TINYINT(1), 
-txt_refrigerio_2 TINYINT(1), 
-sel_opc_1 TINYINT(1), 
-sel_opc_2_1 TINYINT(1), 
-txt_valor_1 TINYINT(2), 
-txt_valor_2_1 TINYINT(2), 
-sel_opc_2 TINYINT(1), 
-sel_opc_2_2 TINYINT(1), 
-txt_valor_2 TINYINT(2), 
-txt_valor_2_2 TINYINT(2), 
-sel_opc_3 TINYINT(1), 
-sel_opc_2_3 TINYINT(1), 
-txt_valor_3 TINYINT(2), 
-txt_valor_2_3 TINYINT(2), 
-sel_opc_4 TINYINT(1), 
-sel_opc_2_4 TINYINT(1), 
-txt_valor_4 TINYINT(2), 
-txt_valor_2_4 TINYINT(2), 
-sel_opc_5 TINYINT(1), 
-sel_opc_2_5 TINYINT(1), 
-txt_valor_5 TINYINT(2), 
-txt_valor_2_5 TINYINT(2), 
-sel_opc_6 TINYINT(1), 
-sel_opc_2_6 TINYINT(1), 
-txt_valor_6 TINYINT(2), 
-txt_valor_2_6 TINYINT(2), 
-sel_opc_7 TINYINT(1), 
-sel_opc_2_7 TINYINT(1), 
-txt_valor_7 TINYINT(2), 
-txt_valor_2_7 TINYINT(2), 
-sel_opc_8 TINYINT(1), 
-sel_opc_2_8 TINYINT(1), 
-txt_valor_8 TINYINT(2), 
-txt_valor_2_8 TINYINT(2), 
-sel_opc_9 TINYINT(1), 
-sel_opc_2_9 TINYINT(1), 
-txt_valor_9 TINYINT(2), 
-txt_valor_2_9 TINYINT(2), 
-sel_opc_10 TINYINT(1), 
-sel_opc_2_10 TINYINT(1), 
-txt_valor_10 TINYINT(2), 
-txt_valor_2_10 TINYINT(2), 
-sel_opc_11 TINYINT(1), 
-sel_opc_2_11 TINYINT(1), 
-txt_valor_11 TINYINT(2), 
-txt_valor_2_11 TINYINT(2), 
-sel_opc_12 TINYINT(1), 
-sel_opc_2_12 TINYINT(1), 
-txt_valor_12 TINYINT(2), 
-txt_valor_2_12 TINYINT(2), 
-sel_opc_13 TINYINT(1), 
-sel_opc_2_13 TINYINT(1), 
-txt_valor_13 TINYINT(2), 
-txt_valor_2_13 TINYINT(2), 
-sel_opc_14 TINYINT(1), 
-sel_opc_2_14 TINYINT(1), 
-txt_valor_14 TINYINT(2), 
-txt_valor_2_14 TINYINT(2), 
-sel_opc_15 TINYINT(1), 
-sel_opc_2_15 TINYINT(1), 
-txt_valor_15 TINYINT(2), 
-txt_valor_2_15 TINYINT(2), 
-sel_opc_16 TINYINT(1), 
-sel_opc_2_16 TINYINT(1), 
-txt_valor_16 TINYINT(2), 
-txt_valor_2_16 TINYINT(2), 
-sel_opc_17 TINYINT(1), 
-sel_opc_2_17 TINYINT(1), 
-txt_valor_17 TINYINT(2), 
-txt_valor_2_17 TINYINT(2), 
-sel_opc_18 TINYINT(1), 
-sel_opc_2_18 TINYINT(1), 
-txt_valor_18 TINYINT(2), 
-txt_valor_2_18 TINYINT(2), 
-sel_opc_19 TINYINT(1), 
-sel_opc_2_19 TINYINT(1), 
-txt_valor_19 TINYINT(2), 
-txt_valor_2_19 TINYINT(2), 
-sel_opc_20 TINYINT(1), 
-sel_opc_2_20 TINYINT(1), 
-txt_valor_20 TINYINT(2), 
-txt_valor_2_20 TINYINT(2), 
-sel_opc_21 TINYINT(1), 
-sel_opc_2_21 TINYINT(1), 
-txt_valor_21 TINYINT(2), 
-txt_valor_2_21 TINYINT(2), 
-sel_opc_22 TINYINT(1), 
-sel_opc_2_22 TINYINT(1), 
-txt_valor_22 TINYINT(2), 
-txt_valor_2_22 TINYINT(2), 
-sel_opc_23 TINYINT(1), 
-sel_opc_2_23 TINYINT(1), 
-txt_valor_23 TINYINT(2), 
-txt_valor_2_23 TINYINT(2), 
-sel_opc_24 TINYINT(1), 
-sel_opc_2_24 TINYINT(1), 
-txt_valor_24 TINYINT(2), 
-txt_valor_2_24 TINYINT(2), 
-txt_otro_25 VARCHAR(100), 
-sel_opc_25 TINYINT(1), 
-sel_opc_2_25 TINYINT(1), 
-txt_valor_25 TINYINT(2), 
-txt_valor_2_25 TINYINT(2), 
-txt_otro_26 VARCHAR(100), 
-sel_opc_26 TINYINT(1), 
-sel_opc_2_26 TINYINT(1), 
-txt_valor_26 TINYINT(2), 
-txt_valor_2_26 TINYINT(2), 
-txt_otro_27 VARCHAR(100), 
-sel_opc_27 TINYINT(1), 
-sel_opc_2_27 TINYINT(1), 
-txt_valor_27 TINYINT(2), 
-txt_valor_2_27 TINYINT(2), 
-txt_fecha_aplicacion DATE
-)engine innodb;
-
-*/

@@ -398,7 +398,7 @@ const instrumento_03 = () => ({
 
     $.post(questionario_url, form, (response) => {
       if (response) {
-        colsole.log(response);
+        console.log(response);
         sw_alert().ok_reload(`Registrado exitoso!`);
       } else {
         sw_alert().error(
@@ -576,7 +576,7 @@ const encuesta_01 = () => ({
 
     $.post(questionario_url, form, (response) => {
       if (response) {
-        colsole.log(response);
+        console.log(response);
         sw_alert().ok_reload(`Registrado exitoso!`);
       } else {
         sw_alert().error(
