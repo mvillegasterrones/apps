@@ -26,13 +26,13 @@
                                             Datos Generales
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
-                                            title="INFORMACIÓN DE LA POBLACION ESTUDIANTIL">
-                                            Sección 1
+                                            title="Datos del servicio">
+                                            Datos del servicio
                                         </button>
-                                        <button class="multisteps-form__progress-btn" type="button"
+                                        <!--<button class="multisteps-form__progress-btn" type="button"
                                             title="INFORMACIÓN DEL SERVICIO DE ALIMENTACIÓN">
                                             Sección 2
-                                        </button>
+                                        </button>-->
                                     </div>
                                     <code><i class="fa-regular fa-circle-exclamation"></i> 
                                     TODOS LOS CAMPOS SON OBLIGATORIOS</code>
@@ -76,7 +76,7 @@
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section - Información del estudiante -->
+                                <!-- // TODO: Section - Dartos generales / del servicio -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">Datos Generales</h5>
@@ -372,286 +372,167 @@
 
                                         </div>
 
-                                        <div class="button-row d-flex mt-4">
-                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
-                                                title="Prev">
-                                                <i class="fa-duotone fa-arrow-left"></i>
-                                                Regresar
-                                            </button>
-                                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                                                title="Next">
-                                                Siguiente
-                                                <i class="fa-duotone fa-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- // TODO: Section 2 - INFORMACIÓN DEL SERVICIO DE ALIMENTACIÓN -->
-                                <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
-                                    data-animation="FadeIn">
-                                    <h5 class="font-weight-bolder">INFORMACIÓN DEL SERVICIO DE ALIMENTACIÓN</h5>
-                                    <div class="multisteps-form__content text-uppercase">
-                                        <label class="text-uppercase">(*) considerar que en caso de contar con la
-                                            información se tomarán fotografías como evidencia.</label>
-
-                                        <div class="row mt-3">
+                                        <div class="row mt-3 text-uppercase">
 
                                             <div class="col-12 col-sm-4">
-                                                <label>2.1 ¿Cuentan con alimentos frescos (frutas y verduras) para
-                                                    complementar las preparaciones? <i>En caso de ser una respuesta
-                                                        afirmativa indicar quien lo proporciona</i></label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_1"
-                                                    name="txt_2_1" required>
+                                                <label for="">3.13 Pallar seco</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_13"
+                                                    name="txt_3_13" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.2 ¿Cuentan con un área adecuada para el almacenamiento de
-                                                    alimentos frescos?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_2"
-                                                    name="txt_2_2" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.3 ¿Cuentan con equipos de conservación de cadena de frío
-                                                    (refrigerador/congelador)?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_3"
-                                                    name="txt_2_3" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row mt-3">
-
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.4 ¿Cuentan con un huerto escolar en uso? En caso la respuesta
-                                                    sea SI, Detallar las frutas y/o verduras que provee.</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_4"
-                                                    name="txt_2_4" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.5 ¿Se ha identificado alguna situación crítica respecto al
-                                                    servicio alimentario? En caso la respuesta sea SI, Detallar.</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_5"
-                                                    name="txt_2_5" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.6 ¿Hubo alguna incidencia en cuanto a la recepción alimentos?
-                                                    En caso la respuesta sea SI, Detallar.</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_6"
-                                                    name="txt_2_6" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row mt-3">
-
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.7 ¿Se ha identificado alguna alerta respecto a la distribución
-                                                    de los alimentos en el servicio alimentario? De ser positivo, en
-                                                    observaciones indicar cuáles fueron y que acciones se
-                                                    tomaron.</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_7"
-                                                    name="txt_2_7" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.8 ¿El CAE respeta las raciones programadas establecidas por el
-                                                    PNAEQW?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_8"
-                                                    name="txt_2_8" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.9 ¿Las raciones entregadas por el PNAEQW son acorde a la
-                                                    cantidad de estudiantes residentes matriculados?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_9"
-                                                    name="txt_2_9" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row mt-3">
-
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.10 ¿Cuál es su percepción del servicio alimentario?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_10"
-                                                    name="txt_2_10" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Bueno</option>
+                                                    <option>Agradable</option>
                                                     <option>Regular</option>
-                                                    <option>Malo</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-4">
-                                                <label>2.11 ¿Durante este año con qué frecuencia han sido visitados por
-                                                    el PNAEQW?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_11"
-                                                    name="txt_2_11" required>
+                                                <label for="">3.14 Frejol seco</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_14"
+                                                    name="txt_3_14" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Semanal</option>
-                                                    <option>Mensual</option>
-                                                    <option>Ocacional</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-4">
-                                                <label>2.12 Usted ¿Ha recibido capacitación sobre nutrición o
-                                                    alimentación saludable?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_12"
-                                                    name="txt_2_12" required>
+                                                <label for="">3.15 Garbanzo seco</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_15"
+                                                    name="txt_3_15" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mt-3 text-uppercase">
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.16 Huevo (gallina/motelo)</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_16"
+                                                    name="txt_3_16" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.17 Leche y/o derivados</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_17"
+                                                    name="txt_3_17" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.18 Verduras de hojas verdes</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_18"
+                                                    name="txt_3_18" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mt-3 text-uppercase">
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.19 Verduras de cualquier color</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_19"
+                                                    name="txt_3_19" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.20 Frutas (plátano, mango, mamey, guaba)</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_20"
+                                                    name="txt_3_20" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.21 cereales (arroz, fideos, entre otros)</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_21"
+                                                    name="txt_3_21" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mt-3 text-uppercase">
+
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.22 Galletas</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_22"
+                                                    name="txt_3_22" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.23 Habas secas, quinua, trigo, tubérculos</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_23"
+                                                    name="txt_3_23" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <label for="">3.24 Hojuelas/Harinas</label>
+                                                <select class="multisteps-form__input form-control" id="txt_3_24"
+                                                    name="txt_3_24" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Agradable</option>
+                                                    <option>Regular</option>
+                                                    <option>No agradable</option>
+                                                    <option>No lo ha consumido</option>
                                                 </select>
                                             </div>
 
                                         </div>
 
                                         <div class="row mt-3">
-
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.13 ¿Ha recibido el personal de cocina alguna capacitación?
-                                                    <b>de ser si la respuesta detallar cuales fueron los temas
-                                                        (...)</b></label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_13"
-                                                    name="txt_2_13"
-                                                    onchange="instrumento_03().active_item('txt_2_13', 'txt_2_13_temas')"
-                                                    required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                                <input type="text"
-                                                    class="multisteps-form__input form-control mt-2 d-none"
-                                                    id="txt_2_13_temas" name="txt_2_13_temas"
-                                                    placeholder="Detallar temas **" value="-" required>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.14 ¿Cuenta el personal de cocina con carnet de sanidad
-                                                    vigente?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_14"
-                                                    name="txt_2_14" required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.15 ¿El abastecimiento de agua procede de...?</label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_15"
-                                                    name="txt_2_15"
-                                                    onchange="instrumento_03().active_item('txt_2_15', 'txt_2_15_otro')"
-                                                    required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Red publica dentro de la IIEE</option>
-                                                    <option>Pilón/Grifo de uso público</option>
-                                                    <option>Pozo</option>
-                                                    <option>Rio/acequia/laguna</option>
-                                                    <option>Agua de lluvia</option>
-                                                    <option>Otro</option>
-                                                </select>
-                                                <input type="text"
-                                                    class="multisteps-form__input form-control mt-2 d-none"
-                                                    id="txt_2_15_otro" name="txt_2_15_otro"
-                                                    placeholder="Detallar otro **" required>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row mt-3">
-
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.16 ¿Cuál es el combustible que usan con mayor frecuencia para
-                                                    preparar los alimentos? </label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_16"
-                                                    name="txt_2_16"
-                                                    onchange="instrumento_03().active_item('txt_2_16', 'txt_2_16_otro')"
-                                                    required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>Gas licuado/GLP</option>
-                                                    <option>Kerosene</option>
-                                                    <option>Carbón</option>
-                                                    <option>Leña</option>
-                                                    <option>Bosta</option>
-                                                    <option>Residuos agrícolas</option>
-                                                    <option>Otro</option>
-                                                </select>
-                                                <input type="text"
-                                                    class="multisteps-form__input form-control mt-2 d-none"
-                                                    id="txt_2_16_otro" name="txt_2_16_otro"
-                                                    placeholder="Detallar otro **" required>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.17 ¿De donde se obtienen los productos del refrigerio? <b>(Solo
-                                                        en caso del refrigerio)</b></label>
-                                                <select class="multisteps-form__input form-control" id="txt_2_17"
-                                                    name="txt_2_17"
-                                                    onchange="instrumento_03().active_item('txt_2_17', 'txt_2_17_otro')"
-                                                    required>
-                                                    <option value="" selected disabled>.: Seleccione :.</option>
-                                                    <option>De los productos que brinda el PNAEQW</option>
-                                                    <option>Aporte de las familias </option>
-                                                    <option>Lo consiguen los estudiantes y prepara por su cuenta*
-                                                    </option>
-                                                    <option>Otro</option>
-                                                </select>
-                                                <input type="text"
-                                                    class="multisteps-form__input form-control mt-2 d-none"
-                                                    id="txt_2_17_otro" name="txt_2_17_otro"
-                                                    placeholder="Detallar otro **" required>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <label>2.18 ¿En qué cree usted que se pueda mejorar el servicio
-                                                    alimentario?</label>
-                                                <textarea class="multisteps-form__input form-control" name="txt_2_18"
-                                                    id="txt_2_18" placeholder="Detallar" required></textarea>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row mt-3">
-                                            <div class="col-12 col-sm-6 text-uppercase">
-                                                <label>Fecha de aplicación</label>
-                                                <input class="multisteps-form__input form-control" type="date"
-                                                    placeholder="dd/mm/yyyy" name="txt_fecha_aplicacion"
-                                                    id="txt_fecha_aplicacion" required />
+                                            <div class="col-12 col-sm-12">
+                                                <label for="">4. ¿Qué mejorarías para qué las raciones sean más agradables para el consumo?</label>
+                                                <textarea class="multisteps-form__input form-control" id="txt_4_mejoras"
+                                                    name="txt_4_mejoras" placeholder="Ingresar" required></textarea>
                                             </div>
                                         </div>
 
-                                        <!--<div class="row">-->
-                                        <div class="button-row d-flex mt-4 col-12">
+                                        <div class="button-row d-flex mt-4">
                                             <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
                                                 title="Prev">
                                                 <i class="fa-duotone fa-arrow-left"></i>
@@ -663,7 +544,6 @@
                                                 <i class="fa-duotone fa-save"></i>
                                             </button>
                                         </div>
-                                        <!--</div>-->
                                     </div>
                                 </div>
 
