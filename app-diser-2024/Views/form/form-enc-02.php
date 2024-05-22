@@ -10,6 +10,33 @@ $section_1 = array(
     'Plan de TOECE del Aula',
     'Ninguno ',
 );
+
+$section_2 = array(
+    'Tutoría y orientación al estudiante',
+    'Promoción de la salud en adolescentes',
+    'Educación sexual integral',
+    'Prevención y protocolos frente a la violencia',
+    'Apoyo socioemocional al estudiante y su familia',
+    'Gestión de servicios constitutivos (alimentación, salud, identidad y buen trato',
+    'Participación estudiantil',
+    'Orientación vocacional',
+    'Uso del botiquín y primeros auxilios',
+    'Ninguno',
+    'Otro (especifique)',
+);
+
+$section_3 = array(
+    'Educación sexual integral',
+    'Habilidades socioemocionales',
+    'Prevención del embarazo',
+    'Prevención de la trata y explotación sexual',
+    'Prevención de la violencia',
+    'Convivencia escolar',
+    'Orientación vocacional',
+    'Proyecto de vida',
+    'Ninguno',
+    'Otro (especifique)'
+);
 ?>
 
 <main class="main-content position-relative border-radius-lg instrumento" id="inst-03">
@@ -168,6 +195,7 @@ $section_1 = array(
                                     <!--<p class=",b-0 text-sm">1.1. ¿En este último mes con qué frecuencia has consumido …?</p>-->
                                     <div class="multisteps-form__content">
 
+                                        <!-- // TODO: SECTION ONE ONE -->
                                         <div class="row mt-3 h-100" id="section-one-one">
 
                                             <label>1. A la fecha ¿En qué Instrumentos de gestión escolar
@@ -182,21 +210,92 @@ $section_1 = array(
                                                 ?>
 
                                                 <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox" id="op<?= $i+1 ?>"
+                                                    <input class="form-check-input" type="checkbox" id="opc-1-<?= $i + 1 ?>"
                                                         value="<?= htmlspecialchars($section_1[$i]) ?>"
-                                                        onclick="chk().validar_chk('section-one-one', 'valor-chk-1')">
-                                                    <label class="custom-control-label" for="op<?= $i+1 ?>"><?= htmlspecialchars($section_1[$i]) ?></label>
+                                                        onclick="chk().validar_chk('section-one-one', 'txt_1_multiple')">
+                                                    <label class="custom-control-label"
+                                                        for="opc-1-<?= $i + 1 ?>"><?= htmlspecialchars($section_1[$i]) ?></label>
                                                 </div>
 
                                                 <?php
 
                                                 $i++;
 
-                                            } while ($i <= count($section_1)-1);
+                                            } while ($i <= count($section_1) - 1);
                                             ?>
-                                            
+
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_1_multiple" name="txt_1_multiple" readonly>
+
+                                        </div>
+
+                                        <!-- // TODO: SECTION ONE TWO -->
+                                        <div class="row mt-3 h-100" id="section-one-two">
+
+                                            <label>2. ¿Cuáles de estos temas se han capacitado en los diversos espacios
+                                                formativos (talleres, GIAs, espacios colegiados, etc) de las IIEE con
+                                                las/los docentes y personal socioeducativo? Puede marcar varias
+                                                alternativas <b>(Opción múltiple)</b></label>
+
+                                            <?php
+                                            $i2 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="opc-2-<?= $i2 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_2[$i2]) ?>"
+                                                        onclick="chk().validar_chk('section-one-two', 'txt_2_multiple')">
+                                                    <label class="custom-control-label"
+                                                        for="opc-2-<?= $i2 + 1 ?>"><?= htmlspecialchars($section_2[$i2]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $i2++;
+
+                                            } while ($i2 <= count($section_2) - 1);
+                                            ?>
+
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_2_multiple" name="txt_2_multiple" readonly>
                                             <input type="text" class="multisteps-form__input form-control"
-                                                id="valor-chk-1" name="valor-chk-1" readonly>
+                                                id="txt_2_otro" name="txt_2_otro" placeholder="Describa otro">
+
+                                        </div>
+
+                                        <!-- // TODO: SECTION ONE THREE -->
+                                        <div class="row mt-3 h-100" id="section-one-three">
+
+                                            <label>3. ¿Qué temas de tutoría se han abordado con las/los estudiantes a la
+                                                fecha? Puede marcar varias alternativas<b>(Opción múltiple)</b></label>
+
+                                            <?php
+                                            $i3 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="opc-3-<?= $i3 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_3[$i3]) ?>"
+                                                        onclick="chk().validar_chk('section-one-three', 'txt_3_multiple')">
+                                                    <label class="custom-control-label"
+                                                        for="opc-3-<?= $i3 + 1 ?>"><?= htmlspecialchars($section_3[$i3]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $i3++;
+
+                                            } while ($i3 <= count($section_3) - 1);
+                                            ?>
+
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_3_multiple" name="txt_3_multiple" readonly>
+                                            <input type="text" class="multisteps-form__input form-control"
+                                                id="txt_3_otro" name="txt_3_otro" placeholder="Describa otro">
 
                                         </div>
 
