@@ -1,3 +1,17 @@
+<?php
+$section_1 = array(
+    'Proyecto Educativo Institucional - PEI',
+    'Reglamento Interno - RI',
+    'Plan Anual de Trabajo - PAT',
+    'Proyecto Curricular de la IE - PCI/ Plan de Formación-PF',
+    'Manual de funcionamiento del MSE',
+    'Plan de gestión del bienestar del MSE',
+    'Plan del TOECE de la IE',
+    'Plan de TOECE del Aula',
+    'Ninguno ',
+);
+?>
+
 <main class="main-content position-relative border-radius-lg instrumento" id="inst-03">
 
     <div class="container-fluid py-4">
@@ -87,7 +101,7 @@
                                     <!--<p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i>
                                         Todos los campos son obligatorios</p>-->
                                     <input type="hidden" id="id" name="id" value="0">
-                                    <input type="hidden" id="action" name="action" value="save-update-enc-01">
+                                    <input type="hidden" id="action" name="action" value="save-update-enc-02">
                                     <div class="multisteps-form__content">
 
                                         <div class="row mt-3">
@@ -154,18 +168,35 @@
                                     <!--<p class=",b-0 text-sm">1.1. ¿En este último mes con qué frecuencia has consumido …?</p>-->
                                     <div class="multisteps-form__content">
 
-                                        <div class="row mt-3 h-100">
+                                        <div class="row mt-3 h-100" id="section-one-one">
 
                                             <label>1. A la fecha ¿En qué Instrumentos de gestión escolar
                                                 y documentos de la IE se han incluido acciones e
                                                 instrumentos de bienestar vinculados a la tutoría,
                                                 convivencia, protección y bienestar integral en los MSE?
                                                 <b>(Opción múltiple)</b></label>
-                                            <div class="form-check" style="">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="fcustomCheck1" checked="">
-                                                <label class="custom-control-label" for="customCheck1">Proyecto Educativo Institucional - PEI</label>
-                                            </div>
+
+                                            <?php
+                                            $i = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input" type="checkbox" id="op<?= $i+1 ?>"
+                                                        value="<?= htmlspecialchars($section_1[$i]) ?>"
+                                                        onclick="chk().validar_chk('section-one-one', 'valor-chk-1')">
+                                                    <label class="custom-control-label" for="op<?= $i+1 ?>"><?= htmlspecialchars($section_1[$i]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $i++;
+
+                                            } while ($i <= count($section_1)-1);
+                                            ?>
+                                            
+                                            <input type="text" class="multisteps-form__input form-control"
+                                                id="valor-chk-1" name="valor-chk-1" readonly>
 
                                         </div>
 
@@ -177,7 +208,7 @@
                                                 Regresar
                                             </button>
                                             <button class="btn bg-gradient-primary ms-auto mb-0" type="button"
-                                                title="Next" onclick="encuesta_01().save()">
+                                                title="Next" onclick="encuesta_02().save()">
                                                 Guardar
                                                 <i class="fa-duotone fa-save"></i>
                                             </button>
@@ -198,31 +229,16 @@
 <script src="./assets/js/plugins/multistep-form.js"></script>
 
 <script>
-    if (document.getElementById("txt_1_multiple")) {
-        var element = document.getElementById("txt_1_multiple");
-        const example = new Choices(element, {
-            removeItemButton: true,
-        });
 
-        example.setChoices(
-            [
-                {
-                    value: "Proyecto Educativo Institucional - PEI",
-                    label: "Proyecto Educativo Institucional - PEI",
-                    disabled: false,
-                },
-                {
-                    value: "Reglamento Interno - RI",
-                    label: "Reglamento Interno - RI",
-                },
-                {
-                    value: "Plan Anual de Trabajo - PAT",
-                    label: "Plan Anual de Trabajo - PAT",
-                },
-            ],
-            "value",
-            "label",
-            false
-        );
-    }
+    let chk = () => ({
+        validar_chk: (section, txtMostrar) => {
+            var seleccionados = [];
+            $('#' + section + ' input[type="checkbox"]:checked').each(function () {
+                seleccionados.push($(this).val());
+            });
+            $('#' + section + ' #' + txtMostrar).val(seleccionados.join(", "))
+            console.log(seleccionados);
+        }
+    })
+
 </script>
