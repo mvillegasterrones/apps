@@ -44,6 +44,48 @@ $section_4 = array(
     'Se remitió un oficio a la UGEL',
     'Otro (Especifique)'
 );
+
+$section_5 = array(
+    'Campañas de salud',
+    'Evaluación médica',
+    'Inmunizaciones o vacunación',
+    'Evaluación nutricional',
+    'Campañas de prevención del embarazo adolescente',
+    'Suplementación preventiva de hierro',
+    'Tamizaje de violencia',
+    'Evaluación en salud mental',
+    'Información sobre Salud Sexual y Reproductiva',
+    'Ninguna',
+    'Otros (Especifique)',
+);
+
+$tbl_p15 = array(
+    'Violencia psicológica y/o física entre estudiantes ',
+    'Violencia sexual entre estudiantes',
+    'Violencia psicológica de personal de IIEE hacia estudiantes',
+    'Violencia física de personal de la IIEE hacia estudiantes',
+    'Violencia sexual de personal de la IIEE hacia estudiantes',
+    'Violencia física, psicológica y/o sexual por parte de familiar u otra persona externa a la IIEE a un estudiante',
+);
+
+$tbl_p17 = array(
+    'Convivencia temprana',
+    'Fuga del hogar / desaparición',
+    'Maternidad',
+    'Paternidad',
+    'Embarazo adolescente',
+    'Enfermedades o accidente que afecta la salud física',
+    'Problema de salud mental',
+    'Suicidio o intentos de suicidio',
+    'Asumen roles de cuidado en el hogar que le impiden estudiar',
+    'Abandono familiar',
+    'Trabajo infantil ',
+    'Consumo de drogas y/o alcohol',
+    'Fallecimiento',
+    'Deserción escolar',
+    'Sanciones comunales',
+    'Histeria colectiva (convulsiones, desmayos, entre otros luego de “jugar la ouija” u otras prácticas)',
+);
 ?>
 
 <main class="main-content position-relative border-radius-lg instrumento" id="inst-03">
@@ -85,6 +127,10 @@ $section_4 = array(
                                             title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
                                             SALUD
                                         </button>
+                                        <button class="multisteps-form__progress-btn" type="button"
+                                            title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
+                                            ALERTAS
+                                        </button>
                                     </div>
                                     <code><i class="fa-regular fa-circle-exclamation"></i> 
                                     TODOS LOS CAMPOS SON OBLIGATORIOS</code>
@@ -99,7 +145,7 @@ $section_4 = array(
                                 class="multisteps-form__form needs-validation was-validated card-color-pastel mb-8"
                                 novalidate>
 
-                                <!-- // TODO: Section 1 - Información -->
+                                <!-- // ? TODO: Section 1 - Información -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">Información</h5>
@@ -119,7 +165,6 @@ $section_4 = array(
                                                     carácter de declaración jurada, pudiendo la DISER solicitar los
                                                     medios de verificación que sustentan lo informado.
                                                 </p>
-                                                <!--<input class="multisteps-form__input form-control" type="text"              placeholder="eg. Michael" />-->
                                             </div>
                                         </div>
 
@@ -132,7 +177,7 @@ $section_4 = array(
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 2 - COMUNIDADs / INFORMANTE -->
+                                <!-- // ? TODO: Section 2 - COMUNIDADs / INFORMANTE -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">COMUNIDAD / INFORMANTE</h5>
@@ -199,7 +244,7 @@ $section_4 = array(
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 3 - GESTION DEL BIENESTAR SOCIOEMOCIONAL - OK -->
+                                <!-- // ? TODO: Section 3 - GESTION DEL BIENESTAR SOCIOEMOCIONAL - OK -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">GESTIÓN DEL BIENESTAR SOCIOEMOCIONAL </h5>
@@ -318,7 +363,7 @@ $section_4 = array(
                                                 Regresar
                                             </button>
                                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                                                title="Next" onclick="encuesta_02().save()">
+                                                title="Next">
                                                 Siguiente
                                                 <i class="fa-duotone fa-arrow-right"></i>
                                             </button>
@@ -326,14 +371,14 @@ $section_4 = array(
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 4 - Alimentación PNAQW -->
+                                <!-- // ? TODO: Section 4 - Alimentación PNAQW - OK -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white text-uppercase"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder">ALIMERNTACIÓN ESCOLAR </h5>
                                     <p class="b-0 text-sm">PROGRAMA NACIONAL DE ALIMENTACIÓN QALI WARMA (PNAE-QW)</p>
                                     <div class="multisteps-form__content">
 
-                                        <h6 class="font-weight-bolder"><i class="fas fa-check-circle"></i> DOTACION DE
+                                        <h6 class="font-weight-bolder"><i class="fas fa-check-circle"></i> DOTACIÓN DE
                                             ALIMENTOS</h6>
                                         <!-- // TODO: Pregunta 4 -->
                                         <div class="row mt-3 h-100" id="">
@@ -351,10 +396,11 @@ $section_4 = array(
 
                                         </div>
 
-                                        <!-- // TODO: SECTION ONE FOUR -->
+                                        <!-- // TODO: SECTION ONE FOUR - P5 -->
                                         <div class="row mt-3 h-100" id="section-one-four">
 
-                                            <label>5. Si marcó la opción “b” en la pregunta anterior, ¿Se han realizado
+                                            <label>5. Si marcó la opción <b>“NO”</b> en la pregunta anterior, ¿Se han
+                                                realizado
                                                 gestiones para reportar y/o comunicar la alerta respecto a la dotación
                                                 incompleta? <b>(Opción múltiple)</b></label>
 
@@ -365,11 +411,11 @@ $section_4 = array(
 
                                                 <div class="form-check" style="padding-left: 50px;">
                                                     <input class="form-check-input" type="checkbox"
-                                                        id="opc-2-<?= $i4 + 1 ?>"
+                                                        id="opc-4-<?= $i4 + 1 ?>"
                                                         value="<?= htmlspecialchars($section_4[$i4]) ?>"
                                                         onclick="chk().validar_chk('section-one-four', 'txt_5_multiple')">
                                                     <label class="custom-control-label"
-                                                        for="opc-2-<?= $i4 + 1 ?>"><?= htmlspecialchars($section_4[$i4]) ?></label>
+                                                        for="opc-4-<?= $i4 + 1 ?>"><?= htmlspecialchars($section_4[$i4]) ?></label>
                                                 </div>
 
                                                 <?php
@@ -411,7 +457,7 @@ $section_4 = array(
                                         </div>
 
                                         <h6 class="font-weight-bolder mt-3"><i class="fas fa-check-circle"></i>
-                                            ALIMENTACION COMPLEMENTARIA CON ALIMENTOS FRESCOS </h6>
+                                            ALIMENTACIÓN COMPLEMENTARIA CON ALIMENTOS FRESCOS </h6>
                                         <!-- // TODO: Pregunta 7 -->
                                         <div class="row mt-3 h-100" id="">
 
@@ -444,7 +490,7 @@ $section_4 = array(
                                                 Regresar
                                             </button>
                                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                                                title="Next" onclick="encuesta_02().save()">
+                                                title="Next">
                                                 Siguiente
                                                 <i class="fa-duotone fa-arrow-right"></i>
                                             </button>
@@ -452,7 +498,7 @@ $section_4 = array(
                                     </div>
                                 </div>
 
-                                <!-- // TODO: Section 5 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
+                                <!-- // ? TODO: Section 5 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN
@@ -481,12 +527,244 @@ $section_4 = array(
                                             </div>
                                         </div>
 
+                                        <!-- // TODO: SECTION-ONE-FIVE P-11 -->
+                                        <div class="row mt-3 h-100" id="section-one-five">
+
+                                            <label>11. A la fecha, indique ¿Qué actividades se han realizado en
+                                                articulación con el Establecimiento, Centro o Puesto de Salud/MINSA?
+                                                <b>(Opción múltiple)</b></label>
+
+                                            <?php
+                                            $i5 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="opc-5-<?= $i5 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_5[$i5]) ?>"
+                                                        onclick="chk().validar_chk('section-one-five', 'txt_11_multiple')"
+                                                        required>
+                                                    <label class="custom-control-label"
+                                                        for="opc-5-<?= $i5 + 1 ?>"><?= htmlspecialchars($section_5[$i5]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $i5++;
+
+                                            } while ($i5 <= count($section_5) - 1);
+                                            ?>
+
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_11_multiple" name="txt_11_multiple" readonly required>
+                                            <input type="text" class="multisteps-form__input form-control mt-2"
+                                                id="txt_11_otro" placeholder="Ingrese otro" name="txt_11_otro">
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <label for="">12. A la fecha, ¿Cuántos estudiantes se han derivado al
+                                                    Centro de Salud haciendo uso del formato de derivación según anexo 4
+                                                    de la RVM N° 273-2020-MINEDU? </label>
+                                                <input type="number" class="multisteps-form__input form-control"
+                                                    id="txt_12" name="txt_12" placeholder="Ingrese número" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="">13. la fecha respecto al kit de botiquín de la IE,
+                                                    conteste lo siguiente:</label>
+                                                <select class="multisteps-form__input form-control" id="txt_13"
+                                                    name="txt_13" placeholder="Ingrese número" required>
+                                                    <option value="" selected disabled>.: Selecciones una alternativa :.
+                                                    </option>
+                                                    <option>El botiquín se encuentra en un espacio adecuado (seguro,
+                                                        limpio, seco y lejos de la luz del sol) para su conservación
+                                                    </option>
+                                                    <option>El personal ha sido capacitado para el uso del botiquín y la
+                                                        atención en primeros auxilio</option>
+                                                    <option>La IE cuenta con formatos y acuerdos para derivar al
+                                                        establecimiento de salud a estudiantes en caso se requiera
+                                                    </option>
+                                                    <option>La IE tiene un listado de materiales e insumos del botiquín
+                                                        actualizado mensualmente</option>
+                                                    <option>La IE cuenta con un libro para el registro de las atenciones
+                                                        en primeros auxilios</option>
+                                                    <option>La IE cuenta con una ficha por cada estudiantes sobre
+                                                        enfermedades, alergias a medicamentos, entre otros</option>
+                                                    <option>No se cuenta con botiquín</option>
+                                                    <option>Otro (especifique)</option>
+                                                </select>
+                                                <input type="text" class="multisteps-form__input form-control mt-2"
+                                                    id="txt_13_otro" name="txt_13_otro" placeholder="Ingrese otro">
+                                            </div>
+                                        </div>
+
                                         <div class="button-row d-flex mt-4">
+                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                                title="Prev">
+                                                <i class="fa-duotone fa-arrow-left"></i>
+                                                Regresar
+                                            </button>
                                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
                                                 title="Next">
-                                                Empezar
+                                                Siguiente
+                                                <i class="fa-duotone fa-arrow-right"></i>
                                             </button>
                                         </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- // ! TODO: Section 6 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
+                                <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
+                                    data-animation="FadeIn">
+                                    <h5 class="font-weight-bolder mb-0">SITUACIONES DE ALERTA IDENTIFICADAS </h5>
+                                    <div class="multisteps-form__content text-uppercase">
+                                        <div class="row mt-3">
+
+                                            <div class="col-12 col-sm-12">
+                                                <label for="">14. ¿Se han identificado situaciones de violencia hacia
+                                                    estudiantes de la IE? </label>
+                                                <select class="multisteps-form__input form-control" id="txt_14"
+                                                    name="txt_14" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <label for="">15. Si marcó <b>"SI"</b> en la pregunta anterior, indique
+                                                    el número de casos dependiendo del tipo de violencia que se ha
+                                                    presentado
+                                                    (casos acumulados en el año) </label>
+
+                                                <div class="table-responsive mb-3">
+                                                    <table class="table align-items-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th
+                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                    Tipo de BViolencia</th>
+                                                                <th
+                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                    Nro de casos</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <?php
+                                                            $t = 0;
+                                                            do {
+                                                                ?>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="text-xxs font-weight-bold mb-0">
+                                                                            <?= htmlspecialchars($tbl_p15[$t]) ?>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td><input type="number"
+                                                                            class=" multisteps-form__input form-control form-control-sm"
+                                                                            id="txt_15_tv<?= $t + 1 ?>"
+                                                                            name="txt_15_tv<?= $t + 1 ?>"
+                                                                            placeholder="Ingrese Nro." value="0" required>
+                                                                    </td>
+                                                                </tr>
+                                                                <?php
+                                                                $t++;
+                                                            } while ($t <= count($tbl_p15) - 1);
+                                                            ?>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="">16. ¿Se han identificado otras situaciones de riesgo que
+                                                    afecten el bienestar y/o derechos fundamentales de las/los
+                                                    estudiantes? </label>
+                                                <select class="multisteps-form__input form-control" id="txt_16"
+                                                    name="txt_16" required>
+                                                    <option value="" selected disabled>.: Seleccione :.</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <label for="">17. Si marcó <b>“SI”</b> en la pregunta anterior, indique
+                                                    el número de casos dependiendo de la situación de riesgo que se ha
+                                                    presentado (N° casos acumulados en el año) </label>
+
+                                                <div class="table-responsive mb-3">
+                                                    <table class="table align-items-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th
+                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                    Situaciones de riesgo </th>
+                                                                <th
+                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                    N° de casos hasta la fecha</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <?php
+                                                            $t2 = 0;
+                                                            do {
+                                                                ?>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="text-xxs font-weight-bold mb-0">
+                                                                            <?= htmlspecialchars($tbl_p17[$t2]) ?>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td><input type="number"
+                                                                            class=" multisteps-form__input form-control form-control-sm"
+                                                                            id="txt_17_cr<?= $t2 + 1 ?>"
+                                                                            name="txt_17_cr<?= $t2 + 1 ?>"
+                                                                            placeholder="Ingrese Nro." value="0" required>
+                                                                    </td>
+                                                                </tr>
+                                                                <?php
+                                                                $t2++;
+                                                            } while ($t2 <= count($tbl_p17) - 1);
+                                                            ?>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="text"
+                                                                        class=" multisteps-form__input form-control form-control-sm"
+                                                                        id="txt_17_cr_otro"
+                                                                        name="txt_17_cr_otro"
+                                                                        placeholder="Ingrese otro." value="-" required>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="number"
+                                                                        class=" multisteps-form__input form-control form-control-sm"
+                                                                        id="txt_17_cr<?= $t2 + 1 ?>"
+                                                                        name="txt_17_cr<?= $t2 + 1 ?>"
+                                                                        placeholder="Ingrese Nro." value="0" required>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                                title="Prev">
+                                                <i class="fa-duotone fa-arrow-left"></i>
+                                                Regresar
+                                            </button>
+                                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
+                                                title="Next">
+                                                Siguiente
+                                                <i class="fa-duotone fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+
                                     </div>
                                 </div>
 
