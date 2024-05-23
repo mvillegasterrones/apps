@@ -107,3 +107,14 @@ const funciones = () => ({
     }
     
 })
+
+let chk = () => ({
+    validar_chk: (section, txtMostrar) => {
+        var seleccionados = [];
+        $('#' + section + ' input[type="checkbox"]:checked').each(function () {
+            seleccionados.push($(this).val());
+        });
+        $('#' + section + ' #' + txtMostrar).val(seleccionados.join(", "))
+        console.log(seleccionados);
+    }
+})
