@@ -111,7 +111,7 @@ $section_7_p20 = array(
     'Ninguna',
     'Otros (especifique)'
 );
-$status_no_corresponde = ($_SESSION['tipo_mse']==='ST') ? 'disabled' : '';
+$status_no_corresponde = ($_SESSION['tipo_mse'] === 'ST') ? 'disabled' : '';
 
 $section_8_p21 = array(
     'No Aplica',
@@ -870,7 +870,7 @@ $section_8_p21 = array(
                                                 estrategias que están implementando para promover hábitos saludables en
                                                 los estudiantes? (opción múltiple) <b>(Opción múltiple)</b></label>
 
-                                            <h1 class="text-danger"><?=$_SESSION['tipo_mse']?></h1>
+                                            <h1 class="text-danger"><?= $_SESSION['tipo_mse'] ?></h1>
 
                                             <?php
                                             $p20 = 0;
@@ -878,8 +878,8 @@ $section_8_p21 = array(
                                                 ?>
 
                                                 <div class="form-check" style="padding-left: 50px;">
-                                                    <input <?= $status_no_corresponde ?> class="form-check-input" type="checkbox"
-                                                        id="opc-7-<?= $p20 + 1 ?>"
+                                                    <input <?= $status_no_corresponde ?> class="form-check-input"
+                                                        type="checkbox" id="opc-7-<?= $p20 + 1 ?>"
                                                         value="<?= htmlspecialchars($section_7_p20[$p20]) ?>"
                                                         onclick="chk().validar_chk('section-one-seven', 'txt_20_multiple')">
                                                     <label class="custom-control-label"
@@ -912,8 +912,8 @@ $section_8_p21 = array(
                                                 ?>
 
                                                 <div class="form-check" style="padding-left: 50px;">
-                                                    <input <?= $status_no_corresponde ?> class="form-check-input" type="checkbox"
-                                                        id="opc-8-<?= $p21 + 1 ?>"
+                                                    <input <?= $status_no_corresponde ?> class="form-check-input"
+                                                        type="checkbox" id="opc-8-<?= $p21 + 1 ?>"
                                                         value="<?= htmlspecialchars($section_8_p21[$p21]) ?>"
                                                         onclick="chk().validar_chk('section-one-eight', 'txt_21_multiple')">
                                                     <label class="custom-control-label"
@@ -958,7 +958,7 @@ $section_8_p21 = array(
             </div>
         </div>
     </div>
-    </div>
+    <!--</div>-->
 
 </main>
 
