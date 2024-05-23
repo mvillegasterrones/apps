@@ -18,6 +18,7 @@ switch ($accion) {
             echo '0';
         } else {
             $_SESSION['acceso']       = 'YES';
+            $_SESSION['tipo_mse']     = $array['tipo_mse'];
             $_SESSION['cod_mod']      = $array['cod_mod'];
             $_SESSION['anexo']        = $array['anexo'];
             $_SESSION['codlocal']     = $array['codlocal'];

@@ -8,7 +8,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white">
-                    <a class="opacity-5 text-white" href="javascript:;">MSE</a>
+                    <a class="opacity-5 text-white" href="javascript:;">MSE <?= $_SESSION['tipo_mse'] ?></a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white">
                     <a class="opacity-5 text-white" href="javascript:;"><?= $_SESSION['nv_educativo'] ?></a>

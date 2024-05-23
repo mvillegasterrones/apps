@@ -86,6 +86,43 @@ $tbl_p17 = array(
     'Sanciones comunales',
     'Histeria colectiva (convulsiones, desmayos, entre otros luego de “jugar la ouija” u otras prácticas)',
 );
+
+$section_6_p19 = array(
+    'Autoridades comunales',
+    'Juzgado de paz',
+    'Subprefecto / prefecto / teniente gobernador',
+    'Establecimiento de Salud',
+    'Policía',
+    'Fiscalía',
+    'DEMUNA ',
+    'Servicio de Atención Rural o CEM',
+    'Ninguno',
+    'Otro'
+);
+
+$section_7_p20 = array(
+    'No Aplica',
+    'Prácticas demostrativas del lavado correcto de manos',
+    'Prácticas demostrativas del correcto cepillado de dientes',
+    'Pausas activas o actividad física diaria',
+    'Rutina de higiene y aseo personal diario',
+    'Uso de mosquiteros en zonas cálidas',
+    'Charlas de estilos de vida saludable para estudiantes',
+    'Ninguna',
+    'Otros (especifique)'
+);
+$status_no_corresponde = ($_SESSION['tipo_mse']==='ST') ? 'disabled' : '';
+
+$section_8_p21 = array(
+    'No Aplica',
+    'Higiene y ventilación de espacios de dormitorio',
+    'Limpieza e higiene de ambientes',
+    'Higiene de colchones y ropa de cama',
+    'Potabilización del agua',
+    'Ninguna',
+    'Otro (especifique)',
+);
+
 ?>
 
 <main class="main-content position-relative border-radius-lg instrumento" id="inst-03">
@@ -117,19 +154,23 @@ $tbl_p17 = array(
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
                                             title="GESTION DEL BIENESTAR SOCIOEMOCIONAL">
-                                            GBSEMOC
+                                            Gestión
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
                                             title="ALIMENTACIÓN ESCOLAR - PNAEQW">
-                                            AE-PNAEQW
+                                            Alimentación
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
                                             title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
-                                            SALUD
+                                            Salud
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
                                             title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
-                                            ALERTAS
+                                            Alertas
+                                        </button>
+                                        <button class="multisteps-form__progress-btn" type="button"
+                                            title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
+                                            Hábitos
                                         </button>
                                     </div>
                                     <code><i class="fa-regular fa-circle-exclamation"></i> 
@@ -183,8 +224,8 @@ $tbl_p17 = array(
                                     <h5 class="font-weight-bolder mb-0">COMUNIDAD / INFORMANTE</h5>
                                     <!--<p class="mb-0 text-sm"><i class="fa-regular fa-circle-exclamation text-danger"></i>
                                         Todos los campos son obligatorios</p>-->
-                                    <input type="text" id="id" name="id" value="0">
-                                    <input type="text" id="action" name="action" value="save-update-enc-02">
+                                    <input type="hidden" id="id" name="id" value="0">
+                                    <input type="hidden" id="action" name="action" value="save-update-enc-02">
                                     <div class="multisteps-form__content">
 
                                         <div class="row mt-3">
@@ -615,7 +656,7 @@ $tbl_p17 = array(
                                     </div>
                                 </div>
 
-                                <!-- // ! TODO: Section 6 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
+                                <!-- // ? TODO: Section 6 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
                                     data-animation="FadeIn">
                                     <h5 class="font-weight-bolder mb-0">SITUACIONES DE ALERTA IDENTIFICADAS </h5>
@@ -732,8 +773,7 @@ $tbl_p17 = array(
                                                                 <td>
                                                                     <input type="text"
                                                                         class=" multisteps-form__input form-control form-control-sm"
-                                                                        id="txt_17_cr_otro"
-                                                                        name="txt_17_cr_otro"
+                                                                        id="txt_17_cr_otro" name="txt_17_cr_otro"
                                                                         placeholder="Ingrese otro." value="-" required>
                                                                 </td>
                                                                 <td>
@@ -750,6 +790,50 @@ $tbl_p17 = array(
                                                 </div>
                                             </div>
 
+                                            <div class="col-12">
+                                                <label for="">18. A la fecha ¿Cuántas estudiantes embarazadas reciben
+                                                    atención del establecimiento de salud? </label>
+                                                <input type="number" class="multisteps-form__input form-control"
+                                                    id="txt_18" name="txt_18"
+                                                    placeholder="N° total de estudiantes embarazadas que reciben atención en salud:"
+                                                    required>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- // TODO: SECTION ONE SIX P19 - OK -->
+                                        <div class="row mt-3 h-100" id="section-one-six">
+
+                                            <label>19. A la fecha ¿Con qué tipo de aliados de la Red de protección
+                                                estudiantil ha coordinado acciones para la atención oportuna en
+                                                casos de violencia y otros? <b>(Opción múltiple)</b></label>
+
+                                            <?php
+                                            $p19 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="opc-6-<?= $p19 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_6_p19[$p19]) ?>"
+                                                        onclick="chk().validar_chk('section-one-six', 'txt_19_multiple')"
+                                                        required>
+                                                    <label class="custom-control-label"
+                                                        for="opc-6-<?= $p19 + 1 ?>"><?= htmlspecialchars($section_6_p19[$p19]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $p19++;
+
+                                            } while ($p19 <= count($section_6_p19) - 1);
+                                            ?>
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_19_multiple" name="txt_19_multiple" readonly required>
+                                            <input type="text" class="multisteps-form__input form-control"
+                                                id="txt_19_otro" name="txt_19_otro" placeholder="Detalle otro">
+                                            <!--</div>-->
                                         </div>
 
                                         <div class="button-row d-flex mt-4">
@@ -768,12 +852,112 @@ $tbl_p17 = array(
                                     </div>
                                 </div>
 
+                                <!-- // ! TODO: Section 7 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
+                                <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
+                                    data-animation="FadeIn">
+                                    <h5 class="font-weight-bolder mb-0">PROMOCION DE HABITOS SALUDABLES EN LOS MSE
+                                        SRE Y SA</h5>
+                                    <div class="multisteps-form__content text-uppercase">
+                                        <div class="alert alert-info mt-3">
+                                            <i class="fas fa-info-circle"> Disponible para MSE SA y SRE</i>
+                                        </div>
+
+                                        <!-- // TODO: SECTION ONE SEVEN P20 - OK -->
+                                        <div class="row mt-3 h-100" id="section-one-seven">
+
+                                            <label>20. Respecto a al uso del “kit de bienestar” con productos de aseo
+                                                para estudiantes mujeres y hombres ¿Cuáles son las principales
+                                                estrategias que están implementando para promover hábitos saludables en
+                                                los estudiantes? (opción múltiple) <b>(Opción múltiple)</b></label>
+
+                                            <h1 class="text-danger"><?=$_SESSION['tipo_mse']?></h1>
+
+                                            <?php
+                                            $p20 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input <?= $status_no_corresponde ?> class="form-check-input" type="checkbox"
+                                                        id="opc-7-<?= $p20 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_7_p20[$p20]) ?>"
+                                                        onclick="chk().validar_chk('section-one-seven', 'txt_20_multiple')">
+                                                    <label class="custom-control-label"
+                                                        for="opc-7-<?= $p20 + 1 ?>"><?= htmlspecialchars($section_7_p20[$p20]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $p20++;
+
+                                            } while ($p20 <= count($section_7_p20) - 1);
+                                            ?>
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_20_multiple" name="txt_20_multiple" readonly required>
+                                            <input type="text" class="multisteps-form__input form-control mt-2"
+                                                id="txt_20_otro" name="txt_20_otro" placeholder="Detalle otro">
+                                        </div>
+
+                                        <!-- // TODO: SECTION ONE EIGHT P21 - OK -->
+                                        <div class="row mt-3 h-100" id="section-one-eight">
+
+                                            <label>20. Respecto a al uso del “kit de bienestar” con productos de aseo
+                                                para estudiantes mujeres y hombres ¿Cuáles son las principales
+                                                estrategias que están implementando para promover hábitos saludables en
+                                                los estudiantes? (opción múltiple) <b>(Opción múltiple)</b></label>
+
+                                            <?php
+                                            $p21 = 0;
+                                            do {
+                                                ?>
+
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input <?= $status_no_corresponde ?> class="form-check-input" type="checkbox"
+                                                        id="opc-8-<?= $p21 + 1 ?>"
+                                                        value="<?= htmlspecialchars($section_8_p21[$p21]) ?>"
+                                                        onclick="chk().validar_chk('section-one-eight', 'txt_21_multiple')">
+                                                    <label class="custom-control-label"
+                                                        for="opc-8-<?= $p21 + 1 ?>"><?= htmlspecialchars($section_8_p21[$p21]) ?></label>
+                                                </div>
+
+                                                <?php
+
+                                                $p21++;
+
+                                            } while ($p21 <= count($section_8_p21) - 1);
+                                            ?>
+                                            <input type="hidden" class="multisteps-form__input form-control"
+                                                id="txt_21_multiple" name="txt_21_multiple" readonly required>
+                                            <input type="text" class="multisteps-form__input form-control mt-2"
+                                                id="txt_21_otro" name="txt_21_otro" placeholder="Detalle otro">
+                                        </div>
+
+                                        <div class="button-row d-flex mt-4">
+                                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                                title="Prev">
+                                                <i class="fa-duotone fa-arrow-left"></i>
+                                                Regresar
+                                            </button>
+                                            <button class="btn bg-gradient-primary ms-auto mb-0" type="button"
+                                                title="Guardar" onclick="encuesta_02().save()">
+                                                Guardar
+                                                <i class="fa-duotone fa-save"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
                             </form>
+
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 </main>
