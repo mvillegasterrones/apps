@@ -577,10 +577,10 @@ const encuesta_01 = () => ({
     $.post(questionario_url, form, (response) => {
       if (response) {
         console.log(response);
-        sw_alert().ok_reload(`Registrado exitoso!`);
+        sw_alert().ok_reload(`ENC-01: Registrado exitoso!`);
       } else {
         sw_alert().error(
-          `Ocurrió un problema al registrar el INST-03 - ${response}`
+          `ENC-01: Ocurrió un problema al registrar ${response}`
         );
       }
     }).fail((xhr, status, error) => {
@@ -724,3 +724,63 @@ const encuesta_01 = () => ({
     });
   },
 });
+
+const encuesta_02 = () => ({
+  send: () => {
+
+    let form = $("#form-enc-02").serialize();
+
+    $.post(questionario_url, form, (response) => {
+      if (response) {
+        console.log(response);
+        sw_alert().ok_reload(`ENC-02: Registrado exitoso!`);
+      } else {
+        sw_alert().error(
+          `ENC-02: Ocurrió un problema al registrar ${response}`
+        );
+      }
+    }).fail((xhr, status, error) => {
+      console.error(xhr, status, error);
+      sw_alert().error(error, status);
+    });
+
+  },
+
+  save: () => {
+
+    let validar_form = funciones().validar_form_required("form-enc-02");
+
+    if (validar_form) {
+      Swal.fire({
+        icon: "question",
+        title: "¿Guardar encuesta 02?",
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: "Guardar",
+        denyButtonText: `Cancelar`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          encuesta_02().send();
+        } else if (result.isDenied) {
+          console.log("ENC-02: Cancelado");
+        }
+      });
+    } else {
+      msje = "Por favor, complete todos los campos del formulario.";
+      sw_alert().warning(msje);
+    }
+
+  },
+
+  get_reporte: () => {
+    
+    sw_alert().ok('Get reporte')
+
+  },
+
+  delete: () => {
+
+    sw_alert().ok('Delete record')
+
+  }
+})

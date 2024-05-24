@@ -182,7 +182,7 @@ $section_8_p21 = array(
 
                     <div class="row">
                         <div class="col-12 col-lg-8 m-auto">
-                            <form id="form-enc-01" name="form-enc-01"
+                            <form id="form-enc-02" name="form-enc-02"
                                 class="multisteps-form__form needs-validation was-validated card-color-pastel mb-8"
                                 novalidate>
 
@@ -235,7 +235,7 @@ $section_8_p21 = array(
                                                     placeholder="Ingrese" name="txt_comu_nombre" id="txt_comu_nombre"
                                                     required />
                                             </div>
-                                            <div class="col-12 col-sm-6">
+                                            <div class="col-12 col-sm-3">
                                                 <label>Tipo de comunidad</label>
                                                 <select class="multisteps-form__input form-control" name="txt_comu_tipo"
                                                     id="txt_comu_tipo" required>
@@ -244,6 +244,16 @@ $section_8_p21 = array(
                                                     <option>b. Caserío</option>
                                                     <option>c. Centro Poblado</option>
                                                     <option>d. Otro</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-sm-3">
+                                                <label>Mes de reporte</label>
+                                                <select class="multisteps-form__input form-control" name="txt_mes_reporte"
+                                                    id="txt_mes_reporte" required>
+                                                    <option value="" selected disabled>.: Selecciones :.</option>
+                                                    <option>Junio</option>
+                                                    <option>Setiembre</option>
+                                                    <option>Diciembre</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-6 mt-3">
@@ -948,11 +958,9 @@ $section_8_p21 = array(
                                     </div>
                                 </div>
 
-
                             </form>
 
                         </div>
-
                     </div>
                 </div>
             </div>
