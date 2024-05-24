@@ -15,6 +15,33 @@ const pg_body = () => ({
 
 const funciones = () => ({
 
+    validate_input_required: (form) => {
+
+        // Obtener el formulario
+        var formulario = document.getElementById(form);
+        // Obtener todos los elementos del formulario
+        var elementos = formulario.elements;
+        var validacionPasada = true;
+
+        // Iterar a través de los elementos y verificar los campos requeridos
+        for (var i = 0; i < elementos.length; i++) {
+            if (elementos[i].hasAttribute('required') && elementos[i].value === '') {
+                validacionPasada = false;
+                elementos[i].style.border = "2px solid red"; // Marcar el campo vacío
+            } else {
+                elementos[i].style.border = ""; // Restablecer el borde si el campo está lleno
+            }
+        }
+
+        // Si la validación pasa, enviar el formulario manualmente
+        if (validacionPasada) {
+            formulario.submit();
+        } else {
+            alert('Por favor, rellena todos los campos requeridos.');
+        }
+
+    },
+
     validar_form_required: (form_name) => {
         let formValido = true;
 
@@ -28,7 +55,7 @@ const funciones = () => ({
 
         return formValido
 
-       /* if (formValido) {
+        /* if (formValido) {
             alert("El formulario está listo para ser enviado.");
         } else {
             alert("Por favor, complete todos los campos requeridos.");
@@ -95,6 +122,39 @@ const funciones = () => ({
             $('#txt-valor-2-' + i).attr('readonly', 'readonly')
             $('#txt-valor-' + i).val('0')
             $('#txt-valor-2-' + i).val('0')
+        }
+    },
+
+    activate_for: (item, form, input, n) => {
+
+        let valor = $('#' + form + ' #' + item).val()
+
+        if (valor !== 'Si') {
+            for (let i = 0; i <= n; i++) {
+                $('#' + form + ' #' + input + (i * 1)).attr('readonly', true)
+                $('#' + form + ' #' + input + (i * 1)).val('0')
+            }
+        } else {
+            for (let i = 0; i <= n; i++) {
+                $('#' + form + ' #' + input + (i * 1)).removeAttr('readonly')
+                $('#' + form + ' #' + input + (i * 1)).val('')
+                $('#' + form + ' #' + input + '1').focus()
+            }
+        }
+
+    },
+
+    activate_other: (item, input) => {
+
+        let valor = $('#' + item).val()
+
+        if (valor === 'Otro') {
+            $('#' + input).removeAttr('readonly')
+            $('#' + input).val('')
+            $('#' + input).focus()
+        } else {
+            $('#' + input).attr('readonly', true)
+            $('#' + input).val('-')
         }
     },
 

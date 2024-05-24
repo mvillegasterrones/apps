@@ -39,6 +39,7 @@ $section_3 = array(
 );
 
 $section_4 = array(
+    'No aplica',
     'Se reportó la alerta al director(a)/ coordinador(a) residencia o de núcleo educativo',
     'Se remitió un oficio al Jefe de la unidad territorial del PNAE Qali Warma de la región',
     'Se remitió un oficio a la UGEL',
@@ -248,8 +249,8 @@ $section_8_p21 = array(
                                             </div>
                                             <div class="col-12 col-sm-3">
                                                 <label>Mes de reporte</label>
-                                                <select class="multisteps-form__input form-control" name="txt_mes_reporte"
-                                                    id="txt_mes_reporte" required>
+                                                <select class="multisteps-form__input form-control"
+                                                    name="txt_mes_reporte" id="txt_mes_reporte" required>
                                                     <option value="" selected disabled>.: Selecciones :.</option>
                                                     <option>Junio</option>
                                                     <option>Setiembre</option>
@@ -275,13 +276,13 @@ $section_8_p21 = array(
                                                 <label>* Otro (Apellidos y Nombres)</label>
                                                 <input class="multisteps-form__input form-control mt-2" type="text"
                                                     placeholder="Ingrese" name="txt_otro_nombre" id="txt_otro_nombre"
-                                                    required />
+                                                    value="-" required />
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3">
                                                 <label>* Otro (Cargo)</label>
                                                 <input class="multisteps-form__input form-control mt-2" type="text"
                                                     placeholder="Ingrese" name="txt_otro_cargo" id="txt_otro_cargo"
-                                                    required />
+                                                    value="-" required />
                                             </div>
                                         </div>
 
@@ -450,10 +451,9 @@ $section_8_p21 = array(
                                         <!-- // TODO: SECTION ONE FOUR - P5 -->
                                         <div class="row mt-3 h-100" id="section-one-four">
 
-                                            <label>5. Si marcó la opción <b>“NO”</b> en la pregunta anterior, ¿Se han
-                                                realizado
-                                                gestiones para reportar y/o comunicar la alerta respecto a la dotación
-                                                incompleta? <b>(Opción múltiple)</b></label>
+                                            <label>5. Si marcó la opción <b>“NO”</b> en la pregunta anterior, Responder: ¿Se han
+                                                realizado gestiones para reportar y/o comunicar la alerta respecto a la dotación
+                                                incompleta?, de lo contrario marcar <b>"No Aplica"</b> <b>(Opción múltiple)</b></label>
 
                                             <?php
                                             $i4 = 0;
@@ -489,7 +489,7 @@ $section_8_p21 = array(
                                                 de dotación, distribución y/o preparación de alimentos? </label>
 
                                             <select type="text" class="multisteps-form__input form-control" id="txt_6"
-                                                name="txt_6" readonly required>
+                                                name="txt_6" onchange="funciones().activate_other('txt_6', 'txt_6_otro')" required>
                                                 <option value="" selected disabled>.: Selecciones una alternativa :.
                                                 </option>
                                                 <option>Dotación insuficiente de alimentos para el número de estudiantes
@@ -500,10 +500,10 @@ $section_8_p21 = array(
                                                 <option>No hemos recibido asistencia/capacitación del monitor local del
                                                     PNAE Qali Warma</option>
                                                 <option>Ninguno</option>
-                                                <option>Otro (especifique)</option>
+                                                <option>Otro</option>
                                             </select>
                                             <input type="text" class="multisteps-form__input form-control mt-2"
-                                                id="txt_6_otro" name="txt_6_otro" placeholder="Describa otro">
+                                                id="txt_6_otro" name="txt_6_otro" placeholder="Describa otro" value="-" readonly required>
 
                                         </div>
 
@@ -516,7 +516,7 @@ $section_8_p21 = array(
                                                 verduras, carnes, pescado, otros) </label>
 
                                             <select type="text" class="multisteps-form__input form-control" id="txt_7"
-                                                name="txt_7" required>
+                                                name="txt_7" onchange="funciones().activate_other('txt_7', 'txt_7_otro')" required>
                                                 <option value="" selected disabled>.: Selecciones una alternativa :.
                                                 </option>
                                                 <option>Recibe presupuesto por parte de la UGEL</option>
@@ -527,10 +527,10 @@ $section_8_p21 = array(
                                                 <option>Obtienen alimentos frescos del huerto escolar</option>
                                                 <option>Solo reciben alimentos del PNAEQW</option>
                                                 <option>No reciben alimentos para los estudiantes</option>
-                                                <option>Otro tipo de apoyo que recibe (especifique)</option>
+                                                <option>Otro</option>
                                             </select>
                                             <input type="text" class="multisteps-form__input form-control mt-2"
-                                                id="txt_7_otro" name="txt_7_otro" placeholder="Describa otro">
+                                                id="txt_7_otro" name="txt_7_otro" placeholder="Describa otro" value="-" readonly required>
 
                                         </div>
 
@@ -625,7 +625,7 @@ $section_8_p21 = array(
                                                 <label for="">13. la fecha respecto al kit de botiquín de la IE,
                                                     conteste lo siguiente:</label>
                                                 <select class="multisteps-form__input form-control" id="txt_13"
-                                                    name="txt_13" placeholder="Ingrese número" required>
+                                                    name="txt_13" onchange="funciones().activate_other('txt_13', 'txt_13_otro')" required>
                                                     <option value="" selected disabled>.: Selecciones una alternativa :.
                                                     </option>
                                                     <option>El botiquín se encuentra en un espacio adecuado (seguro,
@@ -643,10 +643,10 @@ $section_8_p21 = array(
                                                     <option>La IE cuenta con una ficha por cada estudiantes sobre
                                                         enfermedades, alergias a medicamentos, entre otros</option>
                                                     <option>No se cuenta con botiquín</option>
-                                                    <option>Otro (especifique)</option>
+                                                    <option>Otro</option>
                                                 </select>
                                                 <input type="text" class="multisteps-form__input form-control mt-2"
-                                                    id="txt_13_otro" name="txt_13_otro" placeholder="Ingrese otro">
+                                                    id="txt_13_otro" name="txt_13_otro" placeholder="Ingrese otro" value="-" readonly required>
                                             </div>
                                         </div>
 
@@ -677,7 +677,9 @@ $section_8_p21 = array(
                                                 <label for="">14. ¿Se han identificado situaciones de violencia hacia
                                                     estudiantes de la IE? </label>
                                                 <select class="multisteps-form__input form-control" id="txt_14"
-                                                    name="txt_14" required>
+                                                    name="txt_14"
+                                                    onchange="funciones().activate_for('txt_14', 'form-enc-02', 'txt_15_tv', 6)"
+                                                    required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
@@ -693,6 +695,7 @@ $section_8_p21 = array(
                                                     <table class="table align-items-center mb-0">
                                                         <thead>
                                                             <tr>
+                                                                <th>-</th>
                                                                 <th
                                                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                                     Tipo de BViolencia</th>
@@ -707,6 +710,7 @@ $section_8_p21 = array(
                                                             do {
                                                                 ?>
                                                                 <tr>
+                                                                    <td><p class="text-xxs font-weight-bold mb-0"><?= $t + 1 ?></p></td>
                                                                     <td>
                                                                         <p class="text-xxs font-weight-bold mb-0">
                                                                             <?= htmlspecialchars($tbl_p15[$t]) ?>
@@ -716,7 +720,8 @@ $section_8_p21 = array(
                                                                             class=" multisteps-form__input form-control form-control-sm"
                                                                             id="txt_15_tv<?= $t + 1 ?>"
                                                                             name="txt_15_tv<?= $t + 1 ?>"
-                                                                            placeholder="Ingrese Nro." value="0" required>
+                                                                            placeholder="Ingrese Nro." value="0" readonly
+                                                                            required>
                                                                     </td>
                                                                 </tr>
                                                                 <?php
@@ -734,70 +739,79 @@ $section_8_p21 = array(
                                                     afecten el bienestar y/o derechos fundamentales de las/los
                                                     estudiantes? </label>
                                                 <select class="multisteps-form__input form-control" id="txt_16"
-                                                    name="txt_16" required>
+                                                    name="txt_16"
+                                                    onchange="funciones().activate_for('txt_16', 'form-enc-02', 'txt_17_cr', 17)"" required>
                                                     <option value="" selected disabled>.: Seleccione :.</option>
                                                     <option>Si</option>
                                                     <option>No</option>
                                                 </select>
                                             </div>
-                                            <div class="col-12 mt-3">
-                                                <label for="">17. Si marcó <b>“SI”</b> en la pregunta anterior, indique
-                                                    el número de casos dependiendo de la situación de riesgo que se ha
-                                                    presentado (N° casos acumulados en el año) </label>
+                                            <div class=" col-12 mt-3">
+                                                    <label for="">17. Si marcó <b>“SI”</b> en la pregunta anterior,
+                                                        indique
+                                                        el número de casos dependiendo de la situación de riesgo que se
+                                                        ha
+                                                        presentado (N° casos acumulados en el año) </label>
 
-                                                <div class="table-responsive mb-3">
-                                                    <table class="table align-items-center mb-0">
-                                                        <thead>
-                                                            <tr>
-                                                                <th
-                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                                    Situaciones de riesgo </th>
-                                                                <th
-                                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                                    N° de casos hasta la fecha</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <?php
-                                                            $t2 = 0;
-                                                            do {
+                                                    <div class="table-responsive mb-3">
+                                                        <table class="table align-items-center mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td>-</td>
+                                                                    <th
+                                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                        Situaciones de riesgo </th>
+                                                                    <th
+                                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                                        N° de casos hasta la fecha</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php
+                                                                $t2 = 0;
+                                                                do {
+                                                                    ?>
+                                                                    <tr>
+                                                                        <td><p class="text-xxs font-weight-bold mb-0"><?= $t2 + 1 ?></p></td>
+                                                                        <td>
+                                                                            <p class="text-xxs font-weight-bold mb-0">
+                                                                                <?= htmlspecialchars($tbl_p17[$t2]) ?>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td><input type="number"
+                                                                                class=" multisteps-form__input form-control form-control-sm"
+                                                                                id="txt_17_cr<?= $t2 + 1 ?>"
+                                                                                name="txt_17_cr<?= $t2 + 1 ?>"
+                                                                                placeholder="Ingrese Nro." value="0"
+                                                                                readonly required>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <?php
+                                                                    $t2++;
+                                                                } while ($t2 <= count($tbl_p17) - 1);
                                                                 ?>
                                                                 <tr>
+                                                                    <td>17</td>
                                                                     <td>
-                                                                        <p class="text-xxs font-weight-bold mb-0">
-                                                                            <?= htmlspecialchars($tbl_p17[$t2]) ?>
-                                                                        </p>
+                                                                        <input type="text"
+                                                                            class=" multisteps-form__input form-control form-control-sm"
+                                                                            id="txt_17_cr_otro" name="txt_17_cr_otro"
+                                                                            placeholder="Ingrese otro." value="-"
+                                                                            required>
                                                                     </td>
-                                                                    <td><input type="number"
+                                                                    <td>
+                                                                        <input type="number"
                                                                             class=" multisteps-form__input form-control form-control-sm"
                                                                             id="txt_17_cr<?= $t2 + 1 ?>"
                                                                             name="txt_17_cr<?= $t2 + 1 ?>"
-                                                                            placeholder="Ingrese Nro." value="0" required>
+                                                                            placeholder="Ingrese Nro." value="0" readonly
+                                                                            required>
                                                                     </td>
                                                                 </tr>
-                                                                <?php
-                                                                $t2++;
-                                                            } while ($t2 <= count($tbl_p17) - 1);
-                                                            ?>
-                                                            <tr>
-                                                                <td>
-                                                                    <input type="text"
-                                                                        class=" multisteps-form__input form-control form-control-sm"
-                                                                        id="txt_17_cr_otro" name="txt_17_cr_otro"
-                                                                        placeholder="Ingrese otro." value="-" required>
-                                                                </td>
-                                                                <td>
-                                                                    <input type="number"
-                                                                        class=" multisteps-form__input form-control form-control-sm"
-                                                                        id="txt_17_cr<?= $t2 + 1 ?>"
-                                                                        name="txt_17_cr<?= $t2 + 1 ?>"
-                                                                        placeholder="Ingrese Nro." value="0" required>
-                                                                </td>
-                                                            </tr>
 
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                             </div>
 
                                             <div class="col-12">
