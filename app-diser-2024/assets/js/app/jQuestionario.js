@@ -189,7 +189,7 @@ const instrumento_01 = () => ({
   delete_int_01: (id, nro) => {
     Swal.fire({
       icon: "question",
-      title: "¿Eliminar Registro Nro. " + nro + "?",
+      title: "INST - 01: ¿Eliminar Registro Nro. " + nro + "?",
       showDenyButton: true,
       showCancelButton: false,
       confirmButtonText: "Si",
@@ -348,7 +348,7 @@ const instrumento_02 = () => ({
   delete: (id, item) => {
     Swal.fire({
       icon: "question",
-      title: "¿Eliminar Registro Nro. " + item + "?",
+      title: "INST - 02: ¿Eliminar Registro Nro. " + item + "?",
       showDenyButton: true,
       showCancelButton: false,
       confirmButtonText: "Si",
@@ -528,7 +528,7 @@ const instrumento_03 = () => ({
   delete: (id, item) => {
     Swal.fire({
       icon: "question",
-      title: "¿Eliminar Registro Nro. " + item + "?",
+      title: "INT - 03: ¿Eliminar Registro Nro. " + item + "?",
       showDenyButton: true,
       showCancelButton: false,
       confirmButtonText: "Si",
@@ -700,7 +700,7 @@ const encuesta_01 = () => ({
   delete: (id, item) => {
     Swal.fire({
       icon: "question",
-      title: "¿Eliminar Registro Nro. " + item + "?",
+      title: "ENC - 01: ¿Eliminar Registro Nro. " + item + "?",
       showDenyButton: true,
       showCancelButton: false,
       confirmButtonText: "Si",
