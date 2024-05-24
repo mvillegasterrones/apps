@@ -10,6 +10,32 @@ class mQuestionario
     }
 
 	// ! INICIO - Encuesta 02
+	function delete_enc_02($id)
+    {
+        $sql = "DELETE FROM tbl_encuesta_02 WHERE id = $id";
+        $this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			return true;
+		} else {
+			$this->conexion->cerrar();
+			return false;
+		}
+        //return $code;
+    }
+	function get_reporte_enc_02($cod_mod)
+    {
+        $sql = "CALL sp_v1_get_reporte_enc_02('$cod_mod')";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
 	function set_encuesta_02($id, $action, $cod_mod, $txt_comu_nombre, $txt_comu_tipo, $txt_mes_reporte, $txt_cargo, $txt_otro_nombre, $txt_otro_cargo, $txt_1_multiple, $txt_2_multiple, $txt_2_otro, $txt_3_multiple, $txt_3_otro, $txt_4, $txt_5_multiple, $txt_5_otro, $txt_6, $txt_6_otro, $txt_7, $txt_7_otro, $txt_8, $txt_9, $txt_10, $txt_11_multiple, $txt_11_otro, $txt_12, $txt_13, $txt_13_otro, $txt_14, $txt_15_tv1, $txt_15_tv2, $txt_15_tv3, $txt_15_tv4, $txt_15_tv5, $txt_15_tv6, $txt_16, $txt_17_cr1, $txt_17_cr2, $txt_17_cr3, $txt_17_cr4, $txt_17_cr5, $txt_17_cr6, $txt_17_cr7, $txt_17_cr8, $txt_17_cr9, $txt_17_cr10, $txt_17_cr11, $txt_17_cr12, $txt_17_cr13, $txt_17_cr14, $txt_17_cr15, $txt_17_cr16, $txt_17_cr_otro, $txt_17_cr17, $txt_18, $txt_19_multiple, $txt_19_otro, $txt_20_multiple, $txt_20_otro, $txt_21_multiple, $txt_21_otro)
 	{
 		$sql = "INSERT INTO tbl_encuesta_02 VALUES ('$id', '$action', '$cod_mod', '$txt_comu_nombre', '$txt_comu_tipo', '$txt_mes_reporte', '$txt_cargo', '$txt_otro_nombre', '$txt_otro_cargo', '$txt_1_multiple', '$txt_2_multiple', '$txt_2_otro', '$txt_3_multiple', '$txt_3_otro', '$txt_4', '$txt_5_multiple', '$txt_5_otro', '$txt_6', '$txt_6_otro', '$txt_7', '$txt_7_otro', '$txt_8', '$txt_9', '$txt_10', '$txt_11_multiple', '$txt_11_otro', '$txt_12', '$txt_13', '$txt_13_otro', '$txt_14', '$txt_15_tv1', '$txt_15_tv2', '$txt_15_tv3', '$txt_15_tv4', '$txt_15_tv5', '$txt_15_tv6', '$txt_16', '$txt_17_cr1', '$txt_17_cr2', '$txt_17_cr3', '$txt_17_cr4', '$txt_17_cr5', '$txt_17_cr6', '$txt_17_cr7', '$txt_17_cr8', '$txt_17_cr9', '$txt_17_cr10', '$txt_17_cr11', '$txt_17_cr12', '$txt_17_cr13', '$txt_17_cr14', '$txt_17_cr15', '$txt_17_cr16', '$txt_17_cr_otro', '$txt_17_cr17', '$txt_18', '$txt_19_multiple', '$txt_19_otro', '$txt_20_multiple', '$txt_20_otro', '$txt_21_multiple', '$txt_21_otro')";

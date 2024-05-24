@@ -229,7 +229,7 @@
                                     class="fa-regular fa-plus"></i> Nuevo</button>
 
                             <button type="button" class="btn btn-xs btn-info mb-0" data-bs-toggle="modal"
-                                data-bs-target="#modal-form-enc-01" onclick="encuesta_02().get_reporte()"><i
+                                data-bs-target="#modal-form-enc-02" onclick="encuesta_02().get_reporte()"><i
                                     class="fa-duotone fa-files"></i> Reporte</button>
 
                         </div>

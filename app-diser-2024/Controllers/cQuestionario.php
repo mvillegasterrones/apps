@@ -5,6 +5,16 @@ $instancia = new mQuestionario();
 $accion = $_POST['action'];
 switch ($accion) {
     // ! INICIO - Encuesta 02
+    case 'delete-enc-02':
+        $id       = $_POST['id'];
+        $ejecutar = $instancia->delete_enc_02($id);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-reporte-enc-02':
+        $cod_mod  = $_SESSION['cod_mod'];
+        $ejecutar = $instancia->get_reporte_enc_02($cod_mod);
+        echo json_encode($ejecutar);
+        break;
     case 'save-update-enc-02':
         $id              = $_POST['id'];
         $action          = $_POST['action'];
