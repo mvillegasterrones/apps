@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 24, 2024 at 08:09 PM
+-- Generation Time: May 24, 2024 at 10:46 PM
 -- Server version: 5.7.39
 -- PHP Version: 8.2.0
 
@@ -27,6 +27,12 @@ DELIMITER $$
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_v1_get_reporte_enc_01` (`codmod` VARCHAR(10))   BEGIN
 SELECT *, i.id AS 'idInstrumento' FROM tbl_encuesta_01 i
+INNER JOIN tbl_mse m on i.cod_mod = m.cod_mod
+WHERE i.cod_mod = codmod;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_v1_get_reporte_enc_02` (`codmod` VARCHAR(10))   BEGIN
+SELECT *, i.id AS 'idInstrumento' FROM tbl_encuesta_02 i
 INNER JOIN tbl_mse m on i.cod_mod = m.cod_mod
 WHERE i.cod_mod = codmod;
 END$$
@@ -201,7 +207,7 @@ CREATE TABLE `tbl_encuesta_02` (
 --
 
 INSERT INTO `tbl_encuesta_02` (`id`, `action`, `cod_mod`, `txt_comu_nombre`, `txt_comu_tipo`, `txt_mes_reporte`, `txt_cargo`, `txt_otro_nombre`, `txt_otro_cargo`, `txt_1_multiple`, `txt_2_multiple`, `txt_2_otro`, `txt_3_multiple`, `txt_3_otro`, `txt_4`, `txt_5_multiple`, `txt_5_otro`, `txt_6`, `txt_6_otro`, `txt_7`, `txt_7_otro`, `txt_8`, `txt_9`, `txt_10`, `txt_11_multiple`, `txt_11_otro`, `txt_12`, `txt_13`, `txt_13_otro`, `txt_14`, `txt_15_tv1`, `txt_15_tv2`, `txt_15_tv3`, `txt_15_tv4`, `txt_15_tv5`, `txt_15_tv6`, `txt_16`, `txt_17_cr1`, `txt_17_cr2`, `txt_17_cr3`, `txt_17_cr4`, `txt_17_cr5`, `txt_17_cr6`, `txt_17_cr7`, `txt_17_cr8`, `txt_17_cr9`, `txt_17_cr10`, `txt_17_cr11`, `txt_17_cr12`, `txt_17_cr13`, `txt_17_cr14`, `txt_17_cr15`, `txt_17_cr16`, `txt_17_cr_otro`, `txt_17_cr17`, `txt_18`, `txt_19_multiple`, `txt_19_otro`, `txt_20_multiple`, `txt_20_otro`, `txt_21_multiple`, `txt_21_otro`) VALUES
-(1, 'save-update-enc-02', '0263111', 'AWAJUM', 'b. Caserío', '', 'Responsable de Bienestar (SRE)', '-', '-', 'Proyecto Educativo Institucional - PEI, Reglamento Interno - RI, Plan Anual de Trabajo - PAT', 'Tutoría y orientación al estudiante, Promoción de la salud en adolescentes, Educación sexual integral', '-', 'Educación sexual integral, Habilidades socioemocionales, Prevención del embarazo', '-', 'Si', 'Se reportó la alerta al director(a)/ coordinador(a) residencia o de núcleo educativo, Se remitió un oficio al Jefe de la unidad territorial del PNAE Qali Warma de la región, Se remitió un oficio a la UGEL', '-', 'Dotación insuficiente de alimentos para el número de estudiantes', '-', 'Obtienen alimentos frescos del huerto escolar', '-', 2, 3, 4, 'Campañas de salud, Evaluación médica, Inmunizaciones o vacunación', '-', 5, 'La IE cuenta con una ficha por cada estudiantes sobre enfermedades, alergias a medicamentos, entre otros', '-', 'No', 0, 0, 0, 0, 0, 0, 'No', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '-', 0, 8, 'Autoridades comunales, Juzgado de paz, Subprefecto / prefecto / teniente gobernador', '-', 'Prácticas demostrativas del lavado correcto de manos, Prácticas demostrativas del correcto cepillado de dientes, Pausas activas o actividad física diaria', '-', 'Higiene y ventilación de espacios de dormitorio, Limpieza e higiene de ambientes, Higiene de colchones y ropa de cama', '-');
+(1, 'save-update-enc-02', '0263111', 'AWAJUM', 'b. Caserío', 'Junio', 'Responsable de Bienestar (SRE)', '-', '-', 'Proyecto Educativo Institucional - PEI, Reglamento Interno - RI, Plan Anual de Trabajo - PAT', 'Tutoría y orientación al estudiante, Promoción de la salud en adolescentes, Educación sexual integral', '-', 'Educación sexual integral, Habilidades socioemocionales, Prevención del embarazo', '-', 'Si', 'Se reportó la alerta al director(a)/ coordinador(a) residencia o de núcleo educativo, Se remitió un oficio al Jefe de la unidad territorial del PNAE Qali Warma de la región, Se remitió un oficio a la UGEL', '-', 'Dotación insuficiente de alimentos para el número de estudiantes', '-', 'Obtienen alimentos frescos del huerto escolar', '-', 2, 3, 4, 'Campañas de salud, Evaluación médica, Inmunizaciones o vacunación', '-', 5, 'La IE cuenta con una ficha por cada estudiantes sobre enfermedades, alergias a medicamentos, entre otros', '-', 'No', 0, 0, 0, 0, 0, 0, 'No', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '-', 0, 8, 'Autoridades comunales, Juzgado de paz, Subprefecto / prefecto / teniente gobernador', '-', 'Prácticas demostrativas del lavado correcto de manos, Prácticas demostrativas del correcto cepillado de dientes, Pausas activas o actividad física diaria', '-', 'Higiene y ventilación de espacios de dormitorio, Limpieza e higiene de ambientes, Higiene de colchones y ropa de cama', '-');
 
 -- --------------------------------------------------------
 
@@ -862,7 +868,7 @@ ALTER TABLE `tbl_encuesta_01`
 -- AUTO_INCREMENT for table `tbl_encuesta_02`
 --
 ALTER TABLE `tbl_encuesta_02`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_instrumento_01`
