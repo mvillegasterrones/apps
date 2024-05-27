@@ -878,7 +878,7 @@ const encuesta_02 = () => ({
           sw_alert().error(error);
         });
       } else if (result.isDenied) {
-        console.log("No se elimino el registro");
+        console.log("No se eliminó el registro");
       }
     });
   },
