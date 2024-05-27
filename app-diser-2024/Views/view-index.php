@@ -3,10 +3,10 @@
 ?>
 
 <main class="main-content position-relative border-radius-lg">
-    <?php include './views/sections/nav-bar.php' ?>
+    <?php include './Views/sections/nav-bar.php' ?>
 
     <div class="container-fluid py-4" id="view-main">
-        <?php include './views/form/main-inst.php' ?>
+        <?php include './Views/form/main-inst.php' ?>
     </div>
 </main>
 <?php
