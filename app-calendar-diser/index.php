@@ -52,6 +52,7 @@
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/choices.min.js"></script>
+<script src="./assets/js/plugins/fullcalendar.min.js"></script>
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <!--<script src="./assets/js/plugins/flatpickr.min.js"></script>-->
 
@@ -59,6 +60,7 @@
 <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
 <script src="./assets/js/plugins/leaflet.js"></script>
 <script src="./assets/js/plugins/nouislider.min.js"></script>
+<script src="./assets/js/plugins/chartjs.min.js"></script>
 
 <script>
     let win = navigator.platform.indexOf("Win") > -1

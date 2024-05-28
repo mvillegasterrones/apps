@@ -15,7 +15,7 @@
 
                                 <div class="mb-3">
                                     <label>NRO. DNI</label>
-                                    <input type="text" id="dni" name="dni" class="form-control" placeholder="DNI" aria-label="codigo modular" maxlength="8">
+                                    <input type="text" id="cod_mod" name="cod_mod" class="form-control" placeholder="DNI" aria-label="codigo modular" maxlength="8">
                                 </div>
                                 
                                 <div class="text-center">
