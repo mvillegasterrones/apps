@@ -12,7 +12,7 @@ class conexion
         $this->servidor   = "localhost";
         $this->usuario	  = "root";
         $this->contrasena = "root";
-        $this->basedatos  = "app_diser";
+        $this->basedatos  = "app_diser_calendar";
     }
     function conectar()
     {
