@@ -1,11 +1,20 @@
 // ** Aquí código de las funciones a nivel de APP ** //
-
-if (document.getElementById("choices-multiple-remove-button")) {
-    var element = document.getElementById("choices-multiple-remove-button");
-    const example = new Choices(element, {
-        removeItemButton: true,
-    });
+if (document.querySelector(".datetimepicker")) {
+    flatpickr(".datetimepicker", {
+        allowInput: true,
+    }); // flatpickr
 }
+
+let chk = () => ({
+    validar_chk: (section, txtMostrar) => {
+        var seleccionados = [];
+        $("#" + section + ' input[type="checkbox"]:checked').each(function () {
+            seleccionados.push($(this).val());
+        });
+        $("#" + section + " #" + txtMostrar).val(seleccionados.join(", "));
+        console.log(seleccionados);
+    },
+});
 
 const pg_body = () => ({
     on_load: () => {
@@ -23,35 +32,32 @@ const pg_body = () => ({
 });
 
 const funciones = () => ({
-
     get_areas: () => {
+        let url = "./Controllers/cCalendar.php";
+        let params = { action: "get-areas-list" };
 
-        let url    = './Controllers/cCalendar.php'
-        let params = { action: 'get-areas-list' }
+        $.post(url, params, (response) => {
+            let data = eval(response);
 
-        $.post( url, params, (response) => {
-
-            let data = eval(response)
-
-            $('#modal-event-add #cal_idArea').empty()
-            $('#modal-event-add #cal_idArea').append('<option value="">.: Seleccione Área :.</option>')
+            $("#modal-event-add #cal_idArea").empty();
+            $("#modal-event-add #cal_idArea").append(
+                '<option value="">.: Seleccione Área :.</option>'
+            );
             for (let i = 0; i < data.length; i++) {
-                $('#modal-event-add #cal_idArea').append(`<option value="${data[i].id}">${data[i].area_nombre}</option>`)
+                $("#modal-event-add #cal_idArea").append(
+                    `<option value="${data[i].id}">${data[i].area_nombre}</option>`
+                );
             }
-            
-        }).fail( (xhr, status, error) => {
-
-            console.error(xhr, status)
-            sw_alert().error(error)
-
-        })
-
-    }
-
+        }).fail((xhr, status, error) => {
+            console.error(xhr, status);
+            sw_alert().error(error);
+        });
+    },
 });
 
 let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
     contentHeight: "auto",
+    locale: 'es',
     initialView: "dayGridMonth",
     headerToolbar: {
         start: "title", // will normally be on the left. if RTL, will be on the right
@@ -144,20 +150,14 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
         },
     ],
     select: (event) => {
-
-        funciones().get_areas()
-        $('#modal-event-add').modal('show')
-
+        funciones().get_areas();
+        $("#modal-event-add").modal("show");
     },
     eventClick: (info) => {
-
-        $('#modal-event-edit').modal('show')
-
+        $("#modal-event-edit").modal("show");
     },
     eventDrop: () => {
-
-        sw_alert().ok('Se actualiza el registro')
-
+        sw_alert().ok("Se actualiza el registro");
     },
     views: {
         month: {

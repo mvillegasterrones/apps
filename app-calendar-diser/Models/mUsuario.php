@@ -22,9 +22,9 @@ class mUsuario
 		return $arreglo;*/
     }
 
-    function set_login($cod_mod)
+    function set_login($dni)
     {
-        $sql = "CALL sp_v1_set_login('$cod_mod')";
+        $sql = "CALL sp_v1_login('$dni')";
         $this->conexion->conexion->set_charset('utf8');
         $resulatdos = $this->conexion->conexion->query($sql);
         if ($resulatdos->num_rows > 0) {

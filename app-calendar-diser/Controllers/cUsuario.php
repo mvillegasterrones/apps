@@ -18,7 +18,7 @@ switch ($accion) {
             echo '0';
         } else {
             $_SESSION['acceso']       = 'YES';
-            $_SESSION['tipo_mse']     = $array['tipo_mse'];
+            /*$_SESSION['tipo_mse']     = $array['tipo_mse'];
             $_SESSION['cod_mod']      = $array['cod_mod'];
             $_SESSION['anexo']        = $array['anexo'];
             $_SESSION['codlocal']     = $array['codlocal'];
@@ -30,7 +30,7 @@ switch ($accion) {
 
             $_SESSION['d_dpto']       = $array['d_dpto'];
             $_SESSION['d_prov']       = $array['d_prov'];
-            $_SESSION['d_dist']       = $array['d_dist'];
+            $_SESSION['d_dist']       = $array['d_dist'];*/
             echo '1';
         }
         break;

@@ -4,7 +4,7 @@
     // TODO: SweetAlert: https://sweetalert2.github.io/#download
     // TODO: link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
 -->
-<?php //include './includes.php'; ?>
+<?php include './includes.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -54,7 +54,7 @@
 <script src="./assets/js/plugins/choices.min.js"></script>
 <script src="./assets/js/plugins/fullcalendar.min.js"></script>
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
-<!--<script src="./assets/js/plugins/flatpickr.min.js"></script>-->
+<script src="./assets/js/plugins/flatpickr.min.js"></script>
 
 <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
 <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
