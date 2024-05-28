@@ -171,15 +171,13 @@
                                         placeholder="Ingrese nro. total de participantes" required>
 
                                     <div class="col-12 col-sm-12 mt-3">
-                                        <label for="">Fecha de Inicio <b
-                                            style="color: red !important;">*</b></label>
+                                        <label for="">Fecha de Inicio <b style="color: red !important;">*</b></label>
                                         <input class="form-control form-control-sm datetimepicker" type="text"
                                             placeholder="Seleccione fecha de inicio" name="cal_fecha_inicio"
                                             id="cal_fecha_inicio" data-input required />
                                     </div>
                                     <div class="col-12 col-sm-12 mt-3">
-                                        <label for="">Fecha de Fin <b
-                                            style="color: red !important;">*</b></label>
+                                        <label for="">Fecha de Fin <b style="color: red !important;">*</b></label>
                                         <input class="form-control form-control-sm datetimepicker" type="text"
                                             placeholder="Seleccione fecha de fin" name="cal_fecha_fin"
                                             id="cal_fecha_fin" data-input required />
@@ -187,14 +185,18 @@
                                 </div>
 
                                 <div class="col-12 col-sm-6 mt-3">
-                                    <label for="">Link de la reunión  <b
-                                            style="color: red !important;">*</b></label>
-                                    <textarea class="form-control form-control-sm" name="cal_link_reunion" id="cal_link_reunion" placeholder="Agregue el link de acceso a la reunión" required></textarea>
+                                    <label for="">Link de la reunión <b style="color: red !important;">*</b></label>
+                                    <textarea class="form-control form-control-sm" name="cal_link_reunion"
+                                        id="cal_link_reunion" placeholder="Agregue el link de acceso a la reunión"
+                                        required></textarea>
                                 </div>
                                 <div class="col-12 col-sm-6 mt-3">
-                                    <label for="">Link del registro de Asistencia  <b
+                                    <label for="">Link del registro de Asistencia <b
                                             style="color: red !important;">*</b></label>
-                                    <textarea class="form-control form-control-sm" name="cal_link_asistencia" id="cal_link_asistencia" placeholder="Agregue el link para el registro de Asistencia" required></textarea>
+                                    <textarea class="form-control form-control-sm" name="cal_link_asistencia"
+                                        id="cal_link_asistencia"
+                                        placeholder="Agregue el link para el registro de Asistencia"
+                                        required></textarea>
                                 </div>
 
                             </div>
