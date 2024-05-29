@@ -53,8 +53,10 @@
                                     <select class="form-control form-control-sm" name="cal_modalidad" id="cal_modalidad"
                                         required>
                                         <option value="" selected disabled>.: Seleccione :.</option>
-                                        <option>1. Virtual (Teams, Zoom, Meet, etc)</option>
-                                        <option>2. Presencial</option>
+                                        <option>1. Virtual: Microsoft Teams</option>
+                                        <option>2. Virtual: Zoom</option>
+                                        <option>3. Virtual: Google Meet</option>
+                                        <option>4. Presencial</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6 mt-3">
@@ -72,9 +74,12 @@
 
                                 <div class="col-12 col-sm-6 mt-3" id="section-one">
                                     <label for="">Region/es <b style="color: red !important;">*</b></label>
-                                    <input type="hidden" class="multisteps-form__input form-control form-control-sm"
+                                    <!--<input type="hidden" class="multisteps-form__input form-control form-control-sm"
                                         id="cal_regiones" name="cal_regiones"
-                                        placeholder="Seleccione regiones de la lsita" readonly required>
+                                        placeholder="Seleccione regiones de la lsita" readonly required>-->
+                                    <textarea class="multisteps-form__input form-control form-control-sm d-none"
+                                        id="cal_regiones" name="cal_regiones"
+                                        placeholder="Seleccione regiones de la lsita" readonly required></textarea>
 
                                     <div class="col-12 mt-2 table-responsive" style="height: 150px !important;">
 
@@ -103,9 +108,12 @@
 
                                 <div class="col-12 col-sm-6 mt-3" id="section-two">
                                     <label for="">UGEL <b style="color: red !important;">*</b></label>
-                                    <input type="hidden" class="multisteps-form__input form-control form-control-sm"
+                                    <!--<input type="hidden" class="multisteps-form__input form-control form-control-sm"
                                         id="cal_ugel" name="cal_ugel" placeholder="Seleccione regiones de la lsita"
-                                        readonly required>
+                                        readonly required>-->
+                                    <textarea class="multisteps-form__input form-control form-control-sm d-none"
+                                        id="cal_ugel" name="cal_ugel" placeholder="Seleccione regiones de la lsita"
+                                        readonly required></textarea>
 
                                     <div class="col-12 mt-2 table-responsive" style="height: 150px !important;">
 
@@ -134,9 +142,12 @@
 
                                 <div class="col-12 col-sm-6 mt-3" id="section-three">
                                     <label for="">Participantes <b style="color: red !important;">*</b></label>
-                                    <input type="hidden" class="multisteps-form__input form-control form-control-sm"
+                                    <!--<input type="hidden" class="multisteps-form__input form-control form-control-sm"
                                         id="cal_participantes" name="cal_participantes"
-                                        placeholder="Seleccione regiones de la lsita" readonly required>
+                                        placeholder="Seleccione regiones de la lsita" readonly required>-->
+                                    <textarea class="multisteps-form__input form-control form-control-sm d-none"
+                                        id="cal_participantes" name="cal_participantes"
+                                        placeholder="Seleccione regiones de la lsita" readonly required></textarea>
 
                                     <div class="col-12 mt-2 table-responsive" style="height: 150px !important;">
 
@@ -146,11 +157,11 @@
                                             ?>
 
                                             <div class="form-check" style="padding-left: 50px;">
-                                                <input class="form-check-input" type="checkbox" id="opc-ugel-<?= $n3 + 1 ?>"
+                                                <input class="form-check-input" type="checkbox" id="opc-participantes-<?= $n3 + 1 ?>"
                                                     value="<?= htmlspecialchars($participantes_lista[$n3]) ?>"
                                                     onclick="chk().validar_chk('section-three', 'cal_participantes')">
                                                 <label class="custom-control-label"
-                                                    for="opc-ugel-<?= $n2 + 1 ?>"><?= htmlspecialchars($participantes_lista[$n3]) ?></label>
+                                                    for="opc-participantes-<?= $n3 + 1 ?>"><?= htmlspecialchars($participantes_lista[$n3]) ?></label>
                                             </div>
 
                                             <?php
@@ -172,15 +183,15 @@
 
                                     <div class="col-12 col-sm-12 mt-3">
                                         <label for="">Fecha de Inicio <b style="color: red !important;">*</b></label>
-                                        <input class="form-control form-control-sm datetimepicker" type="text"
+                                        <input class="form-control form-control-sm" type="datetime"
                                             placeholder="Seleccione fecha de inicio" name="cal_fecha_inicio"
-                                            id="cal_fecha_inicio" data-input required />
+                                            id="cal_fecha_inicio" data-input required /><!-- // ! datetimepicker -->
                                     </div>
                                     <div class="col-12 col-sm-12 mt-3">
                                         <label for="">Fecha de Fin <b style="color: red !important;">*</b></label>
-                                        <input class="form-control form-control-sm datetimepicker" type="text"
+                                        <input class="form-control form-control-sm" type="datetime"
                                             placeholder="Seleccione fecha de fin" name="cal_fecha_fin"
-                                            id="cal_fecha_fin" data-input required />
+                                            id="cal_fecha_fin" data-input required /><!-- // ! datetimepicker -->
                                     </div>
                                 </div>
 
@@ -202,7 +213,8 @@
                             </div>
                         </form>
                         <div class="text-center">
-                            <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-25 mt-4 mb-0"
+                            <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-25 mt-4 mb-0">Guardar</button>
+                            <button type="button" class="btn bg-gradient-danger btn-sm btn-rounded w-25 mt-4 mb-0"
                                 data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>

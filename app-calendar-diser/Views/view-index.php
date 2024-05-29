@@ -7,9 +7,12 @@
 
     <div class="container-fluid py-4">
         <div class="row mb-lg-7">
-            <div class="col-12 ms-auto">
-                <div class="d-flex mb-4">
-                    <div class="pe-4 mt-1 position-relative ms-auto">
+            <div class="col-12 ms-auto" style="border: 0px solid red !important;">
+                <div class="d-flex mb-1" style="border: 0px solid green !important;">
+                    
+                    <h5 class="py-1"><i class="fa-duotone fa-calendar-clock"></i> PLANNER DISER</h5>
+                    
+                    <div class="pe-4 mt-1 position-relative ms-auto" style="border: 0px solid yellow !important;">
                         <p class="text-white text-xs font-weight-bold mb-2">
                             Equipo:
                         </p>
@@ -50,6 +53,12 @@
                         </button>
                     </div>
                 </div>
+
+                <span class="badge bg-gradient-primary mt-0">Teams</span>
+                <span class="badge bg-gradient-info mt-0">Zoom</span>
+                <span class="badge bg-gradient-success mt-0">Meet</span>
+                <span class="badge bg-gradient-warning mt-0">Presencial</span>
+
             </div>
             <div class="col-xl-9">
                 <div class="card card-calendar">
@@ -203,23 +212,21 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6 mb-lg-0 mb-4">
                         <div class="copyright text-center text-sm text-muted text-lg-start">
-                            ©
+                            © MINEDU 
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            , made with <i class="fa fa-heart"></i> by
-                            <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative
-                                Tim</a>
-                            for a better web.
+                            , Elaborado por
+                            <a href="https://www.minedudiser.com" class="font-weight-bold" target="_blank">DISER - APMGI</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com" class="nav-link text-muted"
-                                    target="_blank">Creative Tim</a>
+                                <a href="javascript:;" class="nav-link text-muted"
+                                    target="_blank">Dirección de Servicios Educativos en el Ámbito Rural</a>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted"
                                     target="_blank">About Us</a>
                             </li>
@@ -230,7 +237,7 @@
                             <li class="nav-item">
                                 <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted"
                                     target="_blank">License</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>

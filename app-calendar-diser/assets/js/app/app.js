@@ -2,7 +2,7 @@
 if (document.querySelector(".datetimepicker")) {
     flatpickr(".datetimepicker", {
         allowInput: true,
-    }); // flatpickr
+    });
 }
 
 let chk = () => ({
@@ -11,7 +11,7 @@ let chk = () => ({
         $("#" + section + ' input[type="checkbox"]:checked').each(function () {
             seleccionados.push($(this).val());
         });
-        $("#" + section + " #" + txtMostrar).val(seleccionados.join(", "));
+        $("#" + section + " #" + txtMostrar).val(seleccionados.join(",\n"));
         console.log(seleccionados);
     },
 });
@@ -76,7 +76,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
     selectable: true,
     editable: true,
     selectHelper: true,
-    initialDate: "2021-12-01",
+    //initialDate: "2021-12-01",
     weekends: false,
     events: [
         {
@@ -151,6 +151,9 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
     ],
     select: (event) => {
         funciones().get_areas();
+        let fi = moment(event.start).format("YYYY-MM-DD HH:mm");
+        $("#modal-event-add #cal_fecha_inicio").val(fi);
+        $("#modal-event-add #cal_fecha_fin").val(fi);
         $("#modal-event-add").modal("show");
     },
     eventClick: (info) => {
@@ -184,6 +187,8 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
 });
 
 calendar.render();
+
+
 
 var ctx1 = document.getElementById("chart-line-1").getContext("2d");
 

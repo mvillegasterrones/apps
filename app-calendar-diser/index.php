@@ -3,6 +3,7 @@
     // TODO: FA git: https://github.com/eliyantosarage/font-awesome-pro
     // TODO: SweetAlert: https://sweetalert2.github.io/#download
     // TODO: link-sis-faarmacia: https://sistemerp.com/page/farmacia-boticas
+    // TODO: Creative link: https://www.creative-tim.com
 -->
 <?php include './includes.php'; ?>
 <!DOCTYPE html>
@@ -55,11 +56,13 @@
 <script src="./assets/js/plugins/fullcalendar.min.js"></script>
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <script src="./assets/js/plugins/flatpickr.min.js"></script>
+<script src="./assets/js/plugins/moment.js"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>-->
 
-<script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+<!--<script src="./assets/js/plugins/dragula/dragula.min.js"></script>
 <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
 <script src="./assets/js/plugins/leaflet.js"></script>
-<script src="./assets/js/plugins/nouislider.min.js"></script>
+<script src="./assets/js/plugins/nouislider.min.js"></script>-->
 <script src="./assets/js/plugins/chartjs.min.js"></script>
 
 <script>
