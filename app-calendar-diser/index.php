@@ -33,6 +33,15 @@
 
     <!--// TODO <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
     <script src="./assets/js/plugins/sweetalert2.js"></script>
+
+    <!--<link href='https://unpkg.com/@fullcalendar/core@5.11.0/main.min.css' rel='stylesheet' />
+    <link href='https://unpkg.com/@fullcalendar/daygrid@5.11.0/main.min.css' rel='stylesheet' />-->
+    <!--<script src='https://unpkg.com/@fullcalendar/core@5.11.0/main.min.js'></script>
+    <script src='https://unpkg.com/@fullcalendar/daygrid@5.11.0/main.min.js'></script>-->
+    <!--<script src="https://unpkg.com/@fullcalendar/interaction@5.11.0/main.min.js"></script>-->
+    
+
+
 </head>
 
 <body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
@@ -57,6 +66,8 @@
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <script src="./assets/js/plugins/flatpickr.min.js"></script>
 <script src="./assets/js/plugins/moment.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>-->
 
 <!--<script src="./assets/js/plugins/dragula/dragula.min.js"></script>
@@ -85,8 +96,7 @@
 <script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
 <script src="./assets/js/app/jUsuario.js"></script>
-<script src="./assets/js/app/jButton-actions.js"></script>
-<script src="./assets/js/app/jQuestionario.js"></script>
+<script src="./assets/js/app/jCalendar.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 

@@ -18,7 +18,8 @@ let chk = () => ({
 
 const pg_body = () => ({
     on_load: () => {
-        $(".instrumento").addClass("d-none");
+        //$(".instrumento").addClass("d-none");
+        sys_calendar().get_events()
     },
 
     on_show_hide: (hd, shw) => {
@@ -55,6 +56,7 @@ const funciones = () => ({
     },
 });
 
+/*
 let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
     contentHeight: "auto",
     locale: 'es',
@@ -73,10 +75,17 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
         //next: 'Siguiente',
         prevYear: "Año anterior",
     },
+    eventDidMount: (info) => {
+        tippy(info.el, {
+            content: '<h2>' + info.event.extendedProps.description + '</h2>',
+            allowHTML: true,
+            theme: 'light',
+        });
+    },
     selectable: true,
     editable: true,
     selectHelper: true,
-    //initialDate: "2021-12-01",
+    initialDate: "2021-12-01",
     weekends: false,
     events: [
         {
@@ -84,6 +93,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-11-18",
             end: "2021-11-18",
             className: "bg-gradient-danger",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -91,6 +101,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-11-21",
             end: "2021-11-22",
             className: "bg-gradient-warning",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -98,6 +109,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-11-29",
             end: "2021-11-29",
             className: "bg-gradient-success",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -105,6 +117,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-01",
             end: "2021-12-01",
             className: "bg-gradient-info",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -112,6 +125,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-03",
             end: "2021-12-03",
             className: "bg-gradient-danger",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -119,6 +133,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-07",
             end: "2021-12-09",
             className: "bg-gradient-warning",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -126,6 +141,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-10",
             end: "2021-12-10",
             className: "bg-gradient-primary",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -133,6 +149,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-19",
             end: "2021-12-19",
             className: "bg-gradient-danger",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -140,6 +157,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-23",
             end: "2021-12-23",
             className: "bg-gradient-info",
+            description: "Detailed information about the call with Dave."
         },
 
         {
@@ -147,6 +165,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
             start: "2021-12-02",
             end: "2021-12-02",
             className: "bg-gradient-warning",
+            description: "Detailed information about the call with Dave."
         },
     ],
     select: (event) => {
@@ -186,7 +205,7 @@ let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
     },
 });
 
-calendar.render();
+calendar.render();*/
 
 
 

@@ -14,6 +14,10 @@
                         <form class="needs-validation was-validated" name="form-event-add" id="form-event-add"
                             role="form text-left">
                             <div class="row">
+
+                                <input type="text" name="id" id="id" value="0">
+                                <input type="text" name="action" id="action" value="save-event">
+
                                 <div class="col-12 col-sm-6">
                                     <label for="">Área <b style="color: red !important;">*</b></label>
                                     <select class="form-control form-control-sm" name="cal_idArea" id="cal_idArea"
@@ -213,7 +217,7 @@
                             </div>
                         </form>
                         <div class="text-center">
-                            <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-25 mt-4 mb-0">Guardar</button>
+                            <button type="button" class="btn bg-gradient-primary btn-sm btn-rounded w-25 mt-4 mb-0" onclick="sys_calendar().save()">Guardar</button>
                             <button type="button" class="btn bg-gradient-danger btn-sm btn-rounded w-25 mt-4 mb-0"
                                 data-bs-dismiss="modal">Cerrar</button>
                         </div>
