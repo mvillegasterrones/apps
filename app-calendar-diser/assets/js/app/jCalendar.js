@@ -25,7 +25,18 @@ const sys_calendar = () => ({
                 },
                 eventDidMount: (info) => {
                     tippy(info.el, {
-                        content: "<h2>" + info.event.extendedProps.description + "</h2>",
+                        content: `<label>${info.event.extendedProps.areaName}</ñ>
+                        <h6>${info.event.title}</h6>
+                        <p>${info.event.start + ' al ' + info.event.end}</p>
+                        <p>${info.event.extendedProps.description}</p>
+                        <p class="mb-0">Agenda:</p>
+                        <label>${info.event.extendedProps.agenda}</label>
+                        <p class="mb-0">Regiones:</p>
+                        <label>${info.event.extendedProps.regiones}</label>
+                        <p class="mb-0">UGEL:</p>
+                        <label>${info.event.extendedProps.ugel}</label>
+                        <p class="mb-0">Participantes: (${info.event.extendedProps.nroparticipantes})</p>
+                        <label>${info.event.extendedProps.participantes}</label>`,
                         allowHTML: true,
                         theme: "light",
                     });
@@ -93,8 +104,12 @@ const sys_calendar = () => ({
                     end: data[i].end,
                     className: data[i].classname,
                     description: data[i].description,
-                    //color: data[i].color,
-                    //textColor: data[i].textColor,
+                    areaName: data[i].areaName,
+                    agenda: data[i].agenda,
+                    regiones: data[i].regiones,
+                    ugel: data[i].ugel,
+                    participantes: data[i].participantes,
+                    nroparticipantes: data[i].nroparticipantes
                 })
             }
 

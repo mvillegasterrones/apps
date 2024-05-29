@@ -33,6 +33,49 @@ const pg_body = () => ({
 });
 
 const funciones = () => ({
+
+    validate_input_required: (form) => {
+
+        // Obtener el formulario
+        var formulario = document.getElementById(form);
+        // Obtener todos los elementos del formulario
+        var elementos = formulario.elements;
+        var validacionPasada = true;
+
+        // Iterar a través de los elementos y verificar los campos requeridos
+        for (var i = 0; i < elementos.length; i++) {
+            if (elementos[i].hasAttribute('required') && elementos[i].value === '') {
+                validacionPasada = false;
+                elementos[i].style.border = "2px solid red"; // Marcar el campo vacío
+            } else {
+                elementos[i].style.border = ""; // Restablecer el borde si el campo está lleno
+            }
+        }
+
+        // Si la validación pasa, enviar el formulario manualmente
+        if (validacionPasada) {
+            formulario.submit();
+        } else {
+            alert('Por favor, rellena todos los campos requeridos.');
+        }
+
+    },
+
+    validar_form_required: (form_name) => {
+        let formValido = true;
+
+        $("#"+ form_name +" [required]").each(function() {
+            if ($(this).val().trim() === "") {
+                formValido = false
+                return formValido
+                //return false
+            }
+        })
+
+        return formValido
+
+    },
+
     get_areas: () => {
         let url = "./Controllers/cCalendar.php";
         let params = { action: "get-areas-list" };
@@ -55,159 +98,6 @@ const funciones = () => ({
         });
     },
 });
-
-/*
-let calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
-    contentHeight: "auto",
-    locale: 'es',
-    initialView: "dayGridMonth",
-    headerToolbar: {
-        start: "title", // will normally be on the left. if RTL, will be on the right
-        center: "dayGridMonth,timeGridWeek,timeGridDay",
-        end: "today prev,next", // will normally be on the right. if RTL, will be on the left
-    },
-    buttonText: {
-        today: "Hoy",
-        month: "Mes",
-        week: "Semana",
-        day: "Día",
-        //prev: 'Anterior',
-        //next: 'Siguiente',
-        prevYear: "Año anterior",
-    },
-    eventDidMount: (info) => {
-        tippy(info.el, {
-            content: '<h2>' + info.event.extendedProps.description + '</h2>',
-            allowHTML: true,
-            theme: 'light',
-        });
-    },
-    selectable: true,
-    editable: true,
-    selectHelper: true,
-    initialDate: "2021-12-01",
-    weekends: false,
-    events: [
-        {
-            title: "Call with Dave",
-            start: "2021-11-18",
-            end: "2021-11-18",
-            className: "bg-gradient-danger",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Lunch meeting",
-            start: "2021-11-21",
-            end: "2021-11-22",
-            className: "bg-gradient-warning",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "All day conference",
-            start: "2021-11-29",
-            end: "2021-11-29",
-            className: "bg-gradient-success",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Meeting with Mary",
-            start: "2021-12-01",
-            end: "2021-12-01",
-            className: "bg-gradient-info",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Winter Hackaton",
-            start: "2021-12-03",
-            end: "2021-12-03",
-            className: "bg-gradient-danger",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Digital event",
-            start: "2021-12-07",
-            end: "2021-12-09",
-            className: "bg-gradient-warning",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Marketing event",
-            start: "2021-12-10",
-            end: "2021-12-10",
-            className: "bg-gradient-primary",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Dinner with Family",
-            start: "2021-12-19",
-            end: "2021-12-19",
-            className: "bg-gradient-danger",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Black Friday",
-            start: "2021-12-23",
-            end: "2021-12-23",
-            className: "bg-gradient-info",
-            description: "Detailed information about the call with Dave."
-        },
-
-        {
-            title: "Cyber Week",
-            start: "2021-12-02",
-            end: "2021-12-02",
-            className: "bg-gradient-warning",
-            description: "Detailed information about the call with Dave."
-        },
-    ],
-    select: (event) => {
-        funciones().get_areas();
-        let fi = moment(event.start).format("YYYY-MM-DD HH:mm");
-        $("#modal-event-add #cal_fecha_inicio").val(fi);
-        $("#modal-event-add #cal_fecha_fin").val(fi);
-        $("#modal-event-add").modal("show");
-    },
-    eventClick: (info) => {
-        $("#modal-event-edit").modal("show");
-    },
-    eventDrop: () => {
-        sw_alert().ok("Se actualiza el registro");
-    },
-    views: {
-        month: {
-            titleFormat: {
-                month: "long",
-                year: "numeric",
-            },
-        },
-        agendaWeek: {
-            titleFormat: {
-                month: "long",
-                year: "numeric",
-                day: "numeric",
-            },
-        },
-        agendaDay: {
-            titleFormat: {
-                month: "short",
-                year: "numeric",
-                day: "numeric",
-            },
-        },
-    },
-});
-
-calendar.render();*/
-
-
 
 var ctx1 = document.getElementById("chart-line-1").getContext("2d");
 

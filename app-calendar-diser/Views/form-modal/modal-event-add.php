@@ -15,8 +15,8 @@
                             role="form text-left">
                             <div class="row">
 
-                                <input type="text" name="id" id="id" value="0">
-                                <input type="text" name="action" id="action" value="save-event">
+                                <input type="hidden" name="id" id="id" value="0">
+                                <input type="hidden" name="action" id="action" value="save-event">
 
                                 <div class="col-12 col-sm-6">
                                     <label for="">Área <b style="color: red !important;">*</b></label>
