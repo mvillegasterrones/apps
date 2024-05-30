@@ -1,3 +1,23 @@
+<style>
+        /*.popover-header {
+            background-color: #343a40;
+            color: #fff;
+            border-bottom: 1px solid #454d55;
+        }*/
+        .popover-body {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .popover {
+            border: 1px solid #454d55;
+        }
+        
+        .icon-app {
+            width: 60%;
+            height: auto;
+        }
+    </style>
+
 <div class="min-height-300 bg-primary position-absolute w-100"></div>
 <?php //include './views/sections/slider.php' 
 ?>
@@ -7,8 +27,8 @@
 
     <div class="container-fluid py-4">
         <div class="row mb-lg-7">
-            <div class="col-12 ms-auto" style="border: 0px solid red !important;">
-                <div class="d-flex mb-1" style="border: 0px solid green !important;">
+            <div class="col-12 ms-auto">
+                <div class="d-flex mb-1">
                     
                     <h5 class="py-1"><i class="fa-duotone fa-calendar-clock"></i> PLANNER DISER</h5>
                     
@@ -16,6 +36,7 @@
                         <p class="text-white text-xs font-weight-bold mb-2">
                             Equipo:
                         </p>
+                        <!-- // TODO: Lista de cons del equipo -->
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="avatar-group">
                                 <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
@@ -74,7 +95,8 @@
                             <div class="card-header p-3 pb-0">
                                 <h6 class="mb-0">Próximos eventos</h6>
                             </div>
-                            <div class="card-body border-radius-lg p-3">
+                            <div class="card-body border-radius-lg p-3" id="events-recents">
+
                                 <div class="d-flex">
                                     <div>
                                         <div
@@ -158,6 +180,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

@@ -20,6 +20,7 @@ const pg_body = () => ({
     on_load: () => {
         //$(".instrumento").addClass("d-none");
         sys_calendar().get_events()
+        sys_calendar().show_recents()
     },
 
     on_show_hide: (hd, shw) => {
@@ -97,6 +98,7 @@ const funciones = () => ({
             sw_alert().error(error);
         });
     },
+
 });
 
 var ctx1 = document.getElementById("chart-line-1").getContext("2d");

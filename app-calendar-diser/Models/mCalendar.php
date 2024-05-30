@@ -9,6 +9,19 @@ class mCalendar
         $this->conexion->conectar();
     }
 
+    function get_events_recents()
+    {
+        $sql = "CALL sp_v1_get_events_recents()";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
     function get_events()
     {
         $sql = "CALL sp_v1_get_events()";

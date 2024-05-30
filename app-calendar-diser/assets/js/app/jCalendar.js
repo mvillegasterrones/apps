@@ -1,7 +1,6 @@
 const calendar_url = "./Controllers/cCalendar.php";
 
 const sys_calendar = () => ({
-
     init_start: (_events) => {
         let calendar = new FullCalendar.Calendar(
             document.getElementById("calendar"),
@@ -23,22 +22,53 @@ const sys_calendar = () => ({
                     //next: 'Siguiente',
                     prevYear: "Año anterior",
                 },
+                /*eventDidMount: (info) => {
+                            let fe_start = moment(info.event.start).format('DD/MM/YYYY HH:mm');
+                            let fe_end = moment(info.event.end).format('DD/MM/YYYY HH:mm');
+                            tippy(info.el, {
+                                content: `<label>${info.event.extendedProps.areaName}</ñ>
+                                <h6>${info.event.title}</h6>
+                                <p>Horario: ${fe_start + ' - ' + fe_end}</p>
+                                <p>${info.event.extendedProps.description}</p>
+                                <p class="mb-0">Agenda:</p>
+                                <label>${info.event.extendedProps.agenda}</label>
+                                <p class="mb-0">Regiones:</p>
+                                <label>${info.event.extendedProps.regiones}</label>
+                                <p class="mb-0">UGEL:</p>
+                                <label>${info.event.extendedProps.ugel}</label>
+                                <p class="mb-0">Participantes: (${info.event.extendedProps.nroparticipantes})</p>
+                                <label>${info.event.extendedProps.participantes}</label>`,
+                                allowHTML: true,
+                                theme: "dark",
+                                placement: "right",
+                            });
+                        },*/
                 eventDidMount: (info) => {
-                    tippy(info.el, {
-                        content: `<label>${info.event.extendedProps.areaName}</ñ>
-                        <h6>${info.event.title}</h6>
-                        <p>${info.event.start + ' al ' + info.event.end}</p>
-                        <p>${info.event.extendedProps.description}</p>
-                        <p class="mb-0">Agenda:</p>
-                        <label>${info.event.extendedProps.agenda}</label>
-                        <p class="mb-0">Regiones:</p>
-                        <label>${info.event.extendedProps.regiones}</label>
-                        <p class="mb-0">UGEL:</p>
-                        <label>${info.event.extendedProps.ugel}</label>
-                        <p class="mb-0">Participantes: (${info.event.extendedProps.nroparticipantes})</p>
-                        <label>${info.event.extendedProps.participantes}</label>`,
-                        allowHTML: true,
-                        theme: "light",
+                    let fe_start = moment(info.event.start).format("DD/MM/YYYY HH:mm");
+                    let fe_end = moment(info.event.end).format("DD/MM/YYYY HH:mm");
+                    $(info.el).popover({
+                        title: `${info.event.title}`,
+                        content: `
+                            <span class="mt-2"><i class="fa-duotone fa-alarm-clock"></i> ${fe_start} - ${fe_end}</span>
+                            <span class="mb-2">${info.event.extendedProps.areaName}</span>
+                            <p class="mt-1">${info.event.extendedProps.description}</p>
+                            <p class="mb-0">Agenda:</p>
+                            <span>${info.event.extendedProps.agenda}</span>
+                            <p class="mb-0 mt-2">Regiones:</p>
+                            <span>${info.event.extendedProps.regiones}</span>
+                            <p class="mb-0 mt-2">UGEL:</p>
+                            <span>${info.event.extendedProps.ugel}</span>
+                            <p class="mb-0 mt-2">Participantes: (${info.event.extendedProps.nroparticipantes})</p>
+                            <span>${info.event.extendedProps.participantes}</span>
+                            <p class="mt-2 mb-1"><a href="${info.event.extendedProps.linkReunion}" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i> Abrir reunión</a></p>
+                            <p class="mb-1"><a href="${info.event.extendedProps.linkAsistencia}" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i> Asistencia</a></p>
+                        `,
+                        placement: "right",
+                        trigger: "click",
+                        container: "body",
+                        html: true,
+                        template:
+                            '<div class="popover bg-primary" role="tooltip"><div class="popover-arrow bg-primary"></div><h3 class="popover-header bg-dark"></h3><div class="popover-body bg-dark"></div></div>',
                     });
                 },
                 selectable: true,
@@ -55,7 +85,7 @@ const sys_calendar = () => ({
                     $("#modal-event-add").modal("show");
                 },
                 eventClick: (info) => {
-                    $("#modal-event-edit").modal("show");
+                    //$("#modal-event-edit").modal("show");
                 },
                 eventDrop: () => {
                     sw_alert().ok("Se actualiza el registro");
@@ -92,12 +122,10 @@ const sys_calendar = () => ({
         let params = { action: "get-events" };
 
         $.post(calendar_url, params, (response) => {
-
-            let data  = eval(response)
-            let event = []
+            let data = eval(response);
+            let event = [];
 
             for (let i = 0; i < data.length; i++) {
-                
                 event.push({
                     title: data[i].title,
                     start: data[i].start,
@@ -109,48 +137,38 @@ const sys_calendar = () => ({
                     regiones: data[i].regiones,
                     ugel: data[i].ugel,
                     participantes: data[i].participantes,
-                    nroparticipantes: data[i].nroparticipantes
-                })
+                    nroparticipantes: data[i].nroparticipantes,
+                    linkReunion: data[i].linkreunion,
+                    linkAsistencia: data[i].linkasistencia,
+                });
             }
 
             console.log(event);
             sys_calendar().init_start(event);
-
         }).fail((xhr, status, error) => {
-            
             console.error(xhr, status, error);
             sw_alert().error(error);
-
         });
     },
 
     send: () => {
         let form = $("#form-event-add").serialize();
 
-        $.post( calendar_url, form, (response) => {
-
+        $.post(calendar_url, form, (response) => {
             if (response) {
-
-                sw_alert().basic_success(`Registro exitoso!`)
-
+                sw_alert().basic_success(`Registro exitoso!`);
             } else {
-                
                 sw_alert().error(
                     `Ocurrió un problema al registrar el evento - ${response}`
-                )
-
+                );
             }
-
         }).fail((xhr, status, error) => {
-
-            console.error(xhr, status, error)
-            sw_alert().error(error)
-
+            console.error(xhr, status, error);
+            sw_alert().error(error);
         });
     },
 
     save: () => {
-
         let validar_form = funciones().validar_form_required("form-event-add");
 
         if (validar_form) {
@@ -163,8 +181,8 @@ const sys_calendar = () => ({
                 denyButtonText: `Cancelar`,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    sys_calendar().send()
-                    sys_calendar().get_events()
+                    sys_calendar().send();
+                    sys_calendar().get_events();
                 } else if (result.isDenied) {
                     console.log("INST-01: Cancelado");
                 }
@@ -175,4 +193,54 @@ const sys_calendar = () => ({
         }
     },
 
+    show_recents: () => {
+        let params = { action: "get-events-recents" };
+
+        $.post(calendar_url, params, (response) => {
+            let data = eval(response);
+            let html = "";
+
+            for (let i = 0; i < data.length; i++) {
+                let fi = moment(data[i].start).format('DD MMMM YYYY HH:mm')
+                let fe = moment(data[i].end).format('DD MMMM YYYY HH:mm')
+                let cN = data[i].classname
+                let img = ''
+
+                switch (cN) {
+                    case 'bg-gradient-primary':
+                        img = './assets/img/apps/teams.webp'
+                        break;
+                    case 'bg-gradient-info':
+                        img = './assets/img/apps/zoom.webp'
+                        break;
+                    case 'bg-gradient-success':
+                        img = './assets/img/apps/meet.svg.png'
+                        break;
+                    default:
+                        break;
+                }
+                html += `
+                <div class="d-flex mt-2">
+                    <div>
+                        <div class="icon icon-shape bg-danger-soft shadow text-center border-radius-md shadow-none">
+                            <img src="${img}" class="icon-app">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <div class="numbers">
+                            <h6 class="mb-1 text-dark text-sm">${data[i].title}</h6>
+                            <span class="text-sm">${fi + ' - ' + fe} </span>
+                        </div>
+                    </div>
+                </div>
+                `
+                // * Icono en reemplazo de imagen: <i class="ni ni-money-coins text-lg text-danger text-gradient opacity-10" aria-hidden="true"></i>
+                // * Formato de fecha y hora comun: <span class="text-sm">27 March 2021, at 12:30 PM</span>
+            }
+            $('#events-recents').html(html)
+        }).fail((xhr, status, error) => {
+            console.error(xhr, status, error);
+            sw_alert().error(error);
+        });
+    },
 });

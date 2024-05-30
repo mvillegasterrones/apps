@@ -4,6 +4,10 @@ require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-events-recents':
+        $ejecutar = $instancia->get_events_recents();
+        echo json_encode($ejecutar);
+        break;
     case 'get-events':
         $ejecutar = $instancia->get_events();
         echo json_encode($ejecutar);
