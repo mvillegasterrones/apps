@@ -4,6 +4,13 @@ require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'update-event':
+        $id = $_POST['id'];
+        $new_start = $_POST['new_start'];
+        $new_end   = $_POST['new_end'];
+        $ejecutar  = $instancia->update_event($id, $new_start, $new_end);
+        echo json_encode($ejecutar);
+        break;
     case 'get-events-recents':
         $ejecutar = $instancia->get_events_recents();
         echo json_encode($ejecutar);

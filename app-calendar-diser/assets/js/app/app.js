@@ -18,9 +18,8 @@ let chk = () => ({
 
 const pg_body = () => ({
     on_load: () => {
-        //$(".instrumento").addClass("d-none");
-        sys_calendar().get_events()
         sys_calendar().show_recents()
+        sys_calendar().get_events()
     },
 
     on_show_hide: (hd, shw) => {
@@ -103,6 +102,7 @@ const funciones = () => ({
 
 var ctx1 = document.getElementById("chart-line-1").getContext("2d");
 
+/*
 var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
 
 gradientStroke1.addColorStop(1, "rgba(255,255,255,0.3)");
@@ -166,3 +166,4 @@ new Chart(ctx1, {
         },
     },
 });
+*/

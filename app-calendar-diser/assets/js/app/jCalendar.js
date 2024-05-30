@@ -87,8 +87,53 @@ const sys_calendar = () => ({
                 eventClick: (info) => {
                     //$("#modal-event-edit").modal("show");
                 },
-                eventDrop: () => {
-                    sw_alert().ok("Se actualiza el registro");
+                eventDrop: (info) => {
+                    
+                    let fe_ini = moment(info.event.start).format("YYYY-MM-DD HH:mm")
+                    let fe_end = moment(info.event.end).format("YYYY-MM-DD HH:mm")
+                    let params = {
+                        action: 'update-event',
+                        id: info.event.id,
+                        new_start: fe_ini,
+                        new_end: fe_end,
+                    }
+
+                    $.post( calendar_url, params, (response) => {
+                        if (response) {
+                            pg_body().on_load()
+                            sw_alert().basic_success("Evento actualizado!")
+                        } else {
+                            sw_alert().error("No se actualizo el registro")
+                        }
+                    }).fail(error => {
+                        console.log(error);
+                        sw_alert().error(error);
+                    })
+
+                },
+                eventResize: (info) => {
+                    
+                    let fe_ini = moment(info.event.start).format("YYYY-MM-DD HH:mm")
+                    let fe_end = moment(info.event.end).format("YYYY-MM-DD HH:mm")
+                    let params = {
+                        action: 'update-event',
+                        id: info.event.id,
+                        new_start: fe_ini,
+                        new_end: fe_end,
+                    }
+
+                    $.post( calendar_url, params, (response) => {
+                        if (response) {
+                            pg_body().on_load()
+                            sw_alert().basic_success("Evento actualizado!")
+                        } else {
+                            sw_alert().error("No se actualizo el registro")
+                        }
+                    }).fail(error => {
+                        console.log(error);
+                        sw_alert().error(error);
+                    })
+
                 },
                 views: {
                     month: {
@@ -127,6 +172,7 @@ const sys_calendar = () => ({
 
             for (let i = 0; i < data.length; i++) {
                 event.push({
+                    id: data[i].id,
                     title: data[i].title,
                     start: data[i].start,
                     end: data[i].end,
@@ -156,6 +202,7 @@ const sys_calendar = () => ({
 
         $.post(calendar_url, form, (response) => {
             if (response) {
+                pg_body().on_load()
                 sw_alert().basic_success(`Registro exitoso!`);
             } else {
                 sw_alert().error(
@@ -182,7 +229,6 @@ const sys_calendar = () => ({
             }).then((result) => {
                 if (result.isConfirmed) {
                     sys_calendar().send();
-                    sys_calendar().get_events();
                 } else if (result.isDenied) {
                     console.log("INST-01: Cancelado");
                 }
@@ -204,17 +250,24 @@ const sys_calendar = () => ({
                 let fi = moment(data[i].start).format('DD MMMM YYYY HH:mm')
                 let fe = moment(data[i].end).format('DD MMMM YYYY HH:mm')
                 let cN = data[i].classname
-                let img = ''
+                let img, cls
 
                 switch (cN) {
                     case 'bg-gradient-primary':
                         img = './assets/img/apps/teams.webp'
+                        cls = 'text-primary'
                         break;
                     case 'bg-gradient-info':
                         img = './assets/img/apps/zoom.webp'
+                        cls = 'text-info'
                         break;
                     case 'bg-gradient-success':
                         img = './assets/img/apps/meet.svg.png'
+                        cls = 'text-success'
+                        break;
+                    case 'bg-gradient-warning':
+                        img = './assets/img/apps/presencial.png'
+                        cls = 'text-warning'
                         break;
                     default:
                         break;
@@ -228,7 +281,16 @@ const sys_calendar = () => ({
                     </div>
                     <div class="ms-3">
                         <div class="numbers">
-                            <h6 class="mb-1 text-dark text-sm">${data[i].title}</h6>
+                            
+                            <h6 class="mb-1 text-dark text-sm">
+                                <i class="fa-solid fa-circle ${cls}"></i> ${data[i].title} 
+                                <a href="${data[i].linkreunion}" target="_blank"> 
+                                    <i class="fa-duotone fa-arrow-up-right-from-square"></i> 
+                                </a>
+                                <a href="${data[i].linkasistencia}" target="_blank">
+                                    <i class="fa-duotone fa-link"></i>
+                                </a>
+                            </h6>
                             <span class="text-sm">${fi + ' - ' + fe} </span>
                         </div>
                     </div>

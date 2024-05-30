@@ -1,18 +1,40 @@
+/*.popover-header {
+            background-color: #343a40;
+            color: #fff;
+            border-bottom: 1px solid #454d55;
+        }*/
+.popover-body {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.popover {
+  border: 1px solid #454d55;
+}
+
+.icon-app {
+  width: 60%;
+  height: auto;
+}
+
+.numbers h6:hover {
+  color: #ffd300 !important;
+}
+
 .modal .row div:hover * {
   color: #ffd300 !important;
 }
 
 .multisteps-form__content .row div:hover {
   border-radius: 15px;
-  border: .5px solid yellow !important;
-  color:  #ffd300 !important;
+  border: 0.5px solid yellow !important;
+  color: #ffd300 !important;
   cursor: pointer;
 }
 
 .multisteps-form__content .row div:hover * {
-  color:  #ffd300 !important;
+  color: #ffd300 !important;
 }
-
 
 .modal .modal-content .modal-body *,
 .card-color-pastel * {
@@ -25,7 +47,7 @@
 
 table tbody tr td:hover p,
 .card-color-pastel .table tbody tr:hover p {
-  color:  #ffd300 !important;
+  color: #ffd300 !important;
 }
 
 .dark-version .main-content {
@@ -37,11 +59,11 @@ table tbody tr td:hover p,
   background-color: rgb(6, 18, 56);
   /*border: .5px #14f195 solid;
   color: #14f195 !important;*/
-  
+
   /*border: .5px #ffd300 solid;
   color: #ffd300 !important;*/
 
-  border: .5px #14f195 solid;
+  border: 0.5px #14f195 solid;
   color: #14f195 !important;
   text-decoration: underline;
 }
@@ -93,8 +115,8 @@ table tbody tr td:hover p,
 
 .system-card:hover {
   background-color: rgb(6, 18, 56);
-  border: .5px #ffd300 /*#b9e0f2*/ solid;
-  color:  #ffd300 !important;
+  border: 0.5px #ffd300 /*#b9e0f2*/ solid;
+  color: #ffd300 !important;
   text-decoration: underline;
 }
 
@@ -105,7 +127,7 @@ table tbody tr td:hover p,
   object-fit: cover;
 }
 
-.system-card:hover img, 
+.system-card:hover img,
 .dark-version .item-selected img {
   opacity: 100%;
 }
@@ -136,7 +158,7 @@ textarea {
   padding: 2px;
   /*background-color: transparent !important;*/
   background-color: rgb(18, 29, 67) !important;
-  color: #7F92B0 !important; /*  #f0f4f7  */
+  color: #7f92b0 !important; /*  #f0f4f7  */
   border: 0.5px solid rgb(79, 77, 77) !important;
 }
 
@@ -157,7 +179,7 @@ select.noFocus option {
 input[readonly] {
   /*background-color: #ffffde !important;
   color: #56728c !important;*/
-  background-color: #647F9C !important;
+  background-color: #647f9c !important;
   color: white !important;
 }
 
