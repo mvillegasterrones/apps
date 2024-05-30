@@ -18,19 +18,10 @@ switch ($accion) {
             echo '0';
         } else {
             $_SESSION['acceso']       = 'YES';
-            /*$_SESSION['tipo_mse']     = $array['tipo_mse'];
-            $_SESSION['cod_mod']      = $array['cod_mod'];
-            $_SESSION['anexo']        = $array['anexo'];
-            $_SESSION['codlocal']     = $array['codlocal'];
-            $_SESSION['nv_educativo'] = $array['nivel_educativo'];
-            $_SESSION['nombre_ie']    = $array['nombre_ie'];
-            $_SESSION['ubicacion']    = $array['d_region'].' / '.$array['d_prov'].' / '.$array['d_dist'];
-            $_SESSION['cen_pob']      = $array['cen_pob'];
-            $_SESSION['d_dreugel']    = $array['d_dreugel'];
-
-            $_SESSION['d_dpto']       = $array['d_dpto'];
-            $_SESSION['d_prov']       = $array['d_prov'];
-            $_SESSION['d_dist']       = $array['d_dist'];*/
+            $_SESSION['user_rol']     = $array['user_rol'];
+            $_SESSION['area_min']     = $array['area_min'];
+            $_SESSION['area_nombre']  = $array['area_nombre'];
+            $_SESSION['datos']        = $array['user_apellidos'] .', '. $array['user_nombre'];
             echo '1';
         }
         break;

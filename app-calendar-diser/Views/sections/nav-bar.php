@@ -8,16 +8,19 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white">
-                    <a class="opacity-5 text-white" href="javascript:;">MSE <?= $_SESSION['tipo_mse'] ?></a>
+                    <a class="opacity-5 text-white" href="javascript:;">PLANNER</a>
                 </li>
                 <li class="breadcrumb-item text-sm text-white">
-                    <a class="opacity-5 text-white" href="javascript:;"><?= $_SESSION['nv_educativo'] ?></a>
+                    <a class="opacity-5 text-white" href="javascript:;"><?= $_SESSION['area_min'] ?></a>
                 </li>
-                <li class="breadcrumb-item text-sm text-white active" aria-current="page" id="navbar-cod-mod">
-                    <?= $_SESSION['cod_mod'] ?>
+                <li class="breadcrumb-item text-sm text-white">
+                    <a class="opacity-5 text-white" href="javascript:;"><?= $_SESSION['area_nombre'] ?></a>
                 </li>
+                <!--<li class="breadcrumb-item text-sm text-white active" aria-current="page" id="navbar-cod-mod">
+                    <?= $_SESSION['datos'] ?>
+                </li>-->
             </ol>
-            <h6 class="font-weight-bolder mb-0 text-white" id="navbar-empresa"><?= $_SESSION['nombre_ie'] ?></h6>
+            <h6 class="font-weight-bolder mb-0 text-white" id="navbar-empresa"><?= $_SESSION['datos'] ?></h6>
         </nav>
         <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none">
             <a href="javascript:;" class="nav-link p-0">
@@ -37,9 +40,9 @@
             </div>
             <ul class="navbar-nav justify-content-end">
                 <li class="nav-item d-flex align-items-center">
-                    <a href="javascript:;" class="nav-link text-white font-weight-bold px-0" target="_blank">
-                        <i class="fa-regular fa-location-dot"></i>
-                        <span class="d-sm-inline d-none"><?= '<code>'. $_SESSION['ubicacion']. '</code>'?></span>
+                    <a href="javascript:;" class="nav-link font-weight-bold px-0 text-white">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="d-sm-inline d-none"><?= $_SESSION['user_rol'] ?></span>
                     </a>
                 </li>
                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
