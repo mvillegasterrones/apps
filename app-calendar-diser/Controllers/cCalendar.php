@@ -4,6 +4,15 @@ require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-ugel-by-dre':
+        $dre = $_POST['dre'];
+        $ejecutar = $instancia->get_ugel_by_dre($dre);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-dre':
+        $ejecutar = $instancia->get_dre();
+        echo json_encode($ejecutar);
+        break;
     case 'update-event':
         $id = $_POST['id'];
         $new_start = $_POST['new_start'];

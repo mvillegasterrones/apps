@@ -49,7 +49,7 @@ const sys_calendar = () => ({
                     $(info.el).popover({
                         title: `${info.event.title}`,
                         content: `
-                            <span class="mt-2"><i class="fa-duotone fa-alarm-clock"></i> ${fe_start} - ${fe_end}</span>
+                            <span class="mt-2"><i class="fa-solid fa-calendar-days text-warning"></i> ${fe_start} - ${fe_end}</span>
                             <span class="mb-2">${info.event.extendedProps.areaName}</span>
                             <p class="mt-1">${info.event.extendedProps.description}</p>
                             <p class="mb-0">Agenda:</p>
@@ -61,7 +61,7 @@ const sys_calendar = () => ({
                             <p class="mb-0 mt-2">Participantes: (${info.event.extendedProps.nroparticipantes})</p>
                             <span>${info.event.extendedProps.participantes}</span>
                             <p class="mt-2 mb-1"><a href="${info.event.extendedProps.linkReunion}" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i> Abrir reunión</a></p>
-                            <p class="mb-1"><a href="${info.event.extendedProps.linkAsistencia}" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i> Asistencia</a></p>
+                            <p class="mb-1"><a href="./registro-asistencia.php?id=${info.event.id}&denominacion=${info.event.title}&fi=${fe_start}&fe=${fe_end}" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i> Asistencia</a></p>
                         `,
                         placement: "right",
                         trigger: "click",
@@ -74,18 +74,19 @@ const sys_calendar = () => ({
                 selectable: true,
                 editable: true,
                 selectHelper: true,
-                //initialDate: "2021-12-01",
+                //* initialDate: "2021-12-01",
                 weekends: false,
                 events: _events,
                 select: (event) => {
                     funciones().get_areas();
-                    let fi = moment(event.start).format("YYYY-MM-DD HH:mm");
+                    let fi = moment(event.start).format("YYYY-MM-DD 08:15");
+                    let fe = moment(event.end).format("YYYY-MM-DD 17:15");
                     $("#modal-event-add #cal_fecha_inicio").val(fi);
-                    $("#modal-event-add #cal_fecha_fin").val(fi);
+                    $("#modal-event-add #cal_fecha_fin").val(fe);
                     $("#modal-event-add").modal("show");
                 },
                 eventClick: (info) => {
-                    //$("#modal-event-edit").modal("show");
+                    //* $("#modal-event-edit").modal("show");
                 },
                 eventDrop: (info) => {
                     

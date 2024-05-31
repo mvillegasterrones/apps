@@ -266,7 +266,7 @@ $participantes_lista = array(
     '* Especialistas UGEL',
     '* Coordinador/a CRFA',
     '* Coordinador/a de la RE',
-    '* Coordinador/a del Núcleo EDucativo',
+    '* Coordinador/a del Núcleo Educativo',
     '* Responsable de Bienestar',
     '* Promotor de Bienestar',
     '* Docentes Tutores',

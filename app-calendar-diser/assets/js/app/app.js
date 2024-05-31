@@ -1,10 +1,3 @@
-// ** Aquí código de las funciones a nivel de APP ** //
-/*if (document.querySelector(".datetimepicker")) {
-    flatpickr(".datetimepicker", {
-        allowInput: true,
-    });
-}*/
-
 let chk = () => ({
     validar_chk: (section, txtMostrar) => {
         var seleccionados = [];
