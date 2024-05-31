@@ -43,22 +43,24 @@
                         <div class="col-12 col-sm-2 mt-0 mt-sm-0">
                             <label>COD.Modular</label>
                             <input class="multisteps-form__input form-control mb-3" type="text"
-                                placeholder="ej. 1234567" maxlength="7" pattern="^\d{7}$" required />
+                                placeholder="ej. 1234567" maxlength="7" pattern="^\d{7}$" id="cod_mod" name="cod_mod" required
+                                title="Ingresar los 7 digitos del CÓDIGO MODULAR en caso corresponda, de lo contrario escribir 0000000" />
                         </div>
                         <div class="col-12 col-sm-2 mt-0 mt-sm-0">
                             <label>Nro. DNI</label>
-                            <input class="multisteps-form__input form-control mb-3" type="text"
-                                placeholder="ej. 88888888" maxlength="8" pattern="^\d{8}$" required />
+                            <input class="multisteps-form__input form-control mb-3" type="text" id="dni" name="dni"
+                                placeholder="ej. 12345678" maxlength="8" pattern="^\d{8}$"
+                                onblur="reniec().search_dni()" required
+                                title="Ingresar los 8 digitos del número de DNI" />
                         </div>
                         <div class="col-12 col-sm-4 mt-0 mt-sm-0">
                             <label>Apellidos y Nombres</label>
-                            <input class="multisteps-form__input form-control mb-3" type="text"
-                                placeholder="ej. Villegas Terrones Manuel Antonio" required />
+                            <input class="multisteps-form__input form-control mb-3" type="text" id="apellidos_nombres"
+                                name="apellidos_nombres" placeholder="ej. Villegas Terrones Manuel Antonio" required readonly />
                         </div>
                         <div class="col-12 col-sm-4 mt-0 mt-sm-0">
                             <label>Correo Electrónico</label>
-                            <input class="multisteps-form__input form-control mb-3" type="text"
-                                placeholder="ej. correo@correo.com" required />
+                            <input class="multisteps-form__input form-control mb-3" type="text" id="correo"name="correo" placeholder="ej. correo@correo.com" required />
                         </div>
                     </div>
                     <div class="row mt-3">
