@@ -9,6 +9,32 @@ class mAsistencia
         $this->conexion->conectar();
     }
 
+    function get_reporte_chart_region($idAsistencia)
+    {
+        $sql = "CALL sp_v1_get_reporte_chart_region($idAsistencia)";
+        $this->conexion->conexion->set_charset('utf8');
+        $resultados = $this->conexion->conexion->query($sql);
+        $arreglo = array();
+        while ($re = $resultados->fetch_array(MYSQLI_BOTH)) {
+            $arreglo[] = $re;
+        }
+        $this->conexion->cerrar();
+        return $arreglo;
+    }
+
+    function get_reporte_chart_cargo($idAsistencia)
+    {
+        $sql = "CALL sp_v1_get_reporte_chart_cargo($idAsistencia)";
+        $this->conexion->conexion->set_charset('utf8');
+        $resultados = $this->conexion->conexion->query($sql);
+        $arreglo = array();
+        while ($re = $resultados->fetch_array(MYSQLI_BOTH)) {
+            $arreglo[] = $re;
+        }
+        $this->conexion->cerrar();
+        return $arreglo;
+    }
+
     function get_reporte_asistencia($idAsistencia)
     {
         $sql = "SELECT * FROM tbl_asistencia WHERE idAsistencia = '$idAsistencia'";

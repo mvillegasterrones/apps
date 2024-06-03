@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="asistencia().get_reporte(<?= $_REQUEST['id'] ?>)">
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="asistencia().init_reports(<?= $_REQUEST['id'] ?>)">
 
     <?php
     //include './Views/sections/nav-bar.php';
@@ -45,7 +45,9 @@
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-<!--<script src="./assets/js/plugins/choices.min.js"></script>-->
+<script src="./assets/js/plugins/chartjs.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>-->
+<script src="./assets/js/plugins/chartjs-datalabels.js"></script>
 
 <script>
     let win = navigator.platform.indexOf("Win") > -1

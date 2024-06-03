@@ -4,6 +4,16 @@ require_once '../Models/mAsistencia.php';
 $instancia = new mAsistencia();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-reporte-chart-region':
+        $idAsistencia = $_POST['id'];
+        $ejecutar     = $instancia->get_reporte_chart_region($idAsistencia);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-reporte-chart-cargo':
+        $idAsistencia = $_POST['id'];
+        $ejecutar     = $instancia->get_reporte_chart_cargo($idAsistencia);
+        echo json_encode($ejecutar);
+        break;
     case 'get-reporte-asistencia':
         $idAsistencia = $_POST['id'];
         $ejecutar     = $instancia->get_reporte_asistencia($idAsistencia);
