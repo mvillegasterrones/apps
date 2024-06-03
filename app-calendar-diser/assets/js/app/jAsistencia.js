@@ -59,11 +59,49 @@ const reniec = () => ({
 
 const asistencia = () => ({
     send: () => {
-        sw_alert().ok('Data was sent!')
+        
+        let form = $("#form-registro-asistencia").serialize();
+
+        $.post(asistencia_url, form, (response) => {
+            if (response) {
+                pg_body().on_load();
+                sw_alert().basic_success(`Registro exitoso!`);
+            } else {
+                sw_alert().error(
+                    `Ocurrió un problema al registrar el evento - ${response}`
+                );
+            }
+        }).fail((xhr, status, error) => {
+            console.error(xhr, status, error);
+            sw_alert().error(error);
+        });
+
     },
 
     save: () => {
-        sw_alert().save_question(asistencia().send())
+        
+        let validar_form = funciones().validar_form_required("form-registro-asistencia");
+
+        if (validar_form) {
+            Swal.fire({
+                icon: "question",
+                title: "¿Guardar formulario?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Guardar",
+                denyButtonText: `Cancelar`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    asistencia().send();
+                } else if (result.isDenied) {
+                    console.log("ASISTENCIA: Cancelado");
+                }
+            });
+        } else {
+            msje = "Por favor, complete todos los campos del formulario.";
+            sw_alert().warning(msje);
+        }
+
     },
     
 })

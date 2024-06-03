@@ -35,8 +35,8 @@
 <body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="dre().get_dre()">
 
     <?php
-    include './Views/sections/nav-bar-asistencia.php';
-    include './Views/view-registro-asistencia.php';
+    //include './Views/sections/nav-bar.php';
+    include './Views/view-reporte-asistencia.php';
     ?>
 
 </body>

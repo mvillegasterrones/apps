@@ -6,12 +6,16 @@
                 <h5 class="font-weight-bolder mb-0">
                     <img src="./assets/img/logos/logo-minedu.png" alt="">
                 </h5>
-                <p class="mb-0 text-sm">Registro de Asistencia Online</p>
+                <p class="mb-0 text-sm">REGISTRO DE ASISTENCIA</p>
                 <div class="multisteps-form__content text-uppercase">
                     <div class="row mt-3">
                         <h5><?= '{' . $_REQUEST['id'] . '} -' . $_REQUEST['denominacion'] ?></h5>
                         <span class="mb-4"><i class="fa-solid fa-calendar-days text-warning"></i>
                             <?= $_REQUEST['fi'] . ' - ' . $_REQUEST['fe'] ?></span>
+
+                        <input type="hidden" id="id" name="id" value="<?= $_REQUEST['id'] ?>">
+                        <input type="hidden" id="action" name="action" value="save-registro-asistencia">
+
                         <div class="col-12 col-sm-4">
                             <label>DRE / Región</label>
                             <select class="multisteps-form__input form-control mb-2" id="seleccione_dre"

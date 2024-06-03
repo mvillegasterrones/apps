@@ -47,13 +47,14 @@ const sys_calendar = () => ({
                     let fe_start = moment(info.event.start).format("DD/MM/YYYY HH:mm");
                     let fe_end = moment(info.event.end).format("DD/MM/YYYY HH:mm");
                     let link_asistencia = `./registro-asistencia.php?id=${info.event.id}&denominacion=${info.event.title}&fi=${fe_start}&fe=${fe_end}`;
+                    let link_rep_asistencia = `./reporte-asistencia.php?id=${info.event.id}&denominacion=${info.event.title}&fi=${fe_start}&fe=${fe_end}`;
                     $(info.el).popover({
                         title: `
                             ${info.event.title}
                             <p class="mt-0 mb-0 d-flex">
                                 <a href="${info.event.extendedProps.linkReunion}" class="nav-link" target="_blank"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>&nbsp;&nbsp;
                                 <a href="${link_asistencia}" class="nav-link" target="_blank"><i class="fa-duotone fa-link"></i></a>&nbsp;&nbsp;
-                                <a href="#" class="nav-link cursor-pointer"><i class="fa-regular fa-user-check" onclick=""></i></a>
+                                <a href="${link_rep_asistencia}" target="_blank" class="nav-link"><i class="fa-regular fa-user-check"></i></a>
                             </p>`,
                         content: `
                             <span class="mt-2"><i class="fa-solid fa-calendar-days text-warning"></i> ${fe_start} - ${fe_end}</span>
