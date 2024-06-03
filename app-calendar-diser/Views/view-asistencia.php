@@ -22,13 +22,14 @@
                             <label>UGEL</label>
                             <select class="multisteps-form__input form-control mb-3" id="seleccione_ugel"
                                 name="seleccione_ugel" required>
+                                <option value="" selected disabled>- Seleccione UGEL -</option>
                             </select>
                         </div>
                         <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Cargo</label>
                             <select class="multisteps-form__input form-control mb-3" id="selecione_cargo"
                                 name="seleccione_cargo" required>
-                                <option value="" selected>- Seleccione cargo -</option>
+                                <option value="" disabled selected>- Seleccione cargo -</option>
                                 <?php
                                 $n = 0;
                                 do {
@@ -43,13 +44,13 @@
                         <div class="col-12 col-sm-2 mt-0 mt-sm-0">
                             <label>COD.Modular</label>
                             <input class="multisteps-form__input form-control mb-3" type="text"
-                                placeholder="ej. 1234567" maxlength="7" pattern="^\d{7}$" id="cod_mod" name="cod_mod" required
-                                title="Ingresar los 7 digitos del CÓDIGO MODULAR en caso corresponda, de lo contrario escribir 0000000" />
+                                placeholder="ej. 7777777" maxlength="7" pattern="^\d{7}$" id="cod_mod" name="cod_mod" required
+                                title="Ingresar los 7 digitos del CÓDIGO MODULAR, de lo contrario escribir 0000000" />
                         </div>
                         <div class="col-12 col-sm-2 mt-0 mt-sm-0">
                             <label>Nro. DNI</label>
                             <input class="multisteps-form__input form-control mb-3" type="text" id="dni" name="dni"
-                                placeholder="ej. 12345678" maxlength="8" pattern="^\d{8}$"
+                                placeholder="ej. 88888888" maxlength="8" pattern="^\d{8}$"
                                 onblur="reniec().search_dni()" required
                                 title="Ingresar los 8 digitos del número de DNI" />
                         </div>
@@ -67,7 +68,8 @@
 
                     </div>
                     <div class="button-row d-flex mt-4">
-                        <button class="btn bg-gradient-primary ms-auto mb-0" type="button" title="Enviar formulario">
+                        <button class="btn bg-gradient-primary ms-auto mb-0" type="button" title="Enviar formulario" onclick="asistencia().save()">
+                            <i class="fas fa-check-circle"></i>
                             Enviar
                         </button>
                     </div>
@@ -77,7 +79,3 @@
         </form>
     </div>
 </div>
-
-<script>
-
-</script>

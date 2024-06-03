@@ -199,19 +199,19 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 mt-3">
+                                <div class="col-12 col-sm-12 mt-3">
                                     <label for="">Link de la reunión <b style="color: red !important;">*</b></label>
                                     <textarea class="form-control form-control-sm" name="cal_link_reunion"
                                         id="cal_link_reunion" placeholder="Agregue el link de acceso a la reunión"
                                         required></textarea>
                                 </div>
-                                <div class="col-12 col-sm-6 mt-3">
+                                <div class="col-12 col-sm-6 d-none mt-3">
                                     <label for="">Link del registro de Asistencia <b
                                             style="color: red !important;">*</b></label>
                                     <textarea class="form-control form-control-sm" name="cal_link_asistencia"
                                         id="cal_link_asistencia"
                                         placeholder="Agregue el link para el registro de Asistencia"
-                                        required></textarea>
+                                        required>-</textarea>
                                 </div>
 
                             </div>

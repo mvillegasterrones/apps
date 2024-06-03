@@ -45,14 +45,7 @@
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
-<script src="./assets/js/plugins/choices.min.js"></script>
-<!--<script src="./assets/js/plugins/fullcalendar.min.js"></script>-->
-<!--<script src="./assets/js/plugins/flatpickr.min.js"></script>-->
-<!--<script src="./assets/js/plugins/moment.js"></script>-->
-<!--<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>-->
-<!--<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>-->
-
-<!--<script src="./assets/js/plugins/chartjs.min.js"></script>-->
+<!--<script src="./assets/js/plugins/choices.min.js"></script>-->
 
 <script>
     let win = navigator.platform.indexOf("Win") > -1
@@ -73,7 +66,7 @@
 <script src="./assets/js/app/jGlobal-vars.js"></script>
 <script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
-<!--<script src="./assets/js/app/jUsuario.js"></script>-->
+<script src="./assets/js/app/jAsistencia.js"></script>
 <script src="./assets/js/app/jDre-ugel.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
