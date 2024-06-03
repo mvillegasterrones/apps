@@ -273,7 +273,7 @@ $section_8_p21 = array(
 
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3">
-                                                <label>* Otro (Apellidos y Nombres)</label>
+                                                <label>Apellidos y Nombres</label>
                                                 <input class="multisteps-form__input form-control mt-2" type="text"
                                                     placeholder="Ingrese" name="txt_otro_nombre" id="txt_otro_nombre"
                                                     value="-" required />
