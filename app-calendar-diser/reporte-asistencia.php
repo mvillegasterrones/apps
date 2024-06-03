@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="dre().get_dre()">
+<body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="asistencia().get_reporte(<?= $_REQUEST['id'] ?>)">
 
     <?php
     //include './Views/sections/nav-bar.php';

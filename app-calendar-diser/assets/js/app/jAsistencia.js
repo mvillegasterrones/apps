@@ -1,14 +1,13 @@
-const asistencia_url = "./Controllers/cAsistencia.php"
-const reniec_url     = "https://incared.com/api/apirest"
+const asistencia_url = "./Controllers/cAsistencia.php";
+const reniec_url = "https://incared.com/api/apirest";
 
 const reniec = () => ({
     search_dni: () => {
         let dni = $("#dni").val();
 
         if (dni.length === 8) {
+            $("#apellidos_nombres").attr("readonly", "readonly");
 
-            $("#apellidos_nombres").attr('readonly', 'readonly')
-            
             $("#apellidos_nombres").val("Buscando...");
 
             $.ajax({
@@ -32,15 +31,17 @@ const reniec = () => ({
                         console.log(msj);
                     },
                 },
-            }).done( (response) => {
+            }).done((response) => {
                 let datos = eval(response);
                 if (datos.rs === null || datos.rs === undefined) {
-                    sw_alert().error(datos.error +" : " + dni + ", Ingresar apellidos y nombres!");
+                    sw_alert().error(
+                        datos.error + " : " + dni + ", Ingresar apellidos y nombres!"
+                    );
                     $("#apellidos_nombres").val("");
-                    $("#apellidos_nombres").removeAttr('readonly')
+                    $("#apellidos_nombres").removeAttr("readonly");
                 } else {
                     $("#apellidos_nombres").val(datos.rs);
-                    $("#apellidos_nombres").attr('readonly', 'readonly')
+                    $("#apellidos_nombres").attr("readonly", "readonly");
                     $("#correo").focus();
                 }
                 $("#btnBuscarSunat-2").html(
@@ -59,28 +60,27 @@ const reniec = () => ({
 
 const asistencia = () => ({
     send: () => {
-        
         let form = $("#form-registro-asistencia").serialize();
 
         $.post(asistencia_url, form, (response) => {
             if (response) {
-                pg_body().on_load();
                 sw_alert().basic_success(`Registro exitoso!`);
+                $("#form-registro-asistencia")[0].reset();
             } else {
                 sw_alert().error(
-                    `Ocurrió un problema al registrar el evento - ${response}`
+                    `Ocurrió un problema al registrar la asistencia - ${response}`
                 );
             }
         }).fail((xhr, status, error) => {
             console.error(xhr, status, error);
             sw_alert().error(error);
         });
-
     },
 
     save: () => {
-        
-        let validar_form = funciones().validar_form_required("form-registro-asistencia");
+        let validar_form = funciones().validar_form_required(
+            "form-registro-asistencia"
+        );
 
         if (validar_form) {
             Swal.fire({
@@ -101,7 +101,60 @@ const asistencia = () => ({
             msje = "Por favor, complete todos los campos del formulario.";
             sw_alert().warning(msje);
         }
-
     },
-    
-})
+
+    get_reporte: (id) => {
+
+        let params = { action: "get-reporte-asistencia", id: id };
+
+        $.post(asistencia_url, params, (response) => {
+
+            let data = eval(response);
+            let html = "";
+
+            for (let i = 0; i < data.length; i++) {
+                html += `
+                <tr>
+                    <td>
+                        <div class="d-flex px-2 py-1">
+                            <div>
+                                <img src="./assets/img/logos/user.png" class="avatar avatar-sm me-3" alt="avatar image">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 text-xxs">${data[i].seleccione_dre}</h6>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="text-xxs text-secondary mb-0">${data[i].seleccione_ugel}</p>
+                    </td>
+                    <td>
+                        <p class="text-xxs text-secondary mb-0">${data[i].seleccione_cargo}</p>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                        <p class="text-secondary mb-0 text-xxs">${data[i].cod_mod}</p>
+                    </td>
+                    <td class="align-middle">
+                        <span class="text-secondary text-xxs">${data[i].dni + ' - ' + data[i].apellidos_nombres}</span>
+                    </td>
+                    <td class="align-middle text-center">
+                        <span class="text-secondary text-xxs">${data[i].correo}</span>
+                    </td>
+                    <td class="align-middle text-center">
+                        <span class="text-secondary text-xxs">${data[i].celular}</span>
+                    </td>
+                </tr>
+                `;
+
+            }
+
+            $('#tbl-reporte-asistencia tbody').html(html)
+
+        }).fail((xhr, status, error) => {
+
+            console.error(xhr, status, error);
+            sw_alert().error(error);
+
+        });
+    },
+});

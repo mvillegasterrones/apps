@@ -9,11 +9,12 @@
                 <p class="mb-0 text-sm">REGISTRO DE ASISTENCIA</p>
                 <div class="multisteps-form__content text-uppercase">
                     <div class="row mt-3">
-                        <h5><?= '{' . $_REQUEST['id'] . '} -' . $_REQUEST['denominacion'] ?></h5>
+                        <h5><?= $_REQUEST['denominacion'] ?></h5>
                         <span class="mb-4"><i class="fa-solid fa-calendar-days text-warning"></i>
                             <?= $_REQUEST['fi'] . ' - ' . $_REQUEST['fe'] ?></span>
 
-                        <input type="hidden" id="id" name="id" value="<?= $_REQUEST['id'] ?>">
+                        <input type="hidden" id="id" name="id" value="0">
+                        <input type="hidden" id="idAsistencia" name="idAsistencia" value="<?= $_REQUEST['id'] ?>">
                         <input type="hidden" id="action" name="action" value="save-registro-asistencia">
 
                         <div class="col-12 col-sm-4">
@@ -61,11 +62,15 @@
                         <div class="col-12 col-sm-4 mt-0 mt-sm-0">
                             <label>Apellidos y Nombres</label>
                             <input class="multisteps-form__input form-control mb-3" type="text" id="apellidos_nombres"
-                                name="apellidos_nombres" placeholder="ej. Villegas Terrones Manuel Antonio" required readonly />
+                                name="apellidos_nombres" placeholder="Ingresar datos" required readonly />
                         </div>
                         <div class="col-12 col-sm-4 mt-0 mt-sm-0">
                             <label>Correo Electrónico</label>
                             <input class="multisteps-form__input form-control mb-3" type="text" id="correo"name="correo" placeholder="ej. correo@correo.com" required />
+                        </div>
+                        <div class="col-12 col-sm-2 mt-0 mt-sm-0">
+                            <label>Nro. Celular</label>
+                            <input class="multisteps-form__input form-control mb-3" type="text" maxlength="9" id="celular"name="celular" placeholder="Ej. 999999999" required />
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -82,4 +87,5 @@
 
         </form>
     </div>
+
 </div>
