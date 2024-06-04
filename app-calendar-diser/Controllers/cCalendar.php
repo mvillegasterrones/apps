@@ -4,6 +4,11 @@ require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-calendar-for-table':
+        //$id = $_POST['id'];
+        $ejecutar = $instancia->get_calendar_for_table();
+        echo json_encode($ejecutar);
+        break;
     case 'get-info-calendar':
         $id = $_POST['id'];
         $ejecutar = $instancia->get_info_calendar($id);

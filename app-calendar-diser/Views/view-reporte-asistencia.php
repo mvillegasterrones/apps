@@ -43,7 +43,7 @@
         <div class="card h-100">
             <div class="card-body p-3" id="card-chart-region">
                 <label id="cargando"><i class="fas fa-spinner fa-spin"></i> Cargando...</label>
-                <h6>Asistencia por DRE/Región</h6>
+                <h6 class="text-uppercase">asistencia POR DRE</h6>
                 <div class="chart pt-3">
                     <canvas id="chart-region" class="chart-canvas h-100" height="250"></canvas>
                 </div>
@@ -57,7 +57,7 @@
             <div class="card-header pb-0 p-3">
                 <label id="cargando"><i class="fas fa-spinner fa-spin"></i> Cargando...</label>
                 <div class="d-flex align-items-center">
-                    <h6 class="mb-0">Reporte por cargo</h6>
+                    <h6 class="mb-0 text-uppercase">Asistencia por cargo</h6>
                     <button type="button"
                         class="btn btn-icon-only btn-rounded btn-outline-secondary mb-0 ms-2 btn-sm d-flex align-items-center justify-content-center ms-auto"
                         data-bs-toggle="tooltip" data-bs-placement="bottom"

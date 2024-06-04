@@ -1,6 +1,21 @@
 const calendar_url = "./Controllers/cCalendar.php";
 
 const sys_calendar = () => ({
+
+    validate_fi_fe: (startDate, endDate) => {
+
+        // Obtener la fecha y hora actual
+        const currentDate = new Date();
+
+        // Crear objetos Date para las fechas de inicio y fin
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+
+        // Comparar la fecha y hora actual con el rango
+        return currentDate >= start && currentDate <= end;
+
+    },
+
     init_start: (_events) => {
         let calendar = new FullCalendar.Calendar(
             document.getElementById("calendar"),
@@ -164,6 +179,8 @@ const sys_calendar = () => ({
         );
 
         calendar.render();
+
+        sys_calendar().get_calendar_for_table()
     },
 
     get_events: () => {
@@ -309,7 +326,7 @@ const sys_calendar = () => ({
                 // * Icono en reemplazo de imagen: <i class="ni ni-money-coins text-lg text-danger text-gradient opacity-10" aria-hidden="true"></i>
                 // * Formato de fecha y hora comun: <span class="text-sm">27 March 2021, at 12:30 PM</span>
             }
-            
+
             $("#events-recents").html(html);
 
         }).fail((xhr, status, error) => {
@@ -318,5 +335,105 @@ const sys_calendar = () => ({
             sw_alert().error(error);
 
         });
+    },
+
+    get_calendar_for_table: () => {
+
+        let params = { action: 'get-calendar-for-table' }
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+            let html = ''
+
+            for (let i = 0; i < data.length; i++) {
+
+                let fi = data[i].cal_fecha_inicio
+                let fe = data[i].cal_fecha_fin
+                let cN = data[i].cal_modalidad
+                let en_curso = ''
+
+                switch (cN) {
+                    case "1. Virtual: Microsoft Teams": // "bg-gradient-primary":
+                        img = "./assets/img/apps/teams.webp";
+                        cls = "text-primary";
+                        break;
+                    case "2. Virtual: Zoom": // "bg-gradient-info":
+                        img = "./assets/img/apps/zoom.webp";
+                        cls = "text-info";
+                        break;
+                    case "3. Virtual: Google Meet": // "bg-gradient-success":
+                        img = "./assets/img/apps/meet.svg.png";
+                        cls = "text-success";
+                        break;
+                    case "4. Presencial": // "bg-gradient-warning":
+                        img = "./assets/img/apps/presencial.png";
+                        cls = "text-warning";
+                        break;
+                    default:
+                        break;
+                }
+
+                if (sys_calendar().validate_fi_fe(fi, fe)) {
+                    en_curso = `
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    En curso...
+                    `
+                } else {
+                    en_curso = `
+                    <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span> Vencida
+                    `
+                }
+
+                html += `
+                <tr>
+                                        <td>
+                                            <div class="d-flex px-2">
+                                                <div>
+                                                    <img src="${img}"
+                                                        class="avatar avatar-sm rounded-circle me-2">
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h6 class="mb-0 text-xs">${data[i].cal_tipo_programa}</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="text-xs font-weight-bold mb-0">${data[i].cal_nombre_programa}</p>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-dot me-4">
+                                                <i class="bg-info"></i>
+                                                <span class="text-dark text-xs">${en_curso}</span>
+                                            </span>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2 text-xs">60%</span>
+                                                <div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                            style="width: 60%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <button class="btn btn-link text-dark mb-0">
+                                                <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                `
+
+            }
+
+            $('#tbl-report-calendar tbody').html(html)
+
+        })
+
     },
 });
