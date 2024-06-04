@@ -67,8 +67,8 @@
 <script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
 <script src="./assets/js/app/jAsistencia.js"></script>
-<script src="./assets/js/app/jCalendar.js"></script>
 <script src="./assets/js/app/jDre-ugel.js"></script>
+<script src="./assets/js/app/jCalendar.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 

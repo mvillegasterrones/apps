@@ -40,8 +40,6 @@
     <script src='https://unpkg.com/@fullcalendar/daygrid@5.11.0/main.min.js'></script>-->
     <!--<script src="https://unpkg.com/@fullcalendar/interaction@5.11.0/main.min.js"></script>-->
     
-
-
 </head>
 
 <body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->

@@ -72,13 +72,11 @@ const dre = () => ({
 
             $("#form-registro-asistencia #seleccione_dre").removeAttr("disabled");
 
-            /*if (document.getElementById("seleccione_dre")) {
-                            let dre = document.getElementById("seleccione_dre");
-                            const example = new Choices(dre);
-                        }*/
         }).fail((error) => {
+
             console.error(error);
             sw_alert().error(error);
+
         });
     },
 

@@ -10,7 +10,12 @@
             <div class="col-12 ms-auto">
                 <div class="d-flex mb-1">
 
-                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users text-success"></i> PLANNER DISER</h5>
+                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users text-success"></i> PLANNER DISER 
+                        <label class="text-info text-muted" onclick="location.reload()">
+                            <a href="javascript:;" style="color: yellow !important;">
+                                <i class="fa-regular fa-arrows-rotate"></i> Actualizar</a>
+                        </label>
+                    </h5>
 
                     <div class="pe-4 mt-1 position-relative ms-auto" style="border: 0px solid yellow !important;">
                         <p class="text-white text-xs font-weight-bold mb-2">
@@ -74,13 +79,15 @@
                                 <thead>
                                     <tr>
                                         <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7">
-                                            Project</th>
+                                            Tipo</th>
                                         <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
-                                            Budget</th>
+                                            Nombre - Titulo</th>
                                         <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
-                                            Status</th>
+                                            -</th>
                                         <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
-                                            Completion</th>
+                                            Estado - Fecha</th>
+                                        <th class="text-uppercase text-dark text-xxs font-weight-bolder opacity-7 ps-2">
+                                            Asistencia</th>
                                         <th></th>
                                     </tr>
                                 </thead>

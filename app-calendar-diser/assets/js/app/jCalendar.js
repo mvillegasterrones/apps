@@ -9,10 +9,22 @@ const sys_calendar = () => ({
 
         // Crear objetos Date para las fechas de inicio y fin
         const start = new Date(startDate);
-        const end = new Date(endDate);
+        const end   = new Date(endDate);
+
+        // Evaluar la fecha actual con respecto al rango
+        if (currentDate < start) {
+            return 1
+            //*return 'La fecha y hora actual es anterior al inicio del rango.';
+        } else if (currentDate >= start && currentDate <= end) {
+            return 2
+            //*return 'La fecha y hora actual está dentro del rango.';
+        } else {
+            return 3
+            //*return 'La fecha y hora actual es posterior al fin del rango.';
+        }
 
         // Comparar la fecha y hora actual con el rango
-        return currentDate >= start && currentDate <= end;
+        //return currentDate >= start && currentDate <= end;
 
     },
 
@@ -351,7 +363,15 @@ const sys_calendar = () => ({
                 let fi = data[i].cal_fecha_inicio
                 let fe = data[i].cal_fecha_fin
                 let cN = data[i].cal_modalidad
-                let en_curso = ''
+                let nT = parseInt(data[i].cal_nro_participantes)
+                let nA = parseInt(data[i].TotalRegistrados)
+                let porc       = parseFloat((nA/nT)*100).toFixed(2)
+                let evalFechas = sys_calendar().validate_fi_fe(fi, fe)
+                let nfi = moment(fi).format('DD/MM/YYYY HH:mm')
+                let nfe = moment(fe).format('DD/MM/YYYY HH:mm')
+                let link_asistencia     = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
+                let link_rep_asistencia = `./reporte-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
+                let en_curso, color_fila = ''
 
                 switch (cN) {
                     case "1. Virtual: Microsoft Teams": // "bg-gradient-primary":
@@ -374,59 +394,83 @@ const sys_calendar = () => ({
                         break;
                 }
 
-                if (sys_calendar().validate_fi_fe(fi, fe)) {
-                    en_curso = `
-                    <div class="spinner-grow text-primary" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    En curso...
-                    `
-                } else {
-                    en_curso = `
-                    <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span> Vencida
-                    `
+                switch (evalFechas) {
+                    case 1:
+                        color_fila = ''
+                        en_curso = `
+                        <span class="badge badge-dot me-4">
+                            <i class="bg-info"></i>
+                            <span class="text-xs">[Programada] ${nfi +' - '+ nfe}</span>
+                        </span>`
+                        break;
+                    case 2:
+                        color_fila = 'style="color: yellow !important; cursor: pointer;"'
+                        en_curso = `
+                        <span class="spinner-grow bg-success spinner-grow-sm text-xxs" role="status" aria-hidden="true"></span>
+                        <span class="sr-only">Loading...</span><span class="text-xs" ${color_fila}>[En curso] ${nfi +' - '+ nfe}</span>`
+                        break;
+                    case 3:
+                        color_fila = ''
+                        en_curso = `
+                        <span class="badge badge-dot me-4">
+                            <i class="bg-warning"></i>
+                            <span class="text-xs" ${color_fila}><b class="text-danger">[Vencida]</b> ${nfi +' - '+ nfe}</span>
+                        </span>`
+                        break;
+                    default:
+                        break;
                 }
 
                 html += `
-                <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="${img}"
-                                                        class="avatar avatar-sm rounded-circle me-2">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-xs">${data[i].cal_tipo_programa}</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-xs font-weight-bold mb-0">${data[i].cal_nombre_programa}</p>
-                                        </td>
-                                        <td>
-                                            <span class="badge badge-dot me-4">
-                                                <i class="bg-info"></i>
-                                                <span class="text-dark text-xs">${en_curso}</span>
-                                            </span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center">
-                                                <span class="me-2 text-xs">60%</span>
-                                                <div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                            style="width: 60%;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn btn-link text-dark mb-0">
-                                                <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                <tr ${color_fila}>
+                    <td ${color_fila}>
+                        <div class="d-flex px-2">
+                            <div>
+                                <img src="${img}"
+                                    class="avatar avatar-sm rounded-circle me-2">
+                            </div>
+                            <div class="my-auto">
+                                <h6 class="mb-0 text-xs" ${color_fila}>${data[i].cal_tipo_programa}</h6>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="text-xs font-weight-bold mb-0 text-uppercase truncate-text btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="${data[i].cal_nombre_programa}" data-container="body" data-animation="true" ${color_fila}>${data[i].cal_nombre_programa}</p>
+                    </td>
+                    <td>
+                        <p class="text-xs font-weight-bold mb-0">
+                            <a href="${data[i].cal_link_reunion}" target="_blank"> 
+                                <i class="fa-duotone fa-arrow-up-right-from-square"></i> 
+                            </a>
+                            <a href="${link_asistencia}" target="_blank">
+                                <i class="fa-duotone fa-link"></i>
+                            </a>
+                            <a href="${link_rep_asistencia}" target="_blank">
+                                <i class="fa-regular fa-user-check"></i>
+                            </a>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="text-xs font-weight-bold mb-0">${en_curso}</p>
+                    </td>
+                    <td class="align-middle text-center">
+                        <div class="d-flex align-items-center">
+                            <span class="me-2 text-xs">[${nA +' de '+ nT}] - ${porc}%</span>
+                            <div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar"
+                                        aria-valuenow="${porc}" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: ${porc}%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="align-middle">
+                        <button class="btn btn-link text-dark mb-0">
+                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                        </button>
+                    </td>
+                </tr>
                 `
 
             }

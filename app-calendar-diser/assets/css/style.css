@@ -3,6 +3,14 @@
             color: #fff;
             border-bottom: 1px solid #454d55;
         }*/
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  border: 0 solid #000; /* Solo para visualización */
+}
+
 .popover-body {
   background-color: #343a40;
   color: #fff;
