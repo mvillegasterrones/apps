@@ -9,6 +9,19 @@ class mCalendar
 		$this->conexion->conectar();
 	}
 
+	function get_info_calendar($id)
+	{
+		$sql = "CALL sp_v1_get_info_calendar_by_idAsistencia($id)";
+		$this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo = array();
+		while ($re = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+	}
+
 	function get_ugel_by_dre($dre)
 	{
 		$sql = "CALL sp_v1_get_ugel_by_dre('$dre')";

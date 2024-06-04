@@ -81,4 +81,111 @@ const dre = () => ({
             sw_alert().error(error);
         });
     },
+
+    get_dre_programdas: (id) => {
+
+        let params = { action: "get-dre-programdas", id: id };
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+
+            for (let i = 0; i < data.length; i++) {
+
+                html = data[i].cal_regiones
+
+            }
+
+            $('#dre-participantes-list').html(html)
+
+        }).fail(error => {
+            
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+
+    },
+
+    get_ugel_programadas: (id) => {
+
+        let params = { action: "get-ugel-programdas", id: id };
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+
+            for (let i = 0; i < data.length; i++) {
+
+                html = data[i].cal_ugel
+                
+            }
+
+            $('#ugel-participantes-list').html(html)
+
+        }).fail(error => {
+            
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+
+    },
+
+    get_cargo_programadas: (id) => {
+
+        let params = { action: "get-cargo-programdas", id: id };
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+
+            for (let i = 0; i < data.length; i++) {
+
+                html = data[i].cal_participantes
+                
+            }
+
+            $('#cargo-participantes-list').html(html)
+
+        }).fail(error => {
+            
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+
+    },
+
+    get_info_calendar: (id) => {
+
+        let params = { action: "get-info-calendar", id: id };
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+            let dre, ugel, participantes
+
+            for (let i = 0; i < data.length; i++) {
+
+                nro_participantes = `<i class="fas fa-users"></i> (${data[i].cal_nro_participantes}) Participantes`
+                dre               = data[i].cal_regiones
+                ugel              = data[i].cal_ugel
+                participantes     = data[i].cal_participantes
+                
+            }
+
+            $('#nro-participantes-programados').html(nro_participantes)
+            $('#dre-participantes-list').html(dre)
+            $('#ugel-participantes-list').html(ugel)
+            $('#cargo-participantes-list').html(participantes)
+
+        }).fail(error => {
+            
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+
+    }
 });

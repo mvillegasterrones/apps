@@ -4,6 +4,26 @@ require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-info-calendar':
+        $id = $_POST['id'];
+        $ejecutar = $instancia->get_info_calendar($id);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-cargo-programdas':
+        $id = $_POST['id'];
+        $ejecutar = $instancia->get_info_calendar($id);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-ugel-programdas':
+        $id = $_POST['id'];
+        $ejecutar = $instancia->get_info_calendar($id);
+        echo json_encode($ejecutar);
+        break;
+    case 'get-dre-programdas':
+        $id = $_POST['id'];
+        $ejecutar = $instancia->get_info_calendar($id);
+        echo json_encode($ejecutar);
+        break;
     case 'get-ugel-by-dre':
         $dre = $_POST['dre'];
         $ejecutar = $instancia->get_ugel_by_dre($dre);

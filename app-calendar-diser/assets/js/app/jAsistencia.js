@@ -401,6 +401,10 @@ const asistencia = () => ({
     },
 
     init_reports: (id) => {
+        //dre().get_dre_programdas(id);
+        //dre().get_ugel_programadas(id);
+        //dre().get_cargo_programadas(id);
+        dre().get_info_calendar(id);
         asistencia().get_reporte(id);
         asistencia().get_reporte_chart_region(id);
         asistencia().get_reporte_chart_cargo(id);

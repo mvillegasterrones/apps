@@ -255,6 +255,7 @@ const sys_calendar = () => ({
                 let cN = data[i].classname;
                 let img, cls;
                 let link_asistencia = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].title}&fi=${fi}&fe=${fe}`;
+                let link_rep_asistencia = `./reporte-asistencia.php?id=${data[i].id}&denominacion=${data[i].title}&fi=${fi}&fe=${fe}`;
 
                 switch (cN) {
                     case "bg-gradient-primary":
@@ -296,7 +297,7 @@ const sys_calendar = () => ({
                                 <a href="${link_asistencia}" target="_blank">
                                     <i class="fa-duotone fa-link"></i>
                                 </a>
-                                <a href="javascript:;">
+                                <a href="${link_rep_asistencia}" target="_blank">
                                     <i class="fa-regular fa-user-check"></i>
                                 </a>
                             </h6>
@@ -308,10 +309,14 @@ const sys_calendar = () => ({
                 // * Icono en reemplazo de imagen: <i class="ni ni-money-coins text-lg text-danger text-gradient opacity-10" aria-hidden="true"></i>
                 // * Formato de fecha y hora comun: <span class="text-sm">27 March 2021, at 12:30 PM</span>
             }
+            
             $("#events-recents").html(html);
+
         }).fail((xhr, status, error) => {
+
             console.error(xhr, status, error);
             sw_alert().error(error);
+
         });
     },
 });

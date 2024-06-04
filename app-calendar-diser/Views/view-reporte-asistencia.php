@@ -10,19 +10,34 @@
                 <div class="multisteps-form__content text-uppercase">
                     <div class="row mt-3">
                         <h5><?= $_REQUEST['denominacion'] ?></h5>
+                        <h6 id="nro-participantes-programados"><i class="fas fa-users"></i> Participantes</h6>
                         <span class="mb-2"><i class="fa-solid fa-calendar-days text-warning"></i>
                             <?= $_REQUEST['fi'] . ' - ' . $_REQUEST['fe'] ?></span>
-                        <label class="text-info text-muted" onclick="location.reload()"><a
-                                href="javascript:;"><i class="fa-regular fa-arrows-rotate"></i> Actualizar</a></label>
+                        <label class="text-info text-muted" onclick="location.reload()">
+                            <a href="javascript:;" style="color: yellow !important;">
+                                <i class="fa-regular fa-arrows-rotate"></i> Actualizar</a>
+                        </label>
+
+                        <div class="col-12 col-sm-4">
+                            <label for="">DRE PROGRAMADAS:</label>
+                            <p class="text-xxs" id="dre-participantes-list"></p>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label for="">UGEL PROGRAMADAS:</label>
+                            <p class="text-xxs" id="ugel-participantes-list"></p>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label for="">PARTICIPANTES PROGRAMADOS:</label>
+                            <p class="text-xxs" id="cargo-participantes-list"></p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </form>
     </div>
 </div>
 
-<div class="row mt-2">
+<div class="row mt-3">
     <div class="col-2"></div>
     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="card h-100">
@@ -30,7 +45,7 @@
                 <label id="cargando"><i class="fas fa-spinner fa-spin"></i> Cargando...</label>
                 <h6>Asistencia por DRE/Región</h6>
                 <div class="chart pt-3">
-                    <canvas id="chart-region" class="chart-canvas h-100"></canvas>
+                    <canvas id="chart-region" class="chart-canvas h-100" height="250"></canvas>
                 </div>
             </div>
         </div>
@@ -56,7 +71,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 text-center">
                         <div class="chart mt-2 text-white">
-                            <canvas id="chart-cargo" class="chart-canvas text-white" height="200"></canvas>
+                            <canvas id="chart-cargo" class="chart-canvas text-white" height="250"></canvas>
                         </div>
                         <!--<a class="btn btn-sm bg-gradient-secondary mt-4">See all referrals</a>-->
                     </div>
@@ -68,7 +83,7 @@
     </div>
 </div>
 
-<div class="row mt-2">
+<div class="row mt-2 mb-10">
     <div class="col-12 mt-2 col-lg-8 m-auto mt-1">
         <div class="card" id="card-table-reporte">
             <div class="table-responsive">
