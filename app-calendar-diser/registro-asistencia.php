@@ -64,8 +64,8 @@
 
 
 <script src="./assets/js/app/jGlobal-vars.js"></script>
-<script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
+<script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jAsistencia.js"></script>
 <script src="./assets/js/app/jDre-ugel.js"></script>
 <script src="./assets/js/app/jCalendar.js"></script>

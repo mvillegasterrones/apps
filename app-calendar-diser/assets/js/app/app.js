@@ -11,8 +11,10 @@ let chk = () => ({
 
 const pg_body = () => ({
     on_load: () => {
-        sys_calendar().show_recents()
         sys_calendar().get_events()
+        sys_calendar().show_recents()
+        sys_calendar().get_calendar_for_table()
+        //sw_alert().basic_success('Actualizado!')
     },
 
     on_show_hide: (hd, shw) => {

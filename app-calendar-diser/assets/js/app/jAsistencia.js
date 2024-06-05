@@ -1,5 +1,5 @@
-const asistencia_url = "./Controllers/cAsistencia.php";
-const reniec_url = "https://incared.com/api/apirest";
+//? const asistencia_url = "./Controllers/cAsistencia.php";
+//? const reniec_url = "https://incared.com/api/apirest";
 
 const reniec = () => ({
     search_dni: () => {
