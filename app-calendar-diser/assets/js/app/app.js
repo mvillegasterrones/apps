@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const rows = document.querySelectorAll("#tbl-report-calendar .selected-row");
+
+    rows.forEach(row => {
+        row.addEventListener("click", () => {
+            rows.forEach(r => r.classList.remove("highlight"));
+            row.classList.add("highlight");
+            sw_alert().ok('Color cambiado')
+        });
+    });
+});
+
+
 let chk = () => ({
     validar_chk: (section, txtMostrar) => {
         var seleccionados = [];
@@ -14,6 +27,7 @@ const pg_body = () => ({
         sys_calendar().get_events()
         sys_calendar().show_recents()
         sys_calendar().get_calendar_for_table()
+        console.log('Actualizado!')
         //sw_alert().basic_success('Actualizado!')
     },
 

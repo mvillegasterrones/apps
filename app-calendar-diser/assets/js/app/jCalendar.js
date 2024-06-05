@@ -106,14 +106,14 @@ const sys_calendar = () => ({
                 },
                 selectable: true,
                 editable: true,
-                selectHelper: true,
+                //* selectHelper: true,
                 //* initialDate: "2021-12-01",
                 weekends: false,
                 events: _events,
                 select: (event) => {
                     funciones().get_areas();
                     let fi = moment(event.start).format("YYYY-MM-DD 08:15");
-                    let fe = moment(event.end).format("YYYY-MM-DD 17:15");
+                    let fe = moment(event.start).format("YYYY-MM-DD 17:15");
                     $("#modal-event-add #cal_fecha_inicio").val(fi);
                     $("#modal-event-add #cal_fecha_fin").val(fe);
                     $("#modal-event-add").modal("show");
@@ -422,7 +422,7 @@ const sys_calendar = () => ({
                 }
 
                 html += `
-                <tr ${color_fila}>
+                <tr class="selected-row" ${color_fila}>
                     <td ${color_fila}>
                         <div class="d-flex px-2">
                             <div>

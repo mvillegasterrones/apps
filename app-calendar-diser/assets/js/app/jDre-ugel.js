@@ -163,17 +163,29 @@ const dre = () => ({
 
             let data = eval(response);
             let dre, ugel, participantes
+            let nP, nT, porc, porc2 = 0
+            let prgBar = ''
 
             for (let i = 0; i < data.length; i++) {
 
                 nro_participantes = `<i class="fas fa-users"></i> (${data[i].cal_nro_participantes}) Participantes`
+                nT                = parseInt(data[i].cal_nro_participantes)
+                nP                = parseInt(data[i].TotalRegistrados)
                 dre               = data[i].cal_regiones
                 ugel              = data[i].cal_ugel
                 participantes     = data[i].cal_participantes
+                //TotalRegistrados  = data[i].TotalRegistrados 
                 
             }
 
+            porc  = parseFloat((nP/nT) * 100).toFixed(2)
+            porc2 = parseInt((nP/nT) * 100)
+
+            prgBar = `<div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: ${porc2}%;"></div>`
+
             $('#nro-participantes-programados').html(nro_participantes)
+            $('#asistencia-porc').html(porc + `% (${nP +' de '+ nT})`)
+            $('#asistencia-porc-progress').html(prgBar)
             $('#dre-participantes-list').html(dre)
             $('#ugel-participantes-list').html(ugel)
             $('#cargo-participantes-list').html(participantes)

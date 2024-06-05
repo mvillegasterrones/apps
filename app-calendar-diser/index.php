@@ -40,6 +40,11 @@
     <script src='https://unpkg.com/@fullcalendar/daygrid@5.11.0/main.min.js'></script>-->
     <!--<script src="https://unpkg.com/@fullcalendar/interaction@5.11.0/main.min.js"></script>-->
     
+    <style>
+        .highlight {
+            background-color: aqua !important;
+        }
+    </style>
 </head>
 
 <body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
@@ -92,9 +97,9 @@
 
 <script src="./assets/js/app/jGlobal-vars.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>
+<script src="./assets/js/app/jCalendar.js"></script>
 <script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jUsuario.js"></script>
-<script src="./assets/js/app/jCalendar.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 

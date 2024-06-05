@@ -128,6 +128,7 @@ const asistencia = () => ({
         $.post(asistencia_url, params, (response) => {
             let data = eval(response);
             let html = "";
+            let nro  = 0
 
             for (let i = 0; i < data.length; i++) {
                 html += `
@@ -159,7 +160,7 @@ const asistencia = () => ({
                         <span class="text-secondary text-xxs">${data[i].dni + " - " + data[i].apellidos_nombres
                     }</span>
                     </td>
-                    <td class="align-middle text-center">
+                    <td class="align-middle">
                         <span class="text-secondary text-xxs">${data[i].correo
                     }</span>
                     </td>

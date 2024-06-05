@@ -10,7 +10,9 @@
             <div class="col-12 ms-auto">
                 <div class="d-flex mb-1">
 
-                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users text-success"></i> PLANNER DISER 
+                    <p><img src="./assets/img/logos/logo-minedu.png" style="width: 140px;height: 35px;" alt="logo-minedu"></p>
+                    &nbsp;&nbsp;&nbsp;
+                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users"></i> PLANNER DISER 
                         <label class="text-info text-muted" onclick="pg_body().on_load()" id="loader-index">
                             <a href="javascript:;" style="color: yellow !important;">
                                 <i class="fa-regular fa-arrows-rotate"></i> Actualizar</a>

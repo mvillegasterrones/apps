@@ -39,6 +39,27 @@
 
 <div class="row mt-3">
     <div class="col-2"></div>
+    <div class="col-lg-8 col-md-6 mb-4 mb-lg-0">
+        <div class="card h-100">
+            <div class="card-body p-3">
+                <!--<label for="">Total participantes</label>-->
+                <div class="d-flex mb-2">
+                    <span class="me-2 text-sm font-weight-bold text-capitalize">PORCENTAJE DE REGISTRO</span>
+                    <span class="ms-auto text-sm font-weight-bold" id="asistencia-porc">0%</span>
+                </div>
+                <div>
+                    <div class="progress" id="asistencia-porc-progress">
+                        <!--<div class="progress-bar bg-gradient-info w-80" role="progressbar" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100"></div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-2"></div>
     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="card h-100">
             <div class="card-body p-3" id="card-chart-region">
