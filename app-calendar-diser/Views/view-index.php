@@ -62,10 +62,10 @@
                     </div>
                 </div>
 
-                <span class="badge bg-gradient-primary mt-0">Teams</span>
-                <span class="badge bg-gradient-info mt-0">Zoom</span>
-                <span class="badge bg-gradient-success mt-0">Meet</span>
-                <span class="badge bg-gradient-warning mt-0">Presencial</span>
+                <span class="badge bg-gradient-primary mt-0"><i class="fas fa-circle"></i> Teams</span>
+                <span class="badge bg-gradient-info mt-0"><i class="fas fa-circle"></i> Zoom</span>
+                <span class="badge bg-gradient-success mt-0"><i class="fas fa-circle"></i> Meet</span>
+                <span class="badge bg-gradient-warning mt-0"><i class="fas fa-circle"></i> Presencial</span>
 
             </div>
 

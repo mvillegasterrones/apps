@@ -398,9 +398,9 @@ const sys_calendar = () => ({
                     case 1:
                         color_fila = ''
                         en_curso = `
+                        <i class="fa-solid fa-timer text-info"></i>
                         <span class="badge badge-dot me-4">
-                            <i class="bg-info"></i>
-                            <span class="text-xs">[Programada] ${nfi +' - '+ nfe}</span>
+                            <span class="text-xs"><b class="text-info">[Programada]</b> ${nfi +' - '+ nfe}</span>
                         </span>`
                         break;
                     case 2:
@@ -412,8 +412,8 @@ const sys_calendar = () => ({
                     case 3:
                         color_fila = ''
                         en_curso = `
+                        <i class="fa-regular fa-calendar-circle-exclamation text-warning"></i>
                         <span class="badge badge-dot me-4">
-                            <i class="bg-warning"></i>
                             <span class="text-xs" ${color_fila}><b class="text-danger">[Vencida]</b> ${nfi +' - '+ nfe}</span>
                         </span>`
                         break;
@@ -472,7 +472,6 @@ const sys_calendar = () => ({
                     </td>
                 </tr>
                 `
-
             }
 
             $('#tbl-report-calendar tbody').html(html)
