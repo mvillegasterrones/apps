@@ -9,7 +9,7 @@ const sys_calendar = () => ({
 
         // Crear objetos Date para las fechas de inicio y fin
         const start = new Date(startDate);
-        const end   = new Date(endDate);
+        const end = new Date(endDate);
 
         // Evaluar la fecha actual con respecto al rango
         if (currentDate < start) {
@@ -365,13 +365,14 @@ const sys_calendar = () => ({
                 let cN = data[i].cal_modalidad
                 let nT = parseInt(data[i].cal_nro_participantes)
                 let nA = parseInt(data[i].TotalRegistrados)
-                let porc       = parseFloat((nA/nT)*100).toFixed(2)
+                let porc = parseFloat((nA / nT) * 100).toFixed(2)
                 let evalFechas = sys_calendar().validate_fi_fe(fi, fe)
                 let nfi = moment(fi).format('DD/MM/YYYY HH:mm')
                 let nfe = moment(fe).format('DD/MM/YYYY HH:mm')
-                let link_asistencia     = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
+                let link_asistencia = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
                 let link_rep_asistencia = `./reporte-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
                 let en_curso, color_fila = ''
+                let icon_edit = '<i class="fa fa-pencil cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal-event-edit"></i>'
 
                 switch (cN) {
                     case "1. Virtual: Microsoft Teams": // "bg-gradient-primary":
@@ -400,21 +401,21 @@ const sys_calendar = () => ({
                         en_curso = `
                         <i class="fa-solid fa-timer text-info"></i>
                         <span class="badge badge-dot me-4">
-                            <span class="text-xs"><b class="text-info">[Programada]</b> ${nfi +' - '+ nfe}</span>
+                            <span class="text-xs"><b class="text-info">[Programada]</b> ${nfi + ' - ' + nfe}</span>
                         </span>`
                         break;
                     case 2:
                         color_fila = 'style="color: yellow !important; cursor: pointer;"'
                         en_curso = `
                         <span class="spinner-grow bg-success spinner-grow-sm text-xxs" role="status" aria-hidden="true"></span>
-                        <span class="sr-only">Loading...</span><span class="text-xs" ${color_fila}>[En curso] ${nfi +' - '+ nfe}</span>`
+                        <span class="sr-only">Loading...</span><span class="text-xs" ${color_fila}>[En curso] ${nfi + ' - ' + nfe}</span>`
                         break;
                     case 3:
                         color_fila = ''
                         en_curso = `
                         <i class="fa-regular fa-calendar-circle-exclamation text-warning"></i>
                         <span class="badge badge-dot me-4">
-                            <span class="text-xs" ${color_fila}><b class="text-danger">[Vencida]</b> ${nfi +' - '+ nfe}</span>
+                            <span class="text-xs" ${color_fila}><b class="text-danger">[Vencida]</b> ${nfi + ' - ' + nfe}</span>
                         </span>`
                         break;
                     default:
@@ -439,6 +440,7 @@ const sys_calendar = () => ({
                     </td>
                     <td>
                         <p class="text-xs font-weight-bold mb-0">
+                            ${icon_edit}
                             <a href="${data[i].cal_link_reunion}" target="_blank"> 
                                 <i class="fa-duotone fa-arrow-up-right-from-square"></i> 
                             </a>
@@ -455,7 +457,7 @@ const sys_calendar = () => ({
                     </td>
                     <td class="align-middle text-center">
                         <div class="d-flex align-items-center">
-                            <span class="me-2 text-xs">[${nA +' de '+ nT}] - ${porc}%</span>
+                            <span class="me-2 text-xs">[${nA + ' de ' + nT}] - ${porc}%</span>
                             <div>
                                 <div class="progress">
                                     <div class="progress-bar bg-info" role="progressbar"
@@ -479,4 +481,28 @@ const sys_calendar = () => ({
         })
 
     },
+
+    get_info_calendar: (id) => {
+        
+        let params = { action: 'get-info-calendar', id: id }
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+
+            for (let i = 0; i < data.length; i++) {
+
+                $('#form-event-edit #cal_nombre_programa').val(data[i].cal_nombre_programa)
+                $('#form-event-edit #cal_descripcion_programa').val(data[i].cal_descripcion_programa)
+                $('#form-event-edit #cal_link_reunion').val(data[i].cal_link_reunion)
+
+            }
+
+        }).fail(error => {
+            console.error(error);
+            sw_alert().error(error);
+        });
+
+    },
+
 });
