@@ -349,6 +349,30 @@ const sys_calendar = () => ({
         });
     },
 
+    get_info_calendar_edit: (id) => {
+        
+        let params = { action: 'get-info-calendar', id: id }
+
+        $.post(calendar_url, params, (response) => {
+
+            let data = eval(response);
+
+            for (let i = 0; i < data.length; i++) {
+
+                $('#form-event-edit #id').val(data[i].id)
+                $('#form-event-edit #cal_nombre_programa').val(data[i].cal_nombre_programa)
+                $('#form-event-edit #cal_descripcion_programa').val(data[i].cal_descripcion_programa)
+                $('#form-event-edit #cal_link_reunion').val(data[i].cal_link_reunion)
+
+            }
+
+        }).fail(error => {
+            console.error(error);
+            sw_alert().error(error);
+        });
+
+    },
+
     get_calendar_for_table: () => {
 
         let params = { action: 'get-calendar-for-table' }
@@ -372,7 +396,7 @@ const sys_calendar = () => ({
                 let link_asistencia = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
                 let link_rep_asistencia = `./reporte-asistencia.php?id=${data[i].id}&denominacion=${data[i].cal_nombre_programa}&fi=${fi}&fe=${fe}`;
                 let en_curso, color_fila = ''
-                let icon_edit = '<i class="fa fa-pencil cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal-event-edit"></i>'
+                let icon_edit = `<i class="fa fa-pencil cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal-event-edit" onclick="sys_calendar().get_info_calendar_edit(${data[i].id})"></i>`
 
                 switch (cN) {
                     case "1. Virtual: Microsoft Teams": // "bg-gradient-primary":
@@ -482,27 +506,6 @@ const sys_calendar = () => ({
 
     },
 
-    get_info_calendar: (id) => {
-        
-        let params = { action: 'get-info-calendar', id: id }
-
-        $.post(calendar_url, params, (response) => {
-
-            let data = eval(response);
-
-            for (let i = 0; i < data.length; i++) {
-
-                $('#form-event-edit #cal_nombre_programa').val(data[i].cal_nombre_programa)
-                $('#form-event-edit #cal_descripcion_programa').val(data[i].cal_descripcion_programa)
-                $('#form-event-edit #cal_link_reunion').val(data[i].cal_link_reunion)
-
-            }
-
-        }).fail(error => {
-            console.error(error);
-            sw_alert().error(error);
-        });
-
-    },
+    
 
 });

@@ -1,4 +1,28 @@
 <?php
+
+$tipo_evento = array(
+    '1. Curso',
+    '2. Taller de Asistencia Técnica',
+    '3. Taller de Fortalecimiento de Capacidades',
+    '4. Programa de Actualización',
+);
+
+$modalidad = array(
+    '1. Virtual: Microsoft Teams',
+    '2. Virtual: Zoom',
+    '3. Virtual: Google Meet',
+    '4. Presencial',
+    '5. Otro',
+);
+
+$cobertura = array(
+    '1. Nacional',
+    '2. Regional',
+    '3. UGEL',
+    '4. IE',
+    '5. MINEDU',
+);
+
 $dre = array(
     '* No Aplica',
     '* Todas',

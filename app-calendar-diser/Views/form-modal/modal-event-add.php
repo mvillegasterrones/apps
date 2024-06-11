@@ -28,10 +28,17 @@
                                     <select class="form-control form-control-sm" name="cal_tipo_programa"
                                         id="cal_tipo_programa" required>
                                         <option value="" selected disabled>.: Seleccione :.</option>
-                                        <option>1. Curso</option>
+                                        <?php
+                                        $nTipo = 0;
+                                        do {
+                                            echo '<option>' . htmlspecialchars($tipo_evento[$nTipo]) . '</option>';
+                                            $nTipo++;
+                                        } while ($nTipo <= count($tipo_evento)-1);
+                                        ?>
+                                        <!--<option>1. Curso</option>
                                         <option>2. Taller de Asistencia Técnica</option>
                                         <option>3. Taller de Fortalecimiento de Capacidades</option>
-                                        <option>4. Programa de Actualización</option>
+                                        <option>4. Programa de Actualización</option>-->
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6 mt-3">
@@ -57,10 +64,17 @@
                                     <select class="form-control form-control-sm" name="cal_modalidad" id="cal_modalidad"
                                         required>
                                         <option value="" selected disabled>.: Seleccione :.</option>
-                                        <option>1. Virtual: Microsoft Teams</option>
+                                        <?php
+                                        $nModalidad = 0;
+                                        do {
+                                            echo '<option>'. htmlspecialchars($modalidad[$nModalidad]) . '</option>';
+                                            $nModalidad++;
+                                        } while ($nModalidad <= count($modalidad) - 1);
+                                        ?>
+                                        <!--<option>1. Virtual: Microsoft Teams</option>
                                         <option>2. Virtual: Zoom</option>
                                         <option>3. Virtual: Google Meet</option>
-                                        <option>4. Presencial</option>
+                                        <option>4. Presencial</option>-->
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6 mt-3">
@@ -68,11 +82,18 @@
                                     <select class="form-control form-control-sm" name="cal_cobertura" id="cal_cobertura"
                                         required>
                                         <option value="" selected disabled>.: Seleccione :.</option>
-                                        <option>1. Nacional</option>
+                                        <?php
+                                        $nCobertura = 0;
+                                        do {
+                                            echo '<option>'. htmlspecialchars($cobertura[$nCobertura]) . '</option>';
+                                            $nCobertura++;
+                                        } while ($nCobertura <= count($cobertura)-1);
+                                        ?>
+                                        <!--<option>1. Nacional</option>
                                         <option>2. Regional</option>
                                         <option>3. UGEL</option>
                                         <option>4. IE</option>
-                                        <option>5. MINEDU</option>
+                                        <option>5. MINEDU</option>-->
                                     </select>
                                 </div>
 
