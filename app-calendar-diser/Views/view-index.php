@@ -17,6 +17,8 @@
                             <a href="javascript:;" style="color: yellow !important;">
                                 <i class="fa-regular fa-arrows-rotate"></i> Actualizar</a>
                         </label>
+                        <label class="" id="main-loader"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Cargando PLANNER...</label>
                     </h5>
 
                     <!--<div class="alert alert-primary pt-0 pb-0">
@@ -30,6 +32,34 @@
                         <!-- // TODO: Lista de cons del equipo -->
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="avatar-group">
+                                <?php
+                                $nEquipo = 0;
+                                do {
+                                ?>
+                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
+                                    title="<?= htmlspecialchars($equipo[$nEquipo]) ?>">
+                                    <img alt="Image placeholder" src="./assets/img/logos/usuario.png" class />
+                                </a>
+                                <?php
+                                    $nEquipo++;
+                                } while ($nEquipo <= count($equipo) - 1);
+                                ?>
+                                <!--<a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
+                                    title="Jessica Rowland">
+                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
+                                </a>
+                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
+                                    title="Jessica Rowland">
+                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
+                                </a>
+                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
+                                    title="Jessica Rowland">
+                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
+                                </a>
+                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
+                                    title="Jessica Rowland">
+                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
+                                </a>
                                 <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
                                     title="Jessica Rowland">
                                     <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
@@ -49,7 +79,7 @@
                                 <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
                                     title="Ronald Miller">
                                     <img alt="Image placeholder" src="./assets/img/team-5.jpg" class="rounded-circle" />
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                         <hr class="vertical light mt-0" />
@@ -60,16 +90,21 @@
                             <i class="fa fa-plus"></i>
                         </button>
                     </div>
+                    
                 </div>
 
                 <span class="badge bg-gradient-primary mt-0"><i class="fas fa-circle"></i> Teams</span>
                 <span class="badge bg-gradient-info mt-0"><i class="fas fa-circle"></i> Zoom</span>
                 <span class="badge bg-gradient-success mt-0"><i class="fas fa-circle"></i> Meet</span>
                 <span class="badge bg-gradient-warning mt-0"><i class="fas fa-circle"></i> Presencial</span>
+                <div class="col-12 mt-2">
+                    Hola!
+                </div>
 
             </div>
 
             <div class="col-xl-9">
+
                 <div class="card card-calendar">
                     <div class="card-body p-3">
                         <div class="calendar" data-bs-toggle="calendar" id="calendar"></div>
@@ -110,7 +145,7 @@
                     <div class="col-xl-12 col-md-6 mt-xl-0 mt-4 ms-auto">
                         <div class="card h-100">
                             <div class="card-header p-3 pb-0">
-                                <h6 class="mb-0">Próximos eventos</h6>
+                                <h6 class="mb-0">Próximas reuniones</h6>
                             </div>
                             <div class="card-body border-radius-lg p-3" id="events-recents">
 
@@ -125,9 +160,6 @@
                     </div>
                 </div>
             </div>
-
-
-
 
         </div>
         <footer class="footer pt-3">

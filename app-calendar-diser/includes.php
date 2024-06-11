@@ -1,5 +1,13 @@
 <?php
 
+$equipo = array(
+    'Manuel Villegas',
+    'Sonia Rodriguez',
+    'Yesenia Alba',
+    'Gladys Ahumada',
+    'Evelyn Pablo',
+);
+
 $tipo_evento = array(
     '1. Curso',
     '2. Taller de Asistencia Técnica',

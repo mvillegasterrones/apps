@@ -24,10 +24,12 @@ let chk = () => ({
 
 const pg_body = () => ({
     on_load: () => {
+        $('#main-loader').show()
         sys_calendar().get_events()
         sys_calendar().show_recents()
         sys_calendar().get_calendar_for_table()
         console.log('Actualizado!')
+        $('#main-loader').hide()
         //sw_alert().basic_success('Actualizado!')
     },
 
