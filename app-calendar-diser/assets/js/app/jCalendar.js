@@ -262,13 +262,57 @@ const sys_calendar = () => ({
                 if (result.isConfirmed) {
                     sys_calendar().send();
                 } else if (result.isDenied) {
-                    console.log("INST-01: Cancelado");
+                    console.log("EVENTO: Cancelado");
                 }
             });
         } else {
             msje = "Por favor, complete todos los campos del formulario.";
             sw_alert().warning(msje);
         }
+    },
+
+    update: () => {
+        let form = $("#form-event-edit").serialize();
+
+        $.post(calendar_url, form, (response) => {
+            if (response) {
+                pg_body().on_load();
+                sw_alert().basic_success(`Registro actualizado!`);
+            } else {
+                sw_alert().error(
+                    `Ocurrió un problema al actualizar la información - ${response}`
+                );
+            }
+        }).fail((xhr, status, error) => {
+            console.error(xhr, status, error);
+            sw_alert().error(error);
+        });
+    },
+
+    edit: () => {
+
+        let validar_form = funciones().validar_form_required("form-event-edit");
+        
+        if (validar_form) {
+            Swal.fire({
+                icon: "question",
+                title: "Actualizar información?",
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: "Actualizar",
+                denyButtonText: `Cancelar`,
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    sys_calendar().update();
+                } else if (result.isDenied) {
+                    console.log("ACTUALIZACION: Cancelado");
+                }
+            });
+        } else {
+            msje = "Por favor, complete todos los campos del formulario.";
+            sw_alert().warning(msje);
+        }
+
     },
 
     show_recents: () => {
@@ -360,6 +404,8 @@ const sys_calendar = () => ({
             for (let i = 0; i < data.length; i++) {
 
                 $('#form-event-edit #id').val(data[i].id)
+                $('#form-event-edit #cal_fecha_inicio').val(data[i].cal_fecha_inicio)
+                $('#form-event-edit #cal_fecha_fin').val(data[i].cal_fecha_fin)
                 $('#form-event-edit #cal_nombre_programa').val(data[i].cal_nombre_programa)
                 $('#form-event-edit #cal_descripcion_programa').val(data[i].cal_descripcion_programa)
                 $('#form-event-edit #cal_link_reunion').val(data[i].cal_link_reunion)

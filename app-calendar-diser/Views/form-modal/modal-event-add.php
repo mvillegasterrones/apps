@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="modal-event-add" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignTitle"
+<div class="modal fade" id="modal-event-add" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">

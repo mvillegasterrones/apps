@@ -9,6 +9,20 @@ class mCalendar
 		$this->conexion->conectar();
 	}
 
+	function update_event_modal($id, $action, $cal_fecha_inicio, $cal_fecha_fin, $cal_nombre_programa, $cal_descripcion_programa, $cal_link_reunion)
+	{
+		$sql = "CALL sp_v1_update_calendar_modal('$id', '$action', '$cal_fecha_inicio', '$cal_fecha_fin', '$cal_nombre_programa', '$cal_descripcion_programa', '$cal_link_reunion')";
+		$this->conexion->conexion->set_charset('utf8');
+		if ($this->conexion->conexion->query($sql)) {
+			$this->conexion->cerrar();
+			return true;
+		} else {
+			$this->conexion->cerrar();
+			return false;
+		}
+
+	}
+
 	function get_calendar_for_table()
 	{
 		$sql = "CALL sp_v1_get_calendar_for_table()";

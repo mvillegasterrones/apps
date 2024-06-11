@@ -2,10 +2,21 @@
 session_start();
 require_once '../Models/mCalendar.php';
 $instancia = new mCalendar();
-$accion = $_POST['action'];
+$accion    = $_POST['action'];
 switch ($accion) {
+    case 'update-event-modal':
+        $id                       = $_POST['id'];
+        $action                   = $_POST['action'];
+        $cal_fecha_inicio         = $_POST['cal_fecha_inicio'];
+        $cal_fecha_fin            = $_POST['cal_fecha_fin'];
+        $cal_nombre_programa      = $_POST['cal_nombre_programa'];
+        $cal_descripcion_programa = $_POST['cal_descripcion_programa'];
+        $cal_link_reunion         = $_POST['cal_link_reunion'];
+        
+        $ejecutar = $instancia->update_event_modal($id, $action, $cal_fecha_inicio, $cal_fecha_fin, $cal_nombre_programa, $cal_descripcion_programa, $cal_link_reunion);
+        echo json_encode($ejecutar);
+        break;
     case 'get-calendar-for-table':
-        //$id = $_POST['id'];
         $ejecutar = $instancia->get_calendar_for_table();
         echo json_encode($ejecutar);
         break;
