@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const rows = document.querySelectorAll("#tbl-report-calendar .selected-row");
 
     rows.forEach(row => {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sw_alert().ok('Color cambiado')
         });
     });
-});
+});*/
 
 
 let chk = () => ({
@@ -24,12 +24,15 @@ let chk = () => ({
 
 const pg_body = () => ({
     on_load: () => {
-        $('#main-loader').show()
+        $('#main-loader').removeClass('d-none')
+        $('#main-loader').addClass('d-block')
         sys_calendar().get_events()
         sys_calendar().show_recents()
         sys_calendar().get_calendar_for_table()
         console.log('Actualizado!')
-        $('#main-loader').hide()
+        
+        $('#main-loader').removeClass('d-block')
+        $('#main-loader').addClass('d-none')
         //sw_alert().basic_success('Actualizado!')
     },
 

@@ -1,23 +1,25 @@
 <div class="min-height-300 bg-primary position-absolute w-100"></div>
-<?php //include './views/sections/slider.php' 
+<?php //include './views/sections/slider.php'
 ?>
 
 <main class="main-content position-relative border-radius-lg">
-    <?php include './Views/sections/nav-bar.php' ?>
+    <?php include './Views/sections/nav-bar.php'?>
 
     <div class="container-fluid py-4">
         <div class="row mb-lg-7">
             <div class="col-12 ms-auto">
                 <div class="d-flex mb-1">
 
-                    <p><img src="./assets/img/logos/logo-minedu.png" style="width: 140px;height: 35px;" alt="logo-minedu"></p>
+                    <p><img src="./assets/img/logos/logo-minedu.png" style="width: 140px;height: 35px;"
+                            alt="logo-minedu"></p>
                     &nbsp;&nbsp;&nbsp;
-                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users"></i> PLANNER DISER 
-                        <label class="text-info text-muted" onclick="pg_body().on_load()" id="loader-index">
+                    <h5 class="py-1"><i class="fa-duotone fa-calendar-users"></i> PLANNER DISER
+                        <label class="text-info text-muted" onclick="pg_body().on_load();sw_alert().basic_success('Aactualizado!')" id="loader-index">
                             <a href="javascript:;" style="color: yellow !important;">
                                 <i class="fa-regular fa-arrows-rotate"></i> Actualizar</a>
                         </label>
-                        <label class="" id="main-loader"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <label id="main-loader"><span class="spinner-border spinner-border-sm" role="status"
+                                aria-hidden="true"></span>
                             Cargando PLANNER...</label>
                     </h5>
 
@@ -33,73 +35,61 @@
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="avatar-group">
                                 <?php
-                                $nEquipo = 0;
-                                do {
-                                ?>
+$nEquipo = 0;
+do {
+    ?>
                                 <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="<?= htmlspecialchars($equipo[$nEquipo]) ?>">
+                                    title="<?=htmlspecialchars($equipo[$nEquipo])?>">
                                     <img alt="Image placeholder" src="./assets/img/logos/usuario.png" class />
                                 </a>
                                 <?php
-                                    $nEquipo++;
-                                } while ($nEquipo <= count($equipo) - 1);
-                                ?>
-                                <!--<a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Jessica Rowland">
-                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Jessica Rowland">
-                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Jessica Rowland">
-                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Jessica Rowland">
-                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Jessica Rowland">
-                                    <img alt="Image placeholder" src="./assets/img/team-1.jpg" class />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Audrey Love">
-                                    <img alt="Image placeholder" src="./assets/img/team-2.jpg" class="rounded-circle" />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Michael Lewis">
-                                    <img alt="Image placeholder" src="./assets/img/team-3.jpg" class="rounded-circle" />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Lucia Linda">
-                                    <img alt="Image placeholder" src="./assets/img/team-4.jpg" class="rounded-circle" />
-                                </a>
-                                <a href="javascript:;" class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip"
-                                    title="Ronald Miller">
-                                    <img alt="Image placeholder" src="./assets/img/team-5.jpg" class="rounded-circle" />
-                                </a>-->
+$nEquipo++;
+} while ($nEquipo <= count($equipo) - 1);
+?>
                             </div>
                         </div>
-                        <hr class="vertical light mt-0" />
+                        <!--<hr class="vertical light mt-0" />-->
                     </div>
-                    <div class="ps-4">
+                    <!--<div class="ps-4">
                         <button class="btn btn-outline-white btn-icon-only mb-0 mt-3 py-0" data-bs-toggle="modal"
                             data-target="#new-board-modal">
                             <i class="fa fa-plus"></i>
                         </button>
-                    </div>
-                    
+                    </div>-->
+
                 </div>
 
                 <span class="badge bg-gradient-primary mt-0"><i class="fas fa-circle"></i> Teams</span>
                 <span class="badge bg-gradient-info mt-0"><i class="fas fa-circle"></i> Zoom</span>
                 <span class="badge bg-gradient-success mt-0"><i class="fas fa-circle"></i> Meet</span>
-                <span class="badge bg-gradient-warning mt-0"><i class="fas fa-circle"></i> Presencial</span>
-                <div class="col-12 mt-2">
-                    Hola!
-                </div>
+                <span class="badge bg-gradient-warning mt-0 mb-2"><i class="fas fa-circle"></i> Presencial</span>
+
+                <!--<div class="row mt-2">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="card bg-primary">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="numbers">
+                                            <p
+                                                class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">
+                                                Today's Trip</p>
+                                            <h5 class="text-white font-weight-bolder mb-0">
+                                                145 Km
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 text-end">
+                                        <div class="icon icon-shape bg-white shadow text-center rounded-circle">
+                                            <i class="ni ni-money-coins text-dark text-lg opacity-10"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
 
             </div>
 
@@ -135,8 +125,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
             </div>
 

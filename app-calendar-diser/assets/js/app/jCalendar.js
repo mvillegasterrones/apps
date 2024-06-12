@@ -292,7 +292,7 @@ const sys_calendar = () => ({
     edit: () => {
 
         let validar_form = funciones().validar_form_required("form-event-edit");
-        
+
         if (validar_form) {
             Swal.fire({
                 icon: "question",
@@ -325,6 +325,7 @@ const sys_calendar = () => ({
             for (let i = 0; i < data.length; i++) {
                 let fi = moment(data[i].start).format("DD MMMM YYYY HH:mm");
                 let fe = moment(data[i].end).format("DD MMMM YYYY HH:mm");
+                let evalFechas = sys_calendar().validate_fi_fe(data[i].start, data[i].end)
                 let cN = data[i].classname;
                 let img, cls;
                 let link_asistencia = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].title}&fi=${fi}&fe=${fe}`;
@@ -350,6 +351,34 @@ const sys_calendar = () => ({
                     default:
                         break;
                 }
+
+                switch (evalFechas) {
+                    case 1:
+                        color_fila = ''
+                        en_curso = `
+                        <i class="fa-solid fa-timer text-info"></i>
+                        <span class="badge badge-dot me-4">
+                            <span class="text-xs"><b class="text-info">[Programada]</b></span>
+                        </span>`
+                        break;
+                    case 2:
+                        color_fila = 'style="color: yellow !important; cursor: pointer;"'
+                        en_curso = `
+                        <span class="spinner-grow bg-success spinner-grow-sm text-xxs" role="status" aria-hidden="true"></span>
+                        <span class="sr-only">Loading...</span><span class="text-xs" ${color_fila}>[En curso]</span>`
+                        break;
+                    case 3:
+                        color_fila = ''
+                        en_curso = `
+                        <i class="fa-regular fa-calendar-circle-exclamation text-danger"></i>
+                        <span class="badge badge-dot me-4">
+                            <span class="text-xs" ${color_fila}><b class="text-danger">[Vencida]</b></span>
+                        </span>`
+                        break;
+                    default:
+                        break;
+                }
+
                 html += `
                 <div class="d-flex mt-2">
                     <div>
@@ -360,8 +389,8 @@ const sys_calendar = () => ({
                     <div class="ms-3">
                         <div class="numbers">
                             
-                            <h6 class="mb-1 text-dark text-sm">
-                                <i class="fa-solid fa-check-circle ${cls}"></i> ${data[i].title
+                            <h6 class="mb-1 text-dark text-sm" ${color_fila}>
+                                ${en_curso} ${data[i].title
                     } 
                                 <a href="${data[i].linkreunion
                     }" target="_blank"> 
@@ -394,7 +423,7 @@ const sys_calendar = () => ({
     },
 
     get_info_calendar_edit: (id) => {
-        
+
         let params = { action: 'get-info-calendar', id: id }
 
         $.post(calendar_url, params, (response) => {
@@ -551,7 +580,5 @@ const sys_calendar = () => ({
         })
 
     },
-
-    
 
 });
