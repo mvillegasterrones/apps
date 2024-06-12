@@ -1,4 +1,26 @@
 <?php
+
+$pregunta_06 = array(
+    'Dotación insuficiente de alimentos para el número de estudiantes',
+    'Dotación no llegó oportunamente',
+    'Poca variedad de los productos',
+    'Poca pertinencia cultural de los productos',
+    'No hemos recibido asistencia/capacitación del monitor local del PNAE Qali Warma',
+    'Ninguno',
+    'Otro (especifique)',
+);
+
+$pregunta_13 = array(
+    'El botiquín se encuentra en un espacio adecuado (seguro, limpio, seco y lejos de la luz del sol) para su conservación',
+    'El personal ha sido capacitado para el uso del botiquín y la atención en primeros auxilio',
+    'La IE cuenta con formatos y acuerdos para derivar al establecimiento de salud a estudiantes en caso se requiera',
+    'La IE tiene un listado de materiales e insumos del botiquín actualizado mensualmente',
+    'La IE cuenta con un libro para el registro de las atenciones en primeros auxilios',
+    'La IE cuenta con una ficha por cada estudiantes sobre enfermedades, alergias a medicamentos, entre otros',
+    'No se cuenta con botiquín',
+    'Otro (especifique)',
+);
+
 $section_1 = array(
     'Proyecto Educativo Institucional - PEI',
     'Reglamento Interno - RI',
@@ -8,7 +30,7 @@ $section_1 = array(
     'Plan de gestión del bienestar del MSE',
     'Plan del TOECE de la IE',
     'Plan de TOECE del Aula',
-    'Ninguno ',
+    'Ninguno',
 );
 
 $section_2 = array(
@@ -35,7 +57,7 @@ $section_3 = array(
     'Orientación vocacional',
     'Proyecto de vida',
     'Ninguno',
-    'Otro (especifique)'
+    'Otro (especifique)',
 );
 
 $section_4 = array(
@@ -43,7 +65,7 @@ $section_4 = array(
     'Se reportó la alerta al director(a)/ coordinador(a) residencia o de núcleo educativo',
     'Se remitió un oficio al Jefe de la unidad territorial del PNAE Qali Warma de la región',
     'Se remitió un oficio a la UGEL',
-    'Otro (Especifique)'
+    'Otro (especifique)',
 );
 
 $section_5 = array(
@@ -57,7 +79,7 @@ $section_5 = array(
     'Evaluación en salud mental',
     'Información sobre Salud Sexual y Reproductiva',
     'Ninguna',
-    'Otros (Especifique)',
+    'Otros (especifique)',
 );
 
 $tbl_p15 = array(
@@ -98,7 +120,7 @@ $section_6_p19 = array(
     'DEMUNA ',
     'Servicio de Atención Rural o CEM',
     'Ninguno',
-    'Otro'
+    'Otro (especifique)',
 );
 
 $section_7_p20 = array(
@@ -110,8 +132,9 @@ $section_7_p20 = array(
     'Uso de mosquiteros en zonas cálidas',
     'Charlas de estilos de vida saludable para estudiantes',
     'Ninguna',
-    'Otros (especifique)'
+    'Otros (especifique)',
 );
+
 $status_no_corresponde = ($_SESSION['tipo_mse'] === 'ST') ? 'disabled' : '';
 
 $section_8_p21 = array(
@@ -171,11 +194,11 @@ $section_8_p21 = array(
                                         </button>
                                         <button class="multisteps-form__progress-btn" type="button"
                                             title="ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 ">
-                                            Hábitos
+                                            Espacios
                                         </button>
                                     </div>
-                                    <code><i class="fa-regular fa-circle-exclamation"></i> 
-                                    TODOS LOS CAMPOS SON OBLIGATORIOS</code>
+                                    <code><i class="fa-regular fa-circle-exclamation"></i>
+                                        TODOS LOS CAMPOS SON OBLIGATORIOS</code>
                                 </T>
                             </div>
                         </div>
@@ -313,25 +336,24 @@ $section_8_p21 = array(
                                                 <b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $i = 0;
-                                            do {
-                                                ?>
+$i = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox" id="opc-1-<?= $i + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_1[$i]) ?>"
-                                                        onclick="chk().validar_chk('section-one-one', 'txt_1_multiple')"
-                                                        required>
-                                                    <label class="custom-control-label"
-                                                        for="opc-1-<?= $i + 1 ?>"><?= htmlspecialchars($section_1[$i]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-1-<?=$i + 1?>"
+                                                    value="<?=htmlspecialchars($section_1[$i])?>"
+                                                    onclick="chk().validar_chk('section-one-one', 'txt_1_multiple')"
+                                                    required>
+                                                <label class="custom-control-label"
+                                                    for="opc-1-<?=$i + 1?>"><?=htmlspecialchars($section_1[$i])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $i++;
-
-                                            } while ($i <= count($section_1) - 1);
-                                            ?>
+    $i++;
+} while ($i <= count($section_1) - 1);
+?>
 
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_1_multiple" name="txt_1_multiple" readonly required>
@@ -347,25 +369,23 @@ $section_8_p21 = array(
                                                 alternativas <b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $i2 = 0;
-                                            do {
-                                                ?>
+$i2 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="opc-2-<?= $i2 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_2[$i2]) ?>"
-                                                        onclick="chk().validar_chk('section-one-two', 'txt_2_multiple')">
-                                                    <label class="custom-control-label"
-                                                        for="opc-2-<?= $i2 + 1 ?>"><?= htmlspecialchars($section_2[$i2]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-2-<?=$i2 + 1?>"
+                                                    value="<?=htmlspecialchars($section_2[$i2])?>"
+                                                    onclick="chk().validar_chk('section-one-two', 'txt_2_multiple')">
+                                                <label class="custom-control-label"
+                                                    for="opc-2-<?=$i2 + 1?>"><?=htmlspecialchars($section_2[$i2])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $i2++;
-
-                                            } while ($i2 <= count($section_2) - 1);
-                                            ?>
+    $i2++;
+} while ($i2 <= count($section_2) - 1);
+?>
 
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_2_multiple" name="txt_2_multiple" readonly required>
@@ -381,25 +401,23 @@ $section_8_p21 = array(
                                                 fecha? Puede marcar varias alternativas<b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $i3 = 0;
-                                            do {
-                                                ?>
+$i3 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="opc-3-<?= $i3 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_3[$i3]) ?>"
-                                                        onclick="chk().validar_chk('section-one-three', 'txt_3_multiple')">
-                                                    <label class="custom-control-label"
-                                                        for="opc-3-<?= $i3 + 1 ?>"><?= htmlspecialchars($section_3[$i3]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-3-<?=$i3 + 1?>"
+                                                    value="<?=htmlspecialchars($section_3[$i3])?>"
+                                                    onclick="chk().validar_chk('section-one-three', 'txt_3_multiple')">
+                                                <label class="custom-control-label"
+                                                    for="opc-3-<?=$i3 + 1?>"><?=htmlspecialchars($section_3[$i3])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $i3++;
-
-                                            } while ($i3 <= count($section_3) - 1);
-                                            ?>
+    $i3++;
+} while ($i3 <= count($section_3) - 1);
+?>
 
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_3_multiple" name="txt_3_multiple" readonly required>
@@ -451,30 +469,31 @@ $section_8_p21 = array(
                                         <!-- // TODO: SECTION ONE FOUR - P5 -->
                                         <div class="row mt-3 h-100" id="section-one-four">
 
-                                            <label>5. Si marcó la opción <b>“NO”</b> en la pregunta anterior, Responder: ¿Se han
-                                                realizado gestiones para reportar y/o comunicar la alerta respecto a la dotación
-                                                incompleta?, de lo contrario marcar <b>"No Aplica"</b> <b>(Opción múltiple)</b></label>
+                                            <label>5. Si marcó la opción <b>“NO”</b> en la pregunta anterior, Responder:
+                                                ¿Se han
+                                                realizado gestiones para reportar y/o comunicar la alerta respecto a la
+                                                dotación
+                                                incompleta?, de lo contrario marcar <b>"No Aplica"</b> <b>(Opción
+                                                    múltiple)</b></label>
 
                                             <?php
-                                            $i4 = 0;
-                                            do {
-                                                ?>
+$i4 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="opc-4-<?= $i4 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_4[$i4]) ?>"
-                                                        onclick="chk().validar_chk('section-one-four', 'txt_5_multiple')">
-                                                    <label class="custom-control-label"
-                                                        for="opc-4-<?= $i4 + 1 ?>"><?= htmlspecialchars($section_4[$i4]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-4-<?=$i4 + 1?>"
+                                                    value="<?=htmlspecialchars($section_4[$i4])?>"
+                                                    onclick="chk().validar_chk('section-one-four', 'txt_5_multiple')">
+                                                <label class="custom-control-label"
+                                                    for="opc-4-<?=$i4 + 1?>"><?=htmlspecialchars($section_4[$i4])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $i4++;
-
-                                            } while ($i4 <= count($section_4) - 1);
-                                            ?>
+    $i4++;
+} while ($i4 <= count($section_4) - 1);
+?>
 
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_5_multiple" name="txt_5_multiple" readonly required>
@@ -483,27 +502,34 @@ $section_8_p21 = array(
                                         </div>
 
                                         <!-- // TODO: Pregunta 6 -->
-                                        <div class="row mt-3 h-100" id="">
+                                        <div class="row mt-3 h-100" id="prg-06">
 
                                             <label>6. ¿Qué inconvenientes se han evidenciado en la IE durante el proceso
                                                 de dotación, distribución y/o preparación de alimentos? </label>
+                                            <?php
+$prg_6 = 0;
+do {
+    ?>
 
-                                            <select type="text" class="multisteps-form__input form-control" id="txt_6"
-                                                name="txt_6" onchange="funciones().activate_other('txt_6', 'txt_6_otro')" required>
-                                                <option value="" selected disabled>.: Selecciones una alternativa :.
-                                                </option>
-                                                <option>Dotación insuficiente de alimentos para el número de estudiantes
-                                                </option>
-                                                <option>Dotación no llegó oportunamente</option>
-                                                <option>Poca variedad de los productos</option>
-                                                <option>Poca pertinencia cultural de los productos</option>
-                                                <option>No hemos recibido asistencia/capacitación del monitor local del
-                                                    PNAE Qali Warma</option>
-                                                <option>Ninguno</option>
-                                                <option>Otro</option>
-                                            </select>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox"
+                                                    id="opc-06-<?=$prg_6 + 1?>"
+                                                    value="<?=htmlspecialchars($pregunta_06[$prg_6])?>"
+                                                    onclick="chk().validar_chk('prg-06', 'txt_6')" required>
+                                                <label class="custom-control-label"
+                                                    for="opc-06-<?=$prg_6 + 1?>"><?=htmlspecialchars($pregunta_06[$prg_6])?></label>
+                                            </div>
+
+                                            <?php
+$prg_6++;
+} while ($prg_6 <= count($pregunta_06) - 1);
+?>
+
+                                            <input type="hidden" class="multisteps-form__input form-control mt-2"
+                                                id="txt_6" name="txt_6" placeholder="Describa otro" value="" readonly
+                                                required>
                                             <input type="text" class="multisteps-form__input form-control mt-2"
-                                                id="txt_6_otro" name="txt_6_otro" placeholder="Describa otro" value="-" readonly required>
+                                                id="txt_6_otro" name="txt_6_otro" placeholder="Describa otro" value="">
 
                                         </div>
 
@@ -516,7 +542,8 @@ $section_8_p21 = array(
                                                 verduras, carnes, pescado, otros) </label>
 
                                             <select type="text" class="multisteps-form__input form-control" id="txt_7"
-                                                name="txt_7" onchange="funciones().activate_other('txt_7', 'txt_7_otro')" required>
+                                                name="txt_7"
+                                                onchange="funciones().activate_other('txt_7', 'txt_7_otro')" required>
                                                 <option value="" selected disabled>.: Selecciones una alternativa :.
                                                 </option>
                                                 <option>Recibe presupuesto por parte de la UGEL</option>
@@ -530,7 +557,8 @@ $section_8_p21 = array(
                                                 <option>Otro</option>
                                             </select>
                                             <input type="text" class="multisteps-form__input form-control mt-2"
-                                                id="txt_7_otro" name="txt_7_otro" placeholder="Describa otro" value="-" readonly required>
+                                                id="txt_7_otro" name="txt_7_otro" placeholder="Describa otro" value="-"
+                                                readonly required>
 
                                         </div>
 
@@ -586,26 +614,24 @@ $section_8_p21 = array(
                                                 <b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $i5 = 0;
-                                            do {
-                                                ?>
+$i5 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="opc-5-<?= $i5 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_5[$i5]) ?>"
-                                                        onclick="chk().validar_chk('section-one-five', 'txt_11_multiple')"
-                                                        required>
-                                                    <label class="custom-control-label"
-                                                        for="opc-5-<?= $i5 + 1 ?>"><?= htmlspecialchars($section_5[$i5]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-5-<?=$i5 + 1?>"
+                                                    value="<?=htmlspecialchars($section_5[$i5])?>"
+                                                    onclick="chk().validar_chk('section-one-five', 'txt_11_multiple')"
+                                                    required>
+                                                <label class="custom-control-label"
+                                                    for="opc-5-<?=$i5 + 1?>"><?=htmlspecialchars($section_5[$i5])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $i5++;
-
-                                            } while ($i5 <= count($section_5) - 1);
-                                            ?>
+    $i5++;
+} while ($i5 <= count($section_5) - 1);
+?>
 
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_11_multiple" name="txt_11_multiple" readonly required>
@@ -621,32 +647,31 @@ $section_8_p21 = array(
                                                 <input type="number" class="multisteps-form__input form-control"
                                                     id="txt_12" name="txt_12" placeholder="Ingrese número" required>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-12" id="prg-13">
                                                 <label for="">13. la fecha respecto al kit de botiquín de la IE,
                                                     conteste lo siguiente:</label>
-                                                <select class="multisteps-form__input form-control" id="txt_13"
-                                                    name="txt_13" onchange="funciones().activate_other('txt_13', 'txt_13_otro')" required>
-                                                    <option value="" selected disabled>.: Selecciones una alternativa :.
-                                                    </option>
-                                                    <option>El botiquín se encuentra en un espacio adecuado (seguro,
-                                                        limpio, seco y lejos de la luz del sol) para su conservación
-                                                    </option>
-                                                    <option>El personal ha sido capacitado para el uso del botiquín y la
-                                                        atención en primeros auxilio</option>
-                                                    <option>La IE cuenta con formatos y acuerdos para derivar al
-                                                        establecimiento de salud a estudiantes en caso se requiera
-                                                    </option>
-                                                    <option>La IE tiene un listado de materiales e insumos del botiquín
-                                                        actualizado mensualmente</option>
-                                                    <option>La IE cuenta con un libro para el registro de las atenciones
-                                                        en primeros auxilios</option>
-                                                    <option>La IE cuenta con una ficha por cada estudiantes sobre
-                                                        enfermedades, alergias a medicamentos, entre otros</option>
-                                                    <option>No se cuenta con botiquín</option>
-                                                    <option>Otro</option>
-                                                </select>
+                                                <?php
+$prg_13 = 0;
+do {
+    ?>
+                                                <div class="form-check" style="padding-left: 50px;">
+                                                    <input class="form-check-input cursor-pointer" type="checkbox"
+                                                        id="opc-13-<?=$prg_13 + 1?>"
+                                                        value="<?=htmlspecialchars($pregunta_13[$prg_13])?>"
+                                                        onclick="chk().validar_chk('prg-13', 'txt_13')" required>
+                                                    <label class="custom-control-label"
+                                                        for="opc-13-<?=$prg_13 + 1?>"><?=htmlspecialchars($pregunta_13[$prg_13])?></label>
+                                                </div>
+                                                <?php
+$prg_13++;
+} while ($prg_13 <= count($pregunta_13) - 1);
+?>
+                                                <input type="hidden" class="multisteps-form__input form-control mt-2"
+                                                    id="txt_13" name="txt_13" placeholder="Ingrese otro" value=""
+                                                    readonly required>
                                                 <input type="text" class="multisteps-form__input form-control mt-2"
-                                                    id="txt_13_otro" name="txt_13_otro" placeholder="Ingrese otro" value="-" readonly required>
+                                                    id="txt_13_otro" name="txt_13_otro" placeholder="Ingrese otro"
+                                                    value="">
                                             </div>
                                         </div>
 
@@ -706,28 +731,32 @@ $section_8_p21 = array(
                                                         </thead>
                                                         <tbody>
                                                             <?php
-                                                            $t = 0;
-                                                            do {
-                                                                ?>
-                                                                <tr>
-                                                                    <td><p class="text-xxs font-weight-bold mb-0"><?= $t + 1 ?></p></td>
-                                                                    <td>
-                                                                        <p class="text-xxs font-weight-bold mb-0">
-                                                                            <?= htmlspecialchars($tbl_p15[$t]) ?>
-                                                                        </p>
-                                                                    </td>
-                                                                    <td><input type="number"
-                                                                            class=" multisteps-form__input form-control form-control-sm"
-                                                                            id="txt_15_tv<?= $t + 1 ?>"
-                                                                            name="txt_15_tv<?= $t + 1 ?>"
-                                                                            placeholder="Ingrese Nro." value="0" readonly
-                                                                            required>
-                                                                    </td>
-                                                                </tr>
-                                                                <?php
-                                                                $t++;
-                                                            } while ($t <= count($tbl_p15) - 1);
-                                                            ?>
+$t = 0;
+do {
+    ?>
+                                                            <tr>
+                                                                <td>
+                                                                    <p class="text-xxs font-weight-bold mb-0">
+                                                                        <?=$t + 1?>
+                                                                    </p>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="text-xxs font-weight-bold mb-0">
+                                                                        <?=htmlspecialchars($tbl_p15[$t])?>
+                                                                    </p>
+                                                                </td>
+                                                                <td><input type="number"
+                                                                        class=" multisteps-form__input form-control form-control-sm"
+                                                                        id="txt_15_tv<?=$t + 1?>"
+                                                                        name="txt_15_tv<?=$t + 1?>"
+                                                                        placeholder="Ingrese Nro." value="0" readonly
+                                                                        required>
+                                                                </td>
+                                                            </tr>
+                                                            <?php
+$t++;
+} while ($t <= count($tbl_p15) - 1);
+?>
 
                                                         </tbody>
                                                     </table>
@@ -768,28 +797,32 @@ $section_8_p21 = array(
                                                             </thead>
                                                             <tbody>
                                                                 <?php
-                                                                $t2 = 0;
-                                                                do {
-                                                                    ?>
-                                                                    <tr>
-                                                                        <td><p class="text-xxs font-weight-bold mb-0"><?= $t2 + 1 ?></p></td>
-                                                                        <td>
-                                                                            <p class="text-xxs font-weight-bold mb-0">
-                                                                                <?= htmlspecialchars($tbl_p17[$t2]) ?>
-                                                                            </p>
-                                                                        </td>
-                                                                        <td><input type="number"
-                                                                                class=" multisteps-form__input form-control form-control-sm"
-                                                                                id="txt_17_cr<?= $t2 + 1 ?>"
-                                                                                name="txt_17_cr<?= $t2 + 1 ?>"
-                                                                                placeholder="Ingrese Nro." value="0"
-                                                                                readonly required>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <?php
-                                                                    $t2++;
-                                                                } while ($t2 <= count($tbl_p17) - 1);
-                                                                ?>
+$t2 = 0;
+do {
+    ?>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="text-xxs font-weight-bold mb-0">
+                                                                            <?=$t2 + 1?>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p class="text-xxs font-weight-bold mb-0">
+                                                                            <?=htmlspecialchars($tbl_p17[$t2])?>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td><input type="number"
+                                                                            class=" multisteps-form__input form-control form-control-sm"
+                                                                            id="txt_17_cr<?=$t2 + 1?>"
+                                                                            name="txt_17_cr<?=$t2 + 1?>"
+                                                                            placeholder="Ingrese Nro." value="0"
+                                                                            readonly required>
+                                                                    </td>
+                                                                </tr>
+                                                                <?php
+$t2++;
+} while ($t2 <= count($tbl_p17) - 1);
+?>
                                                                 <tr>
                                                                     <td>17</td>
                                                                     <td>
@@ -802,10 +835,10 @@ $section_8_p21 = array(
                                                                     <td>
                                                                         <input type="number"
                                                                             class=" multisteps-form__input form-control form-control-sm"
-                                                                            id="txt_17_cr<?= $t2 + 1 ?>"
-                                                                            name="txt_17_cr<?= $t2 + 1 ?>"
-                                                                            placeholder="Ingrese Nro." value="0" readonly
-                                                                            required>
+                                                                            id="txt_17_cr<?=$t2 + 1?>"
+                                                                            name="txt_17_cr<?=$t2 + 1?>"
+                                                                            placeholder="Ingrese Nro." value="0"
+                                                                            readonly required>
                                                                     </td>
                                                                 </tr>
 
@@ -833,26 +866,24 @@ $section_8_p21 = array(
                                                 casos de violencia y otros? <b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $p19 = 0;
-                                            do {
-                                                ?>
+$p19 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input class="form-check-input" type="checkbox"
-                                                        id="opc-6-<?= $p19 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_6_p19[$p19]) ?>"
-                                                        onclick="chk().validar_chk('section-one-six', 'txt_19_multiple')"
-                                                        required>
-                                                    <label class="custom-control-label"
-                                                        for="opc-6-<?= $p19 + 1 ?>"><?= htmlspecialchars($section_6_p19[$p19]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input class="form-check-input cursor-pointer" type="checkbox" id="opc-6-<?=$p19 + 1?>"
+                                                    value="<?=htmlspecialchars($section_6_p19[$p19])?>"
+                                                    onclick="chk().validar_chk('section-one-six', 'txt_19_multiple')"
+                                                    required>
+                                                <label class="custom-control-label"
+                                                    for="opc-6-<?=$p19 + 1?>"><?=htmlspecialchars($section_6_p19[$p19])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $p19++;
-
-                                            } while ($p19 <= count($section_6_p19) - 1);
-                                            ?>
+    $p19++;
+} while ($p19 <= count($section_6_p19) - 1);
+?>
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_19_multiple" name="txt_19_multiple" readonly required>
                                             <input type="text" class="multisteps-form__input form-control"
@@ -883,7 +914,8 @@ $section_8_p21 = array(
                                         SRE Y SA</h5>
                                     <div class="multisteps-form__content text-uppercase">
                                         <div class="alert alert-info mt-3">
-                                            <i class="fas fa-info-circle"> Disponible para MSE SA y SRE</i>
+                                            <i class="fas fa-info-circle"> Disponible para MSE SA y SRE, de lo contrario
+                                                marcar "no aplica"</i>
                                         </div>
 
                                         <!-- // TODO: SECTION ONE SEVEN P20 - OK -->
@@ -894,28 +926,27 @@ $section_8_p21 = array(
                                                 estrategias que están implementando para promover hábitos saludables en
                                                 los estudiantes? (opción múltiple) <b>(Opción múltiple)</b></label>
 
-                                            <h1 class="text-danger"><?= $_SESSION['tipo_mse'] ?></h1>
+                                            <h1 class="text-danger"><?=$_SESSION['tipo_mse']?></h1>
 
                                             <?php
-                                            $p20 = 0;
-                                            do {
-                                                ?>
+$p20 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input <?= $status_no_corresponde ?> class="form-check-input"
-                                                        type="checkbox" id="opc-7-<?= $p20 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_7_p20[$p20]) ?>"
-                                                        onclick="chk().validar_chk('section-one-seven', 'txt_20_multiple')">
-                                                    <label class="custom-control-label"
-                                                        for="opc-7-<?= $p20 + 1 ?>"><?= htmlspecialchars($section_7_p20[$p20]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input <?=$status_no_corresponde?> class="form-check-input cursor-pointer"
+                                                    type="checkbox" id="opc-7-<?=$p20 + 1?>"
+                                                    value="<?=htmlspecialchars($section_7_p20[$p20])?>"
+                                                    onclick="chk().validar_chk('section-one-seven', 'txt_20_multiple')">
+                                                <label class="custom-control-label"
+                                                    for="opc-7-<?=$p20 + 1?>"><?=htmlspecialchars($section_7_p20[$p20])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $p20++;
-
-                                            } while ($p20 <= count($section_7_p20) - 1);
-                                            ?>
+    $p20++;
+} while ($p20 <= count($section_7_p20) - 1);
+?>
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_20_multiple" name="txt_20_multiple" readonly required>
                                             <input type="text" class="multisteps-form__input form-control mt-2"
@@ -925,31 +956,29 @@ $section_8_p21 = array(
                                         <!-- // TODO: SECTION ONE EIGHT P21 - OK -->
                                         <div class="row mt-3 h-100" id="section-one-eight">
 
-                                            <label>20. Respecto a al uso del “kit de bienestar” con productos de aseo
-                                                para estudiantes mujeres y hombres ¿Cuáles son las principales
-                                                estrategias que están implementando para promover hábitos saludables en
-                                                los estudiantes? (opción múltiple) <b>(Opción múltiple)</b></label>
+                                            <label>21. Respecto a al uso del “kit de limpieza" para la IIEE ¿Cuáles son
+                                                las principales estrategias que están implementando para promover
+                                                espacios saludables en la IIEE? <b>(Opción múltiple)</b></label>
 
                                             <?php
-                                            $p21 = 0;
-                                            do {
-                                                ?>
+$p21 = 0;
+do {
+    ?>
 
-                                                <div class="form-check" style="padding-left: 50px;">
-                                                    <input <?= $status_no_corresponde ?> class="form-check-input"
-                                                        type="checkbox" id="opc-8-<?= $p21 + 1 ?>"
-                                                        value="<?= htmlspecialchars($section_8_p21[$p21]) ?>"
-                                                        onclick="chk().validar_chk('section-one-eight', 'txt_21_multiple')">
-                                                    <label class="custom-control-label"
-                                                        for="opc-8-<?= $p21 + 1 ?>"><?= htmlspecialchars($section_8_p21[$p21]) ?></label>
-                                                </div>
+                                            <div class="form-check" style="padding-left: 50px;">
+                                                <input <?=$status_no_corresponde?> class="form-check-input cursor-pointer"
+                                                    type="checkbox" id="opc-8-<?=$p21 + 1?>"
+                                                    value="<?=htmlspecialchars($section_8_p21[$p21])?>"
+                                                    onclick="chk().validar_chk('section-one-eight', 'txt_21_multiple')">
+                                                <label class="custom-control-label"
+                                                    for="opc-8-<?=$p21 + 1?>"><?=htmlspecialchars($section_8_p21[$p21])?></label>
+                                            </div>
 
-                                                <?php
+                                            <?php
 
-                                                $p21++;
-
-                                            } while ($p21 <= count($section_8_p21) - 1);
-                                            ?>
+    $p21++;
+} while ($p21 <= count($section_8_p21) - 1);
+?>
                                             <input type="hidden" class="multisteps-form__input form-control"
                                                 id="txt_21_multiple" name="txt_21_multiple" readonly required>
                                             <input type="text" class="multisteps-form__input form-control mt-2"

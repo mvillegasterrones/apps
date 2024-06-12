@@ -1,4 +1,9 @@
 <?php
+
+$pregunta_06 = array(
+
+);
+
 $section_1 = array(
     'Proyecto Educativo Institucional - PEI',
     'Reglamento Interno - RI',
@@ -35,5 +40,5 @@ $section_3 = array(
     'Orientación vocacional',
     'Proyecto de vida',
     'Ninguno',
-    'Otro (especifique)'
+    'Otro (especifique)',
 );
