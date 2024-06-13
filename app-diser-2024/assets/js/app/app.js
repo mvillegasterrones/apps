@@ -1,5 +1,29 @@
 // ** Aquí código de las funciones a nivel de APP ** //
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopBtns = document.querySelectorAll(".js-btn-next");
+
+    scrollToTopBtns.addEventListener("click", () => {
+        // Desplazar suavemente al inicio de la página
+        alert('Arriba!')
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    /*scrollToTopBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            // Desplazar suavemente al inicio de la página
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });*/
+});
+
 const pg_body = () => ({
 
     on_load: () => {
