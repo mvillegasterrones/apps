@@ -38,7 +38,6 @@
     //include './Views/sections/nav-bar.php';
     include './Views/view-reporte-asistencia.php';
     ?>
-
 </body>
 
 <script src="./assets/js/core/popper.min.js"></script>
@@ -57,6 +56,7 @@
         }
         Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options)
     }
+    
 </script>
 
 <!-- // TODO: <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->

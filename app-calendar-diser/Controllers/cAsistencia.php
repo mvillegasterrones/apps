@@ -2,7 +2,7 @@
 session_start();
 require_once '../Models/mAsistencia.php';
 $instancia = new mAsistencia();
-$accion = $_POST['action'];
+$accion    = $_POST['action'];
 switch ($accion) {
     case 'get-reporte-chart-region':
         $idAsistencia = $_POST['id'];

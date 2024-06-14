@@ -1,4 +1,4 @@
-<!-- 
+<!--
     // TODO: link: https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html
     // TODO: FA git: https://github.com/eliyantosarage/font-awesome-pro
     // TODO: SweetAlert: https://sweetalert2.github.io/#download
@@ -39,7 +39,7 @@
     <!--<script src='https://unpkg.com/@fullcalendar/core@5.11.0/main.min.js'></script>
     <script src='https://unpkg.com/@fullcalendar/daygrid@5.11.0/main.min.js'></script>-->
     <!--<script src="https://unpkg.com/@fullcalendar/interaction@5.11.0/main.min.js"></script>-->
-    
+
     <style>
         .highlight {
             background-color: aqua !important;
@@ -48,7 +48,6 @@
 </head>
 
 <body class="g-sidenav-show dark-version bg-gray-600 g-sidenav-hidden" onload="pg_body().on_load()"><!-- ! g-sidenav-show g-sidenav-pinned dark-version bg-gray-600 -->
-
     <?php
     session_start();
     if (isset($_SESSION['acceso']) && $_SESSION['acceso'] == 'YES') {
