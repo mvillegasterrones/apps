@@ -68,7 +68,7 @@
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <script src="./assets/js/plugins/flatpickr.min.js"></script>
 <script src="./assets/js/plugins/moment.js"></script>
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<!--// ! <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>-->
 <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>-->
 

@@ -255,6 +255,10 @@ switch ($accion) {
         $ejecutar = $instancia->delete_inst_01($id);
         echo json_encode($ejecutar);
         break;
+    case 'get-reporte-inst-01-admin':
+        $ejecutar = $instancia->get_reporte_inst_01_admin();
+        echo json_encode($ejecutar);
+        break;
     case 'get-reporte-inst-01':
         $cod_mod = $_SESSION['cod_mod'];
         $ejecutar = $instancia->get_reporte_inst_01($cod_mod);

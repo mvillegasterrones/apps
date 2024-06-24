@@ -118,47 +118,39 @@ const instrumento_01 = () => ({
             data[i].txt_est_apellidos + ", " + data[i].txt_est_nombres;
           html += `<tr>
                                 <td class="text-center">
-                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_01().delete_int_01(${
-                                      data[i].idInstrumento
-                                    },${i + 1})"></i>
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_01().delete_int_01(${data[i].idInstrumento
+            },${i + 1})"></i>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      i + 1
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_mes_reporte
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_fecha_aplicacion
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cod_mod
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].nombre_ie
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cen_pob
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].d_dreugel
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${estudiante}</p>
@@ -271,62 +263,51 @@ const instrumento_02 = () => ({
 
           html += `<tr>
                                 <td class="text-center">
-                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_02().delete(${
-                                      data[i].idInstrumento
-                                    },${i + 1})"></i>
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_02().delete(${data[i].idInstrumento
+            },${i + 1})"></i>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      i + 1
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_mes_reporte
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_fecha_aplicacion
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cod_mod
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].nombre_ie
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+            }</p>
                                 </td>
                                 <td align=center>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_grado
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_grado
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cen_pob
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].d_dreugel
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_datos_aplicador
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_datos_aplicador
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_cargo_aplicador
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo_aplicador
+            }</p>
                                 </td>
                             </tr>`;
         }
@@ -451,59 +432,49 @@ const instrumento_03 = () => ({
 
           html += `<tr>
                                 <td class="text-center">
-                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_03().delete(${
-                                      data[i].idInstrumento
-                                    },${i + 1})"></i>
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_03().delete(${data[i].idInstrumento
+            },${i + 1})"></i>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      i + 1
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_mes_reporte
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_fecha_aplicacion
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cod_mod
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].nombre_ie
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cen_pob
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].d_dreugel
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_dni +
-                                      " - " +
-                                      data[i].txt_ape_nomb
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_dni +
+            " - " +
+            data[i].txt_ape_nomb
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_cargo
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo
+            }</p>
                                 </td>
                             </tr>`;
         }
@@ -629,53 +600,44 @@ const encuesta_01 = () => ({
 
           html += `<tr>
                                 <td class="text-center">
-                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="encuesta_01().delete(${
-                                      data[i].idInstrumento
-                                    },${i + 1})"></i>
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="encuesta_01().delete(${data[i].idInstrumento
+            },${i + 1})"></i>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      i + 1
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs text-center font-weight-bold mb-0">${
-                                      data[i].txt_grado
-                                    }</p>
+                                    <p class="text-xs text-center font-weight-bold mb-0">${data[i].txt_grado
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_sexo
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_sexo
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_edad
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_edad
+            }</p>
                                 </td>
                                 
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cod_mod
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].nombre_ie
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cen_pob
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].d_dreugel
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+            }</p>
                                 </td>
                             </tr>`;
         }
@@ -788,53 +750,44 @@ const encuesta_02 = () => ({
 
           html += `<tr>
                                 <td class="text-center">
-                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="encuesta_02().delete(${
-                                      data[i].idInstrumento
-                                    },${i + 1})"></i>
+                                    <i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="encuesta_02().delete(${data[i].idInstrumento
+            },${i + 1})"></i>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      i + 1
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs text-center font-weight-bold mb-0">${
-                                      data[i].txt_mes_reporte
-                                    }</p>
+                                    <p class="text-xs text-center font-weight-bold mb-0">${data[i].txt_mes_reporte
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_comu_nombre
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_comu_nombre
+            }</p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].txt_comu_tipo
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_comu_tipo
+            }</p>
                                 </td>
                                 
                                 <td class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cod_mod
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].nombre_ie
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+            }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].cen_pob
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+            }</p>
                                 </td>
                                 <td>
-                                    <p class="text-xs font-weight-bold mb-0">${
-                                      data[i].d_dreugel
-                                    }</p>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+            }</p>
                                 </td>
                             </tr>`;
         }

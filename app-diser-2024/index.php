@@ -39,9 +39,17 @@
     <?php
     session_start();
     if (isset($_SESSION['acceso']) && $_SESSION['acceso'] == 'YES') {
-        include './Views/view-index.php';
+
+        if ($_SESSION['nv_educativo'] == 'Admin') {
+            include './Views/view-admin.php';
+        } else {
+            include './Views/view-index.php';
+        }
+
     } else {
+
         include './Views/view-login.php';
+
     }
     ?>
 
@@ -82,6 +90,7 @@
 <script src="./assets/js/app/jUsuario.js"></script>
 <script src="./assets/js/app/jButton-actions.js"></script>
 <script src="./assets/js/app/jQuestionario.js"></script>
+<script src="./assets/js/app/jAdmin.js"></script>
 
 <script src="./assets/js/argon-dashboard.min.js?v=2.0.5"></script>
 

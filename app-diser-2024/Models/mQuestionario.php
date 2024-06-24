@@ -9,6 +9,21 @@ class mQuestionario
         $this->conexion->conectar();
     }
 
+	// ! Admin reports
+	function get_reporte_inst_01_admin()
+    {
+        $sql = "CALL sp_v1_get_reporte_inst_01_admin()";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
+
 	// ! INICIO - Encuesta 02
 	function delete_enc_02($id)
     {

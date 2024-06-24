@@ -324,12 +324,13 @@ const sys_calendar = () => ({
 
             for (let i = 0; i < data.length; i++) {
                 let fi = moment(data[i].start).format("DD MMMM YYYY HH:mm");
-                let fe = moment(data[i].end).format("DD MMMM YYYY HH:mm");
+                let fe = moment(data[i].end).format("HH:mm");
                 let evalFechas = sys_calendar().validate_fi_fe(data[i].start, data[i].end)
                 let cN = data[i].classname;
                 let img, cls;
                 let link_asistencia = `./registro-asistencia.php?id=${data[i].id}&denominacion=${data[i].title}&fi=${fi}&fe=${fe}`;
                 let link_rep_asistencia = `./reporte-asistencia.php?id=${data[i].id}&denominacion=${data[i].title}&fi=${fi}&fe=${fe}`;
+                let icon_edit = `<i class="fa fa-pencil cursor-pointer" data-bs-toggle="modal" data-bs-target="#modal-event-edit" onclick="sys_calendar().get_info_calendar_edit(${data[i].id})"></i>`
 
                 switch (cN) {
                     case "bg-gradient-primary":
@@ -390,10 +391,9 @@ const sys_calendar = () => ({
                         <div class="numbers">
                             
                             <h6 class="mb-1 text-dark text-sm" ${color_fila}>
-                                ${en_curso} ${data[i].title
-                    } 
-                                <a href="${data[i].linkreunion
-                    }" target="_blank"> 
+                                ${en_curso} ${data[i].title}<br>
+                                ${icon_edit}
+                                <a href="${data[i].linkreunion}" target="_blank"> 
                                     <i class="fa-duotone fa-arrow-up-right-from-square"></i> 
                                 </a>
                                 <a href="${link_asistencia}" target="_blank">
