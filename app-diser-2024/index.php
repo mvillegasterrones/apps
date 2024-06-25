@@ -82,7 +82,7 @@
 <!-- // TODO: <script async defer src="https://buttons.github.io/buttons.js"></script>-->
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
 <script src="./assets/js/github.buttons.js"></script>
-
+<script src="./assets/js/plugins/chartjs.min.js"></script>
 
 <script src="./assets/js/app/jGlobal-vars.js"></script>
 <script src="./assets/js/app/app.js"></script>

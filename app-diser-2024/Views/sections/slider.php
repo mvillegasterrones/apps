@@ -2,9 +2,10 @@
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/default.html " target="_blank">
-            <img src="<?= $ruta_local ?>assets/img/systems-logo/sys-logo-sf.png" class="navbar-brand-img d-block d-lg-none w-100 h-100" alt="main_logo" />
+            <img src="./assets/img/icons/icon-minedu.png" class="navbar-brand-img h-100" alt="main_logo" />
             <span class="ms-1 font-weight-bold">
-                <img src="./assets/img/logos/logo-minedu.png" style="width: 200px !important;" alt="MI-LOGO">
+                <!--<img src="./assets/img/logos/logo-minedu.png" style="width: 180px !important;" alt="MI-LOGO">-->
+                MINEDU / DISER - 2024
             </span>
         </a>
     </div>

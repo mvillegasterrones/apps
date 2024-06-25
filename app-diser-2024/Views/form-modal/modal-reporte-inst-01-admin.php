@@ -11,6 +11,11 @@
                     <div class="card-body card-color-pastel pb-3">
                         <!--<form role="form text-left">
                         </form>-->
+                        <div class="row">
+
+                            
+
+                        </div>
                         <div class="table-responsive">
 
                             <button class="btn btn-primary w-100 btn-sm mb-2" type="button" id="btn-cargando" disabled>
@@ -18,7 +23,7 @@
                                 Cargando registros, espere...
                             </button>
 
-                            <table class="table table-hover table-sm" id="tbl-reporte-inst-01-admin">
+                            <table class="table table-hover table-sm" id="tbl-reporte-inst-01">
                                 <thead class="text-center">
                                     <th></th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">-</th>

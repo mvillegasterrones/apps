@@ -28,6 +28,7 @@ const pg_body = () => ({
 
     on_load: () => {
         $('.instrumento').addClass('d-none')
+        admin_reports().get_chart_total_reports()
     },
 
     on_show_hide: (hd, shw) => {
