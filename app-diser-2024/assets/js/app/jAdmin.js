@@ -1,5 +1,13 @@
 const admin_reports = () => ({
 
+    refresh: () => {
+
+        admin_reports().get_chart_total_reports()
+        admin_reports().get_donust_total_instrumentos()
+        sw_alert().basic_success('Actualizado!')
+
+    },
+
     get_report_inst_01_admin: () => {
 
         let params = { action: 'get-reporte-inst-01-admin' }
@@ -105,6 +113,50 @@ const admin_reports = () => ({
             console.log(error)
             sw_alert().error(error)
         })
+    },
+
+    get_donust_total_instrumentos: () => {
+
+        let params = { action: 'get-admin-totales-instrumentos' }
+
+        $.post( admin_url, params, (response) => {
+
+            let data   = eval(response)
+            let labels = []
+            let data1  = []
+            let i01, i02, i03, e01, e02
+
+            for (let i = 0; i < data.length; i++) {
+                
+                data1.push(
+                    data[i].tI01,
+                    data[i].tI02,
+                    data[i].tI03,
+                    data[i].tE01,
+                    data[i].tE02
+                )
+
+                i01 = data[i].tI01
+                i02 = data[i].tI02
+                i03 = data[i].tI03
+                e01 = data[i].tE01
+                e02 = data[i].tE02
+
+            }
+
+            $('#i01').html(i01)
+            $('#i02').html(i02)
+            $('#i03').html(i03)
+            $('#e01').html(e01)
+            $('#e02').html(e02)
+
+            create_chart_donuts_total_instrumentos(data1)
+
+        }).fail( error => {
+            console.log(error)
+            sw_alert().error(error)
+        })
+
     },
 
 })
@@ -233,4 +285,78 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
             },
         },
     });
+}
+
+function create_chart_donuts_total_instrumentos(data1) {
+    
+    var ctx2 = document.getElementById("chart-doughnut").getContext("2d");
+
+    new Chart(ctx2, {
+        type: "doughnut",
+        data: {
+          labels: ["INST-01", "INST-02", "INST-03", "ENC-01", "ENC-02"],
+          datasets: [
+            {
+              label: "Projects",
+              weight: 9,
+              cutout: 60,
+              tension: 0.9,
+              pointRadius: 2,
+              borderWidth: 2,
+              backgroundColor: [
+                /*"#2152ff",
+                "#3A416F",
+                "#f53939",
+                "#a8b8d8",
+                "#5e72e4",*/
+                "#5e72e4",
+                "#3A416",
+                "#17c1e8",
+                "#525f7f",
+                "#adb5bd",
+              ],
+              data: data1, // [15, 20, 12, 60, 20],
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          interaction: {
+            intersect: false,
+            mode: "index",
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+              },
+            },
+          },
+        },
+      });
+
 }

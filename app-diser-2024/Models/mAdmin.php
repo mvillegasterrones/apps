@@ -9,6 +9,19 @@ class mAdmin
         $this->conexion->conectar();
     }
 
+    function get_admin_instrumentos()
+    {
+        $sql = "CALL sp_v1_get_admin_instrumentos()";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+    }
+
 	function get_chart_total_reports()
     {
         $sql = "CALL sp_v1_get_chart_total_reports()";
