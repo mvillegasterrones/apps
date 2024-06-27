@@ -119,15 +119,15 @@ const admin_reports = () => ({
 
         let params = { action: 'get-admin-totales-instrumentos' }
 
-        $.post( admin_url, params, (response) => {
+        $.post(admin_url, params, (response) => {
 
-            let data   = eval(response)
+            let data = eval(response)
             let labels = []
-            let data1  = []
-            let i01, i02, i03, e01, e02
+            let data1 = []
+            let i01, i02, i03, e01, e02, total
 
             for (let i = 0; i < data.length; i++) {
-                
+
                 data1.push(
                     data[i].tI01,
                     data[i].tI02,
@@ -136,23 +136,26 @@ const admin_reports = () => ({
                     data[i].tE02
                 )
 
-                i01 = data[i].tI01
-                i02 = data[i].tI02
-                i03 = data[i].tI03
-                e01 = data[i].tE01
-                e02 = data[i].tE02
+                i01 = parseInt(data[i].tI01)
+                i02 = parseInt(data[i].tI02)
+                i03 = parseInt(data[i].tI03)
+                e01 = parseInt(data[i].tE01)
+                e02 = parseInt(data[i].tE02)
 
             }
+
+            total = i01 + i02 + i03 + e01 + e02
 
             $('#i01').html(i01)
             $('#i02').html(i02)
             $('#i03').html(i03)
             $('#e01').html(e01)
             $('#e02').html(e02)
+            $('#total').html(total)
 
-            create_chart_donuts_total_instrumentos(data1)
+            create_chart_donuts_total_instrumentos_2(data1)
 
-        }).fail( error => {
+        }).fail(error => {
             console.log(error)
             sw_alert().error(error)
         })
@@ -211,7 +214,7 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     pointBackgroundColor: "#17c1e8",
                     borderColor: "#17c1e8",
                     borderWidth: 3,
-                    backgroundColor: gradientStroke2,
+                    backgroundColor: gradientStroke1,
                     data: data03, // [40, 80, 70, 90, 30, 90, 140, 130, 200],
                     maxBarThickness: 6,
                 },
@@ -235,7 +238,7 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     pointBackgroundColor: "#adb5bd",
                     borderColor: "#adb5bd",
                     borderWidth: 3,
-                    backgroundColor: gradientStroke2,
+                    backgroundColor: gradientStroke1,
                     data: data05, // [40, 80, 70, 90, 30, 90, 140, 130, 200],
                     maxBarThickness: 6,
                 },
@@ -288,75 +291,150 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
 }
 
 function create_chart_donuts_total_instrumentos(data1) {
-    
+
     var ctx2 = document.getElementById("chart-doughnut").getContext("2d");
 
     new Chart(ctx2, {
         type: "doughnut",
         data: {
-          labels: ["INST-01", "INST-02", "INST-03", "ENC-01", "ENC-02"],
-          datasets: [
-            {
-              label: "Projects",
-              weight: 9,
-              cutout: 60,
-              tension: 0.9,
-              pointRadius: 2,
-              borderWidth: 2,
-              backgroundColor: [
-                /*"#2152ff",
-                "#3A416F",
-                "#f53939",
-                "#a8b8d8",
-                "#5e72e4",*/
-                "#5e72e4",
-                "#3A416",
-                "#17c1e8",
-                "#525f7f",
-                "#adb5bd",
-              ],
-              data: data1, // [15, 20, 12, 60, 20],
-              fill: false,
-            },
-          ],
+            labels: ["INST-01", "INST-02", "INST-03", "ENC-01", "ENC-02"],
+            datasets: [
+                {
+                    label: "Register",
+                    weight: 9,
+                    cutout: 60,
+                    tension: 0.9,
+                    pointRadius: 2,
+                    borderWidth: 2,
+                    backgroundColor: [
+                        /*"#2152ff",
+                        "#3A416F",
+                        "#f53939",
+                        "#a8b8d8",
+                        "#5e72e4",*/
+                        "#5e72e4",
+                        "#3A416",
+                        "#17c1e8",
+                        "#525f7f",
+                        "#adb5bd",
+                    ],
+                    data: data1, // [15, 20, 12, 60, 20],
+                    fill: false,
+                },
+            ],
         },
         options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false,
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                },
             },
-          },
-          interaction: {
-            intersect: false,
-            mode: "index",
-          },
-          scales: {
-            y: {
-              grid: {
-                drawBorder: false,
-                display: false,
-                drawOnChartArea: false,
-                drawTicks: false,
-              },
-              ticks: {
-                display: false,
-              },
+            interaction: {
+                intersect: false,
+                mode: "index",
             },
-            x: {
-              grid: {
-                drawBorder: false,
-                display: false,
-                drawOnChartArea: false,
-                drawTicks: false,
-              },
-              ticks: {
-                display: false,
-              },
+            scales: {
+                y: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                    },
+                    ticks: {
+                        display: false,
+                    },
+                },
+                x: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                    },
+                    ticks: {
+                        display: false,
+                    },
+                },
             },
-          },
         },
-      });
+    });
 
+}
+
+
+function create_chart_donuts_total_instrumentos_2(data1) {
+    // Chart Doughnut Consumption by room
+    var ctx1 = document.getElementById("chart-consumption").getContext("2d");
+
+    var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, "rgba(203,12,159,0.2)");
+    gradientStroke1.addColorStop(0.2, "rgba(72,72,176,0.0)");
+    gradientStroke1.addColorStop(0, "rgba(203,12,159,0)"); //purple colors
+
+    new Chart(ctx1, {
+        type: "doughnut",
+        data: {
+            labels: ["INST-01", "INST-02", "INST-03", "ENC-01", "ENC-02"],
+            datasets: [
+                {
+                    label: "Consumption",
+                    weight: 9,
+                    cutout: 90,
+                    tension: 0.9,
+                    pointRadius: 2,
+                    borderWidth: 2,
+                    backgroundColor: [
+                        "#5e72e4",
+                        "#8392ab",
+                        "#11cdef",
+                        "#2dce89",
+                        "#fb6340",
+                    ],
+                    data: data1, // [15, 20, 13, 32, 20],
+                    fill: false,
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false,
+                },
+            },
+            interaction: {
+                intersect: false,
+                mode: "index",
+            },
+            scales: {
+                y: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                    },
+                    ticks: {
+                        display: false,
+                    },
+                },
+                x: {
+                    grid: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                    },
+                    ticks: {
+                        display: false,
+                    },
+                },
+            },
+        },
+    });
 }
