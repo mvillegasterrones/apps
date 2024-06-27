@@ -146,11 +146,17 @@ const admin_reports = () => ({
 
             total = i01 + i02 + i03 + e01 + e02
 
-            $('#i01').html(i01)
-            $('#i02').html(i02)
-            $('#i03').html(i03)
-            $('#e01').html(e01)
-            $('#e02').html(e02)
+            $('#card-totales #i01').html(i01)
+            $('#card-totales #i02').html(i02)
+            $('#card-totales #i03').html(i03)
+            $('#card-totales #e01').html(e01)
+            $('#card-totales #e02').html(e02)
+
+            $('#tbl-totales #i01').html(i01)
+            $('#tbl-totales #i02').html(i02)
+            $('#tbl-totales #i03').html(i03)
+            $('#tbl-totales #e01').html(e01)
+            $('#tbl-totales #e02').html(e02)
             $('#total').html(total)
 
             create_chart_donuts_total_instrumentos_2(data1)
@@ -187,8 +193,8 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 2,
-                    pointBackgroundColor: "#5e72e4",
-                    borderColor: "#5e72e4",
+                    pointBackgroundColor: "#5e72e4",// "#5e72e4",
+                    borderColor: "#5e72e4", // "#5e72e4",
                     borderWidth: 3,
                     backgroundColor: gradientStroke1,
                     data: data01, // [50, 40, 300, 220, 500, 250, 400, 230, 500],
@@ -199,8 +205,8 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 2,
-                    pointBackgroundColor: "#3A416F",
-                    borderColor: "#3A416F",
+                    pointBackgroundColor: "#8392ab", // "#3A416F",
+                    borderColor: "#8392ab", //"#3A416F",
                     borderWidth: 3,
                     backgroundColor: gradientStroke2,
                     data: data02, // [30, 90, 40, 140, 290, 290, 340, 230, 400],
@@ -211,8 +217,8 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 2,
-                    pointBackgroundColor: "#17c1e8",
-                    borderColor: "#17c1e8",
+                    pointBackgroundColor: "#11cdef", //"#17c1e8",
+                    borderColor: "#11cdef", //"#17c1e8",
                     borderWidth: 3,
                     backgroundColor: gradientStroke1,
                     data: data03, // [40, 80, 70, 90, 30, 90, 140, 130, 200],
@@ -223,8 +229,8 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 2,
-                    pointBackgroundColor: "#525f7f",
-                    borderColor: "#525f7f",
+                    pointBackgroundColor: "#2dce89",// "#525f7f",
+                    borderColor: "#2dce89",// "#525f7f",
                     borderWidth: 3,
                     backgroundColor: gradientStroke2,
                     data: data04, // [40, 80, 70, 90, 30, 90, 140, 130, 200],
@@ -235,8 +241,8 @@ function create_chart_bar_total_region(lbls, data01, data02, data03, data04, dat
                     tension: 0.4,
                     borderWidth: 0,
                     pointRadius: 2,
-                    pointBackgroundColor: "#adb5bd",
-                    borderColor: "#adb5bd",
+                    pointBackgroundColor: "#fb6340",// "#adb5bd",
+                    borderColor: "#fb6340", // "#adb5bd",
                     borderWidth: 3,
                     backgroundColor: gradientStroke1,
                     data: data05, // [40, 80, 70, 90, 30, 90, 140, 130, 200],
@@ -363,7 +369,6 @@ function create_chart_donuts_total_instrumentos(data1) {
     });
 
 }
-
 
 function create_chart_donuts_total_instrumentos_2(data1) {
     // Chart Doughnut Consumption by room

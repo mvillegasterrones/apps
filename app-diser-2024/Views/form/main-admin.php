@@ -1,8 +1,6 @@
 <!-- // TODO: Instruemntos - Encuestas -->
-<div class="row mt-0">
-    <div class="col-12 mt-0">
-        <h4>Hola, Administrador!</h4>
-    </div>
+<div class="row mt-4">
+    
     <div class="col-lg-3 col-md-6 col-12">
         <div class="card cursor-pointer">
             <div class="card-body p-3">

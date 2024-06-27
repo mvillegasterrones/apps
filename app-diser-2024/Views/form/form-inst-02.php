@@ -104,9 +104,8 @@
                                                 <label>Mes de reporte</label>
                                                 <select class="multisteps-form__input form-control" name="txt_mes_reporte" id="txt_mes_reporte" required>
                                                     <option value="" disabled>.: Seleccione :.</option>
-                                                    <option selected>Mayo 2024</option>
-                                                    <option selected>Junio 2024</option>
-                                                    <option disabled>Setiembre 2024</option>
+                                                    <option>Julio 2024</option>
+                                                    <option>Setiembre 2024</option>
                                                 </select>
                                             </div>
                                             <div class="col-12 col-sm-3 mt-3 mt-sm-0">

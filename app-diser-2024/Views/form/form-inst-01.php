@@ -156,9 +156,8 @@
                                                 <select class="multisteps-form__input form-control"
                                                     name="txt-mes-reporte" id="txt-mes-reporte" required>
                                                     <option value="" disabled>.: Seleccione :.</option>
-                                                    <option value="Mayo 204" selected>Mayo 2024</option>
-                                                    <option value="Mayo 204" selected>Junio 2024</option>
-                                                    <option value="Setiembre 2024" disabled>Setiembre 2024</option>
+                                                    <option>Julio 2024</option>
+                                                    <option>Setiembre 2024</option>
                                                 </select>
                                             </div>
                                         </div>

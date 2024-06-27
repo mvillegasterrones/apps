@@ -275,7 +275,7 @@ $section_8_p21 = array(
                                                 <select class="multisteps-form__input form-control"
                                                     name="txt_mes_reporte" id="txt_mes_reporte" required>
                                                     <option value="" selected disabled>.: Selecciones :.</option>
-                                                    <option>Junio 2024</option>
+                                                    <option>Julio 2024</option>
                                                     <option>Setiembre 2024</option>
                                                     <option>Diciembre 2024</option>
                                                 </select>
