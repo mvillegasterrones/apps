@@ -1,6 +1,9 @@
 <?php
 
 $pregunta_06 = array(
+    'No se cuenta con un CAE conformado.',
+    'El CAE no cumple funciones de manera adecuada.',
+    'El CAE no cuanta con personal de la residencia o no articula con la residencia (Solo para SRE)',
     'Dotación insuficiente de alimentos para el número de estudiantes',
     'Dotación no llegó oportunamente',
     'Poca variedad de los productos',
@@ -580,8 +583,7 @@ $prg_6++;
                                 <!-- // ? TODO: Section 5 - ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024  -->
                                 <div class="card multisteps-form__panel p-3 border-radius-xl bg-white"
                                     data-animation="FadeIn">
-                                    <h5 class="font-weight-bolder mb-0">ACCIONES DE PROMOCION DE LA SALUD ADOLESCENTE EN
-                                        EL MSE 2024 </h5>
+                                    <h5 class="font-weight-bolder mb-0">ACCIONES PARA ACCESO AL DNI, SIS Y PROMOCION DE LA SALUD ADOLESCENTE EN EL MSE 2024 </h5>
                                     <div class="multisteps-form__content text-uppercase">
                                         <div class="row mt-3">
                                             <div class="col-12 col-sm-6">
