@@ -1,6 +1,8 @@
 // ** Aquí código de las funciones a nivel de APP ** //
-
-
+/*const dataTableSearch = new simpleDatatables.DataTable("#modal-form-inst-01-admin #tbl-reporte-inst-01", {
+    searchable: true,
+    fixedHeight: true
+})*/
 document.addEventListener("DOMContentLoaded", () => {
     const scrollToTopBtns = document.querySelectorAll(".js-btn-next");
 

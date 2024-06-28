@@ -60,6 +60,7 @@
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
 <script src="./assets/js/plugins/choices.min.js"></script>
+<script src="./assets/js/plugins/datatables.js"></script>
 <!--<script src="./assets/js/plugins/multistep-form.js"></script>-->
 <!--<script src="./assets/js/plugins/flatpickr.min.js"></script>-->
 
