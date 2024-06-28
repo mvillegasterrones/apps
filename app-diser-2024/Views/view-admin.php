@@ -149,7 +149,7 @@
                             <div class="card-body text-center">
                                 <h1 class="text-gradient text-primary"> <span id="e01"><i class="fas fa-spinner fa-spin"></i></span><!-- <span class="text-lg ms-n1">%</span>--></h1>
                                 <h6 class="mb-0 font-weight-bolder">ENC-01</h6>
-                                <a class="btn btn-sm bg-gradient-info m-0"><i class="fa-solid fa-chart-column"></i> Reporte</a>
+                                <a class="btn btn-sm bg-gradient-info m-0" data-bs-toggle="modal" data-bs-target="#modal-form-enc-01-admin" onclick="admin_reports().get_admin_enc_01()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                             <div class="card-body text-center">
                                 <h1 class="text-gradient text-primary"> <span id="e02"><i class="fas fa-spinner fa-spin"></i></span><!-- <span class="text-lg ms-n1">%</span>--></h1>
                                 <h6 class="mb-0 font-weight-bolder">ENC-02</h6>
-                                <a class="btn btn-sm bg-gradient-info m-0"><i class="fa-solid fa-chart-column"></i> Reporte</a>
+                                <a class="btn btn-sm bg-gradient-info m-0" data-bs-toggle="modal" data-bs-target="#modal-form-enc-02-admin" onclick="admin_reports().get_admin_enc_02()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
                             </div>
                         </div>
                     </div>
@@ -202,4 +202,6 @@
 include './views/form-modal/modal-reporte-inst-01-admin.php';
 include './views/form-modal/modal-reporte-inst-02-admin.php';
 include './views/form-modal/modal-reporte-inst-03-admin.php';
+include './views/form-modal/modal-reporte-enc-01-admin.php';
+include './views/form-modal/modal-reporte-enc-02-admin.php';
 ?>
