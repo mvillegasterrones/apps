@@ -120,8 +120,7 @@
                                 <h1 class="text-gradient text-primary"><span id="i01"><i class="fas fa-spinner fa-spin"></i></span><!--<span class="text-lg ms-n2">°C</span>--></h1>
                                 <h6 class="mb-0 font-weight-bolder">INST-01</h6>
                                 <!--<p class="opacity-8 mb-0 text-sm">Temperature</p>-->
-                                <a class="btn btn-sm bg-gradient-secondary m-0" data-bs-toggle="modal"
-                                data-bs-target="#modal-form-inst-01-admin" onclick="admin_reports().get_report_inst_01_admin()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
+                                <a class="btn btn-sm bg-gradient-secondary m-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-01-admin" onclick="admin_reports().get_admin_inst_01()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +130,7 @@
                                 <h1 class="text-gradient text-primary"><span id="i02"><i class="fas fa-spinner fa-spin"></i></span><!-- <span class="text-lg ms-n2">°C</span>--></h1>
                                 <h6 class="mb-0 font-weight-bolder">INST-02</h6>
                                 <!--<p class="opacity-8 mb-0 text-sm">Temperature</p>-->
-                                <a class="btn btn-sm bg-gradient-secondary m-0"><i class="fa-solid fa-chart-column"></i> Reporte</a>
+                                <a class="btn btn-sm bg-gradient-secondary m-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-02-admin" onclick="admin_reports().get_admin_inst_02()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +139,7 @@
                             <div class="card-body text-center">
                                 <h1 class="text-gradient text-primary"> <span id="i03"><i class="fas fa-spinner fa-spin"></i></span><!-- <span class="text-lg ms-n1">%</span>--></h1>
                                 <h6 class="mb-0 font-weight-bolder">INST-03</h6>
-                                <a class="btn btn-sm bg-gradient-secondary m-0"><i class="fa-solid fa-chart-column"></i> Reporte</a>
+                                <a class="btn btn-sm bg-gradient-secondary m-0" data-bs-toggle="modal" data-bs-target="#modal-form-inst-03-admin" onclick="admin_reports().get_admin_inst_03()"><i class="fa-solid fa-chart-column"></i> Reporte</a>
                             </div>
                         </div>
                     </div>
@@ -200,5 +199,7 @@
     </div>
 </main>
 <?php
-include './views/form-modal/modal-reporte-inst-01-admin.php'
+include './views/form-modal/modal-reporte-inst-01-admin.php';
+include './views/form-modal/modal-reporte-inst-02-admin.php';
+include './views/form-modal/modal-reporte-inst-03-admin.php';
 ?>

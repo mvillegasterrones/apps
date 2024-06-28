@@ -8,11 +8,176 @@ const admin_reports = () => ({
 
     },
 
-    get_report_inst_01_admin: () => {
+    get_admin_inst_03: () => {
 
-        let params = { action: 'get-reporte-inst-01-admin' }
+        let params = { action: 'get-admin-instrumento-03' }
 
-        $.post(questionario_url, params, (response) => {
+        $.post(admin_url, params, (response) => {
+
+            let data = eval(response);
+            let html = ''
+
+            $("#modal-form-inst-03-admin #btn-cargando").show();
+
+            if (response !== "[]") {
+                for (let i = 0; i < data.length; i++) {
+                    let ubicacion = data[i].d_dpto + " / " + data[i].d_prov + " / " + data[i].d_dist;
+                    html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_dni +
+                                                    " - " +
+                                                    data[i].txt_ape_nomb
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo
+                                                    }</p>
+                                </td>
+                            </tr>`;
+                }
+            } else {
+                html += `<tr>
+                            <td colspan="10" class="text-danger text-center text-uppercase">
+                                <p class="text-xs font-weight-bold mb-0">
+                                    <i class="fa-regular fa-triangle-exclamation"></i>
+                                    No se han encontrado registros
+                                </p>
+                            </td>
+                        </tr>`;
+            }
+            $("#modal-form-inst-03-admin #tbl-reporte-inst-03 tbody").html(html);
+            $("#modal-form-inst-03-admin #btn-cargando").hide();
+
+        }).fail(error => {
+
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+    },
+
+    get_admin_inst_02: () => {
+
+        let params = { action: 'get-admin-instrumento-02' }
+
+        $.post(admin_url, params, (response) => {
+
+            let data = eval(response);
+            let html = ''
+
+            $("#modal-form-inst-02-admin #btn-cargando").show();
+
+            if (response !== "[]") {
+                for (let i = 0; i < data.length; i++) {
+                    let ubicacion = data[i].d_dpto + " / " + data[i].d_prov + " / " +
+                        data[i].d_dist; 
+                    html += `<tr>
+                                <td class="text-center">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${i + 1
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
+                                                    }</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
+                                                    }</p>
+                                </td>
+                                <td align=center>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_grado
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_datos_aplicador
+                                                    }</p>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">${data[i].txt_cargo_aplicador
+                                                    }</p>
+                                </td>
+                            </tr>`;
+                }
+            } else {
+                html += `<tr>
+                            <td colspan="10" class="text-danger text-center text-uppercase">
+                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se han
+                                    encontrado registros</p>
+                            </td>
+                        </tr>`;
+            }
+            $("#modal-form-inst-02-admin #tbl-reporte-inst-02 tbody").html(html);
+            $("#modal-form-inst-02-admin #btn-cargando").hide();
+
+        }).fail(error => {
+
+            console.error(error);
+            sw_alert().error(error);
+
+        })
+    },
+
+    get_admin_inst_01: () => {
+
+        let params = { action: 'get-admin-instrumento-02' }
+
+        $.post(admin_url, params, (response) => {
 
             let data = eval(response)
             let html = ''
@@ -20,9 +185,10 @@ const admin_reports = () => ({
             $("#modal-form-inst-01-admin #btn-cargando").show();
             if (response !== "[]") {
                 for (let i = 0; i < data.length; i++) {
-                    let ubicacion = data[i].d_dpto + " / " + data[i].d_prov + " / " + data[i].d_dist;
-                    let estudiante = data[i].txt_est_apellidos + ", " + data[i].txt_est_nombres;
-                    let icon_delete = `<i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash" onclick="instrumento_01().delete_int_01(${data[i].idInstrumento},${i + 1})"></i>`
+                    let ubicacion = data[i].d_dpto + " / " + data[i].d_prov + " / " +
+                        data[i].d_dist; let estudiante = data[i].txt_est_apellidos + ", " + data[i].txt_est_nombres; let
+                            icon_delete = `<i class="fa-regular fa-trash-can cursor-pointer text-danger icon-trash"
+            onclick="instrumento_01().delete_int_01(${data[i].idInstrumento},${i + 1})"></i>`
 
                     html += `<tr>
                                 <td class="text-center">
@@ -30,34 +196,34 @@ const admin_reports = () => ({
                                 </td>
                                 <td class="text-center">
                                     <p class="text-xs font-weight-bold mb-0">${i + 1
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td class="text-center">
                                     <p class="text-xs font-weight-bold mb-0">${data[i].txt_mes_reporte
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td class="text-center">
                                     <p class="text-xs font-weight-bold mb-0">${data[i].txt_fecha_aplicacion
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td class="text-center">
                                     <p class="text-xs font-weight-bold mb-0">${data[i].cod_mod
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${data[i].nombre_ie
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${ubicacion}</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${data[i].cen_pob
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${data[i].d_dreugel
-                        }</p>
+                                        }</p>
                                 </td>
                                 <td>
                                     <p class="text-xs font-weight-bold mb-0">${estudiante}</p>
@@ -68,7 +234,8 @@ const admin_reports = () => ({
             } else {
                 html += `<tr>
                             <td colspan="10" class="text-danger text-center text-uppercase">
-                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se han encontrado registros</p>
+                                <p class="text-xs font-weight-bold mb-0"><i class="fa-regular fa-triangle-exclamation"></i> No se
+                                    han encontrado registros</p>
                             </td>
                         </tr>`;
             }
@@ -97,18 +264,10 @@ const admin_reports = () => ({
             let data = eval(response)
 
             for (let i = 0; i < data.length; i++) {
-
-                labels.push(data[i].region)
-                data01.push(data[i].i01)
-                data02.push(data[i].i02)
-                data03.push(data[i].i03)
-                data04.push(data[i].e01)
-                data05.push(data[i].e02)
-
+                labels.push(data[i].region) data01.push(data[i].i01)
+                data02.push(data[i].i02) data03.push(data[i].i03) data04.push(data[i].e01) data05.push(data[i].e02)
             }
-
             create_chart_bar_total_region(labels, data01, data02, data03, data04, data05)
-
         }).fail(error => {
             console.log(error)
             sw_alert().error(error)
@@ -127,44 +286,18 @@ const admin_reports = () => ({
             let i01, i02, i03, e01, e02, total
 
             for (let i = 0; i < data.length; i++) {
-
-                data1.push(
-                    data[i].tI01,
-                    data[i].tI02,
-                    data[i].tI03,
-                    data[i].tE01,
-                    data[i].tE02
-                )
-
-                i01 = parseInt(data[i].tI01)
-                i02 = parseInt(data[i].tI02)
-                i03 = parseInt(data[i].tI03)
-                e01 = parseInt(data[i].tE01)
-                e02 = parseInt(data[i].tE02)
-
-            }
-
-            total = i01 + i02 + i03 + e01 + e02
-
-            $('#card-totales #i01').html(i01)
-            $('#card-totales #i02').html(i02)
-            $('#card-totales #i03').html(i03)
-            $('#card-totales #e01').html(e01)
-            $('#card-totales #e02').html(e02)
-
-            $('#tbl-totales #i01').html(i01)
-            $('#tbl-totales #i02').html(i02)
-            $('#tbl-totales #i03').html(i03)
-            $('#tbl-totales #e01').html(e01)
-            $('#tbl-totales #e02').html(e02)
-            $('#total').html(total)
-
-            create_chart_donuts_total_instrumentos_2(data1)
-
-        }).fail(error => {
-            console.log(error)
-            sw_alert().error(error)
-        })
+                data1.push(data[i].tI01, data[i].tI02, data[i].tI03,
+                    data[i].tE01, data[i].tE02) i01 = parseInt(data[i].tI01) i02 = parseInt(data[i].tI02)
+                i03 = parseInt(data[i].tI03) e01 = parseInt(data[i].tE01) e02 = parseInt(data[i].tE02)
+            } total = i01 + i02 +
+                i03 + e01 + e02 $('#card-totales #i01').html(i01) $('#card-totales #i02').html(i02) $('#card-totales
+                    #i03').html(i03) $('#card - totales #e01').html(e01) $('#card - totales #e02').html(e02) $('#tbl - totales
+                    #i01').html(i01) $('#tbl - totales #i02').html(i02) $('#tbl - totales #i03').html(i03) $('#tbl - totales
+                    #e01').html(e01) $('#tbl - totales #e02').html(e02) $('#total').html(total)
+                    create_chart_donuts_total_instrumentos_2(data1) }).fail(error => {
+                    console.log(error)
+                    sw_alert().error(error)
+                })
 
     },
 
