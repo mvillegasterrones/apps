@@ -123,6 +123,7 @@ $section_6_p19 = array(
     'DEMUNA ',
     'Servicio de Atención Rural o CEM',
     'Ninguno',
+    'No tenemos red de protección conformada con acta',
     'Otro (especifique)',
 );
 
