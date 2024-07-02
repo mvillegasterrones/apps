@@ -404,7 +404,7 @@ const admin_reports = () => ({
 
     get_donust_total_instrumentos: () => {
 
-        let params = { action: 'get-admin-totales-instrumentos' }
+        let params = { action: 'get-admin-totales-instrumentos', region: $('#sel-region').val() }
 
         $.post(admin_url, params, (response) => {
 
@@ -439,13 +439,88 @@ const admin_reports = () => ({
             $('#tbl-totales #e01').html(e01)
             $('#tbl-totales #e02').html(e02)
             $('#total').html(total)
-            create_chart_donuts_total_instrumentos_2(data1)
+            //* create_chart_donuts_total_instrumentos_2(data1)
+
+            // Chart Doughnut Consumption by room
+            var ctx1 = document.getElementById("chart-consumption").getContext("2d");
+
+            var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+
+            gradientStroke1.addColorStop(1, "rgba(203,12,159,0.2)");
+            gradientStroke1.addColorStop(0.2, "rgba(72,72,176,0.0)");
+            gradientStroke1.addColorStop(0, "rgba(203,12,159,0)"); //purple colors
+
+            new Chart(ctx1, {
+                type: "doughnut",
+                data: {
+                    labels: ["INST-01", "INST-02", "INST-03", "ENC-01", "ENC-02"],
+                    datasets: [
+                        {
+                            label: "Consumption",
+                            weight: 9,
+                            cutout: 90,
+                            tension: 0.9,
+                            pointRadius: 2,
+                            borderWidth: 2,
+                            backgroundColor: [
+                                "#5e72e4",
+                                "#8392ab",
+                                "#11cdef",
+                                "#2dce89",
+                                "#fb6340",
+                            ],
+                            data: data1, // [15, 20, 13, 32, 20],
+                            fill: false,
+                        },
+                    ],
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false,
+                        },
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: "index",
+                    },
+                    scales: {
+                        y: {
+                            grid: {
+                                drawBorder: false,
+                                display: false,
+                                drawOnChartArea: false,
+                                drawTicks: false,
+                            },
+                            ticks: {
+                                display: false,
+                            },
+                        },
+                        x: {
+                            grid: {
+                                drawBorder: false,
+                                display: false,
+                                drawOnChartArea: false,
+                                drawTicks: false,
+                            },
+                            ticks: {
+                                display: false,
+                            },
+                        },
+                    },
+                },
+            });
+
         }).fail(error => {
             console.log(error)
             sw_alert().error(error)
         })
 
     },
+
+
 
 })
 

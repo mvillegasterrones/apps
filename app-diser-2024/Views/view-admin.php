@@ -13,6 +13,34 @@
             </a>
         </label>
         <div class="row mt-0">
+            <div class="col-5">
+                <!--<label for="">Seleccione región:</label>-->
+                <select class="form-control form-control-sm text-uppercase" name="sel-region" id="sel-region" onchange="admin_reports().get_donust_total_instrumentos()">
+                    <option value="">.: Todas las regiones :.</option>
+                    <option>AMAZONAS</option>
+                    <option>ANCASH</option>
+                    <option>APURIMAC</option>
+                    <option>AREQUIPA</option>
+                    <option>AYACUCHO</option>
+                    <option>CAJAMARCA</option>
+                    <option>CUSCO</option>
+                    <option>HUANCAVELICA</option>
+                    <option>HUANUCO</option>
+                    <option>JUNIN</option>
+                    <option>LA LIBERTAD</option>
+                    <option>LAMBAYEQUE</option>
+                    <option>LIMA</option>
+                    <option>LORETO</option>
+                    <option>MADRE DE DIOS</option>
+                    <option>PASCO</option>
+                    <option>PIURA</option>
+                    <option>PUNO</option>
+                    <option>SAN MARTIN</option>
+                    <option>UCAYALI</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-2">
 
             <div class="col-lg-5 col-md-12 mt-2 mt-lg-0">
 
