@@ -28,9 +28,9 @@
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Comunidad</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                        Edad</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                        COD-Tipo Comunidad</th>
+                                        Tipo Comunidad</th>
+                                    < class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        COD-MODULAR</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Inst. Educativa</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
