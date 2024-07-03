@@ -26,7 +26,7 @@
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Mes reporte</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                        Comunidad</th>
+                                        Tipo Comunidad</th>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Tipo Comunidad</th>
                                     < class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
