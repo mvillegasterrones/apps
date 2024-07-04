@@ -9,6 +9,19 @@ class mQuestionario
         $this->conexion->conectar();
     }
 
+	function get_tbl_kit_aseo($cod_mod)
+	{
+		$sql = "CALL sp_v1_get_view_kitaseo('$cod_mod')";
+        $this->conexion->conexion->set_charset('utf8');
+		$resultados = $this->conexion->conexion->query($sql);
+		$arreglo    = array();
+		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
+			$arreglo[] = $re;
+		}
+		$this->conexion->cerrar();
+		return $arreglo;
+	}
+
 	// ! Admin reports
 	function get_reporte_inst_01_admin()
     {

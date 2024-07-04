@@ -259,7 +259,7 @@
                             <hr class="horizontal light mt-1 mb-3" />
 
                             <button type="button" class="btn btn-xs btn-primary mb-0" data-bs-toggle="modal"
-                                data-bs-target="#" onclick="funciones().load_form_content('form-enc-02.php')"><i
+                                data-bs-target="#" onclick="funciones().load_form_content('form-enc-03.php')"><i
                                     class="fa-regular fa-plus"></i> Nuevo</button>
 
                             <button type="button" class="btn btn-xs btn-primary mb-0" data-bs-toggle="modal"

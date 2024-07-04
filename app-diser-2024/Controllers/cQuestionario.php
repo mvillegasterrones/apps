@@ -4,6 +4,11 @@ require_once '../Models/mQuestionario.php';
 $instancia = new mQuestionario();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-tbl-kit-aseo':
+        $cod_mod  = $_SESSION['cod_mod'];
+        $ejecutar = $instancia->get_tbl_kit_aseo($cod_mod);
+        echo json_encode($ejecutar);
+        break;
     // ! INICIO - Encuesta 02
     case 'delete-enc-02':
         $id       = $_POST['id'];
