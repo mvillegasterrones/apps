@@ -20,7 +20,7 @@
                                             <button class="multisteps-form__progress-btn js-active" type="button" title="Información">
                                                 <span>Información</span>
                                             </button>
-                                            <button class="multisteps-form__progress-btn" type="button" title="Kit de aseo" onclick="encuesta_03().get_tbl_kit_aseo()">
+                                            <button class="multisteps-form__progress-btn" type="button" title="Kit de aseo">
                                                 Kit de aseo
                                             </button>
                                             <button class="multisteps-form__progress-btn" type="button" title="Kit de limpieza">
@@ -71,7 +71,7 @@
                                             </div>
 
                                             <div class="button-row d-flex mt-4">
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
+                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="encuesta_03().get_tbl_kit_aseo()">
                                                     Empezar
                                                 </button>
                                             </div>
@@ -85,19 +85,16 @@
                                         Todos los campos son obligatorios</p>-->
                                         <div class="multisteps-form__content">
 
-                                            <!--<form id="form-enc-03-aseo" name="form-enc-03-aseo" class="was-validated card-color-pastel mb-8" novalidate>-->
-                                            <input type="hidden" id="id" name="id" value="0">
-                                            <input type="hidden" id="action" name="action" value="save-update-enc-03-aseo">
-
                                             <div class="col-12 mt-3 mt-sm-0">
 
                                                 <div class="table-responsive">
+
+                                                    <input type="text" id="aseo-n-reg" name="aseo-n-reg" value="0">
 
                                                     <table class="table table-striped table-hover table-sm" id="tbl-kit-aseo">
                                                         <thead class="text-center">
                                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
                                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Descripción</th>
-                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Un.Medida</th>
                                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Hombres</th>
                                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mujer</th>
                                                         </thead>
@@ -108,11 +105,9 @@
 
                                             </div>
 
-                                            <!--</form>-->
-
                                             <div class="button-row d-flex mt-4">
                                                 <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
-                                                    Siguiente
+                                                    Guardar y Seguir
                                                     <i class="fa-duotone fa-arrow-right"></i>
                                                 </button>
                                             </div>

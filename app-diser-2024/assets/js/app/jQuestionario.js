@@ -848,15 +848,15 @@ const encuesta_03 = () => ({
       let data = eval(response)
       let html = ''
       let reg = ''
-
+      let n = 0
+      
       for (let i = 0; i < data.length; i++) {
-        let general, hombre, mujer
+        let hombre, mujer
+        let general = (data[i].mse === 'ST') ? ' readonly ' : ''
         reg = data[i]['r_nat ']
+        let freg = (data[i].region === 'Selva') ? ' readonly ' : ''
 
         switch (data[i].genero) {
-          case '':
-            general = ''
-            break;
           case 'hombre':
             mujer = ' readonly '
             break
@@ -865,17 +865,17 @@ const encuesta_03 = () => ({
             break
           default:
             break
-          }
+        }
 
         html += `<tr>
-            <td><p class="text-xxs text-center font-weight-bold mb-0">${i+1}</p></td>
-            <td class="w-25"><p class="text-xxs m-25 font-weight-bold mb-0">${data[i].descrip_item}</p></td>
-            <td><p class="text-xxs font-weight-bold mb-0">${data[i].uni_medida}</p></td>
-            <td><input type="number" class="form-control form-control-sm" id=""  name="" value="0" ${hombre} ></td>
-            <td><input type="number" class="form-control form-control-sm" id=""  name="" value="0" ${mujer} ></td>
-          </tr>`
-        }
-        
+              <td><p class="text-xxs text-center font-weight-bold mb-0">${i+1}</p></td>
+              <td class="w-25"><p class="text-xxs m-25 font-weight-bold mb-0">${data[i].descrip_item}</p><p class="text-xxs font-weight-bold mb-0">UND. MEdida: <b>${data[i].uni_medida}</b></p></td>
+              <td><input type="number" class="form-control form-control-sm" id="aseo_h_${i+1}"  name="aseo_h_${i+1}" value="0" required ${hombre} ></td>
+              <td><input type="number" class="form-control form-control-sm" id="aseo_m_${i+1}"  name="aseo_m_${i+1}" value="0" required ${mujer} ></td>
+            </tr>`
+        n++
+      }
+      $('#aseo-n-reg').val(n)  
       $('#region-aseo').html(reg)
       $('#tbl-kit-aseo tbody').html(html)
 
