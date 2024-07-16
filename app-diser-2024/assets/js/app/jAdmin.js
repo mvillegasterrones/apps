@@ -308,7 +308,7 @@ const admin_reports = () => ({
 
     get_admin_inst_01: () => {
 
-        let params = { action: 'get-admin-instrumento-02' }
+        let params = { action: 'get-admin-instrumento-01' }
 
         $.post(admin_url, params, (response) => {
 
