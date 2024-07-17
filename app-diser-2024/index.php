@@ -85,6 +85,8 @@
 <script src="./assets/js/github.buttons.js"></script>
 <script src="./assets/js/plugins/chartjs.min.js"></script>
 
+<script src="./assets/apexchart-js/dist/apexcharts.js"></script>
+
 <script src="./assets/js/app/jGlobal-vars.js"></script>
 <script src="./assets/js/app/app.js"></script>
 <script src="./assets/js/app/jSweet.js"></script>

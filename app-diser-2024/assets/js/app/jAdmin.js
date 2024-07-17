@@ -797,3 +797,73 @@ function create_chart_donuts_total_instrumentos_2(data1) {
         },
     });
 }
+
+var options = {
+    series: [{
+    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+  }],
+    chart: {
+    type: 'bar',
+    height: 350
+  },
+  plotOptions: {
+    bar: {
+      borderRadius: 4,
+      borderRadiusApplication: 'end',
+      horizontal: true,
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+      'United States', 'China', 'Germany'
+    ],
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#apex-chart-bar"), options);
+  chart.render();
+
+  var options = {
+    series: [44, 55, 41, 17, 15],
+    chart: {
+    width: 380,
+    type: 'donut',
+  },
+  plotOptions: {
+    pie: {
+      startAngle: -90,
+      endAngle: 270
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  fill: {
+    type: 'gradient',
+  },
+  legend: {
+    formatter: function(val, opts) {
+      return val + " - " + opts.w.globals.series[opts.seriesIndex]
+    }
+  },
+  title: {
+    text: 'Gradient Donut with custom Start-angle'
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
+
+  var chart = new ApexCharts(document.querySelector("#apex-chart-pie"), options);
+  chart.render();

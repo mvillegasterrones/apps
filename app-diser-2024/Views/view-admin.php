@@ -217,6 +217,12 @@
                         <div class="chart">
                             <canvas id="chart-line" class="chart-canvas" height="330"></canvas>
                         </div>
+                        <div class="mt-10">
+                            <div id="apex-chart-bar"></div>
+                        </div>
+                        <div class="mt-10 text-white">
+                            <div id="apex-chart-pie"></div>
+                        </div>
                     </div>
                 </div>
             </div>
