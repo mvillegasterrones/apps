@@ -44,6 +44,10 @@ h1.fade-in {
   opacity: 1;
 }*/
 
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 a {
   color: #18d26e;
   text-decoration: none;
