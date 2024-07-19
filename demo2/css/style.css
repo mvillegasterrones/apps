@@ -1,0 +1,19 @@
+.myFooter {
+    background: #111;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
+    bottom: 0;
+    position: absolute !important;
+}
+
+.divMarquee {
+  position: sticky;
+  bottom: 0;
+  background-color: #1565C0 !important;
+  color: white !important;
+  font-weight: bold !important;
+  align-items: middle;
+}
