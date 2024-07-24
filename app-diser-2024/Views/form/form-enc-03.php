@@ -89,6 +89,8 @@
 
                                                 <div class="table-responsive">
 
+                                                    <!--<form id="form-kit-aseo">-->
+
                                                     <input type="text" id="aseo-n-reg" name="aseo-n-reg" value="0">
 
                                                     <table class="table table-striped table-hover table-sm" id="tbl-kit-aseo">
@@ -101,13 +103,15 @@
                                                         <tbody></tbody>
                                                     </table>
 
+                                                    <!--</form>-->
+
                                                 </div>
 
                                             </div>
 
                                             <div class="button-row d-flex mt-4">
-                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">
-                                                    Guardar y Seguir
+                                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next" onclick="encuesta_03().save_kit_aseo()">
+                                                    Continuar
                                                     <i class="fa-duotone fa-arrow-right"></i>
                                                 </button>
                                             </div>

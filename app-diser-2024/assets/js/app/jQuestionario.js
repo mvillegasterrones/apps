@@ -886,6 +886,49 @@ const encuesta_03 = () => ({
 
   },
 
+  validate_form_tbl : (myForm, myTable) => {
+    document.getElementById(myForm).addEventListener('submit', function(e) {
+      var inputs = document.querySelectorAll('#' + myTable +' input[required]');
+      var allFilled = true;
+
+      inputs.forEach(function(input) {
+          if (input.value.trim() === '') {
+              allFilled = false;
+          }
+      });
+
+      if (!allFilled) {
+          alert('Por favor, llena todos los campos requeridos.');
+          e.preventDefault();
+      }
+  });
+  },
+
+  save_kit_aseo : () => {
+    let validar_form = encuesta_03().validate_form_tbl("form-enc-03", "tbl-kit-aseo");
+
+    if (validar_form) {
+      Swal.fire({
+        icon: "question",
+        title: "¿Guardar kit de aseo?",
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: "Guardar",
+        denyButtonText: `Cancelar`,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          sw_alert().basic_success('Confirmado!')
+          //encuesta_02().send();
+        } else if (result.isDenied) {
+          console.log("ENC-02: Cancelado");
+        }
+      });
+    } else {
+      msje = "Por favor, complete todos los campos del formulario.";
+      sw_alert().warning(msje);
+    }
+  },
+
   get_tbl_kit_limpieza : () => {
 
   },

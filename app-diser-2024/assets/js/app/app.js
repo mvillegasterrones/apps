@@ -3,28 +3,6 @@
     searchable: true,
     fixedHeight: true
 })*/
-document.addEventListener("DOMContentLoaded", () => {
-    const scrollToTopBtns = document.querySelectorAll(".js-btn-next");
-
-    scrollToTopBtns.addEventListener("click", () => {
-        // Desplazar suavemente al inicio de la página
-        alert('Arriba!')
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-    /*scrollToTopBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            // Desplazar suavemente al inicio de la página
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    });*/
-});
 
 const pg_body = () => ({
 
@@ -55,7 +33,7 @@ const funciones = () => ({
         for (var i = 0; i < elementos.length; i++) {
             if (elementos[i].hasAttribute('required') && elementos[i].value === '') {
                 validacionPasada = false;
-                elementos[i].style.border = "2px solid red"; // Marcar el campo vacío
+                elementos[i].style.border = "2px solid red !important"; // Marcar el campo vacío
             } else {
                 elementos[i].style.border = ""; // Restablecer el borde si el campo está lleno
             }
