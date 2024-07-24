@@ -918,9 +918,9 @@ const encuesta_03 = () => ({
       }).then((result) => {
         if (result.isConfirmed) {
           sw_alert().basic_success('Confirmado!')
-          //encuesta_02().send();
+          //* encuesta_02().send();
         } else if (result.isDenied) {
-          console.log("ENC-02: Cancelado");
+          console.log("ENC-03: Cancelado");
         }
       });
     } else {
