@@ -1,4 +1,4 @@
-/**
+/*
 * PHP Email Form Validation - v3.8
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
@@ -28,7 +28,7 @@
       let formData = new FormData( thisForm );
 
       if ( recaptcha ) {
-        if(typeof grecaptcha !== "undefined" ) {
+        if(typeof qrecaptcha !== "undefined" ) {
           grecaptcha.ready(function() {
             try {
               grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
