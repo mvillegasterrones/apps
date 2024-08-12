@@ -41,4 +41,3 @@ function filtrar_tabla()
     }
     echo '</table>';
 }
-?>
