@@ -1,0 +1,76 @@
+.text-reset:hover,
+.nav-link:hover {
+    /*color: #1acc8d !important;*/
+    /*mcolor: rgb(247, 181, 51) !important;*/
+    color: rgb(226, 160, 48) !important;
+    text-decoration: none;
+}
+
+/* Card de venta de curso */
+#radio-cards label {
+    width: 100%;
+}
+
+#radio-cards .card-input-element {
+    display: none;
+}
+
+#radio-cards .card-input:hover {
+    cursor: pointer;
+    background-color: hsl(217, 62%, 96%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#radio-cards .card-input-element:checked + .card-input {
+    border: 1px solid hsl(207, 100%, 36%);
+}
+
+.color-institucional-1 {
+    color: #546C75;
+}
+
+.btn-institucional-1 {
+    color: white !important;
+    background-color: #546C75;
+}
+
+.active-nav-item {
+    color: #546C75 !important;
+    text-decoration: underline;
+    /*background-color: #E5E9EB !important;*/
+}
+
+/* losfing */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#content {
+    display: none;
+}
