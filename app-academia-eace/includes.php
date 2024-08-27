@@ -25,10 +25,10 @@ $link_esinad    = 'javascript:;';
 $link_simon     = 'javascript:;';
 
 # Datos de la persona
-$nombre_empresa    = 'LYCEUM GROUP';
-$nombre_persona    = "Mg. Álvaro Villanes Rojas";
-$nombre_corto      = "Álvaro Villanes Rojas";
-$nombre_cm_persona = "Juana Beltrán Alvarado";
+$nombre_empresa    = 'MY ACADEMIA';
+$nombre_persona    = "Mg. Manuel Villegas Terrones";
+$nombre_corto      = "Manuel Villegas Terrones";
+$nombre_cm_persona = "xxxx xxxx xxxx";
 $persona_cargo     = 'Instructor profesional';
 $anios_experiencia = '5';
 $descripcion_persona ='Licenciado en Sociología, Magíster en Gerencia Social';

@@ -11,9 +11,9 @@
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="./">
                 <img
-                    src="./img/logo.png"
+                    src="./img/logo-eace.png"
                     height="60"
-                    width="205"
+                    width="270"
                     alt="Lyceum Logo"
                     loading="lazy"
                 />
@@ -40,7 +40,7 @@
                     <li class="nav-item">
                         <p class="nav-link mb-0" href="javascript:;">
                             <!--<span class="navbar-tex text-warning mb-0"><?= $nombre_empresa ?></span><br>
-                            <span class="navbar-tex text-muted text-uppercase" style="font-size: 14px;">Cursos y asesor¨ªas en gesti¨®n de proyectos sociales</span>-->
+                            <span class="navbar-tex text-muted text-uppercase" style="font-size: 14px;">Cursos y asesorï¿½ï¿½as en gestiï¿½ï¿½n de proyectos sociales</span>-->
                         </p>
                     </li>
                 </ul>

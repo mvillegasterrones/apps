@@ -1,6 +1,12 @@
 <?php include './includes.php' ?>
 <!-- https://material-minimal.com/learn/design-process/user-experience/ -->
 <!-- generar link de wsp: https://postcron.com/es/blog/landings/generador-de-enlaces-para-whatsapp/ -->
+
+<!--
+link del sistema: https://sisadmin-diser.minedudiser.com/login.php
+acceso: *47352403*
+seguir los pasos:
+-->
 <!DOCTYPE html>
 <html lang="es" data-mdb-theme="">
 
@@ -54,9 +60,9 @@
     <!-- Start your project here-->
     <!--<section class="container">-->
 
-    <div id="loading-overlay">
+    <!--<div id="loading-overlay">
         <div class="spinner"></div>
-    </div>
+    </div>-->
 
     <!--Main Navigation-->
     <header class="mb-10">
@@ -72,7 +78,7 @@
             <section class="mb-6"></section>
 
             <!-- Section initial -->
-            <section id="wellcome" class="mb-xl-10 mb-4" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="100">
+            <section id="wellcome" class="mb-xl-10 mb-4" data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                 <div class="container">
                     <div class="row gx-0">
                         <!-- First column -->
@@ -80,32 +86,31 @@
                         <div class="col-lg-5 mb-5 mb-lg-0 text-lg-start text-sm-center text-white">
                             <div class="rounded-7 me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="500">
                                 <div class="p-lg-5 text-xl-start text-lg-start text-center">
-                                    <h4 class="color-institucional-1">Gestiona tus proyectos sociales de manera simple, dinámica y orientada a resultados.</h4>
+                                    <h4 class="color-institucional-1">Impulsa tu carrera en la Gestión Pública</h4>
                                     <p class="h6 text-muted mb-3">
-                                        Amplía tus conocimientos y habilidades en la gestión de proyectos de desarrollo y ayuda humanitaria mediante enfoques metodológicos innovadores y herramientas clave disponibles para ti. ¡Simplifica tu proceso de gestión y alcanza resultados impactantes!"
+                                    Cursos especializados para transformar el sector público. Aprende de expertos y adquiere herramientas clave para liderar el cambio en tu comunidad.
                                     </p>
                                     <section class="text-center mb-3">
                                         <div class="row" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="300">
-                                            <div class="col-lg-4 col-md-6 mb-md-5 mb-lg-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="500">
+                                            <div class="col-lg-4 col-md-6 mb-md-5 mb-lg-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="500">
                                                 <i data-mdb-animation-init data-mdb-animation-start="onHover" data-mdb-animation="tada" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms;" class="fas fa-layer-group fa-2x color-institucional-1 mb-2"></i>
                                                 <h6 class="fw-normal mb-0 text-muted">Cursos</h6>
                                                 <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 mb-md-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="900">
+                                            <div class="col-lg-4 col-md-6 mb-md-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="900">
                                                 <i data-mdb-animation-init data-mdb-animation-start="onHover" data-mdb-animation="tada" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms;" class="fa-solid fa-user-check fa-2x color-institucional-1 mb-2"></i>
                                                 <h6 class="fw-normal mb-0 text-muted">Asesorías</h6>
                                                 <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
                                             </div>
-                                            <div class="col-lg-4 col-md-6 mb-md-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="1100">
+                                            <div class="col-lg-4 col-md-6 mb-md-0 position-relative" data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="1100">
                                                 <i data-mdb-animation-init data-mdb-animation-start="onHover" data-mdb-animation="tada" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms;" class="fa-solid fa-users fa-2x color-institucional-1 mb-2"></i>
                                                 <h6 class="fw-normal mb-0 text-muted">Comunidad</h6>
                                             </div>
 
 
-
                                         </div>
                                     </section>
-                                    <p class="text-center">
+                                    <p class="text-center" data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="1300">
                                         <a class="btn btn-institucional-1 btn-lg btn-rounded align-sm-center" href="#about-me" role="button" data-mdb-ripple-init>Empecemos<i class="fas fa-angle-down ms-2"></i></a>
                                     </p>
 
@@ -118,7 +123,7 @@
                         <!--<div class="col-1"></div>-->
 
                         <!-- Second column -->
-                        <div class="col-lg-7 mb-5 mb-lg-0 align-items-end align-content-end" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                        <div class="col-lg-7 mb-5 mb-lg-0 align-items-end align-content-end" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="900">
                             <div class="bg-image hover-overlay rounded-7 shadow-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200" data-mdb-animation-offset="300">
                                 <img src="./img/home-banner-01.png" class="px-5 w-100" alt="" />
                                 <div class="" style="background: linear-gradient(
@@ -141,7 +146,7 @@
 
         <div class="row">
             <!-- Carousel wrapper -->
-            <div class="carrusel btn-institucional-1">
+            <div class="carrusel btn-institucional-1" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="1200">
                 <div class="frases col-12 text-center">
 
                     <div class="col-12 mt-xl-3 mt-0">
@@ -239,7 +244,7 @@
                 <div class="container">
                     <div class="row gx-0 align-items-center">
                         <!-- 1era column -->
-                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
+                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-left" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                             <div class="bg-image hover-overlay rounded-7">
                                 <img src="./img/home-01.png" class="w-100" alt="" />
                                 <div class="" style="background: linear-gradient(
@@ -254,7 +259,7 @@
 
                         <!-- 2da column -->
                         <div class="col-lg-6 mb-5 mb-lg-0 text-xl-start text-lg-start text-md-start text-center">
-                            <div class="me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                            <div class="me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
                                 <div class="p-lg-5">
                                     <h3 class="fw-bold color-institucional-1">
                                         <span class="">Accede a nuestra formación online de cursos, con herramientas vinculadas para una experiencia de aprendizaje enriquecida.</span>
@@ -280,7 +285,7 @@
                         <!-- First column -->
                         <div class="col-lg-6 mb-5 mb-lg-0 text-xl-start text-lg-start text-md-start text-center">
                             <div style="backdrop-filter: blur(30px);
-                        z-index: 1;" class="rounded-7 me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
+                        z-index: 1;" class="rounded-7 me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
                                 <div class="p-lg-5">
                                     <h2 class="fw-bold color-institucional-1">
                                         <span class="">¿Necesitas asesoría personalizada?</span>
@@ -299,7 +304,7 @@
                         <!-- First column -->
 
                         <!-- Second column -->
-                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-right" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                             <div class="bg-image hover-overlay rounded-7">
                                 <img src="./img/home-02.png" class="w-100" alt="" />
                                 <div class="" style="background: linear-gradient(
@@ -321,7 +326,7 @@
                 <div class="container">
                     <div class="row gx-0 align-items-center">
                         <!-- 1era column -->
-                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                        <div class="col-lg-6 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-left" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                             <div class="bg-image hover-overlay rounded-7">
                                 <img src="./img/home-03.png" class="w-100" alt="" />
                                 <div class="" style="background: linear-gradient(
@@ -337,7 +342,7 @@
                         <!-- 2da column -->
                         <div class="col-lg-6 mb-5 mb-lg-0 text-xl-start text-lg-start text-md-start text-center">
                             <div style="backdrop-filter: blur(30px);
-                        z-index: 1;" class="rounded-7 me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
+                        z-index: 1;" class="rounded-7 me-lg-n5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
                                 <div class="p-lg-5">
                                     <h2 class="fw-bold color-institucional-1">
                                         <span class="">Únete a nuestra comunidad</span>

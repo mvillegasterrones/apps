@@ -14,9 +14,9 @@
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
     <!-- MDB -->
-    <link rel="stylesheet" href="./template-mdb5/css/pro.mdb.min.css" />
+    <link rel="stylesheet" href="../template-mdb5/css/pro.mdb.min.css" />
     <!-- My Style -->
-    <link rel="stylesheet" href="./template-mdb5/css/style.css" />
+    <link rel="stylesheet" href="../template-mdb5/css/style.css" />
     <!-- Local Style -->
     <link rel="stylesheet" href="./css/style.css">
 </head>

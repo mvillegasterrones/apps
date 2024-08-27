@@ -29,7 +29,7 @@ window.addEventListener('scroll', handleScroll);
 //TODO: Bloquear clic derecho en toda la página
 document.addEventListener('contextmenu', function (e) {
     //! Activar esta seccion para bloquear el clic derecho del mouse
-    e.preventDefault()
+    // ? e.preventDefault()
 });
 
 //TODO: Example starter JavaScript for disabling form submissions if there are invalid fields
