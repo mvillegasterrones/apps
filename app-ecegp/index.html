@@ -50,7 +50,12 @@
     <header class="mb-0" style="background-color: #E5E9EB !important;">
 
         <!-- ? Navbar -->
-        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-5">
+        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-5"
+            data-mdb-animation-init
+            data-mdb-animation-start="onScroll"
+            data-mdb-animation="fade-in-down"
+            data-mdb-animation-show-on-load="false"
+            data-mdb-animation-delay="600">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -327,21 +332,22 @@
     <!--! Main layout-->
     <main>
         <section class="mb-10"></section>
+
         <div class="container">
 
+            <!-- * MISION Y VISION (Ok)-->
             <section class="mb-10">
                 <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Nuestra Misión y Visión</h2>
                 
                 <div class="row gx-lg-5">
 
                     <!-- * MISION-->
-
                     <div class="col-xl-6 col-md-12 mb-4"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="fade-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="500">
+                        data-mdb-animation-init
+                        data-mdb-animation-start="onScroll"
+                        data-mdb-animation="slide-in-up"
+                        data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="200">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
@@ -364,9 +370,9 @@
                     <div class="col-xl-6 col-md-12 mb-4 mt-lg-5"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="fade-in"
+                         data-mdb-animation="slide-in-up"
                          data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="500">
+                         data-mdb-animation-delay="400">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
@@ -392,14 +398,267 @@
 
             </section>
 
-            <!-- Section: My projects -->
+            <!-- * NUESTRO PROPOSITO (Ok)-->
+            <section class="mb-10"
+                data-mdb-animation-init
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                data-mdb-animation-show-on-load="false"
+                data-mdb-animation-delay="500">
+                <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Porpósito de nuestra institución</h2>
+
+                <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init
+                    data-mdb-animation-init
+                    data-mdb-animation-start="onScroll"
+                    data-mdb-animation="zoom-in"
+                    data-mdb-animation-show-on-load="false"
+                    data-mdb-animation-delay="500">
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between p-md-1">
+                            <div class="d-flex flex-row">
+                                <div class="align-self-center col-md-3 rounded-7" style="display:flex;justify-content: center;align-items: center;">
+                                    <!--<i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>-->
+                                    <img src="https://cdn-icons-png.flaticon.com/512/977/977451.png" style="width: 50%;" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="color-institucional-1">Nuestro Propósito</h4>
+                                    <p class="mb-0 text-muted">La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de
+                                        calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en
+                                        respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la
+                                        educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las
+                                        brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos...</p>
+                                        <a href="#!" class="btn btn-secondary btn-rounded mt-2" data-mdb-ripple-init  data-mdb-modal-init
+                                        data-mdb-target="#project-proposito">Leer mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- * NUESTROS VALORES -->
+            <section id="why-select-me" class="container mt-5 mb-5 mb-lg-10"
+                     data-mdb-animation-init
+                     data-mdb-animation-start="onScroll"
+                     data-mdb-animation="fade-in"
+                     data-mdb-animation-show-on-load="false"
+                     data-mdb-animation-delay="300">
+
+                <div class="row">
+                    <h3 class="fw-bold text-center color-institucional-1 mb-5"
+                        data-mdb-animation-init
+                        data-mdb-animation-start="onScroll"
+                        data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="200">Nuestros Valores</h3>
+                    <h5 class="text-center text-muted mb-5"
+                        data-mdb-animation-init
+                        data-mdb-animation-start="onScroll"
+                        data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="200">En el Centro Andino de Investigación en Innovación, nuestros valores fundamentales están diseñados
+                        para orientar la conducta humana en su contexto social y ambiental, promoviendo una autorreflexión
+                        crítica que fomente el crecimiento personal y profesional. Estos valores no sólo guían nuestras
+                        interacciones con el mundo exterior, sino que también nos inspiran a mejorar continuamente como
+                        individuos comprometidos con la integridad, la solidaridad, el profesionalismo, la perseverancia, la
+                        curiosidad, el amor por la naturaleza y el sentido de pertenencia por nuestro país. Al adherirnos a estos
+                        principios, buscamos construir una comunidad más ética, colaborativa y sostenible.</h5>
+                    <div class="col-xl-6 col-md-12 mb-4"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="500">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Integridad</h4>
+                                            <p class="mb-0 text-muted">La integridad es un valor fundamental que implica adherirse consistentemente a
+                                                principios y valores éticos, actuar con honestidad y responsabilidad, y mantener la coherencia
+                                                entre las acciones, decisiones y palabras. Ser íntegro significa ser auténtico y transparente y
+                                               cumplir con los compromisos asumidos. La integridad es esencial para construir confianza y
+                                               credibilidad en todas las relaciones personales y profesionales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="700">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-folder-tree fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Solidaridad</h4>
+                                            <p class="mb-0 text-muted">La compasión es la conducta que busca comprender los desafíos de los demás,
+                                                acompañada de un deseo genuino y altruista de ayudar y tener un impacto positivo en la vida de
+                                                las personas que conforman las familias, los ciudadanos, los clientes, las organizaciones, la
+                                                comunidad inmediata y la sociedad en la que vivimos. Trasciende la empatía, impulsando
+                                                acciones para apoyar a quienes lo necesitan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="900">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Profesionalismo</h4>
+                                            <p class="mb-0 text-muted">El profesionalismo es la conducta y las cualidades que caracterizan a una
+                                                persona en su campo de trabajo. Implica adherirse a estándares éticos y culturales, mostrar
+                                                transparencia por las acciones realizadas, argumentar con fundamentos las decisiones tomadas,
+                                                mostrar de manera clara el resultado de lo hecho, y mantener una actitud de respeto,
+                                                puntualidad y compromiso con los compañeros de trabajo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="1100">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-users fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Perseveracia y Resilencia</h4>
+                                            <p class="mb-0 text-muted">La perseverancia es la capacidad de mantener el esfuerzo y la
+                                                determinación para alcanzar objetivos a largo plazo a pesar de las dificultades, obstáculos y
+                                                fracasos. Este valor implica una actitud resiliente y persistente, donde el individuo sigue
+                                                trabajando hacia sus metas con constancia y dedicación, sin rendirse ante los desafíos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="900">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Curiosidad</h4>
+                                            <p class="mb-0 text-muted">La curiosidad es el deseo de conocer, explorar y entender más acerca del mundo,
+                                                las ideas y uno mismo. Este valor impulsa a las personas a hacer preguntas, buscar respuestas
+                                                y estar abiertas a nuevas experiencias y conocimientos. La curiosidad fomenta un amor por el
+                                                aprendizaje continuo y la innovación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="1100">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-users fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Amor por la Naturaleza</h4>
+                                            <p class="mb-0 text-muted">El amor por la naturaleza es el valor que impulsa a las personas a
+                                                apreciar, respetar y proteger el medio ambiente y todos los seres vivos que lo habitan. Este valor
+                                                se manifiesta en la conducta sostenible, la conciencia ecológica y el compromiso con la
+                                                conservación de los recursos naturales y la biodiversidad.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 mb-4"
+                         data-mdb-animation-init
+                         data-mdb-animation-start="onScroll"
+                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation-show-on-load="false"
+                         data-mdb-animation-delay="900">
+                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between p-md-1">
+                                    <div class="d-flex flex-row">
+                                        <div class="align-self-center">
+                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="color-institucional-1">Sentido de pertenencia por el país</h4>
+                                            <p class="mb-0 text-muted">El sentido de pertenencia por el país es el compromiso y
+                                                orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se
+                                                refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y
+                                                leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la
+                                                comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la
+                                                sociedad.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- End Section: Valores -->
+
+            <!--! Section: My projects -->
             <section class="mb-10 text-center">
-                <h2 class="fw-bold mb-7 text-center">My projects</h2>
+                <!--<h2 class="fw-bold mb-7 text-center">Nuestros Valores</h2>-->
 
                 <div class="row gx-lg-5">
 
-                    <!-- First column -->
-                    <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+                    <!--! First column -->
+                    <!--<div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
 
                         <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
                             data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
@@ -427,11 +686,11 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div>-->
                     <!-- First column -->
 
-                    <!-- Second column -->
-                    <div class="col-lg-4 mb-6 mb-lg-0">
+                    <!--! Second column -->
+                    <!--<div class="col-lg-4 mb-6 mb-lg-0">
 
                         <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
                             data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
@@ -459,11 +718,11 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div>-->
                     <!-- Second column -->
 
-                    <!-- Third column -->
-                    <div class="col-lg-4 mb-6 mb-lg-0">
+                    <!-- ! Third column -->
+                    <!--<div class="col-lg-4 mb-6 mb-lg-0">
 
                         <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
                             data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
@@ -491,7 +750,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div>-->
                     <!-- Third column -->
 
                 </div>
@@ -499,8 +758,146 @@
             </section>
             <!-- Section: My projects -->
 
-            <!-- Section: Projects modals -->
+            <!--! Section: Projects modals -->
             <section class="">
+
+                <!-- Modal project 1 -->
+                <div class="modal fade" id="project-proposito" tabindex="-1" aria-labelledby="project-1Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project-1Label">Nuestro Propósito</h5>
+                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <!-- Section: Design Block -->
+                                <section>
+
+                                    <div class="row gx-lg-5 align-items-center">
+                                        <div class="col-lg-5 mb-5 mb-lg-0">
+                                            <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
+                                                data-mdb-ripple-color="light">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/977/977451.png"
+                                                    class="w-100" />
+                                                <a href="#!">
+                                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                                                        <!--<div
+                                                            class="d-flex justify-content-center align-items-center h-100">
+                                                            <div class="px-4 py-5 px-md-5 text-white text-center">
+                                                                <h3 class="text-uppercase fw-bold mb-4">
+                                                                    The future is <u
+                                                                        style="color: hsl(210, 12%, 80%)">now</u>
+                                                                </h3>
+                                                                <p class="mb-0" style="color: hsl(210, 12%, 80%)">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Harum quia laboriosam error consequuntur fugit,
+                                                                    doloribus rerum, iure nesciunt amet quidem veniam
+                                                                    cupiditate hic fugiat dolore aperiam quisquam libero
+                                                                    earum quibusdam?
+                                                                </p>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                    <div class="hover-overlay">
+                                                        <div class="mask"
+                                                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-7 mb-4 mb-lg-0">
+                                            <div class="d-flex align-items-start mb-5">
+                                                <div class="flex-shrink-0">
+                                                    <div class="p-3 rounded-4 shadow-2-strong"
+                                                        style="background-color: hsl(204, 30%, 20%)">
+                                                        <i class="fas fa-check-circle fa-lg text-white fa-fw"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-4">
+                                                    <!--<p class="fw-bold mb-1">Support 24/7</p>-->
+                                                    <p class="text-muted mb-0">
+                                                        La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos.<br><br>
+La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
+público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
+para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
+Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!--<div class="d-flex align-items-start mb-5">
+                                                <div class="flex-shrink-0">
+                                                    <div class="p-3 rounded-4 shadow-2-strong"
+                                                        style="background-color: hsl(204, 30%, 20%)">
+                                                        <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-4">
+                                                    <p class="fw-bold mb-1">Safe and solid</p>
+                                                    <p class="text-muted mb-0">
+                                                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam
+                                                        ullam aspernatur odio soluta,
+                                                        quisquam dolore animi mollitia a omnis praesentium, expedita
+                                                        nobis!
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start mb-5">
+                                                <div class="flex-shrink-0">
+                                                    <div class="p-3 rounded-4 shadow-2-strong"
+                                                        style="background-color: hsl(204, 30%, 20%)">
+                                                        <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-4">
+                                                    <p class="fw-bold mb-1">Extremely fast</p>
+                                                    <p class="text-muted mb-0">
+                                                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere
+                                                        ullam beatae hic voluptatibus
+                                                        dolores exercitationem? Facilis debitis aspernatur amet nisi
+                                                        iure eveniet facere?
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="flex-shrink-0">
+                                                    <div class="p-3 rounded-4 shadow-2-strong"
+                                                        style="background-color: hsl(204, 30%, 20%)">
+                                                        <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-4">
+                                                    <p class="fw-bold mb-1">Live analytics</p>
+                                                    <p class="text-muted mb-0">
+                                                        Illum doloremque ea, blanditiis sed dolor laborum praesentium
+                                                        maxime sint, consectetur atque
+                                                        ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
+                                                    </p>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Section: Design Block -->
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                                <!--<button type="button" class="btn btn-primary" data-mdb-ripple-init
+                                    data-mdb-ripple-init>Save
+                                    changes</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Modal project 1 -->
                 <div class="modal fade" id="project-1" tabindex="-1" aria-labelledby="project-1Label"
@@ -909,15 +1306,15 @@
             </section>
             <!-- Section: Projects modals -->
 
-            <!-- Section: About me -->
+            <!--! Section: About me -->
             <section class="mb-10">
 
                 <div class="container">
 
                     <div class="row gx-0 align-items-center">
 
-                        <!-- First column -->
-                        <div class="col-lg-6 mb-5 mb-lg-0">
+                        <!--! First column -->
+                        <!--<div class="col-lg-6 mb-5 mb-lg-0">
 
                             <div style="background: hsla(0, 0%, 100%, 0.55);
                           backdrop-filter: blur(30px);
@@ -951,11 +1348,11 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div>-->
                         <!-- First column -->
 
-                        <!-- Second column -->
-                        <div class="col-lg-6 mb-5 mb-lg-0">
+                        <!--! Second column -->
+                        <!--<div class="col-lg-6 mb-5 mb-lg-0">
 
                             <div class="bg-image hover-overlay rounded-7 shadow-4 rotate-lg" data-mdb-animation-init
                                 data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
@@ -971,7 +1368,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div>-->
                         <!-- Second column -->
 
                     </div>
@@ -984,7 +1381,7 @@
             <!-- Section: Testimonials -->
             <section class="mb-10 text-center">
 
-                <h2 class="fw-bold mb-7 text-center">Happy clients</h2>
+                <h2 class="fw-bold mb-7 text-center">Nuestro Equipo</h2>
 
                 <div class="row gx-lg-5">
 
@@ -998,8 +1395,8 @@
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">Project Manager at Spotify</p>
-                                <p class="h5 mb-4 text-primary">Garry Lindman</p>
+                                <p class="text-muted mt-4 mb-2">Project Manager at Minedu</p>
+                                <p class="h5 mb-4 text-primary">Manuel Villegas</p>
                                 <p class="pb-4 mb-4">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
                                     itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
@@ -1023,8 +1420,8 @@
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">CEO at Reddit</p>
-                                <p class="h5 mb-4 text-primary">Lisa Montessori</p>
+                                <p class="text-muted mt-4 mb-2">CEO Design</p>
+                                <p class="h5 mb-4 text-primary">Jasmine Díaz</p>
                                 <p class="pb-4 mb-4">
                                     Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                                     soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
@@ -1048,15 +1445,15 @@
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">Senior Product Designer at Twitter</p>
-                                <p class="h5 mb-4 text-primary">Ozzy McRyan</p>
+                                <p class="text-muted mt-4 mb-2">Senior Product Designer at Facebook</p>
+                                <p class="h5 mb-4 text-primary">Cindy Jasmine</p>
                                 <p class="pb-4 mb-4">
                                     Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
                                     eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
                                     earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
                                 </p>
                             </div>
-                            <img src="https://mdbootstrap.com/img/new/avatars/25.jpg"
+                            <img src="https://mdbootstrap.com/img/new/avatars/12.jpg"
                                 class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
                         </div>
 
@@ -1087,33 +1484,33 @@
                                         <!-- Name input -->
                                         <div class="form-outline mb-4" data-mdb-input-init>
                                             <input type="text" id="form4Example1" class="form-control" />
-                                            <label class="form-label" for="form4Example1">Name</label>
+                                            <label class="form-label" for="form4Example1">Nombre y Apellido</label>
                                         </div>
 
                                         <!-- Email input -->
                                         <div class="form-outline mb-4" data-mdb-input-init>
                                             <input type="email" id="form4Example2" class="form-control" />
-                                            <label class="form-label" for="form4Example2">Email address</label>
+                                            <label class="form-label" for="form4Example2">Email</label>
                                         </div>
 
                                         <!-- Message input -->
                                         <div class="form-outline mb-4" data-mdb-input-init>
                                             <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                                            <label class="form-label" for="form4Example3">Message</label>
+                                            <label class="form-label" for="form4Example3">Mensaje</label>
                                         </div>
 
-                                        <!-- Checkbox -->
-                                        <div class="form-check d-flex justify-content-center mb-4">
+                                        <!--! Checkbox -->
+                                        <!--<div class="form-check d-flex justify-content-center mb-4">
                                             <input class="form-check-input me-2" type="checkbox" value=""
                                                 id="form4Example4" checked />
                                             <label class="form-check-label" for="form4Example4">
                                                 Send me a copy of this message
                                             </label>
-                                        </div>
+                                        </div>-->
 
                                         <!-- Submit button -->
                                         <button type="submit" class="btn btn-primary btn-block mb-4"
-                                            data-mdb-ripple-init>Send</button>
+                                            data-mdb-ripple-init>Enviar</button>
                                     </form>
                                 </div>
                             </div>
@@ -1181,7 +1578,7 @@
             data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
             data-mdb-animation-delay="300">
             © 2022 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <a class="text-dark" href="https://mvillegasterrones.github.io/apps/app-my-profile/index.html" target="_blank">J&M-Asociados</a>
         </div>
         <!-- Copyright -->
     </footer>
