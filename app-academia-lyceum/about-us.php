@@ -241,7 +241,7 @@
             </section>
             <!-- End Section: About me -->
 
-            <!-- Section: mision and vision (Ok) -->
+            <!-- * Section: mision and vision (Ok) -->
             <section id="mision-and-vision" class="container mb-10">
                 <div class="row">
                     <div class="col-xl-6 col-ls-6 col-md-12 col-sm-12 mb-5">
