@@ -1,37 +1,68 @@
-/* Color of the links BEFORE scroll */
+body {
+  /*background-color: #E5E9EB !important;*/
+  /*background-color: #F0F2F2 !important;*/
+}
+
+/*.baskervville-sc-regular,
+* {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+/* * Color of the links BEFORE scroll */
 .navbar-before-scroll .nav-link,
 .navbar-before-scroll .navbar-toggler-icon {
-  color: #fff;
+  /*color: #fff;*/
 }
 
-/* Color of the links AFTER scroll */
+/* * Color of the links AFTER scroll */
 .navbar-after-scroll .nav-link,
 .navbar-after-scroll .navbar-toggler-icon {
-  color: #4f4f4f;
+  /*color: #4f4f4f;*/
 }
 
-/* Color of the navbar AFTER scroll */
+/* * Color of the navbar AFTER scroll */
 .navbar-after-scroll {
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
-/* Transition after scrolling */
+/* * Transition after scrolling */
 .navbar-after-scroll {
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  /*transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;*/
 }
 
-/* Transition to the initial state */
+/* * Transition to the initial state */
 .navbar-before-scroll {
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  /*transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;*/
 }
 
-/* An optional height of the navbar AFTER scroll */
+/* * An optional height of the navbar AFTER scroll */
 .navbar.navbar-before-scroll.navbar-after-scroll {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* Navbar on mobile */
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar ul li a i {
+  visibility: hidden;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: #FF8D3D !important;
+}
+
+.navbar ul li a:hover i {
+  visibility: visible;
+  font-weight: bold;
+  color: red !important;
+}
+
+/* * Navbar on mobile */
 @media (max-width: 991.98px) {
   #main-navbar {
     background-color: #fff;

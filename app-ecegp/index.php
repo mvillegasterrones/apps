@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<html lang="es" data-mdb-theme="">
+<html lang="es" data-mdb-theme="dark">
 <!--
+* https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/cascading-effect/
+* https://mdbootstrap.com/docs/standard/
 * https://mdbgo.com
 * https://github.com/mdbootstrap/mdb-ui-kit
 -->
@@ -15,9 +17,12 @@
     <link rel="icon" href="./img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./img/lg-lyceum.png">
     <!-- Font Awesome -->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />-->
-    <!-- ? <link rel="stylesheet" href="../../fontawesome-pro-6.5.2/css/all.css" />-->
-    <link rel="stylesheet" href="https://minedudiser.com/fontawesome-pro-6.5.2/css/all.css" />
+    <link rel="stylesheet" href="../../fontawesome-pro-6.5.2/css/all.css" />
+    <!-- * <link rel="stylesheet" href="https://minedudiser.com/fontawesome-pro-6.5.2/css/all.css" />-->
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
@@ -26,305 +31,19 @@
     <link rel="stylesheet" href="./css/pro.mdb.min.css" />
     <!-- My Style -->
     <link rel="stylesheet" href="./css/style.css">
-
-    <style>
-        /* * nav-var-title */
-        /*@font-face {
-            font-family: 'VictorMonoRegular';
-            src: url('./css/fonts/VictorMono-Bold.woff2') format('woff2'),
-                url('./css/fonts/VictorMono-Regular.woff') format('woff');
-            font-weight: normal !important;
-            font-style: normal !important;
-        }
-        
-        .nav-title {
-            font-family: 'VictorMonoRegular', sans-serif !important;
-        }
-
-        */
-    </style>
 </head>
 
-<body style="background-color: #E5E9EB !important;">
+<body>
 
     <!--! Main Navigation-->
-    <header class="mb-0" style="background-color: #E5E9EB !important;">
+    <header class="mb-0">
 
         <!-- ? Navbar -->
-        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-5"
-            data-mdb-animation-init
-            data-mdb-animation-start="onScroll"
-            data-mdb-animation="fade-in-down"
-            data-mdb-animation-show-on-load="false"
-            data-mdb-animation-delay="600">
-            <!-- Container wrapper -->
-            <div class="container-fluid">
-                <!-- Toggle button -->
-                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-cente" id="navbarSupportedContent">
-
-                    <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <i class="fa-duotone fa-solid fa-graduation-cap text-primary"></i>
-                            <a class="nav-link nav-title" href="#">ECEGP - Escuela de Ciencias Empresariales y Gestión Pública</a>
-                        </li>
-                    </ul>-->
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <!-- Logo -->
-                        <a class="navbar-brand me-1" href="#">
-                            <img src="./img/logo-ecegp.jpeg" height="40px" alt="Logo" loading="lazy" />
-                            <!--<i class="fa-duotone fa-solid fa-graduation-cap text-primary"></i>-->
-                            ECEGP
-                        </a>
-
-                        <!--<li class="nav-item text-info">
-                            <a class="nav-link" href="#!">Nosotros</a>
-                        </li>
-                        <li class="nav-item text-dark">
-                            <a
-                                data-mdb-dropdown-init
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                Crecimiento Empresarial
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> Innovación Bottom-Up</a>
-                                </li>
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> Proyectos de Inversión Empresarial</a>
-                                </li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> SPRINTS: Problem Focused WorkShop</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item text-dark">
-                            <a class="nav-link" href="#!">Modalidad de aprendizaje</a>
-                        </li>
-                        <li class="nav-item text-dark">
-                            <a class="nav-link" href="#!">Contacto</a>
-                        </li>-->
-                    </ul>
-
-                    <ul class="navbar-nav flex-row">
-
-                        <li class="nav-item active-nav-item">
-                            <a class="nav-link" href="#!">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                data-mdb-dropdown-init
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                Crecimiento Empresarial
-                            </a>
-                            <!-- Dropdown menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> Innovación Bottom-Up</a>
-                                </li>
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> Proyectos de Inversión Empresarial</a>
-                                </li>
-                                <!--<li><hr class="dropdown-divider" /></li>-->
-                                <li>
-                                <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right"></i> SPRINTS: Problem Focused WorkShop</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">Modalidad de aprendizaje</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">Contacto</a>
-                        </li>
-
-                        <!-- Icons -->
-                        <!--<li class="nav-item">
-                            <a class="nav-link pe-2" href="#!">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="#!">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="#!">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2" href="#!">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>-->
-                    </ul>
-                </div>
-                <!-- Collapsible wrapper -->
-
-            </div>
-            <!-- Container wrapper -->
-        </nav>
+        <?php include './views/sections/nav-bar.php' ?>
         <!-- Navbar -->
 
         <!-- ? Section: Split screen -->
-        <section class="">
-
-            <div class="container-fluid px-0">
-                <div class="row g-0">
-
-                    <!-- First column -->
-                    <div class="col-lg-6 vh-100 d-flex flex-column justify-content-center align-items-center">
-
-                        <!-- Headings -->
-                        <div class="h-100 d-flex justify-content-center align-items-center px-5">
-
-                            <div class="color-accent-1">
-                                <h4 class="display-4" data-mdb-animation-init data-mdb-animation-start="onLoad"
-                                    data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                                    data-mdb-animation-delay="200">
-                                    ECEGP</h4>
-
-                                <h1 class="display-5 fw-bold text-uppercase" data-mdb-animation-init
-                                    data-mdb-animation-start="onLoad" data-mdb-animation="fade-in"
-                                    data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                                    Escuela de Ciencias Empresariales y Gestión Pública</h1>
-                            </div>
-
-                        </div>
-
-                        <!-- CTA elements -->
-                        <div class="d-flex align-items-center w-100 justify-content-between  px-5 mb-5"
-                            data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in"
-                            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-
-                            <a href="javascript:;" target="_blank" class="text-dark"><i class="fab fa-facebook text-primary-emphasis fa-xl"></i></a>
-                            <hr class="hr d-none d-xl-flex" style="height: 2px; width: 70px;">
-
-                            <a href="javascript:;" target="_blank" class="text-dark"><i class="fab fa-instagram text-danger-emphasis fa-xl"></i></a>
-                            <hr class="hr d-none d-xl-flex" style="height: 2px; width: 70px;">
-
-                            <a href="javascript:;" target="_blank" class="text-dark"><i class="fab fa-linkedin-in text-info-emphasis fa-xl"></i></a>
-                            <!--<hr class="hr d-none d-xl-flex" style="height: 2px; width: 70px;">-->
-
-                            <!--<a href="<?= $social_tweeter ?>" target="_blank" class="text-dark"><i class="fab fa-twitter text-info fa-xl"></i></a>
-                            <hr class="hr d-none d-xl-flex" style="height: 2px; width: 10px;">-->
-
-                            <!--<a href="<?= $social_youtube ?>" target="_blank" class="text-dark"><i class="fab fa-youtube text-danger fa-xl"></i></a>-->
-                            <hr class="hr d-none d-xl-flex" style="height: 2px; width: 100px;">
-
-                            <a class="btn btn-primary btn-lg btn-rounded" href="#" role="button" data-mdb-ripple-init>Conoce mas<i class="fas fa-angle-down ms-2"></i></a>
-
-                            <!--<a href="#" target="_blank" class="text-primary"><i class="fab fa-facebook fa-xl"></i></a>
-                            <hr class="hr d-none d-xl-flex" style="height: 2px; width: 200px;">
-                            <a class="btn btn-primary btn-lg btn-rounded" href="#" role="button" data-mdb-ripple-init>Conoce mas<i class="fas fa-angle-down ms-2"></i></a>-->
-                        </div>
-
-                    </div>
-                    <!-- First column -->
-
-                    <!-- Second column -->
-                    <div class="col-lg-6 d-none d-lg-inline-block vh-100">
-
-                        <!-- Carousel wrapper -->
-                        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel"
-                            data-mdb-carousel-init>
-                            <!-- Indicators -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0"
-                                    class="rounded-circle active" style="width: 7px; height: 7px" aria-current="true"
-                                    aria-label="Slide 1"></button>
-                                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
-                                    aria-label="Slide 2" class="rounded-circle"
-                                    style="width: 7px; height: 7px"></button>
-                                <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
-                                    aria-label="Slide 3" class="rounded-circle"
-                                    style="width: 7px; height: 7px"></button>
-                            </div>
-
-                            <!-- Inner -->
-                            <div class="carousel-inner shadow-5-strong" style="border-bottom-left-radius: 4rem">
-                                <!-- Single item -->
-                                <div class="carousel-item active">
-                                    <!--https://mdbootstrap.com/img/new/textures/full/243.jpg -->
-                                    <img src="https://i.ytimg.com/vi/7hvGJfm7JY0/maxresdefault.jpg"
-                                        class="d-block vh-100 vw-100 object-cover"
-                                        alt="15 years of experience in the IT industry" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Crecimiento Empresarial</h5>
-                                        <p>Impulsa el crecimiento de tu empresa con nuestras soluciones innovadoras.
-                                            Nuestros cursos están diseñados para equiparte con las herramientas necesarias para escalar tu negocio, mejorar la eficiencia y liderar con éxito en un entorno competitivo. ¡Lleva tu empresa al siguiente nivel con nuestra formación especializada en crecimiento empresarial!</p>
-                                    </div>
-                                </div>
-
-                                <!-- Single item -->
-                                <div class="carousel-item">
-                                    <!--https://mdbootstrap.com/img/new/textures/full/102.jpg -->
-                                    <img src="https://mdbootstrap.com/img/new/textures/full/102.jpg"
-                                        class="d-block vh-100 vw-100 object-cover" alt="243 completed projects" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Gestión Pública</h5>
-                                        <p>Transforma la gestión pública con formación de vanguardia.
-                                            Nuestros cursos te preparan para enfrentar los desafíos actuales en la administración pública, mejorando la eficiencia, transparencia y efectividad en la toma de decisiones. Conviértete en un líder que impulsa el cambio positivo en el sector público.</p>
-                                    </div>
-                                </div>
-
-                                <!-- Single item -->
-                                <div class="carousel-item">
-                                    <img src="https://mdbootstrap.com/img/new/textures/full/107.jpg"
-                                        class="d-block vh-100 vw-100 object-cover" alt="53 satisfied customers" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Metodologpia de Aprendizaje</h5>
-                                        <p>Aprende con una metodología que transforma.
-                                            Nuestra innovadora metodología de aprendizaje combina teoría y práctica para garantizar una comprensión profunda y aplicable. Diseñada para adaptarse a tus necesidades, te permitirá alcanzar tus objetivos profesionales de manera efectiva y con un enfoque personalizado."
-                                            
-                                            </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Inner -->
-
-                            <!-- Controls -->
-                            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
-                                data-mdb-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
-                                data-mdb-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <!-- Carousel wrapper -->
-
-                    </div>
-                    <!-- Second column -->
-
-                </div>
-            </div>
-
-        </section>
+        <?php include './views/sections/hero.php' ?>
         <!-- Section: Split screen -->
 
     </header>
@@ -345,8 +64,9 @@
                     <!-- * MISION-->
                     <div class="col-xl-6 col-md-12 mb-4"
                         data-mdb-animation-init
+                        data-mdb-animation-reset="true"
                         data-mdb-animation-start="onScroll"
-                        data-mdb-animation="slide-in-up"
+                        data-mdb-animation="slide-in-left"
                         data-mdb-animation-show-on-load="false"
                         data-mdb-animation-delay="200">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
@@ -371,7 +91,7 @@
                     <div class="col-xl-6 col-md-12 mb-4 mt-lg-5"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="slide-in-right"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="400">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
@@ -406,7 +126,7 @@
                 data-mdb-animation="fade-in"
                 data-mdb-animation-show-on-load="false"
                 data-mdb-animation-delay="500">
-                <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Porpósito de nuestra institución</h2>
+                <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Propósito de nuestra institución</h2>
 
                 <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init
                     data-mdb-animation-init
@@ -437,7 +157,6 @@
                     </div>
                 </div>
 
-
             </section>
 
             <!-- * NUESTROS VALORES -->
@@ -460,7 +179,7 @@
                         data-mdb-animation-start="onScroll"
                         data-mdb-animation="fade-in"
                         data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="200">En el Centro Andino de Investigación en Innovación, nuestros valores fundamentales están diseñados
+                        data-mdb-animation-delay="400">En el Centro Andino de Investigación en Innovación, nuestros valores fundamentales están diseñados
                         para orientar la conducta humana en su contexto social y ambiental, promoviendo una autorreflexión
                         crítica que fomente el crecimiento personal y profesional. Estos valores no sólo guían nuestras
                         interacciones con el mundo exterior, sino que también nos inspiran a mejorar continuamente como
@@ -470,7 +189,7 @@
                     <div class="col-xl-6 col-md-12 mb-4"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="500">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -496,7 +215,7 @@
                     <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="700">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -522,7 +241,7 @@
                     <div class="col-xl-6 col-md-12 mb-4"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="900">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -548,7 +267,7 @@
                     <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="1100">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -573,7 +292,7 @@
                     <div class="col-xl-6 col-md-12 mb-4"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="900">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -598,7 +317,7 @@
                     <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="1100">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -623,7 +342,7 @@
                     <div class="col-xl-6 col-md-12 mb-4"
                          data-mdb-animation-init
                          data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-up"
+                         data-mdb-animation="zoom-in"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="900">
                         <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
@@ -762,7 +481,7 @@
             <!--! Section: Projects modals -->
             <section class="">
 
-                <!-- Modal project 1 -->
+                <!-- * Modal project proposito -->
                 <div class="modal fade" id="project-proposito" tabindex="-1" aria-labelledby="project-1Label"
                     aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -778,14 +497,14 @@
                                 <section>
 
                                     <div class="row gx-lg-5 align-items-center">
-                                        <div class="col-lg-5 mb-5 mb-lg-0">
+                                        <!--<div class="col-lg-12 mb-5 mb-lg-0">
                                             <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
                                                 data-mdb-ripple-color="light">
                                                 <img src="https://cdn-icons-png.flaticon.com/512/977/977451.png"
                                                     class="w-100" />
                                                 <a href="#!">
                                                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-                                                        <!--<div
+                                                        <div
                                                             class="d-flex justify-content-center align-items-center h-100">
                                                             <div class="px-4 py-5 px-md-5 text-white text-center">
                                                                 <h3 class="text-uppercase fw-bold mb-4">
@@ -793,15 +512,14 @@
                                                                         style="color: hsl(210, 12%, 80%)">now</u>
                                                                 </h3>
                                                                 <p class="mb-0" style="color: hsl(210, 12%, 80%)">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Harum quia laboriosam error consequuntur fugit,
-                                                                    doloribus rerum, iure nesciunt amet quidem veniam
-                                                                    cupiditate hic fugiat dolore aperiam quisquam libero
-                                                                    earum quibusdam?
+                                                                    La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos.<br><br>
+La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
+público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
+para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
+Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
                                                                 </p>
                                                             </div>
-                                                        </div>-->
+                                                        </div>
                                                     </div>
                                                     <div class="hover-overlay">
                                                         <div class="mask"
@@ -809,9 +527,9 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div>-->
 
-                                        <div class="col-lg-7 mb-4 mb-lg-0">
+                                        <div class="col-lg-12 mb-4 mb-lg-0">
                                             <div class="d-flex align-items-start mb-5">
                                                 <div class="flex-shrink-0">
                                                     <div class="p-3 rounded-4 shadow-2-strong"
@@ -1546,7 +1264,7 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
     <!--Main layout-->
 
     <!--! Footer-->
-    <footer class="text-center" style="background-color: hsl(218, 62.2%, 95%)">
+    <footer class="text-center"><!-- style="background-color: hsl(218, 62.2%, 95%)"-->
         <div class="container py-4" data-mdb-animation-init data-mdb-animation-start="onScroll"
             data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
 
