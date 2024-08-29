@@ -11,7 +11,7 @@
             <div class="h-100 d-flex justify-content-center align-items-center px-5">
 
                 <div class="color-accent-1">
-                    <h4 class="display-4 text-color-danger" 
+                    <h4 class="display-4" 
                         data-mdb-animation-init 
                         data-mdb-animation-reset="true"
                         data-mdb-animation-start="onLoad"
