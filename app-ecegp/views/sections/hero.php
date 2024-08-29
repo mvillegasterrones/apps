@@ -11,7 +11,7 @@
             <div class="h-100 d-flex justify-content-center align-items-center px-5">
 
                 <div class="color-accent-1">
-                    <h4 class="display-4" 
+                    <h4 class="display-4 text-color-danger" 
                         data-mdb-animation-init 
                         data-mdb-animation-reset="true"
                         data-mdb-animation-start="onLoad"
@@ -20,7 +20,7 @@
                         data-mdb-animation-delay="200">
                         ECEGP</h4>
 
-                    <h1 class="display-5 fw-bold text-uppercase" data-mdb-animation-init
+                    <h1 class="display-5 fw-bold text-uppercase text-color-warning" data-mdb-animation-init
                         data-mdb-animation-start="onLoad" data-mdb-animation="fade-in"
                         data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                         Escuela de Ciencias Empresariales y Gestión Pública</h1>

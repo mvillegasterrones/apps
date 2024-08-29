@@ -1,6 +1,40 @@
+:root {
+  --main-bg-color-danger: #FF4324 !important;
+  --main-bg-color-warning: #FF8D3D !important;
+  --main-bg-color-grey: #1A2B3C !important;
+  --main-bg-color-dark: #020407 !important;
+  --main-bg-color-white: #F0F2F2 !important;
+  --main-bg-color-secondary: #224561 !important;
+  --main-text-color-danger: #FF4324 !important;
+  --main-text-color-warning: #FF8D3D !important;
+  --main-text-color-grey: #1A2B3C !important;
+  --main-text-color-dark: #020407 !important;
+  --main-text-color-white: #F0F2F2 !important;
+  --main-text-color-secondary: #224561 !important;
+}
 body {
+  background-color: var(--main-bg-color-secondary);
   /*background-color: #E5E9EB !important;*/
   /*background-color: #F0F2F2 !important;*/
+}
+
+.text-color-danger {
+  color: var(--main-text-color-danger);
+}
+.text-color-warning {
+  color: var(--main-text-color-warning);
+}
+.text-color-grey {
+  color: var(--main-text-color-grey);
+}
+.text-color-dark {
+  color: var(--main-text-color-dark);
+}
+.text-color-white {
+  color: var(--main-text-color-white);
+}
+.text-color-secondary {
+  color: var(--main-text-color-secondary);
 }
 
 /*.baskervville-sc-regular,
@@ -9,6 +43,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }*/
+
+.navbar-after-scroll {
+  background-color: var(--main-bg-color-grey);
+}
 
 /* * Color of the links BEFORE scroll */
 .navbar-before-scroll .nav-link,
@@ -53,7 +91,7 @@ body {
 
 .navbar ul li a:hover {
   font-weight: bold;
-  color: #FF8D3D !important;
+  color: var(--main-text-color-warning);
 }
 
 .navbar ul li a:hover i {
@@ -63,7 +101,7 @@ body {
 }
 
 /* * Navbar on mobile */
-@media (max-width: 991.98px) {
+/*@media (max-width: 991.98px) {
   #main-navbar {
     background-color: #fff;
   }
@@ -77,4 +115,4 @@ body {
   .rotate-lg {
     transform: rotate(6deg);
   }
-}
+}*/

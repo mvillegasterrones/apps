@@ -1,4 +1,4 @@
-<nav id="main-navbar" class="navbar navbar-expand-lg bg-dark fixed-top navbar-before-scroll shadow-5">
+<nav id="main-navbar" class="navbar navbar-expand-lg fixed-top navbar-before-scroll shadow-5">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -53,7 +53,7 @@
         <li class="nav-item dropdown">
           <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
             aria-expanded="false">
-            Cursos
+            Cursos y Certificaciones
           </a>
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,7 +75,10 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a href="javascript:;" class="nav-link">Modelo de Aprendizaje</a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;" class="nav-link">Contacto</a>
         </li>
       </ul>
       <!-- Left links -->

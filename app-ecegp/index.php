@@ -69,7 +69,7 @@
                         data-mdb-animation="slide-in-left"
                         data-mdb-animation-show-on-load="false"
                         data-mdb-animation-delay="200">
-                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
+                        <div class="card toast-warning rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
                                     <div class="d-flex flex-row">
@@ -94,7 +94,7 @@
                          data-mdb-animation="slide-in-right"
                          data-mdb-animation-show-on-load="false"
                          data-mdb-animation-delay="400">
-                        <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
+                        <div class="card toast-info rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
                                     <div class="d-flex flex-row">
@@ -128,7 +128,7 @@
                 data-mdb-animation-delay="500">
                 <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Propósito de nuestra institución</h2>
 
-                <div class="card toast-light rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init
+                <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init
                     data-mdb-animation-init
                     data-mdb-animation-start="onScroll"
                     data-mdb-animation="zoom-in"
