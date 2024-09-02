@@ -158,7 +158,7 @@
             </div>
             <!-- Inner -->
 
-            <!-- 5 valor item -->
+            <!-- 6 valor item -->
             <div class="carousel-item">
                 <div class="bg-image">
                     <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum"/>
@@ -175,6 +175,24 @@
                 </div>
             </div>
             <!-- Inner -->
+
+            <!-- 7 valor item -->
+            <div class="carousel-item">
+                <div class="bg-image">
+                    <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum"/>
+                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="container text-center color-institucional-1">
+                                <div class="container">
+                                    <h1>Sentido de pertenencia por el país</h1>
+                                    <h5 class="container">El sentido de pertenencia por el país es el compromiso y orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la sociedad.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner --></main>
 
             <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="prev">
