@@ -18,12 +18,14 @@
                             data-mdb-animation="fade-in" 
                             data-mdb-animation-show-on-load="false"
                             data-mdb-animation-delay="200">
-                            ECEGP</h4>
+                            ECEGP
+                        </h4>
 
-                        <h1 class="display-5 fw-bold text-uppercase text-color-warning" data-mdb-animation-init
+                        <h1 class="display-5 fw-bold text-uppercase" data-mdb-animation-init
                             data-mdb-animation-start="onLoad" data-mdb-animation="fade-in"
                             data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                            Escuela de Ciencias Empresariales y Gestión Pública</h1>
+                            Escuela de Ciencias Empresariales y Gestión Pública
+                        </h1>
                     </div>
 
                 </div>
@@ -40,19 +42,10 @@
                     <hr class="hr d-none d-xl-flex" style="height: 2px; width: 70px;">
 
                     <a href="javascript:;" target="_blank" class="text-dark"><i class="fab fa-linkedin-in text-info-emphasis fa-xl"></i></a>
-                    <!--<hr class="hr d-none d-xl-flex" style="height: 2px; width: 70px;">-->
 
-                    <!--<a href="<?= $social_tweeter ?>" target="_blank" class="text-dark"><i class="fab fa-twitter text-info fa-xl"></i></a>
-                    <hr class="hr d-none d-xl-flex" style="height: 2px; width: 10px;">-->
-
-                    <!--<a href="<?= $social_youtube ?>" target="_blank" class="text-dark"><i class="fab fa-youtube text-danger fa-xl"></i></a>-->
                     <hr class="hr d-none d-xl-flex" style="height: 2px; width: 100px;">
 
                     <a class="btn btn-primary btn-lg btn-rounded" href="#" role="button" data-mdb-ripple-init>Conoce mas<i class="fas fa-angle-down ms-2"></i></a>
-
-                    <!--<a href="#" target="_blank" class="text-primary"><i class="fab fa-facebook fa-xl"></i></a>
-                    <hr class="hr d-none d-xl-flex" style="height: 2px; width: 200px;">
-                    <a class="btn btn-primary btn-lg btn-rounded" href="#" role="button" data-mdb-ripple-init>Conoce mas<i class="fas fa-angle-down ms-2"></i></a>-->
                 </div>
 
             </div>

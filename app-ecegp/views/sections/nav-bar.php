@@ -15,8 +15,6 @@
     </a>
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-
-
       <!-- Left links -->
       <ul class="navbar-nav mb-2 mb-lg-0">
 
@@ -58,20 +56,17 @@
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Teaching the Teachers</a>
+              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Teaching the
+                Teachers</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Especialización para Profesionales </a>
+              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Especialización
+                para Profesionales </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> RE-SKALLING: Talleres Focalizados</a>
+              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> RE-SKALLING:
+                Talleres Focalizados</a>
             </li>
-            <!--<li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>-->
           </ul>
         </li>
         <li class="nav-item">

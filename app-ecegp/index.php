@@ -1,3 +1,4 @@
+<?php include './includes.php' ?>
 <!DOCTYPE html>
 <html lang="es">
 <html lang="es" data-mdb-theme="dark">
@@ -58,7 +59,7 @@
             <!-- * MISION Y VISION (Ok)-->
             <section class="mb-10">
                 <h2 class="fw-bold mb-7 pt-10 text-center">Nuestra Misión y Visión</h2>
-                
+
                 <div class="row gx-lg-5">
 
                     <!-- * MISION-->
@@ -66,7 +67,7 @@
                         data-mdb-animation-init
                         data-mdb-animation-reset="true"
                         data-mdb-animation-start="onScroll"
-                        data-mdb-animation="slide-in-left"
+                        data-mdb-animation="zoom-in"
                         data-mdb-animation-show-on-load="false"
                         data-mdb-animation-delay="200">
                         <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
@@ -89,11 +90,11 @@
 
                     <!-- * VISION-->
                     <div class="col-xl-6 col-md-12 mb-4 mt-lg-5"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="slide-in-right"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="400">
+                        data-mdb-animation-init
+                        data-mdb-animation-start="onScroll"
+                        data-mdb-animation="zoom-in"
+                        data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="400">
                         <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
@@ -149,7 +150,7 @@
                                         respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la
                                         educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las
                                         brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos...</p>
-                                        <a href="#!" class="btn btn-secondary btn-rounded mt-2" data-mdb-ripple-init  data-mdb-modal-init
+                                    <a href="#!" class="btn btn-secondary btn-rounded mt-2" data-mdb-ripple-init data-mdb-modal-init
                                         data-mdb-target="#project-proposito">Leer mas...</a>
                                 </div>
                             </div>
@@ -161,11 +162,11 @@
 
             <!-- * NUESTROS VALORES -->
             <section id="why-select-me" class="container mt-5 mb-lg-2"
-                     data-mdb-animation-init
-                     data-mdb-animation-start="onScroll"
-                     data-mdb-animation="fade-in"
-                     data-mdb-animation-show-on-load="false"
-                     data-mdb-animation-delay="300">
+                data-mdb-animation-init
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                data-mdb-animation-show-on-load="false"
+                data-mdb-animation-delay="300">
 
                 <div class="row">
                     <h3 class="fw-bold text-center color-institucional-1 mb-5"
@@ -194,7 +195,14 @@
         </div>
 
         <!-- ? Carousel wrapper -->
-        <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel" data-mdb-carousel-init>
+        <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark"
+            data-mdb-ride="carousel"
+            data-mdb-carousel-init
+            data-mdb-animation-init
+            data-mdb-animation-start="onScroll"
+            data-mdb-animation="fade-in"
+            data-mdb-animation-show-on-load="false"
+            data-mdb-animation-delay="500">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -211,7 +219,7 @@
                 <!-- 1 valor item -->
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-01.jpg" class="w-100" alt="integridad"/>
+                        <img src="./img/valores/valores-01.jpg" class="w-100" alt="integridad" />
                         <div class="mask degradado"><!--  style="background-color: hsla(0, 0%, 0%, 0.6)" -->
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -228,7 +236,7 @@
                 <!-- 2 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-02.jpg" class="w-100" alt="solidaridad"/>
+                        <img src="./img/valores/valores-02.jpg" class="w-100" alt="solidaridad" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -245,7 +253,7 @@
                 <!-- 3 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-04.jpg" class="w-100" alt="Louvre Museum"/>
+                        <img src="./img/valores/valores-04.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -263,7 +271,7 @@
                 <!-- 4 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-03.jpg" class="w-100" alt="Louvre Museum"/>
+                        <img src="./img/valores/valores-03.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -281,7 +289,7 @@
                 <!-- 5 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-05.jpg" class="w-100" alt="Louvre Museum"/>
+                        <img src="./img/valores/valores-05.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -299,7 +307,7 @@
                 <!-- 6 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum"/>
+                        <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -317,7 +325,7 @@
                 <!-- 7 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum"/>
+                        <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -349,107 +357,9 @@
             <!--! Section: My projects -->
             <section class="mb-10 text-center">
                 <!--<h2 class="fw-bold mb-7 text-center">Nuestros Valores</h2>-->
-
                 <div class="row gx-lg-5">
 
-                    <!--! First column -->
-                    <!--<div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
-
-                        <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                            data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                            data-mdb-animation-delay="200">
-                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6"
-                                data-mdb-ripple-init data-mdb-ripple-color="light" data-mdb-modal-init
-                                data-mdb-target="#project-1">
-                                <img src="https://mdbootstrap.com/img/new/textures/small/148.jpg" class="w-100" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">AI engine</h5>
-                                <p class="text-muted">
-                                    <small>Finished <u>13.09.2021</u> for
-                                        <a href="" class="text-dark">Techify</a></small>
-                                </p>
-                                <p class="card-text">
-                                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                                    placerat vulputate. Ut vulputate est non quam dignissim
-                                    elementum. Donec a ullamcorper diam.
-                                </p>
-                                <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
-                            </div>
-                        </div>
-
-                    </div>-->
-                    <!-- First column -->
-
-                    <!--! Second column -->
-                    <!--<div class="col-lg-4 mb-6 mb-lg-0">
-
-                        <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                            data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                            data-mdb-animation-delay="400">
-                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6"
-                                data-mdb-ripple-init data-mdb-ripple-color="light" data-mdb-modal-init
-                                data-mdb-target="#project-2">
-                                <img src="https://mdbootstrap.com/img/new/textures/small/38.jpg" class="w-100" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Balanced design</h5>
-                                <p class="text-muted">
-                                    <small>Finished <u>12.01.2022</u> for
-                                        <a href="" class="text-dark">Rubicon</a></small>
-                                </p>
-                                <p class="card-text">
-                                    Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
-                                    diam orci, nec ornare metus semper sed. Integer volutpat
-                                    ornare erat sit amet rutrum. Ut vulputate est non quam.
-                                </p>
-                                <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
-                            </div>
-                        </div>
-
-                    </div>-->
-                    <!-- Second column -->
-
-                    <!-- ! Third column -->
-                    <!--<div class="col-lg-4 mb-6 mb-lg-0">
-
-                        <div class="card rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                            data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                            data-mdb-animation-delay="600">
-                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6"
-                                data-mdb-ripple-init data-mdb-ripple-color="light" data-mdb-modal-init
-                                data-mdb-target="#project-3">
-                                <img src="https://mdbootstrap.com/img/new/textures/small/55.jpg" class="w-100" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Metaverse 2.0</h5>
-                                <p class="text-muted">
-                                    <small>Finished <u>10.11.2022</u> for
-                                        <a href="" class="text-dark">Venom Tech</a></small>
-                                </p>
-                                <p class="card-text">
-                                    Curabitur tristique, mi a mollis sagittis, metus felis mattis
-                                    arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
-                                    massa volutpat feugiat. Donec.
-                                </p>
-                                <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
-                            </div>
-                        </div>
-
-                    </div>-->
-                    <!-- Third column -->
-
                 </div>
-
             </section>
             <!-- Section: My projects -->
 
@@ -472,38 +382,6 @@
                                 <section>
 
                                     <div class="row gx-lg-5 align-items-center">
-                                        <!--<div class="col-lg-12 mb-5 mb-lg-0">
-                                            <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
-                                                data-mdb-ripple-color="light">
-                                                <img src="https://cdn-icons-png.flaticon.com/512/977/977451.png"
-                                                    class="w-100" />
-                                                <a href="#!">
-                                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center h-100">
-                                                            <div class="px-4 py-5 px-md-5 text-white text-center">
-                                                                <h3 class="text-uppercase fw-bold mb-4">
-                                                                    The future is <u
-                                                                        style="color: hsl(210, 12%, 80%)">now</u>
-                                                                </h3>
-                                                                <p class="mb-0" style="color: hsl(210, 12%, 80%)">
-                                                                    La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos.<br><br>
-La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
-público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
-para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
-Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hover-overlay">
-                                                        <div class="mask"
-                                                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>-->
-
                                         <div class="col-lg-12 mb-4 mb-lg-0">
                                             <div class="d-flex align-items-start mb-5">
                                                 <div class="flex-shrink-0">
@@ -516,66 +394,14 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                                                     <!--<p class="fw-bold mb-1">Support 24/7</p>-->
                                                     <p class="text-muted mb-0">
                                                         La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos.<br><br>
-La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
-público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
-para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
-Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
+                                                        La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
+                                                        público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
+                                                        para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
+                                                        Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
                                                     </p>
                                                 </div>
                                             </div>
 
-                                            <!--<div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Safe and solid</p>
-                                                    <p class="text-muted mb-0">
-                                                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                                                        ullam aspernatur odio soluta,
-                                                        quisquam dolore animi mollitia a omnis praesentium, expedita
-                                                        nobis!
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Extremely fast</p>
-                                                    <p class="text-muted mb-0">
-                                                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                                                        ullam beatae hic voluptatibus
-                                                        dolores exercitationem? Facilis debitis aspernatur amet nisi
-                                                        iure eveniet facere?
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Live analytics</p>
-                                                    <p class="text-muted mb-0">
-                                                        Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                                                        maxime sint, consectetur atque
-                                                        ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-                                                    </p>
-                                                </div>
-                                            </div>-->
                                         </div>
                                     </div>
                                 </section>
@@ -593,410 +419,6 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                     </div>
                 </div>
 
-                <!-- Modal project 1 -->
-                <div class="modal fade" id="project-1" tabindex="-1" aria-labelledby="project-1Label"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="project-1Label">AI engine</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-
-                                <!-- Section: Design Block -->
-                                <section>
-
-                                    <div class="row gx-lg-5 align-items-center">
-                                        <div class="col-lg-5 mb-5 mb-lg-0">
-                                            <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
-                                                data-mdb-ripple-color="light">
-                                                <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg"
-                                                    class="w-100" />
-                                                <a href="#!">
-                                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center h-100">
-                                                            <div class="px-4 py-5 px-md-5 text-white text-center">
-                                                                <h3 class="text-uppercase fw-bold mb-4">
-                                                                    The future is <u
-                                                                        style="color: hsl(210, 12%, 80%)">now</u>
-                                                                </h3>
-                                                                <p class="mb-0" style="color: hsl(210, 12%, 80%)">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Harum quia laboriosam error consequuntur fugit,
-                                                                    doloribus rerum, iure nesciunt amet quidem veniam
-                                                                    cupiditate hic fugiat dolore aperiam quisquam libero
-                                                                    earum quibusdam?
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hover-overlay">
-                                                        <div class="mask"
-                                                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-7 mb-4 mb-lg-0">
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-headset fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Support 24/7</p>
-                                                    <p class="text-muted mb-0">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Nihil quisquam quibusdam modi sapiente magni molestias
-                                                        pariatur facilis reprehenderit facere aliquam ex.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Safe and solid</p>
-                                                    <p class="text-muted mb-0">
-                                                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                                                        ullam aspernatur odio soluta,
-                                                        quisquam dolore animi mollitia a omnis praesentium, expedita
-                                                        nobis!
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Extremely fast</p>
-                                                    <p class="text-muted mb-0">
-                                                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                                                        ullam beatae hic voluptatibus
-                                                        dolores exercitationem? Facilis debitis aspernatur amet nisi
-                                                        iure eveniet facere?
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Live analytics</p>
-                                                    <p class="text-muted mb-0">
-                                                        Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                                                        maxime sint, consectetur atque
-                                                        ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Section: Design Block -->
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
-                                    data-mdb-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-mdb-ripple-init
-                                    data-mdb-ripple-init>Save
-                                    changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal project 2 -->
-                <div class="modal fade" id="project-2" tabindex="-1" aria-labelledby="project-2Label"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="project-2Label">Balanced design</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Section: Design Block -->
-                                <section>
-
-                                    <div class="row gx-lg-5 align-items-center">
-                                        <div class="col-lg-5 mb-5 mb-lg-0">
-                                            <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
-                                                data-mdb-ripple-color="light">
-                                                <img src="https://mdbootstrap.com/img/new/textures/full/7.jpg"
-                                                    class="w-100" />
-                                                <a href="#!">
-                                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center h-100">
-                                                            <div class="px-4 py-5 px-md-5 text-white text-center">
-                                                                <h3 class="text-uppercase fw-bold mb-4">
-                                                                    The future is <u
-                                                                        style="color: hsl(210, 12%, 80%)">now</u>
-                                                                </h3>
-                                                                <p class="mb-0" style="color: hsl(210, 12%, 80%)">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Harum quia laboriosam error consequuntur fugit,
-                                                                    doloribus rerum, iure nesciunt amet quidem veniam
-                                                                    cupiditate hic fugiat dolore aperiam quisquam libero
-                                                                    earum quibusdam?
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hover-overlay">
-                                                        <div class="mask"
-                                                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-7 mb-4 mb-lg-0">
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(0, 63%, 44%)">
-                                                        <i class="fas fa-headset fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Support 24/7</p>
-                                                    <p class="text-muted mb-0">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Nihil quisquam quibusdam modi sapiente magni molestias
-                                                        pariatur facilis reprehenderit facere aliquam ex.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(0, 63%, 44%)">
-                                                        <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Safe and solid</p>
-                                                    <p class="text-muted mb-0">
-                                                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                                                        ullam aspernatur odio soluta,
-                                                        quisquam dolore animi mollitia a omnis praesentium, expedita
-                                                        nobis!
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(0, 63%, 44%)">
-                                                        <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Extremely fast</p>
-                                                    <p class="text-muted mb-0">
-                                                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                                                        ullam beatae hic voluptatibus
-                                                        dolores exercitationem? Facilis debitis aspernatur amet nisi
-                                                        iure eveniet facere?
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(0, 63%, 44%)">
-                                                        <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Live analytics</p>
-                                                    <p class="text-muted mb-0">
-                                                        Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                                                        maxime sint, consectetur atque
-                                                        ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Section: Design Block -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
-                                    data-mdb-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-mdb-ripple-init
-                                    data-mdb-ripple-init>Save
-                                    changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal project 3 -->
-                <div class="modal fade" id="project-3" tabindex="-1" aria-labelledby="project-3Label"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="project-3Label">Metaverse 2.0</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Section: Design Block -->
-                                <section>
-
-                                    <div class="row gx-lg-5 align-items-center">
-                                        <div class="col-lg-5 mb-5 mb-lg-0">
-                                            <div class="bg-image ripple rounded-7 shadow-5-strong" data-mdb-ripple-init
-                                                data-mdb-ripple-color="light">
-                                                <img src="https://mdbootstrap.com/img/new/textures/full/30.jpg"
-                                                    class="w-100" />
-                                                <a href="#!">
-                                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center h-100">
-                                                            <div class="px-4 py-5 px-md-5 text-white text-center">
-                                                                <h3 class="text-uppercase fw-bold mb-4">
-                                                                    The future is <u
-                                                                        style="color: hsl(210, 12%, 80%)">now</u>
-                                                                </h3>
-                                                                <p class="mb-0" style="color: hsl(210, 12%, 80%)">
-                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                    elit.
-                                                                    Harum quia laboriosam error consequuntur fugit,
-                                                                    doloribus rerum, iure nesciunt amet quidem veniam
-                                                                    cupiditate hic fugiat dolore aperiam quisquam libero
-                                                                    earum quibusdam?
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hover-overlay">
-                                                        <div class="mask"
-                                                            style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-7 mb-4 mb-lg-0">
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(260, 84%, 43%)">
-                                                        <i class="fas fa-headset fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Support 24/7</p>
-                                                    <p class="text-muted mb-0">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Nihil quisquam quibusdam modi sapiente magni molestias
-                                                        pariatur facilis reprehenderit facere aliquam ex.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(260, 84%, 43%)">
-                                                        <i class="fas fa-shield-alt fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Safe and solid</p>
-                                                    <p class="text-muted mb-0">
-                                                        Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                                                        ullam aspernatur odio soluta,
-                                                        quisquam dolore animi mollitia a omnis praesentium, expedita
-                                                        nobis!
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(260, 84%, 43%)">
-                                                        <i class="fas fa-shipping-fast fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Extremely fast</p>
-                                                    <p class="text-muted mb-0">
-                                                        Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                                                        ullam beatae hic voluptatibus
-                                                        dolores exercitationem? Facilis debitis aspernatur amet nisi
-                                                        iure eveniet facere?
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-flex align-items-start">
-                                                <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(260, 84%, 43%)">
-                                                        <i class="fas fa-chart-pie fa-lg text-white fa-fw"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <p class="fw-bold mb-1">Live analytics</p>
-                                                    <p class="text-muted mb-0">
-                                                        Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                                                        maxime sint, consectetur atque
-                                                        ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Section: Design Block -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
-                                    data-mdb-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-mdb-ripple-init
-                                    data-mdb-ripple-init>Save
-                                    changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </section>
             <!-- Section: Projects modals -->
 
@@ -1004,78 +426,29 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
             <section class="mb-10">
 
                 <div class="container">
-
                     <div class="row gx-0 align-items-center">
 
-                        <!--! First column -->
-                        <!--<div class="col-lg-6 mb-5 mb-lg-0">
-
-                            <div style="background: hsla(0, 0%, 100%, 0.55);
-                          backdrop-filter: blur(30px);
-                          z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-animation-init
-                                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-                                <div class="card-body p-lg-5 shadow-5">
-                                    <h2 class="fw-bold">
-                                        <span class="text-primary">John Doe</span>
-                                    </h2>
-                                    <p class="fw-bold"><em>“Design is intelligence made visible.”</em></p>
-
-                                    <p class="text-muted mb-4">
-                                        Nunc tincidunt vulputate elit. Mauris varius purus malesuada
-                                        neque iaculis malesuada. Aenean gravida magna orci, non
-                                        efficitur est porta id. Donec magna diam.
-                                    </p>
-                                    <p class="text-muted">
-                                        Ad, at blanditiis quaerat laborum officia incidunt
-                                        cupiditate dignissimos voluptates eius aliquid minus
-                                        praesentium! Perferendis et totam ipsum ex aut earum libero
-                                        accusamus voluptas quod numquam saepe, consequuntur nihil
-                                        quia tenetur consequatur. Quis, explicabo deserunt quasi
-                                        assumenda ea maiores nulla, et dolor saepe praesentium natus
-                                        error reiciendis voluptas iste. Esse, laudantium ipsum
-                                        animi, quos voluptatibus atque vero repellat sit eligendi
-                                        autem maiores quasi cum aperiam. Aperiam rerum culpa
-                                        accusantium, ducimus deserunt aliquid alias vitae quasi
-                                        corporis placeat vel maiores explicabo commodi!
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>-->
-                        <!-- First column -->
-
-                        <!--! Second column -->
-                        <!--<div class="col-lg-6 mb-5 mb-lg-0">
-
-                            <div class="bg-image hover-overlay rounded-7 shadow-4 rotate-lg" data-mdb-animation-init
-                                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200"
-                                data-mdb-animation-offset="300">
-                                <img src="https://mdbootstrap.com/img/new/standard/people/272.jpg" class="w-100"
-                                    alt="" />
-                                <div class="mask" style="background: linear-gradient(
-                                         45deg,
-                                         hsla(169, 84.5%, 52%, 0.3),
-                                         hsla(263, 87.7%, 44.7%, 0.3) 100%
-                                         )">
-                                </div>
-                            </div>
-
-                        </div>-->
-                        <!-- Second column -->
-
                     </div>
-
                 </div>
-
             </section>
             <!-- Section: About me -->
 
             <!-- Section: Testimonials -->
-            <section class="mb-10 text-center">
+            <section class="mb-10 text-center"
+                data-mdb-animation-init
+                data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                data-mdb-animation-show-on-load="false"
+                data-mdb-animation-delay="200">
 
-                <h2 class="fw-bold mb-7 text-center">Nuestro Equipo</h2>
+                <h2 class="fw-bold mb-7 text-center"
+                    data-mdb-animation-init
+                    data-mdb-animation-reset="true"
+                    data-mdb-animation-start="onScroll"
+                    data-mdb-animation="fade-in"
+                    data-mdb-animation-show-on-load="false"
+                    data-mdb-animation-delay="400">Nuestro Equipo</h2>
 
                 <div class="row gx-lg-5">
 
@@ -1085,13 +458,12 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                         <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
                             data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
                             <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
-
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">Project Manager at Minedu</p>
+                                <p class="mt-4 mb-2 text-color-secondary">Project Manager at Minedu</p>
                                 <p class="h5 mb-4 text-primary">Manuel Villegas</p>
-                                <p class="pb-4 mb-4">
+                                <p class="pb-4 mb-4 text-secondary">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
                                     itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
                                     ratione possimus quos suscipit, ratione nostrum cum odit.
@@ -1114,9 +486,9 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">CEO Design</p>
+                                <p class="text-color-secondary mt-4 mb-2">CEO Design</p>
                                 <p class="h5 mb-4 text-primary">Jasmine Díaz</p>
-                                <p class="pb-4 mb-4">
+                                <p class="pb-4 mb-4 text-secondary">
                                     Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                                     soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                                     placeat facere possimus, omnis voluptas assumenda est omnis.
@@ -1139,9 +511,9 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-muted mt-4 mb-2">Senior Product Designer at Facebook</p>
+                                <p class="text-color-secondary mt-4 mb-2">Senior Product Designer at Facebook</p>
                                 <p class="h5 mb-4 text-primary">Cindy Jasmine</p>
-                                <p class="pb-4 mb-4">
+                                <p class="pb-4 mb-4 text-secondary">
                                     Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
                                     eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
                                     earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
@@ -1159,7 +531,7 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
             <!-- Section: Testimonials -->
 
             <!-- Section: Contact -->
-            <section class="mb-10 text-center">
+            <section class="mb-10 text-center" id="section-contact">
 
                 <div class="container">
 
@@ -1218,10 +590,12 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
                             <div class="ratio ratio-1x1" data-mdb-animation-init data-mdb-animation-start="onScroll"
                                 data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
                                 data-mdb-animation-delay="200" data-mdb-animation-offset="200">
-                                <iframe class="shadow-3-strong rounded-7"
+
+                                <img src="./img/contacto.jpeg" class="rounded-5" alt="">
+                                <!--<iframe class="shadow-3-strong rounded-7"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96813.17497894862!2d-73.97484803586903!3d40.68692922859912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1671718528728!5m2!1sen!2spl"
                                     allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>-->
                             </div>
 
                         </div>
@@ -1239,43 +613,7 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
     <!--Main layout-->
 
     <!--! Footer-->
-    <footer class="text-center"><!-- style="background-color: hsl(218, 62.2%, 95%)"-->
-        <div class="container py-4" data-mdb-animation-init data-mdb-animation-start="onScroll"
-            data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
-
-            <!-- Facebook -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #3b5998;" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a>
-
-            <!-- Twitter -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #55acee;" href="#!" role="button"><i
-                    class="fab fa-twitter"></i></a>
-
-            <!-- Google -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #dd4b39;" href="#!" role="button"><i
-                    class="fab fa-google"></i></a>
-
-            <!-- Instagram -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #ac2bac;" href="#!" role="button"><i
-                    class="fab fa-instagram"></i></a>
-
-            <!-- Linkedin -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #0082ca;" href="#!" role="button"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <!-- Github -->
-            <a class="btn text-white btn-floating m-2" style="background-color: #333333;" href="#!" role="button"><i
-                    class="fab fa-github"></i></a>
-
-        </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: hsla(218, 62.2%, 35%, 0.2)" data-mdb-animation-init
-            data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-            data-mdb-animation-delay="300">
-            © 2022 Copyright:
-            <a class="text-dark" href="https://mvillegasterrones.github.io/apps/app-my-profile/index.html" target="_blank">J&M-Asociados</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+    <?php include './views/sections/footer.php' ?>
     <!--Footer-->
 </body>
 <!-- jQuery -->
@@ -1285,7 +623,7 @@ Nuestra propuesta educativa es mayoritariamente digital, complementada con diná
 <!-- MyScripts -->
 <script src="./js/scripts.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const frases = document.querySelector('.frases');
         const spanFrases = frases.querySelectorAll('div');
         let index = 0;
