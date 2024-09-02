@@ -7,6 +7,7 @@
 * https://mdbootstrap.com/docs/standard/
 * https://mdbgo.com
 * https://github.com/mdbootstrap/mdb-ui-kit
+* http://mvillegasterrones.engineer/
 -->
 
 <head>
@@ -16,19 +17,12 @@
     <title>Inicio | EACE</title>
     <!-- MDB icon -->
     <link rel="icon" href="./img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="./img/lg-lyceum.png">
+    <link rel="icon" href="./img/logo-ecegp-only.jpeg">
     <!-- Font Awesome -->
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />-->
     <link rel="stylesheet" href="../../fontawesome-pro-6.5.2/css/all.css" />
-    <!-- * <link rel="stylesheet" href="https://minedudiser.com/fontawesome-pro-6.5.2/css/all.css" />-->
     <!-- Google Fonts Roboto -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <!-- MDB -->
-    <!--<link rel="stylesheet" href="../template-mdb5/css/pro.mdb.min.css" />-->
     <link rel="stylesheet" href="./css/pro.mdb.min.css" />
     <!-- My Style -->
     <link rel="stylesheet" href="./css/style.css">
@@ -425,10 +419,41 @@
             <!--! Section: About me -->
             <section class="mb-10">
 
-                <div class="container">
-                    <div class="row gx-0 align-items-center">
+                <div class="container text-center">
+                    <h2 class="fw-bold mb-7 text-center"
+                    data-mdb-animation-init
+                    data-mdb-animation-reset="true"
+                    data-mdb-animation-start="onScroll"
+                    data-mdb-animation="fade-in"
+                    data-mdb-animation-show-on-load="false"
+                    data-mdb-animation-delay="400">Experiencias de aprendizaje en línea</h2>
+                    <div class="row">
+                        <div class="col-lg-4 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
+                            <h1 class="fw-bold text-info"><i class="fa-light fa-medal"></i></h1>
+                            <h4>Programas de certificación</h4>
+                            <p>Avance en su carrera y desarrolle su confianza con una experiencia de aprendizaje orientada a la acción de 3 a 6 meses que consta de cursos de cohorte y a su propio ritmo.
+                            </p>
+                        </div>
 
+                        <div class="col-lg-4 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                            <h1 class="text-info"><i class="fa-light fa-users-between-lines"></i></h1>
+                            <h4>Cursos de cohorte</h4>
+                            <p>Colabora con una comunidad global en nuestros cursos en línea de 5 semanas y aplica nuevas habilidades a tu trabajo diario para aumentar tu impacto.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
+                            <h1 class="text-info"><i class="fa-light fa-chalkboard-user"></i></h1>
+                            <h4>Cursos a su propio ritmo</h4>
+                            <p>Aprende en cualquier momento y en cualquier lugar. Mejore sus habilidades con cursos en línea flexibles y cortos diseñados para adaptarse a su vida. Acceso 90 días desde la compra.
+                            </p>
+                        </div>
                     </div>
+                    <!--<div class="row gx-0 align-items-center">
+                    </div>-->
                 </div>
             </section>
             <!-- Section: About me -->
@@ -457,13 +482,13 @@
 
                         <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
                             data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
-                            <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
+                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!-- style="background-color: hsl(218, 62.2%, 95%)" -->
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="mt-4 mb-2 text-color-secondary">Project Manager at Minedu</p>
+                                <p class="mt-4 mb-2 text-info">Project Manager at Minedu</p>
                                 <p class="h5 mb-4 text-primary">Manuel Villegas</p>
-                                <p class="pb-4 mb-4 text-secondary">
+                                <p class="pb-4 mb-4 text-info">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
                                     itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
                                     ratione possimus quos suscipit, ratione nostrum cum odit.
@@ -481,14 +506,14 @@
 
                         <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
                             data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                            <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
+                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!--  style="background-color: hsl(218, 62.2%, 95%)" -->
 
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-color-secondary mt-4 mb-2">CEO Design</p>
+                                <p class="text-info mt-4 mb-2">CEO Design</p>
                                 <p class="h5 mb-4 text-primary">Jasmine Díaz</p>
-                                <p class="pb-4 mb-4 text-secondary">
+                                <p class="pb-4 mb-4 text-info">
                                     Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                                     soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                                     placeat facere possimus, omnis voluptas assumenda est omnis.
@@ -506,14 +531,14 @@
 
                         <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
                             data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-                            <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
+                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!-- style="background-color: hsl(218, 62.2%, 95%)" -->
 
                                 <!-- Divider here -->
                                 <hr class="hr hr-blurry">
 
-                                <p class="text-color-secondary mt-4 mb-2">Senior Product Designer at Facebook</p>
+                                <p class="text-info mt-4 mb-2">Senior Product Designer at Facebook</p>
                                 <p class="h5 mb-4 text-primary">Cindy Jasmine</p>
-                                <p class="pb-4 mb-4 text-secondary">
+                                <p class="pb-4 mb-4 text-info">
                                     Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
                                     eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
                                     earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
@@ -591,7 +616,7 @@
                                 data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
                                 data-mdb-animation-delay="200" data-mdb-animation-offset="200">
 
-                                <img src="./img/contacto.jpeg" class="rounded-5" alt="">
+                                <img src="./img/contacto.jpeg" class="rounded-6" alt="">
                                 <!--<iframe class="shadow-3-strong rounded-7"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96813.17497894862!2d-73.97484803586903!3d40.68692922859912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1671718528728!5m2!1sen!2spl"
                                     allowfullscreen="" loading="lazy"

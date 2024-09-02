@@ -29,7 +29,7 @@
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Innovación
+              <a class="dropdown-item" href="<?= $innovacion_botom_up ?>"><i class="fa-light fa-arrow-right text-warning"></i> Innovación
                 Bottom-Up</a>
             </li>
             <li>
