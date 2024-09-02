@@ -18,23 +18,23 @@ body {
   /*background-color: #F0F2F2 !important;*/
 }
 
-.bg-color-danger {
-  color: var(--main-text-color-danger);
+.main-bg-color-danger {
+  background-color: var(--main-text-color-danger);
 }
-.bg-color-warning {
-  color: var(--main-text-color-warning);
+.main-bg-color-warning {
+  background-color: var(--main-text-color-warning);
 }
-.bg-color-grey {
-  color: var(--main-text-color-grey);
+.main-bg-color-grey {
+  background-color: var(--main-text-color-grey);
 }
-.bg-color-dark {
-  color: var(--main-text-color-dark);
+.main-bg-color-dark {
+  background-color: var(--main-text-color-dark);
 }
-.bg-color-white {
-  color: var(--main-text-color-white);
+.main-bg-color-white {
+  background-color: var(--main-text-color-white);
 }
-.bg-color-secondary {
-  color: var(--main-text-color-secondary);
+.main-bg-color-secondary {
+  background-color: var(--main-text-color-secondary);
 }
 
 .text-color-danger {
@@ -135,3 +135,11 @@ body {
     transform: rotate(6deg);
   }
 }*/
+
+.bg-image {
+  max-height: 600px !important;
+}
+
+.degradado {
+  background: linear-gradient(45deg,hsla(168, 85%, 52%, 0.7),hsla(263, 88%, 45%, 0.7) 100%) !important;
+}
