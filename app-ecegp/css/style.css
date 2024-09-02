@@ -18,6 +18,25 @@ body {
   /*background-color: #F0F2F2 !important;*/
 }
 
+.bg-color-danger {
+  color: var(--main-text-color-danger);
+}
+.bg-color-warning {
+  color: var(--main-text-color-warning);
+}
+.bg-color-grey {
+  color: var(--main-text-color-grey);
+}
+.bg-color-dark {
+  color: var(--main-text-color-dark);
+}
+.bg-color-white {
+  color: var(--main-text-color-white);
+}
+.bg-color-secondary {
+  color: var(--main-text-color-secondary);
+}
+
 .text-color-danger {
   color: var(--main-text-color-danger);
 }

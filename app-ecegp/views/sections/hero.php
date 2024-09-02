@@ -82,12 +82,12 @@
                     <!-- Single item -->
                     <div class="carousel-item active">
                         <!--https://mdbootstrap.com/img/new/textures/full/243.jpg -->
-                        <img src="https://mdbootstrap.com/img/new/textures/full/243.jpg"
+                        <img src="./img/hero/hero-01.jpg"
                             class="d-block vh-100 vw-100 object-cover"
                             alt="15 years of experience in the IT industry" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Crecimiento Empresarial</h5>
-                            <p>Impulsa el crecimiento de tu empresa con nuestras soluciones innovadoras.
+                            <h5 class="text-color-white">Crecimiento Empresarial</h5>
+                            <p class="text-color-white">Impulsa el crecimiento de tu empresa con nuestras soluciones innovadoras.
                                 Nuestros cursos están diseñados para equiparte con las herramientas necesarias para escalar tu negocio, mejorar la eficiencia y liderar con éxito en un entorno competitivo. ¡Lleva tu empresa al siguiente nivel con nuestra formación especializada en crecimiento empresarial!</p>
                         </div>
                     </div>
@@ -95,22 +95,22 @@
                     <!-- Single item -->
                     <div class="carousel-item">
                         <!--https://mdbootstrap.com/img/new/textures/full/102.jpg -->
-                        <img src="https://mdbootstrap.com/img/new/textures/full/102.jpg"
+                        <img src="./img/hero/hero-02.jpg"
                             class="d-block vh-100 vw-100 object-cover" alt="243 completed projects" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Gestión Pública</h5>
-                            <p>Transforma la gestión pública con formación de vanguardia.
+                            <h5 class="text-color-white">Gestión Pública</h5>
+                            <p class="text-color-white">Transforma la gestión pública con formación de vanguardia.
                                 Nuestros cursos te preparan para enfrentar los desafíos actuales en la administración pública, mejorando la eficiencia, transparencia y efectividad en la toma de decisiones. Conviértete en un líder que impulsa el cambio positivo en el sector público.</p>
                         </div>
                     </div>
 
                     <!-- Single item -->
                     <div class="carousel-item">
-                        <img src="https://mdbootstrap.com/img/new/textures/full/107.jpg"
+                        <img src="./img/hero/hero-03.jpg"
                             class="d-block vh-100 vw-100 object-cover" alt="53 satisfied customers" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Metodologpia de Aprendizaje</h5>
-                            <p>Aprende con una metodología que transforma.
+                            <h5 class="text-color-white">Metodologpia de Aprendizaje</h5>
+                            <p class="text-color-white">Aprende con una metodología que transforma.
                                 Nuestra innovadora metodología de aprendizaje combina teoría y práctica para garantizar una comprensión profunda y aplicable. Diseñada para adaptarse a tus necesidades, te permitirá alcanzar tus objetivos profesionales de manera efectiva y con un enfoque personalizado."
                                 
                                 </p>

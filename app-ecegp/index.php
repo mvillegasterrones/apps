@@ -56,7 +56,7 @@
         <div class="container">
 
             <!-- * MISION Y VISION (Ok)-->
-            <section class="mb-10">
+            <section class="mb-10 bg-color-grey">
                 <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Nuestra Misión y Visión</h2>
                 
                 <div class="row gx-lg-5">
