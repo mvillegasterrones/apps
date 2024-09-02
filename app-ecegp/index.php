@@ -49,164 +49,6 @@
     </header>
     <!--Main Navigation-->
 
-    <!-- Carousel wrapper -->
-    <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel" data-mdb-carousel-init>
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="1" aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="2" aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="3" aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="4" aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="5" aria-label="Slide 1"></button>
-        </div>
-
-        <!-- Inner -->
-        <div class="carousel-inner">
-            <!-- 1 valor item -->
-            <div class="carousel-item active">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-01.jpg" class="w-100" alt="integridad"/>
-                    <div class="mask degradado"><!--  style="background-color: hsla(0, 0%, 0%, 0.6)" -->
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Integridad</h1>
-                                    <h5 class="container">La integridad es un valor fundamental que implica adherirse consistentemente a principios y valores éticos, actuar con honestidad y responsabilidad, y mantener la coherencia entre las acciones, decisiones y palabras. Ser íntegro significa ser auténtico y transparente y cumplir con los compromisos asumidos. La integridad es esencial para construir confianza y credibilidad en todas las relaciones personales y profesionales.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-02.jpg" class="w-100" alt="solidaridad"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <!--<p class="text-white mb-0">-->
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Solidaridad</h1>
-                                    <h5 class="container">La compasión es la conducta que busca comprender los desafíos de los demás, acompañada de un deseo genuino y altruista de ayudar y tener un impacto positivo en la vida de las personas que conforman las familias, los ciudadanos, los clientes, las organizaciones, la comunidad inmediata y la sociedad en la que vivimos. Trasciende la empatía, impulsando acciones para apoyar a quienes lo necesitan.</h5>
-                                </div>
-                            </div>
-                            <!--</p>-->
-                        </div>
-                    </div>
-                </div>
-            <!--<img src="./img/valores/valores-02.jpg" class="d-block w-100" alt="Mountaintop"/>
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>-->
-            </div>
-
-            <!-- 3 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-04.jpg" class="w-100" alt="Louvre Museum"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Profesionalismo</h1>
-                                    <h5 class="container">El profesionalismo es la conducta y las cualidades que caracterizan a una persona en su campo de trabajo. Implica adherirse a estándares éticos y culturales, mostrar transparencia por las acciones realizadas, argumentar con fundamentos las decisiones tomadas, mostrar de manera clara el resultado de lo hecho, y mantener una actitud de respeto, puntualidad y compromiso con los compañeros de trabajo.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inner -->
-
-            <!-- 4 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-03.jpg" class="w-100" alt="Louvre Museum"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Perseveracia y Resilencia</h1>
-                                    <h5 class="container">La perseverancia es la capacidad de mantener el esfuerzo y la determinación para alcanzar objetivos a largo plazo a pesar de las dificultades, obstáculos y fracasos. Este valor implica una actitud resiliente y persistente, donde el individuo sigue trabajando hacia sus metas con constancia y dedicación, sin rendirse ante los desafíos.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inner -->
-
-            <!-- 5 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-05.jpg" class="w-100" alt="Louvre Museum"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Curiosidad</h1>
-                                    <h5 class="container">La curiosidad es el deseo de conocer, explorar y entender más acerca del mundo, las ideas y uno mismo. Este valor impulsa a las personas a hacer preguntas, buscar respuestas y estar abiertas a nuevas experiencias y conocimientos. La curiosidad fomenta un amor por el aprendizaje continuo y la innovación.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inner -->
-
-            <!-- 6 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Amor por la Naturaleza</h1>
-                                    <h5 class="container">El amor por la naturaleza es el valor que impulsa a las personas a apreciar, respetar y proteger el medio ambiente y todos los seres vivos que lo habitan. Este valor se manifiesta en la conducta sostenible, la conciencia ecológica y el compromiso con la conservación de los recursos naturales y la biodiversidad.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inner -->
-
-            <!-- 7 valor item -->
-            <div class="carousel-item">
-                <div class="bg-image">
-                    <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum"/>
-                    <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                        <div class="d-flex justify-content-center align-items-center h-100">
-                            <div class="container text-center color-institucional-1">
-                                <div class="container">
-                                    <h1>Sentido de pertenencia por el país</h1>
-                                    <h5 class="container">El sentido de pertenencia por el país es el compromiso y orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la sociedad.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Inner --></main>
-
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel wrapper -->
-
     <!--! Main layout-->
     <main>
         <section class="mb-10"></section>
@@ -318,7 +160,7 @@
             </section>
 
             <!-- * NUESTROS VALORES -->
-            <section id="why-select-me" class="container mt-5 mb-5 mb-lg-10"
+            <section id="why-select-me" class="container mt-5 mb-lg-2"
                      data-mdb-animation-init
                      data-mdb-animation-start="onScroll"
                      data-mdb-animation="fade-in"
@@ -331,7 +173,8 @@
                         data-mdb-animation-start="onScroll"
                         data-mdb-animation="fade-in"
                         data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="200">Nuestros Valores</h3>
+                        data-mdb-animation-delay="200">Nuestros Valores
+                    </h3>
                     <h5 class="text-center text-muted mb-5"
                         data-mdb-animation-init
                         data-mdb-animation-start="onScroll"
@@ -343,182 +186,38 @@
                         interacciones con el mundo exterior, sino que también nos inspiran a mejorar continuamente como
                         individuos comprometidos con la integridad, la solidaridad, el profesionalismo, la perseverancia, la
                         curiosidad, el amor por la naturaleza y el sentido de pertenencia por nuestro país. Al adherirnos a estos
-                        principios, buscamos construir una comunidad más ética, colaborativa y sostenible.</h5>
-                    <div class="col-xl-6 col-md-12 mb-4"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="500">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Integridad</h4>
-                                            <p class="mb-0 text-muted">La integridad es un valor fundamental que implica adherirse consistentemente a
-                                                principios y valores éticos, actuar con honestidad y responsabilidad, y mantener la coherencia
-                                                entre las acciones, decisiones y palabras. Ser íntegro significa ser auténtico y transparente y
-                                               cumplir con los compromisos asumidos. La integridad es esencial para construir confianza y
-                                               credibilidad en todas las relaciones personales y profesionales.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="700">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-folder-tree fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Solidaridad</h4>
-                                            <p class="mb-0 text-muted">La compasión es la conducta que busca comprender los desafíos de los demás,
-                                                acompañada de un deseo genuino y altruista de ayudar y tener un impacto positivo en la vida de
-                                                las personas que conforman las familias, los ciudadanos, los clientes, las organizaciones, la
-                                                comunidad inmediata y la sociedad en la que vivimos. Trasciende la empatía, impulsando
-                                                acciones para apoyar a quienes lo necesitan.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="900">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Profesionalismo</h4>
-                                            <p class="mb-0 text-muted">El profesionalismo es la conducta y las cualidades que caracterizan a una
-                                                persona en su campo de trabajo. Implica adherirse a estándares éticos y culturales, mostrar
-                                                transparencia por las acciones realizadas, argumentar con fundamentos las decisiones tomadas,
-                                                mostrar de manera clara el resultado de lo hecho, y mantener una actitud de respeto,
-                                                puntualidad y compromiso con los compañeros de trabajo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="1100">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-users fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Perseveracia y Resilencia</h4>
-                                            <p class="mb-0 text-muted">La perseverancia es la capacidad de mantener el esfuerzo y la
-                                                determinación para alcanzar objetivos a largo plazo a pesar de las dificultades, obstáculos y
-                                                fracasos. Este valor implica una actitud resiliente y persistente, donde el individuo sigue
-                                                trabajando hacia sus metas con constancia y dedicación, sin rendirse ante los desafíos.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="900">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Curiosidad</h4>
-                                            <p class="mb-0 text-muted">La curiosidad es el deseo de conocer, explorar y entender más acerca del mundo,
-                                                las ideas y uno mismo. Este valor impulsa a las personas a hacer preguntas, buscar respuestas
-                                                y estar abiertas a nuevas experiencias y conocimientos. La curiosidad fomenta un amor por el
-                                                aprendizaje continuo y la innovación.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4 mt-xl-5 mt-lg-5"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="1100">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-users fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Amor por la Naturaleza</h4>
-                                            <p class="mb-0 text-muted">El amor por la naturaleza es el valor que impulsa a las personas a
-                                                apreciar, respetar y proteger el medio ambiente y todos los seres vivos que lo habitan. Este valor
-                                                se manifiesta en la conducta sostenible, la conciencia ecológica y el compromiso con la
-                                                conservación de los recursos naturales y la biodiversidad.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-md-12 mb-4"
-                         data-mdb-animation-init
-                         data-mdb-animation-start="onScroll"
-                         data-mdb-animation="zoom-in"
-                         data-mdb-animation-show-on-load="false"
-                         data-mdb-animation-delay="900">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-4-strong" data-mdb-ripple-init>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between p-md-1">
-                                    <div class="d-flex flex-row">
-                                        <div class="align-self-center">
-                                            <i class="fa-solid fa-list-check fa-3x me-4 color-institucional-1"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="color-institucional-1">Sentido de pertenencia por el país</h4>
-                                            <p class="mb-0 text-muted">El sentido de pertenencia por el país es el compromiso y
-                                                orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se
-                                                refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y
-                                                leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la
-                                                comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la
-                                                sociedad.</p>
-                                        </div>
+                        principios, buscamos construir una comunidad más ética, colaborativa y sostenible.
+                    </h5>
+                </div>
+            </section>
+            <!-- End Section: Valores -->
+        </div>
+
+        <!-- ? Carousel wrapper -->
+        <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel" data-mdb-carousel-init>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="1" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="2" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="3" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="4" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="5" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="6" aria-label="Slide 1"></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- 1 valor item -->
+                <div class="carousel-item active">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-01.jpg" class="w-100" alt="integridad"/>
+                        <div class="mask degradado"><!--  style="background-color: hsla(0, 0%, 0%, 0.6)" -->
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Integridad</h1>
+                                        <h5 class="container">La integridad es un valor fundamental que implica adherirse consistentemente a principios y valores éticos, actuar con honestidad y responsabilidad, y mantener la coherencia entre las acciones, decisiones y palabras. Ser íntegro significa ser auténtico y transparente y cumplir con los compromisos asumidos. La integridad es esencial para construir confianza y credibilidad en todas las relaciones personales y profesionales.</h5>
                                     </div>
                                 </div>
                             </div>
@@ -526,9 +225,127 @@
                     </div>
                 </div>
 
-            </section>
-            <!-- End Section: Valores -->
+                <!-- 2 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-02.jpg" class="w-100" alt="solidaridad"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Solidaridad</h1>
+                                        <h5 class="container">La compasión es la conducta que busca comprender los desafíos de los demás, acompañada de un deseo genuino y altruista de ayudar y tener un impacto positivo en la vida de las personas que conforman las familias, los ciudadanos, los clientes, las organizaciones, la comunidad inmediata y la sociedad en la que vivimos. Trasciende la empatía, impulsando acciones para apoyar a quienes lo necesitan.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- 3 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-04.jpg" class="w-100" alt="Louvre Museum"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Profesionalismo</h1>
+                                        <h5 class="container">El profesionalismo es la conducta y las cualidades que caracterizan a una persona en su campo de trabajo. Implica adherirse a estándares éticos y culturales, mostrar transparencia por las acciones realizadas, argumentar con fundamentos las decisiones tomadas, mostrar de manera clara el resultado de lo hecho, y mantener una actitud de respeto, puntualidad y compromiso con los compañeros de trabajo.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- 4 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-03.jpg" class="w-100" alt="Louvre Museum"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Perseveracia y Resilencia</h1>
+                                        <h5 class="container">La perseverancia es la capacidad de mantener el esfuerzo y la determinación para alcanzar objetivos a largo plazo a pesar de las dificultades, obstáculos y fracasos. Este valor implica una actitud resiliente y persistente, donde el individuo sigue trabajando hacia sus metas con constancia y dedicación, sin rendirse ante los desafíos.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- 5 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-05.jpg" class="w-100" alt="Louvre Museum"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Curiosidad</h1>
+                                        <h5 class="container">La curiosidad es el deseo de conocer, explorar y entender más acerca del mundo, las ideas y uno mismo. Este valor impulsa a las personas a hacer preguntas, buscar respuestas y estar abiertas a nuevas experiencias y conocimientos. La curiosidad fomenta un amor por el aprendizaje continuo y la innovación.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- 6 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Amor por la Naturaleza</h1>
+                                        <h5 class="container">El amor por la naturaleza es el valor que impulsa a las personas a apreciar, respetar y proteger el medio ambiente y todos los seres vivos que lo habitan. Este valor se manifiesta en la conducta sostenible, la conciencia ecológica y el compromiso con la conservación de los recursos naturales y la biodiversidad.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- 7 valor item -->
+                <div class="carousel-item">
+                    <div class="bg-image">
+                        <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum"/>
+                        <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="container text-center color-institucional-1">
+                                    <div class="container">
+                                        <h1>Sentido de pertenencia por el país</h1>
+                                        <h5 class="container">El sentido de pertenencia por el país es el compromiso y orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la sociedad.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel wrapper -->
+
+        <div class="container">
             <!--! Section: My projects -->
             <section class="mb-10 text-center">
                 <!--<h2 class="fw-bold mb-7 text-center">Nuestros Valores</h2>-->
