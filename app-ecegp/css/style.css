@@ -143,3 +143,9 @@ body {
 .degradado {
   background: linear-gradient(45deg,hsla(168, 85%, 52%, 0.7),hsla(263, 88%, 45%, 0.7) 100%) !important;
 }
+
+.card:hover {
+  border: 0.2px solid var(--main-bg-color-warning);
+  color: var(--main-bg-color-warning);
+  /*background-color: var(--main-bg-color-warning);*/
+}

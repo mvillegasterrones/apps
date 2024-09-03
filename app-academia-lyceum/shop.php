@@ -24,7 +24,7 @@ include './includes.php';
     <link rel="stylesheet" href="../template-mdb5/css/style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body style="background-color: #E5E9EB !important;"><!-- rgb(85, 108, 117) -->
+<body><!-- rgb(85, 108, 117) -->
 <div id="loading-overlay">
     <div class="spinner"></div>
 </div>

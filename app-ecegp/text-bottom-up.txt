@@ -1,0 +1,125 @@
+<?php include './includes.php' ?>
+<!DOCTYPE html>
+<html lang="es">
+<html lang="es" data-mdb-theme="dark">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECEGP | Innovación Bottom - UP</title>
+    <?php include './views/sections/main-header.php' ?>
+</head>
+<body>
+    <header class="mb-8">
+        <!--? Navbar -->
+        <?php include './views/sections/nav-bar.php'?>
+        <!-- Navbar -->
+
+        <!-- Hero -->
+        <?php //include './views/sections/hero-innovacion-bottom-up.php'?>
+        <!-- Hero -->
+    </header>
+
+    <main>
+
+        <div class="container"
+            data-mdb-animation-init
+            data-mdb-animation-start="onLoad"
+            data-mdb-animation="fade-in"
+            data-mdb-animation-show-on-load="false"
+            data-mdb-animation-delay="200">
+
+            <section class="mb-7" id="detalle-c1">
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-md-0"
+                        data-mdb-animation-init
+                        data-mdb-animation-start="onScroll"
+                        data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="300">
+                        <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+                            <img src="<?= $crecim_empresarial_link_img_c1 ?>" class="rounded rounded-7 border border-5 border-warning shadow-5-strong w-100 mb-2" alt="">
+                            <h5 class="fw-bold text-uppercase text-center text-warning">
+                                <!--<i class="fas fa-cubes text-theme me-3"></i>-->
+                                Innovacion Bottom - UP
+                            </h5>
+                            <p class="color-institucional-1">
+                            La innovación bottom-up (de abajo hacia arriba) es un enfoque en el cual las ideas y mejoras surgen desde los niveles más bajos de una organización y se elevan hacia la alta dirección. Este modelo de innovación se basa en la premisa de que los empleados que están directamente involucrados en los procesos diarios de la empresa poseen conocimientos únicos y valiosos que pueden llevar a mejoras significativas y nuevas oportunidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 mb-4 mb-md-0 text-center">
+                        <div class="row">
+                            
+                            <div class="col-12 mb-5">
+                                <div class="card toast-light rounded-7 border border-3 border-warning shadow-5-strong"
+                                    data-mdb-ripple-init
+                                    data-mdb-ripple-color="light"
+                                    data-mdb-animation-init
+                                    data-mdb-animation-start="onScroll"
+                                    data-mdb-animation="fade-in"
+                                    data-mdb-animation-show-on-load="false"
+                                    data-mdb-animation-delay="500">
+                                    <div class="card-body text-start">
+                                        <div class="row">
+                                            <div class="col-12 text-center align-items-center">
+                                                <h4 class="text-warning">Innovación Bottom - UP</h4>
+                                                <p class="text-start">
+                                                La innovación bottom-up (de abajo hacia arriba) es un enfoque en el cual las ideas y mejoras surgen desde los niveles más bajos de una organización y se elevan hacia la alta dirección. Este modelo de innovación se basa en la premisa de que los empleados que están directamente involucrados en los procesos diarios de la empresa poseen conocimientos únicos y valiosos que pueden llevar a mejoras significativas y nuevas oportunidades.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12"
+                                data-mdb-animation-init
+                                data-mdb-animation-start="onScroll"
+                                data-mdb-animation="fade-in"
+                                data-mdb-animation-show-on-load="false"
+                                data-mdb-animation-delay="100">
+                                <h1 class="mb-5 text-uppercase color-institucional-1">Características</h1>
+                            </div>
+
+                            <div class="card toast-warning mb-3" style="max-width: 18rem;">
+                                <!--<div class="card-header">Participación del Personal</div>-->
+                                <div class="card-body">
+                                    <h5 class="card-title">Participación del Personal</h5>
+                                    <p class="card-text">Los empleados de todos los niveles tienen la oportunidad de proponer ideas y soluciones. Esto fomenta un ambiente de colaboración y creatividad, donde cada individuo siente que su contribución es valorada.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Viodeo intro -->
+                            <div class="col-lg-12 col-md-12 mb-10">
+                                <div class="card border border-3 border-warning shadow-5-strong"
+                                    data-mdb-animation-init
+                                    data-mdb-animation-start="onScroll"
+                                    data-mdb-animation="fade-in"
+                                    data-mdb-animation-show-on-load="false"
+                                    data-mdb-animation-delay="300">
+                                    <video class="rounded rounded-5" controls controlsList="nodownload">
+                                        <source src="./recursos/curso-1/videos/Introduccion.mp4" type="video/mp4">
+                                        <!--<source src="ruta_del_video.webm" type="video/webm">-->
+                                        <!-- Texto alternativo -->
+                                        <p>¡Mira nuestro video de introducción al curso!</p>
+                                    </video>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <?php include './views/sections/footer.php' ?>
+</body>
+
+<?php include './views/sections/main-scripts.php' ?>
+
+</html>

@@ -1,5 +1,5 @@
 <!-- ? Section: Split screen -->
-<section class="mb-3">
+<section class="mb-3 mt-sm-0">
 
     <div class="container-fluid px-0">
         <div class="row g-0">
