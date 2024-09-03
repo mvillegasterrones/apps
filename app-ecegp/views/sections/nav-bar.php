@@ -19,14 +19,16 @@
       <ul class="navbar-nav mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+          <a class="nav-link" aria-current="page" href="./">Nosotros</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="<?= $crecim_empresarial_url ?>">Crecimiento Empresarial</a>
+        </li>
+        <!--<li class="nav-item dropdown">
           <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
             aria-expanded="false">
             Crecimiento Empresarial
           </a>
-          <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
               <a class="dropdown-item" href="<?= $innovacion_botom_up ?>"><i class="fa-light fa-arrow-right text-warning"></i> Innovación
@@ -41,12 +43,8 @@
                 Focused WorkShop</a>
               </a>
             </li>
-            <!--<li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>-->
           </ul>
-        </li>
+        </li>-->
         <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
           <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

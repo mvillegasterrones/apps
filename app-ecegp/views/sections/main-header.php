@@ -1,7 +1,7 @@
-<meta charset="UTF-8" />
+    <!--<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Inicio | EACE</title>
+    <title>Inicio | EACE</title>-->
     <!-- MDB icon -->
     <link rel="icon" href="./img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./img/lg-lyceum.png">

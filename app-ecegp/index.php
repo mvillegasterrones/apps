@@ -15,17 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Inicio | EACE</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="./img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="./img/logo-ecegp-only.jpeg">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../fontawesome-pro-6.5.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="./css/pro.mdb.min.css" />
-    <!-- My Style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <?php include './views/sections/main-header.php' ?>
 </head>
 
 <body>
@@ -641,25 +631,7 @@
     <?php include './views/sections/footer.php' ?>
     <!--Footer-->
 </body>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<!-- MDB -->
-<script src="./js/pro.mdb.umd.min.js"></script>
-<!-- MyScripts -->
-<script src="./js/scripts.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const frases = document.querySelector('.frases');
-        const spanFrases = frases.querySelectorAll('div');
-        let index = 0;
 
-        function pasarFrase() {
-            index = (index + 1) % spanFrases.length;
-            frases.style.transform = `translateY(-${index * 100}%)`;
-        }
-
-        setInterval(pasarFrase, 6000); // ajusta el intervalo de tiempo según tus necesidades
-    });
-</script>
+<?php include './views/sections/main-scripts.php' ?>
 
 </html>

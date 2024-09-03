@@ -24,11 +24,11 @@
 
     <!-- Section: Links  -->
     <section class=""
-             data-mdb-animation-init
-             data-mdb-animation-start="onScroll"
-             data-mdb-animation="fade-in"
-             data-mdb-animation-show-on-load="false"
-             data-mdb-animation-delay="300">
+        data-mdb-animation-init
+        data-mdb-animation-start="onScroll"
+        data-mdb-animation="fade-in"
+        data-mdb-animation-show-on-load="false"
+        data-mdb-animation-delay="300">
         <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
