@@ -3,6 +3,7 @@
 <html lang="es">
 <html lang="es" data-mdb-theme="dark">
 <!--
+* https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/animations/
 * https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/cascading-effect/
 * https://mdbootstrap.com/docs/standard/
 * https://mdbgo.com
