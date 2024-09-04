@@ -11,6 +11,11 @@ $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile
 /* ! Menu */
 $innovacion_botom_up = './innovacion-bottom-up.php';
 
+
+/* Main */
+$url_img_socio_guido = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
+$url_img_socio_jose  = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
+
 /* ! Crecimiento Empresarial */
 $crecim_empresarial_url         = './crecimiento-empresarial.php';
 $crecim_empresarial_title       = $nombre_empresa . ' | ' . 'Nuestros Cursos';

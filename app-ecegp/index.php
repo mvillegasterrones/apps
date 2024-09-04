@@ -3,8 +3,8 @@
 <html lang="es">
 <html lang="es" data-mdb-theme="dark">
 <!--
+* https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/material-minimal/
 * https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/animations/
-* https://mdbootstrap.com/learn/mdb-foundations/mdb-ui-kit/cascading-effect/
 * https://mdbootstrap.com/docs/standard/
 * https://mdbgo.com
 * https://github.com/mdbootstrap/mdb-ui-kit
@@ -42,30 +42,53 @@
         <div class="container">
 
             <!-- * MISION Y VISION (Ok)-->
-            <section class="mb-10">
-                <h2 class="fw-bold mb-7 pt-10 text-center">Nuestra Misión y Visión</h2>
+            <section class="mb-10" data-mdb-animation-init data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
+                data-mdb-animation-delay="100">
+                <h2 class="fw-bold mb-5 pt-10 text-center" data-mdb-animation-init data-mdb-animation-reset="true"
+                    data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                    data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">Nuestro Propósito, Misión y
+                    Valores</h2>
+
+                <h5 class="mb-5 text-muted" data-mdb-animation-init data-mdb-animation-reset="true"
+                    data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                    data-mdb-animation-show-on-load="false" data-mdb-animation-delay="300">
+                    Diseñamos experiencias formativas para personas que necesitan trabajar para financiar sus estudios
+                    en administración o gestión pública. Además, fomentamos el crecimiento empresarial a través de
+                    dinámicas de innovación y de investigación, que permiten a las empresas explorar nuevos mercados o
+                    fortalecer los ya existentes.<br><br>
+                    Somos una organización centrada en valores que reflejan nuestra aspiración de formar, no sólo
+                    egresados de éxito, sino además personas que sean valiosas, efectivas y éticas para sus comunidades.
+                    Estos valores guían nuestras aspiraciones de desarrollo institucional de largo plazo, y cómo le
+                    servimos a la sociedad y a nuestros alumnos.
+
+                </h5>
 
                 <div class="row gx-lg-5">
 
-                    <!-- * MISION-->
-                    <div class="col-xl-6 col-md-12 mb-4"
-                        data-mdb-animation-init
-                        data-mdb-animation-reset="true"
-                        data-mdb-animation-start="onScroll"
-                        data-mdb-animation="zoom-in"
-                        data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="200">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
+                    <!-- * PROPOSITO-->
+                    <div class="col-xl-6 col-md-12 mb-4" data-mdb-animation-init data-mdb-animation-reset="true"
+                        data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
+                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10"
+                            data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
                                     <div class="d-flex flex-row">
-                                        <div class="align-self-center col-md-3 rounded-7" style="display:flex;justify-content: center;align-items: center;">
+                                        <div class="align-self-center col-md-3 rounded-7"
+                                            style="display:flex;justify-content: center;align-items: center;">
                                             <!--<i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>-->
                                             <img src="./img/vision.png" style="width: 100%;" alt="">
                                         </div>
                                         <div>
-                                            <h4 class="color-institucional-1">Nuestra Misión</h4>
-                                            <p class="mb-0 text-muted">La Escuela de Ciencias Empresariales y Gestión Pública tiene por misión empoderar a nuestros alumnos con confianza creativa, espíritu emprendedor, sentido humano y amor por la naturaleza, permitiéndoles convertir ideas en acción y mejorar el desempeño de las organizaciones empresariales y públicas.</p>
+                                            <h4 class="color-institucional-1">Nuestro Propósito</h4>
+                                            <p class="mb-0 text-muted">
+                                                <strong>La Escuela de Ciencias Empresariales y Gestión Pública</strong>
+                                                se fundó para ofrecer educación superior de Ser una institución que
+                                                promueve el desarrollo económico y social descentralizado a través de la
+                                                formación de profesionales y la re-capacitación de personas que ya
+                                                trabajan en todo el país.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -73,70 +96,30 @@
                         </div>
                     </div>
 
-                    <!-- * VISION-->
-                    <div class="col-xl-6 col-md-12 mb-4 mt-lg-5"
-                        data-mdb-animation-init
-                        data-mdb-animation-start="onScroll"
-                        data-mdb-animation="zoom-in"
-                        data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="400">
-                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init>
+                    <!-- * MISION-->
+                    <div class="col-xl-6 col-md-12 mb-4 mt-lg-5" data-mdb-animation-init
+                        data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
+                        <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10"
+                            data-mdb-ripple-init>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between p-md-1">
                                     <div class="d-flex flex-row">
-                                        <div class="align-self-center col-md-3 rounded-7" style="display:flex;justify-content: center;align-items: center;">
-                                            <!--<i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>-->
+                                        <div class="align-self-center col-md-3 rounded-7"
+                                            style="display:flex;justify-content: center;align-items: center;">
                                             <img src="./img/mision.png" style="width: 100%;" alt="">
                                         </div>
                                         <div>
-                                            <h4 class="color-institucional-1">Nuestra Visión</h4>
-                                            <p class="mb-0 text-muted">La Escuela de Ciencias Empresariales y Gestión Pública tiene por visión generar, diseminar y preservar
-                                                conocimiento que fomente la innovación pública y privada. Aspiramos a brindar una educación no
-                                                presencial a nivel nacional para la formación integral y continua de profesionales a lo largo de sus vidas,
-                                                permitiéndoles alcanzar su máximo potencial de empleabilidad.</p>
+                                            <h4 class="color-institucional-1">Nuestra Misión</h4>
+                                            <p class="mb-0 text-muted">
+                                                Formar alumnos con creatividad, pensamiento crítico, comunicación
+                                                efectiva y conciencia ética, que les permita mejorar sus oportunidades
+                                                de empleo en la empresa privada, construir la empresa que siempre
+                                                aspiraron tener, o contribuir en la administración pública con un
+                                                servicio honesto y de impacto positivo, tanto a nivel regional como
+                                                nacional. </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- * NUESTRO PROPOSITO (Ok)-->
-            <section class="mb-10"
-                data-mdb-animation-init
-                data-mdb-animation-start="onScroll"
-                data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false"
-                data-mdb-animation-delay="500">
-                <h2 class="fw-bold mb-7 pt-10 text-center color-institucional-1">Propósito de nuestra institución</h2>
-
-                <div class="card toast-primary rounded-6 border border-2 border-dark shadow shadow-5-strong mt-lg-10" data-mdb-ripple-init
-                    data-mdb-animation-init
-                    data-mdb-animation-start="onScroll"
-                    data-mdb-animation="zoom-in"
-                    data-mdb-animation-show-on-load="false"
-                    data-mdb-animation-delay="500">
-
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between p-md-1">
-                            <div class="d-flex flex-row">
-                                <div class="align-self-center col-md-3 rounded-7" style="display:flex;justify-content: center;align-items: center;">
-                                    <!--<i class="fa-regular fa-hand-pointer fa-3x me-4 color-institucional-1"></i>-->
-                                    <img src="https://cdn-icons-png.flaticon.com/512/977/977451.png" style="width: 50%;" alt="">
-                                </div>
-                                <div>
-                                    <h4 class="color-institucional-1">Nuestro Propósito</h4>
-                                    <p class="mb-0 text-muted">La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de
-                                        calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en
-                                        respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la
-                                        educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las
-                                        brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos...</p>
-                                    <a href="#!" class="btn btn-secondary btn-rounded mt-2" data-mdb-ripple-init data-mdb-modal-init
-                                        data-mdb-target="#project-proposito">Leer mas...</a>
                                 </div>
                             </div>
                         </div>
@@ -146,32 +129,27 @@
             </section>
 
             <!-- * NUESTROS VALORES -->
-            <section id="why-select-me" class="container mt-5 mb-lg-2"
-                data-mdb-animation-init
-                data-mdb-animation-start="onScroll"
-                data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false"
+            <section id="why-select-me" class="container mt-5 mb-lg-2" data-mdb-animation-init
+                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
                 data-mdb-animation-delay="300">
 
                 <div class="row">
-                    <h3 class="fw-bold text-center color-institucional-1 mb-5"
-                        data-mdb-animation-init
-                        data-mdb-animation-start="onScroll"
-                        data-mdb-animation="fade-in"
-                        data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="200">Nuestros Valores
+                    <h3 class="fw-bold text-center color-institucional-1 mb-5" data-mdb-animation-init
+                        data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
+                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">Nuestros Valores
                     </h3>
-                    <h5 class="text-center text-muted mb-5"
-                        data-mdb-animation-init
-                        data-mdb-animation-start="onScroll"
-                        data-mdb-animation="fade-in"
-                        data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="400">En el Centro Andino de Investigación en Innovación, nuestros valores fundamentales están diseñados
-                        para orientar la conducta humana en su contexto social y ambiental, promoviendo una autorreflexión
+                    <h5 class="text-center text-muted mb-5" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="400">En el Centro Andino de Investigación en Innovación, nuestros
+                        valores fundamentales están diseñados
+                        para orientar la conducta humana en su contexto social y ambiental, promoviendo una
+                        autorreflexión
                         crítica que fomente el crecimiento personal y profesional. Estos valores no sólo guían nuestras
                         interacciones con el mundo exterior, sino que también nos inspiran a mejorar continuamente como
-                        individuos comprometidos con la integridad, la solidaridad, el profesionalismo, la perseverancia, la
-                        curiosidad, el amor por la naturaleza y el sentido de pertenencia por nuestro país. Al adherirnos a estos
+                        individuos comprometidos con la integridad, la solidaridad, el profesionalismo, la
+                        perseverancia, la
+                        curiosidad, el amor por la naturaleza y el sentido de pertenencia por nuestro país. Al
+                        adherirnos a estos
                         principios, buscamos construir una comunidad más ética, colaborativa y sostenible.
                     </h5>
                 </div>
@@ -179,24 +157,24 @@
             <!-- End Section: Valores -->
         </div>
 
-        <!-- ? Carousel wrapper -->
-        <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark"
-            data-mdb-ride="carousel"
-            data-mdb-carousel-init
-            data-mdb-animation-init
-            data-mdb-animation-start="onScroll"
-            data-mdb-animation="fade-in"
-            data-mdb-animation-show-on-load="false"
-            data-mdb-animation-delay="500">
+        <!-- ? Carousel wrapper VALORES -->
+        <div id="carouselDarkVariant-valores" class="carousel slide carousel-fade carousel-dark mb-10"
+            data-mdb-ride="carousel" data-mdb-carousel-init data-mdb-animation-init data-mdb-animation-start="onScroll"
+            data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="500">
             <!-- Indicators -->
             <div class="carousel-indicators">
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="1" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="2" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="3" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="4" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="5" aria-label="Slide 1"></button>
-                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="6" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="1"
+                    aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="2"
+                    aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="3"
+                    aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="4"
+                    aria-label="Slide 1"></button>
+                <!--<button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="5" aria-label="Slide 1"></button>
+                <button data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide-to="6" aria-label="Slide 1"></button>-->
             </div>
 
             <!-- Inner -->
@@ -210,7 +188,10 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Integridad</h1>
-                                        <h5 class="container">La integridad es un valor fundamental que implica adherirse consistentemente a principios y valores éticos, actuar con honestidad y responsabilidad, y mantener la coherencia entre las acciones, decisiones y palabras. Ser íntegro significa ser auténtico y transparente y cumplir con los compromisos asumidos. La integridad es esencial para construir confianza y credibilidad en todas las relaciones personales y profesionales.</h5>
+                                        <h5 class="container">Actuar con honestidad, coherencia y responsabilidad es
+                                            esencial para construir confianza y credibilidad en todas nuestras
+                                            relaciones.
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +208,10 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Solidaridad</h1>
-                                        <h5 class="container">La compasión es la conducta que busca comprender los desafíos de los demás, acompañada de un deseo genuino y altruista de ayudar y tener un impacto positivo en la vida de las personas que conforman las familias, los ciudadanos, los clientes, las organizaciones, la comunidad inmediata y la sociedad en la que vivimos. Trasciende la empatía, impulsando acciones para apoyar a quienes lo necesitan.</h5>
+                                        <h5 class="container">Más allá de la empatía, buscamos apoyar a quienes lo
+                                            necesitan con un deseo genuino de impactar positivamente la vida de los
+                                            demás.
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -243,8 +227,10 @@
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
-                                        <h1>Profesionalismo</h1>
-                                        <h5 class="container">El profesionalismo es la conducta y las cualidades que caracterizan a una persona en su campo de trabajo. Implica adherirse a estándares éticos y culturales, mostrar transparencia por las acciones realizadas, argumentar con fundamentos las decisiones tomadas, mostrar de manera clara el resultado de lo hecho, y mantener una actitud de respeto, puntualidad y compromiso con los compañeros de trabajo.</h5>
+                                        <h1>Resilencia</h1>
+                                        <h5 class="container">Mantenemos el esfuerzo y la determinación frente a los
+                                            desafíos, trabajando con constancia hacia nuestros objetivos.
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -254,7 +240,7 @@
                 <!-- Inner -->
 
                 <!-- 4 valor item -->
-                <div class="carousel-item">
+                <!--<div class="carousel-item">
                     <div class="bg-image">
                         <img src="./img/valores/valores-03.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
@@ -262,17 +248,18 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Perseveracia y Resilencia</h1>
-                                        <h5 class="container">La perseverancia es la capacidad de mantener el esfuerzo y la determinación para alcanzar objetivos a largo plazo a pesar de las dificultades, obstáculos y fracasos. Este valor implica una actitud resiliente y persistente, donde el individuo sigue trabajando hacia sus metas con constancia y dedicación, sin rendirse ante los desafíos.</h5>
+                                        <h5 class="container">Valoramos y protegemos el medio ambiente, promoviendo una conducta sostenible y un compromiso con la conservación.
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Inner -->
 
                 <!-- 5 valor item -->
-                <div class="carousel-item">
+                <!--<div class="carousel-item">
                     <div class="bg-image">
                         <img src="./img/valores/valores-05.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
@@ -280,13 +267,13 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Curiosidad</h1>
-                                        <h5 class="container">La curiosidad es el deseo de conocer, explorar y entender más acerca del mundo, las ideas y uno mismo. Este valor impulsa a las personas a hacer preguntas, buscar respuestas y estar abiertas a nuevas experiencias y conocimientos. La curiosidad fomenta un amor por el aprendizaje continuo y la innovación.</h5>
+                                        <h5 class="container">Nos sentimos orgullosos de nuestra nación, contribuyendo a su desarrollo y bienestar con compromiso y patriotismo.</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- Inner -->
 
                 <!-- 6 valor item -->
@@ -298,7 +285,8 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Amor por la Naturaleza</h1>
-                                        <h5 class="container">El amor por la naturaleza es el valor que impulsa a las personas a apreciar, respetar y proteger el medio ambiente y todos los seres vivos que lo habitan. Este valor se manifiesta en la conducta sostenible, la conciencia ecológica y el compromiso con la conservación de los recursos naturales y la biodiversidad.</h5>
+                                        <h5 class="container">Valoramos y protegemos el medio ambiente, promoviendo una
+                                            conducta sostenible y un compromiso con la conservación.</h5>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +304,8 @@
                                 <div class="container text-center color-institucional-1">
                                     <div class="container">
                                         <h1>Sentido de pertenencia por el país</h1>
-                                        <h5 class="container">El sentido de pertenencia por el país es el compromiso y orgullo de formar parte de una nación, compartiendo su cultura, historia y valores. Este valor se refleja en el deseo de contribuir al desarrollo y bienestar del país, respetar sus instituciones y leyes, y promover el patriotismo y la cohesión social. Fomenta la participación activa en la comunidad y el trabajo conjunto para alcanzar objetivos comunes que beneficien a toda la sociedad.</h5>
+                                        <h5 class="container">Nos sentimos orgullosos de nuestra nación, contribuyendo a
+                                            su desarrollo y bienestar con compromiso y patriotismo.</h5>
                                     </div>
                                 </div>
                             </div>
@@ -326,11 +315,13 @@
                 <!-- Inner -->
 
                 <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="prev">
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant-valores"
+                    data-mdb-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant-valores" data-mdb-slide="next">
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant-valores"
+                    data-mdb-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -339,212 +330,160 @@
         <!-- Carousel wrapper -->
 
         <div class="container">
-            <!--! Section: My projects -->
-            <section class="mb-10 text-center">
-                <!--<h2 class="fw-bold mb-7 text-center">Nuestros Valores</h2>-->
-                <div class="row gx-lg-5">
 
-                </div>
-            </section>
-            <!-- Section: My projects -->
+            <!-- Section: NUESTRO EQUIPO -->
+            <section id="about-me" class="container mb-10 mt-10" data-mdb-animation-init data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+                data-mdb-animation-delay="200">
 
-            <!--! Section: Projects modals -->
-            <section class="">
+                <h2 class="fw-bold mb-7 text-center" data-mdb-animation-init data-mdb-animation-reset="true"
+                    data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
+                    data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">Nuestro Equipo</h2>
 
-                <!-- * Modal project proposito -->
-                <div class="modal fade" id="project-proposito" tabindex="-1" aria-labelledby="project-1Label"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="project-1Label">Nuestro Propósito</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
+                    <div class="row">
+                        <!-- GUIDO -->
+                        <div class="col-1"></div>
+                        <div class="col-lg-10 col-md-12 col-sm-12 mb-5">
+                            <div class="card main-bg-color-grey"
+                                data-mdb-animation-init
+                                data-mdb-animation-reset="true"
+                                data-mdb-animation-start="onScroll"
+                                data-mdb-animation="zoom-in"
+                                data-mdb-animation-show-on-load="false"
+                                data-mdb-animation-delay="200">
+                                <div class="card-content">
+                                    <div class="card-body text-start">
 
-                                <!-- Section: Design Block -->
-                                <section>
-
-                                    <div class="row gx-lg-5 align-items-center">
-                                        <div class="col-lg-12 mb-4 mb-lg-0">
-                                            <div class="d-flex align-items-start mb-5">
+                                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
+                                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                                            <!-- Imagen arriba en pantallas pequeñas -->
+                                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                                <a href="#!">
+                                                    <img class="rounded-5 shadow-4 w-100 h-auto" 
+                                                        src="<?= $url_img_socio_guido ?>" 
+                                                        alt="Generic placeholder image">
+                                                </a>
+                                            </div>
+                                            <!-- Texto abajo en pantallas pequeñas -->
+                                            <div class="flex-grow-1 ms-md-4 text-center text-md-start">
+                                                <p class="mb-1">
+                                                    <strong><a href="#!" class="text-reset">Guido Pennano Alison</a></strong>
+                                                </p>
+                                                <p class="mb-1">Presidente Fundador</p>
+                                                <p class="text-muted mb-1">......</p>
+                                            </div>
+                                        </div>
+                                        <!--<div class="d-md-flex justify-content-between mt-4 pt-1 mb-5">
+                                            <div class="d-flex mb-4 mb-md-0">
                                                 <div class="flex-shrink-0">
-                                                    <div class="p-3 rounded-4 shadow-2-strong"
-                                                        style="background-color: hsl(204, 30%, 20%)">
-                                                        <i class="fas fa-check-circle fa-lg text-white fa-fw"></i>
-                                                    </div>
+                                                    <a href="#!">
+                                                        <img class="rounded-5 shadow-4 h-auto" src="https://mdbootstrap.com/img/new/avatars/22.jpg" alt="Generic placeholder image" class="w-100">
+                                                    </a>
                                                 </div>
                                                 <div class="flex-grow-1 ms-4">
-                                                    <!--<p class="fw-bold mb-1">Support 24/7</p>-->
-                                                    <p class="text-muted mb-0">
-                                                        La Escuela de Ciencias Empresariales y Gestión Pública se fundó para ofrecer educación superior de calidad en el nivel nacional, especialmente para quienes deben trabajar mientras estudian. Surgió en respuesta a la expansión de la educación privada con fines de lucro y el rápido desarrollo de la educación no presencial y la inteligencia artificial. Cambios que consideramos podrían acentuar las brechas formativas entre los egresados de universidades de élite y los alumnos de bajos recursos.<br><br>
-                                                        La escuela se centra en generar y diseminar conocimientos que fomenten la innovación en el sector
-                                                        público y privado. Diseñamos experiencias formativas específicas para personas que necesitan trabajar
-                                                        para costear sus estudios, y fomentamos el crecimiento económico empresarial facilitando dinámicas colaborativas de innovación que permiten a las empresas encontrar nuevos mercados o fortalecer los existentes.<br><br>
-                                                        Nuestra propuesta educativa es mayoritariamente digital, complementada con dinámicas presenciales para fortalecer las relaciones entre alumnos y docentes. Los principales desafíos han sido crecer de manera sostenible, establecer alianzas estratégicas que generen valor, promover proyectos de innovación en empresas peruanas y adoptar tecnología actual para diseñar procesos formativos efectivos. La escuela se ha convertido en una institución clave en la región andina, capacitando a graduados que mejoran las organizaciones empresariales y públicas, promoviendo un desarrollo sostenible y equitativo.
+                                                    <p class="mb-1">
+                                                        <strong><a href="#!" class="text-reset">Guido Pennano Alison</a></strong>
+                                                    </p>
+                                                    <p class="mb-1">Presidente Fundador</p>
+                                                    <p class="text-muted mb-1">......</p>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+
+                        <!-- GUIDO -->
+                        <div class="col-1"></div>
+                        <div class="col-lg-10 col-md-12 col-sm-12 mb-10">
+                            <div class="card main-bg-color-grey"
+                                data-mdb-animation-init
+                                data-mdb-animation-reset="true"
+                                data-mdb-animation-start="onScroll"
+                                data-mdb-animation="zoom-in"
+                                data-mdb-animation-show-on-load="false"
+                                data-mdb-animation-delay="400">
+                                <div class="card-content">
+                                    <div class="card-body text-start">
+                                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
+                                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                                            <!-- Imagen arriba en pantallas pequeñas -->
+                                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                                <a href="#!">
+                                                    <img class="rounded-5 shadow-4 w-100 h-auto" 
+                                                    src="<?= $url_img_socio_guido ?>" 
+                                                        alt="Generic placeholder image">
+                                                </a>
+                                            </div>
+                                            <!-- Texto abajo en pantallas pequeñas -->
+                                            <div class="flex-grow-1 ms-md-4 text-center text-md-start">
+                                                <p class="mb-1">
+                                                    <strong><a href="#!" class="text-reset">José Ignacio Pineda Mendoza</a></strong>
+                                                </p>
+                                                <p class="mb-1">Socio</p>
+                                                <p class="text-muted mb-1">
+                                                <strong>Miembro fundador de ESCE</strong> y cuenta con más de 20 años de experiencia
+                                            en el sector de la educación superior. Ha enseñado cursos sobre innovación,
+                                            emprendimiento y desarrollo sostenible en universidades de Perú y el Reino Unido.
+                                            Además, ha desempeñado roles de liderazgo en universidades, donde se ha
+                                            especializado en transformación organizacional, diseñando y ejecutando estrategias
+                                            de turnaround y crecimiento, investigación aplicada de calidad y responsabilidad
+                                            social. Su investigación se sitúa en la intersección de negocios, emprendimiento y
+                                            desarrollo sostenible. Ha recibido un grant de la Academia Británica para explorar
+                                            la Economía Circular en la Amazonía peruana, ha investigado el uso de tecnología
+                                            digital entre emprendedores sociales para la Comisión Europea, y la creación de un
+                                            sistema de innovación en salud en la ciudad de Manchester. Actualmente estudia los
+                                            factores de éxito de emprendedores que logran resultados significativos con recursos
+                                            escasos. Es PhD en Administración y Negocios por Alliance Manchester Business School
+                                            de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por la misma
+                                            escuela de negocios, y economista de la Universidad del Pacífico.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--<div class="d-md-flex justify-content-between mt-4 pt-1 mb-5">
+                                            <div class="d-flex mb-4 mb-md-0">
+                                                <div class="flex-shrink-0">
+                                                    <a href="#!">
+                                                        <img class="rounded-5 shadow-4 h-auto"
+                                                            src="https://mdbootstrap.com/img/new/avatars/22.jpg"
+                                                            alt="Generic placeholder image" class="w-100">
+                                                    </a>
+                                                </div>
+                                                <div class="flex-grow-1 ms-4">
+                                                    <p class="mb-1">
+                                                        <strong><a href="#!" class="text-reset">José Ignacio Pineda Mendoza</a></strong>
+                                                    </p>
+                                                    <p class="mb-1">SOCIO</p>
+                                                    <p class="text-muted mb-1">
+                                                    <strong>Miembro fundador de ESCE</strong> y cuenta con más de 20 años de experiencia
+                                            en el sector de la educación superior. Ha enseñado cursos sobre innovación,
+                                            emprendimiento y desarrollo sostenible en universidades de Perú y el Reino Unido.
+                                            Además, ha desempeñado roles de liderazgo en universidades, donde se ha
+                                            especializado en transformación organizacional, diseñando y ejecutando estrategias
+                                            de turnaround y crecimiento, investigación aplicada de calidad y responsabilidad
+                                            social. Su investigación se sitúa en la intersección de negocios, emprendimiento y
+                                            desarrollo sostenible. Ha recibido un grant de la Academia Británica para explorar
+                                            la Economía Circular en la Amazonía peruana, ha investigado el uso de tecnología
+                                            digital entre emprendedores sociales para la Comisión Europea, y la creación de un
+                                            sistema de innovación en salud en la ciudad de Manchester. Actualmente estudia los
+                                            factores de éxito de emprendedores que logran resultados significativos con recursos
+                                            escasos. Es PhD en Administración y Negocios por Alliance Manchester Business School
+                                            de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por la misma
+                                            escuela de negocios, y economista de la Universidad del Pacífico.
                                                     </p>
                                                 </div>
                                             </div>
-
-                                        </div>
+                                        </div>-->
                                     </div>
-                                </section>
-                                <!-- Section: Design Block -->
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
-                                    data-mdb-dismiss="modal">Cerrar</button>
-                                <!--<button type="button" class="btn btn-primary" data-mdb-ripple-init
-                                    data-mdb-ripple-init>Save
-                                    changes</button>-->
+                                </div>
                             </div>
                         </div>
+                        <div class="col-1"></div>
                     </div>
-                </div>
 
             </section>
-            <!-- Section: Projects modals -->
-
-            <!--! Section: About me -->
-            <section class="mb-10">
-
-                <div class="container text-center">
-                    <h2 class="fw-bold mb-7 text-center"
-                    data-mdb-animation-init
-                    data-mdb-animation-reset="true"
-                    data-mdb-animation-start="onScroll"
-                    data-mdb-animation="fade-in"
-                    data-mdb-animation-show-on-load="false"
-                    data-mdb-animation-delay="400">Experiencias de aprendizaje en línea</h2>
-                    <div class="row">
-                        <div class="col-lg-4 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
-                            <h1 class="fw-bold text-info"><i class="fa-light fa-medal"></i></h1>
-                            <h4>Programas de certificación</h4>
-                            <p>Avance en su carrera y desarrolle su confianza con una experiencia de aprendizaje orientada a la acción de 3 a 6 meses que consta de cursos de cohorte y a su propio ritmo.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-4 mb-5 mb-lg-0" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                            <h1 class="text-info"><i class="fa-light fa-users-between-lines"></i></h1>
-                            <h4>Cursos de cohorte</h4>
-                            <p>Colabora con una comunidad global en nuestros cursos en línea de 5 semanas y aplica nuevas habilidades a tu trabajo diario para aumentar tu impacto.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-4" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                        data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-                            <h1 class="text-info"><i class="fa-light fa-chalkboard-user"></i></h1>
-                            <h4>Cursos a su propio ritmo</h4>
-                            <p>Aprende en cualquier momento y en cualquier lugar. Mejore sus habilidades con cursos en línea flexibles y cortos diseñados para adaptarse a su vida. Acceso 90 días desde la compra.
-                            </p>
-                        </div>
-                    </div>
-                    <!--<div class="row gx-0 align-items-center">
-                    </div>-->
-                </div>
-            </section>
-            <!-- Section: About me -->
-
-            <!-- Section: Testimonials -->
-            <section class="mb-10 text-center"
-                data-mdb-animation-init
-                data-mdb-animation-reset="true"
-                data-mdb-animation-start="onScroll"
-                data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false"
-                data-mdb-animation-delay="200">
-
-                <h2 class="fw-bold mb-7 text-center"
-                    data-mdb-animation-init
-                    data-mdb-animation-reset="true"
-                    data-mdb-animation-start="onScroll"
-                    data-mdb-animation="fade-in"
-                    data-mdb-animation-show-on-load="false"
-                    data-mdb-animation-delay="400">Nuestro Equipo</h2>
-
-                <div class="row gx-lg-5">
-
-                    <!-- First column -->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-
-                        <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
-                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!-- style="background-color: hsl(218, 62.2%, 95%)" -->
-                                <!-- Divider here -->
-                                <hr class="hr hr-blurry">
-
-                                <p class="mt-4 mb-2 text-info">Project Manager at Minedu</p>
-                                <p class="h5 mb-4 text-primary">Manuel Villegas</p>
-                                <p class="pb-4 mb-4 text-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
-                                    itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
-                                    ratione possimus quos suscipit, ratione nostrum cum odit.
-                                </p>
-                            </div>
-                            <img src="https://mdbootstrap.com/img/new/avatars/22.jpg"
-                                class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
-                        </div>
-
-                    </div>
-                    <!-- First column -->
-
-                    <!-- Second column -->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-
-                        <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!--  style="background-color: hsl(218, 62.2%, 95%)" -->
-
-                                <!-- Divider here -->
-                                <hr class="hr hr-blurry">
-
-                                <p class="text-info mt-4 mb-2">CEO Design</p>
-                                <p class="h5 mb-4 text-primary">Jasmine Díaz</p>
-                                <p class="pb-4 mb-4 text-info">
-                                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                                    placeat facere possimus, omnis voluptas assumenda est omnis.
-                                </p>
-                            </div>
-                            <img src="https://mdbootstrap.com/img/new/avatars/11.jpg"
-                                class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
-                        </div>
-
-                    </div>
-                    <!-- Second column -->
-
-                    <!-- Third column -->
-                    <div class="col-lg-4">
-
-                        <div data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-                            <div class="rounded-7 p-4 shadow-3 main-bg-color-grey"><!-- style="background-color: hsl(218, 62.2%, 95%)" -->
-
-                                <!-- Divider here -->
-                                <hr class="hr hr-blurry">
-
-                                <p class="text-info mt-4 mb-2">Senior Product Designer at Facebook</p>
-                                <p class="h5 mb-4 text-primary">Cindy Jasmine</p>
-                                <p class="pb-4 mb-4 text-info">
-                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                                    eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
-                                    earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
-                                </p>
-                            </div>
-                            <img src="https://mdbootstrap.com/img/new/avatars/12.jpg"
-                                class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
-                        </div>
-
-                    </div>
-                    <!-- Third column -->
-
-                </div>
-            </section>
-            <!-- Section: Testimonials -->
 
             <!-- Section: Contact -->
             <section class="mb-10 text-center" id="section-contact">
