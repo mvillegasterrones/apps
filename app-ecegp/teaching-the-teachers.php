@@ -23,7 +23,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="./img/hero/hero-01.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="https://universidadeuropea.com/resources/media/images/como-ser-profesor-universidad-1200x630.original.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/hero/hero-02.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">
