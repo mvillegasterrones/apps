@@ -182,6 +182,22 @@
                 <!-- end 4 -->
             </div>
 
+            <div class="row text-center mb-10">
+                <div class="col-12 mb-5" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                        data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="100">
+                    <h3 class="mb-4">Ir mas allá con los programas de certificación</h3>
+                    <h5>ECEGP es parte de un programa de certificación:</h5>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                        data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
+                        data-mdb-animation-delay="200">
+                    <img src="./img/certificate.webp" class="w-75" alt="">
+                </div>
+                <div class="col-3"></div>
+            </div>
+
         </div>
     </main>
 
