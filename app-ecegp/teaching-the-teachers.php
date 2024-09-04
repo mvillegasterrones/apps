@@ -92,7 +92,7 @@
                         data-mdb-animation-delay="400">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://www.qualitydevs.com/wp-content/uploads/2021/03/Desarrollo-apps-moviles-1288x724.jpg"
+                            <img src="https://media.istockphoto.com/id/1349183013/es/foto/periodista-africano-prepara-preguntas-para-conferencia-de-prensa.jpg?s=612x612&w=0&k=20&c=D1fZ1CPigB6EUgdNUW0AjgoO42BLaUYKP25ch54CVPY="
                                 class="w-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -116,7 +116,7 @@
                         data-mdb-animation-delay="600">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://www.labiznagadigital.es/wp-content/uploads/2019/11/contratar-desarrollo-web-profesional.jpg"
+                            <img src="https://mxconsultingperu.com/wp-content/uploads/2018/07/img-emprendedores.jpg"
                                 class="w-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -140,7 +140,7 @@
                         data-mdb-animation-delay="800">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://www.almondsolutions.com/images/blog-ui-ux-150223.jpg"
+                            <img src="https://img.freepik.com/vector-gratis/plantilla-graficos-economia-circular-degradada_23-2149227157.jpg"
                                 class="w-100 h-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -164,7 +164,7 @@
                         data-mdb-animation-delay="1000">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://www.almondsolutions.com/images/blog-ui-ux-150223.jpg"
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg"
                                 class="w-100 h-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
