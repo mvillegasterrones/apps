@@ -54,7 +54,7 @@
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Teaching the
+              <a class="dropdown-item" href="<?= $teaching_the_teachers ?>"><i class="fa-light fa-arrow-right text-warning"></i> Teaching the
                 Teachers</a>
             </li>
             <li>

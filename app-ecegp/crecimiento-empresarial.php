@@ -21,7 +21,12 @@
 
         <!-- Carousel wrapper -->
         <div id="carouselMaterialStyle" class="carousel slide carousel-fade vh-50" data-mdb-ride="carousel"
-            data-mdb-carousel-init>
+            data-mdb-carousel-init
+            data-mdb-animation-init 
+            data-mdb-animation-start="onLoad" 
+            data-mdb-animation="fade-in-down" 
+            data-mdb-animation-show-on-load="false" 
+            data-mdb-animation-delay="300">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active"
@@ -107,9 +112,19 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row mb-5"
+                data-mdb-animation-init 
+                data-mdb-animation-start="onScroll" 
+                data-mdb-animation="fade-in" 
+                data-mdb-animation-show-on-load="false" 
+                data-mdb-animation-delay="400">
                 <div class="col-12 col-lg-6 text-start">
-                    <div class="card mb-5 main-bg-color-grey">
+                    <div class="card mb-5 main-bg-color-grey"
+                        data-mdb-animation-init 
+                        data-mdb-animation-start="onLoad" 
+                        data-mdb-animation="zoom-in" 
+                        data-mdb-animation-show-on-load="false" 
+                        data-mdb-animation-delay="500">
                         <div class="card-body">
                             <h4>Innovation Bottom UP</h4>
                             <p class="text-muted">
@@ -228,7 +243,12 @@
                 </div>
 
                 <div class="col-12 col-lg-6 text-start">
-                    <div class="card main-bg-color-grey">
+                    <div class="card main-bg-color-grey"
+                        data-mdb-animation-init 
+                        data-mdb-animation-start="onScroll" 
+                        data-mdb-animation="zoom-in" 
+                        data-mdb-animation-show-on-load="false" 
+                        data-mdb-animation-delay="700">
                         <div class="card-body">
                             <h4>Innovación de Productos o Servicios</h4>
                             <p class="text-muted">

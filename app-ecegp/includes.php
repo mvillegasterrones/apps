@@ -9,8 +9,11 @@ $nombre_largo_empresa = 'Escruela de Ciencias Empresariales y Gestión Publica';
 $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile/index.html';
 
 /* ! Menu */
-$innovacion_botom_up = './innovacion-bottom-up.php';
-
+$innovacion_botom_up      = './innovacion-bottom-up.php';
+$teaching_the_teachers    = './teaching-the-teachers.php';
+$economia_periodistas     = './economia-periodistas.php';
+$formacion_emprendedores  = './formacion-emprendedores.php';
+$economia_circular        = './economia-circular.php';
 
 /* Main */
 $url_img_socio_guido = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
