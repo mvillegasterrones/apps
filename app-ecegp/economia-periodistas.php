@@ -14,13 +14,9 @@
         <?php include './views/sections/nav-bar.php' ?>
         <!-- Navbar -->
 
-        <!-- Hero Parallax Section -->
-        <section class="hero-parallax" style="background-image: url('<?= $img_econom_perdiodistas ?>');"
-            data-mdb-animation-init 
-            data-mdb-animation-start="onLoad" 
-            data-mdb-animation="fade-in-down" 
-            data-mdb-animation-show-on-load="false" 
-            data-mdb-animation-delay="100">
+        <!-- Hero Parallax Section
+          -->
+        <section class="hero-parallax" style="background-image: url('<?= $img_econom_perdiodistas ?>');">
             <div class="mask" style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="container text-center rounded-6 p-3" style="background: hsla(0, 80%, 100%, 0.25);backdrop-filter: blur(30px);margin-top: -100px;"
@@ -60,7 +56,7 @@
         </section>-->
 
         <!-- FLOTANTE - CONTENIDO DEL CURSOt -->
-        <div class="container">
+        <div class="container mb-10">
             <div class="floating-card card mx-auto p-4 main-bg-color-grey"
                 data-mdb-animation-init 
                 data-mdb-animation-start="onLoad" 
@@ -343,6 +339,8 @@
                 </div>
             </div>
         </div>
+
+        <?php include './views/sections/transversal.php' ?>
 
     </header>
 
