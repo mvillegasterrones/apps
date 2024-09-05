@@ -76,50 +76,82 @@ El objetivo de estos programas es proporcionar a los participantes las herramien
             </div>
 
             <div class="row">
-                <div class="col-12 col-lg-6 mb-5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="100">
-                    <div class="card main-bg-color-grey h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                        data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="600">
-                        <div class="card-body">
-                            <h1><i class="fas fa-info-circle"></i></h1>
-                            <h5>Certificación en Especialización de Marketing Digital</h5>
-                            <p class="text-muted">
-                            Es un programa práctico de 6 meses diseñado para que los participantes desarrollen habilidades en SEO, marketing de contenidos, redes sociales y análisis de datos. A través de proyectos aplicados, crearás un portafolio profesional. <strong>(Certificación en Especialización de Marketing Digital)</strong>
-                            </p>
+                
+                <div class="row gx-lg-5 mb-10">
+                    <!--1. Aplicaciones movíles -->
+                    <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+                        <div class="card main-bg-color-grey rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                            data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false"
+                            data-mdb-animation-delay="400">
+                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                                data-mdb-ripple-color="light">
+                                <img src="<?= $img_econom_perdiodistas ?>"
+                                    class="w-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Certificación en Especialización de Marketing Digital</h5>
+                                <p class="card-text text-muted">
+                                Es un programa práctico de 6 meses diseñado para que los participantes desarrollen habilidades en SEO, marketing de contenidos, redes sociales y análisis de datos. A través de proyectos aplicados, crearás un portafolio profesional. (Certificación en Especialización de Marketing Digital)
+                                </p>
+                                <a href="<?= $economia_periodistas ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
+                    <!-- end 1 -->
+
+                    <!-- 2. Desarrollo web -->
+                    <div class="col-lg-4 mb-6 mb-lg-0">
+                        <div class="card main-bg-color-grey rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                            data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false"
+                            data-mdb-animation-delay="600">
+                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                                data-mdb-ripple-color="light">
+                                <img src="<?= $img_formac_emprendedores ?>"
+                                    class="w-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Certificación en Especialización de Transformación Digital</h5>
+                                <p class="card-text text-muted">
+                                Es un programa práctico de 6 meses diseñado para especializarte en la gestión de innovación, tecnologías emergentes, y cultura digital. Desarrollarás un plan integral de transformación digital que podrás implementar de inmediato, mejorando tu empleabilidad y conectándote con profesionales afines. (Link)
+                                </p>
+                                <a href="<?= $formacion_emprendedores ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 2 -->
+
+                    <!-- 3. Rede -->
+                    <div class="col-lg-4 mb-6 mb-lg-0">
+                        <div class="card main-bg-color-grey rounded-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
+                            data-mdb-animation="fade-in-up" data-mdb-animation-show-on-load="false"
+                            data-mdb-animation-delay="800">
+                            <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                                data-mdb-ripple-color="light">
+                                <img src="<?= $img_econom_circular ?>"
+                                    class="w-100 h-100" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Certificación en Especialización de Crecimiento y Nuevos Negocios</h5>
+                                <p class="card-text text-muted">
+                                La Certificación en Crecimiento Empresarial y Desarrollo de Negocios es un programa práctico de 6 meses diseñado para especializarte en identificar oportunidades de crecimiento, desarrollar nuevos negocios y escalar empresas de manera sostenible. (Link)
+                                </p>
+                                <a href="<?= $economia_circular ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end 3 -->
+
                 </div>
 
-                <div class="col-12 col-lg-6 mb-5 h-100 mb-sm-5" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="100">
-                    <div class="card main-bg-color-grey h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                        data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="800">
-                        <div class="card-body">
-                            <h1><i class="fas fa-info-circle"></i></h1>
-                            <h5>Certificación en Especialización de Transformación Digital</h5>
-                            <p class="text-muted">
-                            Es un programa práctico de 6 meses diseñado para especializarte en la gestión de innovación, tecnologías emergentes, y cultura digital. Desarrollarás un plan integral de transformación digital que podrás implementar de inmediato, mejorando tu empleabilidad y conectándote con profesionales afines. (Link)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6 h-100" data-mdb-animation-init data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="100">
-                    <div class="card main-bg-color-grey h-100" data-mdb-animation-init data-mdb-animation-start="onScroll"
-                        data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
-                        data-mdb-animation-delay="800">
-                        <div class="card-body">
-                            <h1><i class="fas fa-info-circle"></i></h1>
-                            <h5>Certificación en Especialización de Crecimiento y Nuevos Negocios</h5>
-                            <p class="text-muted">
-                            La Certificación en Crecimiento Empresarial y Desarrollo de Negocios es un programa práctico de 6 meses diseñado para especializarte en identificar oportunidades de crecimiento, desarrollar nuevos negocios y escalar empresas de manera sostenible. (Link)
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
