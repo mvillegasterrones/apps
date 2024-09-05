@@ -23,8 +23,13 @@ $url_img_socio_jose  = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
 
 # -- Imagenes
 $img_econom_perdiodistas  = 'https://media.istockphoto.com/id/1349183013/es/foto/periodista-africano-prepara-preguntas-para-conferencia-de-prensa.jpg?s=612x612&w=0&k=20&c=D1fZ1CPigB6EUgdNUW0AjgoO42BLaUYKP25ch54CVPY=';
+$precio_econom_perdistas  = '1.00';
+
 $img_formac_emprendedores = 'https://mxconsultingperu.com/wp-content/uploads/2018/07/img-emprendedores.jpg';
+$precio_formac_emprended  = '2.00';
+
 $img_econom_circular      = 'https://img.freepik.com/vector-gratis/plantilla-graficos-economia-circular-degradada_23-2149227157.jpg';
+
 $img_econom_docentes      = 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg';
 
 /* ! Crecimiento Empresarial */

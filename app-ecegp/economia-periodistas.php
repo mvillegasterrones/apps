@@ -16,59 +16,99 @@
 
         <!-- Hero Parallax Section -->
         <section class="hero-parallax d-flex justify-content-center align-items-center text-center"
-            style="background-image: url(<?= $img_econom_perdiodistas ?>);">
-            <div class="container h-50">
-                <h3 class="hero-title display-1 fw-bold text-white p-4 main-bg-color-grey rounded-6">
-                    Economía para Periodistas
-                </h3>
+            style="background-image: url(<?= $img_econom_perdiodistas ?>);"
+            data-mdb-carousel-init
+            data-mdb-animation-init 
+            data-mdb-animation-start="onLoad" 
+            data-mdb-animation="fade-in-down" 
+            data-mdb-animation-show-on-load="false" 
+            data-mdb-animation-delay="100">
+            <div class="mask" style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="row">
+                        <div class="col-12 main-bg-color-grey p-4 rounded rounded-6" style="background: hsla(0, 80%, 100%, 0.25);backdrop-filter: blur(30px);margin-top: -100px;"
+                            data-mdb-carousel-init
+                            data-mdb-animation-init 
+                            data-mdb-animation-start="onLoad" 
+                            data-mdb-animation="fade-in" 
+                            data-mdb-animation-show-on-load="false" 
+                            data-mdb-animation-delay="600">
+                            <h3 class="hero-title display-1 fw-bold">Economía para Periodistas</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Floating Card Content -->
+        <!-- FLOTANTE - CONTENIDO DEL CURSOt -->
         <div class="container">
-            <div class="floating-card card mx-auto p-4 main-bg-color-grey">
+            <div class="floating-card card mx-auto p-4 main-bg-color-grey"
+                data-mdb-animation-init 
+                data-mdb-animation-start="onLoad" 
+                data-mdb-animation="zoom-in" 
+                data-mdb-animation-show-on-load="false" 
+                data-mdb-animation-delay="100">
                 <div class="card-body">
                     <div class="row">
                         <!-- ? DETALLE -->
                         <div class="col-12 col-lg-6">
 
-                            <h4 class="card-title">Descripción del Curso</h4>
-                            <p class="card-text text-muted">
-                                Este curso está dirigido a periodistas que desean comprender mejor los conceptos
-                                económicos fundamentales para informar de manera precisa y profunda sobre temas
-                                económicos. Los participantes aprenderán a analizar y comunicar de manera efectiva los
-                                indicadores económicos clave que determinan la salud de la economía de un país.
-                            </p>
-                            <hr class="container w-100">
-                            <h4>Competencias Propuestas</h4>
-                            <p class="">
-                            <p class="d-none text-muted p-4 pt-1">Habilidad para evaluar y analizar indicadores
-                                económicos y su impacto en la economía y la sociedad.</p>
-                            <i class="fa-regular fa-check"></i> Comprensión de Conceptos Económicos Básicos<br>
-                            <p class="text-muted p-4 pt-1">Capacidad para entender y explicar los principios
-                                fundamentales de la economía, incluyendo el Producto Interno Bruto (PIB), la tasa de
-                                desempleo, la inflación, el déficit o superávit fiscal, la balanza comercial y el índice
-                                de confianza del consumidor.</p>
-                            <i class="fa-regular fa-check"></i> Análisis de Indicadores Económicos<br>
-                            <p class="text-muted p-4 pt-1">Habilidad para evaluar y analizar indicadores económicos y su
-                                impacto en la economía y la sociedad.</p>
-                            <i class="fa-regular fa-check"></i> Interpretación de Datos Económicos<br>
-                            <p class="text-muted p-4 pt-1">Competencia para interpretar estadísticas y datos económicos,
-                                comprendiendo su relevancia y contexto.</p>
-                            <i class="fa-regular fa-check"></i> Comunicación Efectiva de Información Económica<br>
-                            <p class="text-muted p-4 pt-1">Capacidad para comunicar conceptos y datos económicos de
-                                manera clara y accesible al público general.</p>
+                            <div
+                                data-mdb-animation-init 
+                                data-mdb-animation-start="onLoad" 
+                                data-mdb-animation="fade-in" 
+                                data-mdb-animation-show-on-load="false" 
+                                data-mdb-animation-delay="400">
+                                <h4 class="card-title">Descripción del Curso</h4>
+                                <p class="card-text text-muted">
+                                    Este curso está dirigido a periodistas que desean comprender mejor los conceptos
+                                    económicos fundamentales para informar de manera precisa y profunda sobre temas
+                                    económicos. Los participantes aprenderán a analizar y comunicar de manera efectiva los
+                                    indicadores económicos clave que determinan la salud de la economía de un país.
+                                </p>
+                                <hr class="container w-100">
+                            </div>
+                            <div
+                                data-mdb-animation-init 
+                                data-mdb-animation-start="onScroll" 
+                                data-mdb-animation="fade-in" 
+                                data-mdb-animation-show-on-load="false" 
+                                data-mdb-animation-delay="200">
+                                <h4>Competencias Propuestas</h4>
+                                <p class="">
+                                    <p class="d-none text-muted p-4 pt-1">Habilidad para evaluar y analizar indicadores
+                                        económicos y su impacto en la economía y la sociedad.</p>
+                                    <i class="fa-regular fa-check"></i> Comprensión de Conceptos Económicos Básicos<br>
+                                    <p class="text-muted p-4 pt-1">Capacidad para entender y explicar los principios
+                                        fundamentales de la economía, incluyendo el Producto Interno Bruto (PIB), la tasa de
+                                        desempleo, la inflación, el déficit o superávit fiscal, la balanza comercial y el índice
+                                        de confianza del consumidor.</p>
+                                    <i class="fa-regular fa-check"></i> Análisis de Indicadores Económicos<br>
+                                    <p class="text-muted p-4 pt-1">Habilidad para evaluar y analizar indicadores económicos y su
+                                        impacto en la economía y la sociedad.</p>
+                                    <i class="fa-regular fa-check"></i> Interpretación de Datos Económicos<br>
+                                    <p class="text-muted p-4 pt-1">Competencia para interpretar estadísticas y datos económicos,
+                                        comprendiendo su relevancia y contexto.</p>
+                                    <i class="fa-regular fa-check"></i> Comunicación Efectiva de Información Económica<br>
+                                    <p class="text-muted p-4 pt-1">Capacidad para comunicar conceptos y datos económicos de
+                                    manera clara y accesible al público general.</p>
+                                </p>
 
-                            </p>
+                            </div>
 
                         </div>
 
                         <!-- ? PRECIOS E INFO -->
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 mb-5"
+                            data-mdb-animation-init 
+                            data-mdb-animation-start="onLoad" 
+                            data-mdb-animation="fade-in" 
+                            data-mdb-animation-show-on-load="false" 
+                            data-mdb-animation-delay="400">
                             <div class="card main-bg-color-dark">
                                 <div class="card-body">
                                     <h5 class="text-color-warning text-end">
-                                        <p class="mb-1">Precio: S/. 0,00</p>
+                                        <p class="mb-1">Precio: S/. <?= $precio_econom_perdistas ?></p>
                                     </h5>
                                     <ul class="list-group list-group-light">
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -125,11 +165,16 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <h4>Estructura del Curso</h4>
+                        <div class="col-12"
+                            data-mdb-animation-init 
+                            data-mdb-animation-start="onScroll" 
+                            data-mdb-animation="fade-in" 
+                            data-mdb-animation-show-on-load="false" 
+                            data-mdb-animation-delay="400">
+                            <h4 class="mb-3">Estructura del Curso</h4>
                             <!-- ? LISTA DE SEMANDAS DEL CURSO -->
                             <div class="accordion accordion-borderless" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
+                                <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button data-mdb-collapse-init class="accordion-button" type="button"
                                             data-mdb-target="#panelsStayOpen-collapseOne" aria-expanded="true"
@@ -137,7 +182,7 @@
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Semana 1:</b> Desafíos del Crecimiento Económico en el Siglo XXI
                                         </button>
                                     </h2>
-                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse main-bg-color-grey show"
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingOne">
                                         <div class="accordion-body">
                                             <p class="text-muted">
@@ -153,7 +198,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
+                                <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <Sema data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
@@ -177,7 +222,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
+                                <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -202,7 +247,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
+                                <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingFour">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#panelsStayOpen-collapseFour" aria-expanded="false"
@@ -210,7 +255,7 @@
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Semana 4:</b> Sostenibilidad Fiscal y Endeudamiento Público
                                         </button>
                                     </h2>
-                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFour">
                                         <div class="accordion-body">
                                             <p class="text-muted">
@@ -226,7 +271,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
+                                <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingFive">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#panelsStayOpen-collapseFive" aria-expanded="false"
@@ -234,7 +279,7 @@
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Semana 5:</b> Globalización y Comercio Internacional en Tiempos de Crisis
                                         </button>
                                     </h2>
-                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFive">
                                         <div class="accordion-body">
                                             <p class="text-muted">
@@ -258,7 +303,7 @@
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Semana 6:</b> Confianza del Consumidor y Recuperación Económica
                                         </button>
                                     </h2>
-                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingSix">
                                         <div class="accordion-body">
                                             <p class="text-muted">
@@ -281,15 +326,6 @@
         </div>
 
     </header>
-
-
-    <main>
-        <div class="container">
-
-            <h1>Economia para Periodistas</h1>
-
-        </div>
-    </main>
 
     <?php include './views/sections/footer.php' ?>
 

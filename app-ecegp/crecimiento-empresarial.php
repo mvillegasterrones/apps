@@ -26,7 +26,7 @@
             data-mdb-animation-start="onLoad" 
             data-mdb-animation="fade-in-down" 
             data-mdb-animation-show-on-load="false" 
-            data-mdb-animation-delay="300">
+            data-mdb-animation-delay="100">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active"
@@ -37,7 +37,13 @@
             </div>
 
             <!-- Inner -->
-            <div class="carousel-inner text-center rounded-5 shadow-4-strong">
+            <div class="carousel-inner text-center rounded-5 shadow-4-strong"
+                data-mdb-carousel-init
+                data-mdb-animation-init 
+                data-mdb-animation-start="onLoad" 
+                data-mdb-animation="fade-in-down" 
+                data-mdb-animation-show-on-load="false" 
+                data-mdb-animation-delay="300">
                 <!-- Single item -->
                 <div class="carousel-item active">
                     <div class="bg-image">
@@ -133,7 +139,7 @@
                                 identificación de nuevas oportunidades de negocio.
                             </p>
                             <div class="accordion" id="accordionExampleY">
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingOneY">
                                         <button data-mdb-collapse-init class="accordion-button" type="button"
                                             data-mdb-target="#collapseOneY" aria-expanded="true"
@@ -149,7 +155,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingTwoY">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseTwoY" aria-expanded="false"
@@ -166,7 +172,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingThreeY">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseThreeY" aria-expanded="false"
@@ -185,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingFourY">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseFourY" aria-expanded="false"
@@ -202,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingFiveY">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseFiveY" aria-expanded="false"
@@ -219,7 +225,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingSixY">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseSixY" aria-expanded="false"
@@ -256,7 +262,7 @@
                                 servicios, o la creación de nuevos negocios.
                             </p>
                             <div class="accordion" id="accordionExampleY-2">
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingOneY-2">
                                         <button data-mdb-collapse-init class="accordion-button" type="button"
                                             data-mdb-target="#collapseOneY-2" aria-expanded="true" aria-controls="collapseOneY-2">
@@ -270,7 +276,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingTwoY-2">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseTwoY-2" aria-expanded="false" aria-controls="collapseTwoY-2">
@@ -284,7 +290,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingThreeY-2">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseThreeY-2" aria-expanded="false"
@@ -300,7 +306,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item main-bg-color-grey">
+                                <div class="accordion-item mb-3 main-bg-color-grey">
                                     <h2 class="accordion-header" id="headingFourY-2">
                                         <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
                                             data-mdb-target="#collapseFourY-2" aria-expanded="false"
