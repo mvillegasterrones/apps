@@ -152,7 +152,7 @@ body {
 
 /* Estilo de Parallax */
 .hero-parallax {
-  height: 100vh;
+  height: 80vh;
   /*background-image: url('https://media.istockphoto.com/id/1349183013/es/foto/periodista-africano-prepara-preguntas-para-conferencia-de-prensa.jpg?s=612x612&w=0&k=20&c=D1fZ1CPigB6EUgdNUW0AjgoO42BLaUYKP25ch54CVPY=');*/
   background-size: cover;
   background-position: center;
@@ -165,7 +165,7 @@ body {
 
 .hero-title {
   color: white;
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   text-align: center;
   z-index: 1;
 }
@@ -185,7 +185,7 @@ body {
 /* Ajuste responsive */
 @media (max-width: 768px) {
   .hero-title {
-      font-size: 2rem;
+      /*font-size: 2rem;*/
   }
 
   .floating-card {

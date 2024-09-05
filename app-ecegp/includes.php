@@ -29,6 +29,7 @@ $img_formac_emprendedores = 'https://mxconsultingperu.com/wp-content/uploads/201
 $precio_formac_emprended  = '2.00';
 
 $img_econom_circular      = 'https://img.freepik.com/vector-gratis/plantilla-graficos-economia-circular-degradada_23-2149227157.jpg';
+$precio_econom_circular   = '3.00';
 
 $img_econom_docentes      = 'https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg';
 

@@ -15,7 +15,26 @@
         <!-- Navbar -->
 
         <!-- Hero Parallax Section -->
-        <section class="hero-parallax d-flex justify-content-center align-items-center text-center"
+        <section class="hero-parallax" style="background-image: url('<?= $img_formac_emprendedores ?>');"
+            data-mdb-animation-init 
+            data-mdb-animation-start="onLoad" 
+            data-mdb-animation="fade-in-down" 
+            data-mdb-animation-show-on-load="false" 
+            data-mdb-animation-delay="100">
+            <div class="mask" style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="container text-center rounded-6 p-3" style="background: hsla(0, 80%, 100%, 0.25);backdrop-filter: blur(30px);margin-top: -100px;"
+                        data-mdb-animation-init 
+                        data-mdb-animation-start="onLoad" 
+                        data-mdb-animation="fade-in" 
+                        data-mdb-animation-show-on-load="false" 
+                        data-mdb-animation-delay="400">
+                        <h4 class="hero-title display-6 fw-bold mb-0">Formación de Emprendedores para Docentes Universitarios</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="hero-parallax d-flex justify-content-center align-items-center text-center"
             style="background-image: url(<?= $img_formac_emprendedores ?>);"
             data-mdb-carousel-init
             data-mdb-animation-init 
@@ -38,7 +57,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- FLOTANTE - CONTENIDO DEL CURSOt -->
         <div class="container">
