@@ -92,7 +92,7 @@
                         data-mdb-animation-delay="400">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://media.istockphoto.com/id/1349183013/es/foto/periodista-africano-prepara-preguntas-para-conferencia-de-prensa.jpg?s=612x612&w=0&k=20&c=D1fZ1CPigB6EUgdNUW0AjgoO42BLaUYKP25ch54CVPY="
+                            <img src="<?= $img_econom_perdiodistas ?>"
                                 class="w-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -103,7 +103,7 @@
                             <p class="card-text text-muted">
                                 Este curso de seis semanas ofrece una comprensión profunda de temas económicos clave como el PIB, la tasa de desempleo, la inflación, el déficit fiscal, la balanza comercial y el índice de confianza del consumidor.
                             </p>
-                            <a href="<?= $economia_periodistas ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
+                            <a href="<?= $economia_periodistas ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                         data-mdb-animation-delay="600">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://mxconsultingperu.com/wp-content/uploads/2018/07/img-emprendedores.jpg"
+                            <img src="<?= $img_formac_emprendedores ?>"
                                 class="w-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -127,7 +127,7 @@
                             <p class="card-text text-muted">
                                 Este curso de seis semanas está diseñado para docentes universitarios que buscan integrar el espíritu emprendedor en su enseñanza y fomentar el emprendimiento entre sus estudiantes.
                             </p>
-                            <a href="<?= $formacion_emprendedores ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
+                            <a href="<?= $formacion_emprendedores ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         data-mdb-animation-delay="800">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://img.freepik.com/vector-gratis/plantilla-graficos-economia-circular-degradada_23-2149227157.jpg"
+                            <img src="<?= $img_econom_circular ?>"
                                 class="w-100 h-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -151,7 +151,7 @@
                             <p class="card-text text-muted">
                                 Este está diseñado para docentes universitarios que desean integrar los principios de la economía circular en sus enseñanzas, actualizándose en las últimas tendencias y prácticas sostenibles.
                             </p>
-                            <a href="<?= $economia_circular ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Read more</a>
+                            <a href="<?= $economia_circular ?>" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>Ver mas <i class="fa-light fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                         data-mdb-animation-delay="1000">
                         <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
                             data-mdb-ripple-color="light">
-                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg"
+                            <img src="<?= $img_econom_docentes ?>"
                                 class="w-100 h-100" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
@@ -193,7 +193,7 @@
                 <div class="col-6" data-mdb-animation-init data-mdb-animation-start="onScroll"
                         data-mdb-animation="zoom-in" data-mdb-animation-show-on-load="false"
                         data-mdb-animation-delay="200">
-                    <img src="./img/certificate.webp" class="w-75" alt="">
+                    <img src="<?= $url_img_certificado ?>" class="w-75" alt="">
                 </div>
                 <div class="col-3"></div>
             </div>
