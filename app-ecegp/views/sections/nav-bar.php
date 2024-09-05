@@ -58,8 +58,7 @@
                 Teachers</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> Especialización
-                para Profesionales </a>
+              <a class="dropdown-item" href="<?= $capacitacion_continua ?>"><i class="fa-light fa-arrow-right text-warning"></i> Capacitacion Contínua</a>
             </li>
             <li>
               <a class="dropdown-item" href="#"><i class="fa-light fa-arrow-right text-warning"></i> RE-SKALLING:
