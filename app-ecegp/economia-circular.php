@@ -73,7 +73,7 @@
         </section>-->
 
         <!-- FLOTANTE - CONTENIDO DEL CURSOt -->
-        <div class="container mb-10">
+        <div class="container mb-7">
             <div class="floating-card card mx-auto p-4 main-bg-color-grey"
                 data-mdb-animation-init 
                 data-mdb-animation-start="onLoad" 

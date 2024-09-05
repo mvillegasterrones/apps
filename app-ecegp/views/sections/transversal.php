@@ -62,7 +62,7 @@
                 Buscamos decididamente que lo que enseñamos sea inmediatamente aplicable a tu vida profesional.
                 </p>
                 <p class="text-muted">
-                Para saber más sobre nuestro proceso formativo lee nuestro modelo (link al modelo de aprendizaje)
+                Para saber más sobre nuestro proceso formativo lee nuestro modelo (ver <a href="<?= $modelo_aprendizaje ?>">Modelo de Aprendizaje</a>)
                 </p>
             </div>
         </div>

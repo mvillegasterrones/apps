@@ -14,6 +14,7 @@ $teaching_the_teachers    = './teaching-the-teachers.php';
 $economia_periodistas     = './economia-periodistas.php';
 $formacion_emprendedores  = './formacion-emprendedores.php';
 $economia_circular        = './economia-circular.php';
+$modelo_aprendizaje       = './modelo-aprendizaje.php';
 
 $url_img_certificado = './img/certificate.webp';
 

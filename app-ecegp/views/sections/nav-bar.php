@@ -68,7 +68,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="javascript:;" class="nav-link">Modelo de Aprendizaje</a>
+          <a href="<?= $modelo_aprendizaje ?>" class="nav-link">Modelo de Aprendizaje</a>
         </li>
         <li class="nav-item">
           <a href="javascript:;" class="nav-link">Contacto</a>
