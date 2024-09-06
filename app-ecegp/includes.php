@@ -55,6 +55,10 @@ $cert_link_card_1 = './certificacion-marketing-digital.php';
 $cert_link_card_2 = './certificacion-transformacion-digital.php';
 $cert_link_card_3 = './certificacion-nuevos-negocios.php';
 
+$cert_precio_card_1 = '4,500.00';
+$cert_precio_card_2 = '4,500.00';
+$cert_precio_card_3 = '4,500.00';
+
 $cert_img_card_1 = 'https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063134.jpg';
 $cert_img_card_2 = 'https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?cs=srgb&dl=pexels-rpnickson-3082341.jpg&fm=jpg';
 $cert_img_card_3 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4m-5CTZi4glQti34126cLi8SyTNBfCEXTymOmcrA6Wc2snEJDazgJEhmzdweMGs8IR7Q&usqp=CAU';
