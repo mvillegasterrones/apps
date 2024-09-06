@@ -4,7 +4,7 @@
 <html lang="es" data-mdb-theme="dark">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECEGP | Certificación en Especialización de Crecimiento y Nuevos Negocios</title>
+<title>ECEGP | Certificación en Especialización de Crecimiento Empresarial y Desarrollo de Negocios</title>
 <?php include './views/sections/main-header.php' ?>
 </head>
 
@@ -28,7 +28,7 @@
                         style="background: hsla(0, 80%, 100%, 0.25);backdrop-filter: blur(30px);margin-top: -100px;"
                         data-mdb-animation-init data-mdb-animation-start="onLoad" data-mdb-animation="fade-in"
                         data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                        <h4 class="hero-title display-6 fw-bold mb-0">Certificación en Especialización de Crecimiento y Nuevos Negocios</h4>
+                        <h4 class="hero-title display-6 fw-bold mb-0">Certificación en Especialización de Crecimiento Empresarial y Desarrollo de Negocios</h4>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                                 data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                                 <h4 class="color-institucional-1">Resumen</h4>
                                 <p class="card-text text-muted">
-                                    ....
+                                Tendrás un enfoque práctico y orientado a resultados, diseñado para que puedas aplicar de inmediato las habilidades adquiridas en el crecimiento de empresas y el desarrollo de nuevos negocios. Complementa el aprendizaje tradicional con la identificación de oportunidades, la innovación y la escalabilidad. 
                                 </p>
                                 <hr class="container w-100">
                             </div>

@@ -71,7 +71,9 @@
                                 data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
                                 <h4 class="color-institucional-1">Resumen</h4>
                                 <p class="card-text text-muted">
-                                    ....
+                                El Programa de Especialización en Transformación Digital ofrece un enfoque práctico y orientado a resultados, diseñado para que los participantes puedan aplicar de inmediato las habilidades adquiridas en la transformación de sus organizaciones. Este programa complementa el aprendizaje tradicional y te permitirá convertirte en un especialista en áreas clave de la transformación digital, como la gestión de la innovación, tecnologías emergentes, cultura digital y análisis de datos.<br><br>
+Te conectarás con otros profesionales interesados en la transformación digital, y en solo 6 meses, estarás listo para aplicar tus nuevas habilidades en el mercado laboral. Aprenderás a:
+
                                 </p>
                                 <hr class="container w-100">
                             </div>

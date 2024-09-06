@@ -226,8 +226,7 @@
                                 </a>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">Certificación en Especialización de Crecimiento y
-                                    Nuevos Negocios</h5>
+                                <h5 class="card-title text-center">Certificación en Especialización de Crecimiento Empresarial y Desarrollo de Negocios</h5>
                                 <p class="card-text text-muted">
                                     La Certificación en Crecimiento Empresarial y Desarrollo de Negocios es un programa
                                     práctico de 6 meses diseñado para especializarte en identificar oportunidades de
@@ -246,7 +245,7 @@
             </div>
 
             <!-- Sección Timeline -->
-            <section class="timeline container text-color-dark">
+            <!--<section class="timeline container text-color-dark">
                 <div class="timeline-step">
                     <div class="timeline-content left">
                         <h4 class="fw-bold">Evento 1</h4>
@@ -276,7 +275,7 @@
                         <p class="mb-0">Descripción del evento 4. El diseño es responsive para móviles.</p>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
         </div>
     </main>
