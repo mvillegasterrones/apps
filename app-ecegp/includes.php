@@ -48,3 +48,15 @@ $crecim_empresarial_link_img_c2 = 'https://www.businessconsulting.cl/wp-content/
 
 $crecim_empresarial_link_c3     = './sprints-problem-focuses-workshop.php';
 $crecim_empresarial_link_img_c3 = 'https://miro.medium.com/v2/resize:fit:2000/1*K5M838xIsExaptfzp9E3Zw.png';
+
+/* * CERTIFICACIONES */
+
+$cert_link_card_1 = './certificacion-marketing-digital.php';
+$cert_link_card_2 = './certificacion-transformacion-digital.php';
+$cert_link_card_3 = './certificacion-nuevos-negocios.php';
+
+$cert_img_card_1 = 'https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063134.jpg';
+$cert_img_card_2 = 'https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?cs=srgb&dl=pexels-rpnickson-3082341.jpg&fm=jpg';
+$cert_img_card_3 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4m-5CTZi4glQti34126cLi8SyTNBfCEXTymOmcrA6Wc2snEJDazgJEhmzdweMGs8IR7Q&usqp=CAU';
+
+/* * FIN CERTIFICACIONES */
