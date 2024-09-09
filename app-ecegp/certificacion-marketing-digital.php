@@ -233,6 +233,7 @@
                             <h4 class="mb-3">Estructura del Curso</h4>
                             <!-- ? LISTA DE SEMANDAS DEL CURSO -->
                             <div class="accordion accordion-borderless" id="accordionPanelsStayOpenExample">
+
                                 <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button data-mdb-collapse-init class="accordion-button" type="button"
@@ -250,7 +251,7 @@
                                                 Aprenderás los conceptos básicos y cómo crear estrategias de marketing digital.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
                                                 <b>Semana 1:</b>&nbsp;Introducción al marketing digital, conceptos clave y la importancia en el entorno empresarial actual.
@@ -277,32 +278,32 @@
                                             data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseTwo">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                2:</b>&nbsp; .... </button>
+                                                2:</b>&nbsp; Marketing en Redes Sociales </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseTwo"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingTwo">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Te especializas en redes sociales, aprendiendo desde su uso y creación de contenido hasta la publicidad. con un taller final de campañas prácticas.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Introducción a las redes sociales más relevantes (Facebook, Instagram, LinkedIn, Twitter, etc.).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Estrategias de contenido para redes sociales.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Publicidad en redes sociales (Facebook Ads, Instagram Ads, LinkedIn Ads).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: creación y gestión de campañas en redes sociales.
                                             </p>
                                         </div>
                                     </div>
@@ -314,32 +315,32 @@
                                             data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseThree">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                3:</b>&nbsp; .... </button>
+                                                3:</b>&nbsp; SEO y SEM </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseThree"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingThree">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Dominarás los fundamentos de SEO y SEM, desde técnicas básicas hasta la optimización y medición de campañas.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Fundamentos de SEO (On-page, Off-page, técnicas y herramientas).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Introducción a SEM y Google Ads.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Optimización de campañas SEM y medición de resultados.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: optimización de un sitio web para SEO y creación de una campaña SEM.
                                             </p>
                                         </div>
                                     </div>
@@ -351,32 +352,32 @@
                                             data-mdb-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseFour">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                4:</b>&nbsp; .... </button>
+                                                4:</b>&nbsp; Marketing de Contenidos y Email Marketing </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseFour"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFour">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Aprenderás a crear contenido valioso y estrategias de email marketing.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Creación de contenido de valor (blogs, videos, infografías).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Estrategias de email marketing.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Herramientas para la automatización del marketing.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: diseño de una estrategia de marketing de contenidos y email marketing.
                                             </p>
                                         </div>
                                     </div>
@@ -388,32 +389,32 @@
                                             data-mdb-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseFive">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                5:</b>&nbsp; .... </button>
+                                                5:</b>&nbsp; Análisis de Datos y Métricas </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseFive"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFive">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Te enfocarás en el análisis de datos y métricas clave para la toma de decisiones.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Introducción a Google Analytics y otras herramientas de análisis.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Métricas clave en marketing digital (KPI, ROI, conversiones, etc.).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Análisis de resultados y optimización de campañas.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: análisis de datos de campañas reales.
                                             </p>
                                         </div>
                                     </div>
@@ -425,36 +426,37 @@
                                             data-mdb-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseSix">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                6:</b>&nbsp; .... </button>
+                                                6:</b>&nbsp; Proyecto Final y Preparación para el Mercado Laboral </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseSix"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingSix">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Desarrollarás y presentarás un proyecto final de marketing digital, seguido de preparación para el mercado laboral.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1 - 2:</b>&nbsp; Desarrollo del proyecto final: creación de una campaña completa de marketing digital.
+                                            </p>
+                                            <!--<p class="m-2 text-muted mb-1">
+                                                <i class="fas fa-play"></i>
+                                                <b>Semana 2:</b>&nbsp; Presentación del proyecto final y feedback.
+                                            </p>-->
+                                            <p class="m-2 text-muted mb-1">
+                                                <i class="fas fa-play"></i>
+                                                <b>Semana 3:</b>&nbsp; Presentación del proyecto final y feedback.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
-                                            </p>
-                                            <p class="m-2 text-muted mb-1">
-                                                <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
-                                            </p>
-                                            <p class="m-2 text-muted mb-1">
-                                                <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Preparación para el mercado laboral: construcción de portafolio, preparación de CV, y simulación de entrevistas.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 <html lang="es" data-mdb-theme="dark">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECEGP | Economía para Perdiodistas</title>
+<title>ECEGP | Economía para Economistas</title>
 <?php include './views/sections/main-header.php' ?>
 </head>
 
@@ -25,7 +25,7 @@
                         data-mdb-animation="fade-in" 
                         data-mdb-animation-show-on-load="false" 
                         data-mdb-animation-delay="400">
-                        <h4 class="hero-title display-6 fw-bold mb-0">Economía para Periodistas</h4>
+                        <h4 class="hero-title display-6 fw-bold mb-0">Economía para Economistas</h4>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                                                 </div>
                                                 <!--<div class="text-muted">kate.hunington@gmail.com</div>-->
                                             </div>
-                                            <span class="badge rounded-pill badge-warning">06 meses</span>
+                                            <span class="badge rounded-pill badge-warning">06 semanas</span>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             <div>

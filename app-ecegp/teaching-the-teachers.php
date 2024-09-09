@@ -23,7 +23,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="https://universidadeuropea.com/resources/media/images/como-ser-profesor-universidad-1200x630.original.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_hero_teaching_01 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6OVGYOMCM5FBNOHPJ57C2DHW3Y.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_hero_teaching_02 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">
@@ -100,7 +100,7 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title text-center">Economía para Periodistas</h5>
+                            <h5 class="card-title text-center">Economía para Economistas</h5>
                             <p class="card-text text-muted">
                                 Este curso de seis semanas ofrece una comprensión profunda de temas económicos clave como el PIB, la tasa de desempleo, la inflación, el déficit fiscal, la balanza comercial y el índice de confianza del consumidor.
                             </p>

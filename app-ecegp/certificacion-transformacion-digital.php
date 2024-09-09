@@ -73,7 +73,6 @@
                                 <p class="card-text text-muted">
                                 El Programa de Especialización en Transformación Digital ofrece un enfoque práctico y orientado a resultados, diseñado para que los participantes puedan aplicar de inmediato las habilidades adquiridas en la transformación de sus organizaciones. Este programa complementa el aprendizaje tradicional y te permitirá convertirte en un especialista en áreas clave de la transformación digital, como la gestión de la innovación, tecnologías emergentes, cultura digital y análisis de datos.<br><br>
 Te conectarás con otros profesionales interesados en la transformación digital, y en solo 6 meses, estarás listo para aplicar tus nuevas habilidades en el mercado laboral. Aprenderás a:
-
                                 </p>
                                 <hr class="container w-100">
                             </div>
@@ -97,34 +96,39 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                 <p class="d-none text-muted p-4 pt-1">-</p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Desarrollar e implementar estrategias de transformación digital adaptadas a las necesidades de tu organización.
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Gestionar la innovación y aprovechar las tecnologías emergentes para impulsar el cambio digital.
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Fomentar una cultura digital que promueva la agilidad y la adaptación en el entorno empresarial.
                                 </p>
+                                <p class="text-muted p-4 pt-1">
+                                    <i class="fa-regular fa-check-circle text-color-warning"></i>
+                                    Utilizar análisis de datos para tomar decisiones estratégicas basadas en evidencia.
+                                </p>
+
                                 <hr class="container w-100">
                                 <h4 class="">Resultados del Programa</h4>
 
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Implementar de inmediato estrategias de transformación digital en tu entorno laboral.
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Desarrollar un plan integral de transformación digital que demuestre tus habilidades de liderazgo y gestión del cambio.
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Recibir mentoría personalizada para guiarte en la implementación de proyectos de transformación digital.
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Adaptar tus estrategias y procesos para maximizar la eficiencia y competitividad en un entorno digital dinámico.
                                 </p>
 
                                 <hr class="container w-100">
@@ -132,27 +136,27 @@ Te conectarás con otros profesionales interesados en la transformación digital
 
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Liderazgo en transformación digital
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Gestión de la innovación
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Estrategias de tecnologías emergentes
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Desarrollo de cultura digital
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Análisis de datos y toma de decisiones basadas en datos
                                 </p>
                                 <p class="text-muted p-4 pt-1">
                                     <i class="fa-regular fa-check-circle text-color-warning"></i>
-                                    ....
+                                    Implementación y gestión del cambio digital
                                 </p>
                             </div>
 
@@ -223,6 +227,7 @@ Te conectarás con otros profesionales interesados en la transformación digital
                             <h4 class="mb-3">Estructura del Curso</h4>
                             <!-- ? LISTA DE SEMANDAS DEL CURSO -->
                             <div class="accordion accordion-borderless" id="accordionPanelsStayOpenExample">
+
                                 <div class="accordion-item mb-3">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button data-mdb-collapse-init class="accordion-button" type="button"
@@ -237,25 +242,25 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                         aria-labelledby="headingOne">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ....
+                                            Los conceptos básicos de la Transformación Digital, y su importancia en el entorno empresarial actual.
                                             </p>
                                             <p class="text-muted">
                                             <h6>Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; ....
+                                                <b>Semana 1:</b>&nbsp; Introducción a la transformación digital, conceptos clave y su impacto en las organizaciones.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Evaluación del estado digital de una empresa y diagnóstico de necesidades.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Identificación de tecnologías clave en la transformación digital (cloud computing, IoT, AI, etc.).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: análisis de casos exitosos de transformación digital.
                                             </p>
                                         </div>
                                     </div>

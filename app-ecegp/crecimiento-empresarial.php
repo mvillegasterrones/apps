@@ -47,7 +47,7 @@
                 <!-- Single item -->
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="./img/hero/hero-01.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_hero_01 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">
@@ -72,7 +72,7 @@
                 <!-- Single item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/hero/hero-02.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_hero_02 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">
                             <div class="d-flex justify-content-center align-items-center h-100">

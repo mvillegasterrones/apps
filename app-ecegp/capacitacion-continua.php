@@ -87,7 +87,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="https://media.licdn.com/dms/image/D4E12AQHqyXP2u0GYTA/article-cover_image-shrink_720_1280/0/1687834771945?e=2147483647&v=beta&t=3lSPmmaOKJ5v3nNWuXi1SboIU-mIImR2y1957X5i56U"
+                        <img src="<?= $img_hero_capacitac_continua ?>"
                             class="w-100" alt="Louvre Museum" />
                         <div class="mask"
                             style="background: linear-gradient(45deg, hsla(168, 85%, 52%, 0.7), hsla(263, 88%, 45%, 0.7) 100%);">

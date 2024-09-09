@@ -160,7 +160,7 @@
                                                 </div>
                                                 <!--<div class="text-muted">kate.hunington@gmail.com</div>-->
                                             </div>
-                                            <span class="badge rounded-pill badge-warning">06 meses</span>
+                                            <span class="badge rounded-pill badge-warning">06 semanas</span>
                                         </li>
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             <div>
