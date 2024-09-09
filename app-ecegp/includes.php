@@ -17,6 +17,9 @@ $img_hero_teaching_02 = './img/hero/theaching-teachers-02.jpg';
 
 $img_hero_capacitac_continua = './img/hero/hero-capacitacion-continua.jpg';
 
+$img_hero_reskalling_01 = 'https://www.michaelpage.es/sites/michaelpage.es/files/legacy/upskilling_article_970x388d8.jpg';
+$img_hero_reskalling_02 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0B-3UpcFU5T1F2aNInwGFqgx7fmMDA_kRpqRM5-qMYif1gzv6VmrEFodj5e89W1nC1TA&usqp=CAU';
+
 $img_valores_01 = './img/valores/valores-001.jpg';
 $img_valores_02 = './img/valores/valores-002.jpg';
 $img_valores_03 = './img/valores/valores-003.jpg';
@@ -37,8 +40,9 @@ $formacion_emprendedores  = './formacion-emprendedores.php';
 $economia_circular        = './economia-circular.php';
 $modelo_aprendizaje       = './modelo-aprendizaje.php';
 $capacitacion_continua    = './capacitacion-continua.php';
+$re_skalling              = './re-skalling.php';      
 
-$url_img_certificado = './img/certificate.webp';
+$url_img_certificado      = './img/certificate.webp';
 
 /* Main */
 $url_img_socio_guido = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
@@ -80,6 +84,6 @@ $cert_precio_card_1 = '4,500.00';
 $cert_precio_card_2 = '4,500.00';
 $cert_precio_card_3 = '4,500.00';
 
-
-
 /* * FIN CERTIFICACIONES */
+
+/** RESKALLING */
