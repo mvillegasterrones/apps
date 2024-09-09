@@ -75,7 +75,7 @@
                         <!-- Single item -->
                         <div class="carousel-item active">
                             <!--https://mdbootstrap.com/img/new/textures/full/243.jpg -->
-                            <img src="./img/hero/hero-01.jpg"
+                            <img src="<?= $img_hero_01 ?>"
                                 class="d-block vh-100 vw-100 object-cover"
                                 alt="15 years of experience in the IT industry" />
                             <div class="carousel-caption d-none d-md-block">
@@ -88,7 +88,7 @@
                         <!-- Single item -->
                         <div class="carousel-item">
                             <!--https://mdbootstrap.com/img/new/textures/full/102.jpg -->
-                            <img src="./img/hero/hero-02.jpg"
+                            <img src="<?= $img_hero_02 ?>"
                                 class="d-block vh-100 vw-100 object-cover" alt="243 completed projects" />
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="color-institucional-1">Gestión Pública</h5>
@@ -99,7 +99,7 @@
 
                         <!-- Single item -->
                         <div class="carousel-item">
-                            <img src="./img/hero/hero-03.jpg"
+                            <img src="<?= $img_hero_03 ?>"
                                 class="d-block vh-100 vw-100 object-cover" alt="53 satisfied customers" />
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="color-institucional-1">Metodologpia de Aprendizaje</h5>

@@ -182,7 +182,7 @@
                 <!-- 1 valor item -->
                 <div class="carousel-item active">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-01.jpg" class="w-100" alt="integridad" />
+                        <img src="<?= $img_valores_01 ?>" class="w-100" alt="integridad" />
                         <div class="mask degradado"><!--  style="background-color: hsla(0, 0%, 0%, 0.6)" -->
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -202,7 +202,7 @@
                 <!-- 2 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-02.jpg" class="w-100" alt="solidaridad" />
+                        <img src="<?= $img_valores_02 ?>" class="w-100" alt="solidaridad" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -222,7 +222,7 @@
                 <!-- 3 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-04.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_valores_03 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -279,7 +279,7 @@
                 <!-- 6 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-06.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_valores_04 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">
@@ -298,7 +298,7 @@
                 <!-- 7 valor item -->
                 <div class="carousel-item">
                     <div class="bg-image">
-                        <img src="./img/valores/valores-07.jpg" class="w-100" alt="Louvre Museum" />
+                        <img src="<?= $img_valores_05 ?>" class="w-100" alt="Louvre Museum" />
                         <div class="mask degradado" style="background-color: hsla(0, 0%, 0%, 0.6)">
                             <div class="d-flex justify-content-center align-items-center h-100">
                                 <div class="container text-center color-institucional-1">

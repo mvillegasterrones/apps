@@ -8,6 +8,18 @@ $correo_empresa       = 'consultas@ecegp.edu.pe';
 $nombre_largo_empresa = 'Escruela de Ciencias Empresariales y Gestión Publica';
 $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile/index.html';
 
+$img_hero_01 = './img/hero/hero-001.jpg';
+$img_hero_02 = './img/hero/hero-002.jpg';
+$img_hero_03 = './img/hero/hero-003.jpg';
+
+$img_valores_01 = './img/valores/valores-001.jpg';
+$img_valores_02 = './img/valores/valores-002.jpg';
+$img_valores_03 = './img/valores/valores-003.jpg';
+$img_valores_04 = './img/valores/valores-004.jpg';
+$img_valores_05 = './img/valores/valores-005.jpg';
+$img_valores_06 = './img/valores/valores-006.jpg';
+$img_valores_07 = './img/valores/valores-007.jpg';
+
 /* ! Menu */
 $innovacion_botom_up      = './innovacion-bottom-up.php';
 $teaching_the_teachers    = './teaching-the-teachers.php';
