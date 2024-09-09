@@ -245,7 +245,7 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             Los conceptos básicos de la Transformación Digital, y su importancia en el entorno empresarial actual.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
                                                 <b>Semana 1:</b>&nbsp; Introducción a la transformación digital, conceptos clave y su impacto en las organizaciones.
@@ -272,32 +272,32 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseTwo">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                2:</b>&nbsp; .... </button>
+                                                2:</b>&nbsp; Estrategias de Transformación Digital </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseTwo"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingTwo">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Te especializarás en la creación e implementación de estrategias de transformación digital. 
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Desarrollo de una estrategia de transformación digital.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Gestión del cambio organizacional y liderazgo en tiempos de transformación.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Roadmap para la implementación de la transformación digital.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: diseño y presentación de una estrategia de transformación digital.
                                             </p>
                                         </div>
                                     </div>
@@ -309,32 +309,32 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseThree">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                3:</b>&nbsp; .... </button>
+                                                3:</b>&nbsp; Gestión de la Innovación y Tecnologías Emergentes </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseThree"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingThree">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Aprenderás a aprovechar las tecnologías emergentes para impulsar la transformación digital.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Fundamentos de la gestión de la innovación en entornos digitales.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp;  Tecnologías emergentes y su impacto en la transformación digital (AI, blockchain, 5G).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Creación de un ecosistema de innovación dentro de la empresa.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: implementación de una tecnología emergente en un contexto real.
                                             </p>
                                         </div>
                                     </div>
@@ -346,32 +346,32 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             data-mdb-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseFour">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                4:</b>&nbsp; .... </button>
+                                                4:</b>&nbsp; Cultura Digital y Gestión del Talento </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseFour"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFour">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Explorarás cómo la cultura organizacional y la gestión del talento son esenciales para una transformación digital exitosa.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Desarrollo de una cultura digital en la organización.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Gestión del talento en la era digital: atracción, retención y desarrollo.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Modelos de trabajo híbrido y remoto: herramientas y prácticas.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: creación de un plan para fomentar la cultura digital en una empresa.
                                             </p>
                                         </div>
                                     </div>
@@ -383,32 +383,32 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             data-mdb-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseFive">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                5:</b>&nbsp; .... </button>
+                                                5:</b>&nbsp; Análisis de Datos y Toma de Decisiones Basadas en Datos </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseFive"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingFive">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Te enfocarás en el análisis de datos para la toma de decisiones.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1:</b>&nbsp; Introducción a Big Data, Analytics y herramientas clave.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 2:</b>&nbsp; Métricas clave para medir el éxito de la transformación digital (KPIs, ROI).
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 3:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Análisis predictivo y su aplicación en la toma de decisiones.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Taller práctico: desarrollo de un dashboard de métricas para un proyecto de transformación digital.
                                             </p>
                                         </div>
                                     </div>
@@ -420,32 +420,32 @@ Te conectarás con otros profesionales interesados en la transformación digital
                                             data-mdb-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                                             aria-controls="panelsStayOpen-collapseSix">
                                             <i class="fa-duotone fa-solid fa-calendar-days me-2"></i><b>Mes
-                                                6:</b>&nbsp; .... </button>
+                                                6:</b>&nbsp; Proyecto Final y Preparación para el Mercado Laboral </button>
                                     </h2>
                                     <div id="panelsStayOpen-collapseSix"
                                         class="accordion-collapse collapse main-bg-color-grey"
                                         aria-labelledby="headingSix">
                                         <div class="accordion-body">
                                             <p class="text-muted">
-                                                ......
+                                            Desarrollarás un proyecto final de transformación digital.
                                             </p>
                                             <p class="text-muted">
-                                            <h6>Preguntas de discusión:</h6>
+                                            <h6 class="d-none">Preguntas de discusión:</h6>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 1:</b>&nbsp; .....
+                                                <b>Semana 1 - 2:</b>&nbsp; Desarrollo del proyecto final: implementación de una estrategia completa de transformación digital.
                                             </p>
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 2:</b>&nbsp; ....
+                                                <b>Semana 3:</b>&nbsp; Presentación del proyecto final y feedback.
                                             </p>
-                                            <p class="m-2 text-muted mb-1">
+                                            <!--<p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
                                                 <b>Semana 3:</b>&nbsp; ....
-                                            </p>
+                                            </p>-->
                                             <p class="m-2 text-muted mb-1">
                                                 <i class="fas fa-play"></i>
-                                                <b>Semana 4:</b>&nbsp; ....
+                                                <b>Semana 4:</b>&nbsp; Preparación para el mercado laboral: construcción de portafolio, preparación de CV, y simulación de entrevistas.
                                             </p>
                                         </div>
                                     </div>
