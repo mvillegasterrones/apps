@@ -14,6 +14,45 @@
     --main-text-color-secondary: #224561 !important;
   }
 
+
+.main-bg-color-danger {
+  background-color: var(--main-text-color-danger);
+}
+.main-bg-color-warning {
+  background-color: var(--main-text-color-warning);
+}
+.main-bg-color-grey {
+  background-color: var(--main-text-color-grey);
+}
+.main-bg-color-dark {
+  background-color: var(--main-text-color-dark);
+}
+.main-bg-color-white {
+  background-color: var(--main-text-color-white);
+}
+.main-bg-color-secondary {
+  background-color: var(--main-text-color-secondary);
+}
+
+.text-color-danger {
+  color: var(--main-text-color-danger);
+}
+.text-color-warning {
+  color: var(--main-text-color-warning);
+}
+.text-color-grey {
+  color: var(--main-text-color-grey);
+}
+.text-color-dark {
+  color: var(--main-text-color-dark);
+}
+.text-color-white {
+  color: var(--main-text-color-white);
+}
+.text-color-secondary {
+  color: var(--main-text-color-secondary);
+}
+
 .hero-title {
     font-size: 4rem !important;
     font-weight: lighter !important;
