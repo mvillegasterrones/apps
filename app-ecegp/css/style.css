@@ -1,4 +1,5 @@
 :root {
+  --main-bg-color: white;
   --main-bg-color-danger: #FF4324 !important;
   --main-bg-color-warning: #FF8D3D !important;
   --main-bg-color-grey: #1A2B3C !important;
@@ -13,7 +14,7 @@
   --main-text-color-secondary: #224561 !important;
 }
 body {
-  background-color: var(--main-bg-color-secondary);
+  background-color: var(--main-bg-color);
   /*background-color: #E5E9EB !important;*/
   /*background-color: #F0F2F2 !important;*/
 }
@@ -165,6 +166,7 @@ body {
 
 .hero-title {
   color: white;
+  font-weight: lighter;
   /*font-size: 3rem;*/
   text-align: center;
   z-index: 1;
@@ -192,4 +194,88 @@ body {
       width: 90%;
       margin-top: -50px;
   }
+}
+
+/** Hero 02 */
+.hero-section {
+  height: 100vh;
+  padding: 5rem;
+  background-color: #f8f9fa;
+}
+
+.left-content {
+  max-width: 50%;
+}
+
+.hero-title {
+  font-size: 6rem;
+  color: #333;
+  margin-bottom: 0 !important;
+}
+
+.hero-description {
+  /*font-size: 1.2rem;*/
+  margin: 1rem 0;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-item {
+  font-size: 2rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.icon-item:hover {
+  color: #0056b3;
+}
+
+.right-image {
+  max-width: 40%;
+}
+
+.hero-img {
+  height: 400px;
+  width: 400px;
+  /*height: 50%;
+  width: 100%;
+  height: auto;*/
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.div-icon {
+  cursor: pointer;
+  border: 10px solid transparent;
+  border: 10px solid transparent;
+  border-color: var(--main-bg-color-secondary);
+  min-width: 150px;  /* Ancho del círculo */
+  min-height: 150px; /* Alto del círculo */
+  background-color: var(--main-bg-color-white); /* Color de fondo */
+  border-radius: 50%; /* Borde redondeado para crear el círculo */
+  display: flex; /* Para centrar contenido si es necesario */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  color: var(--main-bg-color-secondary); /* Color del texto */
+  font-size: 1.5rem;
+  /*padding: 20px;
+  border: 10px solid transparent;
+  border-color: var(--main-bg-color-secondary);
+  color: var(--main-bg-color-secondary);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;*/
+}
+
+.div-icon:hover {
+  border-color: var(--main-bg-color-warning);
+  color: var(--main-text-color-warning);
 }
