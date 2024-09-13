@@ -1,4 +1,3 @@
-
 <?php include './includes.php' ?>
 <!DOCTYPE html>
 <html lang="es" itemscope itemtype="http://schema.org/WebPage">
@@ -18,13 +17,13 @@
     <div class="container position-sticky z-index-sticky top-0 mb-10">
         <div class="row">
             <div class="col-12">
-                <?php include './sections/page-sections/nav-bar.php'  ?>
+                <?php include './sections/page-sections/nav-bar.php' ?>
             </div>
         </div>
     </div>
-    
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-4 mt-n6">
-        <section class="py-md-2 pb-5">
+
+    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
+        <section class="py-md-2 px-lg-5 pb-5">
             <div class="container">
                 <div class="row mt-5 align-items-center">
                     <div class="col-lg-8">
@@ -63,11 +62,10 @@
                         <div class="card">
                             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                 <a class="d-block blur-shadow-image">
-                                    <img src="<?= $img_equipo_esce ?>"
-                                        alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                                    <img src="<?= $img_equipo_esce ?>" alt="img-colored-shadow"
+                                        class="img-fluid border-radius-lg">
                                 </a>
-                                <div class="colored-shadow"
-                                    style="background-image: url('<?= $img_equipo_esce ?>');">
+                                <div class="colored-shadow" style="background-image: url('<?= $img_equipo_esce ?>');">
                                 </div>
                             </div>
                             <div class="card-body text-center">
@@ -75,7 +73,9 @@
                                     <a href="javascript:;">Equipo ESCE</a>
                                 </h5>
                                 <p class="mb-0">
-                                Somos un equipo de expertos que ofrece cursos y certificaciones en ciencias empresariales y gestión pública, combinando teoría y práctica para desarrollar habilidades clave y potenciar el crecimiento profesional.
+                                    Somos un equipo de expertos que ofrece cursos y certificaciones en ciencias
+                                    empresariales y gestión pública, combinando teoría y práctica para desarrollar
+                                    habilidades clave y potenciar el crecimiento profesional.
                                 </p>
                                 <!--<button type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3">Find out
                                     more</button>-->
@@ -99,9 +99,9 @@
                     <div class="col-lg-3 mb-5">
                         <div class="card-container">
                             <div class="card-flip">
-                                <div class="card-front"
-                                    style="background-image: url('<?= $img_valores_v2_01 ?>') !important;opacity: 85%;">
-                                    <h4 class="p-3 rounded rounded-15 blur">Integridad</h4>
+                                <div class="card-front">
+                                    <!--style="background-image: url('<?= $img_valores_v2_01 ?>') !important;opacity: 85%;"  -->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Integridad</h4>
                                 </div>
                                 <div class="card-back">
                                     <p class="text-white opacity-8">
@@ -116,9 +116,9 @@
                     <div class="col-lg-3 mb-5">
                         <div class="card-container">
                             <div class="card-flip">
-                                <div class="card-front"
-                                    style="background-image: url('<?= $img_valores_v2_02 ?>') !important;opacity: 85%;">
-                                    <h4 class="p-3 rounded rounded-15 blur">Solidaridad</h4>
+                                <div class="card-front">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_02 ?>') !important;opacity: 85%;"-->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Solidaridad</h4>
                                 </div>
                                 <div class="card-back">
                                     <p class="text-white opacity-8">
@@ -134,9 +134,9 @@
                     <div class="col-lg-3 mb-5">
                         <div class="card-container">
                             <div class="card-flip">
-                                <div class="card-front"
-                                    style="background-image: url('<?= $img_valores_v2_03 ?>') !important;opacity: 85%;">
-                                    <h4 class="p-3 rounded rounded-15 blur">Resiliencia</h4>
+                                <div class="card-front">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_03 ?>') !important;opacity: 85%;"-->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Resiliencia</h4>
                                 </div>
                                 <div class="card-back">
                                     <p class="text-white opacity-8">
@@ -150,54 +150,49 @@
                         </div>
                     </div>
                 </div>
-                
-                <center>
-                    <div class="row" style="display: flex;justify-content: center;align-items: center;">
-                        <div class="col-lg-3 mb-5">
-                            <div class="card-container">
-                                <div class="card-flip">
-                                    <div class="card-front text-center"
-                                        style="background-image: url('<?= $img_valores_v2_04 ?>') !important; background-size: cover;opacity: 85%;">
-                                        <h4 class="text-center p-3 rounded rounded-15 blur">Respeto por la
-                                            Naturaleza</h4>
-                                    </div>
-                                    <div class="card-back">
-                                        <p class="text-white opacity-8">
-                                            <strong class="h3 text-white">Respeto por la Naturaleza</strong><br>
-                                            Valoramos y protegemos el medio ambiente, promoviendo una conducta
-                                            sostenible y un compromiso con la conservación.
-                                        </p>
-                                    </div>
+
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container">
+                            <div class="card-flip">
+                                <div class="card-front text-center">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_04 ?>') !important; background-size: cover;opacity: 85%;" -->
+                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Respeto por la Naturaleza</h4>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-5">
-                            <div class="card-container shadow-lg">
-                                <div class="card-flip">
-                                    <div class="card-front"
-                                        style="background-image: url('<?= $img_valores_v2_05 ?>') !important;opacity: 85%;">
-                                        <h4 class="text-center p-3 rounded rounded-15 blur">Sentido de pertenencia
-                                            por el país</h4>
-                                    </div>
-                                    <div class="card-back">
-                                        <p class="text-white opacity-8">
-                                            <strong class="h3 text-white">Sentido de pertenencia por el
-                                                país</strong><br>
-                                            Nos sentimos orgullosos de nuestra nación, contribuyendo a su desarrollo
-                                            y
-                                            bienestar con compromiso y patriotismo
-                                        </p>
-                                    </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Respeto por la Naturaleza</strong><br>
+                                        Valoramos y protegemos el medio ambiente, promoviendo una conducta
+                                        sostenible y un compromiso con la conservación.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </center>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container shadow-lg">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_05 ?>') !important;opacity: 85%;" -->
+                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Sentido de pertenencia
+                                        por el país</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Sentido de pertenencia por el país</strong><br>
+                                        Nos sentimos orgullosos de nuestra nación, contribuyendo a su desarrollo y
+                                        bienestar con compromiso y patriotismo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
     </div>
-    
+
     <?php include './sections/page-sections/footer.php' ?>
 
     <?php include './sections/page-sections/ref-scripts.php' ?>

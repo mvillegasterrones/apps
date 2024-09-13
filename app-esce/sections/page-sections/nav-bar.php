@@ -1,7 +1,7 @@
 <nav
     class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
     <div class="container-fluid px-0">
-        <img src="<?= $logo ?>" class="w-10" alt="ESCE Logo">
+        <img src="<?= $logo ?>" class="w-5" alt="ESCE Logo">
         <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block" href="./" rel="tooltip"
             title="Designed and Coded by Creative Tim" data-placement="bottom"
             target="_blank"><!-- https://demos.creative-tim.com/material-kit-pro/index -->
@@ -57,7 +57,7 @@
                             <ul class="list-group">
                                 <li class="nav-item list-group-item border-0 p-0">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                        href=" https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit ">
+                                        href="<?= $ruta_teaching_the_teachers ?>">
                                         <h6
                                             class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                                             Teaching The Teachers</h6>
@@ -66,7 +66,7 @@
                                 </li>
                                 <li class="nav-item list-group-item border-0 p-0">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                        href=" https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit ">
+                                        href="<?= $ruta_capacitacion_continua ?>">
                                         <h6
                                             class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                                             Capacitación Continua</h6>
@@ -75,7 +75,7 @@
                                 </li>
                                 <li class="nav-item list-group-item border-0 p-0">
                                     <a class="dropdown-item py-2 ps-3 border-radius-md"
-                                        href=" https://www.creative-tim.com/learning-lab/bootstrap/alerts/material-kit ">
+                                        href="<?= $ruta_re_skalling ?>">
                                         <h6
                                             class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                                             RE-SKALLING</h6>
@@ -87,19 +87,19 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" href="./" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <a role="button" href="<?= $ruta_aprendizaje ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
                         <i class="material-icons opacity-6 me-2 text-md">contacts</i>
                         Aprendizaje
                     </a>
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" href="./" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <a role="button" href="<?= $ruta_contacto ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
                         <i class="material-icons opacity-6 me-2 text-md">contact_mail</i>
                         Contacto
                     </a>
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" href="./" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <a role="button" href="<?= $ruta_blog ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
                         <i class="material-icons opacity-6 me-2 text-md">forum</i>
                         Blog
                     </a>
@@ -108,7 +108,7 @@
             <ul class="navbar-nav d-lg-block d-none">
                 <li class="nav-item">
                     <a href="#pricing-material-kit" class="btn btn-sm  bg-gradient-primary  mb-0"
-                        onclick="smoothToPricing('pricing-soft-ui')">Log in</a>
+                        onclick="smoothToPricing('pricing-soft-ui')">LogIn</a>
                 </li>
             </ul>
         </div>

@@ -91,7 +91,7 @@ p.text-dark {
 }
 
 .card-container:hover .card-back {
-  box-shadow: var(--main-bg-color-secondary) 20px 20px;
+  box-shadow: var(--main-bg-color-warning) 10px 10px;
 }
 
 .card-front,

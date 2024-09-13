@@ -19,7 +19,7 @@
 */
 
 $ico = './assets/img/esce.png';
-$logo = './assets/img/logos/esce-full.png';
+$logo = './assets/img/logos/esce-sb-1.png';
 
 $social_facebook      = '#';
 $social_instagram     = '#';
@@ -43,19 +43,23 @@ $img_valores_v2_02 = 'https://media.istockphoto.com/id/625736338/es/foto/pila-de
 $img_valores_v2_03 = 'https://i0.wp.com/sonria.com/wp-content/uploads/2016/04/resil.jpg?fit=900%2C340&ssl=1';
 $img_valores_v2_04 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULjBzIIqX5TK2lMjP3_n29i4C2u1NpcUpbg&s';
 $img_valores_v2_05 = 'https://www.udep.edu.pe/hoy/wp-content/uploads/sites/49/2019/07/shutterstock-1310430244.png';
+$img_newletter     = 'https://cdn.shopify.com/s/files/1/0229/0839/files/crear-una-newsletter.jpg?v=1622541359';
+
 
 /* ! Menu */
-$ruta_home                = './index.php';
-$ruta_nosotros            = './nosotros.php';
-$ruta_servicios           = './servicios.php';
-$innovacion_botom_up      = './innovacion-bottom-up.php';
-$teaching_the_teachers    = './teaching-the-teachers.php';
+$ruta_home                  = './index.php';
+$ruta_nosotros              = './nosotros.php';
+$ruta_servicios             = './servicios.php';
+$innovacion_botom_up        = './innovacion-bottom-up.php';
+$ruta_teaching_the_teachers = './teaching-the-teachers.php';
+$ruta_capacitacion_continua = './capacitacion-continua.php';
+$ruta_re_skalling           = './re-skalling.php';
+$ruta_blog                  = './blog.php';
+
 $economia_periodistas     = './economia-economistas.php';
 $formacion_emprendedores  = './formacion-emprendedores.php';
 $economia_circular        = './economia-circular.php';
 $modelo_aprendizaje       = './modelo-aprendizaje.php';
-$capacitacion_continua    = './capacitacion-continua.php';
-$re_skalling              = './re-skalling.php';      
 $nav_bar                  = './sections/page-sections/nav-bar.php';
 $footer                   = './sections/page-sections/footer.php';
 

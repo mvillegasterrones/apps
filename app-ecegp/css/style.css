@@ -14,7 +14,7 @@
   --main-text-color-secondary: #224561 !important;
 }
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color-secondary);
   /*background-color: #E5E9EB !important;*/
   /*background-color: #F0F2F2 !important;*/
 }
