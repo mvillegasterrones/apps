@@ -1,4 +1,22 @@
 <?php
+/*
+=========================================================
+* Material Kit 2 PRO - v3.0.4
+=========================================================
+* 'https://www.creative-tim.com/presentation'
+* 'https://www.creative-tim.com/templates/free'
+* 'https://www.creative-tim.com/templates/premium'
+* 'https://www.creative-tim.com/templates/corporate'
+* 'https://www.creative-tim.com/templates/landing-page'
+* 'https://www.creative-tim.com/templates/blog-post'
+* Product Page:  https://www.creative-tim.com/product/material-kit-pro 
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+*/
 
 $ico = './assets/img/esce.png';
 $logo = './assets/img/logos/esce-full.png';
@@ -18,28 +36,18 @@ $img_hero_03    = './assets/img/hero/hero-003.jpg';
 $img_hero_04    = './assets/img/hero/hero-crecimiento-empresarial-01.jpg';
 $img_hero_05    = './assets/img/hero/hero-capacitacion-continua.jpg';
 
+$img_equipo_esce = './assets/img/equipo/equipo-esce.png';
 
-$img_hero_teaching_01 = './img/hero/theaching-teachers-01.jpg';
-$img_hero_teaching_02 = './img/hero/theaching-teachers-02.jpg';
-
-$img_hero_capacitac_continua = './img/hero/hero-capacitacion-continua.jpg';
-
-$img_hero_reskalling_01 = 'https://www.michaelpage.es/sites/michaelpage.es/files/legacy/upskilling_article_970x388d8.jpg';
-$img_hero_reskalling_02 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0B-3UpcFU5T1F2aNInwGFqgx7fmMDA_kRpqRM5-qMYif1gzv6VmrEFodj5e89W1nC1TA&usqp=CAU';
-
-$img_valores_01 = './img/valores/valores-001.jpg';
-$img_valores_02 = './img/valores/valores-002.jpg';
-$img_valores_03 = './img/valores/valores-003.jpg';
-$img_valores_04 = './img/valores/valores-004.jpg';
-$img_valores_05 = './img/valores/valores-005.jpg';
-$img_valores_06 = './img/valores/valores-006.jpg';
-$img_valores_07 = './img/valores/valores-007.jpg';
-
-$cert_img_card_1 = './img/cards/img-card-01.jpeg';
-$cert_img_card_2 = './img/cards/img-card-02.jpg';
-$cert_img_card_3 = './img/cards/img-card-03.jpeg';
+$img_valores_v2_01 = './assets/img/valores/integridad.jpeg';
+$img_valores_v2_02 = 'https://media.istockphoto.com/id/625736338/es/foto/pila-de-manos-mostrando-unidad.jpg?s=612x612&w=0&k=20&c=fwxLu1O5ih3Hh3CBek42c2sxfKr1xZ501olUNAsqDEw=';
+$img_valores_v2_03 = 'https://i0.wp.com/sonria.com/wp-content/uploads/2016/04/resil.jpg?fit=900%2C340&ssl=1';
+$img_valores_v2_04 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULjBzIIqX5TK2lMjP3_n29i4C2u1NpcUpbg&s';
+$img_valores_v2_05 = 'https://www.udep.edu.pe/hoy/wp-content/uploads/sites/49/2019/07/shutterstock-1310430244.png';
 
 /* ! Menu */
+$ruta_home                = './index.php';
+$ruta_nosotros            = './nosotros.php';
+$ruta_servicios           = './servicios.php';
 $innovacion_botom_up      = './innovacion-bottom-up.php';
 $teaching_the_teachers    = './teaching-the-teachers.php';
 $economia_periodistas     = './economia-economistas.php';
@@ -48,12 +56,8 @@ $economia_circular        = './economia-circular.php';
 $modelo_aprendizaje       = './modelo-aprendizaje.php';
 $capacitacion_continua    = './capacitacion-continua.php';
 $re_skalling              = './re-skalling.php';      
-
-$url_img_certificado      = './img/certificate.webp';
-
-/* Main */
-$url_img_socio_guido = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
-$url_img_socio_jose  = 'https://mdbootstrap.com/img/new/avatars/22.jpg';
+$nav_bar                  = './sections/page-sections/nav-bar.php';
+$footer                   = './sections/page-sections/footer.php';
 
 # -- Imagenes
 $img_econom_perdiodistas  = './img/cards/ttteachers_01.jpeg';

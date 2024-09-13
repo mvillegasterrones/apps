@@ -1,19 +1,18 @@
 :root {
-    --main-bg-color: white;
-    --main-bg-color-danger: #FF4324 !important;
-    --main-bg-color-warning: #FF8D3D !important;
-    --main-bg-color-grey: #1A2B3C !important;
-    --main-bg-color-dark: #020407 !important;
-    --main-bg-color-white: #F0F2F2 !important;
-    --main-bg-color-secondary: #224561 !important;
-    --main-text-color-danger: #FF4324 !important;
-    --main-text-color-warning: #FF8D3D !important;
-    --main-text-color-grey: #1A2B3C !important;
-    --main-text-color-dark: #020407 !important;
-    --main-text-color-white: #F0F2F2 !important;
-    --main-text-color-secondary: #224561 !important;
-  }
-
+  --main-bg-color: white;
+  --main-bg-color-danger: #ff4324 !important;
+  --main-bg-color-warning: #ff8d3d !important;
+  --main-bg-color-grey: #1a2b3c !important;
+  --main-bg-color-dark: #020407 !important;
+  --main-bg-color-white: #f0f2f2 !important;
+  --main-bg-color-secondary: #224561 !important;
+  --main-text-color-danger: #ff4324 !important;
+  --main-text-color-warning: #ff8d3d !important;
+  --main-text-color-grey: #1a2b3c !important;
+  --main-text-color-dark: #020407 !important;
+  --main-text-color-white: #f0f2f2 !important;
+  --main-text-color-secondary: #224561 !important;
+}
 
 .main-bg-color-danger {
   background-color: var(--main-text-color-danger);
@@ -54,61 +53,71 @@
 }
 
 .hero-title {
-    font-size: 4rem !important;
-    font-weight: lighter !important;
+  font-size: 4rem !important;
+  font-weight: lighter !important;
 }
 
 p.text-dark {
-    font-size: 1.4rem !important;
-    color: black !important;
+  font-size: 1.4rem !important;
+  color: black !important;
 }
 
 .card-container {
-    perspective: 1000px; /* Habilita la perspectiva 3D */
-    width: 100%;
-    height: 400px;
-    margin: auto;
-  }
-  
-  .card-flip {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-    -webkit-transition: transform 0.6s;
-    -moz-transition: transform 0.6s;
-    -ms-transition: transform 0.6s;
-    -o-transition: transform 0.6s;
+  perspective: 1000px; /* Habilita la perspectiva 3D */
+  width: 100%;
+  height: 400px;
+  margin: auto;
 }
-  
-  .card-container:hover .card-flip {
-    transform: rotateY(180deg); /* Efecto de giro al hacer hover */
-  }
-  
-  .card-front,
-  .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Oculta el lado posterior */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-  }
-  
-  .card-front {
-    background-color: var(--main-bg-color-secondary);
-    color: var(--main-text-color-white);
-    font-size: 3rem !important;
-  }
-  
-  .card-back {
-    padding: 20px;
-    background-color: var(--main-bg-color-grey);
-    color: var(--main-text-color-grey);
-    font-size: 1rem;
-    transform: rotateY(180deg); /* Gira la parte trasera para que no sea visible inicialmente */
-  }
-  
+
+.card-flip {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -ms-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+  /* Efecto de giro al hacer hover */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+  box-shadow: var(--main-bg-color-secondary) 20px 20px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta el lado posterior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: var(--main-bg-color-secondary);
+  color: var(--main-text-color-white);
+  font-size: 3rem !important;
+}
+
+.card-back {
+  padding: 20px;
+  background-color: var(--main-bg-color-grey);
+  color: var(--main-text-color-grey);
+  font-size: 1rem;
+  transform: rotateY(
+    180deg
+  ); /* Gira la parte trasera para que no sea visible inicialmente */
+}
