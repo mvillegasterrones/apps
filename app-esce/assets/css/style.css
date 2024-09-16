@@ -39,7 +39,8 @@
 .text-color-warning {
   color: var(--main-text-color-warning);
 }
-.text-color-grey {
+.text-color-grey,
+.text-dark {
   color: var(--main-text-color-grey);
 }
 .text-color-dark {
@@ -120,4 +121,33 @@ p.text-dark {
   transform: rotateY(
     180deg
   ); /* Gira la parte trasera para que no sea visible inicialmente */
+}
+
+.active-nav-item {
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
+.div-marca-agua {
+  /*background: url('../img/esce.png') no-repeat;*/
+  /*background-position: right bottom;*/
+  /*background-size: 150px;*/ /* Tamaño de la imagen, ajusta según necesidad */
+  /*height: 100vh;*/ /* Altura del div */
+  width: 100%; /* Ancho del div */
+}
+
+.div-marca-agua::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../img/esce.png') no-repeat;
+  background-size: 150px; /* Tamaño de la imagen, ajusta según necesidad */
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  opacity: 0.2; /* Transparencia al 50% */
+  pointer-events: none; /* Evita que la imagen interfiera con otros elementos interactivos */
 }

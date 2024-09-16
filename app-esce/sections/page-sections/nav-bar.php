@@ -1,5 +1,5 @@
 <nav
-    class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+    class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
     <div class="container-fluid px-0">
         <img src="<?= $logo ?>" class="w-5" alt="ESCE Logo">
         <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block" href="./" rel="tooltip"
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
             <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" href="<?= $ruta_home ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <a role="button" href="<?= $ruta_home ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center active-nav-item">
                         <i class="material-icons opacity-6 me-2 text-md">home</i>
                         Home
                     </a>
@@ -107,7 +107,7 @@
             </ul>
             <ul class="navbar-nav d-lg-block d-none">
                 <li class="nav-item">
-                    <a href="#pricing-material-kit" class="btn btn-sm  bg-gradient-primary  mb-0"
+                    <a href="#pricing-material-kit" class="btn btn-sm  bg-gradient-warning mb-0"
                         onclick="smoothToPricing('pricing-soft-ui')">LogIn</a>
                 </li>
             </ul>

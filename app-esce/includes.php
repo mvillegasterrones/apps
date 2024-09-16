@@ -12,6 +12,8 @@
 * Product Page:  https://www.creative-tim.com/product/material-kit-pro 
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Coded by www.creative-tim.com
+* Iconos: https://www.flaticon.es/icono-gratis/comillas-a-la-derecha_25418
+* GDrive: https://drive.google.com/drive/folders/19kyEG7KgxAqmLkBs5kjmCS9o6AHUyd1R
 
  =========================================================
 
@@ -27,9 +29,10 @@ $social_linkedin      = '#';
 
 $nombre_empresa       = 'ECEGP';
 $correo_empresa       = 'consultas@ecegp.edu.pe';
-$nombre_largo_empresa = 'Escruela de Ciencias Empresariales y Gestión Publica';
+$nombre_largo_empresa = 'Escuela de Ciencias Empresariales y Gestión Publica';
 $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile/index.html';
 
+$img_hero_main  = './assets/img/hero/hero-main.png';
 $img_hero_01    = './assets/img/hero/hero-001.jpg';
 $img_hero_02    = './assets/img/hero/hero-002.jpg';
 $img_hero_03    = './assets/img/hero/hero-003.jpg';
@@ -64,13 +67,13 @@ $nav_bar                  = './sections/page-sections/nav-bar.php';
 $footer                   = './sections/page-sections/footer.php';
 
 # -- Imagenes
-$img_econom_perdiodistas  = './img/cards/ttteachers_01.jpeg';
+$img_econom_perdiodistas  = 'https://m.media-amazon.com/images/I/61I2ilr-d0L._AC_UF894,1000_QL80_.jpg';
 $precio_econom_perdistas  = '1.00';
 
-$img_formac_emprendedores = './img/cards/ttteachers_03.jpeg';
+$img_formac_emprendedores = 'https://practicas.fundecor.es/media/k2/items/cache/53bed31cb74891ae64a31e4c592ef86d_XL.jpg';
 $precio_formac_emprended  = '2.00';
 
-$img_econom_circular      = './img/cards/ttteachers_03.jpeg';
+$img_econom_circular      = 'https://redesma.org/wp-content/uploads/2023/06/csr-consulting-ec.jpg';
 $precio_econom_circular   = '3.00';
 
 $img_econom_docentes      = './img/cards/ttteachers_04.jpeg';
