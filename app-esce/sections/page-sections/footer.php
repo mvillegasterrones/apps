@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= $ruta_nosotros ?>" target="">
+                            <a class="nav-link" href="<?= $ruta_servicios ?>" target="">
                                 <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
                                 Servicios
                             </a>
