@@ -151,3 +151,31 @@ p.text-dark {
   opacity: 0.2; /* Transparencia al 50% */
   pointer-events: none; /* Evita que la imagen interfiera con otros elementos interactivos */
 }
+
+.card-carousel {
+  /*background-image: url('../img/esce.png');*/
+  overflow: hidden; /* Oculta la parte no visible de la imagen */
+  position: relative;
+  /*background-color: rgba(0, 0, 0, 0.5) !important;*/
+  /*cursor: pointer;*/
+  opacity: 0.8 !important;
+}
+
+.card-carousel:hover {
+  box-shadow: 20px 20px var(--main-bg-colot-warning) !important;
+  opacity: 1 !important;
+}
+
+.imagen-telon {
+  position: absolute;
+  top: -100%; /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease; /* Animación suave al hacer hover */
+}
+
+.card-carousel:hover .imagen-telon {
+  opacity: 0.3;
+  top: 0; /* La imagen se desplaza hacia abajo como un telón */
+}

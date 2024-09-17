@@ -53,8 +53,9 @@ $img_newletter     = 'https://cdn.shopify.com/s/files/1/0229/0839/files/crear-un
 $ruta_home                  = './index.php';
 $ruta_nosotros              = './nosotros.php';
 $ruta_servicios             = './servicios.php';
-$innovacion_botom_up        = './innovacion-bottom-up.php';
 $ruta_teaching_the_teachers = './teaching-the-teachers.php';
+
+$innovacion_botom_up        = './innovacion-bottom-up.php';
 $ruta_capacitacion_continua = './capacitacion-continua.php';
 $ruta_re_skalling           = './re-skalling.php';
 $ruta_blog                  = './blog.php';

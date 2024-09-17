@@ -14,10 +14,10 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-sticky z-index-sticky top-0 mb-0">
+    <div class="container position-sticky z-index-sticky top-0 mb-2 mb-sm-10 mb-lg-2">
         <div class="row">
             <div class="col-12">
-                <?php include './sections/page-sections/nav-bar.php' ?>
+                <?php include './sections/page-sections/nav-bar-2.php' ?>
             </div>
         </div>
     </div>
@@ -34,15 +34,17 @@
                         <h1 class="text-color-white rounded rounded-15 mb-0"><strong class="p-1 main-bg-color-warning"
                                 style="border-radius:15px !important; font-size: 4rem;font-weight: lighter !important;">ESCE</strong>
                         </h1>
-                        <h1 class="text-color-grey">Escuela de Ciencias Emopresariales y Gestión Pública</h1>
-                        <p
+                        <h1 class="text-color-grey">Escuela de Ciencias Empresariales y Gestión Pública</h1>
+                        <!--<p
                             class="lead mt-0 mb-1 p-2 rounded rounded-15 blur pe-md-5 me-md-5 text-color-secondary opacity-8">
                             <i class="material-icons">check_circle</i> Capacitación y Certificación en Crecimiento
-                            Empresarial.</p>
+                            Empresarial.
+                        </p>-->
                         <p
                             class="lead mt-0 mb-1 p-2 rounded rounded-15 blur pe-md-5 me-md-5 text-color-secondary opacity-8">
                             <i class="material-icons">check_circle</i> Desarrolla tus habilidades y avanza en tu carrera
-                            profesional..</p>
+                            profesional..
+                        </p>
                         <!--<p class="lead pe-md-5 me-md-5 text-white opacity-8">The time is now for it be okay to be great. People in
               this world shun people for being nice.</p>-->
                         <div class="buttons">
@@ -53,7 +55,7 @@
                         </div>
                     </div>
                     <div class="col-4 d-lg-block d-sm-none">
-                        <img src="<?= $img_hero_main ?>" class="w-100" alt="">
+                        <img src="<?= $img_hero_main ?>" class="w-100 d-none d-lg-block" alt="">
                     </div>
                 </div>
             </div>
@@ -72,7 +74,101 @@
                         <h2 class="text-color-grey text-center">Próximos Cursos</h2>
                     </div>
 
-                    <section class="py-1 position-relative">
+                    <section>
+                        <div class="container">
+                            <div class="row mt-0">
+                                <div class="gliderrr">
+                                    <div data-glide-el="track" class="glide__track">
+                                        <ul class="glide__slides">
+                                            <li class="glide__slide">
+                                                <div class="glide__container">
+                                                    <div class="card bg-gradient-faded-warning card-carousel">
+                                                        <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>-->
+                                                        <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                                                        <div class="card-body text-center pb-0 position-relative">
+                                                            <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
+                                                                src="<?= $img_hero_01 ?>" alt="amg-gt"
+                                                                loading="lazy">-->
+                                                            <h6 class="mt-6">CURSO 01</h6>
+                                                            <p class="text-color-white">Descripción del curso 01</p>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-rounded btn-outline-dark icon-move-right">Ver Curso <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="glide__slide">
+                                                <div class="glide__container">
+                                                    <div class="card bg-gradient-faded-danger card-carousel">
+                                                        <div class="card-body text-center pb-0 position-relative">
+                                                            <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
+                                                                src="./assets/img/automotive/cls.png" alt="g-amg"
+                                                                loading="lazy">-->
+                                                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                                                            <h6 class="mt-6">CURSO 02</h6>
+                                                            <p class="text-color-white">Descripción del curso 02</p>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-rounded btn-outline-dark icon-move-right">Ver Curso <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="glide__slide">
+                                                <div class="glide__container">
+                                                    <div class="card bg-gradient-faded-primary card-carousel">
+                                                        <div class="card-body text-center pb-0 position-relative">
+                                                            <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
+                                                                src="./assets/img/automotive/cls.png"
+                                                                alt="s-mayback" loading="lazy">-->
+                                                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                                                            <h6 class="mt-6">CURSO 03</h6>
+                                                            <p class="text-color-white">Descripción del curso 03</p>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-rounded btn-outline-dark icon-move-right">Ver Curso <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="glide__slide">
+                                                <div class="glide__container">
+                                                    <div class="card bg-gradient-faded-info card-carousel">
+                                                        <div class="card-body text-center pb-0 position-relative">
+                                                            <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
+                                                                src="./assets/img/automotive/cls.png" alt="glc"
+                                                                loading="lazy">-->
+                                                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                                                            <h6 class="mt-6">CURSO 04</h6>
+                                                            <p class="text-color-white">Descripción del curso 04</p>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-rounded btn-outline-dark icon-move-right">Ver Curso <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="glide__slide">
+                                                <div class="glide__container">
+                                                    <div class="card bg-gradient-faded-success card-carousel">
+                                                        <div class="card-body text-center pb-0 position-relative">
+                                                            <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-n4 position-absolute"
+                                                                src="./assets/img/automotive/cls.png" alt="cls"
+                                                                loading="lazy">-->
+                                                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                                                            <h6 class="mt-6">CURSO 05</h6>
+                                                            <p class="text-color-white">Descripción del curso 05</p>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-rounded btn-outline-dark icon-move-right">Ver Curso <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--<section class="py-1 position-relative">
                         <div id="carousel-testimonial-pricing" class="carousel slide carousel-team" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -225,7 +321,7 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                    </section>
+                    </section>-->
                 </div>
 
                 <div class="row">

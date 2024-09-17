@@ -1,15 +1,16 @@
 <nav
     class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
     <div class="container-fluid px-0">
-        <img src="<?= $logo ?>" class="w-5" alt="ESCE Logo">
         <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block" href="./" rel="tooltip"
-            title="Designed and Coded by Creative Tim" data-placement="bottom"
-            target="_blank"><!-- https://demos.creative-tim.com/material-kit-pro/index -->
-            <!--<h5>ESCE</h5>-->
+        title="Designed and Coded by Creative Tim" data-placement="bottom"
+        target=""><!-- https://demos.creative-tim.com/material-kit-pro/index -->
+        <!--<h5>ESCE</h5>-->
+            <img src="<?= $logo ?>" class="w-10" alt="ESCE Logo"/>
         </a>
-        <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none" href="javascript:;" rel="tooltip"
-            title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-            Escuela de Ciencias Empresariales y Gestión Pública
+        <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none" href="./" rel="tooltip"
+            title="Designed and Coded by Creative Tim" data-placement="bottom" target="">
+            <img src="<?= $ico ?>" class="w-10 p-0" alt="ESCE Logo">
+            <!--Escuela de Ciencias Empresariales y Gestión Pública-->
         </a>
         <!--<a href="https://www.creative-tim.com/product/material-kit-pro#pricingCard" class="btn btn-sm  bg-gradient-primary  mb-0 ms-auto d-lg-none d-block">Buy Now</a>-->
         <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse"
@@ -24,12 +25,6 @@
         <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
             <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" href="<?= $ruta_home ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center active-nav-item">
-                        <i class="material-icons opacity-6 me-2 text-md">home</i>
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-2">
                     <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
                         <i class="material-icons opacity-6 me-2 text-md">group</i>
                         Nosotros
@@ -42,17 +37,17 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a role="button" id="dropdownMenuCursos" data-bs-toggle="dropdown" aria-expanded="false"
-                        class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+                    <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuCursos"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
                         Cursos
-                        <img src=" ./assets/img/down-arrow-dark.svg  " alt="down-arrow"
-                            class="arrow ms-2 d-lg-block d-none">
+                        <img src="./assets/img/down-arrow-dark.svg  " alt="down-arrow"
+                        class="arrow ms-2 d-lg-block d-none">
                         <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
-                            class="arrow ms-1 d-lg-none d-block ms-auto">
+                        class="arrow ms-1 d-lg-none d-block ms-auto">
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-                        aria-labelledby="dropdownMenuCursos">
+                    aria-labelledby="dropdownMenuCursos">
                         <div class="d-none d-lg-block">
                             <ul class="list-group">
                                 <li class="nav-item list-group-item border-0 p-0">
