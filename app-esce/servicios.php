@@ -26,7 +26,7 @@
         <section class="py-md-2 px-lg-5 pb-5">
             <div class="container">
                 <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Servicios</h2>
-                <div class="row mt-2 align-items-center">
+                <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Tenemos una perspectiva de la innovación como motor de
                             crecimiento</h3>
@@ -35,7 +35,7 @@
                             de productos, servicios o procesos y la creación de nuevos negocios.
                         </p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 ms-auto mt-lg-0 mt-4 mb-lg-0">
                         <img src="https://www.incotec.es/app/uploads/2023/12/que-es-innovacion-sostenible-e1702285476769.jpg"
                             class="w-100" alt="" srcset="">
                     </div>

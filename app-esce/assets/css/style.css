@@ -177,6 +177,21 @@ p.text-dark {
   opacity: 1 !important;
 }
 
+.card-carousel:hover h6,
+.card-carousel:hover button {
+  /*font-size: 2rem !important;
+  */text-decoration-line: underline;
+  -moz-text-decoration-line:underline;
+}
+
+.card-carousel:hover button,
+.card-carousel button:hover {
+  text-decoration-line: underline;
+  background-color: var(--main-text-color-grey) !important;
+  color: var(--main-bg-color-white) !important;
+  -moz-text-decoration-line: underline;
+}
+
 .imagen-telon {
   position: absolute;
   top: -100%; /* Imagen completamente oculta al inicio */
@@ -187,40 +202,71 @@ p.text-dark {
 }
 
 .card-carousel:hover .imagen-telon {
-  opacity: 0.3;
+  opacity: 0.3 !important;
   top: 0; /* La imagen se desplaza hacia abajo como un telón */
 }
 
 /** Teching the theachers */
-/*.ttt-card-carousel {
+.ttt-card-carousel {
   position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease;
+  overflow: hidden; /* Oculta el telón cuando no está activo */
+  transition: all 0.5s ease-in-out;
 }
 
-.ttt-card-carousel p {
+.ttt-card-carousel::before {
+  content: '';
   position: absolute;
-  bottom: -100%;
+  top: -100%;
   left: 0;
   width: 100%;
-  opacity: 0;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  height: 100%;
+  background-color: var(--main-bg-color-secondary);
+  transition: top 0.5s ease-in-out;
+  z-index: 1;
 }
 
-.ttt-card-carousel h6 {
-  margin-top: 20px;
-  transition: all 0.5s ease;
+.ttt-card-carousel:hover::before {
+  top: 0; /* El telón baja completamente */
 }
 
-.ttt-card-carousel:hover p {
-  bottom: 20px;
-  opacity: 1;
+.ttt-imagen-telon {
+  position: absolute;
+  top: -100%; /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease; /* Animación suave al hacer hover */
 }
 
-.ttt-card-carousel:hover h6 {
-  margin-top: 0;
-}*/
+.ttt-card-carousel:hover .ttt-imagen-telon {
+  opacity: 1 !important;
+  background-color: var(--main-bg-color-white);
+  top: 0;
+}
+
+.ttt-card-carousel h6,
+.ttt-card-carousel p,
+.ttt-card-carousel button,
+.ttt-card-carousel img {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima del telón */
+  transition: color 0.5s ease-in-out;
+}
+
+.ttt-card-carousel:hover h6,
+.ttt-card-carousel:hover p,
+.ttt-card-carousel:hover button {
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.ttt-card-carousel:hover button,
+.ttt-card-carousel button:hover {
+  border-color: #f0f2f2 !important;
+  color: white !important; /* Cambia el borde del botón a blanco */
+
+}
+
+.ttt-card-carousel button:hover {
+  /*background-color: transparent;*/ /* Mantiene el fondo del botón transparente */
+}
+

@@ -27,7 +27,7 @@
         <section class="py-md-2 mb-7 px-lg-5 pb-5">
             <div class="container">
             <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
-                <div class="row mt-5 align-items-center">
+                <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
                         <p class="">

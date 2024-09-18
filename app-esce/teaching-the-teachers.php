@@ -54,12 +54,9 @@
                 <div class="row mt-5 mb-5">
                     
                     <div class="col-12 mb-4 col-md-6 col-lg-3">
-                        <div class="card bg-gradient-faded-danger card-carousel h-100">
-                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                        <div class="card bg-gradient-faded-danger ttt-card-carousel h-100">
+                            <!--<img src="<?= $ico ?>" class="w-25 m-2 ttt-imagen-telon avatar avatar-sm shadow-lg">-->
                             <div class="card-body text-center pb-0 position-relative">
-                                <img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
-                                    src="<?= $img_hero_01 ?>" alt="amg-gt"
-                                    loading="lazy">
                                 <h6 class="mt-6 text-uppercase"><?= $ttt_c1_title ?></h6>
                                 <p class="text-color-white"><?= $ttt_c1_description ?></p>
                                 <button type="button"
@@ -70,12 +67,9 @@
                     </div>
 
                     <div class="col-12 mb-4 col-md-6 col-lg-3">
-                        <div class="card bg-gradient-faded-warning card-carousel h-100">
-                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                        <div class="card bg-gradient-faded-warning ttt-card-carousel h-100">
+                            <!--<img src="<?= $ico ?>" class="w-25 m-2 ttt-imagen-telon avatar avatar-sm shadow-lg">-->
                             <div class="card-body text-center pb-0 position-relative">
-                                <img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
-                                    src="<?= $img_hero_01 ?>" alt="amg-gt"
-                                    loading="lazy">
                                 <h6 class="mt-6 text-uppercase"><?= $ttt_c2_title ?></h6>
                                 <p class="text-color-white"><?= $ttt_c2_description ?></p>
                                 <button type="button"
@@ -86,12 +80,9 @@
                     </div>
 
                     <div class="col-12 mb-4 col-md-6 col-lg-3">
-                        <div class="card bg-gradient-faded-danger card-carousel h-100">
-                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                        <div class="card bg-gradient-faded-danger ttt-card-carousel h-100">
+                            <!--<img src="<?= $ico ?>" class="w-25 m-2 ttt-imagen-telon avatar avatar-sm shadow-lg">-->
                             <div class="card-body text-center pb-0 position-relative">
-                                <img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
-                                    src="<?= $img_hero_01 ?>" alt="amg-gt"
-                                    loading="lazy">
                                 <h6 class="mt-6 text-uppercase"><?= $ttt_c3_title ?></h6>
                                 <p class="text-color-white"><?= $ttt_c3_description ?></p>
                                 <button type="button"
@@ -102,12 +93,9 @@
                     </div>
 
                     <div class="col-12 mb-4 col-md-6 col-lg-3">
-                        <div class="card bg-gradient-faded-warning card-carousel h-100">
-                            <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
+                        <div class="card bg-gradient-faded-warning ttt-card-carousel h-100">
+                            <!--<img src="<?= $ico ?>" class="w-25 m-2 ttt-imagen-telon avatar avatar-sm shadow-lg">-->
                             <div class="card-body text-center pb-0 position-relative">
-                                <img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
-                                    src="<?= $img_hero_01 ?>" alt="amg-gt"
-                                    loading="lazy">
                                 <h6 class="mt-6 text-uppercase"><?= $ttt_c4_title ?></h6>
                                 <p class="text-color-white"><?= $ttt_c4_description ?></p>
                                 <button type="button"
