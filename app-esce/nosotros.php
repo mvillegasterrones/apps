@@ -26,7 +26,7 @@
 
         <section class="py-md-2 mb-7 px-lg-5 pb-5">
             <div class="container">
-            <h2 class="text-color-grey mb-5 mb-lg-3"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
+            <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
                 <div class="row mt-5 align-items-center">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
@@ -222,7 +222,7 @@
                                     <strong><a href="#!" class="text-reset h4">Guido Pennano Alison</a></strong>
                                 </p>
                                 <p class="mb-1"><i>- Presidente Fundador</i></p>
-                                <p class="text-muted mb-1">
+                                <p class="text-muted text-start mb-1">
                                     ....
                                 </p>
                             </div>
@@ -256,7 +256,7 @@
                                     <strong><a href="#!" class="text-reset h4">José Ignacio Pineda Mendoza</a></strong>
                                 </p>
                                 <p class="mb-1"><i>- Miembro fundador de ESCE</i></p>
-                                <p class="text-muted mb-1">
+                                <p class="text-muted text-start mb-1">
                                     Cuenta con más de 20 años de
                                     experiencia
                                     en el sector de la educación superior. Ha enseñado cursos sobre innovación,

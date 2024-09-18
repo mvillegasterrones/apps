@@ -25,7 +25,7 @@
     <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
         <section class="py-md-2 px-lg-5 pb-5">
             <div class="container">
-                <h2 class="text-color-grey mb-5 mb-lg-3"><img src="<?= $ico ?>" class="w-5"> Servicios</h2>
+                <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Servicios</h2>
                 <div class="row mt-2 align-items-center">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Tenemos una perspectiva de la innovación como motor de
