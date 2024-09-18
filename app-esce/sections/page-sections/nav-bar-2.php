@@ -3,7 +3,7 @@
   <div class="container-fluid px-0">
     <a class="navbar-brand font-weight-bolder ms-sm-3  d-none d-md-block" href="./" rel="tooltip"
       title="Designed and Coded by Creative Tim" data-placement="bottom" target="">
-      <img src="<?= $logo ?>" class="w-10" alt="ESCE Logo" />
+      <img src="<?= $logo ?>" class="w-5 w-lg-10" alt="ESCE Logo" />
     </a>
     <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"
       href=" https://demos.creative-tim.com/material-kit-pro/index " rel="tooltip"
@@ -24,14 +24,14 @@
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
             <!--<i class="material-icons opacity-6 me-2 text-md">group</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Nosotros
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_servicios ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
             <!--<i class="material-icons opacity-6 me-2 text-md">view_day</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Servicios
           </a>
         </li>
@@ -40,7 +40,7 @@
           <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuCursos"
             data-bs-toggle="dropdown" aria-expanded="false">
             <!--<i class="material-icons opacity-6 me-2 text-md">article</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Cursos
             <img src="./assets/img/down-arrow-dark.svg " alt="down-arrow" class="arrow ms-2 d-lg-block d-none">
             <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-1 d-lg-none d-block ms-auto">
@@ -180,21 +180,21 @@
           <a role="button" href="<?= $ruta_aprendizaje ?>"
             class="nav-link ps-2 d-flex cursor-pointer align-items-center">
             <!--<i class="material-icons opacity-6 me-2 text-md">contacts</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Aprendizaje
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_contacto ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
             <!--<i class="material-icons opacity-6 me-2 text-md">contact_mail</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Contacto
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_blog ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
             <!--<i class="material-icons opacity-6 me-2 text-md">forum</i>-->
-            <img src="<?= $ico ?>" class="w-25 me-2" alt="ESCE Logo" srcset="">
+            <img src="<?= $ico ?>" class="w-4 w-lg-25 me-2" alt="ESCE Logo" srcset="">
             Blog
           </a>
         </li>

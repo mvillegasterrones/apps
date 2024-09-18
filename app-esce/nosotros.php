@@ -212,7 +212,7 @@
                             <div class="flex-shrink-0 mb-4 mb-md-0">
                                 <a href="#!">
                                 <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
-                                        src="https://media.istockphoto.com/id/1664886899/photo/face-thinking-and-asian-man-in-studio-for-planning-decision-or-questions-on-grey-background.jpg?s=612x612&w=0&k=20&c=8aY4VOjesC4br-F2tomtj9bFglMRSl_fCeh4gQG-RSk="
+                                        src="<?= $img_teams_01 ?>"
                                         alt="Generic placeholder image">
                                 </a>
                             </div>
@@ -246,7 +246,7 @@
                             <div class="flex-shrink-0 mb-4 mb-md-0">
                                 <a href="#!">
                                     <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
-                                        src="https://media.istockphoto.com/id/1664886899/photo/face-thinking-and-asian-man-in-studio-for-planning-decision-or-questions-on-grey-background.jpg?s=612x612&w=0&k=20&c=8aY4VOjesC4br-F2tomtj9bFglMRSl_fCeh4gQG-RSk="
+                                        src="<?= $img_teams_02 ?>"
                                         alt="Generic placeholder image">
                                 </a>
                             </div>

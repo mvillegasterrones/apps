@@ -82,7 +82,7 @@
                                         <ul class="glide__slides">
                                             <li class="glide__slide">
                                                 <div class="glide__container">
-                                                    <div class="card bg-gradient-faded-warning card-carousel">
+                                                    <div class="card bg-gradient-faded-danger card-carousel">
                                                         <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>-->
                                                         <img src="<?= $ico ?>" class="w-25 m-2 imagen-telon">
                                                         <div class="card-body text-center pb-0 position-relative">
@@ -99,7 +99,7 @@
                                             </li>
                                             <li class="glide__slide">
                                                 <div class="glide__container">
-                                                    <div class="card bg-gradient-faded-danger card-carousel">
+                                                    <div class="card bg-gradient-faded-warning card-carousel">
                                                         <div class="card-body text-center pb-0 position-relative">
                                                             <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
                                                                 src="./assets/img/automotive/cls.png" alt="g-amg"
@@ -115,7 +115,7 @@
                                             </li>
                                             <li class="glide__slide">
                                                 <div class="glide__container">
-                                                    <div class="card bg-gradient-faded-primary card-carousel">
+                                                    <div class="card bg-gradient-faded-danger card-carousel">
                                                         <div class="card-body text-center pb-0 position-relative">
                                                             <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
                                                                 src="./assets/img/automotive/cls.png"
@@ -131,7 +131,7 @@
                                             </li>
                                             <li class="glide__slide">
                                                 <div class="glide__container">
-                                                    <div class="card bg-gradient-faded-info card-carousel">
+                                                    <div class="card bg-gradient-faded-warning card-carousel">
                                                         <div class="card-body text-center pb-0 position-relative">
                                                             <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-lg-n6 mt-n4 position-absolute"
                                                                 src="./assets/img/automotive/cls.png" alt="glc"
@@ -147,7 +147,7 @@
                                             </li>
                                             <li class="glide__slide">
                                                 <div class="glide__container">
-                                                    <div class="card bg-gradient-faded-success card-carousel">
+                                                    <div class="card bg-gradient-faded-danger card-carousel">
                                                         <div class="card-body text-center pb-0 position-relative">
                                                             <!--<img class="w-75 end-0 start-0 mx-auto top-0 mt-n4 position-absolute"
                                                                 src="./assets/img/automotive/cls.png" alt="cls"

@@ -79,6 +79,36 @@ $precio_econom_circular   = '3.00';
 
 $img_econom_docentes      = './img/cards/ttteachers_04.jpeg';
 
+$img_teams_01 = './assets/img/equipo/team-01.png';
+$img_teams_02 = './assets/img/equipo/team-02.png';
+$img_teams_03 = './assets/img/equipo/team-03.png';
+
+
+/* Economia para Periodistas */
+$ttt_c1_title       = 'Economia para Periodistas';
+$ttt_c1_description = 'Este curso de seis semanas ofrece una comprensión profunda de temas económicos clave como el PIB, la tasa de desempleo, la inflación, el déficit fiscal, la balanza comercial y el índice de confianza del consumidor.';
+$tth_c1_price       = '0.00';
+
+/* Formación de Emprendedores para Docentes Universitarios */
+$ttt_c2_title       = 'Formación de Emprendedores para Docentes Universitarios';
+$ttt_c2_description = 'Este curso de seis semanas está diseñado para docentes universitarios que buscan integrar el espíritu emprendedor en su enseñanza y fomentar el emprendimiento entre sus estudiantes.';
+$tth_c2_price       = '0.00';
+
+/* Economía Circular para Docentes Universitarios */
+$ttt_c3_title       = 'Economía Circular para Docentes Universitarios';
+$ttt_c3_description = 'Este está diseñado para docentes universitarios que desean integrar los principios de la economía circular en sus enseñanzas, actualizándose en las últimas tendencias y prácticas sostenibles.';
+$tth_c3_price       = '0.00';
+
+/* Economía para Docentes Universitarios */
+$ttt_c4_title       = 'Economía para Docentes Universitarios';
+$ttt_c4_description = 'Este curso está dirigido a docentes universitarios que enseñan economía o disciplinas afines, y busca actualizar y profundizar su conocimiento en teoría económica y tendencias en la economía global.';
+$tth_c4_price       = '0.00';
+
+
+
+
+
+
 /* ! Crecimiento Empresarial */
 $crecim_empresarial_url         = './crecimiento-empresarial.php';
 $crecim_empresarial_title       = $nombre_empresa . ' | ' . 'Nuestros Cursos';

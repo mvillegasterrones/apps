@@ -190,3 +190,37 @@ p.text-dark {
   opacity: 0.3;
   top: 0; /* La imagen se desplaza hacia abajo como un telón */
 }
+
+/** Teching the theachers */
+/*.ttt-card-carousel {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.ttt-card-carousel p {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.ttt-card-carousel h6 {
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.ttt-card-carousel:hover p {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.ttt-card-carousel:hover h6 {
+  margin-top: 0;
+}*/
