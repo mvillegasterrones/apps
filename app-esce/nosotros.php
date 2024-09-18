@@ -17,15 +17,16 @@
     <div class="container position-sticky z-index-sticky top-0 mb-10">
         <div class="row">
             <div class="col-12">
-                <?php include './sections/page-sections/nav-bar.php' ?>
+                <?php include './sections/page-sections/nav-bar-2.php' ?>
             </div>
         </div>
     </div>
 
     <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
-        <section class="py-md-2 px-lg-5 pb-5">
+
+        <section class="py-md-2 mb-7 px-lg-5 pb-5">
             <div class="container">
-            <h2 class="text-color-grey"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
+            <h2 class="text-color-grey mb-5 mb-lg-3"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
                 <div class="row mt-5 align-items-center">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
@@ -96,6 +97,7 @@
                         honesto y
                         de impacto positivo, tanto a nivel, local, regional como nacional.
                     </p>
+
                     <h3 class="mb-5">Nuestros Valores</h3>
                     <div class="col-lg-3 mb-5">
                         <div class="card-container">
@@ -193,104 +195,104 @@
                 </div>
             </div>
         </section>
-    </div>
+        
+        <h2 class="text-xolor-grey text-center mb-8"><img src="<?= $ico ?>" class="w-5">Nuestro equipo</h2>
 
-    <h2 class="text-xolor-grey text-center mb-7"><img src="<?= $ico ?>" class="w-5">Nuestro equipo</h2>
-
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
-        <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
-            data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
-            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
-            data-mdb-animation-initialized="true"
-            style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
-            <div class="card-content">
-                <div class="card-body text-start">
-                    <!-- Cambia a un diseño en columna en pantallas pequeñas -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
-                        <!-- Imagen arriba en pantallas pequeñas -->
-                        <div class="flex-shrink-0 mb-4 mb-md-0">
-                            <a href="#!">
-                                <img class="rounded-5 shadow-4 w-100 h-auto"
-                                    src="https://mdbootstrap.com/img/new/avatars/22.jpg"
-                                    alt="Generic placeholder image">
-                            </a>
-                        </div>
-                        <!-- Texto abajo en pantallas pequeñas -->
-                        <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
-                            <p class="mb-1">
-                                <strong><a href="#!" class="text-reset h4">Guido Pennano Alison</a></strong>
-                            </p>
-                            <p class="mb-1"><i>- Presidente Fundador</i></p>
-                            <p class="text-muted mb-1">
-                                ....
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
-        <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
-            data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
-            data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
-            data-mdb-animation-initialized="true"
-            style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
-            <div class="card-content">
-                <div class="card-body text-start">
-                    <!-- Cambia a un diseño en columna en pantallas pequeñas -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
-                        <!-- Imagen arriba en pantallas pequeñas -->
-                        <div class="flex-shrink-0 mb-4 mb-md-0">
-                            <a href="#!">
-                                <img class="rounded-5 shadow-4 w-100 h-auto"
-                                    src="https://mdbootstrap.com/img/new/avatars/22.jpg"
-                                    alt="Generic placeholder image">
-                            </a>
-                        </div>
-                        <!-- Texto abajo en pantallas pequeñas -->
-                        <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
-                            <p class="mb-1">
-                                <strong><a href="#!" class="text-reset h4">José Ignacio Pineda Mendoza</a></strong>
-                            </p>
-                            <p class="mb-1"><i>- Miembro fundador de ESCE</i></p>
-                            <p class="text-muted mb-1">
-                                Cuenta con más de 20 años de
-                                experiencia
-                                en el sector de la educación superior. Ha enseñado cursos sobre innovación,
-                                emprendimiento y desarrollo sostenible en universidades de Perú y el Reino
-                                Unido.
-                                Además, ha desempeñado roles de liderazgo en universidades, donde se ha
-                                especializado en transformación organizacional, diseñando y ejecutando
-                                estrategias
-                                de turnaround y crecimiento, investigación aplicada de calidad y
-                                responsabilidad
-                                social. Su investigación se sitúa en la intersección de negocios,
-                                emprendimiento y
-                                desarrollo sostenible. Ha recibido un grant de la Academia Británica para
-                                explorar
-                                la Economía Circular en la Amazonía peruana, ha investigado el uso de
-                                tecnología
-                                digital entre emprendedores sociales para la Comisión Europea, y la creación
-                                de un
-                                sistema de innovación en salud en la ciudad de Manchester. Actualmente
-                                estudia los
-                                factores de éxito de emprendedores que logran resultados significativos con
-                                recursos
-                                escasos. Es PhD en Administración y Negocios por Alliance Manchester
-                                Business School
-                                de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por
-                                la misma
-                                escuela de negocios, y economista de la Universidad del Pacífico.
-                            </p>
+        <div class="card main-bg-color-white card-body mb-10 shadow-xl mx-3 mx-md-7 mt-n6 fade-in-up">
+            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
+                data-mdb-animation-initialized="true"
+                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
+                <div class="card-content">
+                    <div class="card-body text-start">
+                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                            <!-- Imagen arriba en pantallas pequeñas -->
+                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                <a href="#!">
+                                <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
+                                        src="https://media.istockphoto.com/id/1664886899/photo/face-thinking-and-asian-man-in-studio-for-planning-decision-or-questions-on-grey-background.jpg?s=612x612&w=0&k=20&c=8aY4VOjesC4br-F2tomtj9bFglMRSl_fCeh4gQG-RSk="
+                                        alt="Generic placeholder image">
+                                </a>
+                            </div>
+                            <!-- Texto abajo en pantallas pequeñas -->
+                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
+                                <p class="mb-1">
+                                    <strong><a href="#!" class="text-reset h4">Guido Pennano Alison</a></strong>
+                                </p>
+                                <p class="mb-1"><i>- Presidente Fundador</i></p>
+                                <p class="text-muted mb-1">
+                                    ....
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="card main-bg-color-white card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
+            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
+                data-mdb-animation-initialized="true"
+                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
+                <div class="card-content">
+                    <div class="card-body text-start">
+                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                            <!-- Imagen arriba en pantallas pequeñas -->
+                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                <a href="#!">
+                                    <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
+                                        src="https://media.istockphoto.com/id/1664886899/photo/face-thinking-and-asian-man-in-studio-for-planning-decision-or-questions-on-grey-background.jpg?s=612x612&w=0&k=20&c=8aY4VOjesC4br-F2tomtj9bFglMRSl_fCeh4gQG-RSk="
+                                        alt="Generic placeholder image">
+                                </a>
+                            </div>
+                            <!-- Texto abajo en pantallas pequeñas -->
+                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
+                                <p class="mb-1">
+                                    <strong><a href="#!" class="text-reset h4">José Ignacio Pineda Mendoza</a></strong>
+                                </p>
+                                <p class="mb-1"><i>- Miembro fundador de ESCE</i></p>
+                                <p class="text-muted mb-1">
+                                    Cuenta con más de 20 años de
+                                    experiencia
+                                    en el sector de la educación superior. Ha enseñado cursos sobre innovación,
+                                    emprendimiento y desarrollo sostenible en universidades de Perú y el Reino
+                                    Unido.
+                                    Además, ha desempeñado roles de liderazgo en universidades, donde se ha
+                                    especializado en transformación organizacional, diseñando y ejecutando
+                                    estrategias
+                                    de turnaround y crecimiento, investigación aplicada de calidad y
+                                    responsabilidad
+                                    social. Su investigación se sitúa en la intersección de negocios,
+                                    emprendimiento y
+                                    desarrollo sostenible. Ha recibido un grant de la Academia Británica para
+                                    explorar
+                                    la Economía Circular en la Amazonía peruana, ha investigado el uso de
+                                    tecnología
+                                    digital entre emprendedores sociales para la Comisión Europea, y la creación
+                                    de un
+                                    sistema de innovación en salud en la ciudad de Manchester. Actualmente
+                                    estudia los
+                                    factores de éxito de emprendedores que logran resultados significativos con
+                                    recursos
+                                    escasos. Es PhD en Administración y Negocios por Alliance Manchester
+                                    Business School
+                                    de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por
+                                    la misma
+                                    escuela de negocios, y economista de la Universidad del Pacífico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <?php include './sections/page-sections/footer.php' ?>
 

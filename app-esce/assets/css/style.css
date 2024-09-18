@@ -131,6 +131,16 @@ p.text-dark {
   -moz-text-decoration-line: underline !important;
 }
 
+.nav-item:hover {
+  opacity: 1 !important;
+  color: var(--main-text-color-warning) !important;
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
 .div-marca-agua {
   /*background: url('../img/esce.png') no-repeat;*/
   /*background-position: right bottom;*/
@@ -139,7 +149,8 @@ p.text-dark {
   width: 100%; /* Ancho del div */
 }
 
-.div-marca-agua::after {
+.div-marca-agua::after,
+.card-front::after {
   content: "";
   position: absolute;
   bottom: 0;
