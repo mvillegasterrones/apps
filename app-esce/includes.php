@@ -79,10 +79,29 @@ $precio_econom_circular   = '3.00';
 
 $img_econom_docentes      = './img/cards/ttteachers_04.jpeg';
 
-$img_teams_01 = './assets/img/equipo/team-01.png';
-$img_teams_02 = './assets/img/equipo/team-02.png';
-$img_teams_03 = './assets/img/equipo/team-03.png';
+$img_teams_01   = './assets/img/equipo/team-01.png';
+$img_teams_02   = './assets/img/equipo/team-02.png';
+$img_teams_03   = './assets/img/equipo/team-03.png';
 
+$img_docente_01 = './assets/img/docentes/docente-01.png';
+$img_docente_02 = './assets/img/docentes/docente-02.png';
+$img_docente_03 = './assets/img/docentes/docente-03.png';
+$img_docente_04 = './assets/img/docentes/docente-04.png';
+
+$docente_nombre_01 = 'Manuel Villegas';
+$docente_nombre_02 = 'Jasmine Diaz';
+$docente_nombre_03 = 'Cindy Jasmine';
+$docente_nombre_04 = 'Docente 04';
+
+$docente_especialidad_01 = 'Docente en ...';
+$docente_especialidad_02 = 'Docente en ...';
+$docente_especialidad_03 = 'Docente en ...';
+$docente_especialidad_04 = 'Docente en ...';
+
+$docente_descripcion_01 = 'Las conexiones que haces en <strong>ESCE</strong> son incomparables, conocimos a usuarios de todo el mundo.';
+$docente_descripcion_02 = 'La creación de redes en <strong>ESCE</strong> es como ninguna otra conferencia tecnológica europea. Todo es increíble';
+$docente_descripcion_03 = '<strong>ESCE</strong> aumentará tu apetito, tu inspiración, tu motivación y tu red.';
+$docente_descripcion_04 = 'Docente en ...';
 
 /* Economia para Periodistas */
 $ttt_c1_title       = 'Economia para Periodistas';

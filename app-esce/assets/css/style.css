@@ -270,3 +270,7 @@ p.text-dark {
   /*background-color: transparent;*/ /* Mantiene el fondo del botón transparente */
 }
 
+#section-docentes .card:hover {
+  background-color: var(--bs-warning) !important;
+  color: var(--main-bg-color-white);
+}

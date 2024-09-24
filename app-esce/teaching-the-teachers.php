@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div class="card container card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
+    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
         <section class="py-md-2 px-lg-5 pb-5">
             <div class="container">
                 <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Teaching The Theachers</h2>
