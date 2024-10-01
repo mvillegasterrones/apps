@@ -1,0 +1,276 @@
+:root {
+  --main-bg-color: white;
+  --main-bg-color-danger: #ff4324 !important;
+  --main-bg-color-warning: #ff8d3d !important;
+  --main-bg-color-grey: #1a2b3c !important;
+  --main-bg-color-dark: #020407 !important;
+  --main-bg-color-white: #f0f2f2 !important;
+  --main-bg-color-secondary: #224561 !important;
+  --main-text-color-danger: #ff4324 !important;
+  --main-text-color-warning: #ff8d3d !important;
+  --main-text-color-grey: #1a2b3c !important;
+  --main-text-color-dark: #020407 !important;
+  --main-text-color-white: #f0f2f2 !important;
+  --main-text-color-secondary: #224561 !important;
+}
+
+.main-bg-color-danger {
+  background-color: var(--main-text-color-danger);
+}
+.main-bg-color-warning {
+  background-color: var(--main-text-color-warning);
+}
+.main-bg-color-grey {
+  background-color: var(--main-text-color-grey);
+}
+.main-bg-color-dark {
+  background-color: var(--main-text-color-dark);
+}
+.main-bg-color-white {
+  background-color: var(--main-text-color-white);
+}
+.main-bg-color-secondary {
+  background-color: var(--main-text-color-secondary);
+}
+
+.text-color-danger {
+  color: var(--main-text-color-danger);
+}
+.text-color-warning {
+  color: var(--main-text-color-warning);
+}
+.text-color-grey,
+.text-dark {
+  color: var(--main-text-color-grey);
+}
+.text-color-dark {
+  color: var(--main-text-color-dark);
+}
+.text-color-white {
+  color: var(--main-text-color-white);
+}
+.text-color-secondary {
+  color: var(--main-text-color-secondary);
+}
+
+.hero-title {
+  font-size: 4rem !important;
+  font-weight: lighter !important;
+}
+
+p.text-dark {
+  font-size: 1.4rem !important;
+  color: black !important;
+}
+
+.card-container {
+  perspective: 1000px; /* Habilita la perspectiva 3D */
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.card-flip {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -ms-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+  /* Efecto de giro al hacer hover */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+  box-shadow: var(--main-bg-color-warning) 10px 10px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta el lado posterior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: var(--main-bg-color-secondary);
+  color: var(--main-text-color-white);
+  font-size: 3rem !important;
+}
+
+.card-back {
+  padding: 20px;
+  background-color: var(--main-bg-color-grey);
+  color: var(--main-text-color-grey);
+  font-size: 1rem;
+  transform: rotateY(
+    180deg
+  ); /* Gira la parte trasera para que no sea visible inicialmente */
+}
+
+.active-nav-item {
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-color: var(--main-bg-color-grey) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
+.nav-item:hover {
+  opacity: 1 !important;
+  color: var(--main-text-color-warning) !important;
+  font-weight: 500 !important;
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-color: var(--main-text-color-warning) !important;
+  -moz-text-decoration-line: underline !important;
+}
+
+.div-marca-agua {
+  /*background: url('../img/esce.png') no-repeat;*/
+  /*background-position: right bottom;*/
+  /*background-size: 150px;*/ /* Tamaño de la imagen, ajusta según necesidad */
+  /*height: 100vh;*/ /* Altura del div */
+  width: 100%; /* Ancho del div */
+}
+
+.div-marca-agua::after,
+.card-front::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../img/esce.png') no-repeat;
+  background-size: 150px; /* Tamaño de la imagen, ajusta según necesidad */
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  opacity: 0.2; /* Transparencia al 50% */
+  pointer-events: none; /* Evita que la imagen interfiera con otros elementos interactivos */
+}
+
+.card-carousel {
+  /*background-image: url('../img/esce.png');*/
+  overflow: hidden; /* Oculta la parte no visible de la imagen */
+  position: relative;
+  /*background-color: rgba(0, 0, 0, 0.5) !important;*/
+  /*cursor: pointer;*/
+  opacity: 0.8 !important;
+}
+
+.card-carousel:hover {
+  box-shadow: 20px 20px var(--main-bg-colot-warning) !important;
+  opacity: 1 !important;
+}
+
+.card-carousel:hover h6,
+.card-carousel:hover button {
+  /*font-size: 2rem !important;
+  */text-decoration-line: underline;
+  -moz-text-decoration-line:underline;
+}
+
+.card-carousel:hover button,
+.card-carousel button:hover {
+  text-decoration-line: underline;
+  background-color: var(--main-text-color-grey) !important;
+  color: var(--main-bg-color-white) !important;
+  -moz-text-decoration-line: underline;
+}
+
+.imagen-telon {
+  position: absolute;
+  top: -100%; /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease; /* Animación suave al hacer hover */
+}
+
+.card-carousel:hover .imagen-telon {
+  opacity: 0.3 !important;
+  top: 0; /* La imagen se desplaza hacia abajo como un telón */
+}
+
+/** Teching the theachers */
+.ttt-card-carousel {
+  position: relative;
+  overflow: hidden; /* Oculta el telón cuando no está activo */
+  transition: all 0.5s ease-in-out;
+}
+
+.ttt-card-carousel::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color-secondary);
+  transition: top 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.ttt-card-carousel:hover::before {
+  top: 0; /* El telón baja completamente */
+}
+
+.ttt-imagen-telon {
+  position: absolute;
+  top: -100%; /* Imagen completamente oculta al inicio */
+  right: 0;
+  /*width: 100%;
+  height: 100%;*/
+  transition: all 0.5s ease; /* Animación suave al hacer hover */
+}
+
+.ttt-card-carousel:hover .ttt-imagen-telon {
+  opacity: 1 !important;
+  background-color: var(--main-bg-color-white);
+  top: 0;
+}
+
+.ttt-card-carousel h6,
+.ttt-card-carousel p,
+.ttt-card-carousel button,
+.ttt-card-carousel img {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima del telón */
+  transition: color 0.5s ease-in-out;
+}
+
+.ttt-card-carousel:hover h6,
+.ttt-card-carousel:hover p,
+.ttt-card-carousel:hover button {
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.ttt-card-carousel:hover button,
+.ttt-card-carousel button:hover {
+  border-color: #f0f2f2 !important;
+  color: white !important; /* Cambia el borde del botón a blanco */
+
+}
+
+.ttt-card-carousel button:hover {
+  /*background-color: transparent;*/ /* Mantiene el fondo del botón transparente */
+}
+
+#section-docentes .card:hover {
+  background-color: var(--bs-warning) !important;
+  color: var(--main-bg-color-white);
+}
