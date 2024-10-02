@@ -1,5 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent border-radius-xl top-0 z-index-3 shadow position-absolute mt-4 my-3 py-2 start-0 end-0 mx-4 text-white navbar-after-scroll" id="main-navbar">
+  class="navbar navbar-expand-lg shadow-none navbar-transparent border-radius-xl top-0 z-index-3 shadow position-absolute mt-4 my-3 py-2 start-0 end-0 mx-4 text-white blur-sm" id="main-navbar">
   <div class="container-fluid px-0">
 
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
