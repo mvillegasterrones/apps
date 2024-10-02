@@ -12,6 +12,31 @@
   --main-text-color-dark: #020407 !important;
   --main-text-color-white: #f0f2f2 !important;
   --main-text-color-secondary: #224561 !important;
+
+  --main-textcolor-primary: #003E7D !important;
+  --main-textcolor-info: #08BCFB !important;
+  --main-bg-color-primary: #004383 !important;
+
+  --main-bgcolor-info: #08BCFB !important;
+}
+
+.text_color_primary {
+  color: var(--main-textcolor-primary);
+}
+.text_color_info {
+  color: var(--main-textcolor-info);
+}
+.bg_gradient_info_to_primary {
+  background: linear-gradient(to right, #08BCFB, #003E7D);
+}
+.bg_gradient_warning_to_danger {
+  background: linear-gradient(to right, #08BCFB, #003E7D);
+}
+.bg_color_primary {
+  background-color: var(--main-bg-color-primary);
+}
+.bg_color_info {
+ background-color: var(--main-bgcolor-info);
 }
 
 .main-bg-color-danger {
@@ -273,4 +298,35 @@ p.text-dark {
 #section-docentes .card:hover {
   background-color: var(--bs-warning) !important;
   color: var(--main-bg-color-white);
+}
+
+/* Tamaños máximos del container en diferentes tamaños de pantalla */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
 }
