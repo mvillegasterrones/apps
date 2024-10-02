@@ -346,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
                             <div class="card">
                                 <div class="card-body text-center pb-0">
                                     <h4 class="mb-0">Olivia Harper</h4>
