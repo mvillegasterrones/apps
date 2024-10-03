@@ -20,14 +20,15 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
 */
 
-$ico = './assets/img/esce.png';
+$ico  = './assets/img/esce.png';
 $logo = './assets/img/logos/esce-sb-1.png';
+$wsp  = '932449843';
 
 $social_facebook      = '#';
 $social_instagram     = '#';
 $social_linkedin      = '#';
 
-$nombre_empresa       = 'ECEGP';
+$nombre_empresa       = 'ESCE';
 $correo_empresa       = 'consultas@ecegp.edu.pe';
 $nombre_largo_empresa = 'Escuela de Ciencias Empresariales y Gestión Publica';
 $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile/index.html';

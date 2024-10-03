@@ -233,143 +233,380 @@
             </div>
         </div>
     </div>
+    
+    <div>
+        <img src="./assets/img/sec-03.png" class="w-100" alt="">
+    </div>
 
-    <div class="pb-5 main-bg-color-warning">
-        <div class="container text-center">
-            <div class="row my-5">
+    <div class="main-bg-color-grey">
+        <div class="container pt-3 pb-5">
+            <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
                     <h2 class="text-color-white p-3">Innovación <b
-                            class="main-bg-color-grey p-1 rounded rounded-15">Empresarial</b></h2>
+                            class="bg-gradient-warning p-1 rounded rounded-15">Empresarial</b></h2>
                     <p class="text-color-white">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quis dolore perferendis. Ab odio
                         quo adipisci labore illum exercitationem dolorum?
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-4 text-start text-white">
-                    <p class="mb-0">Detalle 0001</p>
-                    <h5 class="text-white mb-2">Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea veniam suscipit sapiente
-                        incidunt provident accusamus, et sint porro eius, natus quae. Fuga, eos. Officiis numquam sed
-                        perferendis dicta iure.</p>
-                    <i class="fas fa-edit text-color-grey"></i> Lorem ipsum dolor sit.<br>
-                    <i class="fas fa-edit text-color-grey"></i> Lorem ipsum dolor sit.<br>
-                    <i class="fas fa-edit text-color-grey"></i> Lorem ipsum dolor sit.<br>
-                    <i class="fas fa-edit text-color-grey"></i> Lorem ipsum dolor sit.<br>
-                    <i class="fas fa-edit text-color-grey"></i> Lorem ipsum dolor sit.<br>
-                    <button class="btn main-bg-color-grey btn-dark btn-rounded-20p mt-4">Acction 1</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-start text-white">
+                        <p class="mb-0">Detalle 0001</p>
+                        <h5 class="text-white mb-2">Lorem ipsum dolor sit amet.</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea veniam suscipit sapiente
+                            incidunt provident accusamus, et sint porro eius, natus quae. Fuga, eos. Officiis numquam
+                            sed
+                            perferendis dicta iure.</p>
+                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
+                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
+                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
+                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
+                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
+                        <button class="btn main-bg-color-warning btn-warning btn-rounded-20p mt-4">Acction 1</button>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row text-start mb-5">
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <h4 class="mb-0">Olivia Harper</h4>
+                                        <hr class="bg-warning w-100">
+                                        <p>@oliviaharper</p>
+                                        <p class="mt-2">
+                                            The connections you make at Web Summit are unparalleled, we met users all
+                                            over
+                                            the world.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <h4 class="mb-0">Olivia Harper</h4>
+                                        <hr class="bg-warning w-100">
+                                        <p>@oliviaharper</p>
+                                        <p class="mt-2">
+                                            The connections you make at Web Summit are unparalleled, we met users all
+                                            over
+                                            the world.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <h4 class="mb-0">Olivia Harper</h4>
+                                        <hr class="bg-warning w-100">
+                                        <p>@oliviaharper</p>
+                                        <p class="mt-2">
+                                            The connections you make at Web Summit are unparalleled, we met users all
+                                            over
+                                            the world.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <h4 class="mb-0">Olivia Harper</h4>
+                                        <hr class="bg-warning w-100">
+                                        <p>@oliviaharper</p>
+                                        <p class="mt-2">
+                                            The connections you make at Web Summit are unparalleled, we met users all
+                                            over
+                                            the world.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-4">
-                            <div class="card">
-                                <div class="card-body text-center pb-0">
-                                    <h4 class="mb-0">Olivia Harper</h4>
-                                    <p>@oliviaharper</p>
-                                    <p class="mt-2">
-                                        The connections you make at Web Summit are unparalleled, we met users all over
-                                        the world.
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center pt-2">
-                                    <div class="mx-auto">
-                                        <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>quote-down</title>
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <path
-                                                    d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
-                                                    fill="#48484A" fill-rule="nonzero"
-                                                    transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
-                                                </path>
-                                            </g>
-                                        </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bg-color-white">
+        <div class="container pt-3 pb-5">
+            <div class="row my-5 text-center">
+                <div class="col-md-6 mx-auto mb-4 text-center">
+                    <h2 class="text-color-grey p-3">Tipos de <b
+                            class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados</b></h2>
+                    <p class="text-color-grey">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quis dolore perferendis. Ab odio
+                        quo adipisci labore illum exercitationem dolorum?
+                    </p>
+                </div>
+            </div>
+
+            <div class="container pb-5 position-relative z-index-3 text-color-grey">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-7">
+                        <div class="card">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
+                                            alt="avatar">
                                     </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl" style="background-image: url('<?= $ico ?>'></div>
+                                    <div class=" colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
+                            </div>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Olivia Harper</h4>
+                                <p>@oliviaharper</p>
+                                <p class="mt-2">
+                                    The connections you make at Web Summit are unparalleled, we met users all over the
+                                    world.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center pt-2">
+                                <div class="mx-auto">
+                                    <a href="javascript:;" class="icon-move-right text-sm">See all products
+                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 mb-4">
-                            <div class="card">
-                                <div class="card-body text-center pb-0">
-                                    <h4 class="mb-0">Olivia Harper</h4>
-                                    <p>@oliviaharper</p>
-                                    <p class="mt-2">
-                                        The connections you make at Web Summit are unparalleled, we met users all over
-                                        the world.
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center pt-2">
-                                    <div class="mx-auto">
-                                        <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>quote-down</title>
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <path
-                                                    d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
-                                                    fill="#48484A" fill-rule="nonzero"
-                                                    transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
-                                                </path>
-                                            </g>
-                                        </svg>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-7">
+                        <div class="card">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
+                                            alt="avatar">
                                     </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                                        style="background-image: url('<?= $ico ?>')"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
+                            </div>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Simon Lauren</h4>
+                                <p>@simonlaurent</p>
+                                <p class="mt-2">
+                                    The networking at Web Summit is like no other European tech conference. Everything
+                                    is amazing.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center pt-2">
+                                <div class="mx-auto">
+                                    <a href="javascript:;" class="icon-move-right text-sm">See all products
+                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <div class="card">
-                                <div class="card-body text-center pb-0">
-                                    <h4 class="mb-0">Olivia Harper</h4>
-                                    <p>@oliviaharper</p>
-                                    <p class="mt-2">
-                                        The connections you make at Web Summit are unparalleled, we met users all over
-                                        the world.
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center pt-2">
-                                    <div class="mx-auto">
-                                        <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>quote-down</title>
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <path
-                                                    d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
-                                                    fill="#48484A" fill-rule="nonzero"
-                                                    transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
-                                                </path>
-                                            </g>
-                                        </svg>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-7">
+                        <div class="card">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
+                                            alt="avatar">
                                     </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                                        style="background-image: url(&quot;../assets/img/team-4.jpg&quot;);"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
+                            </div>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Lucian Eurel</h4>
+                                <p>@luciaeurel</p>
+                                <p class="mt-2">
+                                    Web Summit will increase your appetite, your inspiration, your motivation and your
+                                    network.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center pt-2">
+                                <div class="mx-auto">
+                                    <a href="javascript:;" class="icon-move-right text-sm">See all products
+                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-                            <div class="card">
-                                <div class="card-body text-center pb-0">
-                                    <h4 class="mb-0">Olivia Harper</h4>
-                                    <p>@oliviaharper</p>
-                                    <p class="mt-2">
-                                        The connections you make at Web Summit are unparalleled, we met users all over
-                                        the world.
-                                    </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="main-bg-color-grey">
+        <div class="container pt-5 pb-2">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 col-lg-6 p-5">
+                        <div class="card">
+                            <img src="./assets/img/valores/integridad.jpeg" class="rounded rounded-15" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 text-color-white p-4">
+                        <p class="mb-0">Lorem, ipsum dolor.</p>
+                        <h2 class="text-color-white mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, perferendis!</h2>
+                        <h6 class="text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique ducimus dicta sed laudantium! Aperiam ducimus culpa doloribus veniam tempore blanditiis facilis repellendus magni. Harum quas aut aspernatur? Quaerat nostrum, eligendi tempora sequi numquam necessitatibus explicabo in, ex cum consectetur voluptate atque earum. Ex, sunt? Aut, quos impedit. Dignissimos, neque!</h6>
+                        <p>
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bg-color-white">
+        <div class="container pt-5 pb-2">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 col-lg-4 text-center">
+                        <h3>Preguntas Frecuentes</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
+                        <p>
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-8 mx-auto">
+                    <div class="accordion" id="accordionRental">
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        ¿Cómo hago un pedido?
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        No siempre estamos en la posición en la que queremos estar. Estamos creciendo
+                                        constantemente. Estamos constantemente cometiendo errores. Estamos
+                                        constantemente tratando de expresarnos y hacer realidad nuestros sueños. Si
+                                        tienes la oportunidad de jugar a este juego de la vida, necesitas apreciar cada
+                                        momento. Muchas personas no aprecian el momento hasta que ha pasado.
+                                    </div>
                                 </div>
-                                <div class="card-footer text-center pt-2">
-                                    <div class="mx-auto">
-                                        <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>quote-down</title>
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <path
-                                                    d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
-                                                    fill="#48484A" fill-rule="nonzero"
-                                                    transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
-                                                </path>
-                                            </g>
-                                        </svg>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Cómo puedo hacer el pago?
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        Realmente importa y luego realmente no importa. Lo que importa son las personas
+                                        que se despiertan por ello. Y la gente que se ofende por ello, no importa.
+                                        Porque se trata de motivar a los hacedores. Porque estoy aquí para seguir mis
+                                        sueños e inspirar a otras personas a seguir sus sueños también.<br>
+
+                                        No siempre estamos en la posición en la que queremos estar. Estamos creciendo
+                                        constantemente. Estamos constantemente cometiendo errores. Estamos
+                                        constantemente tratando de expresarnos y hacer realidad nuestros sueños. Si
+                                        tienes la oportunidad de jugar a este juego de la vida, necesitas apreciar cada
+                                        momento. Muchas personas no aprecian el momento hasta que ha pasado.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Cuánto tiempo se tarda en recibir el pedido?
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        Ahora es el momento de que esté bien para ser genial. La gente en este mundo
+                                        rechaza a la gente por ser genial. Por ser un color brillante. Por destacar.
+                                        Pero ahora es el momento de estar bien para ser el mejor tú. ¿Creerías en lo que
+                                        crees, si fueras el único que lo creyera? Si todo lo que hice falló, lo cual no
+                                        sucede, en realidad tiene éxito, solo el hecho de que estoy dispuesto a fracasar
+                                        es una inspiración. La gente tiene tanto miedo de perder que ni siquiera lo
+                                        intentan. Como, una cosa que la gente no puede decir es que no lo estoy
+                                        intentando, y no estoy haciendo todo lo posible, y no estoy tratando de hacerlo
+                                        de la mejor manera que sé.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        ¿Puedo revender los productos?
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        Siempre sentí que podía hacer cualquier cosa. ¡Eso es lo principal por lo que la
+                                        gente está controlada! Pensamientos: ¡su percepción de ellos mismos! Se
+                                        ralentizan por su percepción de sí mismos. Si te enseñan que no puedes hacer
+                                        nada, no harás nada. Me enseñaron que podía hacerlo todo.<br><br>
+
+                                        Si todo lo que hice falló, lo cual no sucede, en realidad tiene éxito, solo el
+                                        hecho de que estoy dispuesto a fracasar es una inspiración. La gente tiene tanto
+                                        miedo de perder que ni siquiera lo intentan. Como, una cosa que la gente no
+                                        puede decir es que no lo estoy intentando, y no estoy haciendo todo lo posible,
+                                        y no estoy tratando de hacerlo de la mejor manera que sé.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingFifth">
+                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                                        ¿Dónde encuentro los detalles del envío?
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        No hay nada que realmente quisiera hacer en la vida en lo que no fuera capaz de
+                                        ser bueno. Esa es mi habilidad. Realmente no tengo talento específico en nada,
+                                        excepto en la capacidad de aprender. Eso es lo que hago. Para eso estoy aquí. No
+                                        tengas miedo de equivocarte porque no puedes aprender nada de un cumplido.
+                                        Siempre sentí que podía hacer cualquier cosa. ¡Eso es lo principal por lo que la
+                                        gente está controlada! Pensamientos: ¡su percepción de ellos mismos! Se
+                                        ralentizan por su percepción de sí mismos. Si te enseñan que no puedes hacer
+                                        nada, no harás nada. Me enseñaron que podía hacerlo todo.
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +617,7 @@
         </div>
     </div>
 
-    <?php include './sections/page-sections/footer.php' ?>
+    <?php include './sections/page-sections/footer-2.php' ?>
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 
