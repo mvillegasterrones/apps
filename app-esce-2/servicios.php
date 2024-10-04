@@ -22,504 +22,182 @@
         </div>
     </div>
 
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
-        <section class="py-md-2 px-lg-5 pb-5">
-            <div class="container">
-                <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Servicios</h2>
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h3 class="mb-4 text-color-grey">Tenemos una perspectiva de la innovación como motor de
-                            crecimiento</h3>
-                        <p class="">
-                            Sabemos lo complejo que es pasar por procesos de cambio como consecuencia de la innovación
-                            de productos, servicios o procesos y la creación de nuevos negocios.
-                        </p>
-                    </div>
-                    <div class="col-4 ms-auto mt-lg-0 mt-4 mb-lg-0">
-                        <img src="https://www.incotec.es/app/uploads/2023/12/que-es-innovacion-sostenible-e1702285476769.jpg"
-                            class="w-100" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="row">
-                    <hr class="col-12 bg-dark">
-                </div>
-                <div class="row mt-5 mb-7 align-items-center">
-                    <div class="col-4">
-                        <img src="https://media.istockphoto.com/id/531861190/es/foto/pieza-de-rompecabezas-faltante-resolución-del-problema-y-solución-blanco.jpg?s=612x612&w=0&k=20&c=ePA9ofDnL47Afi-3OIhwOisqAkmBd26nMTanp7ObrSI="
-                            class="w-100" alt="" srcset="">
-                    </div>
-                    <div class="col-lg-8">
-                        <h3 class="mb-4 text-color-grey">Contribuimos a tomar el toro por las astas y enfrentar los
-                            cuellos de botella para generar nuevo valor de mercado o solucionar problemas empresariales
-                            complejos</h3>
-                        <p class="">
-                            Creemos que la competitividad de las empresas pasa por saber competir en el mercado,
-                            aproximándose cada vez más con las necesidades, problemas y emociones de los clientes.
+    <div class="container mt-7 mb-7">
 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row mt-5 align-items-top">
-
-                    <div class="col-12 col-md-6 col-lg-6 mb-5">
-                        <h3 class="text-color-grey">Innovation Bottom UP</h3>
-                        <p>Decisiones basadas en el conocimiento existente para la solución de problemas empresariales o
-                            la identificación de nuevas oportunidades de negocio. </p>
-
-                        <div class="accordion p-3" id="accordionPricing">
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingOne">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Generación
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionPricing"><!-- SHOW -->
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Creamos un espacio para fomentar la creatividad y la recolección de ideas a
-                                        través de talleres, y plataformas digitales.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        Evaluación
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Prioriza las ideas evaluando su factibilidad técnica, su alineación con las
-                                        necesidades de los consumidores, y su esfuerzo y tiempo de implementación.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Pruebas de bajo costo
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Desarrollar prototipos de las ideas seleccionadas, probarlos, y ajustar con
-                                        base en la retroalimentación de usuarios y partes interesadas antes de su
-                                        implementación a gran escala.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        Oportunidades escalables
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Seleccionar ideas viables de mayor beneficio en relación a su costo y
-                                        esfuerzo de implementación.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFifth">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
-                                        aria-expanded="false" aria-controls="collapseFifth">
-                                        Cultura de información
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFifth" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFifth" data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Fomentar una cultura de innovación colaborativa y reconocer con recompensas
-                                        a los empleados que generen ideas exitosas, incentivando su participación
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <h3 class="text-color-grey mt-0">Innovación de Productos o Servicios</h3>
-                        <p>Rivalidad basada en innovación y diferenciación a través de la mejora de nuevos productos o
-                            servicios, o la creación de nuevos negocios.</p><br>
-                        <div class="accordion p-3" id="accordionPricing-2">
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingOne-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2"
-                                        aria-expanded="true" aria-controls="collapseOne-2">
-                                        Nuevas fuentes de ingreso
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseOne-2" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne-2" data-bs-parent="#accordionPricing-2"><!-- show -->
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Abre nuevas líneas de negocio, encuentra nichos de mercado, atrae nuevos
-                                        clientes y ofrece mayor valor percibido por los consumidores.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingTwo-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-2"
-                                        aria-expanded="false" aria-controls="collapseTwo-2">
-                                        Mejora de la Satisfaccion del Cliente
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseTwo-2" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo-2" data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Creación o rediseño de nuevos productos o servicios para mejorar la experiencia
-                                        del servicio, incrementando los niveles de fidelización y satisfacción.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingThree-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-2"
-                                        aria-expanded="false" aria-controls="collapseThree-2">
-                                        Capacidad de Respuesta a Cambios del Mercado
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseThree-2" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree-2" data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Adaptación rápida a cambios dinámicos para mantener su competitividad y
-                                        fortalecer su resiliencia para superar las crisis y asegurar su sostenibilidad.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFour-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-2"
-                                        aria-expanded="false" aria-controls="collapseFour-2">
-                                        Deducción de Impuestos por el Gobierno Peruano
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFour-2" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour-2" data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Acceso a incentivos fiscales para empresas que invierten en I+D.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, minima.</h1>
                 </div>
             </div>
-        </section>
+
+            <div class="row mb-5">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card card-profile mt-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                                    <a href="javascript:;">
+                                        <div class="p-3 pe-md-0">
+                                            <img class="w-100 avatar avatar-circle rounded-circle avatar-xxl border-radius-md shadow-lg"
+                                                src="./assets/img/team-5.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                    <div class="card-body ps-lg-0">
+                                        <h5 class="mb-0">Lorem ipsum dolor sit.</h5>
+                                        <h6 class="text-info">UI Designer</h6>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Consectetur eum dolorem fuga numquam dolores vero!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card card-profile mt-lg-4 mt-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                                    <a href="javascript:;">
+                                        <div class="p-3 pe-md-0">
+                                            <img class="w-100 avatar avatar-circle rounded-circle avatar-xxl border-radius-md shadow-lg"
+                                                src="./assets/img/bruce-mars.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                    <div class="card-body ps-lg-0">
+                                        <h5 class="mb-0">Lorem ipsum dolor sit.</h5>
+                                        <h6 class="text-info">Boss</h6>
+                                        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Voluptatibus obcaecati non magnam voluptatum quibusdam molestias.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="row m-5">
+                <div class="col-12 col-lg-6">
+                    <div class="author align-items-center">
+                      <div class="avatar avatar-xxl rounded-circle shadow bg-gradient-dark">
+                        <img src="./assets/img/bruce-mars.jpg" alt="logo" loading="lazy">
+                      </div>
+                      <div class="name ps-2">
+                        <span>Lorem ipsum dolor sit.</span>
+                        <div>
+                          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque omnis voluptatum inventore maxime quae?</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="author align-items-center">
+                      <div class="avatar avatar-xxl rounded-circle shadow bg-gradient-dark">
+                        <img src="./assets/img/team-5.jpg" alt="logo" loading="lazy">
+                      </div>
+                      <div class="name ps-2">
+                        <span>Lorem ipsum dolor sit.</span>
+                        <div>
+                          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque omnis voluptatum inventore maxime quae?</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
     </div>
 
-    <!--<section class="py-0">
+    <div class="main-bg-color-grey text-color-white text-center mb-7">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto mb-5">
-                    <div class="card">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-warning shadow-danger border-radius-lg p-4">
-                                <h4 class="text-white mb-0">Innovation Bottom UP</h4>
-                                <p class="text-white opacity-8 mb-0">Decisiones basadas en el conocimiento existente
-                                    para la solución de problemas empresariales o la identificación de nuevas
-                                    oportunidades de negocio.</p>
-                            </div>
-                        </div>
-                        <div class="accordion p-3" id="accordionPricing">
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingOne">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Generación
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Creamos un espacio para fomentar la creatividad y la recolección de ideas a
-                                        través de talleres, y plataformas digitales.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        Evaluación
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Prioriza las ideas evaluando su factibilidad técnica, su alineación con las
-                                        necesidades de los consumidores, y su esfuerzo y tiempo de implementación.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Pruebas de bajo costo
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Desarrollar prototipos de las ideas seleccionadas, probarlos, y ajustar con
-                                        base en la retroalimentación de usuarios y partes interesadas antes de su
-                                        implementación a gran escala.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        Oportunidades escalables
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Seleccionar ideas viables de mayor beneficio en relación a su costo y
-                                        esfuerzo de implementación.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFifth">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
-                                        aria-expanded="false" aria-controls="collapseFifth">
-                                        Cultura de información
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFifth" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFifth" data-bs-parent="#accordionPricing">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Fomentar una cultura de innovación colaborativa y reconocer con recompensas
-                                        a los empleados que generen ideas exitosas, incentivando su participación
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row p-5">
+                <div class="col-12 mb-5">
+                    <h3 class="text-white">Lorem, ipsum dolor.</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae incidunt, soluta mollitia
+                        corrupti unde quod?
+                    </p>
+                </div>
+            </div>
 
+            <div class="row text-color-grey mb-5">
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <div class="pe-md-0 mx-auto mb-5 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">emoji_objects</i>
+                    </div>
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                </div>
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <div class="pe-md-0 mx-auto mb-0 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">psychology</i>
                     </div>
                 </div>
 
-                <div class="col-md-6 mx-auto">
-                    <div class="card">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-warning shadow-danger border-radius-lg p-4">
-                                <h4 class="text-white mb-0">Innovación de Productos o Servicios</h4>
-                                <p class="text-white opacity-8 mb-0">Rivalidad basada en innovación y diferenciación a
-                                    través de la mejora de nuevos productos o servicios, o la creación de nuevos
-                                    negocios.</p>
-                            </div>
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <div class="p-3 pe-md-0 w-100 border-radius-md shadow-lg">
+                        <div class="pe-md-0 mx-auto mb-5 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                            <i class="material-icons icon-big">share</i>
                         </div>
+                        <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                        <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                        <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    </div>
+                </div>
 
-                        <div class="accordion p-3" id="accordionPricing-2">
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingOne-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2"
-                                        aria-expanded="true" aria-controls="collapseOne-2">
-                                        Nuevas fuentes de ingreso
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseOne-2" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne-2" data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Abre nuevas líneas de negocio, encuentra nichos de mercado, atrae nuevos
-                                        clientes y ofrece mayor valor percibido por los consumidores.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingTwo-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-2"
-                                        aria-expanded="false" aria-controls="collapseTwo-2">
-                                        Mejora de la Satisfaccion del Cliente
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseTwo-2" class="accordion-collapse collapse" aria-labelledby="headingTwo-2"
-                                    data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Creación o rediseño de nuevos productos o servicios para mejorar la experiencia
-                                        del servicio, incrementando los niveles de fidelización y satisfacción.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingThree-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-2"
-                                        aria-expanded="false" aria-controls="collapseThree-2">
-                                        Capacidad de Respuesta a Cambios del Mercado
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseThree-2" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree-2" data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Adaptación rápida a cambios dinámicos para mantener su competitividad y
-                                        fortalecer su resiliencia para superar las crisis y asegurar su sostenibilidad.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item mb-3">
-                                <h6 class="accordion-header" id="headingFour-2">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start icon-move-right"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-2"
-                                        aria-expanded="false" aria-controls="collapseFour-2">
-                                        Deducción de Impuestos por el Gobierno Peruano
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h6>
-                                <div id="collapseFour-2" class="accordion-collapse collapse" aria-labelledby="headingFour-2"
-                                    data-bs-parent="#accordionPricing-2">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Acceso a incentivos fiscales para empresas que invierten en I+D.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <div class="pe-md-0 mx-auto mb-0 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">group</i>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>-->
-
-    <!--<h2 class="text-xolor-grey text-center mb-7"><img src="<?= $ico ?>" class="w-5">Nuestro equipo</h2>-->
+    </div>
 
     <?php include './sections/page-sections/footer.php' ?>
 

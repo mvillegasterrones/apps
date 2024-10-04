@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: white;
+  --main-bg-color: white !important;
   --main-bg-color-danger: #ff4324 !important;
   --main-bg-color-warning: #ff8d3d !important;
   --main-bg-color-grey: #1a2b3c !important;
@@ -19,7 +19,9 @@
 
   --main-bgcolor-info: #08BCFB !important;
 }
-
+.main_bg_color_white {
+  background-color: white !important;
+}
 .text_color_primary {
   color: var(--main-textcolor-primary);
 }
@@ -45,6 +47,21 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.div-icon-big {
+  width: 220px !important;
+  height: 220px !important;
+  align-items: center !important;
+  
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  height: 100vh;   
+
+}
+.icon-big {
+  font-size: 8rem !important;
 }
 
 .main-bg-color-danger {
