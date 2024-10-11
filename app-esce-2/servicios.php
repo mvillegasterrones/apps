@@ -22,16 +22,45 @@
         </div>
     </div>
 
-    <div class="container mt-7 mb-7">
-
+    <div class="container mt-7 mb-0">
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-6">
+                <div class="col-12 col-lg-6 mx-auto text-center">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, minima.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere atque facilis consequuntur
+                        deleniti cumque, totam corporis consectetur cum ducimus reprehenderit asperiores soluta, ea
+                        dignissimos, quasi quas incidunt saepe quo?</p>
+                    <p>
+                        <a href="#!" class="btn btn-warning text-color-white btn-rounded-20p icon-move-right">Leer más
+                            &nbsp;&nbsp;<i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-content-center align-items-center">
                 <div class="col-12 col-lg-6">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, minima.</h1>
+                    <div class="col-12 col-lg-12 mx-auto">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat.</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias impedit
+                                quibusdam. Unde, illo?</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, numquam delectus
+                                veritatis, tempora voluptatum doloremque, aliquam iste consectetur quaerat dolores ipsum
+                                quod culpa. Odio rem itaque repellendus numquam? Dignissimos, cum.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100 rounded rounded-15" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row mb-5">
+            <!--<div class="row mb-5">
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
                         error!</p>
@@ -59,9 +88,9 @@
                         molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
                         dicta.</p>
                 </div>
-            </div>
+            </div>-->
 
-            <div class="row mb-5">
+            <!--<div class="row mb-5">
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="card card-profile mt-4">
@@ -110,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <!--<div class="row m-5">
                 <div class="col-12 col-lg-6">
@@ -143,7 +172,225 @@
         </div>
     </div>
 
-    <div class="main-bg-color-grey text-color-white text-center mb-7">
+    <div class="main-bg-color-grey text-color-white text-center mt-n5 mb-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 mx-auto mt-7 mb-3">
+                    <h3 class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                        repellendus.</h3>
+                </div>
+
+                <div class="row mb-7">
+                    <div class="col-12 col-lg-4 mx-auto">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius fugiat, odio culpa deserunt
+                            nihil possimus magnam esse minus consequatur provident.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-7">
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="card text-start text-color-dark">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-2">Lorem ipsum dolor sit amet.</h4>
+                                <div class="pb-2 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+                                <div class="pb-2 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+                                <div class="p-0 mb-3 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="card text-start text-color-dark">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-2">Lorem ipsum dolor sit amet.</h4>
+                                <div class="pb-2 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+                                <div class="pb-2 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+                                <div class="p-0 mb-3 info-horizontal d-flex align-items-center">
+                                    <div
+                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
+                                        <i class="material-icons opacity-10">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
+                                            heart broken by people
+                                            we love.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-7">
+        <div class="row text-start text-color-white p-0">
+            <div class="col-12 col-lg-12">
+                <div class="container">
+                    <div class="row main-bg-color-grey rounded rounded-15">
+                        <div class="col-12 col-lg-4 m-0">
+                            <img src="./assets/img/hero/hero-card-02.png" class="h-100 w-100" alt="">
+                        </div>
+                        <div class="col-12 col-lg-8 m-0 align-content-center align-items-center">
+                            <div class="row p-6">
+                                <div class="col-12 col-8 mx-auto">
+                                    <p class="mb-1">Lorem, ipsum.</p>
+                                    <h3 class="text-color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Esse, tempora.</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime laudantium
+                                        voluptate sequi est eius eum omnis et? Nostrum sed ad quas quia sapiente non
+                                        nihil tempora ab at quos enim inventore quibusdam eaque cumque nemo fugit
+                                        perferendis culpa vitae assumenda, unde deleniti autem molestiae? Magnam minus
+                                        tenetur officia labore?</p>
+                                    <p>
+                                        <button
+                                            class="btn btn-warning main-bg-color-warning icon-move-right btn-rounded-20p mb-0">Leer
+                                            mas <i class="fas fa-arrow-right text-xs ms-1"
+                                                aria-hidden="true"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-7">
+        <div class="row">
+            <div class="col-12 col-6 mx-auto text-center mb-5">
+                <h3 class="text-color-grey">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bg-color-grey mb-0">
+        <div class="container mb-0">
+            <div class="row mb-0 text-center p-7">
+                <div class="col-12 col-lg-6 mx-auto text-color-vhite">
+                    <h3 class="text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        deleniti.</h3>
+                    <p class="text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, earum!</p>
+                    <div class="form-group d-flex align-items-center">
+                        <input type="text"
+                            class="form-control form-control-lg main-bg-color-white text-dark p-2 mb-0 me-2"
+                            placeholder="Ingresa tu email"
+                            style="background-color: white !important; border-radius: 20px;">
+                        <button type="button"
+                            class="btn btn-warning mb-0 h-100 position-relative z-index-2 btn-rounded-20p">Suscribirme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                    <p class="text-color-white mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="main-bg-color-grey text-color-white text-center mb-7">
         <div class="container">
             <div class="row p-5">
                 <div class="col-12 mb-5">
@@ -197,9 +444,12 @@
 
             </div>
         </div>
+    </div>-->
+
+    <div class="mt-n5">
+        <?php include './sections/page-sections/footer-2.php' ?>
     </div>
 
-    <?php include './sections/page-sections/footer.php' ?>
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 </body>
