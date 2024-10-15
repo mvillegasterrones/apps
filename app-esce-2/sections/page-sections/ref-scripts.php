@@ -25,10 +25,10 @@
     const glider = new Glide('.gliderrr', {
       autoplay: 1500,
       type: 'carousel',
-      perView: 3,
+      perView: 4,
       breakpoints: {
         800: {
-          perView: 2
+          perView: 1
         }
       }
     })
