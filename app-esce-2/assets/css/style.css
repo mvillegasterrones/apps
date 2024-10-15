@@ -355,3 +355,108 @@ p.text-dark {
     max-width: 1320px !important;
   }
 }
+
+/** CIRCULO */
+/* Contenedor del círculo */
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 0px;
+}
+
+/* Círculo principal tipo dona */
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--main-bg-color-secondary); 
+  /*conic-gradient(#08BCFB 0 90deg, #003E7D 90deg 180deg, #08BCFB 180deg 270deg, #003E7D 270deg 360deg);*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Círculo interior que crea el hueco de la dona */
+.inner-circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: var(--main-bg-color-white);
+  border-radius: 50%;
+  z-index: 10;
+  margin-top: -70%;
+  margin-left: 30%;
+}
+
+/* Divisiones de los cuadrantes */
+.quadrant {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+  -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#quadrant1 {
+  top: 0;
+  left: 0;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#quadrant2 {
+  top: 0;
+  right: 0;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+#quadrant3 {
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#quadrant4 {
+  bottom: 0;
+  right: 0;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+}
+
+/* Texto secciones */
+.text-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-sections div {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Texto oscuro al hacer clic */
+.text-dark {
+  color: #000 !important;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* Cuadrante al hacer clic: cambia opacidad y hace zoom */
+.quadrant.active {
+  opacity: 1;
+  transform: scale(1.1); /* Zoom ligero */
+}

@@ -11,6 +11,7 @@
         ESCE | Home
     </title>
     <?php include './sections/page-sections/ref-header.php' ?>
+
 </head>
 
 <body class="case-study bg-gray-200">
@@ -94,150 +95,278 @@
     <div class="container text-center">
         <h2>Escoge <b class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad</b></h2>
-        <p class="text_info mb-7">
+        <p class="text_info mb-4">
             Busca en nuestras <b class="text_color_primary">ofertas de formación</b> la que más te guste y<br>
             asegúrate de que tienes todos los requisitos necesarios para lograrlo.
         </p>
-        <div class="container">
+
+        <section>
+            <!--<div class="container">-->
             <div class="row">
+                <div class="gliderrr">
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
 
-                <div class="col-12 col-md-6 col-lg-4 mb-7">
-                    <div class="card h-100 border-2 shadow-02" data-animation="true">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                            <a class="d-block blur-shadow-image">
-                                <img src="./assets/img/hero/hero-card-01.png" alt="img-blur-shadow"
-                                    class="img-fluid shadow border-radius-lg">
-                            </a>
-                            <div class="colored-shadow"
-                                style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="d-flex mt-n6 mx-auto">
-                                <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Refresh">
-                                    <i class="material-icons text-lg">refresh</i>
-                                </a>
-                                <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Edit">
-                                    <i class="material-icons text-lg">edit</i>
-                                </button>
-                            </div>
-                            <h5 class="font-weight-normal mt-3">
-                                <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                            </h5>
-                            <p class="mb-0">
-                                The place is close to Barceloneta Beach and bus stop just 2 min by walk and near
-                                to "Naviglio" where you can enjoy the main night life in Barcelona.
-                            </p>
-                        </div>
-                        <hr class="dark horizontal my-0">
-                        <div class="card-footer d-flex">
-                            <button class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
-                                <i class="far fa-arrow-right"></i>
-                            </button>
-                            <!--<p class="font-weight-normal my-auto">$899/night</p>
-                            <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                            <p class="text-sm my-auto"> Barcelona, Spain</p>-->
-                        </div>
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/hero-card-01.png" alt="img-blur-shadow"
+                                                    class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/hero-card-01.png');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/hero-card-02.png" alt="img-blur-shadow"
+                                                    class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/hero-card-02.png');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/hero-card-03.png" alt="img-blur-shadow"
+                                                    class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/hero-card-03.png');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/hero-crecim.jpg" alt="img-blur-shadow"
+                                                    class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/hero-crecim.jpg');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/hero-003.jpg" alt="img-blur-shadow"
+                                                    class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/hero-003.jpg');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="glide__container">
+                                    <div class="card h-100 mt-4">
+                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                            <a class="d-block blur-shadow-image">
+                                                <img src="./assets/img/hero/theaching-teachers-02.jpg"
+                                                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                                            </a>
+                                            <div class="colored-shadow"
+                                                style="background-image: url('./assets/img/hero/theaching-teachers-02.jpg');">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4 pt-4">
+                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
+                                            <p class="mt-2">
+                                                The place is close to Barceloneta Beach and bus stop just 2 min by
+                                                walk and near
+                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
+                                            </p>
+                                        </div>
+                                        <hr class="dark horizontal my-0">
+                                        <div class="card-footer d-flex">
+                                            <button
+                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i class="far fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <!--</div>-->
+        </section>
 
-                <div class="col-12 col-md-6 col-lg-4 mb-7">
-                    <div class="card h-100 border-2 shadow-02" data-animation="true">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                            <a class="d-block blur-shadow-image">
-                                <img src="./assets/img/hero/hero-card-02.png" alt="img-blur-shadow"
-                                    class="img-fluid shadow border-radius-lg">
-                            </a>
-                            <div class="colored-shadow"
-                                style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="d-flex mt-n6 mx-auto">
-                                <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Refresh">
-                                    <i class="material-icons text-lg">refresh</i>
-                                </a>
-                                <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Edit">
-                                    <i class="material-icons text-lg">edit</i>
-                                </button>
-                            </div>
-                            <h5 class="font-weight-normal mt-3">
-                                <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                            </h5>
-                            <p class="mb-0">
-                                The place is close to Barceloneta Beach and bus stop just 2 min by walk and near
-                                to "Naviglio" where you can enjoy the main night life in Barcelona.
-                            </p>
-                        </div>
-                        <hr class="dark horizontal my-0">
-                        <div class="card-footer d-flex">
-                            <button class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
-                                <i class="far fa-arrow-right"></i>
-                            </button>
-                            <!--<p class="font-weight-normal my-auto">$899/night</p>
-                            <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                            <p class="text-sm my-auto"> Barcelona, Spain</p>-->
-                        </div>
+    </div>
+
+    <!--<div>
+        <img src="./assets/img/sec-03.png" class="w-100" alt="">
+    </div>-->
+
+    <section class="container">
+        <div class="row align-content-center align-items-center">
+            <div class="col-12 col-lg-4 border border-1 border-black">
+                <div class="text-sections">
+                    <div id="text1" class="text-muted p-6">
+                        <h5>See</h5>
+                        <p>Our courses engage you through stories, expertise, and humor. Each lesson has a series of 3-5
+                            minute videos that explain the why, what, and how of a specific topic. Plus we bring
+                            everything to life through case studies from around the globe.</p>
+                    </div>
+                    <div id="text3" class="text-muted p-6">
+                        <h5>Reflect</h5>
+                        <p>
+                            Our learning experiences have a variety of reflective activities to help you make the
+                            connections to your specific work challenges. Reflection is one of the most effective ways
+                            to deepen your professional impact.
+                        </p>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mb-7">
-                    <div class="card h-100 border-2 shadow-02" data-animation="true">
-                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                            <a class="d-block blur-shadow-image">
-                                <img src="./assets/img/hero/hero-card-03.png" alt="img-blur-shadow"
-                                    class="img-fluid shadow border-radius-lg">
-                            </a>
-                            <div class="colored-shadow"
-                                style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                            </div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="d-flex mt-n6 mx-auto">
-                                <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Refresh">
-                                    <i class="material-icons text-lg">refresh</i>
-                                </a>
-                                <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Edit">
-                                    <i class="material-icons text-lg">edit</i>
-                                </button>
-                            </div>
-                            <h5 class="font-weight-normal mt-3">
-                                <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                            </h5>
-                            <p class="mb-0">
-                                The place is close to Barceloneta Beach and bus stop just 2 min by walk and near
-                                to "Naviglio" where you can enjoy the main night life in Barcelona.
-                            </p>
-                        </div>
-                        <hr class="dark horizontal my-0">
-                        <div class="card-footer d-flex">
-                            <button class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
-                                <i class="far fa-arrow-right"></i>
-                            </button>
-                            <!--<p class="font-weight-normal my-auto">$899/night</p>
-                            <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                            <p class="text-sm my-auto"> Barcelona, Spain</p>-->
-                        </div>
+            </div>
+            <div class="col-12 col-lg-3 border border-1 border-black">
+                <div class="circle-container align-content-center align-items-center">
+                    <div class="circle">
+                        <div class="quadrant" id="quadrant1" data-target="text1"></div>
+                        <div class="quadrant" id="quadrant2" data-target="text2"></div>
+                        <div class="quadrant" id="quadrant3" data-target="text3"></div>
+                        <div class="quadrant" id="quadrant4" data-target="text4"></div>
+                    </div>
+                    <div class="inner-circle"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 border border-1 border-black">
+                <div class="text-sections">
+                    <div id="text2" class="text-muted p-6">
+                        <h5>Try</h5>
+                        <p>
+                            In order to develop new skills, you need to try them out through repeated practice and
+                            exposure to new contexts. Our courses provide opportunities to try out new behaviors online
+                            and through real-world projects.
+                        </p>
+                    </div>
+                    <div id="text4" class="text-muted p-6">
+                        <h5>Share</h5>
+                        <p>
+                            Knowledge is constructed through interaction with others—which is the foundation of our
+                            cohort experience. It’s through sharing and discussing with qualified teaching leads and a
+                            global peer network that you build greater understanding.
+                        </p>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-    
-    <div>
-        <img src="./assets/img/sec-03.png" class="w-100" alt="">
-    </div>
+    </section>
 
+    <!-- INNOVACION EMPRESARIAL -->
     <div class="main-bg-color-grey">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
@@ -253,98 +382,109 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4 text-start text-white">
-                        <p class="mb-0">Detalle 0001</p>
-                        <h5 class="text-white mb-2">Lorem ipsum dolor sit amet.</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea veniam suscipit sapiente
-                            incidunt provident accusamus, et sint porro eius, natus quae. Fuga, eos. Officiis numquam
-                            sed
-                            perferendis dicta iure.</p>
-                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
-                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
-                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
-                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
-                        <i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.<br>
-                        <button class="btn main-bg-color-warning btn-warning btn-rounded-20p mt-4">Acction 1</button>
+                        <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
+                            <p class="mb-0">Detalle 0001</p>
+                            <h4 class="text-white mb-2">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea veniam suscipit
+                                sapiente
+                                incidunt provident accusamus, et sint porro eius, natus quae. Fuga, eos.
+                                sed
+                                perferendis dicta iure.</p>
+                            <p><i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.</p>
+                            <p><i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.</p>
+                            <p><i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.</p>
+                            <p><i class="fas fa-edit text-color-warning"></i> Lorem ipsum dolor sit.</p>
+                            <p><button class="btn main-bg-color-warning btn-warning btn-rounded-20p mt-4">Acction
+                                    1</button></p>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-8">
                         <div class="row text-start mb-5">
 
-                            <div class="col-12 col-lg-6 mb-4">
-                                <div class="card">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-5 position-relative">
+                                <div class="card levitate-on-hover p-4"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Olivia Harper</h4>
                                         <hr class="bg-warning w-100">
                                         <p>@oliviaharper</p>
                                         <p class="mt-2">
-                                            The connections you make at Web Summit are unparalleled, we met users all
-                                            over
-                                            the world.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim
+                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem aliquam
+                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate nesciunt
+                                            ad sequi amet! Accusantium, saepe molestiae.
                                         </p>
                                     </div>
                                     <div class="card-footer pt-2">
                                         <div class="mx-auto">
-                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
-                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
+                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-5">
+                                <div class="card levitate-on-hover p-4"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
+                                    <div class="card-body pb-0">
+                                        <h4 class="mb-0">Olivia Harper</h4>
+                                        <hr class="bg-warning w-100">
+                                        <p>@oliviaharper</p>
+                                        <p class="mt-2">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim
+                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem aliquam
+                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate nesciunt
+                                            ad sequi amet! Accusantium, saepe molestiae.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
+                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 mb-4">
-                                <div class="card">
+                                <div class="card levitate-on-hover p-4"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Olivia Harper</h4>
                                         <hr class="bg-warning w-100">
                                         <p>@oliviaharper</p>
                                         <p class="mt-2">
-                                            The connections you make at Web Summit are unparalleled, we met users all
-                                            over
-                                            the world.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim
+                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem aliquam
+                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate nesciunt
+                                            ad sequi amet! Accusantium, saepe molestiae.
                                         </p>
                                     </div>
                                     <div class="card-footer pt-2">
                                         <div class="mx-auto">
-                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
-                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
+                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                                <div class="card">
+                            <div class="col-12 col-lg-6 mb-4">
+                                <div class="card levitate-on-hover p-4"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Olivia Harper</h4>
                                         <hr class="bg-warning w-100">
                                         <p>@oliviaharper</p>
                                         <p class="mt-2">
-                                            The connections you make at Web Summit are unparalleled, we met users all
-                                            over
-                                            the world.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem enim
+                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem aliquam
+                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate nesciunt
+                                            ad sequi amet! Accusantium, saepe molestiae.
                                         </p>
                                     </div>
                                     <div class="card-footer pt-2">
                                         <div class="mx-auto">
-                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
-                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-                                <div class="card">
-                                    <div class="card-body pb-0">
-                                        <h4 class="mb-0">Olivia Harper</h4>
-                                        <hr class="bg-warning w-100">
-                                        <p>@oliviaharper</p>
-                                        <p class="mt-2">
-                                            The connections you make at Web Summit are unparalleled, we met users all
-                                            over
-                                            the world.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
-                                            <p><b>Lorem, ipsum.</b> Lorem, ipsum dolor.</p>
+                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
+                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -357,6 +497,7 @@
         </div>
     </div>
 
+    <!-- TIPOS DE CERTIFICADOS -->
     <div class="main-bg-color-white">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
@@ -463,26 +604,31 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
+    <!-- SECCION EMPRESARIAL -->
     <div class="main-bg-color-grey">
         <div class="container pt-5 pb-2">
             <div class="container">
-                <div class="row my-5">
+                <div class="row my-5 align-content-center align-items-center">
                     <div class="col-12 col-lg-6 p-5">
                         <div class="card">
-                            <img src="./assets/img/valores/integridad.jpeg" class="rounded rounded-15" alt="">
+                            <img src="./assets/img/hero/hero-001.jpg" class="h-75 rounded rounded-15" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 text-color-white p-4">
+                    <div class="col-12 col-lg-5 text-color-white p-4">
                         <p class="mb-0">Lorem, ipsum dolor.</p>
-                        <h2 class="text-color-white mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, perferendis!</h2>
-                        <h6 class="text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique ducimus dicta sed laudantium! Aperiam ducimus culpa doloribus veniam tempore blanditiis facilis repellendus magni. Harum quas aut aspernatur? Quaerat nostrum, eligendi tempora sequi numquam necessitatibus explicabo in, ex cum consectetur voluptate atque earum. Ex, sunt? Aut, quos impedit. Dignissimos, neque!</h6>
+                        <h1 class="text-color-white mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Voluptate, perferendis!</h1>
+                        <h5 class="text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            similique ducimus dicta sed laudantium! Aperiam ducimus culpa doloribus veniam tempore
+                            blanditiis facilis repellendus magni. Harum quas aut aspernatur? Quaerat nostrum, eligendi
+                            tempora sequi numquam necessitatibus explicabo in, ex cum consectetur voluptate atque earum.
+                            Ex, sunt? Aut, quos impedit. Dignissimos, neque!</h5>
                         <p>
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i
+                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
                         </p>
                     </div>
                 </div>
@@ -490,28 +636,38 @@
         </div>
     </div>
 
+    <!-- PREGUNTAS FRECUENTES -->
     <div class="main-bg-color-white">
         <div class="container pt-5 pb-2">
             <div class="container">
                 <div class="row my-5">
                     <div class="col-12 col-lg-4 text-center">
                         <h3>Preguntas Frecuentes</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus
+                            corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
+                            repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
                         <p>
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i
+                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
                         </p>
                     </div>
                     <div class="col-12 col-lg-8 mx-auto">
-                    <div class="accordion" id="accordionRental">
+                        <div class="accordion" id="accordionRental">
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <button
+                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
                                         ¿Cómo hago un pedido?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
                                     </button>
                                 </h5>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionRental" style="">
                                     <div class="accordion-body text-sm opacity-8">
                                         No siempre estamos en la posición en la que queremos estar. Estamos creciendo
                                         constantemente. Estamos constantemente cometiendo errores. Estamos
@@ -523,13 +679,19 @@
                             </div>
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button
+                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
                                         ¿Cómo puedo hacer el pago?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
                                     </button>
                                 </h5>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
                                         Realmente importa y luego realmente no importa. Lo que importa son las personas
                                         que se despiertan por ello. Y la gente que se ofende por ello, no importa.
@@ -546,13 +708,19 @@
                             </div>
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button
+                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                         ¿Cuánto tiempo se tarda en recibir el pedido?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
                                     </button>
                                 </h5>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
                                         Ahora es el momento de que esté bien para ser genial. La gente en este mundo
                                         rechaza a la gente por ser genial. Por ser un color brillante. Por destacar.
@@ -568,13 +736,19 @@
                             </div>
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <button
+                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         ¿Puedo revender los productos?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
                                     </button>
                                 </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionRental">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
                                         Siempre sentí que podía hacer cualquier cosa. ¡Eso es lo principal por lo que la
                                         gente está controlada! Pensamientos: ¡su percepción de ellos mismos! Se
@@ -591,13 +765,19 @@
                             </div>
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingFifth">
-                                    <button class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                                    <button
+                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
+                                        aria-expanded="false" aria-controls="collapseFifth">
                                         ¿Dónde encuentro los detalles del envío?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0" aria-hidden="true"></i>
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                            aria-hidden="true"></i>
                                     </button>
                                 </h5>
-                                <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
+                                <div id="collapseFifth" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
                                         No hay nada que realmente quisiera hacer en la vida en lo que no fuera capaz de
                                         ser bueno. Esa es mi habilidad. Realmente no tengo talento específico en nada,
