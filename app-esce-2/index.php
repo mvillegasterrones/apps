@@ -319,22 +319,17 @@
         <div class="col-12 col-lg-11 mx-auto">
 
             <div class="row align-content-center align-items-center mx-auto">
+                <h3 class="text-center text-xolor-grey">Experiencia ESCE</h3>
                 <div class="col-12 col-lg-4">
                     <div class="text-sections">
                         <div id="text1" class="text-muted p-6">
-                            <h5>See</h5>
-                            <p>Our courses engage you through stories, expertise, and humor. Each lesson has a series of
-                                3-5
-                                minute videos that explain the why, what, and how of a specific topic. Plus we bring
-                                everything to life through case studies from around the globe.</p>
+                            <h5>Calirad</h5>
+                            <p>Identifica y entiende problemas organizativos complejos</p>
                         </div>
                         <div id="text3" class="text-muted p-6">
-                            <h5>Reflect</h5>
+                            <h5>Colaboración</h5>
                             <p>
-                                Our learning experiences have a variety of reflective activities to help you make the
-                                connections to your specific work challenges. Reflection is one of the most effective
-                                ways
-                                to deepen your professional impact.
+                                Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
                             </p>
                         </div>
                     </div>
@@ -343,27 +338,28 @@
                     <div class="circle-container m-0 p-0 align-content-center">
                         <div class="circle mx-auto align-content-center align-items-center">
                             <div class="quadrant" id="quadrant1" data-target="text1">
-                                <div class="text-white text-center p-5">
-                                    <i class="material-icons text-6xl mb-0">subscriptions</i>
-                                    <h6 class="text-color-white">See</h6>
+                                <div class="text-white text-center p-4">
+                                    <i class="material-icons text-6xl mt-4 mb-0 pb-0">new_releases</i>
+                                    <p class="text-color-white mt-0 mt-0" style="font-size: 11px !important;">Claridad
+                                    </p>
                                 </div>
                             </div>
                             <div class="quadrant" id="quadrant2" data-target="text2">
-                                <div class="text-white text-center p-5">
-                                    <i class="material-icons text-6xl mb-0">library_books</i>
-                                    <h6 class="text-color-white">Try</h6>
+                                <div class="text-white text-center p-4">
+                                    <i class="material-icons text-6xl mt-4 mb-0 pb-0">emoji_objects</i>
+                                    <h6 class="text-color-white" style="font-size: 11px !important;">Creatividad</h6>
                                 </div>
                             </div>
                             <div class="quadrant" id="quadrant3" data-target="text3">
                                 <div class="text-white text-center p-5 pt-4">
-                                    <h6 class="text-color-white mb-0">Reflect</h6>
-                                    <i class="material-icons text-6xl mb-0">psychology</i>
+                                    <i class="material-icons text-6xl mb-0">forum</i>
+                                    <h6 class="text-color-white" style="font-size: 11px !important;">Colaboración</h6>
                                 </div>
                             </div>
                             <div class="quadrant" id="quadrant4" data-target="text4">
                                 <div class="text-white text-center p-5 pt-4">
-                                    <h6 class="text-color-white mb-0">Share</h6>
-                                    <i class="material-icons text-6xl mb-0">forum</i>
+                                    <i class="material-icons text-6xl mb-0">psychology</i>
+                                    <h6 class="text-color-white" style="font-size: 11px !important;">Relexión</h6>
                                 </div>
                             </div>
                         </div>
@@ -373,21 +369,15 @@
                 <div class="col-12 col-lg-4">
                     <div class="text-sections">
                         <div id="text2" class="text-muted p-6">
-                            <h5>Try</h5>
+                            <h5>Creatividad</h5>
                             <p>
-                                In order to develop new skills, you need to try them out through repeated practice and
-                                exposure to new contexts. Our courses provide opportunities to try out new behaviors
-                                online
-                                and through real-world projects.
+                                Imagina diversas soluciones efectivas
                             </p>
                         </div>
                         <div id="text4" class="text-muted p-6">
-                            <h5>Share</h5>
+                            <h5>Reflexión</h5>
                             <p>
-                                Knowledge is constructed through interaction with others—which is the foundation of our
-                                cohort experience. It’s through sharing and discussing with qualified teaching leads and
-                                a
-                                global peer network that you build greater understanding.
+                                Conecta lo aprendido con tus desafíos profesionales
                             </p>
                         </div>
                     </div>
@@ -422,16 +412,36 @@
                                 crecer con el desarrollo de productos innovadores y resolver problemas complejos. Con
                                 nosotros podrás
                             </p>
-                            <p><i class="fas fa-edit text-color-warning"></i> Definir con precisión los desafíos de tu
-                                empresa.</p>
-                            <p><i class="fas fa-edit text-color-warning"></i> Aprovechar el conocimiento interno y
-                                combinarlo con ideas frescas para crecer o resolver problemas.</p>
-                            <p><i class="fas fa-edit text-color-warning"></i> Desarrollar productos y servicios a bajo
-                                costo.</p>
-                            <p><i class="fas fa-edit text-color-warning"></i> Comunicar de manera clara y convincente el
-                                valor de tus nuevas propuestas.</p>
-                            <p><button class="btn main-bg-color-warning btn-warning btn-rounded-20p mt-4">Acction
-                                    1</button></p>
+
+                            <div class="p-3 d-flex px-0 py-1">
+                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <div class="ps-3">
+                                    <span class="text-sm">Definir con precisión los desafíos de tu empresa.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex px-0 py-1">
+                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <div class="ps-3">
+                                    <span class="text-sm">Aprovechar el conocimiento interno y
+                                    combinarlo con ideas frescas para crecer o resolver problemas.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex px-0 py-1">
+                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <div class="ps-3">
+                                    <span class="text-sm">Desarrollar productos y servicios a bajo
+                                    costo.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex px-0 py-1">
+                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <div class="ps-3">
+                                    <span class="text-sm">Comunicar de manera clara y convincente el
+                                    valor de tus nuevas propuestas</span>
+                                </div>
+                            </div>
+                            <!--<p><button class="btn main-bg-color-warning btn-warning btn-rounded-20p mt-4">Acction
+                                    1</button></p>-->
                         </div>
                     </div>
                     <div class="col-12 col-lg-8">
@@ -558,7 +568,6 @@
                                                 <span class="text-sm">
                                                     <b>Deducción de Impuestos:</b> Acceso a incentivos fiscales para
                                                     empresas que invierten en I+D.
-
                                                 </span>
                                             </div>
                                         </div>
@@ -753,7 +762,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
-                        <p class="mb-0">Lorem, ipsum dolor.</p>
+                        <p class="mb-0">Recursos ESCE</p>
                         <h1 class="text-color-white mb-4">Recursos diseñados para elevar tu juego profesional</h1>
                         <h5 class="text-color-white">Recursos pensados para ayudarte a aplicar conocimiento de gestión
                             en tu vida profesional y mejorar tu perfil de empleabilidad. Aquí encontrarás recursos sobre
@@ -803,7 +812,7 @@
                                     </button>
                                 </h5>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionRental" style="">
+                                    data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
                                         Los cursos y talleres se ofrecen en formatos sincrónicos y no importa en qué
                                         zona horaria te encuentres porque todos son ofrecidos a nivel nacional y
@@ -836,7 +845,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="accordion-item mb-3">
                                 <h5 class="accordion-header" id="headingThree">
                                     <button
