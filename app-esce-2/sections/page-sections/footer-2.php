@@ -4,7 +4,7 @@
             <div class="col-md-3 mb-4 ms-auto">
                 <div>
                     <a href="javascript:;">
-                        <img src="<?= $logo ?>" class="mb-3 w-50" alt="main_logo">
+                        <img src="<?= $ico_f ?>" class="mb-3 w-50" alt="main_logo">
                     </a>
                     <h6 class="font-weight-bolder mb-4 text-color-white">Escuela de Ciencias Empresariales y Gestión
                         Pública</h6>
@@ -45,19 +45,22 @@
                     <ul class="flex-column ms-n3 nav text-white">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?= $ruta_home ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?= $ruta_nosotros ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Nosotros
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?= $ruta_servicios ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Servicios
                             </a>
                         </li>
@@ -80,19 +83,22 @@
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?= $ruta_teaching_the_teachers ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Theaching the teachers
                             </a>
                         </li>
                         <li class="nav-item text-white">
                             <a class="nav-link text-white" href="<?= $ruta_capacitacion_continua ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Capacitaciones
                             </a>
                         </li>
                         <li class="nav-item text-white">
                             <a class="nav-link text-white" href="<?= $ruta_re_skalling ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 RE-SKALLING
                             </a>
                         </li>
@@ -104,15 +110,17 @@
                     <h6 class="text-sm text-white">Ayuda y Soporte</h6>
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="https://www.creative-tim.com/contact-us" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                            <a class="nav-link text-white" href="#!" target="">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Aprendizaje
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="https://www.creative-tim.com/knowledge-center"
+                            <a class="nav-link text-white" href="#!"
                                 target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Contacto
                             </a>
                         </li>
@@ -136,7 +144,8 @@
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?= $ruta_blog ?>" target="">
-                                <img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">
+                                <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
+                                <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
                                 Blog
                             </a>
                         </li>

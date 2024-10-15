@@ -17,7 +17,7 @@
     <div class="container position-sticky z-index-sticky top-0 mb-10">
         <div class="row">
             <div class="col-12">
-                <?php include './sections/page-sections/nav-bar-2.php' ?>
+                <?php include './sections/page-sections/nav-bar-3.php' ?>
             </div>
         </div>
     </div>
@@ -188,14 +188,15 @@
                 </div>
 
                 <div class="row mb-7">
+
                     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                         <div class="card text-start text-color-dark">
                             <div class="card-body pb-0">
                                 <h4 class="mb-2">Lorem ipsum dolor sit amet.</h4>
                                 <div class="pb-2 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -205,8 +206,8 @@
                                 </div>
                                 <div class="pb-2 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -216,8 +217,8 @@
                                 </div>
                                 <div class="p-0 mb-3 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -236,8 +237,8 @@
                                 <h4 class="mb-2">Lorem ipsum dolor sit amet.</h4>
                                 <div class="pb-2 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -247,8 +248,8 @@
                                 </div>
                                 <div class="pb-2 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -258,8 +259,8 @@
                                 </div>
                                 <div class="p-0 mb-3 info-horizontal d-flex align-items-center">
                                     <div
-                                        class="icon icon-md icon-shape bg-gradient-warning shadow-primary text-center border-radius-xl">
-                                        <i class="material-icons opacity-10">check</i>
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
                                         <p class="mb-0">It becomes harder for us to give others a hand. We get our
@@ -271,6 +272,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -453,5 +455,4 @@
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 </body>
-
 </html>

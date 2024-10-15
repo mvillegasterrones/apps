@@ -323,7 +323,7 @@
                 <div class="col-12 col-lg-4">
                     <div class="text-sections">
                         <div id="text1" class="text-muted p-6">
-                            <h5>Calirad</h5>
+                            <h5>Claridad</h5>
                             <p>Identifica y entiende problemas organizativos complejos</p>
                         </div>
                         <div id="text3" class="text-muted p-6">
@@ -405,7 +405,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-4 text-start text-white">
                         <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
-                            <p class="mb-0">Nuestos servicios</p>
+                            <!--<p class="mb-0">Nuestos servicios</p>-->
                             <h4 class="text-white mb-2">Servicios de Innovación Empresarial.</h4>
                             <p>
                                 Utilizamos metodologías ágiles para ayudarte a descubrir nuevo valor en lo que haces,
@@ -414,27 +414,27 @@
                             </p>
 
                             <div class="p-3 d-flex px-0 py-1">
-                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <i class="material-icons text-color-warning font-weight-bold">done</i>
                                 <div class="ps-3">
                                     <span class="text-sm">Definir con precisión los desafíos de tu empresa.</span>
                                 </div>
                             </div>
                             <div class="p-3 d-flex px-0 py-1">
-                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <i class="material-icons text-color-warning font-weight-bold">done</i>
                                 <div class="ps-3">
                                     <span class="text-sm">Aprovechar el conocimiento interno y
                                     combinarlo con ideas frescas para crecer o resolver problemas.</span>
                                 </div>
                             </div>
                             <div class="p-3 d-flex px-0 py-1">
-                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <i class="material-icons text-color-warning font-weight-bold">done</i>
                                 <div class="ps-3">
                                     <span class="text-sm">Desarrollar productos y servicios a bajo
                                     costo.</span>
                                 </div>
                             </div>
                             <div class="p-3 d-flex px-0 py-1">
-                                <i class="material-icons text-primary font-weight-bold">done</i>
+                                <i class="material-icons text-color-warning font-weight-bold">done</i>
                                 <div class="ps-3">
                                     <span class="text-sm">Comunicar de manera clara y convincente el
                                     valor de tus nuevas propuestas</span>
@@ -785,9 +785,9 @@
         <div class="container pt-5 pb-2">
             <div class="container">
                 <div class="row my-5">
-                    <div class="col-12 col-lg-4 text-center">
+                    <div class="col-12 col-lg-4 text-center align-content-center">
                         <h3>Preguntas Frecuentes</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
                             repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
                         <!--<p>
@@ -976,7 +976,7 @@
 
 </body>
 <script>
-    const navbar = document.getElementById("main-navbar")
+    /*const navbar = document.getElementById("main-navbar")
 
     window.addEventListener('scroll', function () {
         if (window.pageYOffset > 0) {
@@ -990,7 +990,7 @@
             navbar.classList.add("navbar-transparent")
             navbar.classList.add("text-white")
         }
-    })
+    })*/
 </script>
 
 </html>

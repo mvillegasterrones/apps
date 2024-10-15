@@ -63,8 +63,21 @@
     });
   });
 
+  const navbar = document.getElementById("main-navbar")
 
-
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 0) {
+            navbar.classList.remove("navbar-transparent")
+            navbar.classList.remove("text-white")
+            navbar.classList.add("blur")
+            navbar.classList.add("text-color-grey")
+        } else {
+            navbar.classList.remove("text-color-grey")
+            navbar.classList.remove("blur")
+            navbar.classList.add("navbar-transparent")
+            navbar.classList.add("text-white")
+        }
+    })
 
 </script>
 

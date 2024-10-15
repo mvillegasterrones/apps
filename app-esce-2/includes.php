@@ -23,6 +23,7 @@
 $ico  = './assets/img/esce.png';
 $logo = './assets/img/logos/esce-sb-1.png';
 $wsp  = '932449843';
+$ico_f = './assets/img/logos/esce-white.png';
 
 $social_facebook      = '#';
 $social_instagram     = '#';
