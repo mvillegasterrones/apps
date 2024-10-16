@@ -482,11 +482,19 @@ p.text-dark {
 }
 
 .levitate-on-hover {
-  transition: transform 0.3s ease; /* Transición suave al mover el div */
+  transition: transform 0.3s ease !important;
+  -webkit-transition: transform 0.3s ease !important;
+  -moz-transition: transform 0.3s ease !important;
+  -ms-transition: transform 0.3s ease !important;
+  -o-transition: transform 0.3s ease !important;
 }
 
 .levitate-on-hover:hover {
-  transform: translateY(-10px); /* Mueve el div hacia arriba 10px */
+  transform: translateY(-10px) !important;
+  -webkit-transform: translateY(-10px) !important;
+  -moz-transform: translateY(-10px) !important;
+  -ms-transform: translateY(-10px) !important;
+  -o-transform: translateY(-10px) !important;
 }
 
 .glide__slide .glide__container .card .card-header a {

@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -11,16 +14,19 @@
 
 <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+<!--//* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>-->
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script src="./assets/js/material-kit-pro.min.js?v=3.0.4" type="text/javascript"></script>
-<script>
-</script>
-<!--<script src="./assets/js/plugins/tilt.min.js"></script>-->
 
 <script src="./assets/js/plugins/glide.min.js"></script>
 <script>
+  /*AOS.init({
+    duration: 500,
+    once: false,
+  });*/
+  AOS.init()
+
   if (document.getElementsByClassName('glide')) {
     const glider = new Glide('.gliderrr', {
       autoplay: 1500,
@@ -28,7 +34,7 @@
       perView: 4,
       breakpoints: {
         800: {
-          perView: 1
+          perView: 2
         }
       }
     })
@@ -65,19 +71,35 @@
 
   const navbar = document.getElementById("main-navbar")
 
-    window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 0) {
-            navbar.classList.remove("navbar-transparent")
-            navbar.classList.remove("text-white")
-            navbar.classList.add("blur")
-            navbar.classList.add("text-color-grey")
-        } else {
-            navbar.classList.remove("text-color-grey")
-            navbar.classList.remove("blur")
-            navbar.classList.add("navbar-transparent")
-            navbar.classList.add("text-white")
-        }
-    })
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 0) {
+      navbar.classList.remove("navbar-transparent")
+      navbar.classList.remove("text-white")
+      navbar.classList.add("blur")
+      navbar.classList.add("text-color-grey")
+    } else {
+      navbar.classList.remove("text-color-grey")
+      navbar.classList.remove("blur")
+      navbar.classList.add("navbar-transparent")
+      navbar.classList.add("text-white")
+    }
+  })
+
+  /*$(document).on('click', '.btn-ripple', function (e) {
+    var $ripple = $('<span class="ripple"></span>');
+    $(this).append($ripple);
+    var x = e.pageX - $(this).offset().left - $ripple.width() / 2;
+    var y = e.pageY - $(this).offset().top - $ripple.height() / 2;
+    $ripple.css({ top: y + 'px', left: x + 'px' }).addClass('ripple-effect');
+  });*/
+
+  /*$('.progress-bar').animate({
+    width: '70%'
+  }, 1000);
+ 
+  $('#myModal').on('show.bs.modal', function () {
+    $(this).find('.modal-content').addClass('animated fadeIn');
+  });*/
 
 </script>
 

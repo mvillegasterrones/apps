@@ -1,4 +1,4 @@
-<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;">
+<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;" data-aos="fade-in" data-aos-duration="1100" data-aos-delay="200">
     <div class="container">
         <div class=" row">
             <div class="col-md-3 mb-4 ms-auto">

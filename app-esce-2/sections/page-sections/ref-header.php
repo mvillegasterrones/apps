@@ -12,10 +12,18 @@
 
 <link rel="stylesheet" href="./assets/css/style.css" />
 
+<link rel="stylesheet" href="./assets/css/animations-me.css" />
+
+<!-- Estilos de AOS -->
+<!--//*<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+<link rel="stylesheet" href="./assets/css/aos.css" />
+<script src="./assets/js/aos.js"></script>
+<script>
+    
+</script>
 <style>
     .async-hide {
         opacity: 0 !important
     }
 </style>
-
-<script defer data-site="demos.creative-tim.com" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+<!--<script defer data-site="demos.creative-tim.com" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>-->

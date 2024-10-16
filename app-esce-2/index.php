@@ -17,26 +17,27 @@
 <body class="case-study bg-gray-200">
     <div class="container position-sticky z-index-sticky top-0 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
             </div>
         </div>
     </div>
-    <header class=""
-        style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;">
+    <header class="fadeIn1"
+        style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;"
+        data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
                 <div class="row p-3">
                     <div
                         class="col-lg-8 col-md-12 d-flex justify-content-center text-md-start text-center flex-column mt-sm-0 mt-7">
-                        <h1 class="text-white">Escuela de <br>
+                        <h1 class="text-white fadeIn2 fadeInBottom">Escuela de <br>
                             Ciencias Empresariales y<br>
                             <b class="bg-gradient-warning text-white p-1 rounded rounded-15">Gestión Pública</b>
                         </h1>
-                        <div class="buttons">
+                        <div class="buttons fadeIn3 fadeInBottom">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-lg-6">
                                     <h5 class="text-white">
                                         Domina la gestión de organizaciones con cursos virtuales para reinventar tu
                                         carrera o transformar tu negocio
@@ -58,11 +59,11 @@
     </header>
 
     <!-- //? NEWSLETTER -->
-    <div class="main-bg-color-grey mx-md-2 mt-n7 mb-7">
-        <div class="container">
+    <div class="main-bg-color-grey mx-md-2 mt-n7 mb-7 fadeIn4 fadeInBottom transition-card">
+        <div class="container fade-in-up">
             <div class="row align-content-center">
-                <div class="col-12 col-lg-6 p-5">
-                    <h3 class="text-white">ESCE NEWSLETTER</h3>
+                <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
+                    <h3 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h3>
                     <p class="text-white">
                         suscríbete para tener acceso a nuestro boletín mensual, dónde encontrarás información sobre
                         herramientas aplicables de gestión, economía y el desarrollo de nuevos negocios.
@@ -94,15 +95,15 @@
 
     <!-- //? TU PROXIMA HABILIDAD -->
     <div class="container text-center">
-        <h2>Escoge <b class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad</b></h2>
-        <p class="text_info mb-4">
+        <p class="text_info mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
             ESCE te prepara para resolver problemas concretos, potenciando tu creatividad con herramientas de gestión
             aplicables, una mentalidad de crecimiento y la resiliencia necesaria para enfrentar retos en contextos de
             constante cambio.
         </p>
 
-        <section>
+        <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
             <!--<div class="container">-->
             <div class="row">
                 <div class="gliderrr">
@@ -111,7 +112,7 @@
 
                             <li class="glide__slide h-100">
                                 <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
+                                    <div class="card transition-card transition-card-hover h-100 mt-4">
                                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                             <a class="d-block blur-shadow-image">
                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOxogo8eFV1Cz5w9PEFyLeXjpQq5djHz9HCQ&s"
@@ -143,7 +144,7 @@
 
                             <li class="glide__slide h-100">
                                 <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
+                                    <div class="card transition-card transition-card-hover h-100 mt-4">
                                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                             <a class="d-block blur-shadow-image">
                                                 <img src="./assets/img/hero/hero-card-02.png" alt="img-blur-shadow"
@@ -175,7 +176,7 @@
 
                             <li class="glide__slide h-100">
                                 <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
+                                    <div class="card transition-card transition-card-hover h-100 mt-4">
                                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                             <a class="d-block blur-shadow-image">
                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36Srf1-cRPxpvrQ-cMiy6K_rYBbplSIa2JA&s"
@@ -207,7 +208,7 @@
 
                             <li class="glide__slide h-100">
                                 <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
+                                    <div class="card transition-card transition-card-hover h-100 mt-4">
                                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                             <a class="d-block blur-shadow-image">
                                                 <img src="./assets/img/hero/hero-crecim.jpg" alt="img-blur-shadow"
@@ -239,7 +240,7 @@
 
                             <li class="glide__slide h-100">
                                 <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
+                                    <div class="card transition-card transition-card-hover h-100 mt-4">
                                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                             <a class="d-block blur-shadow-image">
                                                 <img src="./assets/img/hero/hero-003.jpg" alt="img-blur-shadow"
@@ -269,38 +270,6 @@
                                 </div>
                             </li>
 
-                            <!--<li class="glide__slide h-100">
-                                <div class="glide__container h-100">
-                                    <div class="card h-100 mt-4">
-                                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                            <a class="d-block blur-shadow-image">
-                                                <img src="./assets/img/hero/theaching-teachers-02.jpg"
-                                                    alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-                                            </a>
-                                            <div class="colored-shadow"
-                                                style="background-image: url('./assets/img/hero/theaching-teachers-02.jpg');">
-                                            </div>
-                                        </div>
-                                        <div class="card-body px-4 pt-4">
-                                            <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                                            <p class="mt-2">
-                                                The place is close to Barceloneta Beach and bus stop just 2 min by
-                                                walk and near
-                                                to "Naviglio" where you can enjoy the main night life in Barcelona.
-                                            </p>
-                                        </div>
-                                        <hr class="dark horizontal my-0">
-                                        <div class="card-footer d-flex">
-                                            <button
-                                                class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                                Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <i class="far fa-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>-->
-
                         </ul>
                     </div>
                 </div>
@@ -319,8 +288,8 @@
         <div class="col-12 col-lg-11 mx-auto">
 
             <div class="row align-content-center align-items-center mx-auto">
-                <h3 class="text-center text-xolor-grey">Experiencia ESCE</h3>
-                <div class="col-12 col-lg-4">
+                <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Experiencia ESCE</h3>
+                <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
                     <div class="text-sections">
                         <div id="text1" class="text-muted p-6">
                             <h5>Claridad</h5>
@@ -334,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 align-content-center align-items-center">
+                <div class="col-12 col-lg-3 align-content-center align-items-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                     <div class="circle-container m-0 p-0 align-content-center">
                         <div class="circle mx-auto align-content-center align-items-center">
                             <div class="quadrant" id="quadrant1" data-target="text1">
@@ -366,7 +335,7 @@
                         <div class="inner-circle"></div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
                     <div class="text-sections">
                         <div id="text2" class="text-muted p-6">
                             <h5>Creatividad</h5>
@@ -388,13 +357,13 @@
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
-    <div class="main-bg-color-grey">
+    <div class="main-bg-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2 class="text-color-white p-3">Innovación <b
+                    <h2 class="text-color-white p-3" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Innovación <b
                             class="bg-gradient-warning p-1 rounded rounded-15">Empresarial</b></h2>
-                    <p class="text-color-white">
+                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         Colabora con nosotros para superar los retos que detienen el crecimiento de tu empresa. Te
                         guiamos en la solución de problemas y en la creación de productos y servicios que impulsen tu
                         negocio hacia el futuro.
@@ -403,7 +372,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-4 text-start text-white">
+                    <div class="col-12 col-lg-4 text-start text-white" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="400">
                         <div class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style="top: 100px">
                             <!--<p class="mb-0">Nuestos servicios</p>-->
                             <h4 class="text-white mb-2">Servicios de Innovación Empresarial.</h4>
@@ -449,7 +418,8 @@
 
                             <div class="col-12 col-lg-6 mb-4 mb-lg-5 position-relative">
                                 <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="500">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Innovation Bottom-Up</h4>
                                         <hr class="bg-warning w-100">
@@ -511,7 +481,8 @@
 
                             <div class="col-12 col-lg-6 mb-4 mb-lg-5">
                                 <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Innovation de Productos o Servicios</h4>
                                         <hr class="bg-warning w-100">
@@ -583,7 +554,8 @@
 
                             <div class="col-12 col-lg-6 mb-4">
                                 <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="700">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Olivia Harper</h4>
                                         <hr class="bg-warning w-100">
@@ -606,7 +578,8 @@
 
                             <div class="col-12 col-lg-6 mb-4">
                                 <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;">
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1700" data-aos-delay="800">
                                     <div class="card-body pb-0">
                                         <h4 class="mb-0">Olivia Harper</h4>
                                         <hr class="bg-warning w-100">
@@ -639,9 +612,9 @@
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto mb-4 text-center">
-                    <h2 class="text-color-grey p-3">Tipos de <b
+                    <h2 class="text-color-grey p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Tipos de <b
                             class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados</b></h2>
-                    <p class="text-color-grey">
+                    <p class="text-color-grey" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         Al completar nuestros cursos o talleres, obtendrás certificaciones que avalan tu participación
                         en procesos diseñados para el desarrollo de competencias. Estos certificados tienen como
                         objetivo ampliar tu conocimiento en gestión de organizaciones y mejorar tus oportunidades
@@ -653,7 +626,7 @@
             <div class="container pb-5 position-relative z-index-3 text-color-grey">
                 <div class="row">
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100">
+                        <div class="card h-100 card-rotate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -666,7 +639,7 @@
                                 </div>
                             </div>
                             <div class="card-body text-center pb-0">
-                                <h4 class="mb-0">Crtificado de Asistencia</h4>
+                                <h4 class="mb-0">Certificado de Asistencia</h4>
                                 <p>por @esce</p>
                                 <p class="mt-2">
                                     Se otorga a quienes participan en nuestros cursos cortos, certificando únicamente la
@@ -683,7 +656,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100">
+                        <div class="card h-100" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -714,7 +687,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100">
+                        <div class="card h-100" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -752,25 +725,25 @@
     </div>
 
     <!-- //? SECCION RECURSOS -->
-    <div class="main-bg-color-grey">
+    <div class="main-bg-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container pt-5 pb-2">
             <div class="container">
                 <div class="row my-5 align-content-center align-items-center">
-                    <div class="col-12 col-lg-6 p-5">
+                    <div class="col-12 col-lg-6 p-5" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                         <div class="card">
                             <img src="./assets/img/hero/hero-001.jpg" class="h-75 rounded rounded-15" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
-                        <p class="mb-0">Recursos ESCE</p>
-                        <h1 class="text-color-white mb-4">Recursos diseñados para elevar tu juego profesional</h1>
-                        <h5 class="text-color-white">Recursos pensados para ayudarte a aplicar conocimiento de gestión
+                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Recursos ESCE</p>
+                        <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Recursos diseñados para elevar tu juego profesional</h1>
+                        <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">Recursos pensados para ayudarte a aplicar conocimiento de gestión
                             en tu vida profesional y mejorar tu perfil de empleabilidad. Aquí encontrarás recursos sobre
                             herramientas de gestión, ideas, casos y más.</h5>
-                        <h5 class="text-color-white mt-4 mb-4">ESCE pone a tu disposición recursos gratuitos creados por
+                        <h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y aplicarlo
                             en tu vida profesional.</h5>
-                        <p>
+                        <p data-aos="fade-down" data-aos-duration="1450" data-aos-delay="550">
                             <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Ver más <i
                                     class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
                         </p>
@@ -786,8 +759,8 @@
             <div class="container">
                 <div class="row my-5">
                     <div class="col-12 col-lg-4 text-center align-content-center">
-                        <h3>Preguntas Frecuentes</h3>
-                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus
+                        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes</h3>
+                        <p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda necessitatibus
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
                             repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
                         <!--<p>
@@ -797,7 +770,7 @@
                     </div>
                     <div class="col-12 col-lg-8 mx-auto">
                         <div class="accordion" id="accordionRental">
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                                 <h5 class="accordion-header" id="headingOne">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -820,7 +793,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
                                 <h5 class="accordion-header" id="headingTwo">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -846,7 +819,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
                                 <h5 class="accordion-header" id="headingThree">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -871,7 +844,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                                 <h5 class="accordion-header" id="headingFour">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -895,7 +868,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="700">
                                 <h5 class="accordion-header" id="headingFifth">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -918,7 +891,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1700" data-aos-delay="800">
                                 <h5 class="accordion-header" id="headingSix">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
@@ -941,7 +914,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3">
+                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="900">
                                 <h5 class="accordion-header" id="headingSeven">
                                     <button
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
