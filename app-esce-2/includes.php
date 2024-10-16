@@ -126,6 +126,11 @@ $ttt_c4_description = 'Este curso está dirigido a docentes universitarios que e
 $tth_c4_price       = '0.00';
 
 
+$img_ia_01 = 'https://www.seguritecnia.es/wp-content/uploads/2022/03/inteligencia-artificial-1200x630.jpg';
+$img_ia_02 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9np_aTi_O8xouX7aiS6D91BMV5KeF6T2ig&s';
+$img_ia_03 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqb6MknFRB5ZT-tTeRn4kHiYib3RHCOAZg9Q&s';
+$img_ia_04 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6zsAqtqvND9zKM8HKxMcVXe2_2LVhXKXQMA&s';
+$img_ia_05 = 'https://i0.wp.com/nuevodiario-assets.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/09/11080359/iStock-1287582736-2-1.jpg?fit=2341%2C1281&quality=100&ssl=1';
 
 
 

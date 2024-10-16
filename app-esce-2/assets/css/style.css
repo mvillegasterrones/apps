@@ -482,22 +482,26 @@ p.text-dark {
 }
 
 .levitate-on-hover {
-  transition: transform 0.3s ease !important;
+  /*transition: transform 0.3s ease !important;
   -webkit-transition: transform 0.3s ease !important;
   -moz-transition: transform 0.3s ease !important;
   -ms-transition: transform 0.3s ease !important;
-  -o-transition: transform 0.3s ease !important;
+  -o-transition: transform 0.3s ease !important;*/
 }
 
 .levitate-on-hover:hover {
-  transform: translateY(-10px) !important;
+  /*transform: translateY(-10px) !important;
   -webkit-transform: translateY(-10px) !important;
   -moz-transform: translateY(-10px) !important;
   -ms-transform: translateY(-10px) !important;
-  -o-transform: translateY(-10px) !important;
+  -o-transform: translateY(-10px) !important;*/
 }
 
 .glide__slide .glide__container .card .card-header a {
   max-height: 100px !important;
   margin-bottom: 100px !important;
+}
+
+#navigation ul li a {
+  font-size: 1.1rem !important;
 }

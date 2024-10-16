@@ -6,31 +6,31 @@
       <ul class="navbar-nav navbar-nav-hover ms-auto">
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <i class="material-icons opacity-6 me-2 text-md">group</i>
+            <!--<i class="material-icons opacity-6 me-2 text-md">group</i>-->
             Nosotros
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_servicios ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <i class="material-icons opacity-6 me-2 text-md">view_day</i>
+            <!--<i class="material-icons opacity-6 me-2 text-md">view_day</i>-->
             Servicios
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_cursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <i class="material-icons opacity-6 me-2 text-md">library_books</i>
+            <!--<i class="material-icons opacity-6 me-2 text-md">library_books</i>-->
             Cursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_recursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <i class="material-icons opacity-6 me-2 text-md">inventory_2</i>
+            <!--<i class="material-icons opacity-6 me-2 text-md">inventory_2</i>-->
             Recursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <i class="material-icons opacity-6 me-2 text-md">contact_phone</i>
+            <!--<i class="material-icons opacity-6 me-2 text-md">contact_phone</i>-->
             Contacto
           </a>
         </li>
@@ -41,7 +41,7 @@
 
     <a class="navbar-brand font-weight-bolder ms-sm-3 d-none d-md-block text-start text-lg-end" href="./" rel="tooltip"
       title="Volver al inicio" data-placement="bottom" target="">
-      <img src="<?= $logo ?>" class="w-50 w-lg-10" alt="ESCE Logo" />
+      <img src="<?= $logo ?>" class="w-5 w-lg-15" alt="ESCE Logo" />
     </a>
     <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"
       href="./" rel="tooltip"
