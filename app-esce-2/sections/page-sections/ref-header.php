@@ -24,9 +24,3 @@
         opacity: 0 !important
     }*/
 </style>
-
-<!-- Glider.js CSS -->
-<!--//*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js/glider.min.css">-->
-
-
-<!--<script defer data-site="demos.creative-tim.com" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>-->

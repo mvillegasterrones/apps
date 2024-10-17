@@ -46,20 +46,94 @@
     }
   })
 
-  if (document.getElementsByClassName('glide')) {
+  document.addEventListener('DOMContentLoaded', function () {
+    new Glide('#gliderrr1', {
+      type: 'carousel',
+      perView: 4,
+      focusAt: 'center',
+      autoplay: 3000,
+      breakpoints: {
+        800: {
+          perView: 1
+        }
+      }
+    }).mount();
+
+    
+  });
+
+  function crear_glider(idx) {
+    new Glide('#gliderrr'+idx, {
+      type: 'carousel',
+      perView: 4,
+      focusAt: 'center',
+      autoplay: 3000,
+      breakpoints: {
+        800: {
+          perView: 1
+        }
+      }
+    }).mount()
+  }
+
+  /*document.addEventListener('DOMContentLoaded', function() {
+    new Glide('.tab-pane #gliderrr1', {
+      type: 'carousel',
+      perView: 4,
+      gap: 20,
+      autoplay: 3000,
+      hoverpause: true
+    }).mount();
+
+    new Glide('.tab-pane #gliderrr2', {
+      type: 'carousel',
+      perView: 4,
+      gap: 20,
+      autoplay: 3000,
+      hoverpause: true
+    }).mount();
+  })*/
+
+  /*document.addEventListener('DOMContentLoaded', function() {
+    new Glide('#gliderrr1', {
+      type: 'carousel',
+      perView: 4,
+      focusAt: 'center',
+      autoplay: 3000,
+      breakpoints: {
+        800: {
+          perView: 1
+        }
+      }
+    }).mount();
+
+    new Glide('#gliderrr2', {
+      type: 'carousel',
+      perView: 4,
+      focusAt: 'center',
+      autoplay: 3000,
+      breakpoints: {
+        800: {
+          perView: 1
+        }
+      }
+    }).mount();
+  })*/
+
+  /*if (document.getElementsByClassName('glide')) {
     const glider = new Glide('.gliderrr', {
       autoplay: 1500,
       type: 'carousel',
-      perView: 3,
+      perView: 4,
       breakpoints: {
         800: {
-          perView: 2
+          perView: 1
         }
       }
     })
     const tiltableElement = '.glide__container'
     glider.mount()
-  }
+  }*/
 
 
   // Seleccionar todos los cuadrantes
@@ -68,27 +142,22 @@
   // Añadir evento de clic a cada cuadrante
   quadrants.forEach(quadrant => {
     quadrant.addEventListener('click', function () {
-      // Remover la clase 'active' de todos los cuadrantes
       quadrants.forEach(q => q.classList.remove('active'));
 
-      // Añadir la clase 'active' al cuadrante actual
       this.classList.add('active');
 
-      // Obtener el ID del texto correspondiente al cuadrante
       const targetTextId = this.getAttribute('data-target');
 
-      // Remover la clase 'text-dark' de todos los textos
       document.querySelectorAll('.text-sections div').forEach(text => {
         text.classList.remove('text-dark');
         text.classList.add('text-muted');
       });
 
-      // Añadir la clase 'text-dark' al texto correspondiente
       document.getElementById(targetTextId).classList.add('text-dark');
     });
   });
 
-  
+
 
   /*$(document).on('click', '.btn-ripple', function (e) {
     var $ripple = $('<span class="ripple"></span>');

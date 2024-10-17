@@ -39,8 +39,8 @@
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <h5 class="text-white">
-                                        Domina la gestión de organizaciones con cursos virtuales para reinventar tu
-                                        carrera o transformar tu negocio
+                                        Reinventa tu carrera, crea un negocio o transforma una organización con
+                                        creatividad y con la capacidad de solucionar problemas concretos.
                                     </h5>
                                 </div>
                             </div>
@@ -65,8 +65,8 @@
                 <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
                     <h3 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h3>
                     <p class="text-white">
-                        suscríbete para tener acceso a nuestro boletín mensual, dónde encontrarás información sobre
-                        herramientas aplicables de gestión, economía y el desarrollo de nuevos negocios.
+                        Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación
+                        organizacional (nuevo) Botón: Suscríbete aquí.
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -94,46 +94,49 @@
     </div>
 
     <!-- //? TU PROXIMA HABILIDAD -->
-    <div class="container text-center">
+    <div class="container text-center mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad</b></h2>
-        <p class="text_info mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-            ESCE te prepara para resolver problemas concretos, potenciando tu creatividad con herramientas de gestión
-            aplicables, una mentalidad de crecimiento y la resiliencia necesaria para enfrentar retos en contextos de
-            constante cambio.
-        </p>
-
         <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+                <p class="text_info mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                    En ESCE te preparamos para resolver problemas organizacionales de manera creativa, con herramientas
+                    aplicables, y con una mentalidad emprendedora frente a un mundo complejo
+                </p>
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
             <div class="col-lg-8 col-md-12 col-12 mx-auto text-center">
                 <div class="nav-wrapper mt-5 position-relative z-index-2">
                     <ul class="nav nav-pills nav-fill flex-row p-1" id="tabs-pricing" role="tablist">
-                        <li class="nav-item">
+                        <li class="nav-item" onclick="crear_glider(1)">
                             <a class="nav-link mb-0 active" id="tabs-iconpricing-tab-1" data-bs-toggle="tab" href="#c1"
                                 role="tab" aria-controls="c1" aria-selected="true">
                                 Inteligencia Artificial
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" onclick="crear_glider(2)">
                             <a class="nav-link mb-0" id="tabs-iconpricing-tab-2" data-bs-toggle="tab" href="#c2"
                                 role="tab" aria-controls="c2" aria-selected="false">
                                 Marketing Digital
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" onclick="crear_glider(3)">
                             <a class="nav-link mb-0" id="tabs-iconpricing-tab-2" data-bs-toggle="tab" href="#c3"
                                 role="tab" aria-controls="c3" aria-selected="false">
                                 Emprendimiento
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" onclick="crear_glider(4)">
                             <a class="nav-link mb-0" id="tabs-iconpricing-tab-2" data-bs-toggle="tab" href="#c4"
                                 role="tab" aria-controls="c4" aria-selected="false">
                                 Soft Skills
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" onclick="crear_glider(5)">
                             <a class="nav-link mb-0" id="tabs-iconpricing-tab-2" data-bs-toggle="tab" href="#c5"
                                 role="tab" aria-controls="c5" aria-selected="false">
                                 Bienestar
@@ -144,54 +147,15 @@
             </div>
         </div>
 
-        <style>
-            .glider-contain {
-                position: relative;
-                width: 100%;
-                overflow: hidden;
-                margin-bottom: 30px;
-            }
-
-            .glider {
-                display: flex;
-                gap: 15px;
-            }
-
-            .card {
-                width: 200px;
-                height: 250px;
-                background-color: #f8f9fa;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .glider-prev,
-            .glider-next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            .glider-prev {
-                left: -40px;
-            }
-
-            .glider-next {
-                right: -40px;
-            }
-        </style>
-
         <div class="tab-content tab-space">
 
             <div class="tab-pane active" id="c1">
                 <h5 class="p-3 text-start d-none">Inteligencia artificial</h5>
                 <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
                     <div class="row">
-                        <div class="gliderrr">
-                            <div data-glide-el="track" class="glide__track">
+
+                        <div id="gliderrr1" class="gliderrr">
+                            <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
                                     <li class="glide__slide h-100">
@@ -367,6 +331,7 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
@@ -376,8 +341,8 @@
                 <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
                     <div class="row">
 
-                        <div class="gliderrr">
-                            <div data-glide-el="track" class="glide__track">
+                        <div id="gliderrr2" class="gliderrr">
+                            <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
                                     <li class="glide__slide h-100">
@@ -385,12 +350,11 @@
                                             <div class="card transition-card transition-card-hover h-100 mt-4">
                                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                                     <a class="d-block blur-shadow-image">
-                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOxogo8eFV1Cz5w9PEFyLeXjpQq5djHz9HCQ&s"
-                                                            alt="img-blur-shadow"
+                                                        <img src="<?= $img_md_01 ?>" alt="img-blur-shadow"
                                                             class="img-fluid shadow border-radius-lg">
                                                     </a>
                                                     <div class="colored-shadow"
-                                                        style="background-image: url('./assets/img/hero/hero-card-01.png');">
+                                                        style="background-image: url('<?= $img_md_01 ?>');">
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
@@ -420,12 +384,11 @@
                                             <div class="card transition-card transition-card-hover h-100 mt-4">
                                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                                     <a class="d-block blur-shadow-image">
-                                                        <img src="./assets/img/hero/hero-card-02.png"
-                                                            alt="img-blur-shadow"
+                                                        <img src="<?= $img_md_02 ?>" alt="img-blur-shadow"
                                                             class="img-fluid shadow border-radius-lg">
                                                     </a>
                                                     <div class="colored-shadow"
-                                                        style="background-image: url('./assets/img/hero/hero-card-02.png');">
+                                                        style="background-image: url('<?= $img_md_02 ?>');">
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
@@ -455,12 +418,11 @@
                                             <div class="card transition-card transition-card-hover h-100 mt-4">
                                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                                     <a class="d-block blur-shadow-image">
-                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36Srf1-cRPxpvrQ-cMiy6K_rYBbplSIa2JA&s"
-                                                            alt="img-blur-shadow"
+                                                        <img src="<?= $img_md_03 ?>" alt="img-blur-shadow"
                                                             class="img-fluid shadow border-radius-lg">
                                                     </a>
                                                     <div class="colored-shadow"
-                                                        style="background-image: url('./assets/img/hero/hero-card-03.png');">
+                                                        style="background-image: url('<?= $img_md_03 ?>');">
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
@@ -490,12 +452,11 @@
                                             <div class="card transition-card transition-card-hover h-100 mt-4">
                                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                                     <a class="d-block blur-shadow-image">
-                                                        <img src="./assets/img/hero/hero-crecim.jpg"
-                                                            alt="img-blur-shadow"
+                                                        <img src="<?= $img_md_04 ?>" alt="img-blur-shadow"
                                                             class="img-fluid shadow border-radius-lg">
                                                     </a>
                                                     <div class="colored-shadow"
-                                                        style="background-image: url('./assets/img/hero/hero-crecim.jpg');">
+                                                        style="background-image: url('<?= $img_md_04 ?>');">
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
@@ -525,11 +486,11 @@
                                             <div class="card transition-card transition-card-hover h-100 mt-4">
                                                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                                     <a class="d-block blur-shadow-image">
-                                                        <img src="./assets/img/hero/hero-003.jpg" alt="img-blur-shadow"
+                                                        <img src="<?= $img_md_05 ?>" alt="img-blur-shadow"
                                                             class="img-fluid shadow border-radius-lg">
                                                     </a>
                                                     <div class="colored-shadow"
-                                                        style="background-image: url('./assets/img/hero/hero-003.jpg');">
+                                                        style="background-image: url('<?= $img_md_05 ?>');">
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
@@ -557,44 +518,573 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
 
             <div class="tab-pane" id="c3">
-                <h1>C-3</h1>
-                <!--<div id="glider2" class="glider-contain mt-5">
-                    <div class="glider">
-                        <div class="card">Slide 1</div>
-                        <div class="card">Slide 2</div>
-                        <div class="card">Slide 3</div>
-                        <div class="card">Slide 4</div>
-                        <div class="card">Slide 5</div>
-                        <div class="card">Slide 6</div>
-                        <div class="card">Slide 7</div>
-                        <div class="card">Slide 8</div>
-                        <div class="card">Slide 9</div>
-                        <div class="card">Slide 10</div>
-                        <div class="card">Slide 11</div>
-                        <div class="card">Slide 12</div>
+                <h1 class="text-start d-none">Emprendimiento</h1>
+                <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
+                    <div class="row">
+
+                        <div id="gliderrr3" class="gliderrr">
+                            <div data-glide-el="track" class="glide__track h-100">
+                                <ul class="glide__slides h-100">
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_em_01 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_em_01 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Empredimiento 01</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_em_02 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_em_02 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Emprendimiento 02</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_em_03 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_em_03 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Emprendimiento 03</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_em_04 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_em_04 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Emprendimiento 04</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_em_05 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_em_05 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Emprendimiento 05</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
-                    <button aria-label="Previous" class="glider-prev btn btn-outline-warning">«</button>
-                    <button aria-label="Next" class="glider-next btn btn-outline-warning">»</button>
-                    <div role="tablist" class="dots"></div>
-                </div>-->
+                </section>
             </div>
 
             <div class="tab-pane" id="c4">
-                <h1>C-4</h1>
+                <h1 class="text-start d-none">Soft Skill</h1>
+                <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
+                    <div class="row">
+
+                        <div id="gliderrr4" class="gliderrr">
+                            <div data-glide-el="track" class="glide__track h-100">
+                                <ul class="glide__slides h-100">
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_ss_01 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_ss_01 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Soft Skills 01</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_ss_02 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_ss_02 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Soft Skills 02</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_ss_03 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_ss_03 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Soft Skills 03</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_ss_04 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_ss_04 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Soft Skills 04</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_ss_05 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_ss_05 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Soft Skills 05</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
             </div>
 
             <div class="tab-pane" id="c5">
-                <h1>C-5</h1>
+                <h1 class="text-start d-none">Bienestar</h1>
+                <section data-aos="fade-left" data-aos-duration="1300" data-aos-delay="400">
+                    <div class="row">
+
+                        <div id="gliderrr5" class="gliderrr">
+                            <div data-glide-el="track" class="glide__track h-100">
+                                <ul class="glide__slides h-100">
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_bs_01 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_bs_01 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Bienestar 01</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_bs_02 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_bs_02 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Bienestar 02</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_bs_03 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_bs_03 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Bienestar 03</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_bs_04 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_bs_04 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Bienestar 04</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="glide__slide h-100">
+                                        <div class="glide__container h-100">
+                                            <div class="card transition-card transition-card-hover h-100 mt-4">
+                                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                    <a class="d-block blur-shadow-image">
+                                                        <img src="<?= $img_bs_05 ?>" alt="img-blur-shadow"
+                                                            class="img-fluid shadow border-radius-lg">
+                                                    </a>
+                                                    <div class="colored-shadow"
+                                                        style="background-image: url('<?= $img_bs_05 ?>');">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body px-4 pt-4">
+                                                    <a href="javascript:;">Bienestar 05</a>
+                                                    <p class="mt-2">
+                                                        The place is close to Barceloneta Beach and bus stop just 2 min
+                                                        by
+                                                        walk and near
+                                                        to "Naviglio" where you can enjoy the main night life in
+                                                        Barcelona.
+                                                    </p>
+                                                </div>
+                                                <hr class="dark horizontal my-0">
+                                                <div class="card-footer d-flex">
+                                                    <button
+                                                        class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
+                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <i class="far fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
             </div>
 
         </div>
-
-
     </div>
 
     <!--<div>
@@ -748,7 +1238,7 @@
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="500">
                                     <div class="card-body pb-0">
-                                        <h4 class="mb-0">Innovation Bottom-Up</h4>
+                                        <h4 class="mb-0">Innovación Bottom-Up</h4>
                                         <hr class="bg-warning w-100">
                                         <p><b>Nuestro servicio</b></p>
                                         <p class="mt-2">
@@ -954,11 +1444,8 @@
                     <h2 class="text-color-grey p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         Tipos de <b class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados</b></h2>
                     <p class="text-color-grey" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
-                        Al completar nuestros cursos o talleres, obtendrás certificaciones que avalan tu
-                        participación
-                        en procesos diseñados para el desarrollo de competencias. Estos certificados tienen como
-                        objetivo ampliar tu conocimiento en gestión de organizaciones y mejorar tus oportunidades
-                        profesionales.
+                        Al completar nuestros cursos o talleres, obtendrás certificaciones que avalan tu participación
+                        en procesos diseñados para el desarrollo de competencias.
                     </p>
                 </div>
             </div>
@@ -983,8 +1470,7 @@
                                 <h4 class="mb-0">Certificado de Asistencia</h4>
                                 <p>por @esce</p>
                                 <p class="mt-2">
-                                    Se otorga a quienes participan en nuestros cursos cortos, certificando
-                                    únicamente la
+                                    Se otorga a quienes participan en nuestros cursos cortos, certificando únicamente la
                                     asistencia.
                                 </p>
                             </div>
@@ -1014,11 +1500,8 @@
                                 <h4 class="mb-0">Certificado de Competencia</h4>
                                 <p>por @esce</p>
                                 <p class="mt-2">
-                                    Se concede a los participantes de nuestros talleres, validando su participación
-                                    en
-                                    dinámicas diseñadas para fomentar el desarrollo de competencias, sin
-                                    evaluaciones
-                                    formales.
+                                    Se concede a los participantes de nuestros talleres, validando su participación en
+                                    dinámicas diseñadas para fomentar el desarrollo de competencias.
                                 </p>
                             </div>
                             <div class="card-footer text-center pt-2">
@@ -1047,11 +1530,8 @@
                                 <h4 class="mb-0">Certificado de Liderazgo</h4>
                                 <p>por @esce</p>
                                 <p class="mt-2">
-                                    Se otorga al completar 4 cursos o talleres, de los cuales al menos 2 deben ser
-                                    talleres. Este certificado reconoce la participación en procesos de aprendizaje
-                                    orientados a la solución de problemas a través de la aplicación de modelos de
-                                    gestión.
-
+                                    Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
+                                    talleres.
                                 </p>
                             </div>
                             <div class="card-footer text-center pt-2">
@@ -1079,22 +1559,18 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
-                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Recursos
-                            ESCE</p>
+                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus habilidades profesionales rápido.</p>
                         <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
-                            data-aos-delay="300">Recursos diseñados para elevar tu juego profesional</h1>
+                            data-aos-delay="300">Avanza en tu carrera generando impacto real</h1>
                         <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
-                            Recursos pensados para ayudarte a aplicar conocimiento de gestión
-                            en tu vida profesional y mejorar tu perfil de empleabilidad. Aquí encontrarás recursos
-                            sobre
-                            herramientas de gestión, ideas, casos y más.</h5>
-                        <h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
+                        Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu disposición una serie de recursos gratuitos..</h5>
+                        <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
                             data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y
                             aplicarlo
-                            en tu vida profesional.</h5>
+                            en tu vida profesional.</h5>-->
                         <p data-aos="fade-down" data-aos-duration="1450" data-aos-delay="550">
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Ver más <i
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Aprende más aquí <i
                                     class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
                         </p>
                     </div>
@@ -1315,30 +1791,5 @@
     <?php include './sections/page-sections/ref-scripts.php' ?>
 
 </body>
-<script>
-    /*document.addEventListener('DOMContentLoaded', function () {
-        new Glider(document.querySelector('#glider1 .glider'), {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: '#glider1 .dots',
-            draggable: true,
-            arrows: {
-                prev: '#glider1 .glider-prev',
-                next: '#glider1 .glider-next'
-            }
-        });
-
-        new Glider(document.querySelector('#glider2 .glider'), {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: '#glider2 .dots',
-            draggable: true,
-            arrows: {
-                prev: '#glider2 .glider-prev',
-                next: '#glider2 .glider-next'
-            }
-        });
-    });*/
-</script>
 
 </html>

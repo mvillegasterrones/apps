@@ -133,7 +133,29 @@ $img_ia_04 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6zsAqtqvND9
 $img_ia_05 = 'https://i0.wp.com/nuevodiario-assets.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/09/11080359/iStock-1287582736-2-1.jpg?fit=2341%2C1281&quality=100&ssl=1';
 
 
+$img_md_01 = 'https://www.ardiseny.es/wordpress/http://wp.ardiseny.es/wp-content/uploads/2015/02/marketing-digital.jpg';
+$img_md_02 = 'https://cicr.or.cr/wp-content/uploads/2024/03/ESPECIALISTA-DE-MARKETING-DIGITAL.webp';
+$img_md_03 = 'https://www.ceste.es/wp-content/uploads/2023/08/pasos-para-aprender-a-definir-una-estrategia-de-marketing-exitosa.jpg';
+$img_md_04 = 'https://www.salesforce.com/mx/blog/wp-content/uploads/sites/11/2023/10/estrategia-de-marketing.jpeg';
+$img_md_05 = 'https://www.hostingplus.pe/wp-content/uploads/2024/09/Shutterstock_2285600289.jpg';
 
+$img_em_01 = 'https://concepto.de/wp-content/uploads/2020/11/emprendimiento-e1676646804411.jpg';
+$img_em_02 = 'https://www.soy502.com/sites/default/files/styles/mobile_full_node/public/2023/Mar/16/screen_shot_2023-03-16_at_10.21.54_am.png';
+$img_em_03 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtfBFGj2zo1B9X2yivdeRb60GMQ-eE01WaYg&s';
+$img_em_04 = 'https://pqs.pe/wp-content/uploads/2022/01/PQS-emprendimiento-negocio.jpg';
+$img_em_05 = 'https://conquistalab.org/wp-content/uploads/2021/09/hombre-negocios-trabajando-volando-como-superheroe-maletin-poner-marcha-concepto-lanzamiento-puesta-marcha-empresas-emprendimiento-sobre-fondo-blanco_335657-1678.webp';
+
+$img_ss_01 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYab5g7D2Ic5SVOxM00JmAAMci2cK7lbwgsA&s';
+$img_ss_02 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxane5DSc6YSfZ60vOntJfFegnOODS7OTaN5lTp-BxMLQdN5-96c33yKewPIfAiPieEY&usqp=CAU';
+$img_ss_03 = 'https://media.licdn.com/dms/image/C4E12AQH0Yg06vUSyOg/article-cover_image-shrink_600_2000/0/1595634375833?e=2147483647&v=beta&t=J5JIYwmBZBbqFbxsSHGJlmH9ToOJHao5f5C1NM4C2MM';
+$img_ss_04 = 'https://www.ismartrecruit.com/upload/blog/main_image/How_soft_skills_can_be_developed_at_the_workplace.webp';
+$img_ss_05 = 'https://coodesh.com/blog/wp-content/uploads/2022/04/soft-skills-em-tech-1152x648.jpg';
+
+$img_bs_01 = 'https://blog.slikpro.com/hubfs/Blog_Mail_Bienestar_211129-01.jpg';
+$img_bs_02 = 'https://auna.pe/wp-content/uploads/2022/01/3.-Familia-Feliz.jpg';
+$img_bs_03 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThfasZTd1k5nNMIkuCgP_STRXk7sfsZgRSgQ&s';
+$img_bs_04 = 'https://www.fundacionmapfre.org/media/educacion-divulgacion/salud-bienestar/bienestar-emocional/bienestar-emocional-1200x600-1.jpg';
+$img_bs_05 = 'https://qosqotimes.pe/wp-content/uploads/2020/06/estado-de-bienestar-1-e1565915242258.jpg';
 
 /* ! Crecimiento Empresarial */
 $crecim_empresarial_url         = './crecimiento-empresarial.php';
