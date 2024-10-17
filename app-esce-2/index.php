@@ -1234,11 +1234,11 @@
                         <div class="row text-start mb-5">
 
                             <div class="col-12 col-lg-6 mb-4 mb-lg-5 position-relative">
-                                <div class="card levitate-on-hover p-4 h-100"
+                                <div class="card levitate-on-hover p-4 mb-5 h-50"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="500">
                                     <div class="card-body pb-0">
-                                        <h4 class="mb-0">Innovación Bottom-Up</h4>
+                                        <h5 class="mb-0">Innovación Bottom-Up</h5>
                                         <hr class="bg-warning w-100">
                                         <p><b>Nuestro servicio</b></p>
                                         <p class="mt-2">
@@ -1247,7 +1247,7 @@
                                             a
                                             problemas reales, además de identificar nuevas oportunidades de negocio.
                                         </p>
-                                        <p><b>Nuestro enfoque</b> se basa en 4 pilares clave</p>
+                                        <!--<p><b>Nuestro enfoque</b> se basa en 4 pilares clave</p>
 
                                         <div class="p-3 d-flex px-0 py-1">
                                             <i class="material-icons text-primary font-weight-bold">done</i>
@@ -1274,7 +1274,6 @@
                                                 <span class="text-sm">
                                                     <b>Pruebas de bajo costo:</b> Prototipos rápidos y feedback de
                                                     usuarios antes de la implementación.
-
                                                 </span>
                                             </div>
                                         </div>
@@ -1284,10 +1283,9 @@
                                                 <span class="text-sm">
                                                     <b>Oportunidades escalables:</b> Ideas viables con potencial de
                                                     crecimiento en relación al esfuerzo y costo.
-
                                                 </span>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <!--<div class="card-footer pt-2">
                                         <div class="mx-auto">
@@ -1296,14 +1294,59 @@
                                         </div>
                                     </div>-->
                                 </div>
+
+                                <div class="card levitate-on-hover p-4 h-50"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="550">
+                                    <div class="card-body pb-0">
+                                        <p><b>Nuestro enfoque</b> se basa en 4 pilares clave</p>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Generación:</b> Espacios de creatividad e ideación mediante
+                                                    talleres y plataformas digitales.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Evaluación:</b> Priorizamos la viabilidad técnica,
+                                                    necesidades
+                                                    del cliente y facilidad de implementación.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Pruebas de bajo costo:</b> Prototipos rápidos y feedback de
+                                                    usuarios antes de la implementación.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Oportunidades escalables:</b> Ideas viables con potencial de
+                                                    crecimiento en relación al esfuerzo y costo.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-12 col-lg-6 mb-4 mb-lg-5">
-                                <div class="card levitate-on-hover p-4 h-100"
+                                <div class="card levitate-on-hover p-4 h-50 mb-5"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
                                     <div class="card-body pb-0">
-                                        <h4 class="mb-0">Innovation de Productos o Servicios</h4>
+                                        <h5 class="mb-0">Innovation de Productos o Servicios</h5>
                                         <hr class="bg-warning w-100">
                                         <p><b>Nuestro servicio</b></p>
                                         <p class="mt-2">
@@ -1313,7 +1356,7 @@
                                             acompañamos desde la concepción hasta el lanzamiento, para que tus
                                             propuestas sean efectivas.
                                         </p>
-                                        <p><b>Nuestro enfoque</b> se basa en 5 pilares clave</p>
+                                        <!--<p><b>Nuestro enfoque</b> se basa en 5 pilares clave</p>
 
                                         <div class="p-3 d-flex px-0 py-1">
                                             <i class="material-icons text-primary font-weight-bold">done</i>
@@ -1341,7 +1384,6 @@
                                                     <b>Prototipado Rápido:</b> Prototipos rápidos y feedback de
                                                     usuarios
                                                     antes de la implementación.
-
                                                 </span>
                                             </div>
                                         </div>
@@ -1352,7 +1394,68 @@
                                                     <b>Escalabilidad:</b> Identificamos las ideas con mayor
                                                     potencial y
                                                     potencial retorno de inversión.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Deducción de Impuestos:</b> Acceso a incentivos fiscales para
+                                                    empresas que invierten en I+D.
+                                                </span>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <!--<div class="card-footer pt-2">
+                                        <div class="mx-auto">
+                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
+                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
+                                        </div>
+                                    </div>-->
+                                </div>
 
+                                <div class="card levitate-on-hover p-4 h-50"
+                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
+                                    data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="550">
+                                    <div class="card-body pb-0">
+                                        <p><b>Nuestro enfoque</b> se basa en 5 pilares clave</p>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Ideación y Conceptualización:</b> Creamos espacios para la
+                                                    generación de ideas innovadoras.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Validación de Concepto:</b> Evaluamos la viabilidad técnica y
+                                                    el
+                                                    alineamiento con las expectativas del cliente.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Prototipado Rápido:</b> Prototipos rápidos y feedback de
+                                                    usuarios
+                                                    antes de la implementación.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 d-flex px-0 py-1">
+                                            <i class="material-icons text-primary font-weight-bold">done</i>
+                                            <div class="ps-3">
+                                                <span class="text-sm">
+                                                    <b>Escalabilidad:</b> Identificamos las ideas con mayor
+                                                    potencial y
+                                                    potencial retorno de inversión.
                                                 </span>
                                             </div>
                                         </div>
@@ -1366,16 +1469,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--<div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
-                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>-->
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-6 mb-4">
+                            <!--<div class="col-12 col-lg-6 mb-4">
                                 <div class="card levitate-on-hover p-4 h-100"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="700">
@@ -1400,9 +1497,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
-                            <div class="col-12 col-lg-6 mb-4">
+                            <!--<div class="col-12 col-lg-6 mb-4">
                                 <div class="card levitate-on-hover p-4 h-100"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1700" data-aos-delay="800">
@@ -1427,7 +1524,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                         </div>
                     </div>
@@ -1559,19 +1656,22 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
-                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus habilidades profesionales rápido.</p>
+                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus
+                            habilidades profesionales rápido.</p>
                         <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
                             data-aos-delay="300">Avanza en tu carrera generando impacto real</h1>
                         <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
-                        Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu disposición una serie de recursos gratuitos..</h5>
+                            Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
+                            crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
+                            disposición una serie de recursos gratuitos..</h5>
                         <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
                             data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y
                             aplicarlo
                             en tu vida profesional.</h5>-->
                         <p data-aos="fade-down" data-aos-duration="1450" data-aos-delay="550">
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Aprende más aquí <i
-                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Aprende más
+                                aquí <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
                         </p>
                     </div>
                 </div>
