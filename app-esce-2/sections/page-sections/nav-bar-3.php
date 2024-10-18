@@ -3,6 +3,7 @@ $nosotros  = (isset($_GET['nosotros'])) ? ' active-nav' : '';
 $servicios = (isset($_GET['servicios'])) ? ' active-nav' : '';
 $cursos    = (isset($_GET['cursos'])) ? ' active-nav' : '';
 $recursos  = (isset($_GET['recursos'])) ? ' active-nav' : '';
+$contacto  = (isset($_GET['contacto'])) ? ' active-nav' : '';
 $blog      = (isset($_GET['blog'])) ? ' active-nav' : '';
 ?>
 
@@ -34,8 +35,13 @@ $blog      = (isset($_GET['blog'])) ? ' active-nav' : '';
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $blog ?>">
+          <a role="button" href="<?= $ruta_contacto ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $contacto0 ?>">
             Contacto
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover mx-2">
+          <a role="button" href="<?= $ruta_blog ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $blog ?>">
+            Blog
           </a>
         </li>
 

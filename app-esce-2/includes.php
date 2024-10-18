@@ -57,13 +57,13 @@ $ruta_nosotros              = './nosotros.php?nosotros=1';
 $ruta_servicios             = './servicios.php?servicios=1';
 $ruta_cursos                = './cursos.php?cursos=1';
 $ruta_recursos              = './recursos.php?recursos=1';
+$ruta_contacto              = './contacto.php?contacto=1';
 $ruta_blog                  = './blog.php?blog=1';
 $ruta_teaching_the_teachers = './teaching-the-teachers.php';
 
 $innovacion_botom_up        = './innovacion-bottom-up.php';
 $ruta_capacitacion_continua = './capacitacion-continua.php';
 $ruta_re_skalling           = './re-skalling.php';
-$ruta_blog                  = './blog.php';
 
 $economia_periodistas     = './economia-economistas.php';
 $formacion_emprendedores  = './formacion-emprendedores.php';
