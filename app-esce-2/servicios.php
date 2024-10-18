@@ -14,16 +14,16 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-sticky z-index-sticky top-0 mb-10">
+    <div class="container position-absolute z-index-sticky top-0 mb-10">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
             </div>
         </div>
     </div>
 
     <!--//* Hero -->
-    <div class="container mt-7 mb-0">
+    <div class="container mt-10 mb-0">
         <div class="container">
             <div class="row mb-6">
                 <div class="col-12 col-lg-6 mx-auto text-center">

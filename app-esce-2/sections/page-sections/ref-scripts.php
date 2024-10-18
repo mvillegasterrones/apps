@@ -30,7 +30,7 @@
   });*/
   AOS.init()
 
-  const navbar = document.getElementById("main-navbar")
+  /*const navbar = document.getElementById("main-navbar")
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 0) {
@@ -44,7 +44,7 @@
       navbar.classList.add("navbar-transparent")
       navbar.classList.add("text-white")
     }
-  })
+  })*/
 
   document.addEventListener('DOMContentLoaded', function () {
     new Glide('#gliderrr1', {

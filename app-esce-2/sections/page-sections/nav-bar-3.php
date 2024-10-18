@@ -1,36 +1,32 @@
-<nav
-  class="navbar navbar-expand-lg shadow-none navbar-transparent border-radius-xl top-0 z-index-3 shadow position-absolute mt-4 my-3 py-2 start-0 end-0 mx-4 text-white blur-sm" id="main-navbar">
+<!--<nav
+  class="navbar navbar-expand-lg shadow-none bg-white border-radius-xl top-0 z-index-3 shadow position-absolute mt-4 my-3 py-2 start-0 end-0 mx-4 blur-sm" id="">-->
+<nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
   <div class="container-fluid px-0">
 
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
       <ul class="navbar-nav navbar-nav-hover ms-auto">
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <!--<i class="material-icons opacity-6 me-2 text-md">group</i>-->
             Nosotros
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_servicios ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <!--<i class="material-icons opacity-6 me-2 text-md">view_day</i>-->
             Servicios
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_cursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <!--<i class="material-icons opacity-6 me-2 text-md">library_books</i>-->
             Cursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_recursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <!--<i class="material-icons opacity-6 me-2 text-md">inventory_2</i>-->
             Recursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
           <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
-            <!--<i class="material-icons opacity-6 me-2 text-md">contact_phone</i>-->
             Contacto
           </a>
         </li>
@@ -41,7 +37,7 @@
 
     <a class="navbar-brand font-weight-bolder ms-sm-3 d-none d-md-block text-start text-lg-end" href="./" rel="tooltip"
       title="Volver al inicio" data-placement="bottom" target="">
-      <img src="<?= $logo ?>" class="w-5 w-lg-15" alt="ESCE Logo" />
+      <img src="<?= $logo ?>" class="w-5 w-lg-25" alt="ESCE Logo" />
     </a>
     <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none"
       href="./" rel="tooltip"

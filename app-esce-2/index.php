@@ -15,7 +15,7 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-sticky z-index-sticky top-0 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
+    <div class="container position-absolute z-index-sticky top-0 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
         <div class="row">
             <div class="col-12" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -66,7 +66,7 @@
                     <h3 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h3>
                     <p class="text-white">
                         Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación
-                        organizacional (nuevo) Botón: Suscríbete aquí.
+                        organizacional.
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -1656,9 +1656,9 @@
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
                         <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus
-                            habilidades profesionales rápido.</p>
+                            habilidades.</p>
                         <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
-                            data-aos-delay="300">Avanza en tu carrera generando impacto real</h1>
+                            data-aos-delay="300">Avanza en tu carrera generando impacto</h1>
                         <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
                             Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
                             crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
