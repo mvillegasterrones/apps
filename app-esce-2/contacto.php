@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="<?= $ico ?>"><!-- ./assets/img/favicon.png -->
     <title>
-        ESCE | Blog
+        ESCE | Contáctanos
     </title>
     <?php include './sections/page-sections/ref-header.php' ?>
 </head>

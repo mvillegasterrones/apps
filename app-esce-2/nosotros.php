@@ -11,245 +11,289 @@
         ESCE | Nosotros
     </title>
     <?php include './sections/page-sections/ref-header.php' ?>
-
-    <style>
-        /* Estilos generales del card */
-        .card-2 {
-            width: 300px;
-            height: 400px;
-            background-color: #f5f5f5;
-            border-radius: 15px;
-            overflow: hidden;
-            perspective: 1000px;
-            /* Necesario para crear el efecto 3D */
-            transition: all 0.5s ease-in-out;
-            position: relative;
-        }
-
-        /* Contenido del card */
-        .card-2-content {
-            width: 100%;
-            height: 100%;
-            background-color: #08BCFB;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.6s ease-in-out;
-            transform-style: preserve-3d;
-            /* Habilita el efecto 3D */
-            backface-visibility: hidden;
-            /* Oculta la cara trasera al rotar */
-        }
-
-        /* Estilo inicial de la tarjeta */
-        .card-2-content h3,
-        .card-2-content p {
-            color: white;
-            text-align: center;
-            margin: 0;
-        }
-
-        /* Efecto flip-up al hacer hover */
-        .card-2:hover .card-2-content {
-            transform: rotateX(-180deg);
-            /* Rota hacia arriba */
-        }
-
-        /* Trasera del card cuando está rotando */
-        .card-2:hover .card-2-content p {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-sticky z-index-sticky top-0 mb-10">
+
+    <div class="container position-absolute z-index-sticky top-0 mb-10">
         <div class="row">
-            <div class="col-12">
-                <?php include './sections/page-sections/nav-bar-2.php' ?>
+            <div class="col-12 navbar-item-text-color">
+                <?php include './sections/page-sections/nav-bar-3.php' ?>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <!-- Fade-in desde arriba -->
-        <div class="col-md-4" data-aos="fade-down" data-aos-duration="1500">
-            <h3>Fade Down</h3>
-        </div>
-
-        <!-- Desliza desde la izquierda -->
-        <div class="col-md-4" data-aos="slide-left" data-aos-duration="1500">
-            <h3>Slide Left</h3>
-        </div>
-
-        <!-- Zoom en el elemento -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
-            <h3>Zoom In</h3>
-        </div>
-    </div>
-
-
-    <section class="my-section main-bg-color-warning mt-10">
-        <div class="container">
-            <div class="row">
-                <!-- Primer bloque con fade-in -->
-                <div class="col-md-6 text-color-grey" data-aos="fade-right" data-aos-duration="100"
-                    data-aos-delay="200">
-                    <h2 clase="">Animación desde la derecha</h2>
-                    <p>Este contenido se deslizará desde la derecha cuando hagas scroll.</p>
-                </div>
-
-                <!-- Segundo bloque con zoom-in -->
-                <div class="col-md-6 text-color-grey" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
-                    <h2>Zoom en la animación</h2>
-                    <p>Este contenido hará un efecto de zoom al aparecer.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n1">
+    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-8">
 
         <section class="py-md-2 mb-7 px-lg-5 pb-5">
             <div class="container">
-                <h2 class="text-color-grey mb-5 mb-lg-7"><img src="<?= $ico ?>" class="w-5"> Nosotros</h2>
+                <h2 class="text-color-grey mb-5 mb-lg-4">Nosotros</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
+                        <p class="">
+                            Somos una organización enfocada en la educación superior centrada en valores que reflejan
+                            nuestra aspiración de formar, no sólo egresados de éxito, sino además personas que sean
+                            valiosas, efectivas y éticas para sus comunidades. Estos valores guían nuestras aspiraciones
+                            de
+                            desarrollo institucional de largo plazo, y son la base que orienta nuestra actividad para
+                            servir
+                            a la sociedad y a nuestros alumnos.
+                            Diseñamos experiencias formativas para personas que necesitan trabajar para financiar sus
+                            estudios en administración o gestión pública. Además, fomentamos el crecimiento empresarial
+                            a
+                            través de dinámicas de innovación, de investigación y de cambio tecnológico, que permitan a
+                            las
+                            empresas crecer, explorar nuevos mercados o fortalecer los ya existentes.
+                        </p>
+                        <p class="mb-4">
+                            Particularmente nos interesa apoyar a las micro y pequeñas empresas que tanto necesitan
+                            soportes
+                            de conocimiento para seguir progresando. Dotar de herramientas para mejorar la productividad
+                            y
+                            la eficiencia de quienes trabajan en el sector público, a cualquier nivel, en nuestro país.
+                        </p>
 
-                <div class="row">
-
-                    <div class="col-12">
-                        <button class="btn btn-primary btn-lg btn-hover-zoom">.btn-hover-zoom</button>
+                        <h3 class="mb-4 text-color-grey">Nuestro Propósito</h3>
+                        <p class="mb-4">
+                            Ser una institución que promueve el desarrollo económico y social descentralizado a través
+                            de la
+                            formación de profesionales y la re-capacitación de personas que ya trabajan en todo el país.
+                        </p>
                     </div>
-
-                    <div class="col-12">
-                        <div class="card transition-card">
-                            <div class="card-body">
-                                <h5 class="card-title">.transition-card</h5>
-                                <p class="card-text">Some example text to show how transition works.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="fade-in-box">
-                            <h5>.fade-in-box:hover</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="page-header header-filter min-vh-100"
-                            style="background-image: url('<?= $img_hero_01 ?>');">
-                            <div class="container">
-                                <h1 class="title">Parallax Header</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="slide-in-box">
-                            <h5>Sliding Content</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <button class="btn btn-primary btn-ripple">Ripple Effect Button</button>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-                            Open Modal
-                        </button>
-
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Modal Title</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Modal content goes here...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">Close</button>
-                                    </div>
+                    <div class="col-lg-4 ms-auto mt-lg-0 mt-4 mb-lg-0 mb-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                <a class="d-block blur-shadow-image">
+                                    <img src="<?= $img_equipo_esce ?>" alt="img-colored-shadow"
+                                        class="img-fluid border-radius-lg">
+                                </a>
+                                <div class="colored-shadow" style="background-image: url('<?= $img_equipo_esce ?>');">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 text-color-white">
-                        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
-                            title="Tooltip on top">
-                            Tooltip
-                        </button>
-                    </div>
-
-                    <div class="col-12 text-dark">
-                        <section>
-                            <div data-aos="fade-up" data-aos-duration="1000">
-                                <h1 clase=" text-color-dark">Título Animado</h1>
-                                <p class=" text-color-dark">Este contenido se animará cuando el usuario haga scroll.</p>
-                            </div>
-                        </section>
-                    </div>
-
-                    <section class="my-section">
-                        <div class="container">
-                            <div class="row text-color-warning">
-                                <!-- Primer bloque con fade-in -->
-                                <div class="col-md-6 text-dark" data-aos="fade-right" data-aos-duration="100"
-                                    data-aos-delay="200" data-aos-once="false">
-                                    <h2>Animación desde la derecha</h2>
-                                    <p>Este contenido se deslizará desde la derecha cuando hagas scroll.</p>
-                                </div>
-
-                                <!-- Segundo bloque con zoom-in -->
-                                <div class="col-md-6 text-dark" data-aos="zoom-in" data-aos-duration="1000"
-                                    data-aos-delay="400" data-aos-once="false">
-                                    <h2>Zoom en la animación</h2>
-                                    <p>Este contenido hará un efecto de zoom al aparecer.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="col-12">
-                        <div class="card-2">
-                            <div class="card-2-content">
-                                <h3>Título de la Tarjeta</h3>
-                                <p>Este es un texto que se muestra cuando haces hover sobre la tarjeta.</p>
+                            <div class="card-body text-center">
+                                <h5 class="font-weight-normal">
+                                    <a href="javascript:;">Equipo ESCE</a>
+                                </h5>
+                                <p class="mb-0">
+                                    Somos un equipo de expertos que ofrece cursos y certificaciones en ciencias
+                                    empresariales y gestión pública, combinando teoría y práctica para desarrollar
+                                    habilidades clave y potenciar el crecimiento profesional.
+                                </p>
+                                <!--<button type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3">Find out
+                                    more</button>-->
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <h3 class="mb-4 text-color-grey">Nuestra Misión</h3>
+                    <p class="mb-4">
+                        Formar alumnos con creatividad, pensamiento crítico, comunicación efectiva y conciencia
+                        ética,
+                        que les permita mejorar sus oportunidades de empleo en la empresa privada, construir la
+                        empresa
+                        que siempre aspiraron tener, o contribuir en la administración pública con un servicio
+                        honesto y
+                        de impacto positivo, tanto a nivel, local, regional como nacional.
+                    </p>
+
+                    <h3 class="mb-5">Nuestros Valores</h3>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <!--style="background-image: url('<?= $img_valores_v2_01 ?>') !important;opacity: 85%;"  -->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Integridad</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Integridad</strong><br>
+                                        Actuar con honestidad, coherencia y responsabilidad es esencial para
+                                        construir confianza y credibilidad en todas nuestras relaciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_02 ?>') !important;opacity: 85%;"-->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Solidaridad</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Solidaridad</strong><br>
+                                        Más allá de la empatía, buscamos apoyar a quienes lo necesitan con un
+                                        deseo
+                                        genuino de impactar positivamente la vida de los demás.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <!-- style="background-image: url('<?= $img_valores_v2_03 ?>') !important;opacity: 85%;"-->
+                                    <h4 class="p-3 text-color-white rounded rounded-15">Resiliencia</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Resiliencia</strong><br>
+                                        Mantenemos el esfuerzo y la determinación frente a los desafíos,
+                                        trabajando
+                                        con constancia hacia nuestros objetivos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container">
+                            <div class="card-flip">
+                                <div class="card-front text-center">
+                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Respeto por la
+                                        Naturaleza</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Respeto por la Naturaleza</strong><br>
+                                        Valoramos y protegemos el medio ambiente, promoviendo una conducta
+                                        sostenible y un compromiso con la conservación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-5">
+                        <div class="card-container shadow-lg">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Sentido de
+                                        pertenencia
+                                        por el país</h4>
+                                </div>
+                                <div class="card-back">
+                                    <p class="text-white opacity-8">
+                                        <strong class="h3 text-white">Sentido de pertenencia por el país</strong><br>
+                                        Nos sentimos orgullosos de nuestra nación, contribuyendo a su desarrollo y
+                                        bienestar con compromiso y patriotismo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <h2 class="text-xolor-grey text-center mb-8"><img src="<?= $ico ?>" class="w-5">Nuestro equipo</h2>
+
+        <div class="card main-bg-color-white card-body mb-10 shadow-xl mx-3 mx-md-7 mt-n6 fade-in-up">
+            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
+                data-mdb-animation-initialized="true"
+                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
+                <div class="card-content">
+                    <div class="card-body text-start">
+                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                <a href="#!">
+                                <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
+                                        src="<?= $img_teams_01 ?>"
+                                        alt="Generic placeholder image">
+                                </a>
+                            </div>
+                            <!-- Texto abajo en pantallas pequeñas -->
+                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
+                                <p class="mb-1">
+                                    <strong><a href="#!" class="text-reset h4">Guido Pennano Alison</a></strong>
+                                </p>
+                                <p class="mb-1"><i>- Presidente Fundador</i></p>
+                                <p class="text-muted text-start mb-1">
+                                    ....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card main-bg-color-white card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
+            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
+                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
+                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
+                data-mdb-animation-initialized="true"
+                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
+                <div class="card-content">
+                    <div class="card-body text-start">
+                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
+                            <!-- Imagen arriba en pantallas pequeñas -->
+                            <div class="flex-shrink-0 mb-4 mb-md-0">
+                                <a href="#!">
+                                    <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
+                                        src="<?= $img_teams_02 ?>"
+                                        alt="Generic placeholder image">
+                                </a>
+                            </div>
+                            <!-- Texto abajo en pantallas pequeñas -->
+                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
+                                <p class="mb-1">
+                                    <strong><a href="#!" class="text-reset h4">José Ignacio Pineda Mendoza</a></strong>
+                                </p>
+                                <p class="mb-1"><i>- Miembro fundador de ESCE</i></p>
+                                <p class="text-muted text-start mb-1">
+                                    Cuenta con más de 20 años de
+                                    experiencia
+                                    en el sector de la educación superior. Ha enseñado cursos sobre innovación,
+                                    emprendimiento y desarrollo sostenible en universidades de Perú y el Reino
+                                    Unido.
+                                    Además, ha desempeñado roles de liderazgo en universidades, donde se ha
+                                    especializado en transformación organizacional, diseñando y ejecutando
+                                    estrategias
+                                    de turnaround y crecimiento, investigación aplicada de calidad y
+                                    responsabilidad
+                                    social. Su investigación se sitúa en la intersección de negocios,
+                                    emprendimiento y
+                                    desarrollo sostenible. Ha recibido un grant de la Academia Británica para
+                                    explorar
+                                    la Economía Circular en la Amazonía peruana, ha investigado el uso de
+                                    tecnología
+                                    digital entre emprendedores sociales para la Comisión Europea, y la creación
+                                    de un
+                                    sistema de innovación en salud en la ciudad de Manchester. Actualmente
+                                    estudia los
+                                    factores de éxito de emprendedores que logran resultados significativos con
+                                    recursos
+                                    escasos. Es PhD en Administración y Negocios por Alliance Manchester
+                                    Business School
+                                    de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por
+                                    la misma
+                                    escuela de negocios, y economista de la Universidad del Pacífico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <?php include './sections/page-sections/footer.php' ?>
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
-
 </body>
-<script>
-    /*$(document).ready(function () {
-        $('.header-filter').parallax({
-            imageSrc: '<?= $img_hero_01 ?>'
-        });
-    });*/
-
-</script>
 
 </html>

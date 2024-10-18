@@ -35,7 +35,7 @@ $blog      = (isset($_GET['blog'])) ? ' active-nav' : '';
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_contacto ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $contacto0 ?>">
+          <a role="button" href="<?= $ruta_contacto ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $contacto ?>">
             Contacto
           </a>
         </li>
