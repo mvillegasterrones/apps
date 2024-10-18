@@ -331,7 +331,6 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </section>
             </div>
@@ -1295,7 +1294,7 @@
                                     </div>-->
                                 </div>
 
-                                <div class="card levitate-on-hover p-4 h-50"
+                                <div class="card levitate-on-hover p-4 mb-5 h-50"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="550">
                                     <div class="card-body pb-0">
@@ -1341,12 +1340,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-6 mb-4 mb-lg-5">
-                                <div class="card levitate-on-hover p-4 h-50 mb-5"
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-5 mt-7 mt-lg-0">
+                                <div class="card levitate-on-hover p-4 mb-5 h-50"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
                                     <div class="card-body pb-0">
-                                        <h5 class="mb-0">Innovation de Productos o Servicios</h5>
+                                        <h5 class="mb-0">Innovación de Productos o Servicios</h5>
                                         <hr class="bg-warning w-100">
                                         <p><b>Nuestro servicio</b></p>
                                         <p class="mt-2">
@@ -1415,7 +1414,7 @@
                                     </div>-->
                                 </div>
 
-                                <div class="card levitate-on-hover p-4 h-50"
+                                <div class="card levitate-on-hover p-4"
                                     style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
                                     data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="550">
                                     <div class="card-body pb-0">
