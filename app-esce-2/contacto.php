@@ -26,12 +26,11 @@
     <div class="container mt-8 mb-0">
         <div class="row text-center mb-5">
             <div class="col-12">
-                <div class="row" data-aos-duration="1000"
-                data-aos-delay="100">
+                <div class="row">
                     <div class="col-12 col-lg-6 mx-auto">
                         <h3 data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="100">Contactanos</h3>
-                        <p data-aos-duration="1100"
+                        <p data-aos="fade-up" data-aos-duration="1100"
                         data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum magni tempora
                             cumque ipsum quia atque tempore, iste officiis a.</p>
                     </div>
@@ -41,8 +40,8 @@
 
         <div class="container">
             <div class="row mb-7">
-                <div class="col-12 col-lg-6 card levitate-on-hover mb-7 mb-lg-0">
-                    <div class="card card-plain p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="col-12 col-lg-6 card levitate-on-hover mb-7 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card card-plain p-4">
                         <form id="contact-form" method="post" autocomplete="off">
                             <div class="card-body">
                                 <div class="row">
@@ -160,8 +159,6 @@
                             </div>
                         </form>
                     </div>
-
-
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="row" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
@@ -196,13 +193,13 @@
             </div>
 
             <div class="row text-center">
-                <h3 class="mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas frecuentes
+                <h3 class="mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas frecuentes
                 </h3>
                 <div class="row">
                     <div class="col-12 col-lg-8 mx-auto">
                         <div class="accordion" id="accordionRental">
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1200"
+                            <div class="accordion-item mb-3 text-start" data-aos="fade-up" data-aos-duration="1200"
                                 data-aos-delay="300">
                                 <h5 class="accordion-header" id="headingOne">
                                     <button
@@ -219,14 +216,12 @@
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                     data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
-                                        Los cursos y talleres se ofrecen en formatos sincrónicos y no importa en qué
-                                        zona horaria te encuentres porque todos son ofrecidos a nivel nacional y
-                                        comparten la misma zona horaria.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed, odio veniam sequi laborum aperiam optio repudiandae placeat, quis totam esse perspiciatis itaque nam ratione ducimus deleniti dolorum quibusdam debitis?
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1300"
+                            <div class="accordion-item mb-3 text-start" data-aos="fade-up" data-aos-duration="1300"
                                 data-aos-delay="400">
                                 <h5 class="accordion-header" id="headingTwo">
                                     <button
@@ -243,22 +238,12 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
-                                        Sí, tendrás acceso a todos los materiales proporcionados por el docente,
-                                        como
-                                        diapositivas, workbooks y hojas resumen. Además, al finalizar cada curso
-                                        corto,
-                                        recibirás un resumen con las ideas clave abordadas. Sin embargo, para
-                                        fomentar
-                                        la participación sincrónica y garantizar una comunidad digital activa
-                                        durante el
-                                        curso, los videos de las sesiones no estarán disponibles una vez que el
-                                        curso o
-                                        taller haya terminado.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at nobis, deleniti ipsa corrupti fugiat rerum natus illo omnis voluptatum fugit ea cumque dolorum placeat labore sequi culpa vel odit?
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1400"
+                            <div class="accordion-item mb-3 text-start" data-aos="fade-up" data-aos-duration="1400"
                                 data-aos-delay="500">
                                 <h5 class="accordion-header" id="headingThree">
                                     <button
@@ -275,10 +260,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionRental">
                                     <div class="accordion-body text-sm opacity-8">
-                                        Nuestros instructores y equipos de facilitación guían las sesiones y están
-                                        disponibles para resolver dudas a través de foros y espacios de interacción.
-                                        Aunque no hay evaluaciones formales, se ofrecen comentarios durante las
-                                        actividades y dinámicas de aprendizaje.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, error nesciunt possimus, odit reprehenderit sit consequuntur magnam quos blanditiis voluptas dicta dolore. Natus vero at asperiores, libero quidem accusamus ipsa.
                                     </div>
                                 </div>
                             </div>
