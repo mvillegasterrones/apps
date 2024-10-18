@@ -1,3 +1,11 @@
+<?php
+$nosotros  = (isset($_GET['nosotros'])) ? ' active-nav' : '';
+$servicios = (isset($_GET['servicios'])) ? ' active-nav' : '';
+$cursos    = (isset($_GET['cursos'])) ? ' active-nav' : '';
+$recursos  = (isset($_GET['recursos'])) ? ' active-nav' : '';
+$blog      = (isset($_GET['blog'])) ? ' active-nav' : '';
+?>
+
 <!--<nav
   class="navbar navbar-expand-lg shadow-none bg-white border-radius-xl top-0 z-index-3 shadow position-absolute mt-4 my-3 py-2 start-0 end-0 mx-4 blur-sm" id="">-->
 <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
@@ -6,27 +14,27 @@
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
       <ul class="navbar-nav navbar-nav-hover ms-auto">
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+          <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $nosotros ?>">
             Nosotros
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_servicios ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+          <a role="button" href="<?= $ruta_servicios ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $servicios ?>">
             Servicios
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_cursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+          <a role="button" href="<?= $ruta_cursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $cursos ?>">
             Cursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_recursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+          <a role="button" href="<?= $ruta_recursos ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $recursos ?>">
             Recursos
           </a>
         </li>
         <li class="nav-item dropdown dropdown-hover mx-2">
-          <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center">
+          <a role="button" href="<?= $ruta_nosotros ?>" class="nav-link ps-2 d-flex cursor-pointer align-items-center <?= $blog ?>">
             Contacto
           </a>
         </li>

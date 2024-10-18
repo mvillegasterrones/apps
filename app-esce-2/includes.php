@@ -53,9 +53,11 @@ $img_newletter     = 'https://cdn.shopify.com/s/files/1/0229/0839/files/crear-un
 
 /* ! Menu */
 $ruta_home                  = './index.php';
-$ruta_nosotros              = './nosotros.php';
-$ruta_servicios             = './servicios.php';
-$ruta_cursos                = './cursos.php';
+$ruta_nosotros              = './nosotros.php?nosotros=1';
+$ruta_servicios             = './servicios.php?servicios=1';
+$ruta_cursos                = './cursos.php?cursos=1';
+$ruta_recursos              = './recursos.php?recursos=1';
+$ruta_blog                  = './blog.php?blog=1';
 $ruta_teaching_the_teachers = './teaching-the-teachers.php';
 
 $innovacion_botom_up        = './innovacion-bottom-up.php';

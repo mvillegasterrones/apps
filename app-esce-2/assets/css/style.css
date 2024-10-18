@@ -27,6 +27,11 @@
   color: var(--main-text-color-grey) !important;
 }
 
+ul li a.active-nav {
+  color: var(--main-text-color-warning) !important;
+  font-weight: bold !important;
+}
+
 .main-bg-color-circle-out {
   background: var(--main-bg-circle-out-focus) !important;
 }
