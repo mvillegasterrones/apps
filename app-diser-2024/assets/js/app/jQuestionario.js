@@ -689,7 +689,6 @@ const encuesta_01 = () => ({
 
 const encuesta_02 = () => ({
   send: () => {
-
     let form = $("#form-enc-02").serialize();
 
     $.post(questionario_url, form, (response) => {
@@ -705,11 +704,9 @@ const encuesta_02 = () => ({
       console.error(xhr, status, error);
       sw_alert().error(error, status);
     });
-
   },
 
   save: () => {
-
     let validar_form = funciones().validar_form_required("form-enc-02");
 
     if (validar_form) {
@@ -731,7 +728,6 @@ const encuesta_02 = () => ({
       msje = "Por favor, complete todos los campos del formulario.";
       sw_alert().warning(msje);
     }
-
   },
 
   get_reporte: () => {
@@ -835,77 +831,82 @@ const encuesta_02 = () => ({
       }
     });
   },
-})
+});
 
 const encuesta_03 = () => ({
-
-  get_tbl_kit_aseo : () => {
-
-    let params = { action: "get-tbl-kit-aseo" }
+  get_tbl_kit_aseo: () => {
+    let params = { action: "get-tbl-kit-aseo" };
 
     $.post(questionario_url, params, (response) => {
+      let data = eval(response);
+      let html = "";
+      let reg = "";
+      let n = 0;
 
-      let data = eval(response)
-      let html = ''
-      let reg = ''
-      let n = 0
-      
       for (let i = 0; i < data.length; i++) {
-        let hombre, mujer
-        let general = (data[i].mse === 'ST') ? ' readonly ' : ''
-        reg = data[i]['r_nat ']
-        let freg = (data[i].region === 'Selva') ? ' readonly ' : ''
+        let hombre, mujer;
+        let general = data[i].mse === "ST" ? " readonly " : "";
+        reg = data[i]["r_nat "];
+        let freg = data[i].region === "Selva" ? " readonly " : "";
 
         switch (data[i].genero) {
-          case 'hombre':
-            mujer = ' readonly '
-            break
-          case 'mujer':
-            hombre = ' readonly '
-            break
+          case "hombre":
+            mujer = " readonly ";
+            break;
+          case "mujer":
+            hombre = " readonly ";
+            break;
           default:
-            break
+            break;
         }
 
         html += `<tr>
-              <td><p class="text-xxs text-center font-weight-bold mb-0">${i+1}</p></td>
-              <td class="w-25"><p class="text-xxs m-25 font-weight-bold mb-0">${data[i].descrip_item}</p><p class="text-xxs font-weight-bold mb-0">UND. MEdida: <b>${data[i].uni_medida}</b></p></td>
-              <td><input type="number" class="form-control form-control-sm" id="aseo_h_${i+1}"  name="aseo_h_${i+1}" value="0" required ${hombre} ></td>
-              <td><input type="number" class="form-control form-control-sm" id="aseo_m_${i+1}"  name="aseo_m_${i+1}" value="0" required ${mujer} ></td>
-            </tr>`
-        n++
+              <td><p class="text-xxs text-center font-weight-bold mb-0">${i + 1
+          }</p></td>
+              <td class="w-25"><p class="text-xxs m-25 font-weight-bold mb-0">${data[i].descrip_item
+          }</p><p class="text-xxs font-weight-bold mb-0">UND. MEdida: <b>${data[i].uni_medida
+          }</b></p></td>
+              <td><input type="number" class="form-control form-control-sm" id="aseo_h_${i + 1
+          }"  name="aseo_h_${i + 1}" value="0" required ${hombre} ></td>
+              <td><input type="number" class="form-control form-control-sm" id="aseo_m_${i + 1
+          }"  name="aseo_m_${i + 1}" value="0" required ${mujer} ></td>
+            </tr>`;
+        n++;
       }
-      $('#aseo-n-reg').val(n)  
-      $('#region-aseo').html(reg)
-      $('#tbl-kit-aseo tbody').html(html)
-
+      $("#aseo-n-reg").val(n);
+      $("#region-aseo").html(reg);
+      $("#tbl-kit-aseo tbody").html(html);
     }).fail((error) => {
       console.error(error);
       sw_alert().error(error);
-    })
-
+    });
   },
 
-  validate_form_tbl : (myForm, myTable) => {
-    document.getElementById(myForm).addEventListener('submit', function(e) {
-      var inputs = document.querySelectorAll('#' + myTable +' input[required]');
+  validate_form_tbl: (myForm, myTable) => {
+    document.getElementById(myForm).addEventListener("submit", function (e) {
+      var inputs = document.querySelectorAll(
+        "#" + myTable + " input[required]"
+      );
       var allFilled = true;
 
-      inputs.forEach(function(input) {
-          if (input.value.trim() === '') {
-              allFilled = false;
-          }
+      inputs.forEach(function (input) {
+        if (input.value.trim() === "") {
+          allFilled = false;
+        }
       });
 
       if (!allFilled) {
-          alert('Por favor, llena todos los campos requeridos.');
-          e.preventDefault();
+        alert("Por favor, llena todos los campos requeridos.");
+        e.preventDefault();
       }
-  });
+    });
   },
 
-  save_kit_aseo : () => {
-    let validar_form = encuesta_03().validate_form_tbl("form-enc-03", "tbl-kit-aseo");
+  save_kit_aseo: () => {
+    let validar_form = encuesta_03().validate_form_tbl(
+      "form-enc-03",
+      "tbl-kit-aseo"
+    );
 
     if (validar_form) {
       Swal.fire({
@@ -917,7 +918,7 @@ const encuesta_03 = () => ({
         denyButtonText: `Cancelar`,
       }).then((result) => {
         if (result.isConfirmed) {
-          sw_alert().basic_success('Confirmado!')
+          sw_alert().basic_success("Confirmado!");
           //* encuesta_02().send();
         } else if (result.isDenied) {
           console.log("ENC-03: Cancelado");
@@ -929,12 +930,45 @@ const encuesta_03 = () => ({
     }
   },
 
-  get_tbl_kit_limpieza : () => {
+  get_tbl_kit_limpieza: () => { },
 
-  },
+  get_tbl_kit_botiquin: () => { },
+});
 
-  get_tbl_kit_botiquin : () => {
+const encuesta_04 = () => ({
+  get_data_escale: () => {
+    const c_mod = '1336098' // '#txt_cod_mod'
+    const uri = 'https://escale.minedu.gob.pe/padron/rest/instituciones?&estados=1&ubigeo=&nombreIE=&ugel=&start=0&codmod=' + c_mod + '&codlocal=&codinst=&nombreCP=&disVrae=S&disJuntos=S&disCrecer=S&disNinguno=S&matIndigena='
 
-  },
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', uri, true);
 
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(xhr.responseText); // Maneja la respuesta
+        sw_alert().basic_success(xhr.responseText);
+      }
+    };
+
+    xhr.send();
+
+    /*fetch(uri)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error en la petición: ' + response.statusText);
+        }
+        return response.json(); // O response.text() si la respuesta no es JSON
+      })
+      .then(data => {
+        console.log(data); // Maneja la respuesta
+        sw_alert().basic_success(data);
+      })
+      .catch(error => {
+        console.error('Error en la solicitud:', error);
+        sw_alert().error(error);
+      });*/
+
+
+  }
 })
+

@@ -4,6 +4,9 @@ require_once '../Models/mQuestionario.php';
 $instancia = new mQuestionario();
 $accion = $_POST['action'];
 switch ($accion) {
+    case 'get-info-escale':
+        $cod_mod  = $_SESSION['cod_mod'];
+        break;
     case 'get-tbl-kit-aseo':
         $cod_mod  = $_SESSION['cod_mod'];
         $ejecutar = $instancia->get_tbl_kit_aseo($cod_mod);

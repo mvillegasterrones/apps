@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 mx-auto">
                         <h3 data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="100">Contactanos</h3>
+                        data-aos-delay="100">Contáctanos</h3>
                         <p data-aos="fade-up" data-aos-duration="1100"
                         data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum magni tempora
                             cumque ipsum quia atque tempore, iste officiis a.</p>
