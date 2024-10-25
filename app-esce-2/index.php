@@ -171,14 +171,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 01</a>
-                                                    <p class="mt-2">
-                                                        The place is close to Barceloneta Beach and bus stop just 2 min
-                                                        by
-                                                        walk and near
-                                                        to "Naviglio" where you can enjoy the main night life in
-                                                        Barcelona.
-                                                    </p>
+                                                    <a href="javascript:;">Inteligencia Artificial, Insights Estratégicos y Reconocimiento de Oportunidades</a>
+                                                    <p class="mt-3"><b>Identifica oportunidades de negocio con IA</b></p>
+                                                    <p class="mt-2">Aprende a usar IA para analizar datos, descubrir patrones y tomar decisiones estratégicas.</p>
+                                                    <div class="text-start">
+                                                        <p class="mb-1"><b>Duración:</b> 2 horas</p>
+                                                        <p class="mb-1"><b>Modalidad:</b> Online</p>
+                                                        <p class="mb-1"><b>Fecha de inicio:</b> Próximamente</p>
+                                                        <p><b>Precio:</b> 180 soles</p>
+                                                    </div>
                                                 </div>
                                                 <hr class="dark horizontal my-0">
                                                 <div class="card-footer d-flex">
@@ -205,7 +206,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 02</a>
+                                                    <a href="javascript:;">Inteligencia Artificial 02Inteligencia Artificial para la Creatividad y Generación de Nuevas Ideas de Negocio</a>
                                                     <p class="mt-2">
                                                         The place is close to Barceloneta Beach and bus stop just 2 min
                                                         by
@@ -1092,80 +1093,84 @@
 
     <!-- //? EXPERIENCIA ESCE -->
     <section class="container mx-auto">
-        <div class="col-12 col-lg-11 mx-auto">
+        <!--<div class="col-12 col-lg-11 mx-auto">-->
 
             <div class="row align-content-center align-items-center mx-auto">
-                <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
-                    data-aos-delay="200">Experiencia ESCE</h3>
-                <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
-                    <div class="text-sections">
-                        <div id="text1" class="text-muted p-6">
-                            <h5>Claridad</h5>
-                            <p>Identifica y entiende problemas organizativos complejos</p>
-                        </div>
-                        <div id="text3" class="text-muted p-6">
-                            <h5>Colaboración</h5>
-                            <p>
-                                Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 align-content-center align-items-center" data-aos="fade-up"
-                    data-aos-duration="1200" data-aos-delay="400">
-                    <div class="circle-container m-0 p-0 align-content-center">
-                        <div class="circle mx-auto align-content-center align-items-center">
-                            <div class="quadrant" id="quadrant1" data-target="text1">
-                                <div class="text-white text-center p-4">
-                                    <i class="material-icons text-6xl mt-4 mb-0 pb-0">new_releases</i>
-                                    <p class="text-color-white mt-0 mt-0" style="font-size: 11px !important;">
-                                        Claridad
+                <div class="col-12 col-lg-11 mx-auto">
+                    <div class="row">
+                        <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-delay="200">Experiencia ESCE</h3>
+                        <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
+                            <div class="text-sections">
+                                <div id="text1" class="text-muted p-6">
+                                    <h5>Claridad</h5>
+                                    <p>Identifica y entiende problemas organizativos complejos</p>
+                                </div>
+                                <div id="text3" class="text-muted p-6">
+                                    <h5>Colaboración</h5>
+                                    <p>
+                                        Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
                                     </p>
                                 </div>
                             </div>
-                            <div class="quadrant" id="quadrant2" data-target="text2">
-                                <div class="text-white text-center p-4">
-                                    <i class="material-icons text-6xl mt-4 mb-0 pb-0">emoji_objects</i>
-                                    <h6 class="text-color-white" style="font-size: 11px !important;">Creatividad
-                                    </h6>
+                        </div>
+                        <div class="col-12 col-lg-4 align-content-center align-items-center" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="400">
+                            <div class="circle-container">
+                                <div class="circle mx-auto">
+                                    <div class="quadrant" id="quadrant1" data-target="text1">
+                                        <div class="text-white text-center p-4">
+                                            <i class="material-icons text-6xl mt-4 mb-0 pb-0">new_releases</i>
+                                            <p class="text-color-white mt-0 mt-0" style="font-size: 11px !important;">
+                                                Claridad
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="quadrant" id="quadrant2" data-target="text2">
+                                        <div class="text-white text-center p-4">
+                                            <i class="material-icons text-6xl mt-4 mb-0 pb-0">emoji_objects</i>
+                                            <h6 class="text-color-white" style="font-size: 11px !important;">Creatividad
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="quadrant" id="quadrant3" data-target="text3">
+                                        <div class="text-white text-center p-5 pt-4">
+                                            <i class="material-icons text-6xl mb-0">forum</i>
+                                            <h6 class="text-color-white" style="font-size: 11px !important;">Colaboración
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="quadrant" id="quadrant4" data-target="text4">
+                                        <div class="text-white text-center p-5 pt-4">
+                                            <i class="material-icons text-6xl mb-0">psychology</i>
+                                            <h6 class="text-color-white" style="font-size: 11px !important;">Relexión</h6>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="quadrant" id="quadrant3" data-target="text3">
-                                <div class="text-white text-center p-5 pt-4">
-                                    <i class="material-icons text-6xl mb-0">forum</i>
-                                    <h6 class="text-color-white" style="font-size: 11px !important;">Colaboración
-                                    </h6>
-                                </div>
-                            </div>
-                            <div class="quadrant" id="quadrant4" data-target="text4">
-                                <div class="text-white text-center p-5 pt-4">
-                                    <i class="material-icons text-6xl mb-0">psychology</i>
-                                    <h6 class="text-color-white" style="font-size: 11px !important;">Relexión</h6>
-                                </div>
+                                <div class="inner-circle"></div>
                             </div>
                         </div>
-                        <div class="inner-circle"></div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
-                    <div class="text-sections">
-                        <div id="text2" class="text-muted p-6">
-                            <h5>Creatividad</h5>
-                            <p>
-                                Imagina diversas soluciones efectivas
-                            </p>
-                        </div>
-                        <div id="text4" class="text-muted p-6">
-                            <h5>Reflexión</h5>
-                            <p>
-                                Conecta lo aprendido con tus desafíos profesionales
-                            </p>
+                        <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
+                            <div class="text-sections">
+                                <div id="text2" class="text-muted p-6">
+                                    <h5>Creatividad</h5>
+                                    <p>
+                                        Imagina diversas soluciones efectivas
+                                    </p>
+                                </div>
+                                <div id="text4" class="text-muted p-6">
+                                    <h5>Reflexión</h5>
+                                    <p>
+                                        Conecta lo aprendido con tus desafíos profesionales
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        <!--</div>-->
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->

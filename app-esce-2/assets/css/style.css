@@ -379,6 +379,9 @@ p.text-dark {
 /** CIRCULO */
 /* Contenedor del círculo */
 .circle-container {
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: 9% !important;
   position: relative;
   width: 300px;
   height: 300px;

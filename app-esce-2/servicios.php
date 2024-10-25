@@ -27,10 +27,8 @@
         <div class="container">
             <div class="row mb-6">
                 <div class="col-12 col-lg-6 mx-auto text-center">
-                    <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, minima.</h3>
-                    <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere atque facilis consequuntur
-                        deleniti cumque, totam corporis consectetur cum ducimus reprehenderit asperiores soluta, ea
-                        dignissimos, quasi quas incidunt saepe quo?</p>
+                    <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desbloquea la Innovación y Genera Impacto en tu Organización</h3>
+                    <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Al centro de toda organización exitosa está la capacidad de innovar. Nuestros servicios permiten que tus equipos canalicen su creatividad y experiencia en soluciones concretas que impulsan resultados. A través de la colaboración, pruebas rápidas y una implementación estratégica, te ayudamos a transformar ideas en productos o servicios escalables.</p>
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         <a href="#!" class="btn btn-warning text-color-white btn-rounded-20p icon-move-right">Leer más
                             &nbsp;&nbsp;<i class="far fa-arrow-right" aria-hidden="true"></i></a>
@@ -194,38 +192,42 @@
                     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                         <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                             <div class="card-body pb-0">
-                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit amet.</h4>
-                                <div class="pb-2 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">Innovación Bottom-Up</h4>
+                                <p data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">Aprovecha el conocimiento y la creatividad de tu equipo para resolver problemas reales y detectar nuevas oportunidades de negocio.</p>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Genera ideas con talleres y plataformas digitales</p>
                                     </div>
                                 </div>
-                                <div class="pb-2 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200">
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Prioriza según viabilidad técnica y necesidades del cliente</p>
                                     </div>
                                 </div>
-                                <div class="p-0 mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="200">
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="200">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Usa prototipos rápidos para validar antes de lanzar</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1600" data-aos-delay="200">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Detecta oportunidades escalables con bajo costo</p>
                                     </div>
                                 </div>
 
@@ -236,38 +238,42 @@
                     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                         <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
                             <div class="card-body pb-0">
-                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">Lorem ipsum dolor sit amet.</h4>
-                                <div class="pb-2 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
+                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">Innovación de Productos o Servicios</h4>
+                                <p data-aos="fade-down" data-aos-duration="1300" data-aos-delay="300">Convierte ideas en productos o servicios viables mediante metodologías actuales y acompañamiento en todo el proceso.</p>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Fomenta espacios para generar conceptos innovadores</p>
                                     </div>
                                 </div>
-                                <div class="pb-2 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Valida la viabilidad técnica y el alineamiento con el cliente</p>
                                     </div>
                                 </div>
-                                <div class="p-0 mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
                                     <div
                                         class="icon icon-md icon-shape text-center border-radius-xl">
                                         <i class="material-icons opacity-10 text-primary">check</i>
                                     </div>
                                     <div class="description ps-3">
-                                        <p class="mb-0">It becomes harder for us to give others a hand. We get our
-                                            heart broken by people
-                                            we love.</p>
+                                        <p class="mb-0">Prototipar rápidamente y ajusta con feedback de usuarios</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1600" data-aos-delay="600">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Enfócate en ideas con alto potencial de retorno</p>
                                     </div>
                                 </div>
 
@@ -286,20 +292,16 @@
             <div class="col-12 col-lg-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="container">
                     <div class="row main-bg-color-grey rounded rounded-15">
-                        <div class="col-12 col-lg-4 m-0">
+                        <div class="col-12 col-lg-5 m-0">
                             <img src="./assets/img/hero/hero-card-02.png" class="h-100 w-100" alt="" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
                         </div>
-                        <div class="col-12 col-lg-8 m-0 align-content-center align-items-center">
+                        <div class="col-12 col-lg-7 m-0 align-content-center align-items-center">
                             <div class="row p-6">
                                 <div class="col-12 col-8 mx-auto">
                                     <p class="mb-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem, ipsum.</p>
-                                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit. Esse, tempora.</h3>
-                                    <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime laudantium
-                                        voluptate sequi est eius eum omnis et? Nostrum sed ad quas quia sapiente non
-                                        nihil tempora ab at quos enim inventore quibusdam eaque cumque nemo fugit
-                                        perferendis culpa vitae assumenda, unde deleniti autem molestiae? Magnam minus
-                                        tenetur officia labore?</p>
+                                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h3>
+                                    <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">La innovación no es solo generar nuevas ideas, sino encontrar soluciones alineadas con las necesidades de tus clientes. Te ayudamos a aprovechar el potencial creativo de tu equipo para convertirlo en resultados concretos. Desde la ideación hasta la implementación, nuestros servicios están diseñados para impulsar el crecimiento de manera estratégica.</p>
+                                    <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="450">La innovación debe estar presente en cada parte de tu negocio. Ya sea mejorando procesos o desarrollando nuevos productos, te guiamos para llevar tus ideas al mercado y generar un impacto real. Empodera a tu equipo, refina tu estrategia y marca la diferencia.</p>
                                     <p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
                                         <button
                                             class="btn btn-warning main-bg-color-warning icon-move-right btn-rounded-20p mb-0">Leer

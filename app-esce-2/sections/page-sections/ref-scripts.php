@@ -49,7 +49,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     new Glide('#gliderrr1', {
       type: 'carousel',
-      perView: 4,
+      perView: 3,
       focusAt: 'center',
       autoplay: 3000,
       breakpoints: {
