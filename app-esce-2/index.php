@@ -12,6 +12,18 @@
     </title>
     <?php include './sections/page-sections/ref-header.php' ?>
 
+    <style>
+        .gliderrr-container {
+    position: relative;
+}
+
+.gliderrr-prev, .gliderrr-next {
+    z-index: 10;
+    cursor: pointer;
+}
+
+    </style>
+
 </head>
 
 <body class="case-study bg-gray-200">
@@ -22,9 +34,9 @@
             </div>
         </div>
     </div>
-    <header class="fadeIn1"
-        style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;"
-        data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;background-image: linear-gradient(rgba(0, 123, 255, 0.3), rgba(0, 123, 255, 0.1)), 
+                      url('./assets/img/hero/hero-card-02.png');" data-aos="flip-up" data-aos-duration="1000"
+        data-aos-delay="300">
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
@@ -59,7 +71,7 @@
     </header>
 
     <!-- //? NEWSLETTER -->
-    <div class="main-bg-color-grey mx-md-2 mt-n7 mb-7 fadeIn4 fadeInBottom transition-card">
+    <div class="main-bg-color-grey mx-md-2 mb-7 fadeIn4 fadeInBottom transition-card">
         <div class="container fade-in-up">
             <div class="row align-content-center">
                 <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
@@ -155,6 +167,14 @@
                     <div class="row">
 
                         <div id="gliderrr1" class="gliderrr">
+                            <button aria-label="Previous"
+                                class="gliderrr-prev btn btn-icon btn-round bg-gradient-primary text-white position-absolute start-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button aria-label="Next"
+                                class="gliderrr-next btn btn-icon btn-round bg-gradient-primary text-white position-absolute end-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                             <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
@@ -171,9 +191,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial, Insights Estratégicos y Reconocimiento de Oportunidades</a>
-                                                    <p class="mt-3"><b>Identifica oportunidades de negocio con IA</b></p>
-                                                    <p class="mt-2">Aprende a usar IA para analizar datos, descubrir patrones y tomar decisiones estratégicas.</p>
+                                                    <a href="javascript:;">Inteligencia Artificial, Insights
+                                                        Estratégicos y Reconocimiento de Oportunidades</a>
+                                                    <p class="mt-3"><b>Identifica oportunidades de negocio con IA</b>
+                                                    </p>
+                                                    <p class="mt-2">Aprende a usar IA para analizar datos, descubrir
+                                                        patrones y tomar decisiones estratégicas.</p>
                                                     <div class="text-start">
                                                         <p class="mb-1"><b>Duración:</b> 2 horas</p>
                                                         <p class="mb-1"><b>Modalidad:</b> Online</p>
@@ -206,7 +229,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 02Inteligencia Artificial para la Creatividad y Generación de Nuevas Ideas de Negocio</a>
+                                                    <a href="javascript:;">Inteligencia Artificial 02Inteligencia
+                                                        Artificial para la Creatividad y Generación de Nuevas Ideas de
+                                                        Negocio</a>
                                                     <p class="mt-2">
                                                         The place is close to Barceloneta Beach and bus stop just 2 min
                                                         by
@@ -331,6 +356,7 @@
 
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -342,6 +368,14 @@
                     <div class="row">
 
                         <div id="gliderrr2" class="gliderrr">
+                            <button aria-label="Previous"
+                                class="gliderrr-prev btn btn-icon btn-round bg-gradient-primary text-white position-absolute start-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button aria-label="Next"
+                                class="gliderrr-next btn btn-icon btn-round bg-gradient-primary text-white position-absolute end-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                             <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
@@ -529,6 +563,14 @@
                     <div class="row">
 
                         <div id="gliderrr3" class="gliderrr">
+                            <button aria-label="Previous"
+                                class="gliderrr-prev btn btn-icon btn-round bg-gradient-primary text-white position-absolute start-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button aria-label="Next"
+                                class="gliderrr-next btn btn-icon btn-round bg-gradient-primary text-white position-absolute end-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                             <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
@@ -716,6 +758,14 @@
                     <div class="row">
 
                         <div id="gliderrr4" class="gliderrr">
+                            <button aria-label="Previous"
+                                class="gliderrr-prev btn btn-icon btn-round bg-gradient-primary text-white position-absolute start-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button aria-label="Next"
+                                class="gliderrr-next btn btn-icon btn-round bg-gradient-primary text-white position-absolute end-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                             <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
@@ -903,6 +953,14 @@
                     <div class="row">
 
                         <div id="gliderrr5" class="gliderrr">
+                            <button aria-label="Previous"
+                                class="gliderrr-prev btn btn-icon btn-round bg-gradient-primary text-white position-absolute start-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button aria-label="Next"
+                                class="gliderrr-next btn btn-icon btn-round bg-gradient-primary text-white position-absolute end-0 top-50 translate-middle-y">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                             <div data-glide-el="track" class="glide__track h-100">
                                 <ul class="glide__slides h-100">
 
@@ -1085,92 +1143,87 @@
             </div>
 
         </div>
-    </div>
 
-    <!--<div>
-        <img src="./assets/img/sec-03.png" class="w-100" alt="">
-    </div>-->
+    </div>
 
     <!-- //? EXPERIENCIA ESCE -->
     <section class="container mx-auto">
-        <!--<div class="col-12 col-lg-11 mx-auto">-->
 
-            <div class="row align-content-center align-items-center mx-auto">
-                <div class="col-12 col-lg-11 mx-auto">
-                    <div class="row">
-                        <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
-                            data-aos-delay="200">Experiencia ESCE</h3>
-                        <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
-                            <div class="text-sections">
-                                <div id="text1" class="text-muted p-6">
-                                    <h5>Claridad</h5>
-                                    <p>Identifica y entiende problemas organizativos complejos</p>
-                                </div>
-                                <div id="text3" class="text-muted p-6">
-                                    <h5>Colaboración</h5>
-                                    <p>
-                                        Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
-                                    </p>
-                                </div>
+        <div class="row align-content-center align-items-center mx-auto">
+            <div class="col-12 col-lg-11 mx-auto">
+                <div class="row">
+                    <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="200">Experiencia ESCE</h3>
+
+                    <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
+                        <div class="text-sections">
+                            <div id="text1" class="text-muted p-6">
+                                <h5>Claridad</h5>
+                                <p>Identifica y entiende problemas organizativos complejos</p>
+                            </div>
+                            <div id="text3" class="text-muted p-6">
+                                <h5>Colaboración</h5>
+                                <p>
+                                    Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
+                                </p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 align-content-center align-items-center" data-aos="fade-up"
-                            data-aos-duration="1200" data-aos-delay="400">
-                            <div class="circle-container">
-                                <div class="circle mx-auto">
-                                    <div class="quadrant" id="quadrant1" data-target="text1">
-                                        <div class="text-white text-center p-4">
-                                            <i class="material-icons text-6xl mt-4 mb-0 pb-0">new_releases</i>
-                                            <p class="text-color-white mt-0 mt-0" style="font-size: 11px !important;">
-                                                Claridad
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="quadrant" id="quadrant2" data-target="text2">
-                                        <div class="text-white text-center p-4">
-                                            <i class="material-icons text-6xl mt-4 mb-0 pb-0">emoji_objects</i>
-                                            <h6 class="text-color-white" style="font-size: 11px !important;">Creatividad
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="quadrant" id="quadrant3" data-target="text3">
-                                        <div class="text-white text-center p-5 pt-4">
-                                            <i class="material-icons text-6xl mb-0">forum</i>
-                                            <h6 class="text-color-white" style="font-size: 11px !important;">Colaboración
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="quadrant" id="quadrant4" data-target="text4">
-                                        <div class="text-white text-center p-5 pt-4">
-                                            <i class="material-icons text-6xl mb-0">psychology</i>
-                                            <h6 class="text-color-white" style="font-size: 11px !important;">Relexión</h6>
-                                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 align-content-center align-items-center" data-aos="fade-up"
+                        data-aos-duration="1200" data-aos-delay="400">
+                        <div class="circle-container">
+                            <div class="circle mx-auto">
+                                <div class="quadrant" id="quadrant1" data-target="text1">
+                                    <div class="text-white text-center p-4">
+                                        <i class="material-icons text-6xl mt-4 mb-0 pb-0">new_releases</i>
+                                        <p class="text-color-white mt-0 mt-0" style="font-size: 11px !important;">
+                                            Claridad
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="inner-circle"></div>
+                                <div class="quadrant" id="quadrant2" data-target="text2">
+                                    <div class="text-white text-center p-4">
+                                        <i class="material-icons text-6xl mt-4 mb-0 pb-0">emoji_objects</i>
+                                        <h6 class="text-color-white" style="font-size: 11px !important;">Creatividad
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="quadrant" id="quadrant3" data-target="text3">
+                                    <div class="text-white text-center p-5 pt-4">
+                                        <i class="material-icons text-6xl mb-0">forum</i>
+                                        <h6 class="text-color-white" style="font-size: 11px !important;">Colaboración
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="quadrant" id="quadrant4" data-target="text4">
+                                    <div class="text-white text-center p-5 pt-4">
+                                        <i class="material-icons text-6xl mb-0">psychology</i>
+                                        <h6 class="text-color-white" style="font-size: 11px !important;">Relexión</h6>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="inner-circle"></div>
                         </div>
-                        <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
-                            <div class="text-sections">
-                                <div id="text2" class="text-muted p-6">
-                                    <h5>Creatividad</h5>
-                                    <p>
-                                        Imagina diversas soluciones efectivas
-                                    </p>
-                                </div>
-                                <div id="text4" class="text-muted p-6">
-                                    <h5>Reflexión</h5>
-                                    <p>
-                                        Conecta lo aprendido con tus desafíos profesionales
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
+                        <div class="text-sections">
+                            <div id="text2" class="text-muted p-6">
+                                <h5>Creatividad</h5>
+                                <p>
+                                    Imagina diversas soluciones efectivas
+                                </p>
+                            </div>
+                            <div id="text4" class="text-muted p-6">
+                                <h5>Reflexión</h5>
+                                <p>
+                                    Conecta lo aprendido con tus desafíos profesionales
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        <!--</div>-->
+        </div>
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
@@ -1251,52 +1304,7 @@
                                             a
                                             problemas reales, además de identificar nuevas oportunidades de negocio.
                                         </p>
-                                        <!--<p><b>Nuestro enfoque</b> se basa en 4 pilares clave</p>
-
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Generación:</b> Espacios de creatividad e ideación mediante
-                                                    talleres y plataformas digitales.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Evaluación:</b> Priorizamos la viabilidad técnica,
-                                                    necesidades
-                                                    del cliente y facilidad de implementación.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Pruebas de bajo costo:</b> Prototipos rápidos y feedback de
-                                                    usuarios antes de la implementación.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Oportunidades escalables:</b> Ideas viables con potencial de
-                                                    crecimiento en relación al esfuerzo y costo.
-                                                </span>
-                                            </div>
-                                        </div>-->
                                     </div>
-                                    <!--<div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
-                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>-->
                                 </div>
 
                                 <div class="card levitate-on-hover p-4 mb-5 h-50"
@@ -1360,63 +1368,7 @@
                                             acompañamos desde la concepción hasta el lanzamiento, para que tus
                                             propuestas sean efectivas.
                                         </p>
-                                        <!--<p><b>Nuestro enfoque</b> se basa en 5 pilares clave</p>
-
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Ideación y Conceptualización:</b> Creamos espacios para la
-                                                    generación de ideas innovadoras.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Validación de Concepto:</b> Evaluamos la viabilidad técnica y
-                                                    el
-                                                    alineamiento con las expectativas del cliente.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Prototipado Rápido:</b> Prototipos rápidos y feedback de
-                                                    usuarios
-                                                    antes de la implementación.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Escalabilidad:</b> Identificamos las ideas con mayor
-                                                    potencial y
-                                                    potencial retorno de inversión.
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="p-3 d-flex px-0 py-1">
-                                            <i class="material-icons text-primary font-weight-bold">done</i>
-                                            <div class="ps-3">
-                                                <span class="text-sm">
-                                                    <b>Deducción de Impuestos:</b> Acceso a incentivos fiscales para
-                                                    empresas que invierten en I+D.
-                                                </span>
-                                            </div>
-                                        </div>-->
                                     </div>
-                                    <!--<div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
-                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>-->
                                 </div>
 
                                 <div class="card levitate-on-hover p-4"
@@ -1475,61 +1427,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!--<div class="col-12 col-lg-6 mb-4">
-                                <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
-                                    data-aos="zoom-in" data-aos-duration="1600" data-aos-delay="700">
-                                    <div class="card-body pb-0">
-                                        <h4 class="mb-0">Olivia Harper</h4>
-                                        <hr class="bg-warning w-100">
-                                        <p>@oliviaharper</p>
-                                        <p class="mt-2">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                            enim
-                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem
-                                            aliquam
-                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate
-                                            nesciunt
-                                            ad sequi amet! Accusantium, saepe molestiae.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
-                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-
-                            <!--<div class="col-12 col-lg-6 mb-4">
-                                <div class="card levitate-on-hover p-4 h-100"
-                                    style="box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;"
-                                    data-aos="zoom-in" data-aos-duration="1700" data-aos-delay="800">
-                                    <div class="card-body pb-0">
-                                        <h4 class="mb-0">Olivia Harper</h4>
-                                        <hr class="bg-warning w-100">
-                                        <p>@oliviaharper</p>
-                                        <p class="mt-2">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                                            enim
-                                            maxime iusto nostrum eum, minus quisquam aspernatur harum, dolorem
-                                            aliquam
-                                            repudiandae molestiae consectetur quo eaque maiores, ea cupiditate
-                                            nesciunt
-                                            ad sequi amet! Accusantium, saepe molestiae.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer pt-2">
-                                        <div class="mx-auto">
-                                            <p class="mb-0"><b>Live online</b> Lorem, ipsum dolor.</p>
-                                            <p><b>In person</b> Lorem, ipsum dolor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-
                         </div>
                     </div>
                 </div>
@@ -1554,28 +1451,23 @@
             <div class="container pb-5 position-relative z-index-3 text-color-grey">
                 <div class="row">
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100 card-rotate" data-aos="fade-up" data-aos-duration="1200"
-                            data-aos-delay="400">
-                            <div class="text-center mt-n5 z-index-1">
-                                <div class="position-relative">
-                                    <div class="blur-shadow-avatar rounded-circle">
-                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
-                                        style="background-image: url('<?= $ico ?>'"></div>
-                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
-                                </div>
+
+                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="400">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                <a class="d-block blur-shadow-image">
+                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
+                                        class="img-fluid shadow border-radius-lg">
+                                </a>
                             </div>
-                            <div class="card-body text-center pb-0">
-                                <h4 class="mb-0">Certificado de Asistencia</h4>
-                                <p>por @esce</p>
+                            <div class="card-body text-center">
+                                <a class="h4" href="javascript:;">Certificado de Asistencia</a>
                                 <p class="mt-2">
                                     Se otorga a quienes participan en nuestros cursos cortos, certificando únicamente la
                                     asistencia.
                                 </p>
                             </div>
-                            <div class="card-footer text-center pt-2">
+                            <div class="card-footer d-flex">
                                 <div class="mx-auto">
                                     <a href="javascript:;" class="icon-move-right text-sm">Ver más
                                         <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
@@ -1585,27 +1477,23 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">
-                            <div class="text-center mt-n5 z-index-1">
-                                <div class="position-relative">
-                                    <div class="blur-shadow-avatar rounded-circle">
-                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
-                                        style="background-image: url('<?= $ico ?>')"></div>
-                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
-                                </div>
+
+                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
+                            data-aos-duration="1300" data-aos-delay="500">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                <a class="d-block blur-shadow-image">
+                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
+                                        class="img-fluid shadow border-radius-lg">
+                                </a>
                             </div>
-                            <div class="card-body text-center pb-0">
-                                <h4 class="mb-0">Certificado de Competencia</h4>
-                                <p>por @esce</p>
+                            <div class="card-body text-center">
+                                <a class="h4" href="javascript:;">Certificado de Competencia</a>
                                 <p class="mt-2">
                                     Se concede a los participantes de nuestros talleres, validando su participación en
                                     dinámicas diseñadas para fomentar el desarrollo de competencias.
                                 </p>
                             </div>
-                            <div class="card-footer text-center pt-2">
+                            <div class="card-footer d-flex">
                                 <div class="mx-auto">
                                     <a href="javascript:;" class="icon-move-right text-sm">Ver más
                                         <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
@@ -1615,27 +1503,23 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
-                        <div class="card h-100" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
-                            <div class="text-center mt-n5 z-index-1">
-                                <div class="position-relative">
-                                    <div class="blur-shadow-avatar rounded-circle">
-                                        <img class="avatar avatar-xxl shadow-lg pt-2 pb-2" src="<?= $ico ?>"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
-                                        style="background-image: url(&quot;../assets/img/team-4.jpg&quot;);"></div>
-                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
-                                </div>
+
+                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
+                            data-aos-duration="1400" data-aos-delay="600">
+                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                <a class="d-block blur-shadow-image">
+                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
+                                        class="img-fluid shadow border-radius-lg">
+                                </a>
                             </div>
-                            <div class="card-body text-center pb-0">
-                                <h4 class="mb-0">Certificado de Liderazgo</h4>
-                                <p>por @esce</p>
+                            <div class="card-body text-center">
+                                <a class="h4" href="javascript:;">Certificado de Liderazgo</a>
                                 <p class="mt-2">
                                     Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
                                     talleres.
                                 </p>
                             </div>
-                            <div class="card-footer text-center pt-2">
+                            <div class="card-footer d-flex">
                                 <div class="mx-auto">
                                     <a href="javascript:;" class="icon-move-right text-sm">Ver más
                                         <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>

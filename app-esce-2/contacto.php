@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!--<div class="row">
                                     <div class="col-md-12">
                                         <div class="input-group input-group-static mb-4">
                                             <label>Nombre de la empresa/compañía <b class="text-primary">*</b></label>
@@ -85,8 +85,8 @@
                                             <span class="input-group-text"><i class="material-icons">home</i></span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                </div>-->
+                                <!--<div class="row">
                                     <div class="col-md-12">
                                         <div class="input-group input-group-static mb-4">
                                             <label>Elige tu carrera <b class="text-primary">*</b></label>
@@ -100,8 +100,8 @@
                                                     class="material-icons">edit_note</i></span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                </div>-->
+                                <!--<div class="row">
                                     <div class="col-md-12">
                                         <div class="input-group input-group-static mb-4">
                                             <label>Elige tu departamento <b class="text-primary">*</b></label>
@@ -115,8 +115,8 @@
                                                     class="material-icons">edit_note</i></span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                </div>-->
+                                <!--<div class="row">
                                     <div class="col-md-12">
                                         <div class="input-group input-group-static mb-4">
                                             <label>Título de tu carrera <b class="text-primary">*</b></label>
@@ -124,12 +124,12 @@
                                             <span class="input-group-text"><i class="material-icons">edit</i></span>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="form-group mb-4 mt-md-0 mt-4">
                                     <div class="input-group input-group-static mb-4">
                                         <label>Cuéntanos más acerca de tus necesidades...</label>
-                                        <textarea name="message" class="form-control" id="message" rows="6"
-                                            placeholder="Descriube tus comentarios en 250 caracteres"></textarea>
+                                        <textarea name="message" class="form-control" id="message" rows="3"
+                                            placeholder="Descriube aquí tus comentarios..."></textarea>
                                         <span class="input-group-text"><i class="material-icons">edit</i></span>
                                     </div>
                                 </div>
@@ -139,9 +139,9 @@
                                             <label>¿Cómo conocíste acerca de ESCE? <b class="text-primary">*</b></label>
                                             <select class="form-control">
                                                 <option value="">-- Seleccione --</option>
-                                                <option>Departamento 1</option>
-                                                <option>Departameyto 2</option>
-                                                <option>Departamento 3</option>
+                                                <option>Opción 1</option>
+                                                <option>Opción 2</option>
+                                                <option>Opción 3</option>
                                             </select>
                                             <span class="input-group-text"><i
                                                     class="material-icons">edit_note</i></span>
@@ -181,18 +181,18 @@
                             <hr class="w-100 main-bg-color-grey">
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                    <!--<div class="row" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
                         <div class="col-12 col-lg-5 mx-auto">
                             <h3>Lorem ipsum dolor..</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam delectus tempora harum
                                 quod vero eaque atque optio. Praesentium tempore corrupti neque soluta?
                             </p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
 
-            <div class="row text-center">
+            <!--<div class="row text-center">
                 <h3 class="mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas frecuentes
                 </h3>
                 <div class="row">
@@ -264,109 +264,10 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!--<div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1500"
-                                data-aos-delay="600">
-                                <h5 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        ¿Puedo tomar el curso con mi equipo?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, los cursos y talleres de ESCE son ideales para equipos de trabajo.
-                                        Fomentamos la participación grupal para que puedas aplicar los conocimientos
-                                        adquiridos en un entorno colaborativo. De hecho, lo equipos de 3 o más
-                                        personas
-                                        cuentan con un descuento del 25%
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1600"
-                                data-aos-delay="700">
-                                <h5 class="accordion-header" id="headingFifth">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
-                                        aria-expanded="false" aria-controls="collapseFifth">
-                                        ¿Ofrecen descuentos?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseFifth" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, ofrecemos descuentos por pronta matrícula o promociones especiales en
-                                        ciertos periodos del año. Para más detalles, consulta nuestras políticas de
-                                        descuentos o contacta al equipo de soporte.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1700"
-                                data-aos-delay="800">
-                                <h5 class="accordion-header" id="headingSix">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                        aria-expanded="false" aria-controls="collapseSix">
-                                        ¿Obtendré un certificado al finalizar un curso o taller?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, al completar un curso o taller, recibirás un certificado que acredita tu
-                                        participación en las dinámicas de aprendizaje diseñadas para el desarrollo
-                                        de
-                                        competencias.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1800"
-                                data-aos-delay="900">
-                                <h5 class="accordion-header" id="headingSeven">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                                        aria-expanded="false" aria-controls="collapseSeven">
-                                        ¿Cómo puedo inscribirme en un curso o taller?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Puedes inscribirte directamente a través de nuestra plataforma en línea. Si
-                                        tienes alguna pregunta sobre el proceso de inscripción, no dudes en
-                                        contactarnos.
-                                    </div>
-                                </div>
-                            </div>-->
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 

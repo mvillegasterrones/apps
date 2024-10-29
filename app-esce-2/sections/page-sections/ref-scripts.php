@@ -50,29 +50,37 @@
     new Glide('#gliderrr1', {
       type: 'carousel',
       perView: 3,
-      focusAt: 'center',
+      /*focusAt: 'center',*/
       autoplay: 3000,
+      slidesToScroll: 1,
       breakpoints: {
         800: {
           perView: 1
         }
-      }
+      },
+      arrows: {
+        prev: '.gliderrr-prev',
+        next: '.gliderrr-next'
+    }
     }).mount();
-
-    
   });
 
   function crear_glider(idx) {
     new Glide('#gliderrr'+idx, {
       type: 'carousel',
-      perView: 4,
-      focusAt: 'center',
+      perView: 3,
+      /*focusAt: 'center',*/
       autoplay: 3000,
+      slidesToScroll: 1,
       breakpoints: {
         800: {
           perView: 1
         }
-      }
+      },
+      arrows: {
+        prev: '.gliderrr-prev',
+        next: '.gliderrr-next'
+    }
     }).mount()
   }
 
