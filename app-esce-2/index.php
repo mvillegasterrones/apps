@@ -14,14 +14,14 @@
 
     <style>
         .gliderrr-container {
-    position: relative;
-}
+            position: relative;
+        }
 
-.gliderrr-prev, .gliderrr-next {
-    z-index: 10;
-    cursor: pointer;
-}
-
+        .gliderrr-prev,
+        .gliderrr-next {
+            z-index: 10;
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -1578,8 +1578,9 @@
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
                             repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
                         <p data-aos="fade-up" data-aos-duration="1150" data-aos-delay="280">
-                            <a href="<?= $ruta_contacto ?>" class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una consulta <i
-                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></a>
+                            <a href="<?= $ruta_contacto ?>"
+                                class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una
+                                consulta <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></a>
                         </p>
                     </div>
                     <div class="col-12 col-lg-8 mx-auto">

@@ -22,7 +22,7 @@
     </div>
   </div>
   <section class="pt-3 pt-md-5 pb-md-5 pt-lg-9 mt-8 mt-md-7 mt-lg-0">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
       <div class="col-12 mx-auto pb-5">
         <div class="card shadow-lg">
           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
@@ -72,10 +72,10 @@
               pueda considerarse inapropiado, ofensivo o que incumpla estos Términos y Condiciones.</p>
 
             <h5 class="mt-5 mb-3">Seguridad</h5>
-            No nos hacemos responsables de ningún contenido que aparezca en su sitio web. Usted acepta protegernos y
+            <p>No nos hacemos responsables de ningún contenido que aparezca en su sitio web. Usted acepta protegernos y
             defendernos contra todas las reclamaciones que surjan en su sitio web. No debe aparecer ningún enlace en
             ningún sitio web que pueda interpretarse como difamatorio, obsceno o criminal, o que infrinja, viole o
-            defienda la infracción u otra violación de los derechos de terceros.
+            defienda la infracción u otra violación de los derechos de terceros.</p>
 
           </div>
         </div>
