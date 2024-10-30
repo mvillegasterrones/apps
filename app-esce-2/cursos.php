@@ -113,11 +113,8 @@
             <div class="row mb-0 text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000"
                     data-aos-delay="100">
-                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-                        deleniti.</h3>
-                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Aut, earum!</p>
+                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h3>
+                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300"
                         data-aos-delay="400">
                         <input type="text"
@@ -128,7 +125,7 @@
                             class="btn btn-warning mb-0 h-100 position-relative z-index-2 btn-rounded-20p">Suscribirme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                     </div>
                     <p class="text-color-white mt-3" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                        Recibe las últimas noticias directo en tu correo electrónico.</p>
                 </div>
             </div>
         </div>

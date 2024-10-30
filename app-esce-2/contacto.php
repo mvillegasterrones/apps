@@ -45,7 +45,7 @@
                         <form id="contact-form" method="post" autocomplete="off">
                             <div class="card-body">
                                 <div class="row">
-                                    <h5 class="mb-4">Lorem ipsum dolor sit amet.</h5>
+                                    <h5 class="mb-4">Evíanos un mensaje</h5>
                                     <div class="col-md-6">
                                         <div class="input-group input-group-static mb-4">
                                             <label>Nombres <b class="text-primary">*</b></label>

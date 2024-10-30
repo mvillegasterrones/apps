@@ -191,26 +191,20 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial, Insights
-                                                        Estratégicos y Reconocimiento de Oportunidades</a>
-                                                    <p class="mt-3"><b>Identifica oportunidades de negocio con IA</b>
-                                                    </p>
-                                                    <p class="mt-2">Aprende a usar IA para analizar datos, descubrir
-                                                        patrones y tomar decisiones estratégicas.</p>
+                                                    <a href="javascript:;"><?= $ia_titulo_01 ?></a>
+                                                    <p class="mt-3"><b><?= $ia_subtitulo_01 ?></b></p>
+                                                    <p class="mt-2"><?= $ia_contenido_01 ?></p>
                                                     <div class="text-start">
-                                                        <p class="mb-1"><b>Duración:</b> 2 horas</p>
-                                                        <p class="mb-1"><b>Modalidad:</b> Online</p>
-                                                        <p class="mb-1"><b>Fecha de inicio:</b> Próximamente</p>
-                                                        <p><b>Precio:</b> 180 soles</p>
+                                                        <?= $ia_detalle_01 ?>
                                                     </div>
                                                 </div>
                                                 <hr class="dark horizontal my-0">
                                                 <div class="card-footer d-flex">
-                                                    <button
+                                                    <a href='<?= $ia_link_01 ?>'
                                                         class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Ver surso &nbsp;&nbsp;&nbsp;&nbsp;
                                                         <i class="far fa-arrow-right"></i>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,24 +223,22 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 02Inteligencia
-                                                        Artificial para la Creatividad y Generación de Nuevas Ideas de
-                                                        Negocio</a>
-                                                    <p class="mt-2">
-                                                        The place is close to Barceloneta Beach and bus stop just 2 min
-                                                        by
-                                                        walk and near
-                                                        to "Naviglio" where you can enjoy the main night life in
-                                                        Barcelona.
-                                                    </p>
+                                                    <a href="javascript:;">
+                                                        <?= $ia_titulo_02 ?>
+                                                    </a>
+                                                    <p class="mt-3"><b><?= $ia_subtitulo_02 ?></b></p>
+                                                    <p class="mt-2"><?= $ia_contenido_02 ?></p>
+                                                    <div class="text-start">
+                                                        <?= $ia_detalle_02 ?>
+                                                    </div>
                                                 </div>
                                                 <hr class="dark horizontal my-0">
                                                 <div class="card-footer d-flex">
-                                                    <button
+                                                    <a href="<?= $ia_link_02 ?>"
                                                         class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Ver curso &nbsp;&nbsp;&nbsp;&nbsp;
                                                         <i class="far fa-arrow-right"></i>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,22 +257,22 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 03</a>
-                                                    <p class="mt-2">
-                                                        The place is close to Barceloneta Beach and bus stop just 2 min
-                                                        by
-                                                        walk and near
-                                                        to "Naviglio" where you can enjoy the main night life in
-                                                        Barcelona.
-                                                    </p>
+                                                    <a href="javascript:;">
+                                                        <?= $ia_titulo_03 ?>
+                                                    </a>
+                                                    <p class="mt-3"><b><?= $ia_subtitulo_03 ?></b></p>
+                                                    <p class="mt-2"><?= $ia_contenido_03 ?></p>
+                                                    <div class="text-start">
+                                                        <?= $ia_detalle_03 ?>
+                                                    </div>
                                                 </div>
                                                 <hr class="dark horizontal my-0">
                                                 <div class="card-footer d-flex">
-                                                    <button
+                                                    <a href="<?= $ia_link_03 ?>"
                                                         class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Ver curso &nbsp;&nbsp;&nbsp;&nbsp;
                                                         <i class="far fa-arrow-right"></i>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -299,22 +291,22 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body px-4 pt-4">
-                                                    <a href="javascript:;">Inteligencia Artificial 04</a>
-                                                    <p class="mt-2">
-                                                        The place is close to Barceloneta Beach and bus stop just 2 min
-                                                        by
-                                                        walk and near
-                                                        to "Naviglio" where you can enjoy the main night life in
-                                                        Barcelona.
-                                                    </p>
+                                                    <a href="javascript:;">
+                                                        <?= $ia_titulo_04 ?>
+                                                    </a>
+                                                    <p class="mt-3"><b><?= $ia_subtitulo_04 ?></b></p>
+                                                    <p class="mt-2"><?= $ia_contenido_04 ?></p>
+                                                    <div class="text-start">
+                                                        <?= $ia_detalle_04 ?>
+                                                    </div>
                                                 </div>
                                                 <hr class="dark horizontal my-0">
                                                 <div class="card-footer d-flex">
-                                                    <button
+                                                    <a href="<?= $ia_link_04 ?>"
                                                         class="btn bg-gradient-danger btn-block w-100 move-on-hover icon-move-right mb-1">
-                                                        Acción 1&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Ver curso &nbsp;&nbsp;&nbsp;&nbsp;
                                                         <i class="far fa-arrow-right"></i>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1592,8 +1584,7 @@
                                         class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                         aria-expanded="false" aria-controls="collapseOne">
-                                        ¿Cómo funcionan los cursos y talleres en línea de ESCE? ¿Importa mi zona
-                                        horaria?
+                                        ¿Cómo funcionan los cursos y talleres en línea de ESCE?
                                         <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
                                             aria-hidden="true"></i>
                                         <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
