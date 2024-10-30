@@ -5,8 +5,9 @@ $cursos = (isset($_GET['cursos'])) ? ' active-nav' : '';
 $recursos = (isset($_GET['recursos'])) ? ' active-nav' : '';
 $contacto = (isset($_GET['contacto'])) ? ' active-nav' : '';
 $blog = (isset($_GET['blog'])) ? ' active-nav' : '';
+$privacidad = (isset($_GET['terminos'])) ? ' active-nav' : '';
 
-if ((isset($_GET['nosotros'])) || (isset($_GET['servicios'])) || (isset($_GET['cursos'])) || (isset($_GET['recursos'])) || (isset($_GET['contacto']))) {
+if ((isset($_GET['nosotros'])) || (isset($_GET['servicios'])) || (isset($_GET['cursos'])) || (isset($_GET['recursos'])) || (isset($_GET['contacto'])) || (isset($_GET['terminos']))) {
   $logo_dark = './assets/img/logos/esce-sb-1.png';
 } else {
   $logo_dark = './assets/img/logos/esce-white.png';
@@ -77,9 +78,6 @@ if ((isset($_GET['nosotros'])) || (isset($_GET['servicios'])) || (isset($_GET['c
 
       </ul>
     </div>
-
-
-
 
   </div>
 </nav>

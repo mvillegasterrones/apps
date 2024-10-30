@@ -97,13 +97,14 @@
                                         Contacto
                                     </a>
                                 </li>
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-material-kit-pro-footer"
-                                        target="_blank">
-                                        Custom Development
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="<?= $ruta_terminos ?>"
+                                        target="">
+                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        Privacidad
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!--<li class="nav-item">
                                     <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
                                         Sponsorships
                                     </a>

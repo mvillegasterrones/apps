@@ -71,7 +71,7 @@
     </header>
 
     <!-- //? NEWSLETTER -->
-    <div class="main-bg-color-grey mx-md-2 mb-7 fadeIn4 fadeInBottom transition-card">
+    <div class="main-bg-color-grey mb-7 fadeIn4 fadeInBottom transition-card">
         <div class="container fade-in-up">
             <div class="row align-content-center">
                 <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
@@ -1137,13 +1137,10 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </section>
             </div>
-
         </div>
-
     </div>
 
     <!-- //? EXPERIENCIA ESCE -->
@@ -1545,13 +1542,13 @@
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
                         <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus
-                            habilidades.</p>
+                            habilidades</p>
                         <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
                             data-aos-delay="300">Avanza en tu carrera generando impacto</h1>
                         <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
                             Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
                             crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
-                            disposición una serie de recursos gratuitos..</h5>
+                            disposición una serie de recursos gratuitos.</h5>
                         <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
                             data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y
@@ -1580,10 +1577,10 @@
                             necessitatibus
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
                             repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
-                        <!--<p>
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Accion <i
-                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
-                        </p>-->
+                        <p data-aos="fade-up" data-aos-duration="1150" data-aos-delay="280">
+                            <a href="<?= $ruta_contacto ?>" class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una consulta <i
+                                    class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></a>
+                        </p>
                     </div>
                     <div class="col-12 col-lg-8 mx-auto">
                         <div class="accordion" id="accordionRental">

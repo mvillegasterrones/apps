@@ -30,7 +30,7 @@ $social_instagram     = '#';
 $social_linkedin      = '#';
 
 $nombre_empresa       = 'ESCE';
-$correo_empresa       = 'consultas@ecegp.edu.pe';
+$correo_empresa       = 'consultas@esce.edu.pe';
 $nombre_largo_empresa = 'Escuela de Ciencias Empresariales y Gestión Publica';
 $web_url_design       = 'https://mvillegasterrones.github.io/apps/app-my-profile/index.html';
 
@@ -59,6 +59,8 @@ $ruta_cursos                = './cursos.php?cursos=1';
 $ruta_recursos              = './recursos.php?recursos=1';
 $ruta_contacto              = './contacto.php?contacto=1';
 $ruta_blog                  = './blog.php?blog=1';
+$ruta_terminos              = './terminos-y-condicioones.php?terminos=1';
+
 $ruta_teaching_the_teachers = './teaching-the-teachers.php';
 
 $innovacion_botom_up        = './innovacion-bottom-up.php';

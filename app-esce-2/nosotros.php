@@ -291,7 +291,7 @@
 
     </div>
 
-    <?php include './sections/page-sections/footer.php' ?>
+    <?php include './sections/page-sections/footer-2.php' ?>
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 </body>
