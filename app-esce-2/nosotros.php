@@ -15,7 +15,7 @@
 
 <body class="case-study bg-gray-200">
 
-    <div class="container position-absolute z-index-sticky top-0 mb-10">
+    <div class="container position-absolute z-index-sticky top-0 mb-10" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -23,12 +23,12 @@
         </div>
     </div>
 
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-8">
+    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
 
-        <section class="py-md-2 mb-7 px-lg-5 pb-5">
+        <section class="py-md-2 mb-7 mt-4 px-lg-5 pb-5">
             <div class="container">
-                <h2 class="text-color-grey mb-5 mb-lg-4">Nosotros</h2>
-                <div class="row align-items-center">
+                <!--<h2 class="text-color-grey mb-5 mb-lg-4">Nosotros</h2>-->
+                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                     <div class="col-lg-8">
                         <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
                         <p class="">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                <div class="row" style="display: flex;justify-content: center;align-items: center;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                     <h3 class="mb-4 text-color-grey">Nuestra Misión</h3>
                     <p class="mb-4">
                         Formar alumnos con creatividad, pensamiento crítico, comunicación efectiva y conciencia
@@ -195,9 +195,9 @@
             </div>
         </section>
         
-        <h2 class="text-xolor-grey text-center mb-8"><img src="<?= $ico ?>" class="w-5">Nuestro equipo</h2>
+        <h3 class="text-xolor-grey text-center mb-8" data-aos="fade-up" data-aos-duration="1280" data-aos-delay="380">Nuestro equipo</h3>
 
-        <div class="card main-bg-color-white card-body mb-10 shadow-xl mx-3 mx-md-7 mt-n6 fade-in-up">
+        <div class="card main-bg-color-white card-body mb-10 shadow-xl mx-3 mx-md-7 mt-n6 fade-in-up" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
             <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
                 data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
                 data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
@@ -229,7 +229,7 @@
             </div>
         </div>
 
-        <div class="card main-bg-color-white card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6">
+        <div class="card main-bg-color-white card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
             <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
                 data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
                 data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
