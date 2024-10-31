@@ -114,7 +114,7 @@
             <div class="row text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000"
                     data-aos-delay="100">
-                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h3>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300"
                         data-aos-delay="400">
@@ -139,8 +139,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-7 mx-auto" data-aos="fade-up" data-aos-duration="1000"
                             data-aos-delay="100">
-                            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Lorem ipsum dolor sit
-                                amet consectetur.</h3>
+                            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Lorem ipsum dolor sit
+                                amet consectetur.</h2>
 
                             <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit,
                                 amet consectetur adipisicing elit. Consectetur recusandae error
@@ -172,8 +172,8 @@
                                 nihil obcaecati iusto pariatur est voluptatem officiis beatae rem nemo officia, in
                                 doloribus.</p>
 
-                            <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Lorem ipsum dolor sit
-                                amet consectetur.</h3>
+                            <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">Lorem ipsum dolor sit
+                                amet consectetur.</h2>
 
                             <p data-aos="fade-up" data-aos-duration="1600" data-aos-delay="700">Lorem ipsum dolor, sit
                                 amet consectetur adipisicing elit. Ipsam labore sunt cupiditate, expedita officiis
@@ -193,7 +193,7 @@
                                 corporis cumque, mollitia, minima quas quidem facere assumenda ullam voluptate? Odio
                                 libero inventore dolor. Quos, quaerat cupiditate! Nesciunt, dolore.</p>
 
-                            <p class="mb-2">
+                            <p class="mb-2" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="900">
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 1</button>
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 2</button>
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 3</button>
@@ -201,7 +201,7 @@
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 5</button>
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 6</button>
                             </p>
-                            <p class="mb-2">
+                            <p class="mb-2" data-aos="fade-up" data-aos-duration="1900" data-aos-delay="980">
                                 <button type="button" class="btn btn-facebook btn-icon-only">
                                     <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
                                 </button>

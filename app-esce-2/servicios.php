@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row mb-6">
                 <div class="col-12 col-lg-6 mx-auto text-center">
-                    <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desbloquea la Innovación y Genera Impacto en tu Organización</h3>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desbloquea la Innovación y Genera Impacto en tu Organización</h2>
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Al centro de toda organización exitosa está la capacidad de innovar. Nuestros servicios permiten que tus equipos canalicen su creatividad y experiencia en soluciones concretas que impulsan resultados. A través de la colaboración, pruebas rápidas y una implementación estratégica, te ayudamos a transformar ideas en productos o servicios escalables.</p>
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         <a href="#!" class="btn btn-warning text-color-white btn-rounded-20p icon-move-right">Leer más
@@ -39,7 +39,7 @@
             <div class="row align-content-center align-items-center">
                 <div class="col-12 col-lg-6">
                     <div class="col-12 col-lg-12 mx-auto">
-                        <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat.</p>
+                        <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat.</h4>
 
                             <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias impedit
                                 quibusdam. Unde, illo?</p>
@@ -176,8 +176,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5 mx-auto mt-7 mb-3">
-                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-                        repellendus.</h3>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                        repellendus.</h2>
                 </div>
 
                 <div class="row mb-7">
@@ -299,7 +299,7 @@
                             <div class="row p-6">
                                 <div class="col-12 col-8 mx-auto">
                                     <p class="mb-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem, ipsum.</p>
-                                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h3>
+                                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h2>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">La innovación no es solo generar nuevas ideas, sino encontrar soluciones alineadas con las necesidades de tus clientes. Te ayudamos a aprovechar el potencial creativo de tu equipo para convertirlo en resultados concretos. Desde la ideación hasta la implementación, nuestros servicios están diseñados para impulsar el crecimiento de manera estratégica.</p>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="450">La innovación debe estar presente en cada parte de tu negocio. Ya sea mejorando procesos o desarrollando nuevos productos, te guiamos para llevar tus ideas al mercado y generar un impacto real. Empodera a tu equipo, refina tu estrategia y marca la diferencia.</p>
                                     <p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
@@ -322,7 +322,7 @@
     <div class="container mb-7">
         <div class="row">
             <div class="col-12 col-6 mx-auto text-center mb-5">
-                <h3 class="text-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h3>
+                <h2 class="text-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h2>
             </div>
         </div>
         <div class="row">
@@ -382,7 +382,7 @@
         <div class="container mb-0">
             <div class="row mb-0 text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h3>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
                         <input type="text"

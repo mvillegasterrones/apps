@@ -1,6 +1,11 @@
 <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
 <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
 
@@ -23,4 +28,13 @@
     /*.async-hide {
         opacity: 0 !important
     }*/
+    h1,h2,h3,h4,h5,h6, p, strong, span, button, b, label, ul, li {
+        font-family: "Raleway", sans-serif !important;
+        font-optical-sizing: auto !important;
+        /*font-weight: normal !important;*/
+        /*font-style: normal !important;*/
+    }
+    h1,h2,h3,h4,h5,h6, strong {
+        /*font-weight: 700 !important;*/
+    }
 </style>

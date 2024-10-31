@@ -30,7 +30,7 @@
                 <!--<h2 class="text-color-grey mb-5 mb-lg-4">Nosotros</h2>-->
                 <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                     <div class="col-lg-8">
-                        <h3 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h3>
+                        <h2 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h2>
                         <p class="">
                             Somos una organización enfocada en la educación superior centrada en valores que reflejan
                             nuestra aspiración de formar, no sólo egresados de éxito, sino además personas que sean
@@ -54,7 +54,7 @@
                             la eficiencia de quienes trabajan en el sector público, a cualquier nivel, en nuestro país.
                         </p>
 
-                        <h3 class="mb-4 text-color-grey">Nuestro Propósito</h3>
+                        <h2 class="mb-4 text-color-grey">Nuestro Propósito</h2>
                         <p class="mb-4">
                             Ser una institución que promueve el desarrollo económico y social descentralizado a través
                             de la
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="row" style="display: flex;justify-content: center;align-items: center;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                    <h3 class="mb-4 text-color-grey">Nuestra Misión</h3>
+                    <h2 class="mb-4 text-color-grey">Nuestra Misión</h2>
                     <p class="mb-4">
                         Formar alumnos con creatividad, pensamiento crítico, comunicación efectiva y conciencia
                         ética,
@@ -99,7 +99,7 @@
                         de impacto positivo, tanto a nivel, local, regional como nacional.
                     </p>
 
-                    <h3 class="mb-5">Nuestros Valores</h3>
+                    <h2 class="mb-5">Nuestros Valores</h2>
                     <div class="col-lg-3 mb-5">
                         <div class="card-container">
                             <div class="card-flip">

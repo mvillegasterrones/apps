@@ -17,7 +17,11 @@
 * GDrive v2: https://drive.google.com/drive/folders/19kyEG7KgxAqmLkBs5kjmCS9o6AHUyd1R?usp=drive_link
  =========================================================
 
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+* Comntenido
+* * * Titulo h1
+* * * subtitulo h3
+* * * Titulo cards h4
+* * * Conteido p
 */
 
 $ico = './assets/img/esce.png';
@@ -311,7 +315,7 @@ $ia_detalle_02 = '<table class="table align-items-center mb-0">
                     </tr>
                     </tbody>
                 </table>';
-$ia_link_02 = '!#';
+$ia_link_02 = './c1-ia-02.php';
 
 //* IA 03
 $ia_titulo_03 = 'IA y Productividad Profesional';
@@ -373,7 +377,7 @@ $ia_detalle_03 = '<table class="table align-items-center mb-0">
                     </tr>
                     </tbody>
                 </table>';
-$ia_link_03 = '!#';
+$ia_link_03 = './c1-ia-03.php';
 
 //* IA 04
 $ia_titulo_04 = 'IA  e Inteligencia Competitiva';
@@ -435,4 +439,4 @@ $ia_detalle_04 = '<table class="table align-items-center mb-0">
                     </tr>
                     </tbody>
                 </table>';
-$ia_link_04 = '!#';
+$ia_link_04 = './c1-ia-04.php';

@@ -34,9 +34,7 @@
             </div>
         </div>
     </div>
-    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;background-image: linear-gradient(rgba(0, 123, 255, 0.3), rgba(0, 123, 255, 0.1)), 
-                      url('./assets/img/hero/hero-card-02.png');" data-aos="flip-up" data-aos-duration="1000"
-        data-aos-delay="300">
+    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/hero-card-02.png');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
@@ -75,7 +73,7 @@
         <div class="container fade-in-up">
             <div class="row align-content-center">
                 <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
-                    <h3 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h3>
+                    <h2 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h2>
                     <p class="text-white">
                         Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación
                         organizacional.
@@ -1139,19 +1137,19 @@
     <section class="container mx-auto">
 
         <div class="row align-content-center align-items-center mx-auto">
-            <div class="col-12 col-lg-11 mx-auto">
+            <div class="col-12 col-lg-12 mx-auto">
                 <div class="row">
-                    <h3 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="200">Experiencia ESCE</h3>
+                    <h2 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="200">Experiencia ESCE</h2>
 
                     <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="300">
                         <div class="text-sections">
                             <div id="text1" class="text-muted p-6">
-                                <h5>Claridad</h5>
+                                <h4>Claridad</h4>
                                 <p>Identifica y entiende problemas organizativos complejos</p>
                             </div>
                             <div id="text3" class="text-muted p-6">
-                                <h5>Colaboración</h5>
+                                <h4>Colaboración</h4>
                                 <p>
                                     Interactúa con otros profesionales para consolidar nuevos futuros organizacionales
                                 </p>
@@ -1197,13 +1195,13 @@
                     <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="500">
                         <div class="text-sections">
                             <div id="text2" class="text-muted p-6">
-                                <h5>Creatividad</h5>
+                                <h4>Creatividad</h4>
                                 <p>
                                     Imagina diversas soluciones efectivas
                                 </p>
                             </div>
                             <div id="text4" class="text-muted p-6">
-                                <h5>Reflexión</h5>
+                                <h4>Reflexión</h4>
                                 <p>
                                     Conecta lo aprendido con tus desafíos profesionales
                                 </p>
@@ -1216,7 +1214,7 @@
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
-    <div class="main-bg-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="main-bg-color-grey mt-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
@@ -1535,12 +1533,12 @@
                     <div class="col-12 col-lg-5 text-color-white p-4">
                         <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus
                             habilidades</p>
-                        <h1 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
-                            data-aos-delay="300">Avanza en tu carrera generando impacto</h1>
-                        <h5 class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
+                        <h2 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
+                            data-aos-delay="300">Avanza en tu carrera generando impacto</h2>
+                        <p class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
                             Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
                             crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
-                            disposición una serie de recursos gratuitos.</h5>
+                            disposición una serie de recursos gratuitos.</p>
                         <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
                             data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y
@@ -1562,8 +1560,8 @@
             <div class="container">
                 <div class="row my-5">
                     <div class="col-12 col-lg-4 text-center align-content-center">
-                        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes
-                        </h3>
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes
+                        </h2>
                         <p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda
                             necessitatibus
