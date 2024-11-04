@@ -14,8 +14,7 @@
 </head>
 
 <body class="case-study bg-gray-200">
-
-    <div class="container position-absolute z-index-sticky top-0 mb-10" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
+    <div class="container position-absolute z-index-sticky top-0 mb-10">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -23,277 +22,470 @@
         </div>
     </div>
 
-    <div class="card card-body mb-7 shadow-xl mx-3 mx-md-7 mt-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-
-        <section class="py-md-2 mb-7 mt-4 px-lg-5 pb-5">
-            <div class="container">
-                <!--<h2 class="text-color-grey mb-5 mb-lg-4">Nosotros</h2>-->
-                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                    <div class="col-lg-8">
-                        <h2 class="mb-4 text-color-grey">Nuestro Propósito, Misión y Valores</h2>
-                        <p class="">
-                            Somos una organización enfocada en la educación superior centrada en valores que reflejan
-                            nuestra aspiración de formar, no sólo egresados de éxito, sino además personas que sean
-                            valiosas, efectivas y éticas para sus comunidades. Estos valores guían nuestras aspiraciones
-                            de
-                            desarrollo institucional de largo plazo, y son la base que orienta nuestra actividad para
-                            servir
-                            a la sociedad y a nuestros alumnos.
-                            Diseñamos experiencias formativas para personas que necesitan trabajar para financiar sus
-                            estudios en administración o gestión pública. Además, fomentamos el crecimiento empresarial
-                            a
-                            través de dinámicas de innovación, de investigación y de cambio tecnológico, que permitan a
-                            las
-                            empresas crecer, explorar nuevos mercados o fortalecer los ya existentes.
-                        </p>
-                        <p class="mb-4">
-                            Particularmente nos interesa apoyar a las micro y pequeñas empresas que tanto necesitan
-                            soportes
-                            de conocimiento para seguir progresando. Dotar de herramientas para mejorar la productividad
-                            y
-                            la eficiencia de quienes trabajan en el sector público, a cualquier nivel, en nuestro país.
-                        </p>
-
-                        <h2 class="mb-4 text-color-grey">Nuestro Propósito</h2>
-                        <p class="mb-4">
-                            Ser una institución que promueve el desarrollo económico y social descentralizado a través
-                            de la
-                            formación de profesionales y la re-capacitación de personas que ya trabajan en todo el país.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 ms-auto mt-lg-0 mt-4 mb-lg-0 mb-5">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="<?= $img_equipo_esce ?>" alt="img-colored-shadow"
-                                        class="img-fluid border-radius-lg">
-                                </a>
-                                <div class="colored-shadow" style="background-image: url('<?= $img_equipo_esce ?>');">
-                                </div>
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="font-weight-normal">
-                                    <a href="javascript:;">Equipo ESCE</a>
-                                </h5>
-                                <p class="mb-0">
-                                    Somos un equipo de expertos que ofrece cursos y certificaciones en ciencias
-                                    empresariales y gestión pública, combinando teoría y práctica para desarrollar
-                                    habilidades clave y potenciar el crecimiento profesional.
-                                </p>
-                                <!--<button type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3">Find out
-                                    more</button>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" style="display: flex;justify-content: center;align-items: center;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                    <h2 class="mb-4 text-color-grey">Nuestra Misión</h2>
-                    <p class="mb-4">
-                        Formar alumnos con creatividad, pensamiento crítico, comunicación efectiva y conciencia
-                        ética,
-                        que les permita mejorar sus oportunidades de empleo en la empresa privada, construir la
-                        empresa
-                        que siempre aspiraron tener, o contribuir en la administración pública con un servicio
-                        honesto y
-                        de impacto positivo, tanto a nivel, local, regional como nacional.
+    <!--//* Hero -->
+    <div class="container mt-10 mb-0">
+        <div class="container">
+            <div class="row mb-6">
+                <div class="col-12 col-lg-12 mx-auto text-center">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Nuestro Propósito, Misión y Valores</h2>
+                    <p class="mt-5" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Somos una organización enfocada en la educación superior centrada en valores que reflejan nuestra aspiración de formar, no sólo egresados de éxito, sino además personas que sean valiosas, efectivas y éticas para sus comunidades. Estos valores guían nuestras aspiraciones de desarrollo institucional de largo plazo, y son la base que orienta nuestra actividad para servir a la sociedad y a nuestros alumnos. Diseñamos experiencias formativas para personas que necesitan trabajar para financiar sus estudios en administración o gestión pública. Además, fomentamos el crecimiento empresarial a través de dinámicas de innovación, de investigación y de cambio tecnológico, que permitan a las empresas crecer, explorar nuevos mercados o fortalecer los ya existentes..</p>
+                    <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+                    Particularmente nos interesa apoyar a las micro y pequeñas empresas que tanto necesitan soportes de conocimiento para seguir progresando. Dotar de herramientas para mejorar la productividad y la eficiencia de quienes trabajan en el sector público, a cualquier nivel, en nuestro país.
                     </p>
+                </div>
 
-                    <h2 class="mb-5">Nuestros Valores</h2>
-                    <div class="col-lg-3 mb-5">
-                        <div class="card-container">
-                            <div class="card-flip">
-                                <div class="card-front">
-                                    <!--style="background-image: url('<?= $img_valores_v2_01 ?>') !important;opacity: 85%;"  -->
-                                    <h4 class="p-3 text-color-white rounded rounded-15">Integridad</h4>
-                                </div>
-                                <div class="card-back">
-                                    <p class="text-white opacity-8">
-                                        <strong class="h3 text-white">Integridad</strong><br>
-                                        Actuar con honestidad, coherencia y responsabilidad es esencial para
-                                        construir confianza y credibilidad en todas nuestras relaciones.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row mt-7 align-content-center align-items-center text-center">
+                    <div class="col-12 col-lg-4">
+                        <img src="./assets/img/icons/editar.svg" class="w-15 mb-3" alt="">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    seim ad minim veniam quis nostrud autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+                        </p>
+                        <h5>PROPOSITO</h5>
                     </div>
-                    <div class="col-lg-3 mb-5">
-                        <div class="card-container">
-                            <div class="card-flip">
-                                <div class="card-front">
-                                    <!-- style="background-image: url('<?= $img_valores_v2_02 ?>') !important;opacity: 85%;"-->
-                                    <h4 class="p-3 text-color-white rounded rounded-15">Solidaridad</h4>
-                                </div>
-                                <div class="card-back">
-                                    <p class="text-white opacity-8">
-                                        <strong class="h3 text-white">Solidaridad</strong><br>
-                                        Más allá de la empatía, buscamos apoyar a quienes lo necesitan con un
-                                        deseo
-                                        genuino de impactar positivamente la vida de los demás.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="<?= $ico ?>" class="w-15 mb-3" alt="">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    seim ad minim veniam quis nostrud autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+                        </p>
+                        <h5>MISIÓN</h5>
                     </div>
-                    <div class="col-lg-3 mb-5">
-                        <div class="card-container">
-                            <div class="card-flip">
-                                <div class="card-front">
-                                    <!-- style="background-image: url('<?= $img_valores_v2_03 ?>') !important;opacity: 85%;"-->
-                                    <h4 class="p-3 text-color-white rounded rounded-15">Resiliencia</h4>
-                                </div>
-                                <div class="card-back">
-                                    <p class="text-white opacity-8">
-                                        <strong class="h3 text-white">Resiliencia</strong><br>
-                                        Mantenemos el esfuerzo y la determinación frente a los desafíos,
-                                        trabajando
-                                        con constancia hacia nuestros objetivos.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-12 col-lg-4">
+                    <img src="./assets/img/icons/aplicaciones.svg" class="w-15 mb-3" alt="">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    seim ad minim veniam quis nostrud autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+                        </p>
+                        <h5>VALORES</h5>
                     </div>
                 </div>
 
-                <div class="row" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="col-lg-3 mb-5">
-                        <div class="card-container">
-                            <div class="card-flip">
-                                <div class="card-front text-center">
-                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Respeto por la
-                                        Naturaleza</h4>
-                                </div>
-                                <div class="card-back">
-                                    <p class="text-white opacity-8">
-                                        <strong class="h3 text-white">Respeto por la Naturaleza</strong><br>
-                                        Valoramos y protegemos el medio ambiente, promoviendo una conducta
-                                        sostenible y un compromiso con la conservación.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+
+            <div class="row align-content-center align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-12 mx-auto">
+                        <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat.</h4>
+
+                            <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias impedit
+                                quibusdam. Unde, illo?</p>
+
+                            <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, numquam delectus
+                                veritatis, tempora voluptatum doloremque, aliquam iste consectetur quaerat dolores ipsum
+                                quod culpa. Odio rem itaque repellendus numquam? Dignissimos, cum.</p>
                     </div>
-                    <div class="col-lg-3 mb-5">
-                        <div class="card-container shadow-lg">
-                            <div class="card-flip">
-                                <div class="card-front">
-                                    <h4 class="text-center text-color-white p-3 rounded rounded-15">Sentido de
-                                        pertenencia
-                                        por el país</h4>
-                                </div>
-                                <div class="card-back">
-                                    <p class="text-white opacity-8">
-                                        <strong class="h3 text-white">Sentido de pertenencia por el país</strong><br>
-                                        Nos sentimos orgullosos de nuestra nación, contribuyendo a su desarrollo y
-                                        bienestar con compromiso y patriotismo
-                                    </p>
-                                </div>
-                            </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="col-12">
+                        <div class="card" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
+                            <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100 rounded rounded-15" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <h3 class="text-xolor-grey text-center mb-8" data-aos="fade-up" data-aos-duration="1280" data-aos-delay="380">Nuestro equipo</h3>
 
-        <div class="card main-bg-color-white card-body mb-10 shadow-xl mx-3 mx-md-7 mt-n6 fade-in-up" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
-            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
-                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
-                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
-                data-mdb-animation-initialized="true"
-                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
-                <div class="card-content">
-                    <div class="card-body text-start">
-                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
-                            <div class="flex-shrink-0 mb-4 mb-md-0">
-                                <a href="#!">
-                                <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
-                                        src="<?= $img_teams_01 ?>"
-                                        alt="Generic placeholder image">
-                                </a>
+            <!--<div class="row mb-5">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium id quam eaque quidem
+                        error!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero alias nostrum nihil optio,
+                        veritatis possimus dolore obcaecati aspernatur dolores odit in quae consequatur, ullam mollitia
+                        ipsum minima iste molestiae repellendus autem perspiciatis nulla? Quae saepe dolores vitae
+                        molestiae quidem porro, amet vero recusandae minus tempora illo necessitatibus dolor neque
+                        dicta.</p>
+                </div>
+            </div>-->
+
+            <!--<div class="row mb-5">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card card-profile mt-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                                    <a href="javascript:;">
+                                        <div class="p-3 pe-md-0">
+                                            <img class="w-100 avatar avatar-circle rounded-circle avatar-xxl border-radius-md shadow-lg"
+                                                src="./assets/img/team-5.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                    <div class="card-body ps-lg-0">
+                                        <h5 class="mb-0">Lorem ipsum dolor sit.</h5>
+                                        <h6 class="text-info">UI Designer</h6>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Consectetur eum dolorem fuga numquam dolores vero!
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Texto abajo en pantallas pequeñas -->
-                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
-                                <p class="mb-1">
-                                    <strong><a href="#!" class="text-reset h4">Guido Pennano Alison</a></strong>
-                                </p>
-                                <p class="mb-1"><i>- Presidente Fundador</i></p>
-                                <p class="text-muted text-start mb-1">
-                                    ....
-                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card card-profile mt-lg-4 mt-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mt-n5">
+                                    <a href="javascript:;">
+                                        <div class="p-3 pe-md-0">
+                                            <img class="w-100 avatar avatar-circle rounded-circle avatar-xxl border-radius-md shadow-lg"
+                                                src="./assets/img/bruce-mars.jpg" alt="image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-6 col-12 my-auto">
+                                    <div class="card-body ps-lg-0">
+                                        <h5 class="mb-0">Lorem ipsum dolor sit.</h5>
+                                        <h6 class="text-info">Boss</h6>
+                                        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Voluptatibus obcaecati non magnam voluptatum quibusdam molestias.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
+
+            <!--<div class="row m-5">
+                <div class="col-12 col-lg-6">
+                    <div class="author align-items-center">
+                      <div class="avatar avatar-xxl rounded-circle shadow bg-gradient-dark">
+                        <img src="./assets/img/bruce-mars.jpg" alt="logo" loading="lazy">
+                      </div>
+                      <div class="name ps-2">
+                        <span>Lorem ipsum dolor sit.</span>
+                        <div>
+                          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque omnis voluptatum inventore maxime quae?</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="author align-items-center">
+                      <div class="avatar avatar-xxl rounded-circle shadow bg-gradient-dark">
+                        <img src="./assets/img/team-5.jpg" alt="logo" loading="lazy">
+                      </div>
+                      <div class="name ps-2">
+                        <span>Lorem ipsum dolor sit.</span>
+                        <div>
+                          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque omnis voluptatum inventore maxime quae?</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>-->
         </div>
-
-        <div class="card main-bg-color-white card-body mb-7 shadow-xl mx-3 mx-md-7 mt-n6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
-            <div class="" data-mdb-animation-init="" data-mdb-animation-reset="true"
-                data-mdb-animation-start="onScroll" data-mdb-animation="zoom-in"
-                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400"
-                data-mdb-animation-initialized="true"
-                style="visibility: visible; animation-delay: 400ms; animation-duration: 500ms;">
-                <div class="card-content">
-                    <div class="card-body text-start">
-                        <!-- Cambia a un diseño en columna en pantallas pequeñas -->
-                        <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-1 mb-5">
-                            <!-- Imagen arriba en pantallas pequeñas -->
-                            <div class="flex-shrink-0 mb-4 mb-md-0">
-                                <a href="#!">
-                                    <img class="rounded-5 shadow-4 w-100 h-auto img border-radius-md max-width-300 w-100 position-relative z-index-2 mt-n7"
-                                        src="<?= $img_teams_02 ?>"
-                                        alt="Generic placeholder image">
-                                </a>
-                            </div>
-                            <!-- Texto abajo en pantallas pequeñas -->
-                            <div class="flex-grow-1 ms-md-4 text-center text-md-start div-marca-agua">
-                                <p class="mb-1">
-                                    <strong><a href="#!" class="text-reset h4">José Ignacio Pineda Mendoza</a></strong>
-                                </p>
-                                <p class="mb-1"><i>- Miembro fundador de ESCE</i></p>
-                                <p class="text-muted text-start mb-1">
-                                    Cuenta con más de 20 años de
-                                    experiencia
-                                    en el sector de la educación superior. Ha enseñado cursos sobre innovación,
-                                    emprendimiento y desarrollo sostenible en universidades de Perú y el Reino
-                                    Unido.
-                                    Además, ha desempeñado roles de liderazgo en universidades, donde se ha
-                                    especializado en transformación organizacional, diseñando y ejecutando
-                                    estrategias
-                                    de turnaround y crecimiento, investigación aplicada de calidad y
-                                    responsabilidad
-                                    social. Su investigación se sitúa en la intersección de negocios,
-                                    emprendimiento y
-                                    desarrollo sostenible. Ha recibido un grant de la Academia Británica para
-                                    explorar
-                                    la Economía Circular en la Amazonía peruana, ha investigado el uso de
-                                    tecnología
-                                    digital entre emprendedores sociales para la Comisión Europea, y la creación
-                                    de un
-                                    sistema de innovación en salud en la ciudad de Manchester. Actualmente
-                                    estudia los
-                                    factores de éxito de emprendedores que logran resultados significativos con
-                                    recursos
-                                    escasos. Es PhD en Administración y Negocios por Alliance Manchester
-                                    Business School
-                                    de la Universidad de Manchester, MSc en Innovation and Entrepreneurship por
-                                    la misma
-                                    escuela de negocios, y economista de la Universidad del Pacífico.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-    <?php include './sections/page-sections/footer-2.php' ?>
+    <!--//* Section CARDS -->
+    <div class="main-bg-color-grey text-color-white text-center mt-n5 mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 mx-auto mt-7 mb-3">
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                        repellendus.</h2>
+                </div>
+
+                <div class="row mb-7">
+                    <div class="col-12 col-lg-4 mx-auto">
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius fugiat, odio culpa deserunt
+                            nihil possimus magnam esse minus consequatur provident.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-7">
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">Innovación Bottom-Up</h4>
+                                <p data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">Aprovecha el conocimiento y la creatividad de tu equipo para resolver problemas reales y detectar nuevas oportunidades de negocio.</p>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Genera ideas con talleres y plataformas digitales</p>
+                                    </div>
+                                </div>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="200">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Prioriza según viabilidad técnica y necesidades del cliente</p>
+                                    </div>
+                                </div>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="200">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Usa prototipos rápidos para validar antes de lanzar</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1600" data-aos-delay="200">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Detecta oportunidades escalables con bajo costo</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-2" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">Innovación de Productos o Servicios</h4>
+                                <p data-aos="fade-down" data-aos-duration="1300" data-aos-delay="300">Convierte ideas en productos o servicios viables mediante metodologías actuales y acompañamiento en todo el proceso.</p>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Fomenta espacios para generar conceptos innovadores</p>
+                                    </div>
+                                </div>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="500">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Valida la viabilidad técnica y el alineamiento con el cliente</p>
+                                    </div>
+                                </div>
+                                <div class="pb-1 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Prototipar rápidamente y ajusta con feedback de usuarios</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 info-horizontal d-flex align-items-center" data-aos="fade-down" data-aos-duration="1600" data-aos-delay="600">
+                                    <div
+                                        class="icon icon-md icon-shape text-center border-radius-xl">
+                                        <i class="material-icons opacity-10 text-primary">check</i>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Enfócate en ideas con alto potencial de retorno</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//* Section Cars Information -->
+    <div class="container mb-7">
+        <div class="row text-start text-color-white p-0">
+            <div class="col-12 col-lg-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="container">
+                    <div class="row main-bg-color-grey rounded rounded-15">
+                        <div class="col-12 col-lg-5 m-0">
+                            <img src="./assets/img/hero/hero-card-02.png" class="h-100 w-100" alt="" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
+                        </div>
+                        <div class="col-12 col-lg-7 m-0 align-content-center align-items-center">
+                            <div class="row p-6">
+                                <div class="col-12 col-8 mx-auto">
+                                    <p class="mb-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem, ipsum.</p>
+                                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h2>
+                                    <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">La innovación no es solo generar nuevas ideas, sino encontrar soluciones alineadas con las necesidades de tus clientes. Te ayudamos a aprovechar el potencial creativo de tu equipo para convertirlo en resultados concretos. Desde la ideación hasta la implementación, nuestros servicios están diseñados para impulsar el crecimiento de manera estratégica.</p>
+                                    <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="450">La innovación debe estar presente en cada parte de tu negocio. Ya sea mejorando procesos o desarrollando nuevos productos, te guiamos para llevar tus ideas al mercado y generar un impacto real. Empodera a tu equipo, refina tu estrategia y marca la diferencia.</p>
+                                    <p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
+                                        <button
+                                            class="btn btn-warning main-bg-color-warning icon-move-right btn-rounded-20p mb-0">Leer
+                                            mas <i class="fas fa-arrow-right text-xs ms-1"
+                                                aria-hidden="true"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//* Section Se4rvices -->
+    <div class="container mb-7">
+        <div class="row">
+            <div class="col-12 col-6 mx-auto text-center mb-5">
+                <h2 class="text-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
+                    <div class="card-body pb-0 p-0 m-0">
+                        <div class="p-4 mb-0">
+                            <h4 class="mb-1">Lorem ipsum dolor sit amet.</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae?</p>
+                        </div>
+                        <div class="row p-0 mb-4">
+                            <div class="col-12 col-lg-2"></div>
+                            <div class="col-12 col-lg-10">
+                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//* Section News Letter -->
+    <div class="main-bg-color-grey mb-0">
+        <div class="container mb-0">
+            <div class="row mb-0 text-center p-7">
+                <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h2>
+                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
+                    <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                        <input type="text"
+                            class="form-control form-control-lg main-bg-color-white text-dark p-2 mb-0 me-2"
+                            placeholder="Ingresa tu email"
+                            style="background-color: white !important; border-radius: 20px;">
+                        <button type="button"
+                            class="btn btn-warning mb-0 h-100 position-relative z-index-2 btn-rounded-20p">Suscribirme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                    <p class="text-color-white mt-3" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">Recibe las últimas noticias directo en tu correo electrónico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="main-bg-color-grey text-color-white text-center mb-7">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 mb-5">
+                    <h3 class="text-white">Lorem, ipsum dolor.</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae incidunt, soluta mollitia
+                        corrupti unde quod?
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-color-grey mb-5">
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <div class="pe-md-0 mx-auto mb-5 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">emoji_objects</i>
+                    </div>
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                </div>
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <div class="pe-md-0 mx-auto mb-0 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">psychology</i>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <div class="p-3 pe-md-0 w-100 border-radius-md shadow-lg">
+                        <div class="pe-md-0 mx-auto mb-5 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                            <i class="material-icons icon-big">share</i>
+                        </div>
+                        <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                        <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                        <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-5 col-lg-3 align-content-center align-items-center">
+                    <h5 class="text-color-white text-uppercase">Lorem ipsum.</h5>
+                    <p class="text-color-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <p class="text-color-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, sed.</p>
+                    <div class="pe-md-0 mx-auto mb-0 w-100 h-100 rounded-circle border-radius-md shadow-lg main-bg-color-white align-content-center div-icon-big">
+                        <i class="material-icons icon-big">group</i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+
+    <div class="mt-n5">
+        <?php include './sections/page-sections/footer-2.php' ?>
+    </div>
+
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 </body>
-
 </html>

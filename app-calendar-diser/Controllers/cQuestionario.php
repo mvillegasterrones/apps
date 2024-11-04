@@ -18,6 +18,7 @@ switch ($accion) {
     case 'save-update-enc-02':
         $id              = $_POST['id'];
         $action          = $_POST['action'];
+        $region          = $_SESSION['region'];
         $cod_mod         = $_SESSION['cod_mod'];
         $txt_comu_nombre = $_POST['txt_comu_nombre'];
         $txt_comu_tipo   = $_POST['txt_comu_tipo'];
@@ -79,7 +80,7 @@ switch ($accion) {
         $txt_21_multiple = $_POST['txt_21_multiple'];
         $txt_21_otro     = $_POST['txt_21_otro'];
 
-        $ejecuar = $instancia->set_encuesta_02($id, $action, $cod_mod, $txt_comu_nombre, $txt_comu_tipo, $txt_mes_reporte, $txt_cargo, $txt_otro_nombre, $txt_otro_cargo, $txt_1_multiple, $txt_2_multiple, $txt_2_otro, $txt_3_multiple, $txt_3_otro, $txt_4, $txt_5_multiple, $txt_5_otro, $txt_6, $txt_6_otro, $txt_7, $txt_7_otro, $txt_8, $txt_9, $txt_10, $txt_11_multiple, $txt_11_otro, $txt_12, $txt_13, $txt_13_otro, $txt_14, $txt_15_tv1, $txt_15_tv2, $txt_15_tv3, $txt_15_tv4, $txt_15_tv5, $txt_15_tv6, $txt_16, $txt_17_cr1, $txt_17_cr2, $txt_17_cr3, $txt_17_cr4, $txt_17_cr5, $txt_17_cr6, $txt_17_cr7, $txt_17_cr8, $txt_17_cr9, $txt_17_cr10, $txt_17_cr11, $txt_17_cr12, $txt_17_cr13, $txt_17_cr14, $txt_17_cr15, $txt_17_cr16, $txt_17_cr_otro, $txt_17_cr17, $txt_18, $txt_19_multiple, $txt_19_otro, $txt_20_multiple, $txt_20_otro, $txt_21_multiple, $txt_21_otro);
+        $ejecuar = $instancia->set_encuesta_02($id, $action, $region, $cod_mod, $txt_comu_nombre, $txt_comu_tipo, $txt_mes_reporte, $txt_cargo, $txt_otro_nombre, $txt_otro_cargo, $txt_1_multiple, $txt_2_multiple, $txt_2_otro, $txt_3_multiple, $txt_3_otro, $txt_4, $txt_5_multiple, $txt_5_otro, $txt_6, $txt_6_otro, $txt_7, $txt_7_otro, $txt_8, $txt_9, $txt_10, $txt_11_multiple, $txt_11_otro, $txt_12, $txt_13, $txt_13_otro, $txt_14, $txt_15_tv1, $txt_15_tv2, $txt_15_tv3, $txt_15_tv4, $txt_15_tv5, $txt_15_tv6, $txt_16, $txt_17_cr1, $txt_17_cr2, $txt_17_cr3, $txt_17_cr4, $txt_17_cr5, $txt_17_cr6, $txt_17_cr7, $txt_17_cr8, $txt_17_cr9, $txt_17_cr10, $txt_17_cr11, $txt_17_cr12, $txt_17_cr13, $txt_17_cr14, $txt_17_cr15, $txt_17_cr16, $txt_17_cr_otro, $txt_17_cr17, $txt_18, $txt_19_multiple, $txt_19_otro, $txt_20_multiple, $txt_20_otro, $txt_21_multiple, $txt_21_otro);
         echo json_encode($ejecutar);
         break;
     // ! INICIO - Encuesta 01
