@@ -572,3 +572,7 @@ p.text-dark {
   text-align: center;
   color: #333; /* Color del texto */
 }
+
+.img-shadow {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) !important; 
+}

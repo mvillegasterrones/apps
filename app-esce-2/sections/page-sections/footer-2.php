@@ -1,7 +1,8 @@
-<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;" data-aos="fade-in" data-aos-duration="1100" data-aos-delay="200">
+<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;" data-aos="fade-in"
+    data-aos-duration="1100" data-aos-delay="200">
     <div class="container">
         <div class=" row">
-            
+
             <div class="col-12 col-lg-11 mx-auto">
                 <div class="row">
 
@@ -12,66 +13,63 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="<?= $ruta_home ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Home
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="<?= $ruta_nosotros ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Nosotros
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="<?= $ruta_servicios ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Servicios
                                     </a>
                                 </li>
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                                        Premium Tools
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
-                                        Blog
-                                    </a>
-                                </li>-->
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-6 col-6 mb-4">
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
                         <div>
                             <h6 class="text-sm text-white text-uppercase">Cursos</h6>
                             <ul class="flex-column ms-n3 nav">
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="<?= $ruta_teaching_the_teachers ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Theaching the teachers
                                     </a>
                                 </li>
                                 <li class="nav-item text-white">
                                     <a class="nav-link text-white" href="<?= $ruta_capacitacion_continua ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Capacitaciones
                                     </a>
                                 </li>
                                 <li class="nav-item text-white">
                                     <a class="nav-link text-white" href="<?= $ruta_re_skalling ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         RE-SKALLING
                                     </a>
                                 </li>
                                 <li class="nav-item text-white">
                                     <a class="nav-link text-white" href="<?= $ruta_docentes ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Docentes
                                     </a>
                                 </li>
@@ -85,59 +83,49 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#!" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Aprendizaje
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#!"
-                                        target="">
+                                    <a class="nav-link text-white" href="#!" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Contacto
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="<?= $ruta_terminos ?>"
-                                        target="">
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                    <a class="nav-link text-white" href="<?= $ruta_terminos ?>" target="">
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Privacidad
                                     </a>
                                 </li>
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
-                                        Sponsorships
-                                    </a>
-                                </li>-->
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+
                         <div>
-                            <h6 class="text-sm text-white text-uppercase">Comunidad</h6>
+                            <h6 class="text-sm text-white text-uppercase mt-4">Comunidad</h6>
                             <ul class="flex-column ms-n3 nav">
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="<?= $ruta_recursos ?>" target="">
                                         <!--<img src="<?= $ico ?>" class="me-1 text-md" style="width: 13px;" alt="esce logo">-->
-                                        <i class="fas fa-chevron-right me-1 text-md" style="font-size: 11px !important"></i>
+                                        <i class="fas fa-chevron-right me-1 text-md"
+                                            style="font-size: 11px !important"></i>
                                         Recursos
                                     </a>
                                 </li>
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy/"
-                                        target="_blank">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
-                                        Licenses (EULA)
-                                    </a>
-                                </li>-->
                             </ul>
                         </div>
                     </div>
-        
+                    <div class="col-md-1 col-sm-6 col-6 mb-4 me-auto">
+                        <div>
+                            
+                        </div>
+                    </div>
+
                     <div class="col-md-3 mb-4">
                         <div>
                             <a href="./">
