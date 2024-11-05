@@ -162,7 +162,7 @@ p.text-dark {
 }
 
 .card-container:hover .card-back {
-  box-shadow: var(--main-bg-color-warning) 10px 10px;
+  box-shadow: var(--main-bg-color-secondary) 10px 10px;
 }
 
 .card-front,
@@ -178,7 +178,7 @@ p.text-dark {
 }
 
 .card-front {
-  background-color: var(--main-bg-color-secondary);
+  /*background-color: var(--main-bg-color-white);*/
   color: var(--main-text-color-white);
   font-size: 3rem !important;
 }
@@ -226,11 +226,11 @@ p.text-dark {
   bottom: 0;
   right: 0;
   background: url('../img/esce.png') no-repeat;
-  background-size: 150px; /* Tamaño de la imagen, ajusta según necesidad */
-  width: 150px; /* Ancho de la imagen */
-  height: 150px; /* Alto de la imagen */
-  opacity: 0.2; /* Transparencia al 50% */
-  pointer-events: none; /* Evita que la imagen interfiera con otros elementos interactivos */
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+  pointer-events: none;
 }
 
 .card-carousel {
@@ -516,4 +516,59 @@ p.text-dark {
 
 #navigation ul li a {
   font-size: 1.1rem !important;
+}
+
+/* * CARD-BLUR - NOSOTROS */
+.card-blur-2 {
+  position: relative;
+  /*width: 300px;*/
+  height: 200px;
+  overflow: hidden;
+  /*background: url('path/to/image.jpg') center center / cover; */
+  /* Cambia la imagen de fondo aquí */
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) !important; 
+  /* Sombra en los lados derecho e inferior */
+  transition: transform 0.3s ease;
+}
+
+.card-blur-2:hover {
+  transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+.card-front-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /*background-color: rgba(255, 255, 255, 0.2) !important;*/
+   /* Fondo blanco con transparencia */
+  /*backdrop-filter: blur(10px) !important;*/ /* Efecto blur en el fondo */
+  border-radius: 12px;
+}
+
+.card-overlay-2 {
+  position: absolute;
+  bottom: -100%; /* Comienza oculto debajo */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9) !important; /* Fondo blanco con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: bottom 0.3s ease;
+}
+
+.card-blur-2:hover .card-overlay-2 {
+  bottom: 0; 
+  /* Mueve el overlay hacia arriba al hacer hover */
+}
+
+.card-text-2 {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333; /* Color del texto */
 }
