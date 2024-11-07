@@ -1,10 +1,10 @@
-<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;" data-aos="fade-in"
+<footer class="footer pt-5 mt-5 main-bg-color-grey text-color-white" style="color: white !important;background: linear-gradient(to right, var(--main-bg-color-dark), var(--main-bg-color-secondary));" data-aos="fade-in"
     data-aos-duration="1100" data-aos-delay="200">
     <div class="container">
-        <div class=" row">
+        <div class="row">
 
             <div class="col-12 col-lg-11 mx-auto">
-                <div class="row">
+                <div class="row mb-lg-10">
 
                     <div class="col-md-2 col-sm-6 col-6 mb-4">
                         <div>
@@ -121,30 +121,38 @@
                         </div>
                     </div>
                     <div class="col-md-1 col-sm-6 col-6 mb-4 me-auto">
-                        <div>
-                            
-                        </div>
+                        <div></div>
                     </div>
 
-                    <div class="col-md-3 mb-4">
-                        <div>
-                            <a href="./">
+                    <div class="col-md-3 mb-4 text-center">
+                        <div class="">
+                            <a href="./" class="text-center">
                                 <img src="<?= $ico_f ?>" class="mb-3 w-50" alt="main_logo">
                             </a>
                         </div>
-                        <div>
-                            <ul class="d-flex flex-row ms-n3 nav">
+                        <div class="text-center w-100">
+                            <ul class="d-flex flex-row nav border border-0 mx-5 border-black align-items-center">
                                 <li class="nav-item text-color-white">
-                                    <a class="nav-link pe-1" href="javascript:;" target="_blank">
+                                    <a class="nav-link pe-2" href="javascript:;" target="_blank">
                                         <i class="fab fa-facebook text-lg opacity-8 text-white"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item text-color-white">
-                                    <a class="nav-link pe-1" href="javascript:;" target="_blank">
+                                    <a class="nav-link pe-2" href="javascript:;" target="_blank">
                                         <i class="fab fa-twitter text-lg opacity-8 text-white"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item text-color-white">
+                                    <a class="nav-link pe-2" href="javascript:;" target="_blank">
+                                        <i class="fab fa-linkedin text-lg opacity-8 text-white"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item text-color-white">
+                                    <a class="nav-link pe-2" href="javascript:;" target="_blank">
+                                        <i class="fab fa-youtube text-lg opacity-8 text-white"></i>
+                                    </a>
+                                </li>
+                                <!--<li class="nav-item text-color-white">
                                     <a class="nav-link pe-1" href="javascript:;" target="_blank">
                                         <i class="fab fa-dribbble text-lg opacity-8 text-white"></i>
                                     </a>
@@ -153,12 +161,7 @@
                                     <a class="nav-link pe-1" href="javascript:;" target="_blank">
                                         <i class="fab fa-github text-lg opacity-8 text-white"></i>
                                     </a>
-                                </li>
-                                <li class="nav-item text-color-white">
-                                    <a class="nav-link pe-1" href="javascript:;" target="_blank">
-                                        <i class="fab fa-youtube text-lg opacity-8 text-white"></i>
-                                    </a>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                     </div>

@@ -29,8 +29,8 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="col-12">
-                        <div class="card" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
-                            <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100 rounded rounded-15" alt="">
+                        <div class="card shadow-none" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
+                            <img src="./assets/img/banners/cursos-pres.png" class="w-100 h-100 rounded rounded-15" alt="">
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Lorem ipsum, dolor sit
                         amet consectetur adipisicing.</p>
                     <div class="col-12 col-lg-4 mt-4 mt-lg-0">
-                        <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000"
+                        <div class="card shadow-none text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000"
                             data-aos-delay="200">
                             <div class="card-body pb-0">
                                 <h1 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
@@ -112,7 +112,7 @@
             <div class="row mb-0 text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000"
                     data-aos-delay="100">
-                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h2>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE Newletter</h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300"
                         data-aos-delay="400">
@@ -169,8 +169,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 mt-7 mb-3 text-start">
-                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem
-                        ipsum dolor sit amet.</h2>
+                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem
+                        ipsum dolor sit amet.</h3>
                 </div>
 
                 <div class="row mb-4">

@@ -299,7 +299,7 @@
                             <div class="row p-6">
                                 <div class="col-12 col-8 mx-auto">
                                     <p class="mb-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem, ipsum.</p>
-                                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h2>
+                                    <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h3>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">La innovación no es solo generar nuevas ideas, sino encontrar soluciones alineadas con las necesidades de tus clientes. Te ayudamos a aprovechar el potencial creativo de tu equipo para convertirlo en resultados concretos. Desde la ideación hasta la implementación, nuestros servicios están diseñados para impulsar el crecimiento de manera estratégica.</p>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="450">La innovación debe estar presente en cada parte de tu negocio. Ya sea mejorando procesos o desarrollando nuevos productos, te guiamos para llevar tus ideas al mercado y generar un impacto real. Empodera a tu equipo, refina tu estrategia y marca la diferencia.</p>
                                     <p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
@@ -382,7 +382,7 @@
         <div class="container mb-0">
             <div class="row mb-0 text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
-                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE NEWSLETTER</h2>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE Newletter</h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
                         <input type="text"

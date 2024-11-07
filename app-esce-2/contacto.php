@@ -30,7 +30,7 @@
                     <div class="col-12 col-lg-6 mx-auto">
                         <h2 data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="100">Contáctanos</h2>
-                        <p data-aos="fade-up" data-aos-duration="1100"
+                        <p data-aos="fade-up h3" data-aos-duration="1100"
                         data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum magni tempora
                             cumque ipsum quia atque tempore, iste officiis a.</p>
                     </div>
@@ -40,7 +40,7 @@
 
         <div class="container">
             <div class="row mb-7">
-                <div class="col-12 col-lg-6 card levitate-on-hover mb-7 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="col-12 col-lg-6 levitate-on-hover mb-7 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="card card-plain p-4">
                         <form id="contact-form" method="post" autocomplete="off">
                             <div class="card-body">

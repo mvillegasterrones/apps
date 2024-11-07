@@ -34,30 +34,26 @@
             </div>
         </div>
     </div>
-    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-card-02.png') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/hero-card-02.png');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
+    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-main-03.png') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/hero-main-03.png');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
                 <div class="row p-3">
                     <div
                         class="col-lg-8 col-md-12 d-flex justify-content-center text-md-start text-center flex-column mt-sm-0 mt-7">
-                        <h1 class="text-white fadeIn2 fadeInBottom">Escuela de <br>
+                        <h1 class="text-white fadeIn2 fadeInBottom mt-9">Escuela de <br>
                             Ciencias Empresariales y<br>
-                            <b class="bg-gradient-warning text-white p-1 rounded rounded-15">Gestión Pública</b>
+                            <b class="bg-gradient-warning text-white p-1 rounded rounded-15">Gestión Pública&nbsp;&nbsp;</b>
                         </h1>
                         <div class="buttons fadeIn3 fadeInBottom">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <h5 class="text-white">
+                                    <h5 class="text-white" style="font-weight: normal !important;">
                                         Reinventa tu carrera, crea un negocio o transforma una organización con
                                         creatividad y con la capacidad de solucionar problemas concretos.
                                     </h5>
                                 </div>
                             </div>
-                            <!--<a href="#section-cursos">
-                                <button type="button" class="btn btn-lg btn-warning mt-4"
-                                    style="border-radius: 20px;">Próximos cursos</button>
-                            </a>-->
                         </div>
                     </div>
                     <div class="col-4 d-lg-block d-sm-none">
@@ -73,7 +69,7 @@
         <div class="container fade-in-up">
             <div class="row align-content-center">
                 <div class="col-12 col-lg-6 p-5 fadeIn1 fadeInBottom">
-                    <h2 class="text-white fadeIn3 fadeInUp">ESCE NEWSLETTER</h2>
+                    <h2 class="text-white fadeIn3 fadeInUp">ESCE Newsletter</h2>
                     <p class="text-white">
                         Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación
                         organizacional.
@@ -107,7 +103,7 @@
     <div class="container text-center mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
-                habilidad</b></h2>
+                habilidad&nbsp;&nbsp;</b></h2>
         <div class="row">
             <div class="col-12 col-lg-8 mx-auto">
                 <p class="text_info mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
@@ -1219,7 +1215,7 @@
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
                     <h2 class="text-color-white p-3" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                        Innovación <b class="bg-gradient-warning p-1 rounded rounded-15">Empresarial</b></h2>
+                        Innovación <b class="bg-gradient-warning p-1 rounded rounded-15">Empresarial&nbsp;&nbsp;</b></h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         Colabora con nosotros para superar los retos que detienen el crecimiento de tu empresa. Te
                         guiamos en la solución de problemas y en la creación de productos y servicios que impulsen
@@ -1427,7 +1423,7 @@
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto mb-4 text-center">
                     <h2 class="text-color-grey p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                        Tipos de <b class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados</b></h2>
+                        Tipos de <b class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados&nbsp;&nbsp;</b></h2>
                     <p class="text-color-grey" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         Al completar nuestros cursos o talleres, obtendrás certificaciones que avalan tu participación
                         en procesos diseñados para el desarrollo de competencias.
@@ -1527,7 +1523,7 @@
                 <div class="row my-5 align-content-center align-items-center">
                     <div class="col-12 col-lg-6 p-5" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                         <div class="card">
-                            <img src="./assets/img/hero/hero-001.jpg" class="h-75 rounded rounded-15" alt="">
+                            <img src="./assets/img/hero/hero-002.jpg" class="h-75 rounded rounded-15" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">
@@ -1562,11 +1558,11 @@
                     <div class="col-12 col-lg-4 text-center align-content-center">
                         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes
                         </h2>
-                        <p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+                        <!--<p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda
                             necessitatibus
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
-                            repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>
+                            repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>-->
                         <p data-aos="fade-up" data-aos-duration="1150" data-aos-delay="280">
                             <a href="<?= $ruta_contacto ?>"
                                 class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una

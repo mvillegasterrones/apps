@@ -24,6 +24,14 @@
 * * * Conteido p
 */
 
+/** 
+DAR DOS ESPACIADOS A LOS RESALTADOS
+ENVIAR UNA FOTO DE ESTANDAR PARA QUE LO HAGAN
+PLANTEAR EL FOOTER MAS LARGO
+EL FOOTER ESTA DE FORMA DEGRADADO DEL NEGRO AL AZUL FOOTER EN ROBOTO
+
+ */
+
 $ico = './assets/img/esce.png';
 $logo = './assets/img/logos/esce-sb-1.png';
 $wsp = '932449843';
