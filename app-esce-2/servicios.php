@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row mb-6">
                 <div class="col-12 col-lg-6 mx-auto text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desbloquea la Innovación y Genera Impacto en tu Organización</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desbloquea la Innovación y Genera Impacto</h2>
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Al centro de toda organización exitosa está la capacidad de innovar. Nuestros servicios permiten que tus equipos canalicen su creatividad y experiencia en soluciones concretas que impulsan resultados. A través de la colaboración, pruebas rápidas y una implementación estratégica, te ayudamos a transformar ideas en productos o servicios escalables.</p>
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         <a href="#!" class="btn btn-warning text-color-white btn-rounded-20p icon-move-right">Leer más
@@ -319,7 +319,7 @@
     </div>
 
     <!--//* Section Se4rvices -->
-    <div class="container mb-7">
+    <div id="section-services-info" class="container mb-7">
         <div class="row">
             <div class="col-12 col-6 mx-auto text-center mb-5">
                 <h2 class="text-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor sit amet,<br> consectetur adipisicing.</h2>

@@ -34,7 +34,9 @@
             </div>
         </div>
     </div>
-    <header class="fadeIn1" style="background: url('./assets/img/hero/home.jpeg') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/home.jpeg');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
+    <header class="fadeIn1"
+        style="background: url('./assets/img/hero/home.jpeg') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/home.jpeg');"
+        data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
@@ -43,7 +45,8 @@
                         class="col-lg-8 col-md-12 d-flex justify-content-center text-md-start text-center flex-column mt-sm-0 mt-7">
                         <h1 class="text-white fadeIn2 fadeInBottom mt-9">Escuela de <br>
                             Ciencias Empresariales y<br>
-                            <b class="bg-gradient-warning text-white p-1 rounded rounded-15">Gestión Pública&nbsp;&nbsp;</b>
+                            <b class="bg-gradient-warning text-white p-1 rounded rounded-15">Gestión
+                                Pública&nbsp;&nbsp;</b>
                         </h1>
                         <div class="buttons fadeIn3 fadeInBottom">
                             <div class="row">
@@ -100,7 +103,8 @@
     </div>
 
     <!-- //? TU PROXIMA HABILIDAD -->
-    <div class="container text-center mb-7" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="container text-center mb-7" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad&nbsp;&nbsp;</b></h2>
@@ -1210,12 +1214,14 @@
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
-    <div class="main-bg-color-grey mt-8" id="innovacion-empresarial" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="main-bg-color-grey mt-8" id="innovacion-empresarial" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-delay="100">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
                     <h2 class="text-color-white p-3" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                        Innovación <b class="bg-gradient-warning p-1 rounded rounded-15">Empresarial&nbsp;&nbsp;</b></h2>
+                        Innovación <b class="bg-gradient-warning p-1 rounded rounded-15">Empresarial&nbsp;&nbsp;</b>
+                    </h2>
                     <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         Colabora con nosotros para superar los retos que detienen el crecimiento de tu empresa. Te
                         guiamos en la solución de problemas y en la creación de productos y servicios que impulsen
@@ -1423,7 +1429,9 @@
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto mb-4 text-center">
                     <h2 class="text-color-grey p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                        Tipos de <b class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados&nbsp;&nbsp;</b></h2>
+                        Tipos de <b
+                            class="bg-gradient-danger p-1 rounded rounded-15 text-white">Certificados&nbsp;&nbsp;</b>
+                    </h2>
                     <p class="text-color-grey" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                         Al completar nuestros cursos o talleres, obtendrás certificaciones que avalan tu participación
                         en procesos diseñados para el desarrollo de competencias.
@@ -1435,81 +1443,93 @@
                 <div class="row">
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
-                            data-aos-duration="1200" data-aos-delay="400">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg">
-                                </a>
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg w-50" src="<?= $ico ?>" alt="avatar">
+                                    </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                                        style="background-image: url('<?= $ico ?>"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <a class="h4" href="javascript:;">Certificado de Asistencia</a>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Certificado de Asistencia</h4>
                                 <p class="mt-2">
                                     Se otorga a quienes participan en nuestros cursos cortos, certificando únicamente la
                                     asistencia.
                                 </p>
                             </div>
-                            <div class="card-footer d-flex">
+                            <div class="card-footer text-center pt-2">
                                 <div class="mx-auto">
-                                    <a href="javascript:;" class="icon-move-right text-sm">Ver más
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
-                            data-aos-duration="1300" data-aos-delay="500">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg">
-                                </a>
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="350">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg w-50" src="<?= $ico ?>" alt="avatar">
+                                    </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                                        style="background-image: url('<?= $ico ?>"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <a class="h4" href="javascript:;">Certificado de Competencia</a>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Certificado de Competencia</h4>
                                 <p class="mt-2">
-                                    Se concede a los participantes de nuestros talleres, validando su participación en
-                                    dinámicas diseñadas para fomentar el desarrollo de competencias.
+                                Se concede a los participantes de nuestros talleres, validando su participación en
+                                dinámicas diseñadas para fomentar el desarrollo de competencias.
                                 </p>
                             </div>
-                            <div class="card-footer d-flex">
+                            <div class="card-footer text-center pt-2">
                                 <div class="mx-auto">
-                                    <a href="javascript:;" class="icon-move-right text-sm">Ver más
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100 mt-4" data-aos="fade-up"
-                            data-aos-duration="1400" data-aos-delay="600">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./assets/img/certificado-01.jpeg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg">
-                                </a>
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                            <div class="text-center mt-n5 z-index-1">
+                                <div class="position-relative">
+                                    <div class="blur-shadow-avatar rounded-circle">
+                                        <img class="avatar avatar-xxl shadow-lg w-50" src="<?= $ico ?>" alt="avatar">
+                                    </div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                                        style="background-image: url('<?= $ico ?>"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"></div>
+                                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <a class="h4" href="javascript:;">Certificado de Liderazgo</a>
+                            <div class="card-body text-center pb-0">
+                                <h4 class="mb-0">Certificado de Liderazgo</h4>
                                 <p class="mt-2">
-                                    Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
+                                Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
                                     talleres.
                                 </p>
                             </div>
-                            <div class="card-footer d-flex">
+                            <div class="card-footer text-center pt-2">
                                 <div class="mx-auto">
-                                    <a href="javascript:;" class="icon-move-right text-sm">Ver más
-                                        <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i>
-                                    </a>
+
                                 </div>
                             </div>
-                        </div>
+                        </>
+
                     </div>
                 </div>
             </div>
@@ -1522,8 +1542,8 @@
             <div class="container">
                 <div class="row my-5 align-content-center align-items-center">
                     <div class="col-12 col-lg-6 p-5" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                        <div class="card">
-                            <img src="./assets/img/hero/hero-002.jpg" class="h-75 rounded rounded-15" alt="">
+                        <div class="card shadow-0 shadow-none" style="box-shadow: 0 0 0 0 !important">
+                            <img src="./assets/img/hero/hero-002.jpg" class="h-75 rounded rounded-15 shadow-none" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 text-color-white p-4">

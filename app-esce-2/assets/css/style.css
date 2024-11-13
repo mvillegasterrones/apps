@@ -64,7 +64,10 @@ ul li a.active-nav {
 #escoge-tu-ptoxima-habilidad .card,
 #innovacion-empresarial .card,
 #tipos-de-certificados .card,
-#section-services .card {
+#section-services .card,
+#section-services-info .card,
+#section-cursos-cursos .card 
+{
   box-shadow: 0 20px 20px -10px var(--main-bg-color-warning) !important;
 }
 

@@ -30,7 +30,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="col-12">
                         <div class="card shadow-none" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
-                            <img src="./assets/img/banners/cursos-pres.png" class="w-100 h-100 rounded rounded-15" alt="">
+                            <img src="./assets/img/banners/cursos-pres.png" class="w-100 h-100 rounded rounded-15"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -63,8 +64,8 @@
                     <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Lorem ipsum, dolor sit
                         amet consectetur adipisicing.</p>
                     <div class="col-12 col-lg-4 mt-4 mt-lg-0">
-                        <div class="card shadow-none text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000"
-                            data-aos-delay="200">
+                        <div class="card shadow-none text-start text-color-dark" data-aos="zoom-in"
+                            data-aos-duration="1000" data-aos-delay="200">
                             <div class="card-body pb-0">
                                 <h1 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
                                     95%</h1>
@@ -112,8 +113,11 @@
             <div class="row mb-0 text-center p-7">
                 <div class="col-12 col-lg-6 mx-auto text-color-vhite" data-aos="fade-in" data-aos-duration="1000"
                     data-aos-delay="100">
-                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE Newletter</h2>
-                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín mensual, dónde encontrarás información sobre emprendimiento, economía y transformación organizacional.</p>
+                    <h2 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">ESCE
+                        Newletter</h2>
+                    <p class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Boletín
+                        mensual, dónde encontrarás información sobre emprendimiento, economía y transformación
+                        organizacional.</p>
                     <div class="form-group d-flex align-items-center" data-aos="fade-up" data-aos-duration="1300"
                         data-aos-delay="400">
                         <input type="text"
@@ -164,20 +168,30 @@
     </div>
 
     <!--//* Section CARDS -->
-    <div class="main-bg-color-grey text-color-white text-center mb-0" data-aos="fade-up" data-aos-duration="1000"
-        data-aos-delay="100">
+    <div id="section-cursos-cursos" class="main-bg-color-grey text-color-white text-center mb-0" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-delay="100">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 mt-7 mb-3 text-start">
                     <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">Lorem
                         ipsum dolor sit amet.</h3>
                 </div>
+                
 
                 <div class="row mb-4">
                     <div class="col-12 col-lg-6 text-start">
                         <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem ipsum dolor, sit amet
                             consectetur adipisicing elit. Eius fugiat, odio culpa deserunt
                             nihil possimus magnam esse minus consequatur provident.</p>
+                    </div>
+
+                    <col-12 class="col-lg-4"></col-12>
+                    <div class="col-12 col-lg-2 end-0" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="350">
+                        <div class="input-group input-group-static mb-4">
+                            <!--<label>Búsqueda <b class="text-primary">*</b></label>-->
+                            <input type="text" class="form-control" placeholder="Buscar curso">
+                            <span class="input-group-text"><i class="material-icons">search</i></span>
+                        </div>
                     </div>
                 </div>
 
@@ -309,6 +323,38 @@
                         </div>
                     </div>
 
+                    <div class="col-sm-7 ms-auto text-end" data-aos="fade-up" data-aos-duration="1250" data-aos-delay="350">
+                        <ul class="pagination pagination-primary mt-4">
+                            <li class="page-item ms-auto">
+                                <a class="page-link" href="javascript:;" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa fa-angle-double-left"
+                                            aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="javascript:;">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:;">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:;">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:;">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:;">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:;" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa fa-angle-double-right"
+                                            aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -326,28 +372,30 @@
                                     data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
                             </div>
                             <div class="col-12 col-lg-7 m-0 align-content-center align-items-center">
-                                <div class="row p-6">
+                                <div class="row p-5">
                                     <div class="col-12 col-6 mx-auto text-color-grey">
-                                        <p class="mb-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                                        <p class="mb-2" data-aos="fade-up" data-aos-duration="1200"
+                                            data-aos-delay="300">
                                             Lorem, ipsum.</p>
                                         <h2 class="text-color-grey mb-4" data-aos="fade-up" data-aos-duration="1200"
                                             data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipisicing
                                             elit. Esse, tempora.</h2>
-                                        <p class="mb-4" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">Lorem ipsum
+                                        <p class="mb-4" data-aos="fade-up" data-aos-duration="1300"
+                                            data-aos-delay="400">Lorem ipsum
                                             dolor sit amet consectetur adipisicing elit. Hic maxime laudantium
                                             voluptate sequi est eius eum omnis et? Nostrum sed ad quas quia sapiente non
                                             nihil tempora ab at quos enim inventore quibusdam eaque cumque nemo fugit
                                             perferendis culpa vitae assumenda, unde deleniti autem molestiae? Magnam
                                             minus
                                             tenetur officia labore?</p>
-                                        <p class="mb-0" data-aos="fade-up" data-aos-duration="1350"
+                                        <!--<p class="mb-0" data-aos="fade-up" data-aos-duration="1350"
                                             data-aos-delay="500">
                                             <b>Lorem, ipsum.</b>Lorem ipsum dolor sit amet.
                                         </p>
                                         <p class="mb-3" data-aos="fade-up" data-aos-duration="1350"
                                             data-aos-delay="550">
                                             <b>Lorem, ipsum.</b>Lorem ipsum dolor sit amet.
-                                        </p>
+                                        </p>-->
                                     </div>
                                 </div>
                             </div>
@@ -511,4 +559,5 @@
 
     <?php include './sections/page-sections/ref-scripts.php' ?>
 </body>
+
 </html>

@@ -217,7 +217,7 @@ $ia_detalle_01 = '<table class="table align-items-center mb-0">
                                 </div>
                             </td>
                             <td class="align-middle text-end text-sm">
-                                <span class="text-xxxl"> <span class="badge rounded-pill badge-info">2 horas</span></span>
+                                <h6 class="mb-0 text-sm"> 2 horas</h6>
                             </td>
                         </tr>
                         <tr>
@@ -229,10 +229,10 @@ $ia_detalle_01 = '<table class="table align-items-center mb-0">
                                     </div>
                                 </div>
                             </td>
-                        <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-success">Online</span> </h6>
-                        </td>
-                    </tr>
+                            <td class="align-middle text-end text-sm">
+                                <h6> Online </h6>
+                            </td>
+                        </tr>
                     <tr>
                         <td>
                             <div class="d-flex px-2 py-0">
@@ -243,7 +243,7 @@ $ia_detalle_01 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-primary">Próximamente</span> </h6>
+                            <h6> Próximamente </h6>
                         </td>
                     </tr>
                     <tr>
@@ -256,7 +256,7 @@ $ia_detalle_01 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-warning">S/. 180.00</span> </h6>
+                            <h6> S/. 180.00 </h6>
                         </td>
                     </tr>
                     </tbody>
@@ -279,7 +279,7 @@ $ia_detalle_02 = '<table class="table align-items-center mb-0">
                                 </div>
                             </td>
                             <td class="align-middle text-end text-sm">
-                                <h6> <span class="badge rounded-pill badge-info">2 horas</span></h6>
+                                <h6 class="mb-0 text-sm"> 2 horas</h6>
                             </td>
                         </tr>
                         <tr>
@@ -291,10 +291,10 @@ $ia_detalle_02 = '<table class="table align-items-center mb-0">
                                     </div>
                                 </div>
                             </td>
-                        <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-success">Online</span> </h6>
-                        </td>
-                    </tr>
+                            <td class="align-middle text-end text-sm">
+                                <h6> Online </h6>
+                            </td>
+                        </tr>
                     <tr>
                         <td>
                             <div class="d-flex px-2 py-0">
@@ -305,7 +305,7 @@ $ia_detalle_02 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-primary">Próximamente</span> </h6>
+                            <h6> Próximamente </h6>
                         </td>
                     </tr>
                     <tr>
@@ -318,7 +318,7 @@ $ia_detalle_02 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-warning">S/. 180.00</span> </h6>
+                            <h6> S/. 180.00 </h6>
                         </td>
                     </tr>
                     </tbody>
@@ -341,7 +341,7 @@ $ia_detalle_03 = '<table class="table align-items-center mb-0">
                                 </div>
                             </td>
                             <td class="align-middle text-end text-sm">
-                                <h6> <span class="badge rounded-pill badge-info">2 horas</span></h6>
+                                <h6 class="mb-0 text-sm"> 2 horas</h6>
                             </td>
                         </tr>
                         <tr>
@@ -353,10 +353,10 @@ $ia_detalle_03 = '<table class="table align-items-center mb-0">
                                     </div>
                                 </div>
                             </td>
-                        <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-success">Online</span> </h6>
-                        </td>
-                    </tr>
+                            <td class="align-middle text-end text-sm">
+                                <h6> Online </h6>
+                            </td>
+                        </tr>
                     <tr>
                         <td>
                             <div class="d-flex px-2 py-0">
@@ -367,7 +367,7 @@ $ia_detalle_03 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-primary">Próximamente</span> </h6>
+                            <h6> Próximamente </h6>
                         </td>
                     </tr>
                     <tr>
@@ -380,7 +380,7 @@ $ia_detalle_03 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-warning">S/. 180.00</span> </h6>
+                            <h6> S/. 180.00 </h6>
                         </td>
                     </tr>
                     </tbody>
@@ -403,7 +403,7 @@ $ia_detalle_04 = '<table class="table align-items-center mb-0">
                                 </div>
                             </td>
                             <td class="align-middle text-end text-sm">
-                                <h6> <span class="badge rounded-pill badge-info">2 horas</span></h6>
+                                <h6 class="mb-0 text-sm"> 2 horas</h6>
                             </td>
                         </tr>
                         <tr>
@@ -415,10 +415,10 @@ $ia_detalle_04 = '<table class="table align-items-center mb-0">
                                     </div>
                                 </div>
                             </td>
-                        <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-success">Online</span> </h6>
-                        </td>
-                    </tr>
+                            <td class="align-middle text-end text-sm">
+                                <h6> Online </h6>
+                            </td>
+                        </tr>
                     <tr>
                         <td>
                             <div class="d-flex px-2 py-0">
@@ -429,7 +429,7 @@ $ia_detalle_04 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-primary">Próximamente</span> </h6>
+                            <h6> Próximamente </h6>
                         </td>
                     </tr>
                     <tr>
@@ -442,7 +442,7 @@ $ia_detalle_04 = '<table class="table align-items-center mb-0">
                             </div>
                         </td>
                         <td class="align-middle text-end text-sm">
-                            <h6> <span class="badge rounded-pill badge-warning">S/. 180.00</span> </h6>
+                            <h6> S/. 180.00 </h6>
                         </td>
                     </tr>
                     </tbody>
