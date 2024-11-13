@@ -27,14 +27,14 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-absolute z-index-sticky top-0 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
+    <div class="container z-index-sticky top-0">
         <div class="row">
-            <div class="col-12" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
+            <div class="col-12">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
             </div>
         </div>
     </div>
-    <header class="fadeIn1" style="background: url('./assets/img/hero/hero-main-03.png') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/hero-main-03.png');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
+    <header class="fadeIn1" style="background: url('./assets/img/hero/home.jpeg') no-repeat center center;background-size: cover;background-image: linear-gradient(var(--main-bg-color-dark), rgba(0, 123, 255, 0.1)), url('./assets/img/hero/home.jpeg');" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"><!-- rgba(0, 123, 255, 0.3) -->
         <div class="page-header min-vh-100 text-color-grey" loading="lazy">
             <span class="mask opacity-4"></span>
             <div class="container">
@@ -100,7 +100,7 @@
     </div>
 
     <!-- //? TU PROXIMA HABILIDAD -->
-    <div class="container text-center mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="container text-center mb-7" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad&nbsp;&nbsp;</b></h2>
@@ -1210,7 +1210,7 @@
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
-    <div class="main-bg-color-grey mt-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div class="main-bg-color-grey mt-8" id="innovacion-empresarial" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto text-center">
@@ -1418,7 +1418,7 @@
     </div>
 
     <!-- //? TIPOS DE CERTIFICADOS -->
-    <div class="main-bg-color-white">
+    <div class="main-bg-color-white" id="tipos-de-certificados">
         <div class="container pt-3 pb-5">
             <div class="row my-5 text-center">
                 <div class="col-md-6 mx-auto mb-4 text-center">

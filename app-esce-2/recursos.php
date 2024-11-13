@@ -15,7 +15,7 @@
 
 <body class="case-study bg-gray-200">
 
-    <div class="container position-absolute z-index-sticky top-0 mb-10">
+    <div class="container z-index-sticky top-0">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -201,7 +201,7 @@
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 5</button>
                                 <button type="button" class="btn main-bg-color-warning btn-warning btn-sm">Link 6</button>
                             </p>
-                            <p class="mb-2" data-aos="fade-up" data-aos-duration="1900" data-aos-delay="980">
+                            <p class="mb-2" data-aos="fade-up" data-aos-duration="1900" data-aos-delay="1200">
                                 <button type="button" class="btn btn-facebook btn-icon-only">
                                     <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
                                 </button>

@@ -14,7 +14,7 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-absolute z-index-sticky top-0 mb-10">
+    <div class="container z-index-sticky top-0">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>

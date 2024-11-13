@@ -8,14 +8,14 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="<?= $ico ?>"><!-- ./assets/img/favicon.png -->
     <title>
-        ESCE | Contáctanos
+        ESCE | Contacto
     </title>
     <?php include './sections/page-sections/ref-header.php' ?>
 </head>
 
 <body class="case-study bg-gray-200">
 
-    <div class="container position-absolute z-index-sticky top-0 mb-10">
+    <div class="container z-index-sticky top-0">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -40,7 +40,7 @@
 
         <div class="container">
             <div class="row mb-7">
-                <div class="col-12 col-lg-6 levitate-on-hover mb-7 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="col-12 col-lg-6 card levitate-on-hover mb-7 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="card card-plain p-4">
                         <form id="contact-form" method="post" autocomplete="off">
                             <div class="card-body">

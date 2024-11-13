@@ -14,7 +14,7 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-absolute z-index-sticky top-0 mb-2 mb-sm-0 mb-md-0 mb-lg-0">
+    <div class="container z-index-sticky top-0">
         <div class="row">
             <div class="col-12" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>

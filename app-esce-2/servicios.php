@@ -14,7 +14,7 @@
 </head>
 
 <body class="case-study bg-gray-200">
-    <div class="container position-absolute z-index-sticky top-0 mb-10">
+    <div class="container z-index-sticky top-0">
         <div class="row">
             <div class="col-12 navbar-item-text-color">
                 <?php include './sections/page-sections/nav-bar-3.php' ?>
@@ -172,7 +172,7 @@
     </div>
 
     <!--//* Section CARDS -->
-    <div class="main-bg-color-grey text-color-white text-center mt-n5 mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <div id="section-services" class="main-bg-color-grey text-color-white text-center mt-n5 mb-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5 mx-auto mt-7 mb-3">
