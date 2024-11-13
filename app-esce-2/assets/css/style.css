@@ -586,3 +586,28 @@ p.text-dark {
 .img-shadow {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) !important; 
 }
+
+/* * Cicular DIV*/
+.circular-div {
+  width: 250px; /* Ajusta el tamaño del círculo */
+  height: 250px;
+  border-radius: 50%; /* Hace que el div sea circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+  font-weight: bold;
+  color: #333333; /* Color del texto */
+}
+
+.text-hover {
+  color: #6c757d; /* Color muted inicial */
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  cursor: pointer;
+}
+
+.text-hover:hover {
+  color: #333333; /* Cambia a color normal o más oscuro */
+  font-weight: bold; /* Cambia a negrita */
+}

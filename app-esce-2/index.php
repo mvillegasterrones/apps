@@ -103,7 +103,7 @@
     </div>
 
     <!-- //? TU PROXIMA HABILIDAD -->
-    <div class="container text-center mb-7" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000"
+    <div class="container text-center mb-10" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000"
         data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
@@ -1134,9 +1134,50 @@
     </div>
 
     <!-- //? EXPERIENCIA ESCE -->
-    <section class="container mx-auto">
+    <section class="container mx-auto mb-10">
 
-        <div class="row align-content-center align-items-center mx-auto">
+        <div class="row mb-4">
+            <div class="col-12 col-lg-4 mx-auto align-content-center align-items-center text-center" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="200">
+                <div class="circular-div shadow-sm mx-auto">
+                    <h2 class="text-center mb-0">Experiencia ESCE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mb-7">
+
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+                <div id="text1" class="text-hover">
+                    <i class="material-icons text-6xl mt-4">new_releases</i>
+                    <h4>Claridad</h4>
+                    <p>Identifica y entiende problemas organizativos complejos</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                <div id="text1" class="text-hover">
+                    <i class="material-icons text-6xl mt-4">emoji_objects</i>
+                    <h4>Creatividad</h4>
+                    <p>magina diversas soluciones efectivas</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div id="text1" class="text-hover" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                    <i class="material-icons text-6xl mt-4">forum</i>
+                    <h4>Colaboración</h4>
+                    <p>Interactúa con otros profesionales para consolidar nuevos futuros organizacionales</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div id="text1" class="text-hover" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
+                    <i class="material-icons text-6xl mt-4">psychology</i>
+                    <h4>Reflexión</h4>
+                    <p>Conecta lo aprendido con tus desafíos profesionales</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--<div class="row align-content-center align-items-center mx-auto">
             <div class="col-12 col-lg-12 mx-auto">
                 <div class="row">
                     <h2 class="text-center text-xolor-grey" data-aos="fade-up" data-aos-duration="1000"
@@ -1210,7 +1251,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </section>
 
     <!-- //? INNOVACION EMPRESARIAL -->
