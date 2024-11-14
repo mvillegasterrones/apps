@@ -601,13 +601,68 @@ p.text-dark {
   color: #333333; /* Color del texto */
 }
 
+.icon-circle {
+  width: 80px; /* Tamaño del círculo */
+  height: 80px;
+  border-radius: 50%; /* Hace que el div sea circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Color de fondo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en el borde inferior */
+}
+
+.icon-circle i {
+  font-size: 36px; /* Tamaño del icono */
+  /*color: #333333;*/
+  color: var(--main-bg-color-grey);
+}
+
+
 .text-hover {
-  color: #6c757d; /* Color muted inicial */
+  /*color: #6c757d;*/
+  color: var(--main-bg-color-grey);
   transition: color 0.3s ease, font-weight 0.3s ease;
   cursor: pointer;
 }
 
 .text-hover:hover {
-  color: #333333; /* Cambia a color normal o más oscuro */
+  color: var(--main-bg-color-grey); /* #333333;*/
   font-weight: bold; /* Cambia a negrita */
 }
+
+.icon-line-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-text-color-grey);
+}
+
+.icon-line-container::before {
+  content: "";
+  position: absolute;
+  width: 100%; /* Ajusta el ancho de la línea */
+  height: 2px; /* Grosor de la línea */
+  background-color: var(--main-bg-color-warning); /*#d3d3d3;*/ /* Color de la línea */
+  top: 50%; /* Centra la línea verticalmente */
+  z-index: -1; /* Coloca la línea detrás del icono */
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Coloca el círculo por encima de la línea */
+}
+
+.icon-circle i {
+  font-size: 36px;
+  /*color: #333333;*/
+}
+

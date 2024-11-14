@@ -67,8 +67,8 @@
                         <div class="card shadow-none text-start text-color-dark" data-aos="zoom-in"
                             data-aos-duration="1000" data-aos-delay="200">
                             <div class="card-body pb-0">
-                                <h1 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
-                                    95%</h1>
+                                <h3 class="mb-2" style="font-size: 45px !important;" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
+                                    95%</h3>
                                 <hr class="w-100 main-bg-color-danger">
                                 <h6>Lorem ipsum dolor sit.</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dicta facilis sed
@@ -80,8 +80,8 @@
                         <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000"
                             data-aos-delay="200">
                             <div class="card-body pb-0">
-                                <h1 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
-                                    9.500<h1>
+                                <h3 class="mb-2" style="font-size: 45px !important;" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
+                                    9.500<h3>
                                         <hr class="w-100 main-bg-color-danger">
                                         <h6>Lorem ipsum dolor sit.</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dicta
@@ -93,8 +93,8 @@
                         <div class="card text-start text-color-dark" data-aos="zoom-in" data-aos-duration="1000"
                             data-aos-delay="200">
                             <div class="card-body pb-0">
-                                <h1 class="mb-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
-                                    9.450</h1>
+                                <h3 class="mb-2" style="font-size: 45px !important;" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="200">
+                                    9.450</h3>
                                 <hr class="w-100 main-bg-color-danger">
                                 <h6>Lorem ipsum dolor sit.</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dicta facilis sed
@@ -159,7 +159,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="col-12 mt-n7">
                         <div class="card" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
-                            <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100 rounded rounded-15" alt="">
+                            <img src="./assets/img/banners/cursos-curso-01.jpg" class="w-100 h-100 rounded rounded-15" alt="">
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <!--//* Section CARDS -->
+    <!--//* Section CURSOS CARDS -->
     <div id="section-cursos-cursos" class="main-bg-color-grey text-color-white text-center mb-0" data-aos="fade-up"
         data-aos-duration="1000" data-aos-delay="100">
         <div class="container">
@@ -367,11 +367,11 @@
                 <div class="container">
                     <div class="card">
                         <div class="row main-bg-color-white rounded rounded-15 shadow-2-strong shadow-5-primary">
-                            <div class="col-12 col-lg-5 m-0">
-                                <img src="./assets/img/hero/hero-card-02.png" class="h-100 w-100" alt=""
+                            <div class="col-12 col-lg-6 m-0">
+                                <img src="./assets/img/banners/cursos-curso-02.jpg" class="h-100 w-100" alt=""
                                     data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
                             </div>
-                            <div class="col-12 col-lg-7 m-0 align-content-center align-items-center">
+                            <div class="col-12 col-lg-6 m-0 align-content-center align-items-center">
                                 <div class="row p-5">
                                     <div class="col-12 col-6 mx-auto text-color-grey">
                                         <p class="mb-2" data-aos="fade-up" data-aos-duration="1200"

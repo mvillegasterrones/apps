@@ -103,8 +103,8 @@
     </div>
 
     <!-- //? TU PROXIMA HABILIDAD -->
-    <div class="container text-center mb-10" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up" data-aos-duration="1000"
-        data-aos-delay="100">
+    <div class="container text-center mb-10" id="escoge-tu-ptoxima-habilidad" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-delay="100">
         <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Escoge <b
                 class="bg-gradient-danger text-white p-1 rounded rounded-15">tu próxima
                 habilidad&nbsp;&nbsp;</b></h2>
@@ -1137,41 +1137,63 @@
     <section class="container mx-auto mb-10">
 
         <div class="row mb-4">
-            <div class="col-12 col-lg-4 mx-auto align-content-center align-items-center text-center" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-delay="200">
+            <div class="col-12 col-lg-4 mx-auto align-content-center align-items-center text-center" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-delay="200">
                 <div class="circular-div shadow-sm mx-auto">
-                    <h2 class="text-center mb-0">Experiencia ESCE</h2>
+                    <h3 class="text-center text-color-secondary mb-0">EXPERIENCIA <img src="<?= $logo ?>" class="w-50"
+                            alt=""></h3>
+
                 </div>
             </div>
         </div>
         <div class="row text-center mb-7">
 
             <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                <div id="text1" class="text-hover">
-                    <i class="material-icons text-6xl mt-4">new_releases</i>
-                    <h4>Claridad</h4>
-                    <p>Identifica y entiende problemas organizativos complejos</p>
+                <div id="text1" class="text-hover align-content-center position-relative">
+                    <div class="icon-line-container mx-auto mb-3">
+                        <div class="icon-circle">
+                            <i class="material-icons text-6xl">edit</i>
+                        </div>
+                    </div>
+                    <h4 class="mt-3">CLARIDAD</h4>
+                    <p class="text-start">Identifica y entiende problemas organizativos complejos</p>
                 </div>
             </div>
+
+
+            
             <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <div id="text1" class="text-hover">
-                    <i class="material-icons text-6xl mt-4">emoji_objects</i>
-                    <h4>Creatividad</h4>
-                    <p>magina diversas soluciones efectivas</p>
+                <div id="text1" class="text-hover align-content-center position-relativer">
+                    <div class="icon-line-container mx-auto mb-3">
+                        <div class="icon-circle">
+                            <RCH class="material-icons text-6xl">search</i>
+                        </div>
+                    </div>
+                    <h4>CREATIVIDAD</h4>
+                    <p class="text-start">magina diversas soluciones efectivas</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
-                <div id="text1" class="text-hover" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
-                    <i class="material-icons text-6xl mt-4">forum</i>
-                    <h4>Colaboración</h4>
-                    <p>Interactúa con otros profesionales para consolidar nuevos futuros organizacionales</p>
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                <div id="text1" class="text-hover align-content-center position-relativer">
+                    <div class="icon-line-container mx-auto mb-3">
+                        <div class="icon-circle">
+                            <RCH class="material-icons text-6xl">analytics</i>
+                        </div>
+                    </div>
+                    <h4>COLABORACIÓN</h4>
+                    <p class="text-start">Interactúa con otros profesionales para consolidar nuevos futuros
+                        organizacionales</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
-                <div id="text1" class="text-hover" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
-                    <i class="material-icons text-6xl mt-4">psychology</i>
-                    <h4>Reflexión</h4>
-                    <p>Conecta lo aprendido con tus desafíos profesionales</p>
+            <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
+                <div id="text1" class="text-hover align-content-center position-relativer">
+                    <div class="icon-line-container mx-auto mb-3">
+                        <div class="icon-circle">
+                            <RCH class="material-icons text-6xl">psychology</i>
+                        </div>
+                    </div>
+                    <h4>RELEXIÓN</h4>
+                    <p class="text-start">Conecta lo aprendido con tus desafíos profesionales</p>
                 </div>
             </div>
 
@@ -1484,7 +1506,8 @@
                 <div class="row">
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up"
+                            data-aos-duration="1100" data-aos-delay="300">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -1514,7 +1537,8 @@
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="350">
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="350">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -1530,8 +1554,8 @@
                             <div class="card-body text-center pb-0">
                                 <h4 class="mb-0">Certificado de Competencia</h4>
                                 <p class="mt-2">
-                                Se concede a los participantes de nuestros talleres, validando su participación en
-                                dinámicas diseñadas para fomentar el desarrollo de competencias.
+                                    Se concede a los participantes de nuestros talleres, validando su participación en
+                                    dinámicas diseñadas para fomentar el desarrollo de competencias.
                                 </p>
                             </div>
                             <div class="card-footer text-center pt-2">
@@ -1544,7 +1568,8 @@
                     </div>
                     <div class="col-md-4 mb-md-0 mb-7">
 
-                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                        <div class="card transition-card transition-card-hover h-100" data-aos="fade-up"
+                            data-aos-duration="1300" data-aos-delay="400">
                             <div class="text-center mt-n5 z-index-1">
                                 <div class="position-relative">
                                     <div class="blur-shadow-avatar rounded-circle">
@@ -1560,7 +1585,7 @@
                             <div class="card-body text-center pb-0">
                                 <h4 class="mb-0">Certificado de Liderazgo</h4>
                                 <p class="mt-2">
-                                Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
+                                    Se otorga al completar 4 cursos o talleres, de los cuales al menos dos deben ser
                                     talleres.
                                 </p>
                             </div>
@@ -1569,245 +1594,250 @@
 
                                 </div>
                             </div>
-                        </>
+                            </>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- //? SECCION RECURSOS -->
-    <div class="main-bg-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <div class="container pt-5 pb-2">
-            <div class="container">
-                <div class="row my-5 align-content-center align-items-center">
-                    <div class="col-12 col-lg-6 p-5" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
-                        <div class="card shadow-0 shadow-none" style="box-shadow: 0 0 0 0 !important">
-                            <img src="./assets/img/hero/hero-002.jpg" class="h-75 rounded rounded-15 shadow-none" alt="">
+        <!-- //? SECCION RECURSOS -->
+        <div class="main-bg-color-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="container pt-5 pb-2">
+                <div class="container">
+                    <div class="row my-5 align-content-center align-items-center">
+                        <div class="col-12 col-lg-6 p-5" data-aos="fade-up" data-aos-duration="1100"
+                            data-aos-delay="200">
+                            <div class="card shadow-0 shadow-none" style="box-shadow: 0 0 0 0 !important">
+                                <img src="./assets/img/hero/hero-002.jpg" class="h-75 rounded rounded-15 shadow-none"
+                                    alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-5 text-color-white p-4">
-                        <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer tus
-                            habilidades</p>
-                        <h2 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
-                            data-aos-delay="300">Avanza en tu carrera generando impacto</h2>
-                        <p class="text-color-white" data-aos="fade-down" data-aos-duration="1300" data-aos-delay="400">
-                            Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
-                            crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
-                            disposición una serie de recursos gratuitos.</p>
-                        <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
+                        <div class="col-12 col-lg-5 text-color-white p-4">
+                            <p class="mb-0" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">Haz crecer
+                                tus
+                                habilidades</p>
+                            <h2 class="text-color-white mb-4" data-aos="zoom-in" data-aos-duration="1200"
+                                data-aos-delay="300">Avanza en tu carrera generando impacto</h2>
+                            <p class="text-color-white" data-aos="fade-down" data-aos-duration="1300"
+                                data-aos-delay="400">
+                                Aplica conocimientos clave para emprender, diseñar un nuevo producto o servicio, hacer
+                                crecer tu empresa o solucionar problemas organizacionales complejos. Ponemos a tu
+                                disposición una serie de recursos gratuitos.</p>
+                            <!--<h5 class="text-color-white mt-4 mb-4" data-aos="fade-down" data-aos-duration="1400"
                             data-aos-delay="500">ESCE pone a tu disposición recursos gratuitos creados por
                             nuestros docentes y colaboradores con el objetivo de que puedas sacarle provecho y
                             aplicarlo
                             en tu vida profesional.</h5>-->
-                        <p data-aos="fade-down" data-aos-duration="1450" data-aos-delay="550">
-                            <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Aprende más
-                                aquí <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
-                        </p>
+                            <p data-aos="fade-down" data-aos-duration="1450" data-aos-delay="550">
+                                <button class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Aprende más
+                                    aquí <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></button>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- //? PREGUNTAS FRECUENTES -->
-    <div class="main-bg-color-white">
-        <div class="container pt-5 pb-2">
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-12 col-lg-4 text-center align-content-center">
-                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes
-                        </h2>
-                        <!--<p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+        <!-- //? PREGUNTAS FRECUENTES -->
+        <div class="main-bg-color-white">
+            <div class="container pt-5 pb-2">
+                <div class="container">
+                    <div class="row my-5">
+                        <div class="col-12 col-lg-4 text-center align-content-center">
+                            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Preguntas Frecuentes
+                            </h2>
+                            <!--<p class="text-center" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda
                             necessitatibus
                             corporis maiores laudantium corrupti voluptates, pariatur rerum mollitia dignissimos
                             repellendus, dolorum iure nemo nobis dicta commodi quo facilis exercitationem.</p>-->
-                        <p data-aos="fade-up" data-aos-duration="1150" data-aos-delay="280">
-                            <a href="<?= $ruta_contacto ?>"
-                                class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una
-                                consulta <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-12 col-lg-8 mx-auto">
-                        <div class="accordion" id="accordionRental">
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1200"
-                                data-aos-delay="300">
-                                <h5 class="accordion-header" id="headingOne">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="false" aria-controls="collapseOne">
-                                        ¿Cómo funcionan los cursos y talleres en línea de ESCE?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Los cursos y talleres se ofrecen en formatos sincrónicos y no importa en qué
-                                        zona horaria te encuentres porque todos son ofrecidos a nivel nacional y
-                                        comparten la misma zona horaria.
+                            <p data-aos="fade-up" data-aos-duration="1150" data-aos-delay="280">
+                                <a href="<?= $ruta_contacto ?>"
+                                    class="btn bg-gradient-warning btn-rounded-20p icon-move-right mt-2">Realiza una
+                                    consulta <i class="fas fa-arrow-right text-xs ms-1" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-8 mx-auto">
+                            <div class="accordion" id="accordionRental">
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1200"
+                                    data-aos-delay="300">
+                                    <h5 class="accordion-header" id="headingOne">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            ¿Cómo funcionan los cursos y talleres en línea de ESCE?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Los cursos y talleres se ofrecen en formatos sincrónicos y no importa en qué
+                                            zona horaria te encuentres porque todos son ofrecidos a nivel nacional y
+                                            comparten la misma zona horaria.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1300"
-                                data-aos-delay="400">
-                                <h5 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        ¿Tendré acceso al material después de finalizar el curso?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, tendrás acceso a todos los materiales proporcionados por el docente,
-                                        como
-                                        diapositivas, workbooks y hojas resumen. Además, al finalizar cada curso
-                                        corto,
-                                        recibirás un resumen con las ideas clave abordadas. Sin embargo, para
-                                        fomentar
-                                        la participación sincrónica y garantizar una comunidad digital activa
-                                        durante el
-                                        curso, los videos de las sesiones no estarán disponibles una vez que el
-                                        curso o
-                                        taller haya terminado.
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1300"
+                                    data-aos-delay="400">
+                                    <h5 class="accordion-header" id="headingTwo">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            ¿Tendré acceso al material después de finalizar el curso?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Sí, tendrás acceso a todos los materiales proporcionados por el docente,
+                                            como
+                                            diapositivas, workbooks y hojas resumen. Además, al finalizar cada curso
+                                            corto,
+                                            recibirás un resumen con las ideas clave abordadas. Sin embargo, para
+                                            fomentar
+                                            la participación sincrónica y garantizar una comunidad digital activa
+                                            durante el
+                                            curso, los videos de las sesiones no estarán disponibles una vez que el
+                                            curso o
+                                            taller haya terminado.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1400"
-                                data-aos-delay="500">
-                                <h5 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        ¿Cuál es el rol del instructor y el equipo de enseñanza? ¿Podré recibir
-                                        retroalimentación?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Nuestros instructores y equipos de facilitación guían las sesiones y están
-                                        disponibles para resolver dudas a través de foros y espacios de interacción.
-                                        Aunque no hay evaluaciones formales, se ofrecen comentarios durante las
-                                        actividades y dinámicas de aprendizaje.
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1400"
+                                    data-aos-delay="500">
+                                    <h5 class="accordion-header" id="headingThree">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            ¿Cuál es el rol del instructor y el equipo de enseñanza? ¿Podré recibir
+                                            retroalimentación?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Nuestros instructores y equipos de facilitación guían las sesiones y están
+                                            disponibles para resolver dudas a través de foros y espacios de interacción.
+                                            Aunque no hay evaluaciones formales, se ofrecen comentarios durante las
+                                            actividades y dinámicas de aprendizaje.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1500"
-                                data-aos-delay="600">
-                                <h5 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        ¿Puedo tomar el curso con mi equipo?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, los cursos y talleres de ESCE son ideales para equipos de trabajo.
-                                        Fomentamos la participación grupal para que puedas aplicar los conocimientos
-                                        adquiridos en un entorno colaborativo. De hecho, lo equipos de 3 o más
-                                        personas
-                                        cuentan con un descuento del 25%
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1500"
+                                    data-aos-delay="600">
+                                    <h5 class="accordion-header" id="headingFour">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            ¿Puedo tomar el curso con mi equipo?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Sí, los cursos y talleres de ESCE son ideales para equipos de trabajo.
+                                            Fomentamos la participación grupal para que puedas aplicar los conocimientos
+                                            adquiridos en un entorno colaborativo. De hecho, lo equipos de 3 o más
+                                            personas
+                                            cuentan con un descuento del 25%
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1600"
-                                data-aos-delay="700">
-                                <h5 class="accordion-header" id="headingFifth">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
-                                        aria-expanded="false" aria-controls="collapseFifth">
-                                        ¿Ofrecen descuentos?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseFifth" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, ofrecemos descuentos por pronta matrícula o promociones especiales en
-                                        ciertos periodos del año. Para más detalles, consulta nuestras políticas de
-                                        descuentos o contacta al equipo de soporte.
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1600"
+                                    data-aos-delay="700">
+                                    <h5 class="accordion-header" id="headingFifth">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth"
+                                            aria-expanded="false" aria-controls="collapseFifth">
+                                            ¿Ofrecen descuentos?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseFifth" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Sí, ofrecemos descuentos por pronta matrícula o promociones especiales en
+                                            ciertos periodos del año. Para más detalles, consulta nuestras políticas de
+                                            descuentos o contacta al equipo de soporte.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1700"
-                                data-aos-delay="800">
-                                <h5 class="accordion-header" id="headingSix">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                        aria-expanded="false" aria-controls="collapseSix">
-                                        ¿Obtendré un certificado al finalizar un curso o taller?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Sí, al completar un curso o taller, recibirás un certificado que acredita tu
-                                        participación en las dinámicas de aprendizaje diseñadas para el desarrollo
-                                        de
-                                        competencias.
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1700"
+                                    data-aos-delay="800">
+                                    <h5 class="accordion-header" id="headingSix">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            ¿Obtendré un certificado al finalizar un curso o taller?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Sí, al completar un curso o taller, recibirás un certificado que acredita tu
+                                            participación en las dinámicas de aprendizaje diseñadas para el desarrollo
+                                            de
+                                            competencias.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1800"
-                                data-aos-delay="900">
-                                <h5 class="accordion-header" id="headingSeven">
-                                    <button
-                                        class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                                        aria-expanded="false" aria-controls="collapseSeven">
-                                        ¿Cómo puedo inscribirme en un curso o taller?
-                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
-                                            aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                                <div id="collapseSeven" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSeven" data-bs-parent="#accordionRental">
-                                    <div class="accordion-body text-sm opacity-8">
-                                        Puedes inscribirte directamente a través de nuestra plataforma en línea. Si
-                                        tienes alguna pregunta sobre el proceso de inscripción, no dudes en
-                                        contactarnos.
+                                <div class="accordion-item mb-3" data-aos="fade-up" data-aos-duration="1800"
+                                    data-aos-delay="900">
+                                    <h5 class="accordion-header" id="headingSeven">
+                                        <button
+                                            class="accordion-button border-bottom font-weight-bold text-start text-color-grey collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
+                                            ¿Cómo puedo inscribirme en un curso o taller?
+                                            <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                            <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
+                                                aria-hidden="true"></i>
+                                        </button>
+                                    </h5>
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionRental">
+                                        <div class="accordion-body text-sm opacity-8">
+                                            Puedes inscribirte directamente a través de nuestra plataforma en línea. Si
+                                            tienes alguna pregunta sobre el proceso de inscripción, no dudes en
+                                            contactarnos.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1816,11 +1846,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <?php include './sections/page-sections/footer-2.php' ?>
+        <?php include './sections/page-sections/footer-2.php' ?>
 
-    <?php include './sections/page-sections/ref-scripts.php' ?>
+        <?php include './sections/page-sections/ref-scripts.php' ?>
 
 </body>
 

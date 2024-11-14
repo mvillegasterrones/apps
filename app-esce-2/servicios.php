@@ -53,7 +53,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="col-12">
                         <div class="card" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="600">
-                            <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100 rounded rounded-15" alt="">
+                            <img src="./assets/img/banners/servicios-01.jpeg" class="w-100 h-100 rounded rounded-15" alt="">
                         </div>
                     </div>
                 </div>
@@ -292,22 +292,22 @@
             <div class="col-12 col-lg-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="container">
                     <div class="row main-bg-color-grey rounded rounded-15">
-                        <div class="col-12 col-lg-5 m-0">
-                            <img src="./assets/img/hero/hero-card-02.png" class="h-100 w-100" alt="" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
+                        <div class="col-12 col-lg-6 m-0">
+                            <img src="./assets/img/banners/servicios-02.jpg" class="h-100 w-100" alt="" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
                         </div>
-                        <div class="col-12 col-lg-7 m-0 align-content-center align-items-center">
-                            <div class="row p-6">
+                        <div class="col-12 col-lg-6 m-0 align-content-center align-items-center">
+                            <div class="row p-4">
                                 <div class="col-12 col-8 mx-auto">
                                     <p class="mb-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Lorem, ipsum.</p>
                                     <h3 class="text-color-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Descubre la Innovación que Impulsa tu Negocio</h3>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">La innovación no es solo generar nuevas ideas, sino encontrar soluciones alineadas con las necesidades de tus clientes. Te ayudamos a aprovechar el potencial creativo de tu equipo para convertirlo en resultados concretos. Desde la ideación hasta la implementación, nuestros servicios están diseñados para impulsar el crecimiento de manera estratégica.</p>
                                     <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="450">La innovación debe estar presente en cada parte de tu negocio. Ya sea mejorando procesos o desarrollando nuevos productos, te guiamos para llevar tus ideas al mercado y generar un impacto real. Empodera a tu equipo, refina tu estrategia y marca la diferencia.</p>
-                                    <p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
+                                    <!--<p data-aos="fade-up" data-aos-duration="1350" data-aos-delay="450">
                                         <button
                                             class="btn btn-warning main-bg-color-warning icon-move-right btn-rounded-20p mb-0">Leer
                                             mas <i class="fas fa-arrow-right text-xs ms-1"
                                                 aria-hidden="true"></i></button>
-                                    </p>
+                                    </p>-->
                                 </div>
                             </div>
                         </div>
@@ -336,7 +336,7 @@
                         <div class="row p-0 mb-4">
                             <div class="col-12 col-lg-2"></div>
                             <div class="col-12 col-lg-10">
-                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                                <img src="./assets/img/banners/servicio-servicio-01.jpg" class="w-100 h-100" alt="">
                             </div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@
                         <div class="row p-0 mb-4">
                             <div class="col-12 col-lg-2"></div>
                             <div class="col-12 col-lg-10">
-                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                                <img src="./assets/img/banners/servicio-servicio-02.jpg" class="w-100 h-100" alt="">
                             </div>
                         </div>
                     </div>
@@ -368,7 +368,7 @@
                         <div class="row p-0 mb-4">
                             <div class="col-12 col-lg-2"></div>
                             <div class="col-12 col-lg-10">
-                                <img src="./assets/img/hero/hero-card-02.png" class="w-100 h-100" alt="">
+                                <img src="./assets/img/banners/servicio-servicio-03.jpg" class="w-100 h-100" alt="">
                             </div>
                         </div>
                     </div>

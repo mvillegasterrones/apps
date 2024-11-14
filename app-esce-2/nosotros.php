@@ -38,7 +38,7 @@
                     trabajar para financiar sus estudios en administración o gestión pública. Además, fomentamos el
                     crecimiento empresarial a través de dinámicas de innovación, de investigación y de cambio
                     tecnológico, que permitan a las empresas crecer, explorar nuevos mercados o fortalecer los ya
-                    existentes..</p>
+                    existentes.</p>
                 <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
                     Particularmente nos interesa apoyar a las micro y pequeñas empresas que tanto necesitan soportes
                     de conocimiento para seguir progresando. Dotar de herramientas para mejorar la productividad y
@@ -55,7 +55,7 @@
                     Ser una institución que promueve el desarrollo económico y social descentralizado a través de la
                     formación de profesionales y la re-capacitación de personas que ya trabajan en todo el país.
                 </p>
-                <h5>PROPOSITO</h5>
+                <h5>PROPÓSITO</h5>
                 <hr class="w-50 main-bg-color-warning mx-auto" style="height: 3px;">
             </div>
             <div class="col-12 col-lg-4 mb-5 h-100" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="200">
