@@ -1,2 +1,1 @@
-<?php
-return 0
+
