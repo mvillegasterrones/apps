@@ -11,15 +11,7 @@ class mUsuario
 
     function get_users_list()
     {
-        /*$sql = "SELECT * FROM tbl_usuario";
-        $this->conexion->conexion->set_charset('utf8');
-		$resultados = $this->conexion->conexion->query($sql);
-		$arreglo    = array();
-		while ($re  = $resultados->fetch_array(MYSQLI_BOTH)) {
-			$arreglo[] = $re;
-		}
-		$this->conexion->cerrar();
-		return $arreglo;*/
+        
     }
 
     function set_login($dni)
